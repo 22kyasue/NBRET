@@ -1,0 +1,24 @@
+{
+  "name": "nbret",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Network Based Reverse Engineering Tool: COPY capture and REA integration",
+  "engines": {
+    "node": "^22.19.0 || ^24.11.0 || >=26.0.0"
+  },
+  "scripts": {
+    "test": "node --test test/*.test.mjs",
+    "capture": "node src/cli.mjs",
+    "demo": "node scripts/demo.mjs",
+    "copy:extract": "node copy/extract.mjs",
+    "copy:geo": "node copy/geo.mjs",
+    "copy:scaffold": "node copy/scaffold.mjs"
+  },
+  "dependencies": {
+    "playwright": "1.64.0",
+    "rea-agents": "6.4.0",
+    "sharp": "0.35.5",
+    "postcss": "8.5.29"
+  }
+}

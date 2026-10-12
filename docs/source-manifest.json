@@ -1,0 +1,76 @@
+{
+  "date": "2026-10-12",
+  "note": "Original hashes before standalone adaptations. REA is an npm dependency, not copied source.",
+  "files": [
+    {
+      "source": "openclaw-home/.claude/skills/copy/scripts/assets.mjs",
+      "file": "copy/assets.mjs",
+      "sha256": "d52e38f737ceae6bbf9134ecc18d1b19a56ec7dd7f69232d55e458cec40030e0"
+    },
+    {
+      "source": "openclaw-home/.claude/skills/copy/scripts/extract.mjs",
+      "file": "copy/extract.mjs",
+      "sha256": "a6a5112dddd7997e151bf661b4e44d391f767f0b33ad77730e0ccea04e7f1bc9"
+    },
+    {
+      "source": "openclaw-home/.claude/skills/copy/scripts/geo.mjs",
+      "file": "copy/geo.mjs",
+      "sha256": "656d1a52180d44bda9db918a9cfb98bccf01b9f724a580a564ed44f973e779a2"
+    },
+    {
+      "source": "openclaw-home/.claude/skills/copy/scripts/motion.mjs",
+      "file": "copy/motion.mjs",
+      "sha256": "55e389a06c541a0c37eafee8b0fdafb150ed7e833fb5fd6b41903acef142d569"
+    },
+    {
+      "source": "openclaw-home/.claude/skills/copy/scripts/opening.mjs",
+      "file": "copy/opening.mjs",
+      "sha256": "6a87b790972d3847be451af91f76188fee8751b4be5036fb7391d66858f62e2f"
+    },
+    {
+      "source": "openclaw-home/.claude/skills/copy/scripts/scaffold.mjs",
+      "file": "copy/scaffold.mjs",
+      "sha256": "2fd8dc19845ee4a8f08142f5d9f9ad83f7fb667da1428f1d68ee4bfb6c05201b"
+    },
+    {
+      "source": "openclaw-home/.claude/skills/copy/scripts/states.mjs",
+      "file": "copy/states.mjs",
+      "sha256": "1cf968349a990fa39670e17f0d27d9d8a76b606a70940c36ccd78db12b95e743"
+    },
+    {
+      "source": "openclaw-home/.claude/skills/copy/scripts/_lib.mjs",
+      "file": "copy/_lib.mjs",
+      "sha256": "e28cf587c82977f13783792c766406ffe225cd1948c9a6bccc6d4ab5fab3ca21"
+    },
+    {
+      "source": "translation/homepage/scripts/mirror/mirror.mjs",
+      "file": "mirror/mirror.mjs",
+      "sha256": "e03b12295b62210d343364ca1da3e310c82882e824eda90a447c4eab98033f22"
+    },
+    {
+      "source": "translation/homepage/scripts/mirror/serve.mjs",
+      "file": "mirror/serve.mjs",
+      "sha256": "02db7fe4db2cc1707ea3afa339ff08c8d328d487df9553123a7488de1d0d4c57"
+    },
+    {
+      "source": "translation/homepage/scripts/mirror/record-posts.mjs",
+      "file": "mirror/record-posts.mjs",
+      "sha256": "1713d3462f5f21bc924561d49702efe4822becf9b0faa2ad87cd84f3ea8d24a7"
+    },
+    {
+      "source": "translation/homepage/scripts/mirror/verify.mjs",
+      "file": "mirror/verify.mjs",
+      "sha256": "62938e498d4231a6e46446c24e5208e940e8a897d02df234b15a8276484cdd01"
+    },
+    {
+      "source": "translation/homepage/scripts/mirror/snapshot.mjs",
+      "file": "mirror/snapshot.mjs",
+      "sha256": "1c3ce6226f91ea67bd790e0ceaf335a6a1af041888e62cba6eb725142808e3c2"
+    },
+    {
+      "source": "translation/homepage/scripts/mirror/bundle-assets.mjs",
+      "file": "mirror/bundle-assets.mjs",
+      "sha256": "736f8f23cf32964bd4d9cf26b6eff7a202213036614165aa3f046ef46a783935"
+    }
+  ]
+}
