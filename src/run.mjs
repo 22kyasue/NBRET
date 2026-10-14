@@ -119,12 +119,13 @@ export async function runCapture({ url, outDir, actions = [], rea = true, copy =
     await installLocalResponses(ctx, target.origin, overrides);
     networkStarted = performance.now();
     const page = ctx.pages()[0] || await ctx.newPage();
+    const heldBodies = new Map();
     if (captureTargets) {
       const [port, path] = (await readFile(join(out, 'browser-profile', 'DevToolsActivePort'), 'utf8')).split(/\r?\n/);
       if (!/^\d+$/.test(port) || !path.startsWith('/devtools/browser/')) throw new Error('Invalid owned CDP endpoint');
-      targetRecorder = await startTargetCapture(page, { endpoint: `ws://127.0.0.1:${port}${path}`, outDir: join(out, 'network/targets'), origins: allowedOrigins, identity: summary.identity, includeScriptSources, includeStreamPayloads, assetStore });
+      targetRecorder = await startTargetCapture(page, { endpoint: `ws://127.0.0.1:${port}${path}`, outDir: join(out, 'network/targets'), origins: allowedOrigins, identity: summary.identity, includeScriptSources, includeStreamPayloads, assetStore, heldBodies });
     }
-    const recorder = await startCapture(page, { outDir: join(out, 'network'), origins: allowedOrigins, includeScriptSources, identity: summary.identity, includeStreamPayloads, instrumentedTargets: targetRecorder?.instrumented, assetStore });
+    const recorder = await startCapture(page, { outDir: join(out, 'network'), origins: allowedOrigins, includeScriptSources, identity: summary.identity, includeStreamPayloads, instrumentedTargets: targetRecorder?.instrumented, assetStore, holdResponseBodies: captureTargets, heldBodies });
     let extraction;
     try {
       if (copy && copyMode === 'same-state') extraction = await startStateExtraction(page);

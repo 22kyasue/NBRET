@@ -100,3 +100,26 @@ test('cross-process iframe first fetch is independently recorded in its authoriz
     assert.deepEqual(JSON.parse(await readFile(join(out, frame.file, '..', request.body.file), 'utf8')), { result: 84 });
   } finally { server.closeAllConnections(); await new Promise(resolve => server.close(resolve)); }
 });
+
+test('short-lived workers keep their requests and record when they started and ended', { timeout: 30000 }, async () => {
+  const server = createServer((req, res) => {
+    if (req.url === '/quick.js') { res.setHeader('Content-Type', 'text/javascript'); res.end('fetch("/quick-data").then(r=>r.json()).then(x=>{postMessage(x);close()})'); return; }
+    if (req.url === '/quick-data') { res.setHeader('Content-Type', 'application/json'); res.end('{"result":7}'); return; }
+    res.setHeader('Content-Type', 'text/html');
+    res.end('<button>Run</button><output></output><script>document.querySelector("button").onclick=()=>{const w=new Worker("/quick.js");w.onmessage=e=>{document.querySelector("output").textContent=e.data.result;w.terminate()}}</script>');
+  });
+  await new Promise(resolve => server.listen(0, '127.0.0.1', resolve));
+  await mkdir('runs', { recursive: true });
+  const out = resolve(`runs/short-lived-${Date.now()}`);
+  try {
+    const summary = await runCapture({ url: `http://127.0.0.1:${server.address().port}/`, outDir: out, rea: false, copy: false, captureTargets: true, actions: [{ type: 'click', selector: 'button' }, { type: 'wait', ms: 300 }], expectations: [{ selector: 'output', text: '7' }] });
+    assert.equal(summary.assertions[0].passed, true);
+    const worker = summary.targetCapture.targets.find(t => t.type === 'worker');
+    assert.ok(worker); assert.equal(worker.endedBeforeFinish, true);
+    const life = summary.targetCapture.lifecycle.find(l => l.targetId === worker.targetId);
+    assert.equal(life.recorded, true); assert.equal(life.startedDuringAction, 2); assert.ok(life.endedAt >= life.startedAt);
+    const evidence = JSON.parse(await readFile(join(out, worker.file), 'utf8'));
+    const request = evidence.requests.find(r => r.request.url.endsWith('/quick-data'));
+    assert.ok(request?.body?.file, JSON.stringify(request?.body));
+  } finally { server.closeAllConnections(); await new Promise(resolve => server.close(resolve)); }
+});

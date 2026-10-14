@@ -21,13 +21,19 @@ async function connect(endpoint) {
       const request = pending.get(message.id); if (!request) return;
       pending.delete(message.id); clearTimeout(request.timer);
       if (message.error) request.reject(Object.assign(new Error('CDP command failed'), { cdpMethod: request.method, cdpCode: message.error.code })); else request.resolve(message.result);
-    } else events.emit(message.method, message.params, message.sessionId);
+    } else {
+      // A detached target never answers: fail its outstanding commands now instead of waiting for the timeout.
+      if (message.method === 'Target.detachedFromTarget') for (const [requestId, p] of pending) if (p.sessionId === message.params.sessionId) {
+        pending.delete(requestId); clearTimeout(p.timer); p.reject(Object.assign(new Error('Target ended'), { cdpMethod: p.method }));
+      }
+      events.emit(message.method, message.params, message.sessionId);
+    }
   });
   socket.addEventListener('close', () => { for (const p of pending.values()) { clearTimeout(p.timer); p.reject(new Error('CDP disconnected')); } pending.clear(); });
   const send = (method, params = {}, sessionId) => new Promise((resolve, reject) => {
     const requestId = ++id;
     const timer = setTimeout(() => { pending.delete(requestId); reject(Object.assign(new Error('CDP command timeout'), { cdpMethod: method })); }, 10000);
-    pending.set(requestId, { resolve, reject, timer, method });
+    pending.set(requestId, { resolve, reject, timer, method, sessionId });
     try { socket.send(JSON.stringify({ id: requestId, method, params, ...(sessionId ? { sessionId } : {}) })); }
     catch { clearTimeout(timer); pending.delete(requestId); reject(new Error('CDP send failed')); }
   });
@@ -43,12 +49,21 @@ async function connect(endpoint) {
   return { send, session, events, close: () => socket.close() };
 }
 
-export async function startTargetCapture(page, { endpoint, outDir, origins, identity, includeScriptSources, includeStreamPayloads, assetStore }) {
+export async function startTargetCapture(page, { endpoint, outDir, origins, identity, includeScriptSources, includeStreamPayloads, assetStore, heldBodies }) {
   const transport = await connect(endpoint), recorders = new Map(), tasks = new Set(), initializing = new Map(), instrumented = new Set();
   const errors = [], filter = [{ type: 'page' }, { type: 'iframe' }, { type: 'worker' }, { type: 'service_worker' }, { type: 'shared_worker' }, { exclude: true }];
   const autoAttach = { autoAttach: true, waitForDebuggerOnStart: true, flatten: true, filter };
   let currentAction = null, stopping = false;
+  // Lifecycle of every auto-attached target, including ones that end before capture finishes.
+  const lifecycle = new Map(), sessions = new Map();
+  const detached = ({ sessionId, targetId }) => {
+    const entry = lifecycle.get(targetId || sessions.get(sessionId));
+    if (entry && !entry.endedAt) Object.assign(entry, { endedAt: new Date().toISOString(), endedDuringAction: currentAction?.id ?? null });
+  };
+  transport.events.on('Target.detachedFromTarget', detached);
   const attached = ({ sessionId, targetInfo }) => {
+    sessions.set(sessionId, targetInfo.targetId);
+    if (!lifecycle.has(targetInfo.targetId)) lifecycle.set(targetInfo.targetId, { targetId: targetInfo.targetId, type: targetInfo.type, startedAt: new Date().toISOString(), startedDuringAction: currentAction?.id ?? null });
     const task = (async () => {
       const session = transport.session(sessionId);
       try {
@@ -58,7 +73,7 @@ export async function startTargetCapture(page, { endpoint, outDir, origins, iden
         if (!stopping && ['iframe', 'worker', 'service_worker', 'shared_worker'].includes(targetInfo.type)) {
           if (recorders.size >= 20) { errors.push({ code: 'TARGET_LIMIT' }); return; }
           const tag = createHash('sha256').update(targetInfo.targetId).digest('hex').slice(0, 24);
-          const recorder = await startCapture(page, { outDir: join(outDir, tag), origins, includeScriptSources, includeStreamPayloads, assetStore,
+          const recorder = await startCapture(page, { outDir: join(outDir, tag), origins, includeScriptSources, includeStreamPayloads, assetStore, heldBodies,
             identity: { ...identity, targetId: targetInfo.targetId, targetType: targetInfo.type }, session });
           if (currentAction) recorder.markAction(currentAction.label, currentAction.id);
           recorders.set(targetInfo.targetId, { recorder, targetInfo, tag });
@@ -74,7 +89,7 @@ export async function startTargetCapture(page, { endpoint, outDir, origins, iden
   try { await transport.send('Target.setAutoAttach', autoAttach); }
   catch (error) {
     stopping = true;
-    transport.events.off('Target.attachedToTarget', attached);
+    transport.events.off('Target.attachedToTarget', attached); transport.events.off('Target.detachedFromTarget', detached);
     await transport.send('Target.setAutoAttach', { autoAttach: false, waitForDebuggerOnStart: false, flatten: true }).catch(() => {});
     transport.close();
     throw error;
@@ -90,13 +105,16 @@ export async function startTargetCapture(page, { endpoint, outDir, origins, iden
       for (const { recorder, targetInfo, tag } of recorders.values()) {
         try {
           const evidence = await recorder.finish();
-          targets.push({ targetId: targetInfo.targetId, type: targetInfo.type, file: `network/targets/${tag}/evidence.json`, requests: evidence.requests.length, scripts: evidence.scripts.length, status: 'captured' });
+          const life = lifecycle.get(targetInfo.targetId);
+          targets.push({ targetId: targetInfo.targetId, type: targetInfo.type, file: `network/targets/${tag}/evidence.json`, requests: evidence.requests.length, scripts: evidence.scripts.length, status: 'captured', endedBeforeFinish: !!life?.endedAt });
         } catch { errors.push({ code: 'TARGET_FINISH_FAILED', type: targetInfo.type }); }
       }
-      transport.events.off('Target.attachedToTarget', attached);
+      transport.events.off('Target.attachedToTarget', attached); transport.events.off('Target.detachedFromTarget', detached);
       await transport.send('Target.setAutoAttach', { autoAttach: false, waitForDebuggerOnStart: false, flatten: true }).catch(() => {});
       transport.close();
-      return { targets, errors, limitations: ['Up to 20 independently recorded worker/frame targets in the owned browser.', 'Action association is temporal; service-worker lifecycle and short-lived targets can still be incomplete.'] };
+      const recorded = new Set(targets.map(t => t.targetId));
+      return { targets, lifecycle: [...lifecycle.values()].map(l => ({ ...l, recorded: recorded.has(l.targetId) })), errors,
+        limitations: ['Up to 20 independently recorded worker/frame targets in the owned browser.', 'Targets start paused until instrumented, so short-lived workers keep their first requests; lifecycle times are when CDP reported attach/detach.', 'Action association is temporal; service-worker install/activate states are not tracked.'] };
     },
   };
 }

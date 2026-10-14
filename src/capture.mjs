@@ -64,7 +64,7 @@ function streamPayload(data, enabled, inScope, limit, text = true) {
 }
 
 /** Observe a page before navigation. This is browser-visible evidence, not heap recovery. */
-export async function startCapture(page, { outDir, origins = [], maxBodyBytes = 1048576, includeScriptSources = false, maxEntries = 2000, maxTotalBytes = 20 * 1024 * 1024, maxPending = 20, identity, includeStreamPayloads = false, session, instrumentedTargets, assetStore } = {}) {
+export async function startCapture(page, { outDir, origins = [], maxBodyBytes = 1048576, includeScriptSources = false, maxEntries = 2000, maxTotalBytes = 20 * 1024 * 1024, maxPending = 20, identity, includeStreamPayloads = false, session, instrumentedTargets, assetStore, holdResponseBodies = false, heldBodies = new Map() } = {}) {
   if (!outDir) throw new Error('outDir is required');
   if (!origins.length) throw new Error('Explicit origins allowlist is required');
   if (!Number.isSafeInteger(maxBodyBytes) || maxBodyBytes < 1) throw new Error('maxBodyBytes must be a positive integer');
@@ -84,7 +84,7 @@ export async function startCapture(page, { outDir, origins = [], maxBodyBytes = 
   evidence.dropped = { entries: 0, pending: 0, bytes: 0, frames: 0, serialization: 0 };
   evidence.savedAssetBytes = 0;
   if (includeScriptSources) evidence.limitations.push('Script source saving explicitly enabled: raw JavaScript may contain embedded secrets and is NOT redacted.');
-  const current = new Map(), sockets = new Map(), pending = new Set();
+  const current = new Map(), sockets = new Map(), pending = new Set(), held = heldBodies;
   let action = null, finished = false;
   const context = () => ({ actionId: action, observedAt: new Date().toISOString() });
   let entries = 0;
@@ -145,7 +145,7 @@ export async function startCapture(page, { outDir, origins = [], maxBodyBytes = 
     if (e.encodedDataLength > maxBodyBytes) { r.body = { omitted: 'size-limit', truncated: true }; return; }
     track(async () => {
       try {
-        const b = await cdp.send('Network.getResponseBody', { requestId: e.requestId });
+        const b = held.get(e.requestId) || await cdp.send('Network.getResponseBody', { requestId: e.requestId });
         const bytes = Buffer.from(b.body, b.base64Encoded ? 'base64' : 'utf8');
         if (bytes.length > maxBodyBytes) { r.body = { omitted: 'size-limit', truncated: true, bytes: bytes.length }; return; }
         const sanitized = payload(bytes.toString('utf8'), r.response?.mimeType);
@@ -196,6 +196,21 @@ export async function startCapture(page, { outDir, origins = [], maxBodyBytes = 
     evidence.eventSources.push({ requestId: e.requestId, timestamp: e.timestamp, ...context(),
       ...streamPayload(e.data, includeStreamPayloads, !!r?.inScope, maxBodyBytes) });
   });
+  if (holdResponseBodies) {
+    // Short-lived workers can exit before Network.getResponseBody answers. The page session also pauses its workers'
+    // responses, so in-scope bodies are copied here and shared (by network request id) with the worker recorders.
+    on('Fetch.requestPaused', async e => {
+      try {
+        const status = e.responseStatusCode, length = Number(e.responseHeaders?.find(h => /^content-length$/i.test(h.name))?.value || 0);
+        if (scoped(e.request.url) && e.networkId && status && !(status >= 300 && status < 400) && length <= maxBodyBytes) {
+          held.set(e.networkId, await cdp.send('Fetch.getResponseBody', { requestId: e.requestId }));
+          while (held.size > 200) held.delete(held.keys().next().value);
+        }
+      } catch {}
+      finally { await cdp.send('Fetch.continueResponse', { requestId: e.requestId }).catch(() => {}); }
+    });
+    await cdp.send('Fetch.enable', { patterns: [{ urlPattern: '*', requestStage: 'Response' }] });
+  }
   await cdp.send('Network.enable', { maxTotalBufferSize: Math.min(maxTotalBytes, maxBodyBytes * 5), maxResourceBufferSize: maxBodyBytes });
   await cdp.send('Debugger.enable');
   return {

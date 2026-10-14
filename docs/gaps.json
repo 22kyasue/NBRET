@@ -36,11 +36,13 @@
       "priority": 1,
       "status": "verified-local",
       "area": "target coverage",
-      "implemented": "Independent worker, service-worker and cross-process frame network/script evidence merges into analysis, contracts and comparisons.",
-      "remaining": "Up to20 targets, per-target budgets; child-frame DOM and short-lived lifecycle coverage remain limited.",
+      "implemented": "Independent worker, service-worker and cross-process frame network/script evidence merges into analysis, contracts and comparisons. Target lifecycle (start/end time and the action each happened in) is recorded for every attached target. With target capture on, the page session briefly pauses in-scope responses and copies their bodies, so a worker that exits right after its fetch keeps its response body; commands to ended targets now fail immediately instead of after a 10 s timeout. Child-frame DOM is covered by same-state COPY (G01).",
+      "remaining": "Up to 20 recorded targets. Service-worker install/activate states are not tracked; body holding applies only when target capture is on.",
       "acceptance": "Worker/OOPIF fixtures preserve their request, script and action/state evidence with target IDs.",
       "evidence": [
-        "test/targets.test.mjs"
+        "test/targets.test.mjs",
+        "test/targets.test.mjs (short-lived worker body and lifecycle)",
+        "test/responses.test.mjs (overrides with response holding)"
       ]
     },
     {
