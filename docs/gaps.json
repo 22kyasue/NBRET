@@ -86,11 +86,12 @@
       "priority": 2,
       "status": "verified-local",
       "area": "API contracts",
-      "implemented": "Multi-run observed shape alternatives and missing-field counts; explicit comparison origin aliases.",
-      "remaining": "Observed shapes do not establish required fields or comprehensive backend schemas.",
+      "implemented": "Multi-run observed shape alternatives and missing-field counts; explicit comparison origin aliases. Field presence now covers nested object paths and array items (a.b, a[].c) and is reported per response status so error bodies do not mask success fields; the contracts CLI reports presence for single runs too.",
+      "remaining": "Observed shapes and presence still do not establish required fields or full backend schemas; array item presence counts distinct item shapes, not every element.",
       "acceptance": "Multiple input/error cases yield traceable shape alternatives without inventing required fields or server internals.",
       "evidence": [
-        "test/contracts.test.mjs"
+        "test/contracts.test.mjs",
+        "test/contracts.test.mjs (nested and per-status presence)"
       ]
     },
     {
