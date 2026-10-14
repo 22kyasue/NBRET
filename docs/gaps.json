@@ -48,11 +48,12 @@
       "priority": 2,
       "status": "verified-local",
       "area": "authenticated scenarios",
-      "implemented": "Scoped cookie/localStorage export/import uses fresh owned contexts; login reuse, same-state extraction and reset verified.",
-      "remaining": "sessionStorage and IndexedDB are not exported; session files contain credentials and stay local.",
+      "implemented": "Scoped cookie/localStorage export/import uses fresh owned contexts; login reuse, same-state extraction and reset verified. Session export now also carries IndexedDB (Playwright snapshot) and per-tab sessionStorage, restored into fresh profiles.",
+      "remaining": "Session files contain raw credentials and stay local. sessionStorage is reseeded per new tab only while empty; IndexedDB values Playwright cannot serialize, OPFS and service-worker caches are not carried.",
       "acceptance": "Owned isolated sessions can be reused and reset with documented state/provenance; unrelated accounts remain untouched.",
       "evidence": [
-        "test/sessions.test.mjs"
+        "test/sessions.test.mjs",
+        "test/sessions.test.mjs (sessionStorage and IndexedDB round trip)"
       ]
     },
     {
