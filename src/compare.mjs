@@ -54,7 +54,8 @@ export async function loadRun(dir, { aliases = {} } = {}) {
   const message = m => {
     let payloadHash = null;
     if (typeof m.payload?.text === 'string') { try { payloadHash = hash(JSON.parse(m.payload.text)); } catch { payloadHash = hash(m.payload.text); } }
-    return { actionId: m.actionId ?? null, direction: m.direction || 'received', opcode: m.opcode ?? 1, payloadHash,
+    else if (m.payloadHash) payloadHash = `bytes:${m.payloadHash}`; // digest of an omitted binary/unstructured message
+    return { actionId: m.actionId ?? null, direction: m.direction || 'received', opcode: m.opcode ?? 1, payloadHash, format: m.payloadFormat || null,
       omitted: m.payloadOmitted || m.payload?.omitted || null };
   };
   const streams = (evidence.sockets || []).map(s => ({ key: `ws ${route(s.url)}${s.targetType ? ` @target(${s.targetType})` : ''}`, messages: s.frames.filter(f => [1, 2].includes(f.opcode)).map(message) }));

@@ -61,11 +61,12 @@
       "priority": 2,
       "status": "verified-local",
       "area": "streaming",
-      "implemented": "Ordered structured WebSocket/SSE comparison detects changed messages and missing connections.",
-      "remaining": "Binary/unstructured payloads omitted; no general streaming protocol replay.",
+      "implemented": "Ordered structured WebSocket/SSE comparison detects changed messages and missing connections. Opted-in binary WebSocket frames and unstructured text messages now keep a SHA-256 digest, decoded byte size and sniffed format (gzip, zlib, zstd, msgpack/CBOR/protobuf-like, text), so runs can be compared message by message without persisting raw bytes.",
+      "remaining": "Binary and unstructured payload contents are never decoded or stored, so differences are detected but not explained. No general streaming protocol replay.",
       "acceptance": "Replayable local stream scenarios compare message order, shapes and state changes; omissions remain explicit.",
       "evidence": [
-        "test/streams.test.mjs"
+        "test/streams.test.mjs",
+        "test/streams.test.mjs (binary/unstructured digests and comparison)"
       ]
     },
     {

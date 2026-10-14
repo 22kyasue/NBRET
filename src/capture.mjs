@@ -33,13 +33,34 @@ function payload(value, mime = '') {
   return { text: null, omitted: 'non-structured-payload', bytes: Buffer.byteLength(value) };
 }
 
+// Recognizable framing only; content is never decoded or persisted.
+export function sniffFormat(bytes) {
+  const b = bytes, starts = (...m) => m.every((v, i) => b[i] === v);
+  if (!b.length) return 'empty';
+  if (starts(0x1f, 0x8b)) return 'gzip';
+  if (starts(0x28, 0xb5, 0x2f, 0xfd)) return 'zstd';
+  if (b[0] === 0x78 && [0x01, 0x5e, 0x9c, 0xda].includes(b[1])) return 'zlib';
+  if (starts(0x89, 0x50, 0x4e, 0x47)) return 'png';
+  if (starts(0xff, 0xd8, 0xff)) return 'jpeg';
+  if ((b[0] & 0xf0) === 0x80 || b[0] === 0xde || b[0] === 0xdf) return 'msgpack-map-like';
+  if ((b[0] & 0xe0) === 0xa0 || b[0] === 0xbf) return 'cbor-map-like';
+  const text = bytes.toString('utf8');
+  if (!text.includes('\uFFFD') && !/[\x00-\x08\x0e-\x1f]/.test(text)) return /^\s*[[{]/.test(text) ? 'json-like-text' : 'text';
+  const wire = b[0] & 7;
+  if (b[0] >> 3 > 0 && [0, 1, 2, 5].includes(wire)) return 'protobuf-like';
+  return 'unknown-binary';
+}
+
 function streamPayload(data, enabled, inScope, limit, text = true) {
-  const payloadBytes = Buffer.byteLength(data);
+  const bytes = text ? Buffer.from(data) : Buffer.from(data, 'base64'), payloadBytes = bytes.length;
   if (!inScope) return { payloadBytes, payloadOmitted: 'out-of-scope' };
   if (!enabled) return { payloadBytes, payloadOmitted: 'secret-safety' };
-  if (!text) return { payloadBytes, payloadOmitted: 'binary-frame' };
-  if (payloadBytes > limit) return { payloadBytes, payloadOmitted: 'size-limit', truncated: true };
-  return { payloadBytes, payload: payload(data) };
+  // Opted-in binary/unstructured messages keep a digest for comparison; raw bytes may embed credentials.
+  const digest = { payloadHash: hash(bytes), payloadFormat: sniffFormat(bytes) };
+  if (!text) return { payloadBytes, payloadOmitted: 'binary-frame', ...digest };
+  if (payloadBytes > limit) return { payloadBytes, payloadOmitted: 'size-limit', truncated: true, ...digest };
+  const result = payload(data);
+  return result.omitted ? { payloadBytes, payload: result, ...digest } : { payloadBytes, payload: result };
 }
 
 /** Observe a page before navigation. This is browser-visible evidence, not heap recovery. */
@@ -53,7 +74,7 @@ export async function startCapture(page, { outDir, origins = [], maxBodyBytes = 
   const scoped = url => { try { return allowed.has(new URL(url).origin); } catch { return false; } };
   await mkdir(path.join(outDir, 'assets'), { recursive: true });
   const cdp = session || await page.context().newCDPSession(page);
-  const evidence = { schemaVersion: 1, startedAt: new Date().toISOString(), origins: [...allowed], actions: [], requests: [], scripts: [], sockets: [], snapshots: [], errors: [], limitations: ['Browser-visible traffic only; no server code or heap recovery.', 'HTTP cache visibility is CDP metadata; Cache Storage lists names and counts only.', 'Secrets are key-redacted; unstructured/binary stream payloads are omitted; structured stream recording requires opt-in.', 'Scripts without an allowlisted URL are omitted; source persistence requires explicit includeScriptSources opt-in.', 'Only this page CDP target is observed; workers and cross-process frames may be incomplete.'] };
+  const evidence = { schemaVersion: 1, startedAt: new Date().toISOString(), origins: [...allowed], actions: [], requests: [], scripts: [], sockets: [], snapshots: [], errors: [], limitations: ['Browser-visible traffic only; no server code or heap recovery.', 'HTTP cache visibility is CDP metadata; Cache Storage lists names and counts only.', 'Secrets are key-redacted; structured stream recording requires opt-in; opted-in unstructured/binary stream payloads keep only a SHA-256 digest, size and sniffed format.', 'Scripts without an allowlisted URL are omitted; source persistence requires explicit includeScriptSources opt-in.', 'Only this page CDP target is observed; workers and cross-process frames may be incomplete.'] };
   evidence.options = { maxBodyBytes, includeScriptSources, includeStreamPayloads, maxEntries, maxTotalBytes, maxPending };
   evidence.eventSources = [];
   evidence.assetReuse = { hits: 0, misses: 0, linkedBytes: 0, copiedBytes: 0, enabled: !!assetStore };
