@@ -7,11 +7,11 @@
       "priority": 1,
       "status": "verified-local",
       "area": "shared-state extraction",
-      "implemented": "Full profile extracts interacted top-document markup, used CSS and asset inventory from the existing page, without duplicate navigation.",
-      "remaining": "Separate COPY remains available for broader sweeps; same-state extraction covers current viewport/top document only.",
+      "implemented": "Full profile extracts interacted markup, used CSS and asset inventory from the existing page without duplicate navigation, for the top document and up to 20 child frames (same-process frames via frame-attributed CSS, out-of-process frames via their own CDP session), plus a full-page screenshot taken after extraction.",
+      "remaining": "No scroll or hover pass in same-state mode, so lazy content that never loaded is absent; separate COPY remains the broader sweep. Out-of-process frame CSS is tracked from frame commit.",
       "acceptance": "Extract the intended authenticated/interacted state without navigation or duplicate interaction passes.",
       "evidence": [
-        "test/extraction.test.mjs"
+        "test/extraction.test.mjs (same-process, out-of-process and nested frames; full-page screenshot)"
       ]
     },
     {

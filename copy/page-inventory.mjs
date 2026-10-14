@@ -4,6 +4,7 @@ import { PATH_FN } from './_lib.mjs';
 export async function collectPageInventory(page) {
   return await page.evaluate((pathSrc) => {
     const pathOf = eval(pathSrc);
+    const body = document.body || document.documentElement; // framesets and empty frames have no body
     const PROPS = ['display', 'position', 'top', 'left', 'right', 'bottom', 'z-index', 'width', 'height', 'max-width', 'min-height', 'padding', 'margin', 'gap', 'grid-template-columns', 'grid-template-rows', 'flex', 'flex-direction', 'flex-wrap', 'align-items', 'justify-content',
       'font-family', 'font-size', 'font-weight', 'font-style', 'line-height', 'letter-spacing', 'text-transform', 'text-align', 'text-decoration-line', 'white-space', 'writing-mode', 'font-feature-settings',
       'color', 'background-color', 'background-image', 'background-size', 'background-position', 'background-attachment', 'opacity', 'transform', 'transform-origin', 'overflow', 'border', 'border-radius', 'box-shadow', 'mix-blend-mode', 'filter', 'backdrop-filter',
@@ -27,7 +28,7 @@ export async function collectPageInventory(page) {
       rec.s = st; out.push(rec);
       for (const ch of el.children) walk(ch, depth + 1);
     };
-    walk(document.body, 0);
+    walk(body, 0);
     const abs = u => { try { return new URL(u, location.href).href; } catch { return u; } };
     for (const el of document.querySelectorAll('img[srcset], source[srcset], picture source')) for (const c of (el.getAttribute('srcset') || '').split(',')) { const u = c.trim().split(/\s+/)[0]; if (u) bg.add(abs(u)); }
     for (const el of document.querySelectorAll('video, video source, audio source')) for (const a of ['src', 'poster', 'data-src']) { const v = el.getAttribute(a); if (v) bg.add(abs(v)); }
@@ -41,11 +42,11 @@ export async function collectPageInventory(page) {
       lenis: !!(window.lenis || window.Lenis || document.documentElement.classList.contains('lenis')), locomotive: !!document.querySelector('[data-scroll-container]'), smoothScrollbar: !!window.Scrollbar,
       swiper: document.querySelectorAll('.swiper, .swiper-container').length, splide: document.querySelectorAll('.splide').length, slick: document.querySelectorAll('.slick-slider').length,
       lottie: !!(window.lottie || window.bodymovin || document.querySelector('lottie-player, [data-lottie], dotlottie-player')), three: !!window.THREE, pixi: !!window.PIXI, barba: !!window.barba, aos: !!window.AOS, wow: !!window.WOW,
-      jquery: window.jQuery ? window.jQuery.fn.jquery : false, vue: !!(window.__NUXT__ || window.__VUE__ || document.querySelector('[data-v-app], [data-server-rendered]') || [...document.body.attributes].some(a => a.name.startsWith('data-v-'))), nuxt: !!window.__NUXT__, next: !!window.__NEXT_DATA__, react: !!document.querySelector('[data-reactroot], #__next, #root'),
+      jquery: window.jQuery ? window.jQuery.fn.jquery : false, vue: !!(window.__NUXT__ || window.__VUE__ || document.querySelector('[data-v-app], [data-server-rendered]') || [...body.attributes].some(a => a.name.startsWith('data-v-'))), nuxt: !!window.__NUXT__, next: !!window.__NEXT_DATA__, react: !!document.querySelector('[data-reactroot], #__next, #root'),
       shopify: !!window.Shopify, wordpress: !!document.querySelector('link[href*="/wp-content/"], script[src*="/wp-content/"], body[class*="wp-"]'), wix: !!document.querySelector('meta[content*="Wix.com"]'), webflow: !!document.querySelector('html[data-wf-site]'), studio: !!document.querySelector('meta[name="generator"][content*="STUDIO"]'),
       scopedVueAttrs: [...new Set([...document.querySelectorAll('*')].flatMap(e => [...e.attributes].map(a => a.name).filter(n => /^data-v-/.test(n))))].slice(0, 40),
       intersectionObservers: window.__copyIO || [],
-      scrollBehavior: getComputedStyle(document.documentElement).scrollBehavior, bodyOverflow: getComputedStyle(document.body).overflow, htmlOverflow: getComputedStyle(document.documentElement).overflow,
+      scrollBehavior: getComputedStyle(document.documentElement).scrollBehavior, bodyOverflow: getComputedStyle(body).overflow, htmlOverflow: getComputedStyle(document.documentElement).overflow,
     };
     let scrollTriggers = [];
     try { if (STp?.getAll) scrollTriggers = STp.getAll().map(t => ({ trigger: t.trigger ? pathOf(t.trigger) : null, start: t.start, end: t.end, pin: t.pin ? pathOf(t.pin) : false, scrub: t.vars?.scrub ?? false, markers: !!t.vars?.markers, toggleActions: t.vars?.toggleActions, once: !!t.vars?.once, tweenDuration: t.animation?.duration?.(), targets: (t.animation?.targets?.() || []).slice(0, 6).map(x => x?.nodeType === 1 ? pathOf(x) : String(x)) })); } catch {}
@@ -54,7 +55,7 @@ export async function collectPageInventory(page) {
     const iframes = [...document.querySelectorAll('iframe')].map(f => ({ path: pathOf(f), src: f.src }));
     const svgInline = document.querySelectorAll('svg').length;
     const root = getComputedStyle(document.documentElement);
-    return { title: document.title, lang: document.documentElement.lang, scrollHeight: document.documentElement.scrollHeight, bodyBg: getComputedStyle(document.body).backgroundColor, htmlFont: root.fontSize, bodyFont: getComputedStyle(document.body).font, bodyClass: document.body.className, htmlClass: document.documentElement.className,
-      els: out, fonts, anims, vars, libs, scrollTriggers, videos, canvases, iframes, svgInline, assets: [...bg], headHtml: document.head.outerHTML, bodyHtml: document.body.outerHTML };
+    return { title: document.title, lang: document.documentElement.lang, scrollHeight: document.documentElement.scrollHeight, bodyBg: getComputedStyle(body).backgroundColor, htmlFont: root.fontSize, bodyFont: getComputedStyle(body).font, bodyClass: body.className, htmlClass: document.documentElement.className,
+      els: out, fonts, anims, vars, libs, scrollTriggers, videos, canvases, iframes, svgInline, assets: [...bg], headHtml: document.head?.outerHTML || '', bodyHtml: body.outerHTML };
   }, PATH_FN);
 }

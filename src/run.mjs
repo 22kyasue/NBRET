@@ -154,6 +154,8 @@ export async function runCapture({ url, outDir, actions = [], rea = true, copy =
       if (visualCheckpoints === 'final') await observeVisual(page, actionId);
       if (extraction) {
         const t = performance.now();
+        // Requests caused by extraction itself (frame reads, full-page resize) are attributed to their own action.
+        const copyAction = recorder.markAction('copy:extract'); targetRecorder?.markAction('copy:extract', copyAction);
         try { summary.copyState = await extraction.finish({ outDir: join(out, 'copy'), identity: summary.identity, actionId }); summary.copy = 'extracted'; }
         catch { summary.copy = 'failed'; summary.errors.push(safeFailure('copy')); }
         finally { phaseMs.copy = performance.now() - t; }

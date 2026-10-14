@@ -27,7 +27,8 @@ export function assessRun(summary, evidence) {
   add('visual-failed', summary.visual?.status === 'failed' ? 1 : 0, 'Inspect incomplete same-state visual evidence; a partial inventory must not be treated as a complete scenario.');
   add('expectations-failed', summary.assertions?.filter(a => !a.passed).length || 0, 'Inspect scenario expectations and paired evidence; transport capture success does not prove expected behavior.');
   add('unobserved-browser-targets', evidence.targets?.filter(t => !t.observed && ['worker', 'service_worker', 'shared_worker', 'iframe', 'page'].includes(t.type)).length || 0, 'Additional browser targets were discovered but not independently instrumented. Their traffic/scripts may be incomplete.');
-  add('child-frame-dom-gaps', Math.max(0, ...(evidence.snapshots || []).map(s => (s.frameCoverage?.frames || 1) - 1)), 'DOM snapshots inspect the top document only; inspect child frames separately. This does not imply all frame network traffic is missing.');
+  add('child-frame-dom-gaps', Math.max(0, Math.max(0, ...(evidence.snapshots || []).map(s => (s.frameCoverage?.frames || 1) - 1)) - (summary.copyState?.frames?.extracted || 0)), 'DOM snapshots inspect the top document only; use same-state COPY (full profile) to extract child frames. This does not imply all frame network traffic is missing.');
+  add('copy-frames-failed', (summary.copyState?.frames?.discovered || 0) - (summary.copyState?.frames?.extracted || 0), 'Some child frames were detached, unreadable or over the frame budget; see copy/frames.json.');
   add('target-discovery-errors', evidence.targetCoverage?.discoveryErrors || 0, 'Target discovery failed; absence of additional targets is not established.');
   add('artifact-accounting-incomplete', summary.metrics?.artifacts?.truncated || summary.metrics?.artifacts?.status === 'failed' ? 1 : 0, 'Artifact accounting was partial; reported bytes are not a complete run footprint.');
   return {

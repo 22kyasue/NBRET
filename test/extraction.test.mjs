@@ -28,3 +28,35 @@ test('same-state extraction preserves interacted markup, CSS and assets without 
     assert.deepEqual(JSON.parse(await readFile(join(out, 'copy/summary.json'), 'utf8')).identity, summary.identity);
   } finally { server.closeAllConnections(); await new Promise(resolve => server.close(resolve)); }
 });
+
+test('same-state extraction covers same-process and out-of-process child frames and the full page', { timeout: 45000 }, async () => {
+  let port;
+  const server = createServer((req, res) => {
+    res.setHeader('Content-Type', 'text/html');
+    if (req.url === '/inner') { res.end('<style>.inner-mark{color:rgb(1,2,3)}</style><p class="inner-mark">Same origin frame</p>'); return; }
+    if (req.url === '/remote') { res.end('<style>.remote-mark{color:rgb(4,5,6)}</style><p class="remote-mark">Remote frame</p><iframe src="/nested"></iframe>'); return; }
+    if (req.url === '/nested') { res.end('<b>Nested</b>'); return; }
+    res.end(`<style>main{height:3000px}</style><main><iframe name="inner" src="/inner"></iframe><iframe name="remote" src="http://localhost:${port}/remote"></iframe></main><footer>Bottom</footer>`);
+  });
+  await new Promise(resolve => server.listen(0, '127.0.0.1', resolve)); port = server.address().port;
+  await mkdir('runs', { recursive: true });
+  const out = resolve(`runs/same-state-frames-${Date.now()}`);
+  try {
+    const summary = await runCapture({ url: `http://127.0.0.1:${port}/`, origins: [`http://localhost:${port}`], outDir: out, rea: false, copy: true, copyMode: 'same-state', viewport: { width: 800, height: 600 } });
+    assert.equal(summary.copy, 'extracted', JSON.stringify(summary.errors));
+    assert.equal(summary.copyState.fullPage, 'captured');
+    assert.deepEqual({ ...summary.copyState.frames, outOfProcess: undefined }, { discovered: 3, extracted: 3, outOfProcess: undefined, omitted: 0 });
+    const frames = JSON.parse(await readFile(join(out, 'copy/frames.json'), 'utf8'));
+    const inner = frames.find(f => f.name === 'inner'), remote = frames.find(f => f.name === 'remote'), nested = frames.find(f => f.url.endsWith('/nested'));
+    assert.equal(inner.process, 'same-process'); assert.equal(remote.process, 'out-of-process');
+    assert.equal(nested.parent, remote.index);
+    assert.ok(remote.rect[2] > 0);
+    assert.match(await readFile(join(out, `copy/frames/${inner.index}/body.html`), 'utf8'), /Same origin frame/);
+    assert.match(await readFile(join(out, `copy/frames/${inner.index}/used.css`), 'utf8'), /inner-mark/);
+    assert.match(await readFile(join(out, `copy/frames/${remote.index}/body.html`), 'utf8'), /Remote frame/);
+    assert.match(await readFile(join(out, `copy/frames/${remote.index}/used.css`), 'utf8'), /remote-mark/);
+    assert.doesNotMatch(await readFile(join(out, 'copy/used.css'), 'utf8'), /inner-mark|remote-mark/);
+    const png = await readFile(join(out, 'copy/full.png'));
+    assert.ok(png.readUInt32BE(20) > 600, 'full-page screenshot taller than the viewport');
+  } finally { server.closeAllConnections(); await new Promise(resolve => server.close(resolve)); }
+});
