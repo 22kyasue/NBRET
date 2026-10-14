@@ -1,6 +1,8 @@
 import { mkdir, writeFile } from 'node:fs/promises';
 import { createHash } from 'node:crypto';
 import path from 'node:path';
+import { writeCapturedAsset } from './assets.mjs';
+export { payload as sanitizePayload };
 
 const secret = /authorization|cookie|token|password|passwd|secret|api[-_]?key|session|credential/i;
 const hash = value => createHash('sha256').update(value).digest('hex');
@@ -31,8 +33,17 @@ function payload(value, mime = '') {
   return { text: null, omitted: 'non-structured-payload', bytes: Buffer.byteLength(value) };
 }
 
+function streamPayload(data, enabled, inScope, limit, text = true) {
+  const payloadBytes = Buffer.byteLength(data);
+  if (!inScope) return { payloadBytes, payloadOmitted: 'out-of-scope' };
+  if (!enabled) return { payloadBytes, payloadOmitted: 'secret-safety' };
+  if (!text) return { payloadBytes, payloadOmitted: 'binary-frame' };
+  if (payloadBytes > limit) return { payloadBytes, payloadOmitted: 'size-limit', truncated: true };
+  return { payloadBytes, payload: payload(data) };
+}
+
 /** Observe a page before navigation. This is browser-visible evidence, not heap recovery. */
-export async function startCapture(page, { outDir, origins = [], maxBodyBytes = 1048576, includeScriptSources = false, maxEntries = 2000, maxTotalBytes = 20 * 1024 * 1024, maxPending = 20 } = {}) {
+export async function startCapture(page, { outDir, origins = [], maxBodyBytes = 1048576, includeScriptSources = false, maxEntries = 2000, maxTotalBytes = 20 * 1024 * 1024, maxPending = 20, identity, includeStreamPayloads = false, session, instrumentedTargets, assetStore } = {}) {
   if (!outDir) throw new Error('outDir is required');
   if (!origins.length) throw new Error('Explicit origins allowlist is required');
   if (!Number.isSafeInteger(maxBodyBytes) || maxBodyBytes < 1) throw new Error('maxBodyBytes must be a positive integer');
@@ -41,9 +52,14 @@ export async function startCapture(page, { outDir, origins = [], maxBodyBytes = 
   const allowed = new Set(origins.map(o => new URL(o).origin));
   const scoped = url => { try { return allowed.has(new URL(url).origin); } catch { return false; } };
   await mkdir(path.join(outDir, 'assets'), { recursive: true });
-  const cdp = await page.context().newCDPSession(page);
-  const evidence = { schemaVersion: 1, startedAt: new Date().toISOString(), origins: [...allowed], actions: [], requests: [], scripts: [], sockets: [], snapshots: [], errors: [], limitations: ['Browser-visible traffic only; no server code or heap recovery.', 'HTTP cache visibility is CDP metadata; Cache Storage lists names and counts only.', 'Secrets are key-redacted; unstructured bodies and WebSocket payloads are omitted.', 'Scripts without an allowlisted URL are omitted; source persistence requires explicit includeScriptSources opt-in.', 'Only this page CDP target is observed; workers and cross-process frames may be incomplete.'] };
-  evidence.options = { maxBodyBytes, includeScriptSources, maxEntries, maxTotalBytes, maxPending };
+  const cdp = session || await page.context().newCDPSession(page);
+  const evidence = { schemaVersion: 1, startedAt: new Date().toISOString(), origins: [...allowed], actions: [], requests: [], scripts: [], sockets: [], snapshots: [], errors: [], limitations: ['Browser-visible traffic only; no server code or heap recovery.', 'HTTP cache visibility is CDP metadata; Cache Storage lists names and counts only.', 'Secrets are key-redacted; unstructured/binary stream payloads are omitted; structured stream recording requires opt-in.', 'Scripts without an allowlisted URL are omitted; source persistence requires explicit includeScriptSources opt-in.', 'Only this page CDP target is observed; workers and cross-process frames may be incomplete.'] };
+  evidence.options = { maxBodyBytes, includeScriptSources, includeStreamPayloads, maxEntries, maxTotalBytes, maxPending };
+  evidence.eventSources = [];
+  evidence.assetReuse = { hits: 0, misses: 0, linkedBytes: 0, copiedBytes: 0, enabled: !!assetStore };
+  evidence.targets = [];
+  evidence.targetCoverage = { observedTargetId: null, discoveryErrors: 0 };
+  if (identity) evidence.identity = identity;
   evidence.dropped = { entries: 0, pending: 0, bytes: 0, frames: 0, serialization: 0 };
   evidence.savedAssetBytes = 0;
   if (includeScriptSources) evidence.limitations.push('Script source saving explicitly enabled: raw JavaScript may contain embedded secrets and is NOT redacted.');
@@ -60,11 +76,30 @@ export async function startCapture(page, { outDir, origins = [], maxBodyBytes = 
     const bytes = Buffer.byteLength(text);
     if (evidence.savedAssetBytes + bytes > Math.floor(maxTotalBytes / 2)) { evidence.dropped.bytes++; return false; }
     evidence.savedAssetBytes += bytes;
-    await writeFile(path.join(outDir, file), text, 'utf8'); return true;
+    try {
+      const result = await writeCapturedAsset(path.join(outDir, file), text, assetStore);
+      evidence.assetReuse[result.cacheHit ? 'hits' : 'misses']++;
+      evidence.assetReuse[result.linked ? 'linkedBytes' : 'copiedBytes'] += result.bytes;
+    } catch (error) { if (error.code !== 'EEXIST') throw error; }
+    return true;
   };
   const url = value => safeUrl(value, !scoped(value.replace(/^ws/, 'http')));
   const post = request => !request.postData ? undefined : Buffer.byteLength(request.postData) > maxBodyBytes ? { omitted: 'size-limit', truncated: true } : payload(request.postData, request.headers['Content-Type'] || request.headers['content-type']);
   const handlers = [];
+  try { evidence.targetCoverage.observedTargetId = (await cdp.send('Target.getTargetInfo')).targetInfo.targetId; }
+  catch { evidence.targetCoverage.discoveryErrors++; }
+  const discovered = new Set();
+  const discoverTargets = async () => {
+    try {
+      const { targetInfos } = await cdp.send('Target.getTargets');
+      for (const t of targetInfos) {
+        if (discovered.has(t.targetId)) continue;
+        if (discovered.size >= 100 || !admit()) { evidence.dropped.targets = (evidence.dropped.targets || 0) + 1; continue; }
+        discovered.add(t.targetId);
+        evidence.targets.push({ targetId: t.targetId, type: t.type, url: url(t.url), observed: t.targetId === evidence.targetCoverage.observedTargetId || !!instrumentedTargets?.has(t.targetId) });
+      }
+    } catch { evidence.targetCoverage.discoveryErrors++; }
+  };
   const on = (event, fn) => { handlers.push([event, fn]); cdp.on(event, fn); };
   on('Network.requestWillBeSent', e => {
     if (!admit()) { current.delete(e.requestId); return; }
@@ -127,23 +162,35 @@ export async function startCapture(page, { outDir, origins = [], maxBodyBytes = 
   for (const [event, direction] of [['Network.webSocketFrameSent', 'sent'], ['Network.webSocketFrameReceived', 'received']]) on(event, e => {
     const s = sockets.get(e.requestId); if (!s) return;
     if (s.frames.length >= 200 || !admit()) { s.truncated = true; evidence.dropped.frames++; return; }
-    s.frames.push({ direction, timestamp: e.timestamp, ...context(), opcode: e.response.opcode, payloadBytes: Buffer.byteLength(e.response.payloadData), payloadOmitted: 'secret-safety' });
+    s.frames.push({ direction, timestamp: e.timestamp, ...context(), opcode: e.response.opcode,
+      ...streamPayload(e.response.payloadData, includeStreamPayloads, s.inScope, maxBodyBytes, e.response.opcode === 1) });
+  });
+  on('Network.webSocketClosed', e => { const s = sockets.get(e.requestId); if (s) s.closedAt = e.timestamp; });
+  const eventCounts = new Map();
+  on('Network.eventSourceMessageReceived', e => {
+    const count = eventCounts.get(e.requestId) || 0;
+    if (count >= 200 || !admit()) { evidence.dropped.frames++; return; }
+    eventCounts.set(e.requestId, count + 1);
+    const r = current.get(e.requestId);
+    evidence.eventSources.push({ requestId: e.requestId, timestamp: e.timestamp, ...context(),
+      ...streamPayload(e.data, includeStreamPayloads, !!r?.inScope, maxBodyBytes) });
   });
   await cdp.send('Network.enable', { maxTotalBufferSize: Math.min(maxTotalBytes, maxBodyBytes * 5), maxResourceBufferSize: maxBodyBytes });
   await cdp.send('Debugger.enable');
   return {
-    markAction(label) { if (finished) throw new Error('Capture finished'); if (!admit()) return null; action = evidence.actions.length + 1; evidence.actions.push({ id: action, label, observedAt: new Date().toISOString() }); return action; },
+    markAction(label, linkedId) { if (finished) throw new Error('Capture finished'); if (!admit()) return null; action = linkedId ?? evidence.actions.length + 1; evidence.actions.push({ id: action, label, observedAt: new Date().toISOString() }); return action; },
     async snapshot(label) {
       if (finished) throw new Error('Capture finished');
       if (!admit()) return { omitted: 'entry-limit', truncated: true };
       if (!scoped(page.url())) throw new Error('Snapshot URL outside origins allowlist');
+      await discoverTargets();
       const data = await page.evaluate(async () => {
         const nodes = [...document.querySelectorAll('*')].slice(0, 2000).map((el, index) => { const r = el.getBoundingClientRect(), s = getComputedStyle(el); return { index, tag: el.tagName, rect: { x: r.x, y: r.y, width: r.width, height: r.height }, style: { display: s.display, position: s.position, color: s.color, backgroundColor: s.backgroundColor, fontSize: s.fontSize, transform: s.transform, opacity: s.opacity } }; });
         const storage = {}; for (const type of ['localStorage', 'sessionStorage']) { try { storage[type] = { count: window[type].length, valuesOmitted: true }; } catch { storage[type] = { unavailable: true }; } }
         let cacheStorage; try { const names = await caches.keys(); cacheStorage = { count: names.length, namesOmitted: true }; } catch { cacheStorage = { unavailable: true }; }
         return { nodes, nodesTruncated: document.querySelectorAll('*').length > 2000, storage, cacheStorage, viewport: { width: innerWidth, height: innerHeight, scrollX, scrollY } };
       });
-      const snap = { label, url: safeUrl(page.url()), ...context(), ...data }; evidence.snapshots.push(snap); return snap;
+      const snap = { label, url: safeUrl(page.url()), ...context(), ...data, frameCoverage: { frames: page.frames().length, topDocumentOnly: true } }; evidence.snapshots.push(snap); return snap;
     },
     async finish() {
       if (finished) return evidence;
@@ -153,7 +200,7 @@ export async function startCapture(page, { outDir, origins = [], maxBodyBytes = 
       await cdp.detach();
       evidence.finishedAt = new Date().toISOString();
       let serialized = JSON.stringify(evidence, null, 2);
-      const groups = ['snapshots', 'requests', 'scripts', 'sockets', 'actions', 'errors'];
+      const groups = ['snapshots', 'requests', 'scripts', 'sockets', 'eventSources', 'targets', 'actions', 'errors'];
       while (Buffer.byteLength(serialized) + evidence.savedAssetBytes > maxTotalBytes) {
         const group = groups.find(key => evidence[key].length);
         if (!group) throw new Error('Metadata exceeds maxTotalBytes; use a larger budget');

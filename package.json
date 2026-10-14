@@ -8,12 +8,30 @@
     "node": "^22.19.0 || ^24.11.0 || >=26.0.0"
   },
   "scripts": {
+    "benchmark:profiles": "node scripts/benchmark-profiles.mjs",
+    "benchmark:app": "node scripts/benchmark-app.mjs",
+    "contracts": "node src/contracts.mjs",
+    "analyze": "node src/analyze.mjs",
+    "verify:proxy:tls": "node scripts/verify-proxy-tls.mjs",
+    "replay:local": "node src/replay.mjs",
+    "scenarios": "node src/scenarios.mjs",
+    "benchmark": "node scripts/benchmark.mjs",
+    "compare": "node src/compare.mjs",
+    "assess": "node src/assess.mjs",
+    "verify:proxy": "node scripts/verify-proxy.mjs",
+    "investigate": "node src/investigation.mjs",
     "test": "node --test test/*.test.mjs",
     "capture": "node src/cli.mjs",
     "demo": "node scripts/demo.mjs",
     "copy:extract": "node copy/extract.mjs",
     "copy:geo": "node copy/geo.mjs",
-    "copy:scaffold": "node copy/scaffold.mjs"
+    "copy:scaffold": "node copy/scaffold.mjs",
+    "review": "node src/review.mjs",
+    "setup:proxies": "node scripts/setup-proxy-tools.mjs",
+    "verify:proxies": "node scripts/verify-proxy-products.mjs",
+    "verify:proxy:ca": "node scripts/verify-proxy-ca.mjs",
+    "benchmark:public": "node scripts/benchmark-public.mjs",
+    "advise": "node src/advise.mjs"
   },
   "dependencies": {
     "playwright": "1.64.0",

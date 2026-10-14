@@ -28,3 +28,20 @@ test('capture errors never persist fill values, and existing runs are not overwr
     await assert.rejects(runCapture({ url: fixture.url, outDir, rea: false, copy: false }), /EEXIST/);
   } finally { await fixture.close(); }
 });
+
+test('browser launch failures produce a sanitized summary with skipped phases', async () => {
+  await mkdir('runs', { recursive: true });
+  const outDir = resolve(`runs/launch-failure-${Date.now()}`);
+  const source = `import { runCapture } from './src/run.mjs'; const result = await runCapture({ url: 'http://127.0.0.1:1/', outDir: ${JSON.stringify(outDir)}, visual: true }); console.log(JSON.stringify(result));`;
+  const { stdout } = await promisify(execFile)(process.execPath, ['--input-type=module', '-e', source], {
+    env: { ...process.env, NBRET_BROWSER_CHANNEL: 'nonexistent-channel' }, windowsHide: true,
+  });
+  const result = JSON.parse(stdout);
+  assert.equal(result.capture, 'failed');
+  assert.equal(result.errors[0].phase, 'browserLaunch');
+  assert.equal(result.copy, 'skipped');
+  assert.equal(result.rea, 'skipped');
+  assert.equal(result.visual.status, 'skipped');
+  assert.ok(result.metrics.phaseMs.browserLaunch >= 0);
+  assert.equal(JSON.parse(await readFile(`${outDir}/summary.json`, 'utf8')).capture, 'failed');
+});

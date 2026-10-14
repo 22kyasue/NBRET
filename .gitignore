@@ -2,5 +2,8 @@ node_modules/
 .npm-cache/
 .browser-cache/
 runs/
+sessions/
+.asset-cache/
 .env*
 *.log
+__pycache__/

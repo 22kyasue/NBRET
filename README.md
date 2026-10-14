@@ -1,5 +1,15 @@
 # NBRET
 
+Development strategy: [dual-track roadmap, gaps and tool efficiency](docs/roadmap.md). Assess an existing run offline with `npm run assess -- --run runs/<capture>`.
+
+Start with [the executable workflow](docs/workflow.md): capture profiles, scenario batches with assertions, cached offline analysis, local experiments and reference/rebuild comparisons. `npm run benchmark` verifies detection of an intentionally broken local rebuild.
+
+See [validation and observed tool costs](docs/verification-api-investigation.md) and the [remaining gap register](docs/gaps.json).
+
+Add `--visual --scenario scenario-name` to capture same-state visual evidence. Compare recorded behavior and DOM offline with `npm run compare -- --before runs/reference --after runs/rebuild`. See the roadmap for scope and limitations.
+
+API investigation branch: see [proxy setup and offline Postman/endpoint exports](docs/api-investigation.md).
+
 **Network Based Reverse Engineering Tool**
 
 Webサイトの「入力 → 通信 → 応答 → 表示」と、実行されたJavaScriptの証拠をまとめるローカルツールです。既存 `/copy` の画面・CSS抽出に、送受信の対応付けと公式REA CLIの観察を統合しました。LLM APIは呼びません。証拠を使った分析・再実装をAIに依頼する場合は、そのAIの利用料が別に発生します。
