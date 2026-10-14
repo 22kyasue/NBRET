@@ -3,6 +3,34 @@ import { resolve, join } from 'node:path';
 import { parseArgs } from 'node:util';
 import { pathToFileURL } from 'node:url';
 import { readEvidence } from './evidence.mjs';
+import { X509Certificate } from 'node:crypto';
+import { isIP } from 'node:net';
+
+// Chrome's SPKI allow-list flag only matches leaf keys, so a proxy CA cannot be trusted per process. Instead the
+// browser accepts certificates and every HTTPS origin's served chain is audited against the expected CA afterwards.
+export async function loadTrustedCa(file) {
+  const cert = new X509Certificate(await readFile(file));
+  if (!cert.ca) throw new Error('trustCa must be a CA certificate');
+  return { cert, record: { subject: cert.subject.replace(/\n/g, ', '), sha256: cert.fingerprint256, mode: 'post-hoc chain audit', scope: 'Certificate errors are accepted during capture; each HTTPS origin chain is then verified against this CA. No OS trust store change.' } };
+}
+
+export function auditChain(derChain, host, ca, now = new Date(), browser) {
+  const certs = derChain.map(b64 => new X509Certificate(Buffer.from(b64, 'base64')));
+  if (!certs.length) return { verified: false, reason: 'no-certificate' };
+  const valid = c => new Date(c.validFrom) <= now && now <= new Date(c.validTo);
+  for (let i = 0; i + 1 < certs.length; i++) if (!certs[i].checkIssued(certs[i + 1]) || !certs[i].verify(certs[i + 1].publicKey)) return { verified: false, reason: 'broken-chain' };
+  const last = certs.at(-1), anchored = last.fingerprint256 === ca.fingerprint256 || (last.checkIssued(ca) && last.verify(ca.publicKey));
+  if (!anchored) return { verified: false, reason: 'not-issued-by-trusted-ca', issuer: certs[0].issuer.replace(/\n/g, ', ') };
+  if (!certs.every(valid)) return { verified: false, reason: 'expired-or-not-yet-valid' };
+  if (!(isIP(host) ? certs[0].checkIP(host) : certs[0].checkHost(host))) return { verified: false, reason: 'host-mismatch' };
+  // Tie the separately fetched chain to the browser's own connection using the details Chrome reported for it.
+  if (browser) {
+    const cn = name => /(?:^|\n)CN=([^\n]*)/.exec(name)?.[1];
+    const same = browser.subjectName === cn(certs[0].subject) && browser.issuer === cn(certs[0].issuer) && Math.abs(browser.validTo * 1000 - new Date(certs[0].validTo)) < 1000;
+    if (!same) return { verified: false, reason: 'browser-certificate-differs' };
+  }
+  return { verified: true, browserMatched: !!browser };
+}
 
 // Keep credentials out of CLI arguments, reports, and saved proxy configuration.
 export function proxyOptions(server, ignoreHTTPSErrors = false) {

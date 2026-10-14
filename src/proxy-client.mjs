@@ -1,6 +1,7 @@
 import http from 'node:http';
 import https from 'node:https';
 import tls from 'node:tls';
+import net from 'node:net';
 import { proxyOptions } from './investigation.mjs';
 
 // Strict, process-scoped CA trust for local proxy diagnostics. No OS trust writes.
@@ -33,5 +34,28 @@ export async function localProxyGet({ proxy, url, ca }) {
       });
     });
     tunnel.end();
+  });
+}
+
+// TLS handshake only (no HTTP request): the chain an origin serves, directly or through the capture proxy.
+export async function fetchServedChain(origin, proxy) {
+  const target = new URL(origin), host = target.hostname.replace(/[\[\]]/g, ''), port = Number(target.port || 443);
+  const raw = await new Promise((resolve, reject) => {
+    if (!proxy) { resolve(null); return; }
+    const p = new URL(proxyOptions(proxy).proxy.server);
+    if (p.protocol !== 'http:') { reject(new Error('Chain audit supports HTTP proxies only')); return; }
+    const tunnel = http.request({ hostname: p.hostname.replace(/[\[\]]/g, ''), port: p.port || 80, method: 'CONNECT', path: `${host}:${port}`, timeout: 10000 });
+    tunnel.on('error', reject); tunnel.on('timeout', () => tunnel.destroy(new Error('CONNECT timeout')));
+    tunnel.on('connect', (response, socket) => response.statusCode === 200 ? resolve(socket) : (socket.destroy(), reject(new Error('CONNECT rejected'))));
+    tunnel.end();
+  });
+  return new Promise((resolve, reject) => {
+    const secure = tls.connect({ ...(raw ? { socket: raw } : { host, port }), servername: net.isIP(host) ? undefined : host, rejectUnauthorized: false, timeout: 10000 });
+    secure.on('error', reject); secure.on('timeout', () => secure.destroy(new Error('TLS timeout')));
+    secure.once('secureConnect', () => {
+      const chain = [], seen = new Set();
+      for (let c = secure.getPeerCertificate(true); c?.raw && !seen.has(c.fingerprint256); c = c.issuerCertificate) { seen.add(c.fingerprint256); chain.push(c.raw.toString('base64')); }
+      secure.destroy(); resolve(chain);
+    });
   });
 }

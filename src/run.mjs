@@ -9,7 +9,8 @@ import { performance } from 'node:perf_hooks';
 import { randomUUID } from 'node:crypto';
 import { startCapture } from './capture.mjs';
 import { inspectWithRea } from './rea.mjs';
-import { proxyOptions } from './investigation.mjs';
+import { proxyOptions, loadTrustedCa, auditChain } from './investigation.mjs';
+import { fetchServedChain } from './proxy-client.mjs';
 import { captureVisualState } from './visual.mjs';
 import { localResponses, installLocalResponses } from './responses.mjs';
 import { validateExpectations, checkExpectations } from './expectations.mjs';
@@ -39,7 +40,20 @@ export function captureOrigins(url, extra = []) {
   })])];
 }
 
-export async function runCapture({ url, outDir, actions = [], rea = true, copy = true, includeScriptSources = false, proxy, proxyInsecure = false, origins = [], scenarioId = 'default', visual = false, responses = [], visualCheckpoints = 'all', includeStreamPayloads = false, expectations = [], retainProfile = true, copyMode = 'separate', sessionIn, sessionOut, captureTargets = false, motion, viewport = { width: 1440, height: 900 }, reducedMotion = 'no-preference', assetStore }) {
+async function auditOrigins(evidence, ca, proxy) {
+  const browserCerts = new Map();
+  for (const r of evidence.requests || []) {
+    try { const u = new URL(r.request.url); if (u.protocol === 'https:' && !browserCerts.has(u.origin)) browserCerts.set(u.origin, r.response?.security || null); } catch {}
+  }
+  const results = [];
+  for (const [origin, browser] of [...browserCerts].slice(0, 50)) {
+    try { results.push({ origin, ...auditChain(await fetchServedChain(origin, proxy), new URL(origin).hostname.replace(/[\[\]]/g, ''), ca, new Date(), browser || undefined) }); }
+    catch { results.push({ origin, verified: false, reason: 'chain-unavailable' }); }
+  }
+  return { origins: results, failed: results.filter(r => !r.verified).length, limitations: ['Post-hoc audit: requests were already sent before their chain was checked, so this detects a wrong CA but does not prevent the traffic.', "Each origin's chain is fetched by a separate TLS handshake through the same proxy and matched to the browser's reported certificate (subject, issuer, expiry), not read from the browser connection itself.", 'Up to 50 HTTPS origins.'] };
+}
+
+export async function runCapture({ url, outDir, actions = [], rea = true, copy = true, includeScriptSources = false, proxy, proxyInsecure = false, origins = [], scenarioId = 'default', visual = false, responses = [], visualCheckpoints = 'all', includeStreamPayloads = false, expectations = [], retainProfile = true, copyMode = 'separate', sessionIn, sessionOut, captureTargets = false, motion, viewport = { width: 1440, height: 900 }, reducedMotion = 'no-preference', assetStore, trustCa }) {
   const started = performance.now();
   const startedAt = new Date().toISOString();
   const phaseMs = {};
@@ -57,7 +71,9 @@ export async function runCapture({ url, outDir, actions = [], rea = true, copy =
   const overrides = localResponses(url, responses);
   if (overrides.length && (rea || copy || proxy)) throw new Error('Local response experiments require REA/COPY disabled and no proxy to avoid mixing altered and direct observations');
   if (typeof scenarioId !== 'string' || !/^[a-zA-Z0-9][a-zA-Z0-9._-]{0,79}$/.test(scenarioId)) throw new Error('scenarioId must be a non-sensitive identifier of 1..80 letters, digits, dots, underscores or hyphens');
-  const connection = proxyOptions(proxy, proxyInsecure);
+  if (trustCa && proxyInsecure) throw new Error('trustCa and proxyInsecure are mutually exclusive: choose audited CA trust or no verification');
+  const trusted = trustCa ? await loadTrustedCa(trustCa) : null;
+  const connection = trusted ? { ...proxyOptions(proxy), ignoreHTTPSErrors: true } : proxyOptions(proxy, proxyInsecure);
   const target = new URL(url);
   if (!['http:', 'https:'].includes(target.protocol)) throw new Error('HTTP(S) URL required');
   if (!Array.isArray(actions) || actions.length > 100) throw new Error('actions must be an array of at most 100 steps');
@@ -78,7 +94,7 @@ export async function runCapture({ url, outDir, actions = [], rea = true, copy =
   const channel = process.env.NBRET_BROWSER_CHANNEL || (existsSync(chromium.executablePath()) ? undefined : 'chrome');
   const summary = { schemaVersion: 1, name: 'Network Based Reverse Engineering Tool', startedAt,
     targetOrigin: target.origin, capture: 'pending', rea: rea ? 'pending' : 'disabled', copy: copy ? 'pending' : 'disabled', errors: [] };
-  summary.connection = { proxy: connection.proxy?.server || null, ignoreHTTPSErrors: !!connection.ignoreHTTPSErrors, scope: copyMode === 'same-state' ? 'Network, REA and same-state COPY share the capture connection.' : 'Network and REA capture; separate COPY uses its own direct connection.' };
+  summary.connection = { proxy: connection.proxy?.server || null, ignoreHTTPSErrors: !!connection.ignoreHTTPSErrors && !trusted, trustedCa: trusted?.record || null, scope: copyMode === 'same-state' ? 'Network, REA and same-state COPY share the capture connection.' : 'Network and REA capture; separate COPY uses its own direct connection.' };
   summary.identity = { runId: randomUUID(), scenarioId, state: 'fresh-profile', allowedOrigins };
   if (imported) { summary.identity.state = 'isolated-profile-with-imported-session'; summary.sessionImport = { sha256: imported.sha256, cookies: imported.state.cookies.length, origins: imported.state.origins.length }; }
   summary.runtime = { node: process.version, browser: null, channel: channel || 'bundled-chromium', tools: await toolVersions() };
@@ -188,6 +204,10 @@ export async function runCapture({ url, outDir, actions = [], rea = true, copy =
     if (networkStarted !== undefined) phaseMs.networkSession = performance.now() - networkStarted;
     if (targetRecorder && !summary.targetCapture) { try { summary.targetCapture = await targetRecorder.finish(); } catch { summary.errors.push(safeFailure('targets')); } }
     if (summary.targetCapture?.errors.length) summary.errors.push(safeFailure('targets'));
+    if (ctx && trusted && evidence) {
+      try { summary.connection.tlsAudit = await auditOrigins(evidence, trusted.cert, connection.proxy?.server); if (summary.connection.tlsAudit.failed) summary.errors.push(safeFailure('tlsAudit')); }
+      catch { summary.errors.push(safeFailure('tlsAudit')); }
+    }
     if (ctx) {
       if (sessionOut) {
         try { summary.sessionExport = await saveSession(ctx, sessionOut, allowedOrigins); }

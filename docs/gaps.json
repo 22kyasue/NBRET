@@ -19,8 +19,8 @@
       "priority": 1,
       "status": "verified-local",
       "area": "Burp adapter",
-      "implemented": "Burp startup/MCP verified after Java harness fix. NBRET HTTP and HTTPS fixture responses independently matched in Burp history; changed-input local MCP request7+3 returned10. Strict process-scoped CA trust verified against Burp: missing CA rejects, supplied CA verifies hostname/chain and result25.",
-      "remaining": "Chromium normal trust verified once through a temporary Windows Current User root (2026-10-14, Kotaro-approved, both Windows prompts confirmed by Kotaro); the certificate was removed and absence re-checked in Current User and Local Machine Root. Repeat runs need fresh approval.",
+      "implemented": "Burp startup/MCP verified after Java harness fix. NBRET HTTP and HTTPS fixture responses independently matched in Burp history; changed-input local MCP request7+3 returned10. Strict process-scoped CA trust verified against Burp: missing CA rejects, supplied CA verifies hostname/chain and result25. Prompt-free alternative: --trust-ca audits every HTTPS origin chain against the proxy CA (separate handshake through the same proxy, cross-checked with the browser-reported certificate). Verified live through Burp: PortSwigger CA verified and matched, result25; mitmproxy CA through Burp was flagged not-issued-by-trusted-ca. Chrome's SPKI allow-list flag was tested and only matches leaf keys, so it cannot scope trust to a proxy CA.",
+      "remaining": "The audit is post-hoc (detects, does not prevent) and HTTP proxies only. Windows Current User trust remains the only verified in-browser enforcement and needs per-run human approval.",
       "acceptance": "Match a local request and response across NBRET and Burp history; preserve receipt without changing saved settings.",
       "evidence": [
         "runs/proxy-check-1791960888320/burp-history.json",
@@ -28,7 +28,9 @@
         "runs/proxy-tls-1791960952320/burp-history.json",
         "runs/proxy-ca-1791965439989/receipt.json",
         "runs/browser-ca-1792001170618/receipt.json",
-        "test/proxy-client.test.mjs"
+        "test/proxy-client.test.mjs",
+        "runs/proxy-audit-1792002996241/receipt.json",
+        "test/trust-ca.test.mjs"
       ]
     },
     {

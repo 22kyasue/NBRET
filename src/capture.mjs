@@ -134,7 +134,8 @@ export async function startCapture(page, { outDir, origins = [], maxBodyBytes = 
   on('Network.responseReceived', e => {
     const r = current.get(e.requestId); if (!r) return;
     const v = e.response;
-    r.response = { url: url(v.url), status: v.status, mimeType: v.mimeType, protocol: v.protocol, headers: r.inScope ? clean(v.headers) : '[OUT_OF_SCOPE]', fromDiskCache: !!v.fromDiskCache, fromPrefetchCache: !!v.fromPrefetchCache, fromServiceWorker: !!v.fromServiceWorker, timing: v.timing, timestamp: e.timestamp };
+    r.response = { url: url(v.url), status: v.status, mimeType: v.mimeType, protocol: v.protocol, headers: r.inScope ? clean(v.headers) : '[OUT_OF_SCOPE]', fromDiskCache: !!v.fromDiskCache, fromPrefetchCache: !!v.fromPrefetchCache, fromServiceWorker: !!v.fromServiceWorker, timing: v.timing, timestamp: e.timestamp,
+      ...(v.securityDetails ? { security: { protocol: v.securityDetails.protocol, subjectName: v.securityDetails.subjectName, issuer: v.securityDetails.issuer, validFrom: v.securityDetails.validFrom, validTo: v.securityDetails.validTo } } : {}) };
   });
   on('Network.requestServedFromCache', e => { const r = current.get(e.requestId); if (r) r.servedFromCache = true; });
   on('Network.loadingFailed', e => { const r = current.get(e.requestId); if (r) r.failure = { errorText: e.errorText, canceled: e.canceled, blockedReason: e.blockedReason, timestamp: e.timestamp }; });

@@ -31,7 +31,8 @@
     "verify:proxies": "node scripts/verify-proxy-products.mjs",
     "verify:proxy:ca": "node scripts/verify-proxy-ca.mjs",
     "benchmark:public": "node scripts/benchmark-public.mjs",
-    "advise": "node src/advise.mjs"
+    "advise": "node src/advise.mjs",
+    "verify:proxy:audit": "node scripts/verify-proxy-audit.mjs"
   },
   "dependencies": {
     "playwright": "1.64.0",
