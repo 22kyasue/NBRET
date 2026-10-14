@@ -56,7 +56,31 @@ test('same-state extraction covers same-process and out-of-process child frames 
     assert.match(await readFile(join(out, `copy/frames/${remote.index}/body.html`), 'utf8'), /Remote frame/);
     assert.match(await readFile(join(out, `copy/frames/${remote.index}/used.css`), 'utf8'), /remote-mark/);
     assert.doesNotMatch(await readFile(join(out, 'copy/used.css'), 'utf8'), /inner-mark|remote-mark/);
+    assert.equal(summary.copyState.canvases.found, 0);
     const png = await readFile(join(out, 'copy/full.png'));
     assert.ok(png.readUInt32BE(20) > 600, 'full-page screenshot taller than the viewport');
+  } finally { server.closeAllConnections(); await new Promise(resolve => server.close(resolve)); }
+});
+
+test('same-state extraction captures canvas pixels, drawing context and animation', { timeout: 30000 }, async () => {
+  const server = createServer((req, res) => {
+    res.setHeader('Content-Type', 'text/html');
+    res.end(`<canvas id="still" width="40" height="40"></canvas><canvas id="moving" width="40" height="40"></canvas><canvas id="hidden" style="display:none"></canvas><script>
+      const s=document.querySelector('#still').getContext('2d');s.fillStyle='red';s.fillRect(0,0,40,40);
+      const m=document.querySelector('#moving').getContext('2d');let x=0;setInterval(()=>{m.clearRect(0,0,40,40);m.fillRect(x=(x+7)%40,0,5,40)},30);
+    </script>`);
+  });
+  await new Promise(resolve => server.listen(0, '127.0.0.1', resolve));
+  await mkdir('runs', { recursive: true });
+  const out = resolve(`runs/same-state-canvas-${Date.now()}`);
+  try {
+    const summary = await runCapture({ url: `http://127.0.0.1:${server.address().port}/`, outDir: out, rea: false, copy: true, copyMode: 'same-state' });
+    assert.equal(summary.copy, 'extracted', JSON.stringify(summary.errors));
+    assert.deepEqual(summary.copyState.canvases, { found: 3, captured: 2, animated: 1, omitted: 0 });
+    const canvases = JSON.parse(await readFile(join(out, 'copy/canvases.json'), 'utf8'));
+    const still = canvases.find(c => c.path?.includes('still')), moving = canvases.find(c => c.path?.includes('moving'));
+    assert.deepEqual(still.contexts, ['2d']); assert.equal(still.animated, false); assert.equal(moving.animated, true);
+    assert.equal(canvases.find(c => c.path?.includes('hidden')).status, 'not-rendered');
+    assert.ok((await readFile(join(out, 'copy', still.file))).length > 0);
   } finally { server.closeAllConnections(); await new Promise(resolve => server.close(resolve)); }
 });

@@ -74,11 +74,12 @@
       "priority": 2,
       "status": "verified-local",
       "area": "motion and responsive behavior",
-      "implemented": "Bounded motion trajectories detect timing/path defects; mobile viewport and reduced-motion fixtures verified.",
-      "remaining": "Deterministic seeking is loopback-only; canvas and arbitrary JS animation recovery remain unsupported.",
+      "implemented": "Bounded motion trajectories detect timing/path defects; mobile viewport and reduced-motion fixtures verified. Same-state COPY now saves each rendered top-document canvas as an image with its drawing context (2d/webgl) and an animated/static signal from two samples.",
+      "remaining": "Deterministic seeking is loopback-only. Canvas is captured as pixels only: drawing code, scene graphs, shaders and arbitrary JS animation timelines are not recovered.",
       "acceptance": "Controlled animation fixture detects timing/path defects at matched viewports with reduced-motion coverage.",
       "evidence": [
-        "test/motion.test.mjs"
+        "test/motion.test.mjs",
+        "test/extraction.test.mjs (canvas pixels, context and animation)"
       ]
     },
     {
