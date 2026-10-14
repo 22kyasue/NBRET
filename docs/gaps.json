@@ -132,11 +132,12 @@
       "priority": 1,
       "status": "verified-local",
       "area": "data handling",
-      "implemented": "Artifact review inventory classifies sensitive/raw/structured data with hashes and exports no captured contents by default.",
-      "remaining": "No universal secret detection; even manifest paths and structured records require review before sharing.",
+      "implemented": "Artifact review inventory classifies sensitive/raw/structured data with hashes and exports no captured contents by default. Review now also scans text artifacts for high-confidence credential shapes (private keys, JWTs, AWS/GitHub/Slack/Stripe/Google/LLM keys, bearer tokens, URL credentials, credential assignments) and reports kind, file and line only, never the value. Zero findings across 3,253 existing local and public-site artifacts.",
+      "remaining": "Pattern scanning is not clearance: unknown credential formats, personal data and private URLs still need human review. Profile and session files are treated as sensitive as a whole and not scanned.",
       "acceptance": "Explicit artifact classes and export review support preserve provenance while reducing accidental secret sharing.",
       "evidence": [
-        "test/review.test.mjs"
+        "test/review.test.mjs",
+        "test/review.test.mjs (secret findings without values)"
       ]
     }
   ]
