@@ -1,6 +1,6 @@
 # AI agent runtimes and SDKs: permissions, sandboxing, budgets, memory
 
-Generated from `register/*.json` by `build-register.mjs`; do not edit by hand. 27 findings, 46 related corrections, 10 hazards.
+Generated from `register/*.json` by `build-register.mjs`; do not edit by hand. 29 findings, 46 related corrections, 10 hazards.
 
 Evidence strength, strongest first: integrated-lab (real tool run) > component-lab (fixture/mock run) > source-trace (code read) > public-doc > vendor-claim > synthesis. Read the cited lines before repeating a claim to a client.
 
@@ -32,6 +32,7 @@ Evidence strength, strongest first: integrated-lab (real tool run) > component-l
 | [Reference Postgres/Redis/S3 session stores lack principal binding, UUID dedup and TTL](#agent-runtimereference-stores-no-principal-or-dedup) | component-lab | operations, evidence |
 | [Agent session store keys derive from a path sanitizer; two different dirs collided](#agent-runtimesession-key-not-tenant-identity) | component-lab | operations, evidence, authorization |
 | [ARTEX CLI bridge restrictions do not govern ARTEX engine tools](#agent-runtimeartex-cli-bridge-not-engine-permission-boundary) | source-trace | authorization, operations, ai-evaluation |
+| [Autoresearch 300 seconds counts selected training steps, not total process time](#agent-runtimeautoresearch-time-budget-not-hard-run-deadline) | source-trace | operations, ai-evaluation |
 | [SDK resume copies auth config minus refresh token; cleanup ignores removal errors](#agent-runtimecredential-copy-cleanup-not-deletion) | source-trace | operations, evidence |
 | [Injection detector runs after the tool acted; the tool filter is a substring match](#agent-runtimeinjection-defenses-not-enforcement) | source-trace | authorization, operations, ai-evaluation |
 | [MCP HTTP returns 202 before handler delivery and can send an error after HTTP 200](#agent-runtimemcp-ack-before-outcome) | source-trace | evidence, operations |
@@ -45,6 +46,7 @@ Evidence strength, strongest first: integrated-lab (real tool run) > component-l
 | [Codex and Claude SDK transports pass the parent's whole environment to the agent CLI](#agent-runtimesubprocess-inherits-full-environment) | source-trace | operations, authorization, evidence |
 | [MCP tool annotations are hints and aggregated tool catalogs read only one page](#agent-runtimetool-hints-and-catalogs-not-authority) | source-trace | scoping, ai-evaluation, evidence |
 | [Vendor agent runs continue after client timeout or AI disable; timeout is not cancellation](#agent-runtimeagent-runs-outlive-timeouts-and-disable) | public-doc | operations, ai-evaluation |
+| [Cloudflare security-audit-skill needs source access; URL-only testing is a different arm](#agent-runtimecloudflare-audit-source-first-not-url-only) | public-doc | scoping, discovery, ai-evaluation |
 | [Codex resumed thread history is documented as lossy; command executions are not persisted](#agent-runtimecodex-resume-history-lossy) | public-doc | evidence, reporting |
 | ['Triage' AI agents still change state: close alerts, write preferences, run SOAR actions](#agent-runtimetriage-agents-mutate-state) | public-doc | operations, authorization, ai-evaluation |
 | [The bots/swarms research covers queues, crawlers, limiters, WAF, gossip; not LLM agents](#agent-runtimebots-slice-scope) | synthesis | operations, ai-evaluation |
@@ -204,6 +206,18 @@ ARTEX's worker selects SDK bypass permission mode while attaching its own option
 **Limits:** Pinned source reading only; active rules, SDK behavior and runtime enforcement untested. No escape or compromise observed.
 
 **Sources:** [security-landscape/art-external-platforms-20261020.md:39](../../security-landscape/art-external-platforms-20261020.md#L39)
+
+### agent-runtimeautoresearch-time-budget-not-hard-run-deadline
+
+**`agent-runtime.autoresearch-time-budget-not-hard-run-deadline`: Autoresearch 300 seconds counts selected training steps, not total process time** (source-trace)
+
+The training time accumulator excludes steps indexed 0 through 10, checks after complete later steps, and leaves startup/evaluation outside that accumulator. The prompt asks an external agent to kill excessive runs; it supplies no external watchdog.
+
+**Do:** Use an enforced external per-run/resource budget and verify actual termination when adapting the loop; do not promise five-minute whole security experiments from this example.
+
+**Limits:** Source reading only; actual runtime, overhead and timeout enforcement unmeasured.
+
+**Sources:** [security-landscape/repository-reviews-20261021/autoresearch-review-ginger.md:63](../../security-landscape/repository-reviews-20261021/autoresearch-review-ginger.md#L63)
 
 ### agent-runtimecredential-copy-cleanup-not-deletion
 
@@ -371,6 +385,18 @@ CrowdStrike AgentWorks invocation polls 45 seconds by default; on timeout or wai
 **Limits:** Manual and source-reading observations; no invocation or retry was executed.
 
 **Sources:** [cybersecurity-firms/charlotte-agentworks-contract.md:7](../../cybersecurity-firms/charlotte-agentworks-contract.md#L7), [cybersecurity-firms/splunk-guided-response.md:9](../../cybersecurity-firms/splunk-guided-response.md#L9), [cybersecurity-firms/google-natural-language-search-source.md:18](../../cybersecurity-firms/google-natural-language-search-source.md#L18)
+
+### agent-runtimecloudflare-audit-source-first-not-url-only
+
+**`agent-runtime.cloudflare-audit-source-first-not-url-only`: Cloudflare security-audit-skill needs source access; URL-only testing is a different arm** (public-doc)
+
+The skill requires a local source repository and source path/line evidence, and prohibits deployed/external/shared-service probing in its prescribed workflow. It supplies a source-audit method rather than URL-only signup/browser investigation.
+
+**Do:** Adapt the boundary/critique/evidence ideas or evaluate a separate source-access arm; do not compare source-informed and URL-only agents as equivalent access.
+
+**Limits:** Pinned instructions and schema/source review only. No audit, skill application or runtime behavior executed.
+
+**Sources:** [security-landscape/repository-reviews-20261021/cloudflare-review-thistle.md:35](../../security-landscape/repository-reviews-20261021/cloudflare-review-thistle.md#L35)
 
 ### agent-runtimecodex-resume-history-lossy
 

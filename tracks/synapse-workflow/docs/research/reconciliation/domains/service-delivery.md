@@ -1,6 +1,6 @@
 # Service delivery: scoping, engagement process, deliverables, retest
 
-Generated from `register/*.json` by `build-register.mjs`; do not edit by hand. 23 findings, 14 related corrections, 4 hazards.
+Generated from `register/*.json` by `build-register.mjs`; do not edit by hand. 24 findings, 14 related corrections, 4 hazards.
 
 Evidence strength, strongest first: integrated-lab (real tool run) > component-lab (fixture/mock run) > source-trace (code read) > public-doc > vendor-claim > synthesis. Read the cited lines before repeating a claim to a client.
 
@@ -17,6 +17,7 @@ Evidence strength, strongest first: integrated-lab (real tool run) > component-l
 | --- | --- | --- |
 | [A direct-path fix blocked unapproved payment but still allowed payment after edit](#service-deliveryinstance-vs-class-repair) | component-lab | remediation, retest, testing |
 | [The attack-path prerequisite graph models possibility only, not demonstrated paths](#service-deliveryprerequisite-graph-is-possibility-only) | component-lab | testing, reporting |
+| [Awesome-Hacking is a resource catalog, not an assessment engine](#service-deliveryawesome-hacking-is-reference-catalog) | source-trace | discovery, scoping |
 | [Metasploit 'Appears', 'completed' and 'session' do not prove impact or cleanup](#testingexploit-framework-status-semantics) | source-trace | testing, evidence, operations |
 | [Real report: 2 consultants, 3.5 engineer-weeks, pinned commit, named exclusions](#commercialtrail-of-bits-engagement-artifact) | public-doc | scoping, reporting, commercial |
 | ["24/365" often covers machines only; human hunting and answers are business-hours](#service-deliveryhuman-coverage-hours-not-24x7) | public-doc | scoping, commercial, operations |
@@ -69,6 +70,18 @@ The lab's monotone AND-prerequisite graph makes mail-read reachable from session
 **Sources:** [assessment-evidence/executable-claims.md:23](../../assessment-evidence/executable-claims.md#L23)
 
 **Receipts:** `assessment-evidence/lab-receipt-20261017.json`
+
+### service-deliveryawesome-hacking-is-reference-catalog
+
+**`service-delivery.awesome-hacking-is-reference-catalog`: Awesome-Hacking is a resource catalog, not an assessment engine** (source-trace)
+
+The five-file pinned repository contains a README resource catalog with 81 linked entries, contribution/license/banner files and discussion-maintenance automation. Its linked implementations are separate unreviewed scopes.
+
+**Do:** Use it as provenance-preserving candidate intake; separately review/admit selected methods and never treat catalog inclusion as installed or proven capability.
+
+**Limits:** All four tracked text files read; image inventoried. No child implementation or runtime behavior was audited.
+
+**Sources:** [security-landscape/repository-reviews-20261021/awesome-review-cass.md:7](../../security-landscape/repository-reviews-20261021/awesome-review-cass.md#L7)
 
 ### testingexploit-framework-status-semantics
 

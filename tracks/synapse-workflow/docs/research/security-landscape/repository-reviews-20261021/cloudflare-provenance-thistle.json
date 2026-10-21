@@ -1,0 +1,191 @@
+{
+  "reviewer": "Thistle",
+  "capturedAt": "2026-10-21T07:32:13.367Z",
+  "repository": "https://github.com/cloudflare/security-audit-skill",
+  "origin": "https://github.com/cloudflare/security-audit-skill",
+  "head": "c1c8a8c1471069fb0e188eeaff69b8e8db6564a8",
+  "commit": "c1c8a8c1471069fb0e188eeaff69b8e8db6564a8\n2026-09-14T20:28:54+01:00\n2026-09-14T20:28:54+01:00\nClarify guidance and full audit modes",
+  "localRoot": "C:\\Users\\kotar\\githubprojects\\NBRET\\.tools\\repository-reviews\\2026-10-21\\security-audit-skill",
+  "branchAtReview": "kotaro/synapse-consolidation",
+  "sourceWorktreeStatus": "",
+  "license": "MIT; Copyright (c) 2025-2026 Cloudflare, Inc.",
+  "execution": "No upstream code, validators, tests, skills, installation, scanner or target activity executed. Git acquisition and trusted local source/provenance inspection only.",
+  "files": [
+    {
+      "path": "LICENSE",
+      "bytes": 1099,
+      "sha256": "c007a58f958f8a5b2870aa35d8a17aa72a546447aecee6d2b72e19fea530890b",
+      "gitBlob": "6dbc9ecb3a5b9080e95b962869e8c7ab16cfdc20",
+      "lines": 21,
+      "read": "complete source text; test assertions inspected, not executed"
+    },
+    {
+      "path": "README.md",
+      "bytes": 7056,
+      "sha256": "25586896da0157b4fdd5a42a09dc6d00b1fbc05a253d4655f97cec9676c61009",
+      "gitBlob": "c80305c88cd5087db37f76a0d230c1fc092c864c",
+      "lines": 106,
+      "read": "complete source text; test assertions inspected, not executed"
+    },
+    {
+      "path": "skills/security-audit/AI-AND-LLM.md",
+      "bytes": 10700,
+      "sha256": "0d57a4d8b1ce05015e867bc89277aabf80f4a3031beba42df4481fc92027f83b",
+      "gitBlob": "02ba9039eca4cec811fefc77bce0d7349b379aae",
+      "lines": 83,
+      "read": "complete source text; test assertions inspected, not executed"
+    },
+    {
+      "path": "skills/security-audit/ATTACK-CLASSES.md",
+      "bytes": 15825,
+      "sha256": "fff6ce0269696d17bda38bfeb27410bdce820f2299cb68a7ceb81883204a3604",
+      "gitBlob": "18a2beb4dbb554fb52b0a0293b8bd9108207f8fa",
+      "lines": 130,
+      "read": "complete source text; test assertions inspected, not executed"
+    },
+    {
+      "path": "skills/security-audit/CLIENT-SIDE.md",
+      "bytes": 8677,
+      "sha256": "e9098dc5da89a996e28c25e9e3e3e976ec777a19c4f05c9a04cd4c0d4a3ce120",
+      "gitBlob": "8ba673e9e7e3d02f5518aa0219bcbeec7957531b",
+      "lines": 83,
+      "read": "complete source text; test assertions inspected, not executed"
+    },
+    {
+      "path": "skills/security-audit/CLOUD-AND-DEPLOYMENT.md",
+      "bytes": 8377,
+      "sha256": "29514d7c3a9e83d48f1f519e70e8b2fde4e1d1ac92d2500737b6c8be718c3b2d",
+      "gitBlob": "5569f76c7740744aa3f60aaa89eaefe275f2e6c9",
+      "lines": 86,
+      "read": "complete source text; test assertions inspected, not executed"
+    },
+    {
+      "path": "skills/security-audit/DATA-ISOLATION-AND-LIFECYCLE.md",
+      "bytes": 7882,
+      "sha256": "5c546940150363cb4039038e2c00c080a8d302e7a2e50f72f3960e4c67801b5e",
+      "gitBlob": "0cba1fa463b62c9b0caba710a201e29c1eecd0ec",
+      "lines": 84,
+      "read": "complete source text; test assertions inspected, not executed"
+    },
+    {
+      "path": "skills/security-audit/DESKTOP-MOBILE-AND-LOCAL-IPC.md",
+      "bytes": 8828,
+      "sha256": "055fec61e744d5ba434cbf0c1f2994b1f83d961f5e43d89cc0bb690d16a11f3b",
+      "gitBlob": "d6230098651bff6348d3868c11f566bfb1306e7f",
+      "lines": 89,
+      "read": "complete source text; test assertions inspected, not executed"
+    },
+    {
+      "path": "skills/security-audit/HUNTING.md",
+      "bytes": 22697,
+      "sha256": "b980765f1a616a141044b00e3dcbb7c36ec4d7cf43740d85985d0bdbca9cfe91",
+      "gitBlob": "377d4dcfbe88a049379448cd7892717185401597",
+      "lines": 251,
+      "read": "complete source text; test assertions inspected, not executed"
+    },
+    {
+      "path": "skills/security-audit/MEMORY-SAFETY-AND-BINARY.md",
+      "bytes": 10614,
+      "sha256": "c88390b508fc86838b7b12889499fabf28acfe32ca34f2d4ff655a420264f44f",
+      "gitBlob": "86ff4920752661fc4a31a35ca4f962ace5dd5f48",
+      "lines": 101,
+      "read": "complete source text; test assertions inspected, not executed"
+    },
+    {
+      "path": "skills/security-audit/PROTOCOLS-RPC-AND-MESSAGING.md",
+      "bytes": 7564,
+      "sha256": "2bc534260d9842cc9a6bb15615e58c5350201008880083da78969bdeb657a7ce",
+      "gitBlob": "b04ab88f852224838fdc9683d9fcccd858b0778a",
+      "lines": 81,
+      "read": "complete source text; test assertions inspected, not executed"
+    },
+    {
+      "path": "skills/security-audit/RECONNAISSANCE.md",
+      "bytes": 16058,
+      "sha256": "a02316fae383754621d312215170479685f85c1142b6c117a9a03c6ad8f907e4",
+      "gitBlob": "1a170a93ab76b93dc5ac268a5b690beb423a8aa9",
+      "lines": 156,
+      "read": "complete source text; test assertions inspected, not executed"
+    },
+    {
+      "path": "skills/security-audit/RESOURCE-EXHAUSTION-AND-AVAILABILITY.md",
+      "bytes": 7554,
+      "sha256": "a9590f9966de194e51dd7c82f930bc910662f0275357e433e33758756755ec8d",
+      "gitBlob": "6cbbd1e2cfa482068c8279c2f7da9db43d3f54b8",
+      "lines": 78,
+      "read": "complete source text; test assertions inspected, not executed"
+    },
+    {
+      "path": "skills/security-audit/SKILL.md",
+      "bytes": 22218,
+      "sha256": "2a68ab5531dfccedac2b054e0814f2b6517daae9887b3ee40afcc5d8a7063c3a",
+      "gitBlob": "92178dad304d3f63e37582a297026a7874e12c62",
+      "lines": 192,
+      "read": "complete source text; test assertions inspected, not executed"
+    },
+    {
+      "path": "skills/security-audit/SUPPLY-CHAIN-AND-RELEASE.md",
+      "bytes": 7331,
+      "sha256": "c1eb0a8b9a6ab1e979b214ee70fd8fff4c173d4063fd82df82fc5269cb115c17",
+      "gitBlob": "bf96aed0803bc07471483ab129dea86759c3e305",
+      "lines": 73,
+      "read": "complete source text; test assertions inspected, not executed"
+    },
+    {
+      "path": "skills/security-audit/VALIDATION-AND-REPORTING.md",
+      "bytes": 18029,
+      "sha256": "943e68578aa1d7031282837d1455cf64d1e95d032c9df09b3f182ce134e89072",
+      "gitBlob": "5e200d7387e665e53e0e4190fa4a5814c334c507",
+      "lines": 186,
+      "read": "complete source text; test assertions inspected, not executed"
+    },
+    {
+      "path": "skills/security-audit/WEB-PROTOCOL-AND-AUTH.md",
+      "bytes": 12405,
+      "sha256": "757c5191cc397ad7145ffe5b6ffa438bdd36fefd351da640267630d05f01bfae",
+      "gitBlob": "1a099fa575cf52a61e9a627f91b61015120fa517",
+      "lines": 105,
+      "read": "complete source text; test assertions inspected, not executed"
+    },
+    {
+      "path": "skills/security-audit/report-schema.json",
+      "bytes": 14955,
+      "sha256": "7bea150f30dcef07df1859d33d01406953cf600f6a08250e1e59e10f252e2c4c",
+      "gitBlob": "55815a3687a45fff63d8ebf20068611bd6ad6d9a",
+      "lines": 461,
+      "read": "complete source text; test assertions inspected, not executed"
+    },
+    {
+      "path": "skills/security-audit/validate-coverage-ledger.cjs",
+      "bytes": 34394,
+      "sha256": "db2d1a36031ed1552e1d45cefe1da591ef4eebf2d3f3ee3b0298d07051e3a312",
+      "gitBlob": "0ef58657bef18b26a92321df6c8e3d31bc8e6659",
+      "lines": 872,
+      "read": "complete source text; test assertions inspected, not executed"
+    },
+    {
+      "path": "skills/security-audit/validate-coverage-ledger.test.cjs",
+      "bytes": 29223,
+      "sha256": "44dd5a6200952fb4f149a3f0dbabdbe116c402c63f0bd2858043207debe39bcc",
+      "gitBlob": "b1444f57e1b021a61175733b8c356171861c8701",
+      "lines": 740,
+      "read": "complete source text; test assertions inspected, not executed"
+    },
+    {
+      "path": "skills/security-audit/validate-findings.cjs",
+      "bytes": 29579,
+      "sha256": "31dabfb5ed2454e4bfa5000fe0f2600df0df9f7ad1781a2fdb9a98a50f507963",
+      "gitBlob": "2843feceddb7e30bf10d6e4f7bbe6640e4c57799",
+      "lines": 773,
+      "read": "complete source text; test assertions inspected, not executed"
+    },
+    {
+      "path": "skills/security-audit/validate-findings.test.cjs",
+      "bytes": 27036,
+      "sha256": "7c91656073b51cbb7e029e33804de97c1d8c0b52f3521fd60e3978133e8cb73a",
+      "gitBlob": "8d245b226bbe2fdf28b46b3203b99c2824039d2d",
+      "lines": 652,
+      "read": "complete source text; test assertions inspected, not executed"
+    }
+  ]
+}

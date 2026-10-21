@@ -1,0 +1,23 @@
+{
+  "createdAt": "2026-10-21T07:41:22.108Z",
+  "branch": "kotaro/synapse-consolidation",
+  "sourceFilesHashed": 37,
+  "cleanPinnedRepos": 3,
+  "localLinksChecked": 39,
+  "pinnedSourceLinksChecked": 71,
+  "catalogRowsChecked": 81,
+  "researchRegister": {
+    "findings": 334,
+    "corrections": 203,
+    "hazards": 80,
+    "problems": 0,
+    "existingWarnings": 3
+  },
+  "retrieval": {
+    "questions": 54,
+    "topFivePassageOrCard": 54,
+    "scope": "Existing retrieval regression, not correctness or fresh blind discovery"
+  },
+  "execution": "Own inert provenance/document checks only; no upstream imports/code/tests/training/scans/providers/target activity",
+  "browserWindowsOpened": 0
+}

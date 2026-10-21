@@ -15673,6 +15673,223 @@
       ],
       "contrary": [],
       "receipts": []
+    },
+    {
+      "id": "service-delivery.awesome-hacking-is-reference-catalog",
+      "domain": "service-delivery",
+      "title": "Awesome-Hacking is a resource catalog, not an assessment engine",
+      "claim": "The five-file pinned repository contains a README resource catalog with 81 linked entries, contribution/license/banner files and discussion-maintenance automation. Its linked implementations are separate unreviewed scopes.",
+      "implication": "Use it as provenance-preserving candidate intake; separately review/admit selected methods and never treat catalog inclusion as installed or proven capability.",
+      "limits": "All four tracked text files read; image inventoried. No child implementation or runtime behavior was audited.",
+      "strength": "source-trace",
+      "questions": [
+        "What can Awesome-Hacking actually do for our research lab?",
+        "Does Awesome-Hacking provide runnable testing tools or a benchmark?"
+      ],
+      "terms": [
+        "Awesome-Hacking",
+        "Hack-with-Github",
+        "catalog",
+        "knowledge",
+        "81",
+        "resource directory"
+      ],
+      "stages": [
+        "discovery",
+        "scoping"
+      ],
+      "sources": [
+        {
+          "path": "docs/research/security-landscape/repository-reviews-20261021/awesome-review-cass.md",
+          "line": 7,
+          "quote": "Awesome-Hacking is a directory of security resource directories and selected projects, not an assessment engine, executable tool collection, research-agent runtime or benchmark."
+        }
+      ],
+      "contrary": [],
+      "receipts": [],
+      "slice": "repository-reviews-20261021"
+    },
+    {
+      "id": "agent-runtime.cloudflare-audit-source-first-not-url-only",
+      "domain": "agent-runtime",
+      "title": "Cloudflare security-audit-skill needs source access; URL-only testing is a different arm",
+      "claim": "The skill requires a local source repository and source path/line evidence, and prohibits deployed/external/shared-service probing in its prescribed workflow. It supplies a source-audit method rather than URL-only signup/browser investigation.",
+      "implication": "Adapt the boundary/critique/evidence ideas or evaluate a separate source-access arm; do not compare source-informed and URL-only agents as equivalent access.",
+      "limits": "Pinned instructions and schema/source review only. No audit, skill application or runtime behavior executed.",
+      "strength": "public-doc",
+      "questions": [
+        "Can Cloudflare security-audit-skill audit a site from only its URL?",
+        "What access does Cloudflare security-audit-skill require?"
+      ],
+      "terms": [
+        "Cloudflare",
+        "security-audit-skill",
+        "source first",
+        "black box",
+        "URL only",
+        "codebase audit"
+      ],
+      "stages": [
+        "scoping",
+        "discovery",
+        "ai-evaluation"
+      ],
+      "sources": [
+        {
+          "path": "docs/research/security-landscape/repository-reviews-20261021/cloudflare-review-thistle.md",
+          "line": 35,
+          "quote": "A URL alone does not satisfy these inputs."
+        }
+      ],
+      "contrary": [],
+      "receipts": [],
+      "slice": "repository-reviews-20261021"
+    },
+    {
+      "id": "evidence-handling.cloudflare-validators-not-effect-oracle",
+      "domain": "evidence-handling",
+      "title": "Cloudflare record validators do not establish artifact effects or cross-document consistency",
+      "claim": "The two validators inspect separate declared records. Confirmed results require visible observed-result prose, and local coverage artifacts need syntactically owned paths; target/effect artifact contents and global run/report relationships are not verified by these validators.",
+      "implication": "Import validator output as a structural check, not an independent finding. Preserve original evidence and separately admit effect, identity, review and cross-artifact contracts.",
+      "limits": "Source-trace of validators and authored tests, not a runtime false-report demonstration. Upstream instructions require stronger honest review than the executable schema can establish.",
+      "strength": "source-trace",
+      "questions": [
+        "Does passing Cloudflare findings validation prove a vulnerability exists?",
+        "Do the Cloudflare findings and coverage validators cross-check evidence files and each other?"
+      ],
+      "terms": [
+        "Cloudflare",
+        "schema",
+        "confirmed",
+        "observed_result",
+        "coverage ledger",
+        "independent effect",
+        "validator"
+      ],
+      "stages": [
+        "evidence",
+        "reporting",
+        "ai-evaluation"
+      ],
+      "sources": [
+        {
+          "path": "docs/research/security-landscape/repository-reviews-20261021/cloudflare-review-thistle.md",
+          "line": 102,
+          "quote": "The findings validator consumes only findings plus its local schema. The coverage validator consumes only the ledger."
+        }
+      ],
+      "contrary": [],
+      "receipts": [],
+      "slice": "repository-reviews-20261021"
+    },
+    {
+      "id": "ai-evaluation.autoresearch-candidate-supplies-measured-loss",
+      "domain": "ai-evaluation",
+      "title": "Autoresearch fixed evaluator still trusts editable model loss and printed score",
+      "claim": "prepare.py evaluates loss returned by the candidate-controlled model, while editable train.py prints the final metric. Keeping evaluator-file bytes unchanged does not independently attest the candidate result.",
+      "implication": "Borrow the versioned experiment loop but measure security effects outside candidate-authored success functions; freeze and enforce the scorer/authority boundary.",
+      "limits": "Pinned source trust boundary, not evidence of upstream cheating or invalid reported runs. No training, manipulation or model experiment executed.",
+      "strength": "source-trace",
+      "questions": [
+        "Does fixing prepare.py make autoresearch scoring independent of candidate code?",
+        "What must change when transferring autoresearch to security experiments?"
+      ],
+      "terms": [
+        "autoresearch",
+        "Karpathy",
+        "evaluate_bpb",
+        "model loss",
+        "candidate",
+        "scorer",
+        "metric gaming"
+      ],
+      "stages": [
+        "ai-evaluation",
+        "testing"
+      ],
+      "sources": [
+        {
+          "path": "docs/research/security-landscape/repository-reviews-20261021/autoresearch-review-ginger.md",
+          "line": 47,
+          "quote": "The evaluator calls `model(x, y, reduction='none')`; the model implementation defines the returned quantity."
+        }
+      ],
+      "contrary": [],
+      "receipts": [],
+      "slice": "repository-reviews-20261021"
+    },
+    {
+      "id": "agent-runtime.autoresearch-time-budget-not-hard-run-deadline",
+      "domain": "agent-runtime",
+      "title": "Autoresearch 300 seconds counts selected training steps, not total process time",
+      "claim": "The training time accumulator excludes steps indexed 0 through 10, checks after complete later steps, and leaves startup/evaluation outside that accumulator. The prompt asks an external agent to kill excessive runs; it supplies no external watchdog.",
+      "implication": "Use an enforced external per-run/resource budget and verify actual termination when adapting the loop; do not promise five-minute whole security experiments from this example.",
+      "limits": "Source reading only; actual runtime, overhead and timeout enforcement unmeasured.",
+      "strength": "source-trace",
+      "questions": [
+        "Is autoresearch guaranteed to finish the whole process in five minutes?",
+        "What does autoresearch TIME_BUDGET actually measure?"
+      ],
+      "terms": [
+        "autoresearch",
+        "300 seconds",
+        "five minutes",
+        "warmup",
+        "deadline",
+        "timeout",
+        "watchdog"
+      ],
+      "stages": [
+        "operations",
+        "ai-evaluation"
+      ],
+      "sources": [
+        {
+          "path": "docs/research/security-landscape/repository-reviews-20261021/autoresearch-review-ginger.md",
+          "line": 63,
+          "quote": "The 300-second budget is **accumulated measured step time**, not a hard end-to-end wall deadline."
+        }
+      ],
+      "contrary": [],
+      "receipts": [],
+      "slice": "repository-reviews-20261021"
+    },
+    {
+      "id": "evidence-handling.autoresearch-loop-needs-durable-failure-history",
+      "domain": "evidence-handling",
+      "title": "Autoresearch keep/discard instructions are not a durable security experiment journal",
+      "claim": "The prompt logs short commits and keep/discard/crash statuses in an untracked TSV, overwrites run.log and resets rejected code from branch history. The training program writes no model checkpoint/resume artifact. Long-lived retention is not established by those instructions.",
+      "implication": "Retain full candidate revisions/diffs, original logs, failed/unscored outcomes and reasons in the existing durable journal instead of relying on a reset branch and short-hash TSV.",
+      "limits": "Source/doc review, not observed data loss or a runtime retention test. Local Git reflogs may temporarily retain discarded commits; that is not a durable retention contract.",
+      "strength": "source-trace",
+      "questions": [
+        "What does autoresearch preserve when it keeps or discards an experiment?",
+        "Can autoresearch results.tsv and run.log replace a security experiment journal?"
+      ],
+      "terms": [
+        "autoresearch",
+        "results.tsv",
+        "run.log",
+        "checkpoint",
+        "discard",
+        "Git reset",
+        "experiment history"
+      ],
+      "stages": [
+        "evidence",
+        "operations",
+        "ai-evaluation"
+      ],
+      "sources": [
+        {
+          "path": "docs/research/security-landscape/repository-reviews-20261021/autoresearch-review-ginger.md",
+          "line": 32,
+          "quote": "`run.log` is overwritten by the next run."
+        }
+      ],
+      "contrary": [],
+      "receipts": [],
+      "slice": "repository-reviews-20261021"
     }
   ]
 }

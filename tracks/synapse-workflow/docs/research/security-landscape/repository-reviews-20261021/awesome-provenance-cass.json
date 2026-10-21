@@ -1,0 +1,52 @@
+{
+  "repo": "https://github.com/Hack-with-Github/Awesome-Hacking",
+  "commit": "b2bb13aa69b4f568a1bab0cbb17b7a00a350dc36",
+  "commitMetadata": "2026-07-26T08:59:02+05:30 chore: compress repository banner from PNG to WebP (#235)",
+  "localPath": "C:\\Users\\kotar\\githubprojects\\NBRET\\.tools\\repository-reviews\\2026-10-21\\Awesome-Hacking",
+  "license": "CC0-1.0 in top-level LICENSE; does not establish linked-project licenses",
+  "trackedFiles": [
+    {
+      "path": ".github/workflows/lock-threads.yml",
+      "bytes": 394,
+      "sha256": "0ab6bd3648793ea602765bfd0796b84a46f51c35ebd9c294465875919dff436c",
+      "lines": 24,
+      "reviewedAsText": true,
+      "readScope": "Entire file read as research data; no commands executed"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 6671,
+      "sha256": "4d2eef679d5faf924534bcc132646322e9a852ce50ae5616694e0b95f7b8275d",
+      "lines": 117,
+      "reviewedAsText": true,
+      "readScope": "Entire file read as research data; no commands executed"
+    },
+    {
+      "path": "README.md",
+      "bytes": 12411,
+      "sha256": "96501b81042d932256ab6f7e8e171196836c6a73d82ae6fd6c445a1ebe1c2050",
+      "lines": 109,
+      "reviewedAsText": true,
+      "readScope": "Entire file read as research data; no commands executed"
+    },
+    {
+      "path": "awesome_hacking.webp",
+      "bytes": 126894,
+      "sha256": "f936bfd5bf334fa66d364e6c284a8c2a3e38e9c7df5f9875aebcffab8715be96",
+      "lines": null,
+      "reviewedAsText": false,
+      "readScope": "Decorative banner inventoried, no visual claim"
+    },
+    {
+      "path": "contributing.md",
+      "bytes": 925,
+      "sha256": "fe39ad57aaee4749e7ad4e6ce284558839d1f91e77b9ca6790267fbe89e0619d",
+      "lines": 28,
+      "reviewedAsText": true,
+      "readScope": "Entire file read as research data; no commands executed"
+    }
+  ],
+  "readCoverage": "All four tracked text files read; one decorative image inventoried. Linked 81 destinations not recursively audited.",
+  "priorCoverage": "Exact URL/name search in repository docs/research/register/current context found no prior study before this task; scope does not include every user conversation or remote PC",
+  "runtimeExecuted": false
+}

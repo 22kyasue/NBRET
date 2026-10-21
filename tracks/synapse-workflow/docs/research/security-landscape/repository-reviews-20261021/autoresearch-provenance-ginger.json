@@ -1,0 +1,1617 @@
+{
+  "reviewer": "Ginger",
+  "task": "7c99e5ca-3ed9-4ef7-aede-59bc34753d0e",
+  "retrieved_at_utc": "2026-10-21T07:35:52.052Z",
+  "origin": "https://github.com/karpathy/autoresearch",
+  "head": "228791fb499afffb54b46200aca536f79142f117",
+  "commit_time": "2026-03-25T17:07:37-07:00",
+  "clone": ".tools/repository-reviews/2026-10-21/autoresearch",
+  "clone_ignored": true,
+  "clone_status_porcelain": "",
+  "license": {
+    "declaration": "MIT",
+    "source": "README.md:90-92",
+    "standalone_license_file": false,
+    "dependency_licenses_audited": false
+  },
+  "files": [
+    {
+      "path": ".gitignore",
+      "bytes": 302,
+      "sha256": "5c92364aa4ceca0d45b68ed47bd0daccaf66dac05fecf115616323b611203908",
+      "git_blob": "99c30f52f1cb7b022668ec7215a604aa6b96f77a",
+      "lines": 24,
+      "coverage": "Read in full as text; notebook all cells and metadata read, not executed"
+    },
+    {
+      "path": ".python-version",
+      "bytes": 6,
+      "sha256": "2c6bb7b4a0cc70e45e866dc579bec9f0b5c843c42fd6ed7391df7f5cd7859f14",
+      "git_blob": "c8cfe3959183f8e9a50f83f54cd723f2dc9c252d",
+      "lines": 2,
+      "coverage": "Read in full as text; notebook all cells and metadata read, not executed"
+    },
+    {
+      "path": "README.md",
+      "bytes": 8131,
+      "sha256": "6d76890344339551005a5dc1fb56f70fc8963f74644f73d503387168aba7a728",
+      "git_blob": "953ea55d5599c45c1be7dad93ec03e47dfa7df9d",
+      "lines": 93,
+      "coverage": "Read in full as text; notebook all cells and metadata read, not executed"
+    },
+    {
+      "path": "analysis.ipynb",
+      "bytes": 8455,
+      "sha256": "c3ea3cc87430586ea81f494688e55ffa94e94c986137f547373852f19bb51167",
+      "git_blob": "bef188375e292d8732a61bf1fa756a4614b76308",
+      "lines": 248,
+      "coverage": "Read in full as text; notebook all cells and metadata read, not executed"
+    },
+    {
+      "path": "prepare.py",
+      "bytes": 15432,
+      "sha256": "f3ff54f2271df15144f0674a6234306e350004fc1ae3f9237aa176e6d3ba9944",
+      "git_blob": "06bea9165abd3ae94ea82dd733997aec7928f40c",
+      "lines": 390,
+      "coverage": "Read in full as text; notebook all cells and metadata read, not executed"
+    },
+    {
+      "path": "program.md",
+      "bytes": 7153,
+      "sha256": "dd676076ba8ab905d6cc196f69dd223754237510593c7927465d06a36bf98622",
+      "git_blob": "dea9bcc0174f1502d0ba64000b94b81ba605855b",
+      "lines": 115,
+      "coverage": "Read in full as text; notebook all cells and metadata read, not executed"
+    },
+    {
+      "path": "progress.png",
+      "bytes": 252961,
+      "sha256": "a6be2ad8dece12be1907356b1254f3ba133035d264d73634dbed442887a69d8d",
+      "git_blob": "999e45c2b8833884870c1d7f084bab7a7bbc9e2c",
+      "lines": null,
+      "coverage": "Visually inspected"
+    },
+    {
+      "path": "pyproject.toml",
+      "bytes": 570,
+      "sha256": "24b60e592a79eef039661c823601867c0f48d5b6a12b489c9e22b2e5513a1a3a",
+      "git_blob": "94ae3298925ddae47821f703faf44d4e3b8381bb",
+      "lines": 28,
+      "coverage": "Read in full as text; notebook all cells and metadata read, not executed"
+    },
+    {
+      "path": "train.py",
+      "bytes": 26860,
+      "sha256": "5277fe091d302c6536bb86ed69b3eaebd7b821203ea3e5cefbad2e8949231772",
+      "git_blob": "2e743974c7f06b54311643b314712303fbb26e65",
+      "lines": 631,
+      "coverage": "Read in full as text; notebook all cells and metadata read, not executed"
+    },
+    {
+      "path": "uv.lock",
+      "bytes": 445256,
+      "sha256": "9ab56c325e43dea40b076c14cda8e6e286557ed90eab39951190ffcf15269b2a",
+      "git_blob": "c840d62f5285b5ce4b5fe62f135cfe8a47bc9915",
+      "lines": 2098,
+      "coverage": "All bytes hashed; all package block metadata and dependency fields inventoried; remote artifact contents not inspected"
+    }
+  ],
+  "lock": {
+    "package_records": 74,
+    "packages": [
+      {
+        "start_line": 21,
+        "end_line": 29,
+        "name": "\"annotated-doc\"",
+        "version": "\"0.0.4\"",
+        "source": "{ registry = \"https://pypi.org/simple\" }",
+        "metadata_without_artifact_lines": [
+          "[[package]]",
+          "name = \"annotated-doc\"",
+          "version = \"0.0.4\"",
+          "source = { registry = \"https://pypi.org/simple\" }",
+          "]",
+          ""
+        ],
+        "artifact_sha256_declarations": 2,
+        "block_sha256_normalized_lf": "cc9d0f4a0bcb0e7ad80eb3783968e011bdbf94e11093780dce5af7b481b034f7"
+      },
+      {
+        "start_line": 30,
+        "end_line": 43,
+        "name": "\"anyio\"",
+        "version": "\"4.12.1\"",
+        "source": "{ registry = \"https://pypi.org/simple\" }",
+        "metadata_without_artifact_lines": [
+          "[[package]]",
+          "name = \"anyio\"",
+          "version = \"4.12.1\"",
+          "source = { registry = \"https://pypi.org/simple\" }",
+          "dependencies = [",
+          "    { name = \"exceptiongroup\", marker = \"python_full_version < '3.11'\" },",
+          "    { name = \"idna\" },",
+          "    { name = \"typing-extensions\", marker = \"python_full_version < '3.13'\" },",
+          "]",
+          "]",
+          ""
+        ],
+        "artifact_sha256_declarations": 2,
+        "block_sha256_normalized_lf": "ecbda39f2bebd8a0d4fc9ff5ca2b9fec45a0b21e6fca7488cf202438c66294f3"
+      },
+      {
+        "start_line": 44,
+        "end_line": 74,
+        "name": "\"autoresearch\"",
+        "version": "\"0.1.0\"",
+        "source": "{ virtual = \".\" }",
+        "metadata_without_artifact_lines": [
+          "[[package]]",
+          "name = \"autoresearch\"",
+          "version = \"0.1.0\"",
+          "source = { virtual = \".\" }",
+          "dependencies = [",
+          "    { name = \"kernels\" },",
+          "    { name = \"matplotlib\" },",
+          "    { name = \"numpy\", version = \"2.2.6\", source = { registry = \"https://pypi.org/simple\" }, marker = \"python_full_version < '3.11'\" },",
+          "    { name = \"numpy\", version = \"2.4.2\", source = { registry = \"https://pypi.org/simple\" }, marker = \"python_full_version >= '3.11'\" },",
+          "    { name = \"pandas\", version = \"2.3.3\", source = { registry = \"https://pypi.org/simple\" }, marker = \"python_full_version < '3.11'\" },",
+          "    { name = \"pandas\", version = \"3.0.1\", source = { registry = \"https://pypi.org/simple\" }, marker = \"python_full_version >= '3.11'\" },",
+          "    { name = \"pyarrow\" },",
+          "    { name = \"requests\" },",
+          "    { name = \"rustbpe\" },",
+          "    { name = \"tiktoken\" },",
+          "    { name = \"torch\" },",
+          "]",
+          "",
+          "[package.metadata]",
+          "requires-dist = [",
+          "    { name = \"kernels\", specifier = \">=0.11.7\" },",
+          "    { name = \"matplotlib\", specifier = \">=3.10.8\" },",
+          "    { name = \"numpy\", specifier = \">=2.2.6\" },",
+          "    { name = \"pandas\", specifier = \">=2.3.3\" },",
+          "    { name = \"pyarrow\", specifier = \">=21.0.0\" },",
+          "    { name = \"requests\", specifier = \">=2.32.0\" },",
+          "    { name = \"rustbpe\", specifier = \">=0.1.0\" },",
+          "    { name = \"tiktoken\", specifier = \">=0.11.0\" },",
+          "    { name = \"torch\", specifier = \"==2.9.1\", index = \"https://download.pytorch.org/whl/cu128\" },",
+          "]",
+          ""
+        ],
+        "artifact_sha256_declarations": 0,
+        "block_sha256_normalized_lf": "673dab302bfa763de3ba0f8dfd7833720d45270253c5663612c7e32f5a8891d6"
+      },
+      {
+        "start_line": 75,
+        "end_line": 83,
+        "name": "\"certifi\"",
+        "version": "\"2026.2.25\"",
+        "source": "{ registry = \"https://pypi.org/simple\" }",
+        "metadata_without_artifact_lines": [
+          "[[package]]",
+          "name = \"certifi\"",
+          "version = \"2026.2.25\"",
+          "source = { registry = \"https://pypi.org/simple\" }",
+          "]",
+          ""
+        ],
+        "artifact_sha256_declarations": 2,
+        "block_sha256_normalized_lf": "0fa552a4f320114f0a6609aa5aaac13293bb51f12a23ac7927709fad846d373a"
+      },
+      {
+        "start_line": 84,
+        "end_line": 172,
+        "name": "\"charset-normalizer\"",
+        "version": "\"3.4.4\"",
+        "source": "{ registry = \"https://pypi.org/simple\" }",
+        "metadata_without_artifact_lines": [
+          "[[package]]",
+          "name = \"charset-normalizer\"",
+          "version = \"3.4.4\"",
+          "source = { registry = \"https://pypi.org/simple\" }",
+          "]",
+          ""
+        ],
+        "artifact_sha256_declarations": 82,
+        "block_sha256_normalized_lf": "90b6af3ac9b09177b65a8e8f5732050ea0b6609b41f19549d2dd28bf16b063a9"
+      },
+      {
+        "start_line": 173,
+        "end_line": 184,
+        "name": "\"click\"",
+        "version": "\"8.3.1\"",
+        "source": "{ registry = \"https://pypi.org/simple\" }",
+        "metadata_without_artifact_lines": [
+          "[[package]]",
+          "name = \"click\"",
+          "version = \"8.3.1\"",
+          "source = { registry = \"https://pypi.org/simple\" }",
+          "dependencies = [",
+          "    { name = \"colorama\", marker = \"sys_platform == 'win32'\" },",
+          "]",
+          "]",
+          ""
+        ],
+        "artifact_sha256_declarations": 2,
+        "block_sha256_normalized_lf": "eebf8d48911bb048e13682dbfc142d8f0450f03919df88922b45fdac6ea80c1b"
+      },
+      {
+        "start_line": 185,
+        "end_line": 193,
+        "name": "\"colorama\"",
+        "version": "\"0.4.6\"",
+        "source": "{ registry = \"https://pypi.org/simple\" }",
+        "metadata_without_artifact_lines": [
+          "[[package]]",
+          "name = \"colorama\"",
+          "version = \"0.4.6\"",
+          "source = { registry = \"https://pypi.org/simple\" }",
+          "]",
+          ""
+        ],
+        "artifact_sha256_declarations": 2,
+        "block_sha256_normalized_lf": "1a2a1124d7cb44c2580f4e2d28e314fff7e7922c39786148573be2973920403e"
+      },
+      {
+        "start_line": 194,
+        "end_line": 264,
+        "name": "\"contourpy\"",
+        "version": "\"1.3.2\"",
+        "source": "{ registry = \"https://pypi.org/simple\" }",
+        "metadata_without_artifact_lines": [
+          "[[package]]",
+          "name = \"contourpy\"",
+          "version = \"1.3.2\"",
+          "source = { registry = \"https://pypi.org/simple\" }",
+          "resolution-markers = [",
+          "    \"python_full_version < '3.11' and sys_platform == 'linux'\",",
+          "    \"python_full_version < '3.11' and sys_platform != 'linux'\",",
+          "]",
+          "dependencies = [",
+          "    { name = \"numpy\", version = \"2.2.6\", source = { registry = \"https://pypi.org/simple\" }, marker = \"python_full_version < '3.11'\" },",
+          "]",
+          "]",
+          ""
+        ],
+        "artifact_sha256_declarations": 57,
+        "block_sha256_normalized_lf": "9d47ca485ec76b85408be642e1718495461260b307479f134eeadc46472f3b21"
+      },
+      {
+        "start_line": 265,
+        "end_line": 360,
+        "name": "\"contourpy\"",
+        "version": "\"1.3.3\"",
+        "source": "{ registry = \"https://pypi.org/simple\" }",
+        "metadata_without_artifact_lines": [
+          "[[package]]",
+          "name = \"contourpy\"",
+          "version = \"1.3.3\"",
+          "source = { registry = \"https://pypi.org/simple\" }",
+          "resolution-markers = [",
+          "    \"python_full_version >= '3.14' and sys_platform == 'linux'\",",
+          "    \"python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform == 'linux'\",",
+          "    \"python_full_version >= '3.14' and sys_platform == 'win32'\",",
+          "    \"python_full_version >= '3.14' and sys_platform == 'emscripten'\",",
+          "    \"python_full_version >= '3.14' and sys_platform != 'emscripten' and sys_platform != 'linux' and sys_platform != 'win32'\",",
+          "    \"python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform == 'win32'\",",
+          "    \"python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform == 'emscripten'\",",
+          "    \"python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform != 'emscripten' and sys_platform != 'linux' and sys_platform != 'win32'\",",
+          "    \"python_full_version == '3.11.*' and sys_platform == 'linux'\",",
+          "    \"python_full_version == '3.11.*' and sys_platform == 'win32'\",",
+          "    \"python_full_version == '3.11.*' and sys_platform == 'emscripten'\",",
+          "    \"python_full_version == '3.11.*' and sys_platform != 'emscripten' and sys_platform != 'linux' and sys_platform != 'win32'\",",
+          "]",
+          "dependencies = [",
+          "    { name = \"numpy\", version = \"2.4.2\", source = { registry = \"https://pypi.org/simple\" }, marker = \"python_full_version >= '3.11'\" },",
+          "]",
+          "]",
+          ""
+        ],
+        "artifact_sha256_declarations": 72,
+        "block_sha256_normalized_lf": "57d5f20bbd88bdc8ad1d12c757e627d8946c5423fa95aee22d71c48194d1548b"
+      },
+      {
+        "start_line": 361,
+        "end_line": 369,
+        "name": "\"cycler\"",
+        "version": "\"0.12.1\"",
+        "source": "{ registry = \"https://pypi.org/simple\" }",
+        "metadata_without_artifact_lines": [
+          "[[package]]",
+          "name = \"cycler\"",
+          "version = \"0.12.1\"",
+          "source = { registry = \"https://pypi.org/simple\" }",
+          "]",
+          ""
+        ],
+        "artifact_sha256_declarations": 2,
+        "block_sha256_normalized_lf": "10173d31703d0097373048dba88bfe0e83b5159284c3b2101678b671d15b603e"
+      },
+      {
+        "start_line": 370,
+        "end_line": 381,
+        "name": "\"exceptiongroup\"",
+        "version": "\"1.3.1\"",
+        "source": "{ registry = \"https://pypi.org/simple\" }",
+        "metadata_without_artifact_lines": [
+          "[[package]]",
+          "name = \"exceptiongroup\"",
+          "version = \"1.3.1\"",
+          "source = { registry = \"https://pypi.org/simple\" }",
+          "dependencies = [",
+          "    { name = \"typing-extensions\", marker = \"python_full_version < '3.11'\" },",
+          "]",
+          "]",
+          ""
+        ],
+        "artifact_sha256_declarations": 2,
+        "block_sha256_normalized_lf": "dbbafb26b6950644b1f4c6e7ddf9dae7a23d6e5249bb8a95c8a20332b649c828"
+      },
+      {
+        "start_line": 382,
+        "end_line": 390,
+        "name": "\"filelock\"",
+        "version": "\"3.24.3\"",
+        "source": "{ registry = \"https://pypi.org/simple\" }",
+        "metadata_without_artifact_lines": [
+          "[[package]]",
+          "name = \"filelock\"",
+          "version = \"3.24.3\"",
+          "source = { registry = \"https://pypi.org/simple\" }",
+          "]",
+          ""
+        ],
+        "artifact_sha256_declarations": 2,
+        "block_sha256_normalized_lf": "5c2baf825ca872db52d79997b01446ab00ff562d4953aacaf99bc13e71828d7b"
+      },
+      {
+        "start_line": 391,
+        "end_line": 447,
+        "name": "\"fonttools\"",
+        "version": "\"4.61.1\"",
+        "source": "{ registry = \"https://pypi.org/simple\" }",
+        "metadata_without_artifact_lines": [
+          "[[package]]",
+          "name = \"fonttools\"",
+          "version = \"4.61.1\"",
+          "source = { registry = \"https://pypi.org/simple\" }",
+          "]",
+          ""
+        ],
+        "artifact_sha256_declarations": 50,
+        "block_sha256_normalized_lf": "f69e667640b8bc9df640a9ef77b0363ef62813cd40165212946cfca0b6a3fa5b"
+      },
+      {
+        "start_line": 448,
+        "end_line": 456,
+        "name": "\"fsspec\"",
+        "version": "\"2026.2.0\"",
+        "source": "{ registry = \"https://pypi.org/simple\" }",
+        "metadata_without_artifact_lines": [
+          "[[package]]",
+          "name = \"fsspec\"",
+          "version = \"2026.2.0\"",
+          "source = { registry = \"https://pypi.org/simple\" }",
+          "]",
+          ""
+        ],
+        "artifact_sha256_declarations": 2,
+        "block_sha256_normalized_lf": "d15ef372707b4ac4ec8db9b18d779a6b3df00d9396eb36fece3a102b442d5f74"
+      },
+      {
+        "start_line": 457,
+        "end_line": 465,
+        "name": "\"h11\"",
+        "version": "\"0.16.0\"",
+        "source": "{ registry = \"https://pypi.org/simple\" }",
+        "metadata_without_artifact_lines": [
+          "[[package]]",
+          "name = \"h11\"",
+          "version = \"0.16.0\"",
+          "source = { registry = \"https://pypi.org/simple\" }",
+          "]",
+          ""
+        ],
+        "artifact_sha256_declarations": 2,
+        "block_sha256_normalized_lf": "b18c79fe8818fc3aea41909d241d50f11bca2f3ac949ff9e4cda9533238f4547"
+      },
+      {
+        "start_line": 466,
+        "end_line": 497,
+        "name": "\"hf-xet\"",
+        "version": "\"1.3.1\"",
+        "source": "{ registry = \"https://pypi.org/simple\" }",
+        "metadata_without_artifact_lines": [
+          "[[package]]",
+          "name = \"hf-xet\"",
+          "version = \"1.3.1\"",
+          "source = { registry = \"https://pypi.org/simple\" }",
+          "]",
+          ""
+        ],
+        "artifact_sha256_declarations": 25,
+        "block_sha256_normalized_lf": "7d09ed87be589576aacde6fe401f6dc27a108f93ccd6203cff4769f8393f167b"
+      },
+      {
+        "start_line": 498,
+        "end_line": 510,
+        "name": "\"httpcore\"",
+        "version": "\"1.0.9\"",
+        "source": "{ registry = \"https://pypi.org/simple\" }",
+        "metadata_without_artifact_lines": [
+          "[[package]]",
+          "name = \"httpcore\"",
+          "version = \"1.0.9\"",
+          "source = { registry = \"https://pypi.org/simple\" }",
+          "dependencies = [",
+          "    { name = \"certifi\" },",
+          "    { name = \"h11\" },",
+          "]",
+          "]",
+          ""
+        ],
+        "artifact_sha256_declarations": 2,
+        "block_sha256_normalized_lf": "a9e3c1667814370c982dec161505a6552ebb59bffe66bf7038144b7d211bde83"
+      },
+      {
+        "start_line": 511,
+        "end_line": 525,
+        "name": "\"httpx\"",
+        "version": "\"0.28.1\"",
+        "source": "{ registry = \"https://pypi.org/simple\" }",
+        "metadata_without_artifact_lines": [
+          "[[package]]",
+          "name = \"httpx\"",
+          "version = \"0.28.1\"",
+          "source = { registry = \"https://pypi.org/simple\" }",
+          "dependencies = [",
+          "    { name = \"anyio\" },",
+          "    { name = \"certifi\" },",
+          "    { name = \"httpcore\" },",
+          "    { name = \"idna\" },",
+          "]",
+          "]",
+          ""
+        ],
+        "artifact_sha256_declarations": 2,
+        "block_sha256_normalized_lf": "c576b634f3cb84098ea9ae845a2c8aee41518dc43896eab744884bf29b65d7b4"
+      },
+      {
+        "start_line": 526,
+        "end_line": 545,
+        "name": "\"huggingface-hub\"",
+        "version": "\"1.5.0\"",
+        "source": "{ registry = \"https://pypi.org/simple\" }",
+        "metadata_without_artifact_lines": [
+          "[[package]]",
+          "name = \"huggingface-hub\"",
+          "version = \"1.5.0\"",
+          "source = { registry = \"https://pypi.org/simple\" }",
+          "dependencies = [",
+          "    { name = \"filelock\" },",
+          "    { name = \"fsspec\" },",
+          "    { name = \"hf-xet\", marker = \"platform_machine == 'AMD64' or platform_machine == 'aarch64' or platform_machine == 'amd64' or platform_machine == 'arm64' or platform_machine == 'x86_64'\" },",
+          "    { name = \"httpx\" },",
+          "    { name = \"packaging\" },",
+          "    { name = \"pyyaml\" },",
+          "    { name = \"tqdm\" },",
+          "    { name = \"typer\" },",
+          "    { name = \"typing-extensions\" },",
+          "]",
+          "]",
+          ""
+        ],
+        "artifact_sha256_declarations": 2,
+        "block_sha256_normalized_lf": "61911636a007878776b7a6b976ab8c14d0c6f65bef86d8bd5a6aab6b5894a5c6"
+      },
+      {
+        "start_line": 546,
+        "end_line": 554,
+        "name": "\"idna\"",
+        "version": "\"3.11\"",
+        "source": "{ registry = \"https://pypi.org/simple\" }",
+        "metadata_without_artifact_lines": [
+          "[[package]]",
+          "name = \"idna\"",
+          "version = \"3.11\"",
+          "source = { registry = \"https://pypi.org/simple\" }",
+          "]",
+          ""
+        ],
+        "artifact_sha256_declarations": 2,
+        "block_sha256_normalized_lf": "9a01425ec2ef3674b060bc61fc8e3ca2c81e1d0a16975d7e69500c10dfe04fbe"
+      },
+      {
+        "start_line": 555,
+        "end_line": 566,
+        "name": "\"jinja2\"",
+        "version": "\"3.1.6\"",
+        "source": "{ registry = \"https://pypi.org/simple\" }",
+        "metadata_without_artifact_lines": [
+          "[[package]]",
+          "name = \"jinja2\"",
+          "version = \"3.1.6\"",
+          "source = { registry = \"https://pypi.org/simple\" }",
+          "dependencies = [",
+          "    { name = \"markupsafe\" },",
+          "]",
+          "]",
+          ""
+        ],
+        "artifact_sha256_declarations": 2,
+        "block_sha256_normalized_lf": "3913c626334692c9950d811976ddab92b846a2602ab5c58cccbc7f2e9a5e4745"
+      },
+      {
+        "start_line": 567,
+        "end_line": 581,
+        "name": "\"kernels\"",
+        "version": "\"0.12.1\"",
+        "source": "{ registry = \"https://pypi.org/simple\" }",
+        "metadata_without_artifact_lines": [
+          "[[package]]",
+          "name = \"kernels\"",
+          "version = \"0.12.1\"",
+          "source = { registry = \"https://pypi.org/simple\" }",
+          "dependencies = [",
+          "    { name = \"huggingface-hub\" },",
+          "    { name = \"packaging\" },",
+          "    { name = \"pyyaml\" },",
+          "    { name = \"tomli\", marker = \"python_full_version < '3.11'\" },",
+          "]",
+          "]",
+          ""
+        ],
+        "artifact_sha256_declarations": 2,
+        "block_sha256_normalized_lf": "d70216c5cd34ee2bb29400c9ffb5a80e6d59999807eb7f04fb625238e7267b1e"
+      },
+      {
+        "start_line": 582,
+        "end_line": 689,
+        "name": "\"kiwisolver\"",
+        "version": "\"1.4.9\"",
+        "source": "{ registry = \"https://pypi.org/simple\" }",
+        "metadata_without_artifact_lines": [
+          "[[package]]",
+          "name = \"kiwisolver\"",
+          "version = \"1.4.9\"",
+          "source = { registry = \"https://pypi.org/simple\" }",
+          "]",
+          ""
+        ],
+        "artifact_sha256_declarations": 101,
+        "block_sha256_normalized_lf": "b1e5285290a4c18cb14d359e15f7b8be9a930145039a15fcb41f73ec67b0166c"
+      },
+      {
+        "start_line": 690,
+        "end_line": 701,
+        "name": "\"markdown-it-py\"",
+        "version": "\"4.0.0\"",
+        "source": "{ registry = \"https://pypi.org/simple\" }",
+        "metadata_without_artifact_lines": [
+          "[[package]]",
+          "name = \"markdown-it-py\"",
+          "version = \"4.0.0\"",
+          "source = { registry = \"https://pypi.org/simple\" }",
+          "dependencies = [",
+          "    { name = \"mdurl\" },",
+          "]",
+          "]",
+          ""
+        ],
+        "artifact_sha256_declarations": 2,
+        "block_sha256_normalized_lf": "2bdb9f9103958ef8fff23fc6f6ee62accb65b58d47d3c0d5287a171d4a9d8af4"
+      },
+      {
+        "start_line": 702,
+        "end_line": 786,
+        "name": "\"markupsafe\"",
+        "version": "\"3.0.3\"",
+        "source": "{ registry = \"https://pypi.org/simple\" }",
+        "metadata_without_artifact_lines": [
+          "[[package]]",
+          "name = \"markupsafe\"",
+          "version = \"3.0.3\"",
+          "source = { registry = \"https://pypi.org/simple\" }",
+          "]",
+          ""
+        ],
+        "artifact_sha256_declarations": 78,
+        "block_sha256_normalized_lf": "16660503d4aa108d49c3c459a7abb1afe464a6771779ab2f0e6e709cb66fbf49"
+      },
+      {
+        "start_line": 787,
+        "end_line": 861,
+        "name": "\"matplotlib\"",
+        "version": "\"3.10.8\"",
+        "source": "{ registry = \"https://pypi.org/simple\" }",
+        "metadata_without_artifact_lines": [
+          "[[package]]",
+          "name = \"matplotlib\"",
+          "version = \"3.10.8\"",
+          "source = { registry = \"https://pypi.org/simple\" }",
+          "dependencies = [",
+          "    { name = \"contourpy\", version = \"1.3.2\", source = { registry = \"https://pypi.org/simple\" }, marker = \"python_full_version < '3.11'\" },",
+          "    { name = \"contourpy\", version = \"1.3.3\", source = { registry = \"https://pypi.org/simple\" }, marker = \"python_full_version >= '3.11'\" },",
+          "    { name = \"cycler\" },",
+          "    { name = \"fonttools\" },",
+          "    { name = \"kiwisolver\" },",
+          "    { name = \"numpy\", version = \"2.2.6\", source = { registry = \"https://pypi.org/simple\" }, marker = \"python_full_version < '3.11'\" },",
+          "    { name = \"numpy\", version = \"2.4.2\", source = { registry = \"https://pypi.org/simple\" }, marker = \"python_full_version >= '3.11'\" },",
+          "    { name = \"packaging\" },",
+          "    { name = \"pillow\" },",
+          "    { name = \"pyparsing\" },",
+          "    { name = \"python-dateutil\" },",
+          "]",
+          "]",
+          ""
+        ],
+        "artifact_sha256_declarations": 55,
+        "block_sha256_normalized_lf": "cb1ed2399841f2897c96dae4963ab4c729419bf7b8cdcd1c5c9c2da9de3eb6c0"
+      },
+      {
+        "start_line": 862,
+        "end_line": 870,
+        "name": "\"mdurl\"",
+        "version": "\"0.1.2\"",
+        "source": "{ registry = \"https://pypi.org/simple\" }",
+        "metadata_without_artifact_lines": [
+          "[[package]]",
+          "name = \"mdurl\"",
+          "version = \"0.1.2\"",
+          "source = { registry = \"https://pypi.org/simple\" }",
+          "]",
+          ""
+        ],
+        "artifact_sha256_declarations": 2,
+        "block_sha256_normalized_lf": "dcf7d35bff5ce4945ceaa74be9e775eefa71eb6fc67e817013ce2bad4f61d192"
+      },
+      {
+        "start_line": 871,
+        "end_line": 879,
+        "name": "\"mpmath\"",
+        "version": "\"1.3.0\"",
+        "source": "{ registry = \"https://pypi.org/simple\" }",
+        "metadata_without_artifact_lines": [
+          "[[package]]",
+          "name = \"mpmath\"",
+          "version = \"1.3.0\"",
+          "source = { registry = \"https://pypi.org/simple\" }",
+          "]",
+          ""
+        ],
+        "artifact_sha256_declarations": 2,
+        "block_sha256_normalized_lf": "74e9f0890331149aed2dd1cbd4b5b8741aa440b6587a3817ca33c54fa799df34"
+      },
+      {
+        "start_line": 880,
+        "end_line": 892,
+        "name": "\"networkx\"",
+        "version": "\"3.4.2\"",
+        "source": "{ registry = \"https://pypi.org/simple\" }",
+        "metadata_without_artifact_lines": [
+          "[[package]]",
+          "name = \"networkx\"",
+          "version = \"3.4.2\"",
+          "source = { registry = \"https://pypi.org/simple\" }",
+          "resolution-markers = [",
+          "    \"python_full_version < '3.11' and sys_platform == 'linux'\",",
+          "    \"python_full_version < '3.11' and sys_platform != 'linux'\",",
+          "]",
+          "]",
+          ""
+        ],
+        "artifact_sha256_declarations": 2,
+        "block_sha256_normalized_lf": "4ba16fadb80f770a3fe382b3e033f72b20b400552ce4e417e9956691caa97672"
+      },
+      {
+        "start_line": 893,
+        "end_line": 915,
+        "name": "\"networkx\"",
+        "version": "\"3.6.1\"",
+        "source": "{ registry = \"https://pypi.org/simple\" }",
+        "metadata_without_artifact_lines": [
+          "[[package]]",
+          "name = \"networkx\"",
+          "version = \"3.6.1\"",
+          "source = { registry = \"https://pypi.org/simple\" }",
+          "resolution-markers = [",
+          "    \"python_full_version >= '3.14' and sys_platform == 'linux'\",",
+          "    \"python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform == 'linux'\",",
+          "    \"python_full_version >= '3.14' and sys_platform == 'win32'\",",
+          "    \"python_full_version >= '3.14' and sys_platform == 'emscripten'\",",
+          "    \"python_full_version >= '3.14' and sys_platform != 'emscripten' and sys_platform != 'linux' and sys_platform != 'win32'\",",
+          "    \"python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform == 'win32'\",",
+          "    \"python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform == 'emscripten'\",",
+          "    \"python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform != 'emscripten' and sys_platform != 'linux' and sys_platform != 'win32'\",",
+          "    \"python_full_version == '3.11.*' and sys_platform == 'linux'\",",
+          "    \"python_full_version == '3.11.*' and sys_platform == 'win32'\",",
+          "    \"python_full_version == '3.11.*' and sys_platform == 'emscripten'\",",
+          "    \"python_full_version == '3.11.*' and sys_platform != 'emscripten' and sys_platform != 'linux' and sys_platform != 'win32'\",",
+          "]",
+          "]",
+          ""
+        ],
+        "artifact_sha256_declarations": 2,
+        "block_sha256_normalized_lf": "1ead71eced94ea40dae0501d64fcb65ced5732b433cb3d91d4b55637c21efb7d"
+      },
+      {
+        "start_line": 916,
+        "end_line": 981,
+        "name": "\"numpy\"",
+        "version": "\"2.2.6\"",
+        "source": "{ registry = \"https://pypi.org/simple\" }",
+        "metadata_without_artifact_lines": [
+          "[[package]]",
+          "name = \"numpy\"",
+          "version = \"2.2.6\"",
+          "source = { registry = \"https://pypi.org/simple\" }",
+          "resolution-markers = [",
+          "    \"python_full_version < '3.11' and sys_platform == 'linux'\",",
+          "    \"python_full_version < '3.11' and sys_platform != 'linux'\",",
+          "]",
+          "]",
+          ""
+        ],
+        "artifact_sha256_declarations": 55,
+        "block_sha256_normalized_lf": "cb3cff09c7f85e52a42644cf3c762f5d3c5bdbcc675def4c1a284e5ac6469810"
+      },
+      {
+        "start_line": 982,
+        "end_line": 1074,
+        "name": "\"numpy\"",
+        "version": "\"2.4.2\"",
+        "source": "{ registry = \"https://pypi.org/simple\" }",
+        "metadata_without_artifact_lines": [
+          "[[package]]",
+          "name = \"numpy\"",
+          "version = \"2.4.2\"",
+          "source = { registry = \"https://pypi.org/simple\" }",
+          "resolution-markers = [",
+          "    \"python_full_version >= '3.14' and sys_platform == 'linux'\",",
+          "    \"python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform == 'linux'\",",
+          "    \"python_full_version >= '3.14' and sys_platform == 'win32'\",",
+          "    \"python_full_version >= '3.14' and sys_platform == 'emscripten'\",",
+          "    \"python_full_version >= '3.14' and sys_platform != 'emscripten' and sys_platform != 'linux' and sys_platform != 'win32'\",",
+          "    \"python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform == 'win32'\",",
+          "    \"python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform == 'emscripten'\",",
+          "    \"python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform != 'emscripten' and sys_platform != 'linux' and sys_platform != 'win32'\",",
+          "    \"python_full_version == '3.11.*' and sys_platform == 'linux'\",",
+          "    \"python_full_version == '3.11.*' and sys_platform == 'win32'\",",
+          "    \"python_full_version == '3.11.*' and sys_platform == 'emscripten'\",",
+          "    \"python_full_version == '3.11.*' and sys_platform != 'emscripten' and sys_platform != 'linux' and sys_platform != 'win32'\",",
+          "]",
+          "]",
+          ""
+        ],
+        "artifact_sha256_declarations": 72,
+        "block_sha256_normalized_lf": "f268004f3f9836fd3b026647deb5146fc04fc4da8586a99f4f8a781cf85721a5"
+      },
+      {
+        "start_line": 1075,
+        "end_line": 1083,
+        "name": "\"nvidia-cublas-cu12\"",
+        "version": "\"12.8.4.1\"",
+        "source": "{ registry = \"https://pypi.org/simple\" }",
+        "metadata_without_artifact_lines": [
+          "[[package]]",
+          "name = \"nvidia-cublas-cu12\"",
+          "version = \"12.8.4.1\"",
+          "source = { registry = \"https://pypi.org/simple\" }",
+          "]",
+          ""
+        ],
+        "artifact_sha256_declarations": 2,
+        "block_sha256_normalized_lf": "f48fce06a2a664b6490c02503d4ffe3e26605519b883c68c320617a0d4c9213f"
+      },
+      {
+        "start_line": 1084,
+        "end_line": 1092,
+        "name": "\"nvidia-cuda-cupti-cu12\"",
+        "version": "\"12.8.90\"",
+        "source": "{ registry = \"https://pypi.org/simple\" }",
+        "metadata_without_artifact_lines": [
+          "[[package]]",
+          "name = \"nvidia-cuda-cupti-cu12\"",
+          "version = \"12.8.90\"",
+          "source = { registry = \"https://pypi.org/simple\" }",
+          "]",
+          ""
+        ],
+        "artifact_sha256_declarations": 2,
+        "block_sha256_normalized_lf": "cac0f948790b7e40b6ea12cd50ccff3388b9912aeadd1bc50e68530d1801f2ff"
+      },
+      {
+        "start_line": 1093,
+        "end_line": 1101,
+        "name": "\"nvidia-cuda-nvrtc-cu12\"",
+        "version": "\"12.8.93\"",
+        "source": "{ registry = \"https://pypi.org/simple\" }",
+        "metadata_without_artifact_lines": [
+          "[[package]]",
+          "name = \"nvidia-cuda-nvrtc-cu12\"",
+          "version = \"12.8.93\"",
+          "source = { registry = \"https://pypi.org/simple\" }",
+          "]",
+          ""
+        ],
+        "artifact_sha256_declarations": 2,
+        "block_sha256_normalized_lf": "b43743d5f8976462d0ca1368517a034d97304ae823161837f0d496b3e5a56035"
+      },
+      {
+        "start_line": 1102,
+        "end_line": 1110,
+        "name": "\"nvidia-cuda-runtime-cu12\"",
+        "version": "\"12.8.90\"",
+        "source": "{ registry = \"https://pypi.org/simple\" }",
+        "metadata_without_artifact_lines": [
+          "[[package]]",
+          "name = \"nvidia-cuda-runtime-cu12\"",
+          "version = \"12.8.90\"",
+          "source = { registry = \"https://pypi.org/simple\" }",
+          "]",
+          ""
+        ],
+        "artifact_sha256_declarations": 2,
+        "block_sha256_normalized_lf": "78ae4d4d1f08707cd7a56b097b8418f6f13d074fd3524dab041f86cebd82c589"
+      },
+      {
+        "start_line": 1111,
+        "end_line": 1122,
+        "name": "\"nvidia-cudnn-cu12\"",
+        "version": "\"9.10.2.21\"",
+        "source": "{ registry = \"https://pypi.org/simple\" }",
+        "metadata_without_artifact_lines": [
+          "[[package]]",
+          "name = \"nvidia-cudnn-cu12\"",
+          "version = \"9.10.2.21\"",
+          "source = { registry = \"https://pypi.org/simple\" }",
+          "dependencies = [",
+          "    { name = \"nvidia-cublas-cu12\", marker = \"sys_platform == 'linux'\" },",
+          "]",
+          "]",
+          ""
+        ],
+        "artifact_sha256_declarations": 2,
+        "block_sha256_normalized_lf": "d36940f92650dd87293f1449d048cd0a22abd99aabf8755a9ff4b29b45f8c86a"
+      },
+      {
+        "start_line": 1123,
+        "end_line": 1134,
+        "name": "\"nvidia-cufft-cu12\"",
+        "version": "\"11.3.3.83\"",
+        "source": "{ registry = \"https://pypi.org/simple\" }",
+        "metadata_without_artifact_lines": [
+          "[[package]]",
+          "name = \"nvidia-cufft-cu12\"",
+          "version = \"11.3.3.83\"",
+          "source = { registry = \"https://pypi.org/simple\" }",
+          "dependencies = [",
+          "    { name = \"nvidia-nvjitlink-cu12\", marker = \"sys_platform == 'linux'\" },",
+          "]",
+          "]",
+          ""
+        ],
+        "artifact_sha256_declarations": 2,
+        "block_sha256_normalized_lf": "a41affb67c82020ac6f170c13954f93c36bd6dd92ae3e9b20914e2859c3d1757"
+      },
+      {
+        "start_line": 1135,
+        "end_line": 1143,
+        "name": "\"nvidia-cufile-cu12\"",
+        "version": "\"1.13.1.3\"",
+        "source": "{ registry = \"https://pypi.org/simple\" }",
+        "metadata_without_artifact_lines": [
+          "[[package]]",
+          "name = \"nvidia-cufile-cu12\"",
+          "version = \"1.13.1.3\"",
+          "source = { registry = \"https://pypi.org/simple\" }",
+          "]",
+          ""
+        ],
+        "artifact_sha256_declarations": 2,
+        "block_sha256_normalized_lf": "958af4cf4800e6c7b1c623fb8e17065de1a79c320d9d8ed64355c44bdedec5b8"
+      },
+      {
+        "start_line": 1144,
+        "end_line": 1152,
+        "name": "\"nvidia-curand-cu12\"",
+        "version": "\"10.3.9.90\"",
+        "source": "{ registry = \"https://pypi.org/simple\" }",
+        "metadata_without_artifact_lines": [
+          "[[package]]",
+          "name = \"nvidia-curand-cu12\"",
+          "version = \"10.3.9.90\"",
+          "source = { registry = \"https://pypi.org/simple\" }",
+          "]",
+          ""
+        ],
+        "artifact_sha256_declarations": 2,
+        "block_sha256_normalized_lf": "9ec48324bb20bd108e18b6b18b2bffe3b5711eb03cd1774766d1f1a1e26aba95"
+      },
+      {
+        "start_line": 1153,
+        "end_line": 1166,
+        "name": "\"nvidia-cusolver-cu12\"",
+        "version": "\"11.7.3.90\"",
+        "source": "{ registry = \"https://pypi.org/simple\" }",
+        "metadata_without_artifact_lines": [
+          "[[package]]",
+          "name = \"nvidia-cusolver-cu12\"",
+          "version = \"11.7.3.90\"",
+          "source = { registry = \"https://pypi.org/simple\" }",
+          "dependencies = [",
+          "    { name = \"nvidia-cublas-cu12\", marker = \"sys_platform == 'linux'\" },",
+          "    { name = \"nvidia-cusparse-cu12\", marker = \"sys_platform == 'linux'\" },",
+          "    { name = \"nvidia-nvjitlink-cu12\", marker = \"sys_platform == 'linux'\" },",
+          "]",
+          "]",
+          ""
+        ],
+        "artifact_sha256_declarations": 2,
+        "block_sha256_normalized_lf": "82a9dc21ac6cda75b65972b963e597bd2bc77308625eae5801cbec2d84303864"
+      },
+      {
+        "start_line": 1167,
+        "end_line": 1178,
+        "name": "\"nvidia-cusparse-cu12\"",
+        "version": "\"12.5.8.93\"",
+        "source": "{ registry = \"https://pypi.org/simple\" }",
+        "metadata_without_artifact_lines": [
+          "[[package]]",
+          "name = \"nvidia-cusparse-cu12\"",
+          "version = \"12.5.8.93\"",
+          "source = { registry = \"https://pypi.org/simple\" }",
+          "dependencies = [",
+          "    { name = \"nvidia-nvjitlink-cu12\", marker = \"sys_platform == 'linux'\" },",
+          "]",
+          "]",
+          ""
+        ],
+        "artifact_sha256_declarations": 2,
+        "block_sha256_normalized_lf": "bb5407f240ca5ad1ad15ae4f32529332b7a549ba32c34d71f5daf4825c036ef2"
+      },
+      {
+        "start_line": 1179,
+        "end_line": 1187,
+        "name": "\"nvidia-cusparselt-cu12\"",
+        "version": "\"0.7.1\"",
+        "source": "{ registry = \"https://pypi.org/simple\" }",
+        "metadata_without_artifact_lines": [
+          "[[package]]",
+          "name = \"nvidia-cusparselt-cu12\"",
+          "version = \"0.7.1\"",
+          "source = { registry = \"https://pypi.org/simple\" }",
+          "]",
+          ""
+        ],
+        "artifact_sha256_declarations": 2,
+        "block_sha256_normalized_lf": "2580aeb0a9c037f57b15072dad8caa246d1b0933b4c315c9aed4891fe10552ba"
+      },
+      {
+        "start_line": 1188,
+        "end_line": 1196,
+        "name": "\"nvidia-nccl-cu12\"",
+        "version": "\"2.27.5\"",
+        "source": "{ registry = \"https://pypi.org/simple\" }",
+        "metadata_without_artifact_lines": [
+          "[[package]]",
+          "name = \"nvidia-nccl-cu12\"",
+          "version = \"2.27.5\"",
+          "source = { registry = \"https://pypi.org/simple\" }",
+          "]",
+          ""
+        ],
+        "artifact_sha256_declarations": 2,
+        "block_sha256_normalized_lf": "2f263e02f17e026e45f7aecac961cf79a742fd410480ca45c67ed545be7a75bd"
+      },
+      {
+        "start_line": 1197,
+        "end_line": 1205,
+        "name": "\"nvidia-nvjitlink-cu12\"",
+        "version": "\"12.8.93\"",
+        "source": "{ registry = \"https://pypi.org/simple\" }",
+        "metadata_without_artifact_lines": [
+          "[[package]]",
+          "name = \"nvidia-nvjitlink-cu12\"",
+          "version = \"12.8.93\"",
+          "source = { registry = \"https://pypi.org/simple\" }",
+          "]",
+          ""
+        ],
+        "artifact_sha256_declarations": 2,
+        "block_sha256_normalized_lf": "447601a35e2b8094d52eaf37c46b3435c8996c14c9185e360dbad71917681c7f"
+      },
+      {
+        "start_line": 1206,
+        "end_line": 1214,
+        "name": "\"nvidia-nvshmem-cu12\"",
+        "version": "\"3.3.20\"",
+        "source": "{ registry = \"https://pypi.org/simple\" }",
+        "metadata_without_artifact_lines": [
+          "[[package]]",
+          "name = \"nvidia-nvshmem-cu12\"",
+          "version = \"3.3.20\"",
+          "source = { registry = \"https://pypi.org/simple\" }",
+          "]",
+          ""
+        ],
+        "artifact_sha256_declarations": 2,
+        "block_sha256_normalized_lf": "a652cf78bf0b18edaba3359878596bc687d2dd179b73c8e031f3b51b3ee8ed7a"
+      },
+      {
+        "start_line": 1215,
+        "end_line": 1223,
+        "name": "\"nvidia-nvtx-cu12\"",
+        "version": "\"12.8.90\"",
+        "source": "{ registry = \"https://pypi.org/simple\" }",
+        "metadata_without_artifact_lines": [
+          "[[package]]",
+          "name = \"nvidia-nvtx-cu12\"",
+          "version = \"12.8.90\"",
+          "source = { registry = \"https://pypi.org/simple\" }",
+          "]",
+          ""
+        ],
+        "artifact_sha256_declarations": 2,
+        "block_sha256_normalized_lf": "62f24b20e08048bede907041f8d49f9c9a86d7825c2fde748fc1f9be86f8198a"
+      },
+      {
+        "start_line": 1224,
+        "end_line": 1232,
+        "name": "\"packaging\"",
+        "version": "\"26.0\"",
+        "source": "{ registry = \"https://pypi.org/simple\" }",
+        "metadata_without_artifact_lines": [
+          "[[package]]",
+          "name = \"packaging\"",
+          "version = \"26.0\"",
+          "source = { registry = \"https://pypi.org/simple\" }",
+          "]",
+          ""
+        ],
+        "artifact_sha256_declarations": 2,
+        "block_sha256_normalized_lf": "b2fbb43393093b21da9ce9324f23ac4011574f393e78fbcba2b80eaa20399613"
+      },
+      {
+        "start_line": 1233,
+        "end_line": 1297,
+        "name": "\"pandas\"",
+        "version": "\"2.3.3\"",
+        "source": "{ registry = \"https://pypi.org/simple\" }",
+        "metadata_without_artifact_lines": [
+          "[[package]]",
+          "name = \"pandas\"",
+          "version = \"2.3.3\"",
+          "source = { registry = \"https://pypi.org/simple\" }",
+          "resolution-markers = [",
+          "    \"python_full_version < '3.11' and sys_platform == 'linux'\",",
+          "    \"python_full_version < '3.11' and sys_platform != 'linux'\",",
+          "]",
+          "dependencies = [",
+          "    { name = \"numpy\", version = \"2.2.6\", source = { registry = \"https://pypi.org/simple\" }, marker = \"python_full_version < '3.11'\" },",
+          "    { name = \"python-dateutil\", marker = \"python_full_version < '3.11'\" },",
+          "    { name = \"pytz\", marker = \"python_full_version < '3.11'\" },",
+          "    { name = \"tzdata\", marker = \"python_full_version < '3.11'\" },",
+          "]",
+          "]",
+          ""
+        ],
+        "artifact_sha256_declarations": 48,
+        "block_sha256_normalized_lf": "d826c3eb96001746a52c279958903243b0b698d6bc92a57ac3f602b2b71383e6"
+      },
+      {
+        "start_line": 1298,
+        "end_line": 1371,
+        "name": "\"pandas\"",
+        "version": "\"3.0.1\"",
+        "source": "{ registry = \"https://pypi.org/simple\" }",
+        "metadata_without_artifact_lines": [
+          "[[package]]",
+          "name = \"pandas\"",
+          "version = \"3.0.1\"",
+          "source = { registry = \"https://pypi.org/simple\" }",
+          "resolution-markers = [",
+          "    \"python_full_version >= '3.14' and sys_platform == 'linux'\",",
+          "    \"python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform == 'linux'\",",
+          "    \"python_full_version >= '3.14' and sys_platform == 'win32'\",",
+          "    \"python_full_version >= '3.14' and sys_platform == 'emscripten'\",",
+          "    \"python_full_version >= '3.14' and sys_platform != 'emscripten' and sys_platform != 'linux' and sys_platform != 'win32'\",",
+          "    \"python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform == 'win32'\",",
+          "    \"python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform == 'emscripten'\",",
+          "    \"python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform != 'emscripten' and sys_platform != 'linux' and sys_platform != 'win32'\",",
+          "    \"python_full_version == '3.11.*' and sys_platform == 'linux'\",",
+          "    \"python_full_version == '3.11.*' and sys_platform == 'win32'\",",
+          "    \"python_full_version == '3.11.*' and sys_platform == 'emscripten'\",",
+          "    \"python_full_version == '3.11.*' and sys_platform != 'emscripten' and sys_platform != 'linux' and sys_platform != 'win32'\",",
+          "]",
+          "dependencies = [",
+          "    { name = \"numpy\", version = \"2.4.2\", source = { registry = \"https://pypi.org/simple\" }, marker = \"python_full_version >= '3.11'\" },",
+          "    { name = \"python-dateutil\", marker = \"python_full_version >= '3.11'\" },",
+          "    { name = \"tzdata\", marker = \"(python_full_version >= '3.11' and sys_platform == 'emscripten') or (python_full_version >= '3.11' and sys_platform == 'win32')\" },",
+          "]",
+          "]",
+          ""
+        ],
+        "artifact_sha256_declarations": 48,
+        "block_sha256_normalized_lf": "3e33f39158e3f95370687c9cc6dd5abac3b515acecae875bd516dcb262fd4329"
+      },
+      {
+        "start_line": 1372,
+        "end_line": 1469,
+        "name": "\"pillow\"",
+        "version": "\"12.1.1\"",
+        "source": "{ registry = \"https://pypi.org/simple\" }",
+        "metadata_without_artifact_lines": [
+          "[[package]]",
+          "name = \"pillow\"",
+          "version = \"12.1.1\"",
+          "source = { registry = \"https://pypi.org/simple\" }",
+          "]",
+          ""
+        ],
+        "artifact_sha256_declarations": 91,
+        "block_sha256_normalized_lf": "3fd5414f9f565bfb6e40dfacf674f483ecc0ad849d11be205349c69195d23951"
+      },
+      {
+        "start_line": 1470,
+        "end_line": 1526,
+        "name": "\"pyarrow\"",
+        "version": "\"23.0.1\"",
+        "source": "{ registry = \"https://pypi.org/simple\" }",
+        "metadata_without_artifact_lines": [
+          "[[package]]",
+          "name = \"pyarrow\"",
+          "version = \"23.0.1\"",
+          "source = { registry = \"https://pypi.org/simple\" }",
+          "]",
+          ""
+        ],
+        "artifact_sha256_declarations": 50,
+        "block_sha256_normalized_lf": "785a974b19ab0fa8efd8b023265947880593ea8b185fea55acca4fde7c692546"
+      },
+      {
+        "start_line": 1527,
+        "end_line": 1535,
+        "name": "\"pygments\"",
+        "version": "\"2.19.2\"",
+        "source": "{ registry = \"https://pypi.org/simple\" }",
+        "metadata_without_artifact_lines": [
+          "[[package]]",
+          "name = \"pygments\"",
+          "version = \"2.19.2\"",
+          "source = { registry = \"https://pypi.org/simple\" }",
+          "]",
+          ""
+        ],
+        "artifact_sha256_declarations": 2,
+        "block_sha256_normalized_lf": "747b588ec5a241439b889505521551ce0a189d6d59ccef4f766cfb3f726503d6"
+      },
+      {
+        "start_line": 1536,
+        "end_line": 1544,
+        "name": "\"pyparsing\"",
+        "version": "\"3.3.2\"",
+        "source": "{ registry = \"https://pypi.org/simple\" }",
+        "metadata_without_artifact_lines": [
+          "[[package]]",
+          "name = \"pyparsing\"",
+          "version = \"3.3.2\"",
+          "source = { registry = \"https://pypi.org/simple\" }",
+          "]",
+          ""
+        ],
+        "artifact_sha256_declarations": 2,
+        "block_sha256_normalized_lf": "78558962419b81d2b8589f14e36d3fc2cd2530a340398aaebaba05787b8ce744"
+      },
+      {
+        "start_line": 1545,
+        "end_line": 1556,
+        "name": "\"python-dateutil\"",
+        "version": "\"2.9.0.post0\"",
+        "source": "{ registry = \"https://pypi.org/simple\" }",
+        "metadata_without_artifact_lines": [
+          "[[package]]",
+          "name = \"python-dateutil\"",
+          "version = \"2.9.0.post0\"",
+          "source = { registry = \"https://pypi.org/simple\" }",
+          "dependencies = [",
+          "    { name = \"six\" },",
+          "]",
+          "]",
+          ""
+        ],
+        "artifact_sha256_declarations": 2,
+        "block_sha256_normalized_lf": "a524d69911e801fe52b0547462733e516fa5673c6309f1676fadc7770c0c9ee8"
+      },
+      {
+        "start_line": 1557,
+        "end_line": 1565,
+        "name": "\"pytz\"",
+        "version": "\"2026.1.post1\"",
+        "source": "{ registry = \"https://pypi.org/simple\" }",
+        "metadata_without_artifact_lines": [
+          "[[package]]",
+          "name = \"pytz\"",
+          "version = \"2026.1.post1\"",
+          "source = { registry = \"https://pypi.org/simple\" }",
+          "]",
+          ""
+        ],
+        "artifact_sha256_declarations": 2,
+        "block_sha256_normalized_lf": "dc7e9e9b3bfb2818a2320c0cafcd1a81bbab2c8641b47c1a284c1c19ee865755"
+      },
+      {
+        "start_line": 1566,
+        "end_line": 1629,
+        "name": "\"pyyaml\"",
+        "version": "\"6.0.3\"",
+        "source": "{ registry = \"https://pypi.org/simple\" }",
+        "metadata_without_artifact_lines": [
+          "[[package]]",
+          "name = \"pyyaml\"",
+          "version = \"6.0.3\"",
+          "source = { registry = \"https://pypi.org/simple\" }",
+          "]",
+          ""
+        ],
+        "artifact_sha256_declarations": 57,
+        "block_sha256_normalized_lf": "942ac40cd7c2de989e72b0a8dbe6bf775ad1c4b66e03076fb4c11ce6be622df3"
+      },
+      {
+        "start_line": 1630,
+        "end_line": 1750,
+        "name": "\"regex\"",
+        "version": "\"2026.2.19\"",
+        "source": "{ registry = \"https://pypi.org/simple\" }",
+        "metadata_without_artifact_lines": [
+          "[[package]]",
+          "name = \"regex\"",
+          "version = \"2026.2.19\"",
+          "source = { registry = \"https://pypi.org/simple\" }",
+          "]",
+          ""
+        ],
+        "artifact_sha256_declarations": 114,
+        "block_sha256_normalized_lf": "ee55fc1401071c9ff962fa8ea2299801bee350c90a991e51c6da268ceb391a9d"
+      },
+      {
+        "start_line": 1751,
+        "end_line": 1765,
+        "name": "\"requests\"",
+        "version": "\"2.32.5\"",
+        "source": "{ registry = \"https://pypi.org/simple\" }",
+        "metadata_without_artifact_lines": [
+          "[[package]]",
+          "name = \"requests\"",
+          "version = \"2.32.5\"",
+          "source = { registry = \"https://pypi.org/simple\" }",
+          "dependencies = [",
+          "    { name = \"certifi\" },",
+          "    { name = \"charset-normalizer\" },",
+          "    { name = \"idna\" },",
+          "    { name = \"urllib3\" },",
+          "]",
+          "]",
+          ""
+        ],
+        "artifact_sha256_declarations": 2,
+        "block_sha256_normalized_lf": "dc57647caffd11b8fb1fc44c706f5a6a538a50924a893055b3bc237f325f20f2"
+      },
+      {
+        "start_line": 1766,
+        "end_line": 1778,
+        "name": "\"rich\"",
+        "version": "\"14.3.3\"",
+        "source": "{ registry = \"https://pypi.org/simple\" }",
+        "metadata_without_artifact_lines": [
+          "[[package]]",
+          "name = \"rich\"",
+          "version = \"14.3.3\"",
+          "source = { registry = \"https://pypi.org/simple\" }",
+          "dependencies = [",
+          "    { name = \"markdown-it-py\" },",
+          "    { name = \"pygments\" },",
+          "]",
+          "]",
+          ""
+        ],
+        "artifact_sha256_declarations": 2,
+        "block_sha256_normalized_lf": "0034bed48c5e0aca12f63688cb1b2fa2f675d2071b77982ace2cfe994bd419bc"
+      },
+      {
+        "start_line": 1779,
+        "end_line": 1815,
+        "name": "\"rustbpe\"",
+        "version": "\"0.1.0\"",
+        "source": "{ registry = \"https://pypi.org/simple\" }",
+        "metadata_without_artifact_lines": [
+          "[[package]]",
+          "name = \"rustbpe\"",
+          "version = \"0.1.0\"",
+          "source = { registry = \"https://pypi.org/simple\" }",
+          "]",
+          ""
+        ],
+        "artifact_sha256_declarations": 30,
+        "block_sha256_normalized_lf": "3b09cccb897a15ba51383b4ec7214849599c4ee19445c559ce065ce4e6756d6b"
+      },
+      {
+        "start_line": 1816,
+        "end_line": 1824,
+        "name": "\"setuptools\"",
+        "version": "\"82.0.0\"",
+        "source": "{ registry = \"https://pypi.org/simple\" }",
+        "metadata_without_artifact_lines": [
+          "[[package]]",
+          "name = \"setuptools\"",
+          "version = \"82.0.0\"",
+          "source = { registry = \"https://pypi.org/simple\" }",
+          "]",
+          ""
+        ],
+        "artifact_sha256_declarations": 2,
+        "block_sha256_normalized_lf": "a839c2cf85af7a13e2ab2f5f267b534b813f9868e600225122c1d72fc20ae6be"
+      },
+      {
+        "start_line": 1825,
+        "end_line": 1833,
+        "name": "\"shellingham\"",
+        "version": "\"1.5.4\"",
+        "source": "{ registry = \"https://pypi.org/simple\" }",
+        "metadata_without_artifact_lines": [
+          "[[package]]",
+          "name = \"shellingham\"",
+          "version = \"1.5.4\"",
+          "source = { registry = \"https://pypi.org/simple\" }",
+          "]",
+          ""
+        ],
+        "artifact_sha256_declarations": 2,
+        "block_sha256_normalized_lf": "c4eec0b68959d99fc3cc1f145bbe628824b7410705f6d41a85892cd5bfd68c16"
+      },
+      {
+        "start_line": 1834,
+        "end_line": 1842,
+        "name": "\"six\"",
+        "version": "\"1.17.0\"",
+        "source": "{ registry = \"https://pypi.org/simple\" }",
+        "metadata_without_artifact_lines": [
+          "[[package]]",
+          "name = \"six\"",
+          "version = \"1.17.0\"",
+          "source = { registry = \"https://pypi.org/simple\" }",
+          "]",
+          ""
+        ],
+        "artifact_sha256_declarations": 2,
+        "block_sha256_normalized_lf": "709655f94ee2e6905039c009247a8499d059bb00c5143aa8787c7e49a385442e"
+      },
+      {
+        "start_line": 1843,
+        "end_line": 1854,
+        "name": "\"sympy\"",
+        "version": "\"1.14.0\"",
+        "source": "{ registry = \"https://pypi.org/simple\" }",
+        "metadata_without_artifact_lines": [
+          "[[package]]",
+          "name = \"sympy\"",
+          "version = \"1.14.0\"",
+          "source = { registry = \"https://pypi.org/simple\" }",
+          "dependencies = [",
+          "    { name = \"mpmath\" },",
+          "]",
+          "]",
+          ""
+        ],
+        "artifact_sha256_declarations": 2,
+        "block_sha256_normalized_lf": "a53a2e5b1df02b4240048251cc58c944f9248bfce1c85481f6d453ceede57276"
+      },
+      {
+        "start_line": 1855,
+        "end_line": 1915,
+        "name": "\"tiktoken\"",
+        "version": "\"0.12.0\"",
+        "source": "{ registry = \"https://pypi.org/simple\" }",
+        "metadata_without_artifact_lines": [
+          "[[package]]",
+          "name = \"tiktoken\"",
+          "version = \"0.12.0\"",
+          "source = { registry = \"https://pypi.org/simple\" }",
+          "dependencies = [",
+          "    { name = \"regex\" },",
+          "    { name = \"requests\" },",
+          "]",
+          "]",
+          ""
+        ],
+        "artifact_sha256_declarations": 50,
+        "block_sha256_normalized_lf": "6a6520de97e95df26cdebe6e030e8015e420c6488dab0dbaa51ec3b3930e1ea8"
+      },
+      {
+        "start_line": 1916,
+        "end_line": 1969,
+        "name": "\"tomli\"",
+        "version": "\"2.4.0\"",
+        "source": "{ registry = \"https://pypi.org/simple\" }",
+        "metadata_without_artifact_lines": [
+          "[[package]]",
+          "name = \"tomli\"",
+          "version = \"2.4.0\"",
+          "source = { registry = \"https://pypi.org/simple\" }",
+          "]",
+          ""
+        ],
+        "artifact_sha256_declarations": 47,
+        "block_sha256_normalized_lf": "b4d2191fb38f741a73f73fe8c65327756f4b4ac099be537834f51b56f6e0f279"
+      },
+      {
+        "start_line": 1970,
+        "end_line": 2023,
+        "name": "\"torch\"",
+        "version": "\"2.9.1+cu128\"",
+        "source": "{ registry = \"https://download.pytorch.org/whl/cu128\" }",
+        "metadata_without_artifact_lines": [
+          "[[package]]",
+          "name = \"torch\"",
+          "version = \"2.9.1+cu128\"",
+          "source = { registry = \"https://download.pytorch.org/whl/cu128\" }",
+          "dependencies = [",
+          "    { name = \"filelock\" },",
+          "    { name = \"fsspec\" },",
+          "    { name = \"jinja2\" },",
+          "    { name = \"networkx\", version = \"3.4.2\", source = { registry = \"https://pypi.org/simple\" }, marker = \"python_full_version < '3.11'\" },",
+          "    { name = \"networkx\", version = \"3.6.1\", source = { registry = \"https://pypi.org/simple\" }, marker = \"python_full_version >= '3.11'\" },",
+          "    { name = \"nvidia-cublas-cu12\", marker = \"sys_platform == 'linux'\" },",
+          "    { name = \"nvidia-cuda-cupti-cu12\", marker = \"sys_platform == 'linux'\" },",
+          "    { name = \"nvidia-cuda-nvrtc-cu12\", marker = \"sys_platform == 'linux'\" },",
+          "    { name = \"nvidia-cuda-runtime-cu12\", marker = \"sys_platform == 'linux'\" },",
+          "    { name = \"nvidia-cudnn-cu12\", marker = \"sys_platform == 'linux'\" },",
+          "    { name = \"nvidia-cufft-cu12\", marker = \"sys_platform == 'linux'\" },",
+          "    { name = \"nvidia-cufile-cu12\", marker = \"sys_platform == 'linux'\" },",
+          "    { name = \"nvidia-curand-cu12\", marker = \"sys_platform == 'linux'\" },",
+          "    { name = \"nvidia-cusolver-cu12\", marker = \"sys_platform == 'linux'\" },",
+          "    { name = \"nvidia-cusparse-cu12\", marker = \"sys_platform == 'linux'\" },",
+          "    { name = \"nvidia-cusparselt-cu12\", marker = \"sys_platform == 'linux'\" },",
+          "    { name = \"nvidia-nccl-cu12\", marker = \"sys_platform == 'linux'\" },",
+          "    { name = \"nvidia-nvjitlink-cu12\", marker = \"sys_platform == 'linux'\" },",
+          "    { name = \"nvidia-nvshmem-cu12\", marker = \"sys_platform == 'linux'\" },",
+          "    { name = \"nvidia-nvtx-cu12\", marker = \"sys_platform == 'linux'\" },",
+          "    { name = \"setuptools\", marker = \"python_full_version >= '3.12'\" },",
+          "    { name = \"sympy\" },",
+          "    { name = \"triton\", marker = \"sys_platform == 'linux'\" },",
+          "    { name = \"typing-extensions\" },",
+          "]",
+          "]",
+          ""
+        ],
+        "artifact_sha256_declarations": 21,
+        "block_sha256_normalized_lf": "8cd90d12584029548e5e04280b35368899cc58db205eb0ba49758b1306b2346d"
+      },
+      {
+        "start_line": 2024,
+        "end_line": 2035,
+        "name": "\"tqdm\"",
+        "version": "\"4.67.3\"",
+        "source": "{ registry = \"https://pypi.org/simple\" }",
+        "metadata_without_artifact_lines": [
+          "[[package]]",
+          "name = \"tqdm\"",
+          "version = \"4.67.3\"",
+          "source = { registry = \"https://pypi.org/simple\" }",
+          "dependencies = [",
+          "    { name = \"colorama\", marker = \"sys_platform == 'win32'\" },",
+          "]",
+          "]",
+          ""
+        ],
+        "artifact_sha256_declarations": 2,
+        "block_sha256_normalized_lf": "705fcce1ce92e30e48893bf8761cf79c1317a2c2a9388a4c8898f94e7a3c3167"
+      },
+      {
+        "start_line": 2036,
+        "end_line": 2056,
+        "name": "\"triton\"",
+        "version": "\"3.5.1\"",
+        "source": "{ registry = \"https://pypi.org/simple\" }",
+        "metadata_without_artifact_lines": [
+          "[[package]]",
+          "name = \"triton\"",
+          "version = \"3.5.1\"",
+          "source = { registry = \"https://pypi.org/simple\" }",
+          "]",
+          ""
+        ],
+        "artifact_sha256_declarations": 14,
+        "block_sha256_normalized_lf": "fbc233905f822de410070a80fb77c8bbeb9b488d1a2ca299771dee079e2342c8"
+      },
+      {
+        "start_line": 2057,
+        "end_line": 2071,
+        "name": "\"typer\"",
+        "version": "\"0.24.1\"",
+        "source": "{ registry = \"https://pypi.org/simple\" }",
+        "metadata_without_artifact_lines": [
+          "[[package]]",
+          "name = \"typer\"",
+          "version = \"0.24.1\"",
+          "source = { registry = \"https://pypi.org/simple\" }",
+          "dependencies = [",
+          "    { name = \"annotated-doc\" },",
+          "    { name = \"click\" },",
+          "    { name = \"rich\" },",
+          "    { name = \"shellingham\" },",
+          "]",
+          "]",
+          ""
+        ],
+        "artifact_sha256_declarations": 2,
+        "block_sha256_normalized_lf": "1d6b9080828fbc987585f4e25532015ca6cbe6c0a17613f7e4dcdf38c8a8476e"
+      },
+      {
+        "start_line": 2072,
+        "end_line": 2080,
+        "name": "\"typing-extensions\"",
+        "version": "\"4.15.0\"",
+        "source": "{ registry = \"https://pypi.org/simple\" }",
+        "metadata_without_artifact_lines": [
+          "[[package]]",
+          "name = \"typing-extensions\"",
+          "version = \"4.15.0\"",
+          "source = { registry = \"https://pypi.org/simple\" }",
+          "]",
+          ""
+        ],
+        "artifact_sha256_declarations": 2,
+        "block_sha256_normalized_lf": "83e453fec615d6983703f20c82af929964f8f8e15c437c95011d632193e57905"
+      },
+      {
+        "start_line": 2081,
+        "end_line": 2089,
+        "name": "\"tzdata\"",
+        "version": "\"2025.3\"",
+        "source": "{ registry = \"https://pypi.org/simple\" }",
+        "metadata_without_artifact_lines": [
+          "[[package]]",
+          "name = \"tzdata\"",
+          "version = \"2025.3\"",
+          "source = { registry = \"https://pypi.org/simple\" }",
+          "]",
+          ""
+        ],
+        "artifact_sha256_declarations": 2,
+        "block_sha256_normalized_lf": "8f461e865c1d490db8298a55a47210d6b5bb4e4bc70467f0a296adaa857bcbef"
+      },
+      {
+        "start_line": 2090,
+        "end_line": 2098,
+        "name": "\"urllib3\"",
+        "version": "\"2.6.3\"",
+        "source": "{ registry = \"https://pypi.org/simple\" }",
+        "metadata_without_artifact_lines": [
+          "[[package]]",
+          "name = \"urllib3\"",
+          "version = \"2.6.3\"",
+          "source = { registry = \"https://pypi.org/simple\" }",
+          "]",
+          ""
+        ],
+        "artifact_sha256_declarations": 2,
+        "block_sha256_normalized_lf": "f45b2b16d384e3b511586e267154756e927a6ee82a8ebbe3b6cb15eaa3635796"
+      }
+    ]
+  },
+  "execution": {
+    "upstream_code_executed": false,
+    "training": false,
+    "installs": false,
+    "tests": false,
+    "providers": false,
+    "targets": false,
+    "browser_windows_opened": 0
+  },
+  "limitations": [
+    "No imported dependency source audited",
+    "No distribution binaries fetched or verified against lock hashes",
+    "No GPU/runtime/reliability/performance validation",
+    "No held-out experiment or sandbox admission performed"
+  ]
+}

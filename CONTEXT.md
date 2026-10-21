@@ -23,6 +23,10 @@ There is no unified merged runtime yet. Root and track CLIs are separate impleme
 
 ## Read next
 
+Current design conversation: [testing-environment interview decisions](docs/consolidation/testing-environment-interview.md). Confirmed: tool selection/discovery improvement, level-3 findings, autonomous within admitted scope, URL-only starting access with self-registration, dedicated readable test inbox. No strict deadline. Continue the interview before selecting/building the environment.
+
+**Do not repeat settled interview questions.** Read [decision reconciliation](docs/consolidation/decision-reconciliation-2026-10-21.md) and the October 18 discovery record first. New direction: a reusable security research lab; humans/agents propose hypotheses and strategies, agents may author bounded lab test helpers, and the platform supports both supplied targets and generated experiments. Platform/scorer/permission self-modification is not included. Current research requests: cloudflare/security-audit-skill (Thistle), Hack-with-Github/Awesome-Hacking (Cass), karpathy/autoresearch (Ginger), source reading only.
+
 1. [Branch and context reconciliation](docs/consolidation/branch-reconciliation.md).
 2. [ARTEX deeper review and validation gates](docs/consolidation/artex-deep-dive.md).
 3. [Benchmark and learning environment proposal](docs/consolidation/benchmark-plan.md).

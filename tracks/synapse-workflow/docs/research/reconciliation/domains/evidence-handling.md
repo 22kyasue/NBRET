@@ -1,6 +1,6 @@
 # Evidence capture, attribution, integrity and confidentiality
 
-Generated from `register/*.json` by `build-register.mjs`; do not edit by hand. 49 findings, 137 related corrections, 32 hazards.
+Generated from `register/*.json` by `build-register.mjs`; do not edit by hand. 51 findings, 137 related corrections, 32 hazards.
 
 Evidence strength, strongest first: integrated-lab (real tool run) > component-lab (fixture/mock run) > source-trace (code read) > public-doc > vendor-claim > synthesis. Read the cited lines before repeating a claim to a client.
 
@@ -55,6 +55,8 @@ Evidence strength, strongest first: integrated-lab (real tool run) > component-l
 | [ZAP rejects oversized message bodies at storage (default 16 MiB) instead of truncating](#evidence-handlingzap-history-size-limit) | component-lab | evidence |
 | [ZAP SARIF export masks only Authorization; cookies, API keys, query and bodies survive](#evidence-handlingzap-sarif-keeps-secrets) | component-lab | reporting, evidence |
 | [Authorization engine logs can contain users, objects and request context](#evidence-handlingauthz-logs-carry-sensitive-data) | source-trace | evidence, reporting, operations |
+| [Autoresearch keep/discard instructions are not a durable security experiment journal](#evidence-handlingautoresearch-loop-needs-durable-failure-history) | source-trace | evidence, operations, ai-evaluation |
+| [Cloudflare record validators do not establish artifact effects or cross-document consistency](#evidence-handlingcloudflare-validators-not-effect-oracle) | source-trace | evidence, reporting, ai-evaluation |
 | [Concurrent pool results omit errored tasks and do not pair errors with tasks](#evidence-handlingconcurrent-results-not-task-ledger) | source-trace | evidence, operations |
 | [DB codecs collapse NULL vs zero and change time/decimal meaning](#evidence-handlingdb-representation-loss) | source-trace | evidence, reporting |
 | [Human-readable renderings lose precision and type; they are not canonical evidence](#evidence-handlingdisplay-strings-not-evidence) | source-trace | evidence, reporting |
@@ -264,6 +266,30 @@ OpenFGA's optional shadow v2 check logs can include user, object, context and co
 **Limits:** Source trace of one optional feature.
 
 **Sources:** [assessment-evidence/deep-openfga.md:13](../../assessment-evidence/deep-openfga.md#L13)
+
+### evidence-handlingautoresearch-loop-needs-durable-failure-history
+
+**`evidence-handling.autoresearch-loop-needs-durable-failure-history`: Autoresearch keep/discard instructions are not a durable security experiment journal** (source-trace)
+
+The prompt logs short commits and keep/discard/crash statuses in an untracked TSV, overwrites run.log and resets rejected code from branch history. The training program writes no model checkpoint/resume artifact. Long-lived retention is not established by those instructions.
+
+**Do:** Retain full candidate revisions/diffs, original logs, failed/unscored outcomes and reasons in the existing durable journal instead of relying on a reset branch and short-hash TSV.
+
+**Limits:** Source/doc review, not observed data loss or a runtime retention test. Local Git reflogs may temporarily retain discarded commits; that is not a durable retention contract.
+
+**Sources:** [security-landscape/repository-reviews-20261021/autoresearch-review-ginger.md:32](../../security-landscape/repository-reviews-20261021/autoresearch-review-ginger.md#L32)
+
+### evidence-handlingcloudflare-validators-not-effect-oracle
+
+**`evidence-handling.cloudflare-validators-not-effect-oracle`: Cloudflare record validators do not establish artifact effects or cross-document consistency** (source-trace)
+
+The two validators inspect separate declared records. Confirmed results require visible observed-result prose, and local coverage artifacts need syntactically owned paths; target/effect artifact contents and global run/report relationships are not verified by these validators.
+
+**Do:** Import validator output as a structural check, not an independent finding. Preserve original evidence and separately admit effect, identity, review and cross-artifact contracts.
+
+**Limits:** Source-trace of validators and authored tests, not a runtime false-report demonstration. Upstream instructions require stronger honest review than the executable schema can establish.
+
+**Sources:** [security-landscape/repository-reviews-20261021/cloudflare-review-thistle.md:102](../../security-landscape/repository-reviews-20261021/cloudflare-review-thistle.md#L102)
 
 ### evidence-handlingconcurrent-results-not-task-ledger
 
