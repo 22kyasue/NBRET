@@ -9,3 +9,4 @@ sessions/
 __pycache__/
 .scratch/
 .tools/
+artifacts/synapse-ui/references/

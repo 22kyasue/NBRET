@@ -1,0 +1,64 @@
+{
+  "kind": "local-consolidation-receipt",
+  "datePacific": "2026-10-20",
+  "branch": "kotaro/synapse-consolidation",
+  "workspace": "C:/Users/kotar/githubprojects/NBRET",
+  "preservationCommit": "e786971cb9c7124c6ab38118e18a98df4d4790b7",
+  "previousLocalBranch": {
+    "name": "feat/api-investigation",
+    "head": "62e2b7274daee13750a0b974edf0af599f8e2d19",
+    "deletion": "Deleted with git branch -d after new branch and preservation commit; all prior commits retained in new history and backup bundle",
+    "remoteDeleted": false
+  },
+  "main": {
+    "branchTipUnchanged": "0fcdfa667d1276cfe7e9834ae87d42d917251dfb",
+    "originalWipStashCommit": "e1f1361fa4dec9694c3e8bb40bb10ec84d89ef01",
+    "wipAlsoPreservedIn": "tracks/synapse-workflow"
+  },
+  "backup": {
+    "path": "C:/Users/kotar/githubprojects/NBRET-consolidation-backups/2026-10-21T05-40-04-594Z",
+    "originalMainRegularFiles": 1428,
+    "originalApiRegularFiles": 95,
+    "gitBundlesVerified": 2,
+    "importedFilesVerifiedAgainstOriginalHashesInGitIndex": 1420,
+    "selectedArtexSourceFiles": 40,
+    "allLocalCliBridgeFiles": 9,
+    "extraIgnoredDesignReferenceFilesCopiedAndHashed": 16,
+    "limits": "Local backup only, not offsite. Ignored runs/tools/dependencies/env/logs stay in place; nested scratch-directory pointers are recorded. No credential files copied into Git."
+  },
+  "validation": {
+    "focusedTests": {
+      "directory": "tracks/synapse-workflow",
+      "command": "node --test test/evidence-admission.test.mjs test/investigation-measurement.test.mjs",
+      "passed": 23,
+      "failed": 0,
+      "skipped": 0,
+      "scope": "Offline record/measurement tests; no target or model calls"
+    },
+    "researchRegister": {
+      "command": "node docs/research/reconciliation/find-research.mjs --check",
+      "findings": 328,
+      "corrections": 203,
+      "hazards": 80,
+      "problems": 0,
+      "existingQuestionCountWarnings": 3
+    },
+    "whitespace": "New consolidation/context files checked; imported historical whitespace retained to preserve original bytes. No formatting rewrite of archived work.",
+    "originalApiRuntimeChanged": false
+  },
+  "outputs": [
+    "CONTEXT.md",
+    "AGENTS.md",
+    "docs/consolidation/branch-reconciliation.md",
+    "docs/consolidation/artex-deep-dive.md",
+    "docs/consolidation/benchmark-plan.md",
+    "docs/consolidation/preservation-receipt-2026-10-20.json"
+  ],
+  "notPerformed": [
+    "No production change, deployment, push or remote branch deletion",
+    "No ARTEX/provider execution, scanner run, client assessment or stopped-lab resumption",
+    "No VM/account/firewall configuration, hidden target generation or blind benchmark",
+    "No claim of independently verified findings, repair effectiveness or discovery superiority",
+    "No task browser windows/tabs opened"
+  ]
+}

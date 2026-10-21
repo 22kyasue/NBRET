@@ -46,3 +46,11 @@ There is no unified merged runtime yet. Root and track CLIs are separate impleme
 The local pre-change backup is recorded in [preservation receipt](docs/consolidation/preservation-receipt-2026-10-20.json). It includes verified Git bundles for both original branches, byte copies of nonignored working-tree files and Kensei's non-secret inspection/source artifacts. Ignored runs/tools/dependencies/env/logs remain at their original locations; nested scratch directories are explicit in the backup manifest. It is a local backup, not cloud/offsite redundancy.
 
 Next: choose and verify an actual investigator/key boundary, then implement a public data-only run manifest and an independent scorer contract before creating held-out target variants. Use the current practice environment for openly guided learning meanwhile. No new paid service or production infrastructure is required by this plan.
+
+## Completed branch transition
+
+The new branch is checked out in the original `C:/Users/kotar/githubprojects/NBRET` directory. The previous `feat/api-investigation` local branch name was deleted only after its head was an ancestor of preservation commit `e786971`. Its ten commits remain in the new branch and verified backup bundle. The sibling `NBRET-api-investigation` worktree is left detached at that preservation commit, with no active development assigned there.
+
+The original main working tree is additionally retained in stash commit `e1f1361fa4dec9694c3e8bb40bb10ec84d89ef01`; do not apply it over this consolidated layout. Use the saved snapshot/receipt to recover an individual file into a fresh location if needed. Main's branch tip was not changed. Sixteen previously ignored design-reference images/manifests were explicitly copied to the local backup and to the track's ignored reference directory; original ignored files were retained.
+
+Validation after switching the original workspace: 1,420 imported files match the saved source hashes in Git; the focused structural-review/measurement suites pass 23 tests; the 328-finding research register has zero citation/schema problems and three existing question-count warnings. No full runtime acceptance, ARTEX execution, hidden-target generation or sandbox boundary validation occurred. See [completion receipt](docs/consolidation/completion-2026-10-20.json).
