@@ -1,0 +1,13 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import {pathToFileURL} from 'node:url';
+const own=path.resolve('docs/research/assessment-evidence');
+let source=fs.readFileSync(path.join(own,'run-claude-cleanup-lab.mjs'),'utf8');
+source=source.replaceAll('claude-cleanup','agentdojo-deleted-files-oracle');
+source=source.replace('test_claude_cleanup_contract.py','test_agentdojo_deleted_files_oracle.py');
+source=source.replace("sourceSha256:hash(path.join(root,'src/claude_agent_sdk/client.py'))","sourceSha256:Object.fromEntries(['C:/Users/kotar/.codex/research/agentdojo-20261017/src/agentdojo/default_suites/v1_2_1/workspace/injection_tasks.py'].map(p=>[p,hash(p)]))");
+source=source.replace(/criteria:'[^']*'/,"criteria:'one target plus four unrelated missing passes; all five targets missing passes; only unrelated missing rejects'");
+source=source.replace(/intervention:'[^']*'/,"intervention:'actual complete security method AST and synthetic dictionaries only; no file or email deletion, agent, cloud access, mail, model or network'");
+const generated=path.join(own,'run-agentdojo-deleted-files-oracle-generated.mjs');
+fs.writeFileSync(generated,source,{flag:'wx'});
+await import(pathToFileURL(generated).href);

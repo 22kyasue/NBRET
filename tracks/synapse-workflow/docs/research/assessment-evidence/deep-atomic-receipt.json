@@ -1,0 +1,25 @@
+{
+    "powershell":  "5.1.26100.9711",
+    "scope":  "Real orchestration functions with mocked parser,target-info,command dispatcher; no Atomic command or process launched",
+    "whatIfDispatches":  [
+                             "SYNTHETIC-RUN"
+                         ],
+    "checkPrereqDispatches":  [
+                                  "SYNTHETIC-CHECK"
+                              ],
+    "cleanupDispatches":  [
+                              "SYNTHETIC-CLEANUP"
+                          ],
+    "cleanupReturnedNonzero":  7,
+    "cleanupStillPrintedDone":  true,
+    "cleanupText":  "Executing cleanup for test: \r\nT0000-1 Synthetic only\r\n\r\nDone executing cleanup for test: \r\nT0000-1 Synthetic only\r\n\r\n",
+    "modelCalls":  0,
+    "networkCalls":  0,
+    "externalEffects":  0,
+    "sources":  {
+                    "Private/Invoke-CheckPrereqs.ps1":  "4B61DC0B8C24F61FFF4A29FB964C9120BC35FF186DB20465DC65C5D8B456CE14",
+                    "Public/Invoke-AtomicTest.ps1":  "78B928FD09610F5B6698F7A58728D497822514C7A399DBD9CEE6C3A21A29BEA3",
+                    "Private/Replace-InputArgs.ps1":  "2EC4C4D548C785E76BD5A9A3FF9DFD03C576786E10F926C8CCFFC8B5D2D23D41"
+                },
+    "scriptSha256":  "16DE4232FFE0DE1AD48939BB40B1B9327ACA124B845F44D79DA55A830D3A1B50"
+}

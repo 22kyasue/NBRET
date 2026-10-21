@@ -1,0 +1,36 @@
+{
+  "note": "Selected contiguous reads, not complete-document review. Archived byte hashes and retrieval times are in sources.json. Earlier selected reads remain described in continuation.md.",
+  "entries": [
+    {
+      "id": "robots",
+      "ranges": [[1, 608]],
+      "status": "complete archived document read; referenced standards not thereby read",
+      "reviewDate": "2026-10-17",
+      "findings": "RFC9309 full syntax/access/error/cache/security/examples reviewed. Cooperative rules are not authorization; unreachable differs from unavailable; parser adapters and middleware need separate enforcement evidence."
+    },
+    {
+      "id": "oauth-security",
+      "ranges": [[354, 476], [1960, 2094]],
+      "reviewedAt": "2026-10-17T20:29:00Z",
+      "findings": "RFC9700 sections2.2–2.5 and4.14–4.15 distinguish sender constraint, resource/action audience checks, refresh lineage/replay response, and client versus resource-owner subject identity. Partial document review only."
+    },
+    {
+      "id": "kubernetes-service-accounts",
+      "ranges": [[886, 1033]],
+      "reviewedAt": "2026-10-17T20:30:00Z",
+      "findings": "Main service-account article through alternatives: default assignment, namespaced identity, RBAC, projected token rotation and TokenReview versus OIDC deletion freshness. Documentation only; Kubernetes enforcement source not reviewed."
+    },
+    {
+      "id": "shared-addresses",
+      "ranges": [[855, 1043]],
+      "reviewedAt": "2026-10-17T20:31:00Z",
+      "findings": "RFC6269 selected traceability and shared-address penalty-box/authentication sections; historical Informational RFC, not present law or measured detector performance."
+    },
+    {
+      "id": "ipv6-temporary",
+      "ranges": [[130, 238], [861, 904]],
+      "reviewedAt": "2026-10-17T20:31:00Z",
+      "findings": "RFC8981 correlation/privacy limits and legitimate temporary-address changes; no address rotation configuration or external activity."
+    }
+  ]
+}

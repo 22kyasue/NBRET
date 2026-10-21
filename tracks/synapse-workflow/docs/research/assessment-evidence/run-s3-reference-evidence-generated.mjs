@@ -1,0 +1,17 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import crypto from 'node:crypto';
+import {spawnSync} from 'node:child_process';
+const own=path.resolve('docs/research/assessment-evidence');
+const root='C:/Users/kotar/.codex/research/assessment-evidence-sdk-sources/claude-agent-sdk-0.2.90-source/claude_agent_sdk-0.2.90';
+const exe='C:/Users/kotar/.codex/research/assessment-evidence-venv/Scripts/python.exe';
+const at=Date.now(), out=path.resolve(`C:/Users/kotar/.codex/research/assessment-evidence-receipts/s3-reference-evidence-${at}`);
+fs.mkdirSync(out);
+const fixture=path.join(own,'test_s3_reference_evidence_contract.py');
+const args=['-m','pytest','-q','-p','no:cacheprovider','-p','pytest_asyncio.plugin','--basetemp',path.join(out,'pytest-temp'),fixture];
+const env={...process.env,PYTHONPATH:path.join(root,'src')+';'+path.join(root,'examples'),PYTEST_DISABLE_PLUGIN_AUTOLOAD:'1',PYTHONDONTWRITEBYTECODE:'1'};
+const r=spawnSync(exe,args,{windowsHide:true,env,encoding:'utf8',timeout:30000,maxBuffer:2000000});
+const hash=p=>crypto.createHash('sha256').update(fs.readFileSync(p)).digest('hex');
+const receipt={at:new Date().toISOString(),command:[exe,...args],out,exitCode:r.status,stdout:r.stdout,stderr:r.stderr,elapsedMs:Date.now()-at,sourceSha256:Object.fromEntries(['examples/session_stores/s3_session_store.py'].map(p=>[p,hash(path.join(root,p))])),fixtureSha256:hash(fixture),runnerSha256:hash(new URL(import.meta.url)),packages:spawnSync(exe,['-m','pip','freeze'],{windowsHide:true,encoding:'utf8'}).stdout,criteria:'two writers with injected clock skew sort by filename time, duplicate UUID retained; malformed line skipped; one-writer same-time ordering control',intervention:'actual reference adapter with shipped in-memory recording client; patched synthetic wall clocks, no boto3 or network',limits:'No process, real credential, materialization or filesystem deletion; not evidence of an actual orphan or retained secret',cost:'local CPU/storage only'};
+fs.writeFileSync(path.join(own,`s3-reference-evidence-receipt-${at}.json`),JSON.stringify(receipt,null,2)+'\n');
+console.log(JSON.stringify({exitCode:r.status,stdout:r.stdout,stderr:r.stderr}));

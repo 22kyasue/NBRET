@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "kind": "nbret-offline-foundation-receipt",
+  "recordedAt": "2026-10-18T22:01:49.898Z",
+  "node": "v24.21.0",
+  "scope": "Stage 0 inventory and Stage 1 offline declared-record foundation; no adaptive investigator or target execution",
+  "command": "node --test test/investigation-cli.test.mjs test/investigation-journal.test.mjs test/investigation-records.test.mjs test/scope.test.mjs",
+  "results": {
+    "passed": 19,
+    "failed": 0,
+    "skipped": 0,
+    "runnerDurationMs": 1039.1195
+  },
+  "review": {
+    "journal": "Bryn implementation; Skye and Elm source review",
+    "lifecycle": "Elm implementation; Bryn and Skye source review",
+    "integration": "Skye implementation; Bryn identified export blocker and approved fix",
+    "replayOptimization": "Elm implementation; Skye source and differential/integration verification"
+  },
+  "timing": {
+    "fixture": "in-memory synthetic progress records, one sample at each size",
+    "counts": [
+      100,
+      500,
+      1000
+    ],
+    "beforeMs": [
+      8.62,
+      161.01,
+      613.77
+    ],
+    "afterMs": [
+      2.28,
+      5,
+      10.21
+    ],
+    "limitation": "Engineering observation, not robust benchmark or investigation effectiveness."
+  },
+  "sourceSha256": {
+    "src/investigation/journal.mjs": "bc5cedcb0dfdaebbc3fc17dee199c80e93b615483e58760a58755b2514e3c08e",
+    "src/investigation/records.mjs": "6f4ff0c456beaa55fcf3109f5613324b6df7c5cc3223a930fd503129aed8ea17",
+    "src/investigation/cli.mjs": "90aea06f1642162bc22922771859aeeda173357e0be13ac9f0133bfeabaec692",
+    "src/investigation/report.mjs": "e3a33cbf49ebd674b8b0095bde404443250f51c6772e72488117acec98479efe",
+    "test/investigation-journal.test.mjs": "6c4b4f13bd7eb945c62659b6687cbba1ec67bd80d3fb9472069521f4d6447157",
+    "test/investigation-records.test.mjs": "0d822cb8d555d86d9f52052039e857261c5ae58dca4f6cc2537281b3ed9a53c4",
+    "test/investigation-cli.test.mjs": "329d495444fba688316a31cee98b1f418f68f84f4064e1c73e56aa352aa5b01a"
+  },
+  "limitations": [
+    "Operator declarations do not establish authenticated effect/reviewer independence.",
+    "Artifact contents are not loaded or verified.",
+    "Shared-account answer-key isolation is not enforced.",
+    "Prior external head needed to detect valid suffix rollback.",
+    "Interrupted locks/pending entries require manual inspection.",
+    "Failed append can have committed before a later error.",
+    "No general secret sanitization, power-loss durability or production-readiness claim."
+  ],
+  "noAdditionalDependencies": true,
+  "targetRequestsPerformed": false,
+  "providerLaunched": false,
+  "liveScopeApproved": false
+}

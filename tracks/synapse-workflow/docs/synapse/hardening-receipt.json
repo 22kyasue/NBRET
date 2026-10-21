@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "kind": "nbret-offline-hardening-receipt",
+  "recordedAt": "2026-10-18T22:18:37.261Z",
+  "node": "v24.21.0",
+  "scope": "Foundation hardening and read-only historical assessment inspection; no adaptive target execution",
+  "command": "node --test test/investigation-cli.test.mjs test/investigation-import.test.mjs test/investigation-journal.test.mjs test/investigation-records.test.mjs test/scope.test.mjs",
+  "results": {
+    "passed": 33,
+    "failed": 0,
+    "skipped": 0,
+    "runnerDurationMs": 1508.7331
+  },
+  "fixes": [
+    "Raw UTF-8 byte comparison prevents decoding-equivalent corruption.",
+    "Controlled interruption before/after publication preserves explicit recovery state.",
+    "Shared ancestor guard prevents nested/cross-journal output poisoning.",
+    "Dense replay arrays and aggregate/structural budgets reject malformed or oversized history.",
+    "Current review rejection remains visible despite conflicting verification.",
+    "Read-only inspector validates exact bindings and re-evaluates unreviewed results; error/response ambiguity and missing measurement reject."
+  ],
+  "review": {
+    "persistence": "Bryn implementation/audit; Skye integration review",
+    "lifecycle": "Elm audit/fixes; Skye source/integration review",
+    "adapter": "Skye implementation; Elm independent invariants and Bryn source approval"
+  },
+  "sourceSha256": {
+    "src/investigation/journal.mjs": "52d9c342381f23a106d06c461a2c0e8f9776d2f965ebe797d75e051fcdf33e0a",
+    "src/investigation/records.mjs": "f7f4c551bdc00a6d6a60961e64aff778901e3392bb3180266906193a8e5a2e68",
+    "src/investigation/cli.mjs": "0c8c8a8043c5586489149b1e1909fc3c9cd9cb441abeb4a019db162af48fee8f",
+    "src/investigation/report.mjs": "e3a33cbf49ebd674b8b0095bde404443250f51c6772e72488117acec98479efe",
+    "src/investigation/output-path.mjs": "6c451f13e0f4901cd1ec9265c2254b63ede301f8010768fc7b85adecb4498e0b",
+    "src/investigation/assessment-import.mjs": "c4ff1c943c1d5d1d4b16823d9cd5f2e92690c12afd0314b331566024f2d90f53",
+    "test/investigation-journal.test.mjs": "dbda27ec7cd8d90f095e25ce24bb7727d06ad2fcfa636bba3af757d04beadaa0",
+    "test/investigation-records.test.mjs": "fd683f76f5909398d79f298364a8cb6e8845b4c22187df78119de380d19538aa",
+    "test/investigation-cli.test.mjs": "e5945a01bd146d5b6de999c7827b78b9de8b2a7667de5b906354663110638cb2",
+    "test/investigation-import.test.mjs": "47af83737b703d83296c61bb8e5e801d61854c9411a2b4ec909a86bb453b4556"
+  },
+  "testLimitations": [
+    "Worker termination is not OS process crash or power-loss proof.",
+    "Windows regular file symlink creation was denied; junction-root/artifact paths tested instead.",
+    "No scanner/provider/browser or application contacted.",
+    "Hash/stat consistency is not source authenticity or trusted independent effect."
+  ],
+  "noAdditionalDependencies": true,
+  "targetRequestsPerformed": false,
+  "providerLaunched": false
+}

@@ -1,0 +1,93 @@
+{
+  "at": "2026-10-17T21:54:03.301635+00:00",
+  "python": "3.14.7 (tags/v3.14.7:823f032, Aug  5 2026, 10:51:32) [MSC v.1944 64 bit (AMD64)]",
+  "mitmproxyDistributionVersion": "13.0.0.dev0",
+  "pin": "77355977e5ea540b51ed029a40ed1dc2f1c2ba7b",
+  "sourceHashes": {
+    "mitmproxy/addons/savehar.py": "d71b3974fd67376179b050dfa27bd93fac0a6a55a63b7e3f9609acde7026ed27",
+    "mitmproxy/io/har.py": "a94e9195292efe484872bf989daa92af19340c47ec1344af2d2a3e9d9954632f",
+    "mitmproxy/coretypes/serializable.py": "4248887d6c3c43db76a6b0cb21e683041516cadb167c0d97ef012f2f0bd85378",
+    "mitmproxy/connection.py": "b72769a891a8e318cfd67ffc0cbccc1ff1ba24286a2ce3a0e9f506a5aab3f336"
+  },
+  "fixtureSha256": "1ffd0c83c3e84d9e194b9c9acd4a9157bbfda3b0b53d31da5ae204ce5d71e4d1",
+  "planSha256": "c453c263cb8903496fd4d1afa41d4c0b7cafe713e6da452192fbb36e16baceeb",
+  "observations": [
+    {
+      "case": "get_body_omitted",
+      "actual": {
+        "postData": false,
+        "restored_body": ""
+      },
+      "expected": {
+        "postData": false,
+        "restored_body": ""
+      },
+      "pass": true
+    },
+    {
+      "case": "connection_port_reconstructed",
+      "actual": {
+        "request_port": 8443,
+        "server_port": 443
+      },
+      "expected": {
+        "request_port": 8443,
+        "server_port": 443
+      },
+      "pass": true
+    },
+    {
+      "case": "error_representation_changes",
+      "actual": {
+        "export_error": "synthetic capture error",
+        "restored_error": null,
+        "restored_status": 0
+      },
+      "expected": {
+        "export_error": "synthetic capture error",
+        "restored_error": null,
+        "restored_status": 0
+      },
+      "pass": true
+    },
+    {
+      "case": "compression_decoded",
+      "actual": {
+        "text": "ordinary compressed content",
+        "content_encoding": null,
+        "same_raw_bytes": false
+      },
+      "expected": {
+        "text": "ordinary compressed content",
+        "content_encoding": null,
+        "same_raw_bytes": false
+      },
+      "pass": true
+    },
+    {
+      "case": "no_automatic_marker_redaction",
+      "actual": true,
+      "expected": true,
+      "pass": true
+    },
+    {
+      "case": "post_control",
+      "actual": "ordinary POST body",
+      "expected": "ordinary POST body",
+      "pass": true
+    },
+    {
+      "case": "network_attempts",
+      "actual": 0,
+      "expected": 0,
+      "pass": true
+    }
+  ],
+  "oraclePassed": true,
+  "cleanup": "Metadata objects only; subprocess exit releases memory; no listener or global configuration created.",
+  "limitations": [
+    "Selected native HAR adapter only; no request/replay/browser capture",
+    "Synthetic source metadata is not proof of real network events",
+    "No claim about other HAR producers or all persistence paths"
+  ]
+}

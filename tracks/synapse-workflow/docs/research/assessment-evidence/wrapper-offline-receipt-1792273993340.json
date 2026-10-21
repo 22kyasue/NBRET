@@ -1,0 +1,56 @@
+{
+  "at": "2026-10-17T21:53:15.001Z",
+  "command": [
+    "C:/Users/kotar/.codex/research/assessment-evidence-venv/Scripts/python.exe",
+    "-m",
+    "pytest",
+    "-q",
+    "-p",
+    "no:cacheprovider",
+    "-p",
+    "pytest_asyncio.plugin",
+    "--basetemp",
+    "C:\\Users\\kotar\\.codex\\research\\assessment-evidence-receipts\\agent-recovery-1792273993340\\pytest-temp",
+    "tests/test_codex_backend.py",
+    "tests/test_agent.py",
+    "tests/test_task.py",
+    "tests/test_tools.py"
+  ],
+  "cwd": "C:/Users/kotar/.codex/research/unified-agent-acff8ee",
+  "environment": {
+    "PYTHONPATH": "C:/Users/kotar/.codex/research/unified-agent-acff8ee;C:/Users/kotar/.codex/research/assessment-evidence-sdk-sources/openai-codex-0.1.0b3-source/openai_codex-0.1.0b3/src",
+    "PYTEST_DISABLE_PLUGIN_AUTOLOAD": "1",
+    "PYTHONDONTWRITEBYTECODE": "1"
+  },
+  "exitCode": 1,
+  "signal": null,
+  "elapsedMs": 1662,
+  "out": "C:\\Users\\kotar\\.codex\\research\\assessment-evidence-receipts\\agent-recovery-1792273993340",
+  "stdout": "............................F..........................                  [100%]\r\n================================== FAILURES ===================================\r\n_____________________ test_tools_and_skills_prepared_once _____________________\r\n\r\ntmp_path = WindowsPath('C:/Users/kotar/.codex/research/assessment-evidence-receipts/agent-recovery-1792273993340/pytest-temp/test_tools_and_skills_prepared0')\r\n\r\n    async def test_tools_and_skills_prepared_once(tmp_path):\r\n        from unified_agent.skills import make_skill\r\n    \r\n        skills_src = tmp_path / \"skills\"\r\n        make_skill(skills_src, \"alpha-skill\", \"Does alpha.\", \"Body\")\r\n        backend = FakeBackend(events=GOOD_EVENTS)\r\n        agent = UnifiedAgent(\r\n            backend=backend,\r\n            workspace=tmp_path / \"ws\",\r\n            tools=\"tests.fixture_registry:REG\",\r\n            skills_dir=skills_src,\r\n        )\r\n        await agent.run(\"a\")\r\n        await agent.run(\"b\")\r\n>       opts = backend.seen_opts[0]\r\n               ^^^^^^^^^^^^^^^^^^^^\r\nE       IndexError: list index out of range\r\n\r\ntests\\test_agent.py:143: IndexError\r\n=========================== short test summary info ===========================\r\nFAILED tests/test_agent.py::test_tools_and_skills_prepared_once - IndexError:...\r\n1 failed, 54 passed in 0.82s\r\n",
+  "stderr": "",
+  "packages": "annotated-types==0.8.0\r\nanyio==4.15.1\r\ncertifi==2026.7.22\r\ncolorama==0.4.6\r\ndocstring_parser==0.18.0\r\nh11==0.16.0\r\nhttpcore==1.0.9\r\nhttpx==0.28.1\r\nidna==3.20\r\niniconfig==2.3.1\r\npackaging==26.3\r\npluggy==1.7.0\r\npydantic==2.14.1\r\npydantic_core==2.50.1\r\nPygments==2.21.0\r\npytest==9.1.1\r\npytest-asyncio==1.4.0\r\nPyYAML==6.0.3\r\nstarlette==1.8.0\r\ntyping-inspection==0.4.4\r\ntyping_extensions==4.16.0\r\n",
+  "criteria": "unchanged selected offline wrapper tests pass; synthetic notifications/backends, local context files and tool metadata only",
+  "scope": "actual wrapper normalization/configuration/collection/task/registry methods; source-path Codex SDK model imports; no client start, CLI, MCP subprocess or provider",
+  "sourceSha256": {
+    "unified_agent/backends/codex.py": "54a2fb6f4016091a22dd6c948a9a7661f92cd11e884e903d23279d7cfe3f0e73",
+    "unified_agent/agent.py": "045b5d645c0fb5556ce48bfebada2725a86cf07959bcc0169067bc6e5d292953",
+    "unified_agent/task.py": "a51b33f3810df5ab6555992b863a63c2e35d98510d15817eb1684d4409ee9f51",
+    "unified_agent/tools.py": "f6669da93eab03219d5c9c527be1e5330c0310df6291a1183738cb227c200443",
+    "tests/test_codex_backend.py": "95baafe41dee6b07bfb3cb8f3ca599b046619a400c530e1e4c9079026969b171",
+    "tests/test_agent.py": "9b848ddfd0320f461f00ce36c34bfc5ba38bc4ac67f9201b21e33a1334b8309c",
+    "tests/test_task.py": "5796fe4b18f0f54656e73b652db5d3a4fcff04548443e721e7bb22a708d8308d",
+    "tests/test_tools.py": "26890a302add2cd27d845550accc12dd176a3f6af6edaa37a8cced3acc9d2dbb",
+    "tests/fixture_registry.py": "9360ad9b9f4867dc4bb92736409226072361749c016eac0c3b88c7ddd13a7190",
+    "pyproject.toml": "e1b8ab09d24a588bca438db144940cc14f14ed97dedb8c1fef7338405a815105"
+  },
+  "runnerSha256": "88a59e4ab98a93dce846ec9b427773c963345f9ceaf42d1b20f9948253b1b724",
+  "stdoutSha256": "8f8e1c3363583b44b3f8e3db534fb88a15a62eed40f628b47afab8c1fe92a2b3",
+  "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "intervention": "researcher selected test files, isolated temp root and source-path imports; production/upstream tests unchanged",
+  "cost": "local CPU/storage, no provider calls; no monetary estimate",
+  "limits": [
+    "source-path imports rather than a fully locked installed environment",
+    "scripted events do not prove underlying tools ran or observations are true",
+    "finite cases do not prove universal crash consistency or redaction"
+  ]
+}

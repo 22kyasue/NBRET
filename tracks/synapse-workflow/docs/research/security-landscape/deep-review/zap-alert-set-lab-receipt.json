@@ -1,0 +1,77 @@
+{
+  "at": "2026-10-17T21:55:56.873Z",
+  "runs": [
+    {
+      "at": "2026-10-17T21:55:31.115Z",
+      "out": "C:\\Users\\kotar\\githubprojects\\NBRET\\runs\\zap-alert-set-research-1792274130371",
+      "scope": "Actual installed AlertSet/Alert/SiteNode object methods only; no daemon/network/browser/database",
+      "command": {
+        "executable": "C:/Users/kotar/AppData/Local/Programs/BurpSuite/jre/bin/java.exe",
+        "args": [
+          "-Djava.awt.headless=true",
+          "--class-path",
+          "C:\\Users\\kotar\\githubprojects\\NBRET\\.tools\\ZAP_2.17.0\\zap-2.17.0.jar;C:\\Users\\kotar\\githubprojects\\NBRET\\.tools\\ZAP_2.17.0\\lib\\*",
+          "C:\\Users\\kotar\\githubprojects\\NBRET\\runs\\zap-alert-set-research-1792274130371\\AlertSetResearch.java"
+        ],
+        "cwd": "C:\\Users\\kotar\\githubprojects\\NBRET\\runs\\zap-alert-set-research-1792274130371"
+      },
+      "exit": 0,
+      "signal": null,
+      "elapsedMs": 741.8648000000001,
+      "passes": [
+        "PASS distinct_risk_control",
+        "PASS remove_recomputes_control",
+        "PASS clear_collection_control",
+        "PASS clear_retains_stale_highest_counterexample",
+        "PASS replacement_not_new_id_control",
+        "PASS map_contains_replacement_control",
+        "PASS replacement_retains_old_object_counterexample",
+        "PASS exclusion_clears_inclusion_control",
+        "PASS projection_flags_can_diverge_counterexample"
+      ],
+      "jarSha256": "015dda4709b5ef79736086bb41e8e2a4e95b04cf6625f14d6bcc02b197c99c0c",
+      "reviewedSourceSha256": "a8bce00b8bb8b066381975342a91b05c72c6bf741a288e0791ec7c74dc037db4",
+      "fixtureSha256": "630a1c6ece3fa796c03a9a6f4c43ebe52369341d35c7cb33ceb6ed617a5be231",
+      "stdoutSha256": "53c99129967f0eb30f1e37eb81e98f97b20498193751800947d59765cb5ceede",
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "at": "2026-10-17T21:55:32.370Z",
+      "out": "C:\\Users\\kotar\\githubprojects\\NBRET\\runs\\zap-alert-set-research-1792274131672",
+      "scope": "Actual installed AlertSet/Alert/SiteNode object methods only; no daemon/network/browser/database",
+      "command": {
+        "executable": "C:/Users/kotar/AppData/Local/Programs/BurpSuite/jre/bin/java.exe",
+        "args": [
+          "-Djava.awt.headless=true",
+          "--class-path",
+          "C:\\Users\\kotar\\githubprojects\\NBRET\\.tools\\ZAP_2.17.0\\zap-2.17.0.jar;C:\\Users\\kotar\\githubprojects\\NBRET\\.tools\\ZAP_2.17.0\\lib\\*",
+          "C:\\Users\\kotar\\githubprojects\\NBRET\\runs\\zap-alert-set-research-1792274131672\\AlertSetResearch.java"
+        ],
+        "cwd": "C:\\Users\\kotar\\githubprojects\\NBRET\\runs\\zap-alert-set-research-1792274131672"
+      },
+      "exit": 0,
+      "signal": null,
+      "elapsedMs": 695.7900000000001,
+      "passes": [
+        "PASS distinct_risk_control",
+        "PASS remove_recomputes_control",
+        "PASS clear_collection_control",
+        "PASS clear_retains_stale_highest_counterexample",
+        "PASS replacement_not_new_id_control",
+        "PASS map_contains_replacement_control",
+        "PASS replacement_retains_old_object_counterexample",
+        "PASS exclusion_clears_inclusion_control",
+        "PASS projection_flags_can_diverge_counterexample"
+      ],
+      "jarSha256": "015dda4709b5ef79736086bb41e8e2a4e95b04cf6625f14d6bcc02b197c99c0c",
+      "reviewedSourceSha256": "a8bce00b8bb8b066381975342a91b05c72c6bf741a288e0791ec7c74dc037db4",
+      "fixtureSha256": "630a1c6ece3fa796c03a9a6f4c43ebe52369341d35c7cb33ceb6ed617a5be231",
+      "stdoutSha256": "53c99129967f0eb30f1e37eb81e98f97b20498193751800947d59765cb5ceede",
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "javaVersion": "openjdk version \"26.0.2\" 2026-07-21\r\nOpenJDK Runtime Environment (build 26.0.2+10-55)\r\nOpenJDK 64-Bit Server VM (build 26.0.2+10-55, mixed mode)\r\n",
+  "semanticRepeatConsistent": true,
+  "stdoutBytesRepeatIdentical": true,
+  "limits": "Installed object methods only; no actual scanner/report/session integration or scope violation"
+}

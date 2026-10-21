@@ -1,5 +1,7 @@
 # NBRET
 
+Current consolidation: read [CONTEXT.md](CONTEXT.md) on branch `kotaro/synapse-consolidation`. The original API-investigation implementation remains at the root; the newer Synapse workflow and research are preserved separately in [tracks/synapse-workflow](tracks/synapse-workflow/README.md). The current [benchmark proposal](docs/consolidation/benchmark-plan.md) distinguishes guided learning from held-out evaluation. These are separate runtimes; historical demos below are not automatic run instructions.
+
 Development strategy: [dual-track roadmap, gaps and tool efficiency](docs/roadmap.md). Assess an existing run offline with `npm run assess -- --run runs/<capture>`.
 
 Start with [the executable workflow](docs/workflow.md): capture profiles, scenario batches with assertions, cached offline analysis, local experiments and reference/rebuild comparisons. `npm run benchmark` verifies detection of an intentionally broken local rebuild.

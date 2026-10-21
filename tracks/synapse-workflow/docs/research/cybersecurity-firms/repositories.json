@@ -1,0 +1,74 @@
+{
+  "accessed": "2026-10-17",
+  "repositories": [
+    {
+      "repo": "CrowdStrike/falconpy",
+      "sha": "06a5df86bc68e492db339dccacdff4a9b9ad61ec",
+      "date": "2026-09-24T15:57:27Z",
+      "message": "Update wordlist.txt",
+      "tree": "9ad9808dcd18b0656bf84a24780050f7289a00ca",
+      "reading": "selected workflow read; repository partial",
+      "runtime": "not executed",
+      "annotation": "falcon-host-action-source.md"
+    },
+    {
+      "repo": "trendmicro/vision-one-mcp-server",
+      "sha": "2d137401c26e7c50345d448ea1c662746cb2e7a9",
+      "date": "2026-09-23T18:19:41Z",
+      "message": "Merge pull request #28 from AmbientPlatypus/fix/allocation-size-overflow\n\nfix: avoid overflow-prone size arithmetic in request option allocation",
+      "tree": "e4e40808f95db85fee08474da67d22aafe4dbd94",
+      "reading": "selected workflow read; repository partial",
+      "runtime": "not executed",
+      "annotation": "trend-mcp-source.md"
+    },
+    {
+      "repo": "google/secops-wrapper",
+      "sha": "ca553eb7dc940bd113704c737db04324f25c2ed1",
+      "date": "2026-09-30T05:52:11Z",
+      "message": "Merge pull request #225 from google/doc/maintenance-notice\n\ndocs: add maintenance mode notice and warning badge to README",
+      "tree": "f00a7d2e8a5e3afa7bd06e1fa8c9d8df63cff2ac",
+      "reading": "selected workflow read; repository partial",
+      "runtime": "not executed",
+      "annotation": "google-investigations-source.md"
+    },
+    {
+      "repo": "demisto/content",
+      "sha": "e46f08b8fafc9207f4f658fca4fa949c3ffd687d",
+      "date": "2026-10-16T04:21:33Z",
+      "message": "Crtx 273305 migrate azure resource graph (#46070)\n\n* feat(Azure): migrate Azure Resource Graph commands to COOC unified Azure integration\n\nMigrate azure-rg-list-operations and azure-rg-query from the legacy\nAzureResourceGraph pack into the unified COOC Azure integration, following\nthe Azure Storage migration pattern (two-layer AzureClient method + command\nfunction, handle_azure_error, permission-tracking dicts).\n\n- Add resource_graph_list_operations / resource_graph_query_resources client methods\n- Add command functions with unified Azure.ResourceGraph.* output prefixes\n- Register commands and ResourceGraph permissions\n- Add YAML command blocks and migrated unit tests + test data\n\n* fix(Azure): keep Azure.yml change additive - only add resource graph commands\n\nRevert the demisto-sdk format whole-file reindentation of Azure.yml and keep\nonly the additive azure-rg-list-operations and azure-rg-query command blocks,\nso the YAML diff contains no unrelated deletions.\n\n* fix(Azure): add subscription_id arg to resource graph commands\n\nmain() resolves the account via get_from_args_or_params(key=subscription_id)\non the Cortex Platform connector path before dispatch, so azure-rg-list-operations\nand azure-rg-query need subscription_id available. Add it as an optional arg\n(required on the platform path), matching the other Azure commands. Verified all\ncommand examples pass end-to-end against the live tenant.\n\n* fix ruff\n\n* Align Azure Resource Graph commands with PR review feedback\n\n- Surface API $skipToken as Azure.ResourceGraph.QueryNextToken (context + readable output)\n- Add next_token argument to azure-rg-query for customer-driven pagination\n- Use tableToMarkdown headers (id, name, type) instead of restructuring for HR\n- Validate paging args via shared validate_limit helper\n- Bump Resource Graph API version to latest GA 2024-04-01\n- Update unit tests for keyed-dict outputs and next_token surfacing\n\n* Address code-review findings for Azure Resource Graph commands\n\n- Add release note (1.9.0) documenting the two migrated RG commands; bump pack version\n- Enforce documented default limit of 50 in azure-rg-query unbounded fetch\n- Return explicit 'no results' readable output for both commands when empty\n- Update unit tests for the empty-results behavior\n\n* Address AI reviewer comments on Azure Resource Graph commands\n\n- Fix $skip off-by-one in azure-rg-query paging (page 1 now skips 0)\n- Make RG query mock fixtures consistent (count/totalRecords, id matches name) and obviously mock (mock-subscription-id, MOCK-RESOURCE-GROUP)\n- Declare numeric paging args as type: Number; move query limit default to defaultValue field\n- End query argument description with a period\n- Reword isArray argument descriptions to 'A comma-separated list of...'\n\n* Add README docs for azure-rg-list-operations and azure-rg-query (RM110)\n\n* Address Julia's doc review comments on Azure Resource Graph commands\n\n* cr fixes\n\n* cr fixes\n\n* merge\n\n* Address masulin97 review comments on Azure Resource Graph commands\n\n- Raise RESOURCE_GRAPH_MAX_PAGE_SIZE to 1000 per the Resource Graph paging docs.\n- Remove client-side limit/page/page_size from azure-rg-list-operations (API does not support paging).\n- Send limit to the query API as $top instead of slicing client-side; drop the fetch-all loop.\n- Validate page as a positive integer instead of capping it at BLOB_CONTAINERS_MAX_PAGE_SIZE.\n- Build the query request body with remove_empty_elements().\n- Update YAML, README, and unit tests accordingly.\n\n* Revert unrelated README autolink change in azure-storage-container-create\n\n* merge and bumpv version\n\n* ruff\n\n* merge and bump version\n\n* merge and bump version",
+      "tree": "2c5718b206bf0f8a443ccfce45ce07b85237b0f6",
+      "reading": "selected workflow read; repository partial",
+      "runtime": "not executed",
+      "annotation": "pan-isolation-source.md"
+    },
+    {
+      "repo": "splunk/security_content",
+      "sha": "d6afc62b750dc2ed34e3696999bf26fe476b9b1e",
+      "date": "2026-10-16T13:12:12Z",
+      "message": "Expand AI Defense Coverage (#4345)\n\n\n\n---------\n\nCo-authored-by: Onur Mustafa Erdogan <156806007+onurmerdogan@users.noreply.github.com>",
+      "tree": "f6d646fb449fe050c2784ce5cf5474acdb7a3cec",
+      "reading": "selected workflow read; repository partial",
+      "runtime": "not executed",
+      "annotation": "splunk-lsass-source.md"
+    },
+    {
+      "repo": "Azure/Azure-Sentinel",
+      "sha": "4aee8b861e8f0542a3fe525757762a7487ba1b3b",
+      "date": "2026-10-16T16:31:10Z",
+      "message": "[ASIM] Validate ASIM parser name characters (#15334)\n\n* Validate ASIM parser name characters\n\nEnforce the parser-name identifier regex while retaining schema-specific prefixes. Add focused regression coverage for ASim and vim names.\n\nCo-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>\n\nCopilot-Session: 58155c7b-eed1-4425-85ac-f896cbb01418\n\n* Remove parser name regression test file\n\nCo-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>\n\nCopilot-Session: 58155c7b-eed1-4425-85ac-f896cbb01418\n\n---------\n\nCopilot-Session: 58155c7b-eed1-4425-85ac-f896cbb01418",
+      "tree": "aa0e07211348f7719d9739999bdababdc9867e02",
+      "reading": "selected workflow read; repository partial",
+      "runtime": "not executed",
+      "annotation": "sentinel-playbooks-source.md"
+    },
+    {
+      "repo": "fortinet-fortisoar/connector-microsoft-sentinel",
+      "sha": "9606fe875f20bc500bc6bafb1bfa995833523f3b",
+      "date": "2026-08-24T04:47:58Z",
+      "tree": "786cf03a8940e962c6ac1c463de52da84b5529c4",
+      "reading": "selected incident/auth workflow read; repository partial",
+      "annotation": "fortinet-sentinel-source.md",
+      "runtime": "not executed"
+    }
+  ]
+}

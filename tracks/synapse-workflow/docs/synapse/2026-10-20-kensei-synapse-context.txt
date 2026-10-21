@@ -1,0 +1,59 @@
+SESSION CONTEXT FOR TONIGHT — October 20, 2026
+
+Kotaro asked to save this conversation in NBRET for his discussion with Kensei tonight.
+
+Pending: identify the exact SYNAPSESECURITY Kensei means and obtain the relevant repository/local copy when KrisPC is available. Kotaro thinks KrisPC is off; this was not independently checked. Do not treat public Synapse CE as the same project, or this note as authorization to contact Kensei, access another PC, run assessments or resume stopped operations.
+
+Kensei/Kristina's Discord DM, Oct 20 at 8:10–8:11 AM: says an improved ARTEX version is on his PC, asks Kotaro to look, names SYNAPSESECURITY, mentions artex and clain, says all are open source and suggests wrapping them may be enough. No repository URL appears in these messages.
+Message: https://discord.com/channels/@me/1515683340370448475/1562120960033689661
+
+Kotaro corrected the initial identification: he does not think KKloudTarus/synapse-ce is the one Kensei meant, but authorized a separate investigation of it. Source was cloned and reviewed only; not built or run.
+
+Questions for tonight: exact repo URL and revision; whether SYNAPSESECURITY is a separate project, local folder or wrapper; which ARTEX changes are local/unpushed; which capabilities have actually been demonstrated; how it relates to NBRET's own Synapse initiative. Existing NBRET docs/synapse/handoff-to-skye.md records an earlier, dated observation that a Synapse engine was unverified and not found on KrisPC. Preserve that dated observation; do not interpret today's message as proof of an implemented engine.
+
+The following preliminary review is retained as session context, not an admitted research-register finding or validated tool recommendation.
+
+Synapse CE initial research — 2026-10-20
+
+Identity and scope
+This is a separate public-project evaluation, NOT a confirmed identification of Kensei/Kristina's SYNAPSESECURITY. His October 20 Discord messages say an improved ARTEX is on his PC, name SYNAPSESECURITY, and describe the tools as open source. No repository link was supplied. Kotaro suspects KrisPC is offline; obtaining that local copy waits for it to return.
+
+Public source: https://github.com/KKloudTarus/synapse-ce
+Local checkout: C:/Users/kotar/githubprojects/synapse-ce
+Examined commit: a55a314aab8eb6e5979f7d886c82a0729776949f
+Clone verified with origin URL, HEAD and clean git status.
+License: Apache-2.0, read from the checkout's LICENSE.
+
+Assessment
+Worth a bounded evaluation as a security scanning and assessment-management base. It combines package inventory and vulnerability matching, source/configuration checks, findings, evidence and reporting. It is a larger operational platform than a simple autonomous pentesting agent. The repository also contains offensive workflows, cloud posture and runtime agents; their presence does not establish their effectiveness.
+
+Source observations
+- internal/infrastructure/tools/sast/analyzer.go and patterns.go implement deterministic line/pattern checks. The scanner has a 500 finding cap, 50 findings per file, skips files over 1 MiB and long/minified lines, and excludes dependency/build trees. These limits matter when interpreting a clean or truncated report. Separate reachability analyzers exist; the basic SAST engine is not a complete semantic audit.
+- internal/infrastructure/tools/osv/scanner.go batches package identifiers to OSV and fetches advisory details. Online dependency checks disclose package/version identifiers to advisory services. CLI --offline disables live advisory and resolver/AI paths, but meaningful offline CVE detection needs populated local data.
+- AI triage is optional. The documented proposer/verifier and evidence controls are promising design choices, not independently validated guarantees.
+- docs/guide/installation.md distinguishes Windows development support from Linux-only sandbox/recon/egress and eBPF features.
+- deploy/docker-compose.full.yml is explicitly sandbox-off development. It publishes database, object-store and API ports, includes a fallback development API token, and uses some floating image tags. It requires local hardening before any exposed deployment.
+
+Release and maturity checks
+GitHub API latest release: v0.2.4, published 2026-09-28; includes Windows amd64 binaries and checksums. Released code predates the examined main checkout.
+https://github.com/KKloudTarus/synapse-ce/releases/tag/v0.2.4
+The most recent CI workflow runs returned by the GitHub API were successful but dated September 28. This does not establish CI success for the October 20 checkout. Dependency-update jobs are not equivalent to test CI.
+https://github.com/KKloudTarus/synapse-ce/actions/workflows/ci.yml
+Docs/README mention Go 1.26 while checked-out go.mod requires 1.27.0. Follow the code's toolchain requirement when building current main.
+
+Validation limits and practical next step
+No build, binary execution, scan, live target assessment or deployment was performed. Go and Docker are absent from the current shell PATH. This is source/documentation and public-metadata research, not a security audit or performance benchmark.
+Next useful experiment: use a checksum-verified release CLI against a small local fixture with seeded known issues and a clean comparison, compare results with established scanners, and measure missed findings, noise, completeness and runtime. Evaluate scanner value before provisioning the full dashboard or adapting a client product around it.
+
+References inspected
+README.md; LICENSE; go.mod; docs/guide/installation.md; docs/guide/quickstart.md; cmd/synapse-cli/main.go; .github/workflows/ci.yml; .goreleaser.yaml; deploy/docker-compose.full.yml; SAST, secret-scanner and OSV source.
+https://synapse.kkloudtarus.net/docs/
+
+Conversation-reading limit
+Read the loaded October 18–20 DM context and the exact Synapse/ARTEX messages. Older history did not continue loading through the browser scroll/search attempts; the complete lifetime conversation has NOT been read. The task-opened Discord browser tab was closed and its closure verified; unrelated session tabs were preserved.
+
+Fresh KrisPC inspection — October 20, 2026 Pacific / October 21 JST
+ARTEX engine source is now present at C:/Users/stake/synapse-security/artex-global. This updates the earlier dated not-found observation; the checkout reflog records cloning on October 20 JST. Origin https://github.com/jiwoochris/artex-global.git; HEAD fdfb7a17b7da5e2de716c0e98475ec77a41c64c6; branch feat/local-cli-providers. Nine untracked tools/local-cli-bridge files implement a documented Codex/Claude CLI adapter; tracked engine files match cached origin/main. No fetch or runtime test was performed. Adapter dates are October 21 JST, so it is not conclusively the exact improvement referred to in the October 20 morning message. Parent synapse-security remains the separate website/business repository. No standalone clain/Cline project identified within the documented search scope. Public Synapse CE remains a separate project.
+Fresh report: C:/Users/kotar/computeruse-inbox/krispc.tailca4ab9.ts.net-28600146/ARTEX-inventory.md
+Git evidence: C:/Users/kotar/computeruse-inbox/krispc.tailca4ab9.ts.net-28600146/git-evidence.txt
+Read-only source/filesystem inventory only; no scanners, builds, tests, browsers or windows opened. No claim of running service, effective assessment engine or validated performance. Original source remains on KrisPC; report/evidence retrieved locally.

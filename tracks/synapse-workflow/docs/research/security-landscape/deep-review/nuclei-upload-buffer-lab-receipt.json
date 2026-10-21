@@ -1,0 +1,53 @@
+{
+  "at": "2026-10-17T21:18:56.114Z",
+  "out": "C:\\Users\\kotar\\githubprojects\\NBRET\\runs\\nuclei-upload-buffer-1792271935188",
+  "scope": "Exact autoCommit/uploadChunk bytes with inert upload/logger/structure stand-ins; buffering only, no HTTP/credentials",
+  "source": {
+    "path": "internal/pdcp/writer.go",
+    "commit": "a151a1d54fad0d5ef71f01662b0bb3955a98c7c5",
+    "sha256": "bce0edbfc120e913ce86ded6f6a7e2a842deb5b4e951c966aa9eb2df0b84d079",
+    "range": [
+      126,
+      209
+    ],
+    "extractedSha256": "c42994504f59cf78e16211be72745b979bddc8c8fc1e3e8b80d315e3ff10ed82"
+  },
+  "exit": 0,
+  "elapsedMs": 924.4864,
+  "command": {
+    "executable": "C:\\Users\\kotar\\githubprojects\\NBRET\\.tools\\security-research-go\\sdk\\go\\bin\\go.exe",
+    "args": [
+      "test",
+      "-count=1",
+      "-json",
+      "."
+    ],
+    "cwd": "C:\\Users\\kotar\\githubprojects\\NBRET\\runs\\nuclei-upload-buffer-1792271935188"
+  },
+  "moduleNetwork": {
+    "GOPROXY": "off",
+    "GOSUMDB": "off"
+  },
+  "tests": [
+    {
+      "test": "TestExactLimitControl",
+      "action": "pass"
+    },
+    {
+      "test": "TestCrossingLineAbsent",
+      "action": "pass"
+    },
+    {
+      "test": "TestOversizedSingleLineAbsent",
+      "action": "pass"
+    },
+    {
+      "test": "TestFailedFlushRetainsOldButDropsCrossing",
+      "action": "pass"
+    }
+  ],
+  "fixtureSha256": "0fc05fc740ac6fae07fe4196e0498c8111c4aa8d28066c1abe0ed964bed7a369",
+  "standinsSha256": "1723111aa6deddc5cd08b7ea83cf245a505a2b853937d87c7b8d6e31ff25c20e",
+  "logSha256": "c1781bbe857b12a3dcb7f15f715044179b662dfbe1cb07b0e66a63abe8c9b003",
+  "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

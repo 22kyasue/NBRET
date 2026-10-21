@@ -1,0 +1,56 @@
+{
+  "kind": "consequence-content-integration",
+  "recordedAt": "2026-10-19T01:25:41.945Z",
+  "acceptance": {
+    "command": "npm run synapse:acceptance",
+    "total": 137,
+    "passed": 136,
+    "failed": 0,
+    "skipped": 1,
+    "durationMs": 3142.7592,
+    "skip": "Windows EPERM prevents file-symlink creation; directory-junction rejection test executed and passed"
+  },
+  "independentIntegration": {
+    "author": "Elm",
+    "command": "node --test test/practice-consequence.test.mjs",
+    "passed": 5,
+    "failed": 0,
+    "skipped": 0,
+    "durationMs": 1208.09
+  },
+  "review": "Bryn strict schema and lifecycle regression tests; Elm independent integration and priority review; Aiko consequence-review-aiko.md",
+  "example": {
+    "directory": "runs/complete-workflow-58f0bf86-99d5-4e59-bfe8-9bbbf6d87135",
+    "url": "http://127.0.0.1:65177/executive",
+    "revision": 116,
+    "head": "a5e005899eb4b7e2013005ed3f6f237dc73542c3cafd133671f0a34eedab866a",
+    "targetClosed": true,
+    "caseCount": 1,
+    "verified": 0,
+    "screenshots": 0,
+    "interpretation": "Retrospective source-assisted selected denial; no unauthorized effect or repair claimed; no screenshot capture fabricated"
+  },
+  "contract": "consequence-contract.md",
+  "limits": [
+    "Declared estimates and reference presence are not independently verified consequences",
+    "No calibrated severity/priority/coverage or monetary-loss model",
+    "Screenshot retention verifies bytes and bounds, not provenance or redaction",
+    "Priority is presentation-only and never enters executor",
+    "No live target or broader execution capability added"
+  ],
+  "sha256": {
+    "src/investigation/casebook.mjs": "ee51537d5d96d789163c340596981f21a007b060640af223cd8c084ff1786153",
+    "src/investigation/consequence.mjs": "f4dc0ff759dffb68b7e7493a51ddda29246409b3b5eccc43b740457a2fd532d4",
+    "src/investigation/consequence-overview.mjs": "a70adae1815e7eb13c600eb20859cfe13d5675ec6e3655ee41882bae29369f7c",
+    "src/investigation/screenshot-artifact.mjs": "0e6aeef63815fd29d53b7d6b7ecea27337c0fe6bd1edf21e53d396be308a2ce0",
+    "src/practice/workbench.mjs": "a27b21e51afa047c5a10bb3d63eeaf7062aabd79da78a6cec1c1be3a45b3b7eb",
+    "src/practice/workbench-server.mjs": "d53fd0a1ce4044500da7dd459d4b9d767705053ed716429c1d713700286e3bd6",
+    "src/practice/workflow-report.mjs": "05066af893bf8a921ffadb5897151d1cff9d253b9929c9ee9b6fee70599438cc",
+    "src/practice/session-cli.mjs": "bf095a94e86e973d234484301e2441bc632d3309dc244601f3683fc80fa006e0",
+    "test/investigation-consequence.test.mjs": "bc9e1993cba628b254114494c85db84eea34483a052d47b1f0b46f01d05584d8",
+    "test/consequence-overview.test.mjs": "eeb5437ea9541d94664ed95b619b071e20779ab9c06f80faca2061850050b721",
+    "test/investigation-screenshot.test.mjs": "ea23c8bf5d875bb9d0bf2ef72b7f87f34bdce51e1481fd3f9c07940ee983d24b",
+    "test/practice-consequence.test.mjs": "58ae16ec72bfdc24a6a2e25198e2caee7fd52f6100ab4521db8ea16b57b53ba7",
+    "package.json": "e032d120c96cfcc5c4d416b6076508c44df969948929629e792e0d9a2131259e"
+  }
+}

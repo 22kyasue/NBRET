@@ -1,0 +1,46 @@
+[
+  {
+    "id": "fbi-residential-2026",
+    "url": "https://www.fbi.gov/investigate/cyber/alerts/2026/evading-residential-proxy-networks-protecting-your-devices-from-becoming-a-tool-for-criminals",
+    "finalUrl": "https://www.fbi.gov/investigate/cyber/alerts/2026/evading-residential-proxy-networks-protecting-your-devices-from-becoming-a-tool-for-criminals",
+    "status": 403,
+    "at": "2026-10-17T20:36:25.544Z",
+    "bytes": 212938,
+    "sha256": "9d92a1e6a153e787648178a088270ab4e564e0856bc075d78913b354501f43fb",
+    "localFile": "C:\\Users\\kotar\\githubprojects\\NBRET\\.tools\\bots-swarms\\primary-sources\\fbi-residential-2026.html",
+    "contentState": "Fetched bytes only; web-extracted main article reviewed separately. Not executable content."
+  },
+  {
+    "id": "fbi-badbox-2025",
+    "url": "https://www.fbi.gov/investigate/cyber/alerts/2025/home-internet-connected-devices-facilitate-criminal-activity",
+    "finalUrl": "https://www.fbi.gov/investigate/cyber/alerts/2025/home-internet-connected-devices-facilitate-criminal-activity",
+    "status": 403,
+    "at": "2026-10-17T20:36:25.546Z",
+    "bytes": 212938,
+    "sha256": "342c52354143a168553b4126c161bbcbe1379f4995397ca330b7fede656a5513",
+    "localFile": "C:\\Users\\kotar\\githubprojects\\NBRET\\.tools\\bots-swarms\\primary-sources\\fbi-badbox-2025.html",
+    "contentState": "Fetched bytes only; web-extracted main article reviewed separately. Not executable content."
+  },
+  {
+    "id": "fbi-qakbot-2023",
+    "url": "https://www.fbi.gov/news/stories/fbi-partners-dismantle-qakbot-infrastructure-in-multinational-cyber-takedown",
+    "finalUrl": "https://www.fbi.gov/news/stories/fbi-partners-dismantle-qakbot-infrastructure-in-multinational-cyber-takedown",
+    "status": 403,
+    "at": "2026-10-17T20:36:25.555Z",
+    "bytes": 212938,
+    "sha256": "abb19f1106793f3b44d4b881728dbfcda6f3aa0200ecf051316a0e90fe91f5d4",
+    "localFile": "C:\\Users\\kotar\\githubprojects\\NBRET\\.tools\\bots-swarms\\primary-sources\\fbi-qakbot-2023.html",
+    "contentState": "Fetched bytes only; web-extracted main article reviewed separately. Not executable content."
+  },
+  {
+    "id": "fbi-911-removal",
+    "url": "https://www.fbi.gov/investigate/cyber/how-to-identify-and-remove-vpn-applications-that-contain-911-s5-backdoors",
+    "finalUrl": "https://www.fbi.gov/investigate/cyber/how-to-identify-and-remove-vpn-applications-that-contain-911-s5-backdoors",
+    "status": 403,
+    "at": "2026-10-17T20:36:25.545Z",
+    "bytes": 212938,
+    "sha256": "92d2c97c8828ca6fb3ddb4e2e6439c13525d097b348a463a695659a6ead9d842",
+    "localFile": "C:\\Users\\kotar\\githubprojects\\NBRET\\.tools\\bots-swarms\\primary-sources\\fbi-911-removal.html",
+    "contentState": "Fetched bytes only; web-extracted main article reviewed separately. Not executable content."
+  }
+]

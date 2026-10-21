@@ -1,0 +1,95 @@
+{
+  "at": "2026-10-17T19:58:20.378Z",
+  "command": "node docs/research/bots-swarms/cancellation-lab.mjs",
+  "runtime": "v24.21.0",
+  "pin": {
+    "name": "bullmq",
+    "upstream": "taskforcesh/bullmq",
+    "root": "C:\\Users\\kotar\\githubprojects\\NBRET\\.tools\\bots-swarms\\bullmq",
+    "commit": "a5e710bf4d1bf689fe40a372b3f0ddbbaaab33cc",
+    "date": "2026-10-16T23:27:34-07:00",
+    "dirty": "",
+    "retrievedAt": "2026-10-17T19:52:44.825Z",
+    "basis": "Upstream shallow snapshot; no release or runtime verification implied"
+  },
+  "originalSha256": "4e174896d46a0f625048ae5d216d06e672ba6095babb368a1b16b1914685f89e",
+  "removedImports": [
+    "import { AbortController } from './abort-controller';",
+    "import { SpanKind, TelemetryAttributes } from '../enums';",
+    "import { LockManagerWorkerContext, Span } from '../interfaces';"
+  ],
+  "substitutions": "native AbortController; inert telemetry enums; synthetic trace and extendJobLocks; no timers started",
+  "transformedSha256": "db1abada56fedc5ba7f7f2fa828e7d306f3920aab6ae8f18d0079502f2ae7640",
+  "scriptSha256": "e2c27a4bb9fd650c630c156f7749dbe4838f5c0ef232eb9fa3d07b3fbdaf2474",
+  "results": [
+    {
+      "name": "no signal means cancellation unavailable",
+      "actual": false,
+      "expected": false
+    },
+    {
+      "name": "cancellation acknowledged",
+      "actual": true,
+      "expected": true
+    },
+    {
+      "name": "abort state",
+      "actual": true,
+      "expected": true
+    },
+    {
+      "name": "tracked after abort",
+      "actual": 1,
+      "expected": 1
+    },
+    {
+      "name": "ignoring processor still effects",
+      "actual": 1,
+      "expected": 1
+    },
+    {
+      "name": "failed renewal reported",
+      "actual": [
+        "lockRenewalFailed",
+        "error"
+      ],
+      "expected": [
+        "lockRenewalFailed",
+        "error"
+      ]
+    },
+    {
+      "name": "failed renewal does not abort here",
+      "actual": false,
+      "expected": false
+    },
+    {
+      "name": "closed tracking",
+      "actual": 0,
+      "expected": 0
+    },
+    {
+      "name": "closed non-running",
+      "actual": false,
+      "expected": false
+    }
+  ],
+  "events": [
+    {
+      "name": "lockRenewalFailed",
+      "args": [
+        [
+          "renewal-failure"
+        ]
+      ]
+    },
+    {
+      "name": "error",
+      "args": [
+        "could not renew lock for job renewal-failure"
+      ]
+    }
+  ],
+  "cleanup": "manager closed; no timers started, sockets opened or subprocesses created",
+  "limits": "Pinned class with synthetic dependencies, not a BullMQ/Redis integration or OS process termination test"
+}

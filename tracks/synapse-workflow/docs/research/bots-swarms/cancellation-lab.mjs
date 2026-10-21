@@ -1,0 +1,21 @@
+import fs from 'node:fs/promises';
+import {stripTypeScriptTypes} from 'node:module';
+import {createHash} from 'node:crypto';
+import assert from 'node:assert/strict';
+const home=new URL('./',import.meta.url),pins=JSON.parse(await fs.readFile(new URL('snapshots.json',home))),pin=pins.find(p=>p.name==='bullmq');
+const source=await fs.readFile(`${pin.root}/src/classes/lock-manager.ts`,'utf8');
+const replacements=["import { AbortController } from './abort-controller';","import { SpanKind, TelemetryAttributes } from '../enums';","import { LockManagerWorkerContext, Span } from '../interfaces';"];
+let adapted=source;for(const text of replacements){assert(adapted.includes(text));adapted=adapted.replace(text,'');}
+adapted='const AbortController=globalThis.AbortController; const SpanKind={INTERNAL:0}; const TelemetryAttributes={};\n'+adapted;
+const transformed=stripTypeScriptTypes(adapted,{mode:'transform'}),hash=s=>createHash('sha256').update(s).digest('hex');
+const {LockManager}=await import(`data:text/javascript;base64,${Buffer.from(transformed).toString('base64')}`);
+const results=[],events=[];const check=(name,actual,expected)=>{results.push({name,actual,expected});assert.deepEqual(actual,expected,name);};
+const backend={name:'synthetic-worker',trace:async(kind,name,queue,fn)=>fn(undefined),extendJobLocks:async ids=>ids,emit:(name,...args)=>events.push({name,args:args.map(a=>a instanceof Error?a.message:a)})};
+const manager=new LockManager(backend,{workerId:'fixture',lockRenewTime:100,lockDuration:200});
+manager.trackJob('no-controller','token1',1,false);check('no signal means cancellation unavailable',manager.cancelJob('no-controller'),false);manager.untrackJob('no-controller');
+const controller=manager.trackJob('ignores-signal','token2',1,true);check('cancellation acknowledged',manager.cancelJob('ignores-signal','fixture cancel'),true);check('abort state',controller.signal.aborted,true);check('tracked after abort',manager.getActiveJobCount(),1);
+let effects=0;const ignoresSignal=async signal=>{await Promise.resolve();effects++;};await ignoresSignal(controller.signal);check('ignoring processor still effects',effects,1);manager.untrackJob('ignores-signal');
+const renewal=manager.trackJob('renewal-failure','token3',1,true);await manager.extendLocks(['renewal-failure']);check('failed renewal reported',events.map(e=>e.name),['lockRenewalFailed','error']);check('failed renewal does not abort here',renewal.signal.aborted,false);
+await manager.close();check('closed tracking',manager.getActiveJobCount(),0);check('closed non-running',manager.isRunning(),false);
+const receipt={at:new Date().toISOString(),command:'node docs/research/bots-swarms/cancellation-lab.mjs',runtime:process.version,pin,originalSha256:hash(source),removedImports:replacements,substitutions:'native AbortController; inert telemetry enums; synthetic trace and extendJobLocks; no timers started',transformedSha256:hash(transformed),scriptSha256:hash(await fs.readFile(new URL('cancellation-lab.mjs',home))),results,events,cleanup:'manager closed; no timers started, sockets opened or subprocesses created',limits:'Pinned class with synthetic dependencies, not a BullMQ/Redis integration or OS process termination test'};
+const out=new URL(`cancellation-receipt-${Date.now()}.json`,home);await fs.writeFile(out,JSON.stringify(receipt,null,2),{flag:'wx'});console.log({checks:results.length,passed:true,receipt:out.pathname});

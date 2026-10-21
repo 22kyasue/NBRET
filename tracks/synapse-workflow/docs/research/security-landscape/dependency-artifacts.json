@@ -1,0 +1,122 @@
+[
+  {
+    "repo": "juice-shop/juice-shop",
+    "path": "package.json",
+    "url": "https://raw.githubusercontent.com/juice-shop/juice-shop/399fba76194305a312693eee44f4df64bdf0c3ce/package.json",
+    "local": "runs/security-research-20261017/sources/juice-shop--juice-shop--package.json",
+    "commit": "399fba76194305a312693eee44f4df64bdf0c3ce",
+    "bytes": 7299,
+    "sha256": "81771ac97016ceb8f24fb79ffd24751a90a189c1cbfa6625680142880aedf99c",
+    "status": 200,
+    "accessDate": "2026-10-17",
+    "coverage": "Downloaded manifest/license; selected fields read, not implementation review"
+  },
+  {
+    "repo": "WebGoat/WebGoat",
+    "path": "LICENSE.txt",
+    "url": "https://raw.githubusercontent.com/WebGoat/WebGoat/e7b131360d74336c0c94ab5c8a21259503f59be8/LICENSE.txt",
+    "local": "runs/security-research-20261017/sources/WebGoat--WebGoat--LICENSE.txt",
+    "commit": "e7b131360d74336c0c94ab5c8a21259503f59be8",
+    "bytes": 1092,
+    "sha256": "2fea812568866fdb6ff99671ad70465bfc25ab77f86129795d08d961c30d2ca1",
+    "status": 200,
+    "accessDate": "2026-10-17",
+    "coverage": "Downloaded manifest/license; selected fields read, not implementation review"
+  },
+  {
+    "repo": "WebGoat/WebGoat",
+    "path": "pom.xml",
+    "url": "https://raw.githubusercontent.com/WebGoat/WebGoat/e7b131360d74336c0c94ab5c8a21259503f59be8/pom.xml",
+    "local": "runs/security-research-20261017/sources/WebGoat--WebGoat--pom.xml",
+    "commit": "e7b131360d74336c0c94ab5c8a21259503f59be8",
+    "bytes": 35349,
+    "sha256": "95408c2e3e479631b8271b0cf3d162def7b5a10f678886fb8fc64d215a0d54e7",
+    "status": 200,
+    "accessDate": "2026-10-17",
+    "coverage": "Downloaded manifest/license; selected fields read, not implementation review"
+  },
+  {
+    "repo": "Orange-Cyberdefense/GOAD",
+    "path": "pyproject.toml",
+    "url": "https://raw.githubusercontent.com/Orange-Cyberdefense/GOAD/992307adf944b934a3b76a2f56a637104c54b805/pyproject.toml",
+    "local": "runs/security-research-20261017/sources/Orange-Cyberdefense--GOAD--pyproject.toml",
+    "commit": "992307adf944b934a3b76a2f56a637104c54b805",
+    "bytes": 881,
+    "sha256": "499755ab4bc8cd19adacd2435d4b46c31fc7bbda1ce02adca319a63093dff2ed",
+    "status": 200,
+    "accessDate": "2026-10-17",
+    "coverage": "Downloaded manifest/license; selected fields read, not implementation review"
+  },
+  {
+    "repo": "Orange-Cyberdefense/GOAD",
+    "path": "requirements.yml",
+    "url": "https://raw.githubusercontent.com/Orange-Cyberdefense/GOAD/992307adf944b934a3b76a2f56a637104c54b805/requirements.yml",
+    "local": "runs/security-research-20261017/sources/Orange-Cyberdefense--GOAD--requirements.yml",
+    "commit": "992307adf944b934a3b76a2f56a637104c54b805",
+    "bytes": 226,
+    "sha256": "7222bc527f46d130fb5714f2794ac12439f25afd8a93d84fb35884c338afc5bb",
+    "status": 200,
+    "accessDate": "2026-10-17",
+    "coverage": "Downloaded manifest/license; selected fields read, not implementation review"
+  },
+  {
+    "repo": "DefectDojo/django-DefectDojo",
+    "path": "requirements.txt",
+    "url": "https://raw.githubusercontent.com/DefectDojo/django-DefectDojo/10453d6c62d68eee6d6b0ecc0acde5d61d1dd02d/requirements.txt",
+    "local": "runs/security-research-20261017/sources/DefectDojo--django-DefectDojo--requirements.txt",
+    "commit": "10453d6c62d68eee6d6b0ecc0acde5d61d1dd02d",
+    "bytes": 1919,
+    "sha256": "ebb8306d4c7343a95197e83b98d12124def7e634268f654b560b3068ef14b6c4",
+    "status": 200,
+    "accessDate": "2026-10-17",
+    "coverage": "Downloaded manifest/license; selected fields read, not implementation review"
+  },
+  {
+    "repo": "DefectDojo/django-DefectDojo",
+    "path": "docker-compose.yml",
+    "url": "https://raw.githubusercontent.com/DefectDojo/django-DefectDojo/10453d6c62d68eee6d6b0ecc0acde5d61d1dd02d/docker-compose.yml",
+    "local": "runs/security-research-20261017/sources/DefectDojo--django-DefectDojo--docker-compose.yml",
+    "commit": "10453d6c62d68eee6d6b0ecc0acde5d61d1dd02d",
+    "bytes": 7350,
+    "sha256": "c1e5c171b34c249bc08742caecca099b8b1f5a61b3367c422dd42fdc3ddfa13c",
+    "status": 200,
+    "accessDate": "2026-10-17",
+    "coverage": "Downloaded manifest/license; selected fields read, not implementation review"
+  },
+  {
+    "repo": "pwndoc/pwndoc",
+    "path": "backend/package.json",
+    "url": "https://raw.githubusercontent.com/pwndoc/pwndoc/844e50e012d59a180cf11b3bde08907601996f76/backend/package.json",
+    "local": "runs/security-research-20261017/sources/pwndoc--pwndoc--backend--package.json",
+    "commit": "844e50e012d59a180cf11b3bde08907601996f76",
+    "bytes": 1622,
+    "sha256": "c7ea34632c603b0a4f9d5c0d557ca9cab6d3a5356261afc5fa4b4fe1423c77d3",
+    "status": 200,
+    "accessDate": "2026-10-17",
+    "coverage": "Downloaded manifest/license; selected fields read, not implementation review"
+  },
+  {
+    "repo": "pwndoc/pwndoc",
+    "path": "frontend/package.json",
+    "url": "https://raw.githubusercontent.com/pwndoc/pwndoc/844e50e012d59a180cf11b3bde08907601996f76/frontend/package.json",
+    "local": "runs/security-research-20261017/sources/pwndoc--pwndoc--frontend--package.json",
+    "commit": "844e50e012d59a180cf11b3bde08907601996f76",
+    "bytes": 2121,
+    "sha256": "f12f9d67a8c8e6aa0f4e0341bf637575292be2ab7412c936d04a6a29825fc030",
+    "status": 200,
+    "accessDate": "2026-10-17",
+    "coverage": "Downloaded manifest/license; selected fields read, not implementation review"
+  },
+  {
+    "repo": "pwndoc/pwndoc",
+    "path": "docker-compose.yml",
+    "url": "https://raw.githubusercontent.com/pwndoc/pwndoc/844e50e012d59a180cf11b3bde08907601996f76/docker-compose.yml",
+    "local": "runs/security-research-20261017/sources/pwndoc--pwndoc--docker-compose.yml",
+    "commit": "844e50e012d59a180cf11b3bde08907601996f76",
+    "bytes": 1308,
+    "sha256": "c3ad7591ad100f61feb5393f226a0626bff9d5eee20a59b2c8d6d80627cd2fb5",
+    "status": 200,
+    "accessDate": "2026-10-17",
+    "coverage": "Downloaded manifest/license; selected fields read, not implementation review"
+  }
+]

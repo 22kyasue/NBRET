@@ -1,0 +1,14 @@
+{
+  "startedAt": "2026-10-17T21:54:02.523Z",
+  "finishedAt": "2026-10-17T21:54:03.416Z",
+  "python": "C:\\Users\\kotar\\githubprojects\\NBRET\\.tools\\toolchain\\venv\\Scripts\\python.exe",
+  "args": [
+    "C:\\Users\\kotar\\githubprojects\\NBRET\\docs\\research\\toolchain\\har-roundtrip-lab.py"
+  ],
+  "fixtureSha256": "1ffd0c83c3e84d9e194b9c9acd4a9157bbfda3b0b53d31da5ae204ce5d71e4d1",
+  "stdoutSha256": "dcb9fbc8849466b1e26cc6474c367977355d85be03822ca2facc4fcdd866c0bd",
+  "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "code": 0,
+  "stdout": "{\r\n  \"oraclePassed\": true,\r\n  \"observations\": [\r\n    {\r\n      \"case\": \"get_body_omitted\",\r\n      \"actual\": {\r\n        \"postData\": false,\r\n        \"restored_body\": \"\"\r\n      },\r\n      \"expected\": {\r\n        \"postData\": false,\r\n        \"restored_body\": \"\"\r\n      },\r\n      \"pass\": true\r\n    },\r\n    {\r\n      \"case\": \"connection_port_reconstructed\",\r\n      \"actual\": {\r\n        \"request_port\": 8443,\r\n        \"server_port\": 443\r\n      },\r\n      \"expected\": {\r\n        \"request_port\": 8443,\r\n        \"server_port\": 443\r\n      },\r\n      \"pass\": true\r\n    },\r\n    {\r\n      \"case\": \"error_representation_changes\",\r\n      \"actual\": {\r\n        \"export_error\": \"synthetic capture error\",\r\n        \"restored_error\": null,\r\n        \"restored_status\": 0\r\n      },\r\n      \"expected\": {\r\n        \"export_error\": \"synthetic capture error\",\r\n        \"restored_error\": null,\r\n        \"restored_status\": 0\r\n      },\r\n      \"pass\": true\r\n    },\r\n    {\r\n      \"case\": \"compression_decoded\",\r\n      \"actual\": {\r\n        \"text\": \"ordinary compressed content\",\r\n        \"content_encoding\": null,\r\n        \"same_raw_bytes\": false\r\n      },\r\n      \"expected\": {\r\n        \"text\": \"ordinary compressed content\",\r\n        \"content_encoding\": null,\r\n        \"same_raw_bytes\": false\r\n      },\r\n      \"pass\": true\r\n    },\r\n    {\r\n      \"case\": \"no_automatic_marker_redaction\",\r\n      \"actual\": true,\r\n      \"expected\": true,\r\n      \"pass\": true\r\n    },\r\n    {\r\n      \"case\": \"post_control\",\r\n      \"actual\": \"ordinary POST body\",\r\n      \"expected\": \"ordinary POST body\",\r\n      \"pass\": true\r\n    },\r\n    {\r\n      \"case\": \"network_attempts\",\r\n      \"actual\": 0,\r\n      \"expected\": 0,\r\n      \"pass\": true\r\n    }\r\n  ]\r\n}\r\n",
+  "stderr": ""
+}

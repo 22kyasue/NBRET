@@ -1,0 +1,694 @@
+{
+  "at": "2026-10-17T22:42:24.648Z",
+  "command": {
+    "exe": "C:\\Users\\kotar\\githubprojects\\NBRET\\.tools\\security-research-go\\sdk\\go\\bin\\go.exe",
+    "args": [
+      "test",
+      "-p",
+      "2",
+      "./internal/graph",
+      "-run",
+      "^(TestFastPathDirect|TestFastPathComputed|TestFastPathUnion|TestFastPathIntersection|TestFastPathDifference|TestFastPathOperationSetup|TestWeight2|TestCheckUsersetFastPathV2|TestCheckTTUFastPathV2|TestRecursiveTTUObjectProvider|TestRecursiveUsersetObjectProvider|TestIteratorToUserset)$",
+      "-count=1",
+      "-timeout=60s",
+      "-json"
+    ],
+    "cwd": "C:/Users/kotar/.codex/research/openfga-20261017"
+  },
+  "out": "C:\\Users\\kotar\\.codex\\research\\assessment-evidence-receipts\\openfga-fastpath-suite-1792276901091",
+  "code": 0,
+  "signal": null,
+  "toolchain": "go version go1.27.2 windows/amd64",
+  "environment": {
+    "GOTOOLCHAIN": "local",
+    "CGO_ENABLED": "0",
+    "GOPATH": "C:\\Users\\kotar\\githubprojects\\NBRET\\.tools\\security-research-go\\module-cache",
+    "GOCACHE": "C:\\Users\\kotar\\.codex\\research\\assessment-evidence-receipts\\openfga-fastpath-suite-1792276901091\\build-cache",
+    "GOPROXY": "off",
+    "GOSUMDB": "off"
+  },
+  "elapsedMs": 43595,
+  "sourceSha256": {
+    "go.mod": "6c5e972de64e7e06f544873a77ddf84de5d86100d1ae96be3555c04b62c10be8",
+    "go.sum": "c08837e3f91fe661b0ae2c0e3c561d4f39141b15f40433d7e6d924568b19aa03",
+    "internal/iterator/channel.go": "f76274890322a02d2cba4d87434b09ac7c7aef8f639326063a54bfb3f6af75b6",
+    "internal/iterator/channel_test.go": "9494e0036279574b301809c1aa8705d12230d8fd6ed4235b3380b351eec9743f",
+    "internal/iterator/concat.go": "1466e1792946bdf67438482aef355a6bf9f776692edeb17f9e50384b287f93e8",
+    "internal/iterator/concat_test.go": "bf465565563103888afee3ba2d8f63d40fcb8fc3d827459ee011374fe1f320f9",
+    "internal/iterator/error.go": "41738e6854a06ef508a102db7d41681b95a4b8f46a7103494ae290805493b856",
+    "internal/iterator/error_test.go": "5bbf1858750f31d34705b22c9b9cb20ed394165e59821bd41daee198c7df4aa2",
+    "internal/iterator/fan_in.go": "0aa50229328e8b9f7145c27643ac3a7eabc7a48b557aeefe6138056cfbd2d64c",
+    "internal/iterator/fan_in_test.go": "2d54d5af0d8a4d104171105e29ae962e3700ee97d19ef088c72283891fe26c6b",
+    "internal/iterator/filter.go": "e168528eb3c24f505e46fadd3aeea240d22e3b3181acbe3fac41b9cce2069fcd",
+    "internal/iterator/filter_test.go": "51492cb4bab447b68e32818e2cee49f986b1b38acf65dbb0148aae69a990d54c",
+    "internal/iterator/merge.go": "42c34f3c3661e7786e63149846a87e9e65a6910aa86a997b63d4d89b4df73df4",
+    "internal/iterator/merge_test.go": "7e7492ad9708cd965604f5d433bb55c9f0d619569dff111cb5c5940aaff54add",
+    "internal/iterator/message.go": "a6e4747b6135744b598304492a14dcf9b3466839387f89ded5fab811fb9db5ed",
+    "internal/iterator/skip.go": "d93b472f4e1df6070bc7de175bd62cf5123db022f5b55380222f45e2ca0b9cd7",
+    "internal/iterator/skip_test.go": "74f76b33ac4ae3b1fc423dcf67201c65c7223bd5040aef27bea4b4a3e6e1b60b",
+    "internal/iterator/stream.go": "723c9ef31d9468162f69506feec1a11c69c89e35f55c9bd9fede2cac3ab0ff9c",
+    "internal/iterator/stream_test.go": "247529b03b6c5b52c9d0a05e33102086c1a085a44930d07b79838b4ba19bb897",
+    "internal/iterator/validate.go": "c79e71f12b8804dd2341e05a538d94acee0a3d6d02a9986181e9675cabb858e8",
+    "internal/iterator/validate_test.go": "179434aeeedb8f44d4e0c3ddd09a23782e155dcff5cc8e38ab113b1adc2c7c63",
+    "internal/concurrency/concurrency.go": "5e0873e1a6f2387d5eb52431c3f366644fc3642708fec64cea8c8dd939d5b9f7",
+    "internal/concurrency/concurrency_test.go": "51f03ab6a3124fe457cde3a561bda0df5540565c5fe7a82ec629714f7f428cc1",
+    "internal/concurrency/panic.go": "407ae28571220f90a569dff5ffe1d6176487bb1d18903a94463cb18fbfc8761f",
+    "internal/graph/builder.go": "d53a6dc8e63b29bff5ad8df61ee55342a769e31762f5fd6fdb693c32d42649f8",
+    "internal/graph/builder_test.go": "38e488bb8ce083e54a289b33ab23f276449eb00f91dac2cf727c94b7555a47f9",
+    "internal/graph/cached_resolver.go": "cc6bc3c9c9a314802d16b9364b67f775fc568863f34fa5c8d0ac000c546fd9e9",
+    "internal/graph/cached_resolver_test.go": "7ce31cd0c1b3419efd1ea2da004bf28794d3f2b249ed0a9a12ee13ad605b0c46",
+    "internal/graph/check.go": "bb051289e6f8f52b45aa2d0ed7b2286fb4038ae2517980a8f9005003afe2e3fd",
+    "internal/graph/check_test.go": "06f7555a26f9044035310ebc859663d85516c3553ac8217fad8fd73e3f80d0fa",
+    "internal/graph/default_resolver.go": "e5dbfb5aa02432ff660e73494611662167c5214422b2aee88674d94693f5fd66",
+    "internal/graph/default_resolver_test.go": "4396e491886486eb9f789afad1b31b0cb6817d6240961b6addbd7ffb445bdcfd",
+    "internal/graph/dispatch_throttling_check_resolver.go": "3d91c644e44e7d994b96210df887dfed694d8106ab4ded31c1519795ad680fa2",
+    "internal/graph/dispatch_throttling_check_resolver_test.go": "bebf78aa8a233c0374d25824dca746a01b2dfe33564486064bdba6fd9d5189cc",
+    "internal/graph/graph.go": "eb4356ffd636c30075ba0a62b98728e005b93a106eef265f124a8f35556c2671",
+    "internal/graph/graph_test.go": "4eaefb2c9817313172108ded3777b87c001942a640121a484fbf213db7c17fce",
+    "internal/graph/interface.go": "8ed85b411da21574576460a357d6c0bb006b2a928cc70f8c5b80586ba6c23fb0",
+    "internal/graph/mock_check_resolver.go": "0d11ab7f79267f38b5756bd2a317a1a832e432d79b7f2de750daf36d25c9461f",
+    "internal/graph/object_providers.go": "1acf93d43ca18c604336292ba0ddbb918dcc2e42198fc74fc5a81a7b1205e2ea",
+    "internal/graph/object_providers_test.go": "6d8944f41fb7b9a963d7f621d1e5ae86809a89002648443f4d7baa4f42def75a",
+    "internal/graph/recursive_resolver.go": "d3f3868f1ecc524b7104573623c56ba8b7af404a6274b614590abf98b56c9a8b",
+    "internal/graph/recursive_resolver_test.go": "7e50f680d0c765ac7bb9f8d2ec13c22ca0be4e9d4894e2416967c4cd9a3ecc66",
+    "internal/graph/resolve_check_request.go": "9f030420c596c4f0603d3d6d43ee76a64e2f23be6b3686f81657954fce8f0248",
+    "internal/graph/resolve_check_request_test.go": "8c2b39b504b54cdf48b27d40ce149037c1fc6866a6d3ee0311cf46605616f10c",
+    "internal/graph/resolve_check_response.go": "2dbe84841ab691704041bc8b6fad01119c8729303b5617c58d6ed3ae02cfb3fc",
+    "internal/graph/resolve_check_response_test.go": "ab3ff6217cbc9181c6887607c9b9a6c3e85ac2d667689349328449de3e158152",
+    "internal/graph/shadow_resolver.go": "3a0c844e92f07ab1ea5162d74faef8694553582322ac36c7f5f0171f0ec39cd7",
+    "internal/graph/shadow_resolver_test.go": "f5a775a50a86079900c6b6b248e203797f58ab529c62e666c77e9d9806f4132d",
+    "internal/graph/weight_two_resolver.go": "4e071d71ca4373c69ba863463f85dbe7fda6db386ba0df3ded17de857bcf087e",
+    "internal/graph/weight_two_resolver_test.go": "99599469cf989d59fcdb91984f498f0634abab62d5ba9711c2651f863175a071"
+  },
+  "runnerSha256": "a40b6b42aa5bc6fa45e2bdc19f54e95ec661caac5fe45915c2df6cb5bad6a108",
+  "stdoutSha256": "086b7a7f1db1e65fb9fe2351e4d6c20732a60fd5aba9b649d85592dc1b7ec979",
+  "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "tests": [
+    {
+      "Time": "2026-10-17T15:42:23.8346057-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/graph",
+      "Test": "TestRecursiveTTUObjectProvider/Begin_And_End/on_supported_model/when_invalid_req",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:42:23.835104-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/graph",
+      "Test": "TestRecursiveTTUObjectProvider/Begin_And_End/on_supported_model/when_empty_iterator",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:42:23.8356031-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/graph",
+      "Test": "TestRecursiveTTUObjectProvider/Begin_And_End/on_supported_model/when_iterator_returns_results",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:42:23.8356031-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/graph",
+      "Test": "TestRecursiveTTUObjectProvider/Begin_And_End/on_supported_model/when_fastPathRewrite_errors",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:42:23.8361033-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/graph",
+      "Test": "TestRecursiveTTUObjectProvider/Begin_And_End/on_supported_model/when_iterator_errors",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:42:23.8361033-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/graph",
+      "Test": "TestRecursiveTTUObjectProvider/Begin_And_End/on_supported_model/when_context_cancelled",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:42:23.8361033-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/graph",
+      "Test": "TestRecursiveTTUObjectProvider/Begin_And_End/on_supported_model",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:42:23.8361033-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/graph",
+      "Test": "TestRecursiveTTUObjectProvider/Begin_And_End",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:42:23.8361033-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/graph",
+      "Test": "TestRecursiveTTUObjectProvider",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:42:23.8366038-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/graph",
+      "Test": "TestRecursiveUsersetObjectProvider/Begin_And_End/on_supported_model/when_empty_iterator",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:42:23.8366038-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/graph",
+      "Test": "TestRecursiveUsersetObjectProvider/Begin_And_End/on_supported_model/when_iterator_returns_results",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:42:23.8366038-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/graph",
+      "Test": "TestRecursiveUsersetObjectProvider/Begin_And_End/on_supported_model/when_fastPathRewrite_errors",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:42:23.8366038-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/graph",
+      "Test": "TestRecursiveUsersetObjectProvider/Begin_And_End/on_supported_model/when_iterator_errors",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:42:23.8366038-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/graph",
+      "Test": "TestRecursiveUsersetObjectProvider/Begin_And_End/on_supported_model/when_context_cancelled",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:42:23.8366038-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/graph",
+      "Test": "TestRecursiveUsersetObjectProvider/Begin_And_End/on_supported_model",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:42:23.8366038-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/graph",
+      "Test": "TestRecursiveUsersetObjectProvider/Begin_And_End",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:42:23.8366038-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/graph",
+      "Test": "TestRecursiveUsersetObjectProvider",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:42:23.8366038-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/graph",
+      "Test": "TestIteratorToUserset/empty",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:42:23.8371038-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/graph",
+      "Test": "TestIteratorToUserset/returns_results",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:42:23.8371038-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/graph",
+      "Test": "TestIteratorToUserset/cancellation",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:42:23.8371038-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/graph",
+      "Test": "TestIteratorToUserset/handles_errors",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:42:23.8371038-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/graph",
+      "Test": "TestIteratorToUserset",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:42:23.8371038-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/graph",
+      "Test": "TestFastPathDirect/should_return_iterator_through_channel",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:42:23.837604-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/graph",
+      "Test": "TestFastPathDirect/should_return_error_from_building_iterator",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:42:23.837604-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/graph",
+      "Test": "TestFastPathDirect",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:42:23.837604-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/graph",
+      "Test": "TestFastPathComputed/should_return_error_if_computed_relation_doesnt_exist",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:42:23.837604-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/graph",
+      "Test": "TestFastPathComputed",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:42:23.837604-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/graph",
+      "Test": "TestFastPathUnion/should_return_on_context_cancelled",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:42:23.837604-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/graph",
+      "Test": "TestFastPathUnion/should_drain_iterators_on_error",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:42:23.837604-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/graph",
+      "Test": "TestFastPathUnion/should_calculate_union",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:42:23.837604-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/graph",
+      "Test": "TestFastPathUnion/multiple_item_in_same_stream/first_item_matches",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:42:23.837604-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/graph",
+      "Test": "TestFastPathUnion/multiple_item_in_same_stream/last_item_matches",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:42:23.837604-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/graph",
+      "Test": "TestFastPathUnion/multiple_item_in_same_stream/multiple_items",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:42:23.837604-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/graph",
+      "Test": "TestFastPathUnion/multiple_item_in_same_stream/all_item_matches",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:42:23.837604-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/graph",
+      "Test": "TestFastPathUnion/multiple_item_in_same_stream",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:42:23.8381036-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/graph",
+      "Test": "TestFastPathUnion/large_than_single_batch",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:42:23.8381036-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/graph",
+      "Test": "TestFastPathUnion/should_return_error_get_active_stream_error",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:42:23.8386038-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/graph",
+      "Test": "TestFastPathUnion/should_drain_next_error",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:42:23.8386038-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/graph",
+      "Test": "TestFastPathUnion",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:42:23.8386038-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/graph",
+      "Test": "TestFastPathIntersection/should_return_on_context_cancelled",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:42:23.8386038-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/graph",
+      "Test": "TestFastPathIntersection/should_drain_iterators_on_error",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:42:23.8386038-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/graph",
+      "Test": "TestFastPathIntersection/should_calculate_intersection",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:42:23.8386038-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/graph",
+      "Test": "TestFastPathIntersection/multiple_item_in_same_stream/first_item_matches",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:42:23.8386038-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/graph",
+      "Test": "TestFastPathIntersection/multiple_item_in_same_stream/last_item_matches",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:42:23.8386038-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/graph",
+      "Test": "TestFastPathIntersection/multiple_item_in_same_stream/multiple_items",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:42:23.8386038-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/graph",
+      "Test": "TestFastPathIntersection/multiple_item_in_same_stream/no_item_matches",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:42:23.8386038-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/graph",
+      "Test": "TestFastPathIntersection/multiple_item_in_same_stream",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:42:23.8391032-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/graph",
+      "Test": "TestFastPathIntersection/large_than_single_batch",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:42:23.8391032-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/graph",
+      "Test": "TestFastPathIntersection/should_return_error_get_active_stream_error",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:42:23.8391032-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/graph",
+      "Test": "TestFastPathIntersection/should_drain_next_error",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:42:23.8391032-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/graph",
+      "Test": "TestFastPathIntersection/should_drain_head_error_when_removing_smaller_item",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:42:23.8391032-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/graph",
+      "Test": "TestFastPathIntersection/should_drain_next_error_when_removing_smaller_item",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:42:23.839603-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/graph",
+      "Test": "TestFastPathIntersection",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:42:23.839603-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/graph",
+      "Test": "TestFastPathDifference/should_return_on_context_cancelled",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:42:23.839603-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/graph",
+      "Test": "TestFastPathDifference/should_drain_iterators_on_error",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:42:23.839603-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/graph",
+      "Test": "TestFastPathDifference/should_calculate_difference",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:42:23.839603-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/graph",
+      "Test": "TestFastPathDifference/multiple_item_in_same_stream/subtract_first_item_last_item_smaller",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:42:23.839603-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/graph",
+      "Test": "TestFastPathDifference/multiple_item_in_same_stream/subtract_first_item_last_item_bigger",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:42:23.839603-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/graph",
+      "Test": "TestFastPathDifference/multiple_item_in_same_stream/subtract_first_few_item",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:42:23.839603-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/graph",
+      "Test": "TestFastPathDifference/multiple_item_in_same_stream/subtract_last_item",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:42:23.839603-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/graph",
+      "Test": "TestFastPathDifference/multiple_item_in_same_stream/subtract_few_item",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:42:23.839603-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/graph",
+      "Test": "TestFastPathDifference/multiple_item_in_same_stream/subtract_no_item",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:42:23.839603-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/graph",
+      "Test": "TestFastPathDifference/multiple_item_in_same_stream/subtract_all_item",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:42:23.839603-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/graph",
+      "Test": "TestFastPathDifference/multiple_item_in_same_stream",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:42:23.839603-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/graph",
+      "Test": "TestFastPathDifference/should_return_error_get_active_stream_error",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:42:23.8401028-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/graph",
+      "Test": "TestFastPathDifference/should_able_to_handle_larger_than_batch_size",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:42:23.8401028-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/graph",
+      "Test": "TestFastPathDifference/should_return_error_when_same_item_next_has_error",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:42:23.8406031-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/graph",
+      "Test": "TestFastPathDifference/should_return_error_when_smaller_base_has_error",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:42:23.8406031-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/graph",
+      "Test": "TestFastPathDifference/should_return_error_when_smaller_diff_has_error",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:42:23.8406031-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/graph",
+      "Test": "TestFastPathDifference",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:42:23.8406031-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/graph",
+      "Test": "TestFastPathOperationSetup/should_error_when_resolver_panics",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:42:23.8406031-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/graph",
+      "Test": "TestFastPathOperationSetup",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:42:24.1424524-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/graph",
+      "Test": "TestWeight2/waits_for_the_left_side_without_spinning_once_the_right_side_has_closed",
+      "Elapsed": 0.3
+    },
+    {
+      "Time": "2026-10-17T15:42:24.1424524-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/graph",
+      "Test": "TestWeight2",
+      "Elapsed": 0.3
+    },
+    {
+      "Time": "2026-10-17T15:42:24.1429527-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/graph",
+      "Test": "TestCheckUsersetFastPathV2/non_public_wildcard_union",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:42:24.1429527-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/graph",
+      "Test": "TestCheckUsersetFastPathV2/non_public_wildcard_union_not_match",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:42:24.1434521-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/graph",
+      "Test": "TestCheckUsersetFastPathV2/public_wildcard_union",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:42:24.1434521-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/graph",
+      "Test": "TestCheckUsersetFastPathV2/public_wildcard_union_not_match",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:42:24.1434521-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/graph",
+      "Test": "TestCheckUsersetFastPathV2/with_contextual_tuples_unsorted_works",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:42:24.1434521-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/graph",
+      "Test": "TestCheckUsersetFastPathV2",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:42:24.1439528-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/graph",
+      "Test": "TestCheckTTUFastPathV2/non_public_wildcard_union",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:42:24.1439528-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/graph",
+      "Test": "TestCheckTTUFastPathV2/public_wildcard_union",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:42:24.1444528-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/graph",
+      "Test": "TestCheckTTUFastPathV2/non_public_wildcard_union_not_match",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:42:24.1444528-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/graph",
+      "Test": "TestCheckTTUFastPathV2/public_wildcard_union_not_match",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:42:24.1444528-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/graph",
+      "Test": "TestCheckTTUFastPathV2/with_contextual_tuples_unsorted_works",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:42:24.1444528-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/graph",
+      "Test": "TestCheckTTUFastPathV2",
+      "Elapsed": 0
+    }
+  ],
+  "criteria": "Selected unchanged graph fast-path and object-provider tests; preserve pass/fail/skip and compile/infrastructure failures separately.",
+  "intervention": "No source changes/overlay; selected unchanged package, offline cached dependencies, isolated build cache, CGO off.",
+  "limits": "Mock/static iterator unit tests only, no MySQL/Postgres/server/customer authorization; package success not universal concurrency or end-to-end coverage.",
+  "cost": "Local CPU/storage only; network dependency resolution disabled."
+}

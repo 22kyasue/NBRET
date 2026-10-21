@@ -1,0 +1,56 @@
+{
+  "at": "2026-10-17T20:56:46.736Z",
+  "links": 56,
+  "broken": [],
+  "fileStates": {
+    "unread": 1293,
+    "partial": 0,
+    "complete": 218
+  },
+  "sourceStates": [
+    {
+      "id": "robots",
+      "contentState": "saved bytes; semantic review status separate"
+    },
+    {
+      "id": "signatures",
+      "contentState": "saved bytes; semantic review status separate"
+    },
+    {
+      "id": "shared-addresses",
+      "contentState": "saved bytes; semantic review status separate"
+    },
+    {
+      "id": "ipv6-temporary",
+      "contentState": "saved bytes; semantic review status separate"
+    },
+    {
+      "id": "oauth-security",
+      "contentState": "saved bytes; semantic review status separate"
+    },
+    {
+      "id": "kubernetes-jobs",
+      "contentState": "saved bytes; semantic review status separate"
+    },
+    {
+      "id": "kubernetes-leases",
+      "contentState": "saved bytes; semantic review status separate"
+    },
+    {
+      "id": "kubernetes-service-accounts",
+      "contentState": "saved bytes; semantic review status separate"
+    },
+    {
+      "id": "browser-contexts",
+      "contentState": "saved bytes; semantic review status separate"
+    },
+    {
+      "id": "qakbot-victims",
+      "contentState": "saved bytes; semantic review status separate"
+    },
+    {
+      "id": "911-s5",
+      "contentState": "challenge page; requested document not archived"
+    }
+  ]
+}

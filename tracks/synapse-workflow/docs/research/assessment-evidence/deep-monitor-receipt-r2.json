@@ -1,0 +1,28 @@
+{
+  "python": "3.14.7 (tags/v3.14.7:823f032, Aug  5 2026, 10:51:32) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "win32",
+  "scope": "Actual in-memory SQLite monitor; AST-only web helpers; one newly spawned hidden child; no web service/SDK/real run DB",
+  "reasoningAndRawOmitted": true,
+  "commandSecretRetained": true,
+  "promptRetainedByDefault": true,
+  "otherRunReturnsNoEvents": true,
+  "recordAfterFinishRejected": true,
+  "nonloopbackRejected": true,
+  "windowsOwnerCheck": {
+    "executed": true,
+    "ownedChildPid": 44540,
+    "childExecutable": "C:\\Python314\\python.exe",
+    "aliveBefore": true,
+    "helperReturned": true,
+    "exitAfter": null,
+    "terminatedWithinTwoSeconds": false
+  },
+  "networkCalls": 0,
+  "modelCalls": 0,
+  "scriptSha256": "da665d481be3d10777bf7cf2f06e91af10aa77c2e1ad9f4b017d4f5d9105241d",
+  "sources": {
+    "unified_agent/monitoring.py": "ee597e11bedf54311bf910d38691ffedd3babf936f056d4ebcbcb5063009ee9b",
+    "unified_agent/monitor_web.py": "d968ca78a54b6978d91657f1c4601df74bb0eb9836e2e450ae5cccc282d1f223",
+    "unified_agent/events.py": "1f9518b20b7c33cb1cf52141c87029ec2b7e90df3bb13af458ba5447acfcf20c"
+  }
+}

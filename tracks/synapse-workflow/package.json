@@ -1,0 +1,47 @@
+{
+  "name": "nbret",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Network evidence, repeatable testing, static/runtime analysis and scoped security scans",
+  "engines": {
+    "node": "^22.19.0 || ^24.11.0 || >=26.0.0"
+  },
+  "scripts": {
+    "synapse:demo": "node src/practice/demo.mjs",
+    "synapse:workbench": "node src/practice/workbench-server.mjs",
+    "synapse:session": "node src/practice/session-cli.mjs",
+    "synapse:intake": "node src/practice/intake-cli.mjs",
+    "synapse:acceptance": "npm run synapse:test",
+    "synapse:practice": "node src/practice/cli.mjs",
+    "synapse:rehearse": "node src/practice/rehearsal-cli.mjs",
+    "synapse:test": "node --test test/investigation-cli.test.mjs test/investigation-journal.test.mjs test/investigation-records.test.mjs test/investigation-import.test.mjs test/scope.test.mjs test/practice-app.test.mjs test/practice-rehearsal.test.mjs test/practice-investigation.test.mjs test/practice-next-step.test.mjs test/practice-session-target.test.mjs test/practice-workbench.test.mjs test/practice-workbench-stop.test.mjs test/investigation-casebook.test.mjs test/investigation-measurement.test.mjs test/practice-checkpoint.test.mjs test/practice-workflow.test.mjs test/practice-session-cli.test.mjs test/investigation-consequence.test.mjs test/consequence-overview.test.mjs test/investigation-screenshot.test.mjs test/practice-consequence.test.mjs test/reader-model.test.mjs test/reader-report.test.mjs test/investigation-proof.test.mjs",
+    "assess": "node src/assessment/cli.mjs",
+    "demo:assessment": "node scripts/demo-assessment.mjs",
+    "test": "node --test test/*.test.mjs",
+    "capture": "node src/cli.mjs",
+    "tiers": "node src/tiers-cli.mjs all",
+    "explore": "node src/tiers-cli.mjs explore",
+    "probe": "node src/tiers-cli.mjs probe",
+    "probe:plan": "node src/tiers-cli.mjs plan",
+    "analyze": "node src/tiers-cli.mjs analyze",
+    "understand": "node src/understand-cli.mjs",
+    "check": "node src/tiers-cli.mjs check",
+    "scenario": "node src/tiers-cli.mjs scenario",
+    "scan": "node src/tiers-cli.mjs scan",
+    "setup:zap": "node scripts/setup-zap.mjs",
+    "demo:tiers": "node scripts/demo-tiers.mjs",
+    "demo:testing": "node scripts/demo-testing.mjs",
+    "demo": "node scripts/demo.mjs",
+    "copy:extract": "node copy/extract.mjs",
+    "copy:geo": "node copy/geo.mjs",
+    "copy:scaffold": "node copy/scaffold.mjs",
+    "synapse:proof-poc": "node src/practice/proof-baseline.mjs"
+  },
+  "dependencies": {
+    "playwright": "1.64.0",
+    "rea-agents": "6.4.0",
+    "sharp": "0.35.5",
+    "postcss": "8.5.29"
+  }
+}

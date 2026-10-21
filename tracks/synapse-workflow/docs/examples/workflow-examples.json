@@ -1,0 +1,20 @@
+{
+  "question": "How do two visits to the student route differ in routing, requests and cache use?",
+  "terms": ["PERM_REDIRECT_STUDENT", "authorizeOrRedirect", "isAnonymous", "SYNC-STORAGE", "credential-store"],
+  "origins": ["https://hbsp.harvard.edu"],
+  "acquireSources": true,
+  "maxUnits": 70,
+  "examples": [
+    {
+      "id": "first-visit",
+      "url": "https://hbsp.harvard.edu/student",
+      "condition": "Current harness profile; login state is not assumed or altered"
+    },
+    {
+      "id": "repeat-visit",
+      "url": "https://hbsp.harvard.edu/student",
+      "condition": "Same shared profile after first visit; may reuse cache"
+    }
+  ],
+  "comparisons": [{ "left": "first-visit", "right": "repeat-visit" }]
+}

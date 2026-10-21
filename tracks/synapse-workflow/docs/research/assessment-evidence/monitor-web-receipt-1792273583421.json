@@ -1,0 +1,49 @@
+{
+  "at": "2026-10-17T21:46:24.509Z",
+  "command": [
+    "C:/Users/kotar/.codex/research/assessment-evidence-venv/Scripts/python.exe",
+    "-m",
+    "pytest",
+    "-q",
+    "-p",
+    "no:cacheprovider",
+    "-p",
+    "pytest_asyncio.plugin",
+    "--basetemp",
+    "C:\\Users\\kotar\\.codex\\research\\assessment-evidence-receipts\\agent-recovery-1792273583420\\pytest-temp",
+    "tests/test_monitor_web.py"
+  ],
+  "cwd": "C:/Users/kotar/.codex/research/unified-agent-acff8ee",
+  "environment": {
+    "PYTHONPATH": "C:\\Users\\kotar\\.codex\\research\\unified-agent-acff8ee\\src;C:/Users/kotar/.codex/research/unified-agent-acff8ee",
+    "PYTEST_DISABLE_PLUGIN_AUTOLOAD": "1",
+    "PYTHONDONTWRITEBYTECODE": "1"
+  },
+  "exitCode": 0,
+  "signal": null,
+  "elapsedMs": 1088,
+  "out": "C:\\Users\\kotar\\.codex\\research\\assessment-evidence-receipts\\agent-recovery-1792273583420",
+  "stdout": "..........                                                               [100%]\r\n10 passed in 0.26s\r\n",
+  "stderr": "",
+  "packages": "annotated-types==0.8.0\r\nanyio==4.15.1\r\ncertifi==2026.7.22\r\ncolorama==0.4.6\r\ndocstring_parser==0.18.0\r\nh11==0.16.0\r\nhttpcore==1.0.9\r\nhttpx==0.28.1\r\nidna==3.20\r\niniconfig==2.3.1\r\npackaging==26.3\r\npluggy==1.7.0\r\npydantic==2.14.1\r\npydantic_core==2.50.1\r\nPygments==2.21.0\r\npytest==9.1.1\r\npytest-asyncio==1.4.0\r\nPyYAML==6.0.3\r\nstarlette==1.8.0\r\ntyping-inspection==0.4.4\r\ntyping_extensions==4.16.0\r\n",
+  "criteria": "unchanged monitor web tests pass using ASGITransport and owned synthetic SQLite; no listener or provider",
+  "scope": "actual in-process ASGI snapshots, finite SSE stream, validation and asset delivery; no browser runtime, socket listener, SDK or target command",
+  "sourceSha256": {
+    "unified_agent/monitor_web.py": "d968ca78a54b6978d91657f1c4601df74bb0eb9836e2e450ae5cccc282d1f223",
+    "unified_agent/monitoring.py": "ee597e11bedf54311bf910d38691ffedd3babf936f056d4ebcbcb5063009ee9b",
+    "unified_agent/monitor_web_assets/app.js": "708576540928e85f67d4f0de367672af5d4fab5c59186dfa8aa0ec8d0f34c4a0",
+    "unified_agent/monitor_web_assets/index.html": "5b665a895ee82f89090f0da8b78743a1414e58fbc9927bf15e53885bd782b1c8",
+    "tests/test_monitor_web.py": "2fd29634c79301252adece43dbf75f5f1501e796598fd3d835f6a638034084f9",
+    "pyproject.toml": "e1b8ab09d24a588bca438db144940cc14f14ed97dedb8c1fef7338405a815105"
+  },
+  "runnerSha256": "c197fe5af2dbfb819a4cf1111fded0b3168303b4e43a2328a1f504c5c974c2fe",
+  "stdoutSha256": "f9739f4a5be6d2afa7cf184ec141acb2f30c8fa717f1d4cc603f86b99d7816d9",
+  "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "intervention": "researcher selected test files, isolated temp root and source-path imports; production/upstream tests unchanged",
+  "cost": "local CPU/storage, no provider calls; no monetary estimate",
+  "limits": [
+    "source-path imports rather than a fully locked installed environment",
+    "scripted events do not prove underlying tools ran or observations are true",
+    "finite cases do not prove universal crash consistency or redaction"
+  ]
+}

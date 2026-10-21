@@ -1,0 +1,49 @@
+{
+  "at": "2026-10-17T21:47:02.563Z",
+  "command": [
+    "C:/Users/kotar/.codex/research/assessment-evidence-venv/Scripts/python.exe",
+    "-m",
+    "pytest",
+    "-q",
+    "-p",
+    "no:cacheprovider",
+    "-p",
+    "pytest_asyncio.plugin",
+    "--basetemp",
+    "C:\\Users\\kotar\\.codex\\research\\assessment-evidence-receipts\\agent-recovery-1792273621508\\pytest-temp",
+    "tests/test_monitoring.py"
+  ],
+  "cwd": "C:/Users/kotar/.codex/research/unified-agent-acff8ee",
+  "environment": {
+    "PYTHONPATH": "C:\\Users\\kotar\\.codex\\research\\unified-agent-acff8ee\\src;C:/Users/kotar/.codex/research/unified-agent-acff8ee",
+    "PYTEST_DISABLE_PLUGIN_AUTOLOAD": "1",
+    "PYTHONDONTWRITEBYTECODE": "1"
+  },
+  "exitCode": 1,
+  "signal": null,
+  "elapsedMs": 1056,
+  "out": "C:\\Users\\kotar\\.codex\\research\\assessment-evidence-receipts\\agent-recovery-1792273621508",
+  "stdout": "........F.                                                               [100%]\r\n================================== FAILURES ===================================\r\n_________________ test_database_and_wal_sidecars_are_private __________________\r\n\r\ntmp_path = WindowsPath('C:/Users/kotar/.codex/research/assessment-evidence-receipts/agent-recovery-1792273621508/pytest-temp/test_database_and_wal_sidecars0')\r\n\r\n    def test_database_and_wal_sidecars_are_private(tmp_path: Path) -> None:\r\n        path = tmp_path / \"monitor.db\"\r\n        monitor = SQLiteRunMonitor(path)\r\n        recorder = monitor.start_run(\r\n            run_id=\"private-run\",\r\n            backend=\"fake\",\r\n            workspace=tmp_path,\r\n            prompt=\"sensitive prompt\",\r\n        )\r\n        recorder.record(AssistantText(text=\"sensitive output\"))\r\n    \r\n        for candidate in (path, Path(f\"{path}-wal\"), Path(f\"{path}-shm\")):\r\n            assert candidate.exists()\r\n>           assert stat.S_IMODE(candidate.stat().st_mode) == 0o600\r\nE           AssertionError: assert 438 == 384\r\nE            +  where 438 = <built-in function S_IMODE>(33206)\r\nE            +    where <built-in function S_IMODE> = stat.S_IMODE\r\nE            +    and   33206 = os.stat_result(st_mode=33206, st_ino=562949958090721, st_dev=16060991015642338941, st_nlink=1, st_uid=0, st_gid=0, st_size=4096, st_atime=1792273622, st_mtime=1792273622, st_ctime=1792273622).st_mode\r\nE            +      where os.stat_result(st_mode=33206, st_ino=562949958090721, st_dev=16060991015642338941, st_nlink=1, st_uid=0, st_gid=0, st_size=4096, st_atime=1792273622, st_mtime=1792273622, st_ctime=1792273622) = stat()\r\nE            +        where stat = WindowsPath('C:/Users/kotar/.codex/research/assessment-evidence-receipts/agent-recovery-1792273621508/pytest-temp/test_database_and_wal_sidecars0/monitor.db').stat\r\n\r\ntests\\test_monitoring.py:298: AssertionError\r\n=========================== short test summary info ===========================\r\nFAILED tests/test_monitoring.py::test_database_and_wal_sidecars_are_private\r\n1 failed, 9 passed in 0.30s\r\n",
+  "stderr": "",
+  "packages": "annotated-types==0.8.0\r\nanyio==4.15.1\r\ncertifi==2026.7.22\r\ncolorama==0.4.6\r\ndocstring_parser==0.18.0\r\nh11==0.16.0\r\nhttpcore==1.0.9\r\nhttpx==0.28.1\r\nidna==3.20\r\niniconfig==2.3.1\r\npackaging==26.3\r\npluggy==1.7.0\r\npydantic==2.14.1\r\npydantic_core==2.50.1\r\nPygments==2.21.0\r\npytest==9.1.1\r\npytest-asyncio==1.4.0\r\nPyYAML==6.0.3\r\nstarlette==1.8.0\r\ntyping-inspection==0.4.4\r\ntyping_extensions==4.16.0\r\n",
+  "criteria": "unchanged monitor storage tests pass, including platform-specific file mode assertion; synthetic backends and owned temporary files only",
+  "scope": "actual temporary SQLite monitor state, concurrent writer threads, lifecycle and omission cases; no external tool/provider calls",
+  "sourceSha256": {
+    "unified_agent/monitor_web.py": "d968ca78a54b6978d91657f1c4601df74bb0eb9836e2e450ae5cccc282d1f223",
+    "unified_agent/monitoring.py": "ee597e11bedf54311bf910d38691ffedd3babf936f056d4ebcbcb5063009ee9b",
+    "unified_agent/monitor_web_assets/app.js": "708576540928e85f67d4f0de367672af5d4fab5c59186dfa8aa0ec8d0f34c4a0",
+    "unified_agent/monitor_web_assets/index.html": "5b665a895ee82f89090f0da8b78743a1414e58fbc9927bf15e53885bd782b1c8",
+    "tests/test_monitoring.py": "436e6d46dc89a41c0b430728e7e3addd8e6df9da15b143439aa5a1e7404f4582",
+    "pyproject.toml": "e1b8ab09d24a588bca438db144940cc14f14ed97dedb8c1fef7338405a815105"
+  },
+  "runnerSha256": "e75db8fd76413d48140a15be0dba3d5a7bbffe07f4117fe2c6d3ad35a5ee5f14",
+  "stdoutSha256": "6a9070969061c4195ed017e873b5b7237850b759aad17fc934cb89979a90c3d7",
+  "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "intervention": "researcher selected test files, isolated temp root and source-path imports; production/upstream tests unchanged",
+  "cost": "local CPU/storage, no provider calls; no monetary estimate",
+  "limits": [
+    "source-path imports rather than a fully locked installed environment",
+    "scripted events do not prove underlying tools ran or observations are true",
+    "finite cases do not prove universal crash consistency or redaction"
+  ]
+}

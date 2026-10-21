@@ -1,0 +1,21 @@
+{
+  "at": "2026-10-17T19:47:16.002Z",
+  "basis": "Installed archive bytes; matching source tags are candidate provenance, not build verification",
+  "artifacts": [
+    {
+      "file": "ascanrules-release-78.zap",
+      "bytes": 4641328,
+      "sha256": "764a9f803304b6aa266d13f4c39f23b013e206c9e831435cd405871919a021fe"
+    },
+    {
+      "file": "network-beta-0.25.0.zap",
+      "bytes": 28165092,
+      "sha256": "bf32c4d2c40c76171efa29da1987375a312cc09595ece29d67018e7ae54d6cf3"
+    },
+    {
+      "file": "reports-release-0.43.0.zap",
+      "bytes": 16780200,
+      "sha256": "af27617b76a5f89594fe25109c3f811a431dda01e3b58d814f1589b698fad8ee"
+    }
+  ]
+}

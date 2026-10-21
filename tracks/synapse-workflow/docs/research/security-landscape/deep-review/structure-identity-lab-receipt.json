@@ -1,0 +1,18 @@
+{
+  "at": "2026-10-17T20:14:33.682Z",
+  "out": "C:\\Users\\kotar\\githubprojects\\NBRET\\runs\\structure-identity-research-1792268073658",
+  "scope": "Synthetic inconsistent local evidence; no browser/target/model",
+  "elapsedMs": 21.524300000000004,
+  "expectedHash": "da4dbf3485e2712d990f492ed38998a94bb7ec73f9791a7ed8460a029bfdb2a3",
+  "actualHash": "829a2b4341cd9bbf4d69a6bcd5a270bb15f5874575c98991b86307308d41fb9d",
+  "mismatchIndexed": true,
+  "historicalInitiatorLinkedTo": "newHandler",
+  "mismatchCoverage": "not-recorded",
+  "matchingControlCoverage": "observed",
+  "sourceSha256": "c3baa0a998849b43f82f70907b4bab1254f733ffb986f9a5184017f120a7b531",
+  "artifactSha256": {
+    "input": "5f5f1f1b4a5e085765428fd2d00a2d2aa8e3b6651ceb4e0f3d32419f54900259",
+    "mismatch": "92dcf573584a90858336f417202435af40b2d421ff564e412372127314e806c6",
+    "control": "141f631670b7f347ba666f2ab9bc87d0a94ff05e7cd8fcb49bb1f988a7771904"
+  }
+}

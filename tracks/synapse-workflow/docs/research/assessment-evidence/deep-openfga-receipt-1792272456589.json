@@ -1,0 +1,63 @@
+{
+  "at": "2026-10-17T21:27:39.994Z",
+  "scope": "ordinary three-element condition cost/cancellation/reuse and protobuf uint conversion; no server/model persistence",
+  "out": "C:\\Users\\kotar\\.codex\\research\\assessment-evidence-receipts\\openfga-1792272456589",
+  "command": {
+    "exe": "C:\\Users\\kotar\\githubprojects\\NBRET\\.tools\\security-research-go\\sdk\\go\\bin\\go.exe",
+    "args": [
+      "test",
+      "-p",
+      "2",
+      "-overlay",
+      "C:\\Users\\kotar\\.codex\\research\\assessment-evidence-receipts\\openfga-1792272456589\\overlay.json",
+      "./internal/condition",
+      "-run",
+      "^TestEvidence",
+      "-count=1",
+      "-json"
+    ],
+    "cwd": "C:/Users/kotar/.codex/research/openfga-20261017"
+  },
+  "toolchain": "go version go1.27.2 windows/amd64",
+  "environment": {
+    "GOTOOLCHAIN": "local",
+    "CGO_ENABLED": "0",
+    "GOPATH": "C:\\Users\\kotar\\githubprojects\\NBRET\\.tools\\security-research-go\\module-cache",
+    "GOCACHE": "C:/Users/kotar/.codex/research/assessment-evidence-receipts/openfga-1792267376264/build-cache",
+    "GOPROXY": "https://proxy.golang.org",
+    "GOSUMDB": "sum.golang.org"
+  },
+  "code": 0,
+  "signal": null,
+  "elapsedMs": 3441,
+  "sourceSha256": {
+    "go.mod": "6c5e972de64e7e06f544873a77ddf84de5d86100d1ae96be3555c04b62c10be8",
+    "go.sum": "c08837e3f91fe661b0ae2c0e3c561d4f39141b15f40433d7e6d924568b19aa03",
+    "internal/condition/condition.go": "82bdbc7a086e0d807f352d0f04c88f2b544a7419a22967dce66a33362d89f119",
+    "internal/condition/errors.go": "3c0d1e2d1a25f2b4677fe62bcba18b69f3b5c06798ec1c5812173819dc5a8fde"
+  },
+  "fixtureSha256": "4460886c58e0886c8c910972a7bb7d22557795ef6f494628722c3207fccab4a1",
+  "fixturePath": "C:\\Users\\kotar\\githubprojects\\NBRET\\docs\\research\\assessment-evidence\\deep-openfga-condition-contracts-lab_test.go",
+  "runnerSha256": "3225fffd07c3c1d846599ae67c29f01617effe57fb87ad830ecce44b3a31181b",
+  "overlaySha256": "205dc39ef3aa15ad508f06cc3bbcf42ce635e8c5272e15e96e67b6ce7571bb8e",
+  "stdoutSha256": "a7e63850295bb2c2d92532981a232a1afd4e7d327731cd68bcaaa960965e410e",
+  "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "tests": [
+    {
+      "Time": "2026-10-17T14:27:39.9469194-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/condition",
+      "Test": "TestEvidenceConditionCostAndCancellation",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T14:27:39.9469194-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/condition",
+      "Test": "TestEvidenceProtobufConditionConversion",
+      "Elapsed": 0
+    }
+  ],
+  "intervention": "researcher-authored cost/cancellation and protobuf conversion fixtures; production unchanged",
+  "cost": "no provider calls; unmetered local CPU/build dependency download, no monetary estimate"
+}

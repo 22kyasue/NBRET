@@ -1,0 +1,458 @@
+{
+  "schemaVersion": 1,
+  "asOf": "2026-10-17",
+  "purpose": "Diagram-ready evidence relationships for Rowan's existing learning reader; no separate UI or executable workflow",
+  "notation": {
+    "documented": "Behavior in reviewed manual or selected source",
+    "inference": "Research interpretation or proposed completion check",
+    "unknown": "Not established"
+  },
+  "flows": [
+    {
+      "id": "microsoft-phishing",
+      "label": "Reported email to reviewed alert state",
+      "artifact": "microsoft-phishing-agent.md",
+      "nodes": [
+        {
+          "id": "alert",
+          "label": "User-reported message / alert",
+          "owner": "Customer tenant",
+          "evidence": "documented"
+        },
+        {
+          "id": "identity",
+          "label": "Agent identity and permitted alert/mail context",
+          "owner": "Customer administrator",
+          "evidence": "documented"
+        },
+        {
+          "id": "investigate",
+          "label": "Tool-assisted analysis and verdict",
+          "owner": "Microsoft agent service",
+          "evidence": "documented"
+        },
+        {
+          "id": "false",
+          "label": "False positive: resolve alert",
+          "owner": "Agent under configured authority",
+          "evidence": "documented"
+        },
+        {
+          "id": "true",
+          "label": "Malicious: analyst continues incident",
+          "owner": "Customer analyst",
+          "evidence": "documented"
+        },
+        {
+          "id": "memory",
+          "label": "Feedback lesson: evaluate, review and save",
+          "owner": "Customer reviewer",
+          "evidence": "documented"
+        }
+      ],
+      "edges": [
+        [
+          "alert",
+          "identity"
+        ],
+        [
+          "identity",
+          "investigate"
+        ],
+        [
+          "investigate",
+          "false"
+        ],
+        [
+          "investigate",
+          "true"
+        ],
+        [
+          "true",
+          "memory"
+        ]
+      ],
+      "unknowns": [
+        "Exact deployed model/version",
+        "Independent customer-production effectiveness",
+        "Full tenant-specific capacity and data-processing terms"
+      ]
+    },
+    {
+      "id": "sentinel-mde",
+      "label": "Template request versus action completion",
+      "artifact": "sentinel-playbooks-source.md",
+      "contractArtifact": "defender-action-contract.md",
+      "nodes": [
+        {
+          "id": "incident",
+          "label": "Sentinel incident host entities",
+          "owner": "Customer Sentinel",
+          "evidence": "documented"
+        },
+        {
+          "id": "secret",
+          "label": "Key Vault secret / app token",
+          "owner": "Customer administrator and Logic App",
+          "evidence": "documented"
+        },
+        {
+          "id": "post",
+          "label": "POST isolate by MDE device ID",
+          "owner": "Contributed Logic App",
+          "evidence": "documented"
+        },
+        {
+          "id": "comment",
+          "label": "HTTP success -> incident success comment",
+          "owner": "Contributed Logic App",
+          "evidence": "documented"
+        },
+        {
+          "id": "get",
+          "label": "Retrieve MachineAction by returned ID",
+          "owner": "Proposed completion-check workflow",
+          "evidence": "inference"
+        },
+        {
+          "id": "status",
+          "label": "Pending / InProgress / Succeeded / Failed / TimeOut / Cancelled",
+          "owner": "Defender service",
+          "evidence": "documented"
+        }
+      ],
+      "edges": [
+        [
+          "incident",
+          "secret"
+        ],
+        [
+          "secret",
+          "post"
+        ],
+        [
+          "post",
+          "comment"
+        ],
+        [
+          "post",
+          "get"
+        ],
+        [
+          "get",
+          "status"
+        ]
+      ],
+      "unknowns": [
+        "No get/status branch in selected contributed template",
+        "No selected release workflow",
+        "Customer approval policy not defined by template"
+      ]
+    },
+    {
+      "id": "gmo-flatt-autofix",
+      "label": "Verified finding to reviewed pull request",
+      "artifact": "gmo-flatt-security.md",
+      "nodes": [
+        {
+          "id": "finding",
+          "label": "Selected vulnerability finding",
+          "owner": "Customer",
+          "evidence": "documented"
+        },
+        {
+          "id": "permission",
+          "label": "GitHub App write access",
+          "owner": "Customer repository administrator",
+          "evidence": "documented"
+        },
+        {
+          "id": "patch",
+          "label": "Generate patch, tests and report",
+          "owner": "Takumi service",
+          "evidence": "documented"
+        },
+        {
+          "id": "review",
+          "label": "Reviewing: human reviews result",
+          "owner": "Customer developer",
+          "evidence": "documented"
+        },
+        {
+          "id": "pr",
+          "label": "Human Create PR -> Completed",
+          "owner": "Customer / service integration",
+          "evidence": "documented"
+        },
+        {
+          "id": "retest",
+          "label": "Separate verification/retest",
+          "owner": "Customer / separately requested service",
+          "evidence": "documented"
+        }
+      ],
+      "edges": [
+        [
+          "finding",
+          "permission"
+        ],
+        [
+          "permission",
+          "patch"
+        ],
+        [
+          "patch",
+          "review"
+        ],
+        [
+          "review",
+          "pr"
+        ],
+        [
+          "pr",
+          "retest"
+        ]
+      ],
+      "unknowns": [
+        "Completed does not establish deployment",
+        "No automatic vulnerability verification from Autofix completion",
+        "Exact model and guaranteed zero retention not established"
+      ]
+    },
+    {
+      "id": "splunk-rule",
+      "label": "Process-access telemetry to analyst finding",
+      "artifact": "splunk-lsass-source.md",
+      "nodes": [
+        {
+          "id": "sensor",
+          "label": "Customer Sysmon Event 10 telemetry",
+          "owner": "Customer endpoint/log pipeline",
+          "evidence": "documented"
+        },
+        {
+          "id": "parse",
+          "label": "Source types / add-on field mapping",
+          "owner": "Customer SIEM administrator",
+          "evidence": "documented"
+        },
+        {
+          "id": "rule",
+          "label": "LSASS target + access-mask logic",
+          "owner": "Detection search",
+          "evidence": "documented"
+        },
+        {
+          "id": "filter",
+          "label": "Detection-specific filter macro",
+          "owner": "Customer/package definition unresolved",
+          "evidence": "unknown"
+        },
+        {
+          "id": "risk",
+          "label": "Risk finding, analyst investigates context",
+          "owner": "SIEM and customer analyst",
+          "evidence": "documented"
+        }
+      ],
+      "edges": [
+        [
+          "sensor",
+          "parse"
+        ],
+        [
+          "parse",
+          "rule"
+        ],
+        [
+          "rule",
+          "filter"
+        ],
+        [
+          "filter",
+          "risk"
+        ]
+      ],
+      "unknowns": [
+        "Fixture not replayed",
+        "Generated filter definition unresolved",
+        "No containment action in selected YAML"
+      ]
+    },
+    {
+      "id": "fortisoar-sentinel",
+      "label": "Customer playbook to Sentinel incident record",
+      "artifact": "fortinet-sentinel-source.md",
+      "nodes": [
+        {
+          "id": "params",
+          "label": "Operation and selected incident changes",
+          "owner": "Customer playbook/operator",
+          "evidence": "documented"
+        },
+        {
+          "id": "token",
+          "label": "Validate/refresh configured app or delegated token",
+          "owner": "Connector and customer identities",
+          "evidence": "documented"
+        },
+        {
+          "id": "get",
+          "label": "GET existing incident and labels",
+          "owner": "FortiSOAR connector -> Azure",
+          "evidence": "documented"
+        },
+        {
+          "id": "body",
+          "label": "Merge labels/properties and remove empty values",
+          "owner": "Connector",
+          "evidence": "documented"
+        },
+        {
+          "id": "put",
+          "label": "PUT incident record",
+          "owner": "Connector -> Sentinel",
+          "evidence": "documented"
+        }
+      ],
+      "edges": [
+        [
+          "params",
+          "token"
+        ],
+        [
+          "token",
+          "get"
+        ],
+        [
+          "get",
+          "body"
+        ],
+        [
+          "body",
+          "put"
+        ]
+      ],
+      "unknowns": [
+        "No per-call approval in selected connector entry",
+        "No follow-up verification/rollback in selected update path",
+        "Platform audit/residency/retention not established by connector"
+      ]
+    },
+    {
+      "id": "trend-mdr-authority",
+      "label": "MDR mandate to endpoint verification",
+      "artifact": "trend-mdr-approval.md",
+      "contractArtifact": "trend-response-task-boundary.md",
+      "nodes": [
+        {
+          "id": "mandate",
+          "label": "Actions, endpoint scope and contacts configured",
+          "owner": "Customer administrator",
+          "evidence": "documented"
+        },
+        {
+          "id": "investigate",
+          "label": "MDR analyst investigates suspicious activity",
+          "owner": "Provider analyst",
+          "evidence": "documented"
+        },
+        {
+          "id": "category",
+          "label": "Determine action category and configured approval",
+          "owner": "Provider service / customer policy",
+          "evidence": "documented"
+        },
+        {
+          "id": "manual",
+          "label": "Request and await customer approval or rejection",
+          "owner": "Customer approver",
+          "evidence": "documented"
+        },
+        {
+          "id": "preauth",
+          "label": "Configured automatic or category-specific authority",
+          "owner": "Previously established mandate",
+          "evidence": "documented"
+        },
+        {
+          "id": "execute",
+          "label": "Submit response task",
+          "owner": "Provider service and managing product",
+          "evidence": "documented"
+        },
+        {
+          "id": "server",
+          "label": "Review managing-server task status",
+          "owner": "Service / operator",
+          "evidence": "documented"
+        },
+        {
+          "id": "verify",
+          "label": "Confirm endpoint enforcement and business impact",
+          "owner": "Customer / agreed operator",
+          "evidence": "inference"
+        },
+        {
+          "id": "approved",
+          "label": "Approved",
+          "owner": "Customer approver",
+          "evidence": "documented"
+        },
+        {
+          "id": "rejected",
+          "label": "Rejected: execution stops",
+          "owner": "Customer approver",
+          "evidence": "documented"
+        }
+      ],
+      "edges": [
+        [
+          "mandate",
+          "investigate"
+        ],
+        [
+          "investigate",
+          "category"
+        ],
+        [
+          "category",
+          "manual"
+        ],
+        [
+          "category",
+          "preauth"
+        ],
+        [
+          "preauth",
+          "execute"
+        ],
+        [
+          "execute",
+          "server"
+        ],
+        [
+          "server",
+          "verify"
+        ],
+        [
+          "manual",
+          "approved"
+        ],
+        [
+          "manual",
+          "rejected"
+        ],
+        [
+          "approved",
+          "execute"
+        ]
+      ],
+      "unknowns": [
+        "No-approval category and broad every-action manual wording remain in tension",
+        "Server success does not necessarily establish Security Agent completion",
+        "Signed current SLA/retention and actual customer configuration not established"
+      ]
+    }
+  ]
+}

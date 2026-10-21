@@ -1,0 +1,101 @@
+{
+  "createdAt": "2026-10-19T05:05:51.179Z",
+  "run": "complete-workflow-58f0bf86-99d5-4e59-bfe8-9bbbf6d87135",
+  "revision": 116,
+  "url": "http://127.0.0.1:65193/assessment",
+  "tests": {
+    "total": 145,
+    "passed": 144,
+    "failed": 0,
+    "skipped": 1,
+    "skip": "Existing Windows file-symlink creation privilege"
+  },
+  "browser": {
+    "actualDenial": true,
+    "noMockInvoice": true,
+    "missingScreenshotExplicit": true,
+    "nestedResponse404": true,
+    "fileProtocolExport": true,
+    "desktopOverflow": false
+  },
+  "latestExport": "runs/complete-workflow-58f0bf86-99d5-4e59-bfe8-9bbbf6d87135/report-116-c3055ec0-624e-47f8-b494-2fceea91d934-assessment.html",
+  "sources": [
+    {
+      "path": "src/practice/reader-model.mjs",
+      "sha256": "5ebffd3cc1bb953e646bc90fc325b0efddfc6f150e0cd9ca544f8085e78490c4"
+    },
+    {
+      "path": "src/practice/reader-report.mjs",
+      "sha256": "95108d9bcee48d3afdc7a1a5a789859606468ee0998cbd4a08e09c932083f25c"
+    },
+    {
+      "path": "src/practice/reader-ui.js",
+      "sha256": "cc5cd22ed1d332ae4d72567b4d757fd4929d2de696f622a047b1a80f8567ac94"
+    },
+    {
+      "path": "src/practice/reader-ui.css",
+      "sha256": "c8ed32af803bda6ace77761408e81bbcb277a8f2af4cc3ab19b84a659c94150f"
+    },
+    {
+      "path": "src/practice/workbench-server.mjs",
+      "sha256": "1213490ed0694d22a7e3ad09ee17019ba4684958ff357e3cb9e777694025940f"
+    },
+    {
+      "path": "src/practice/workbench.mjs",
+      "sha256": "8a2c7d6d31f0e0b5f66f32c3b2f9afb97cbbe74cd32c6a221c36774a8305bdca"
+    },
+    {
+      "path": "test/reader-model.test.mjs",
+      "sha256": "c5e698defbbaf6b9ada2624dcc3287f0c9a59094bda6646ac34e83832168af0c"
+    },
+    {
+      "path": "test/reader-report.test.mjs",
+      "sha256": "cb113220a62569a9f24109dcff3f2ad907d856748d0a531917d2ddd7928acf69"
+    },
+    {
+      "path": "src/practice/reader-fonts.mjs",
+      "sha256": "142518e670bdb278693efbb77c71428422b0ad49d312a729e4cc8a462cf5c6e6"
+    }
+  ],
+  "updatedAt": "2026-10-19T05:23:47.023Z",
+  "ui": {
+    "masthead": "Synapse",
+    "activeText": "dark",
+    "internalNavigation": "right chevrons and Back arrows",
+    "icons": 16,
+    "contextVisual": "actual actor/request/response",
+    "layout": "90% width with responsive typography",
+    "focusedReaderTests": {
+      "passed": 8,
+      "failed": 0
+    },
+    "browser": {
+      "overviewAndNestedDetails": true,
+      "selectedMapPointOpensDetails": true,
+      "allIconsXmlValid": true,
+      "noDiagonalArrows": true,
+      "noDesktopOverflow": true,
+      "wideViewport": 2464,
+      "contentWidth": 2217.59,
+      "bodyTextPx": 18
+    }
+  },
+  "canonicalTemplate": "Kotaro confirmed every future Synapse report; AGENTS.md",
+  "typography": {
+    "latin": "Inter400/500/600",
+    "japanese": "NotoSansJP400–700",
+    "glyphsPreserved": 16732,
+    "embedded": true,
+    "cdnRequests": false,
+    "liveBrowserEnglish": true,
+    "liveBrowserJapanese": true,
+    "fileProtocolEnglish": true,
+    "fileProtocolJapanese": true,
+    "fontProvenance": "src/practice/fonts/provenance.json",
+    "focusedTests": {
+      "passed": 8,
+      "failed": 0
+    },
+    "skyeAcknowledged": true
+  }
+}

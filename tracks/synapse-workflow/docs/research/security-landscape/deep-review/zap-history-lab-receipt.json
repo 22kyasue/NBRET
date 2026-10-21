@@ -1,0 +1,41 @@
+{
+  "at": "2026-10-17T20:49:41.813Z",
+  "out": "C:\\Users\\kotar\\githubprojects\\NBRET\\runs\\zap-history-research-1792270180884",
+  "scope": "Installed default history table with fresh in-memory HSQLDB/current synthetic schema and small options; no daemon, disk DB, network or real data.",
+  "command": {
+    "executable": "C:/Users/kotar/AppData/Local/Programs/BurpSuite/jre/bin/java.exe",
+    "args": [
+      "-Djava.awt.headless=true",
+      "--class-path",
+      "C:\\Users\\kotar\\githubprojects\\NBRET\\.tools\\ZAP_2.17.0\\zap-2.17.0.jar;C:\\Users\\kotar\\githubprojects\\NBRET\\.tools\\ZAP_2.17.0\\lib\\*",
+      "C:\\Users\\kotar\\githubprojects\\NBRET\\runs\\zap-history-research-1792270180884\\HistoryResearch.java"
+    ],
+    "cwd": "C:\\Users\\kotar\\githubprojects\\NBRET\\runs\\zap-history-research-1792270180884"
+  },
+  "exit": 0,
+  "elapsedMs": 927.5941,
+  "passes": [
+    "PASS assigned_history_id",
+    "PASS request_exact_limit_roundtrip",
+    "PASS response_exact_limit_roundtrip",
+    "PASS normal_row_count",
+    "PASS oversize_request_rejected",
+    "PASS request_rejection_no_new_row",
+    "PASS oversize_response_rejected",
+    "PASS response_rejection_no_new_row",
+    "PASS different_principal_headers_select_saved_row",
+    "PASS selected_row_retains_principal_a_header",
+    "PASS different_path_cache_miss_control",
+    "PASS different_body_sql_cache_miss_control",
+    "PASS post_object_equal_despite_different_body",
+    "PASS equal_post_objects_different_hashes",
+    "PASS failed_individual_tag_does_not_advance_cache_control",
+    "PASS failed_bulk_tag_advances_local_cache",
+    "PASS persisted_tag_view_stays_empty",
+    "PASS two_failed_insert_attempts"
+  ],
+  "jarSha256": "015dda4709b5ef79736086bb41e8e2a4e95b04cf6625f14d6bcc02b197c99c0c",
+  "fixtureSha256": "cec90b60072d2f51839655071adb606ad19faad404474b7a90fc4ad44f0487aa",
+  "stdoutSha256": "7f2ede863a72a2a4b7d597eabf9ac9c79b1d6a2fbb96e6254c2c6d7af4c12bbe",
+  "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

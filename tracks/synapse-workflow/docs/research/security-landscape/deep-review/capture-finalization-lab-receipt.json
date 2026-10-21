@@ -1,0 +1,18 @@
+{
+  "at": "2026-10-17T20:11:06.389Z",
+  "scope": "Synthetic CDP stub; production startCapture lifecycle only; no browser or network",
+  "out": "C:\\Users\\kotar\\githubprojects\\NBRET\\runs\\capture-finalization-research-1792267866386",
+  "firstError": "SYNTHETIC_DETACH_FAILURE",
+  "secondResolved": true,
+  "fileExists": false,
+  "detachAttempts": 1,
+  "finishedAtPresent": false,
+  "calls": [
+    "Network.enable",
+    "Debugger.enable",
+    "Page.enable",
+    "Runtime.enable"
+  ],
+  "elapsedMs": 1.4224999999999994,
+  "sourceSha256": "53c9b1be8ee9a44c2d7bf95c59ec78d3b6073239c480f580f29158a2860c0dc5"
+}

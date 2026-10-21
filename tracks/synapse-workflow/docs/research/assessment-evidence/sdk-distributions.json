@@ -1,0 +1,148 @@
+[
+  {
+    "name": "openai-codex",
+    "version": "0.1.0b3",
+    "url": "https://pypi.org/pypi/openai-codex/0.1.0b3/json",
+    "at": "2026-10-17T21:48:34.216Z",
+    "meaning": "declared lower bound in pinned wrapper, not previously installed runtime dependency",
+    "license": null,
+    "license_expression": "Apache-2.0",
+    "project_urls": {
+      "Documentation": "https://github.com/openai/codex/tree/main/sdk/python/docs",
+      "Homepage": "https://github.com/openai/codex",
+      "Issues": "https://github.com/openai/codex/issues",
+      "Repository": "https://github.com/openai/codex"
+    },
+    "requires_dist": [
+      "openai-codex-cli-bin==0.137.0a4",
+      "pydantic>=2.12",
+      "datamodel-code-generator==0.31.2; extra == \"dev\"",
+      "pytest>=8.0; extra == \"dev\"",
+      "ruff>=0.15.8; extra == \"dev\""
+    ],
+    "files": [
+      {
+        "filename": "openai_codex-0.1.0b3-py3-none-any.whl",
+        "url": "https://files.pythonhosted.org/packages/d7/ef/f77037d9ccde80a688a17a06aea5a56813ad9c365d49b3f1c7913422af8b/openai_codex-0.1.0b3-py3-none-any.whl",
+        "size": 65639,
+        "digests": {
+          "blake2b_256": "d7eff77037d9ccde80a688a17a06aea5a56813ad9c365d49b3f1c7913422af8b",
+          "md5": "904f147d2a42d6e252bc4b408b2c2236",
+          "sha256": "8d1f9d346667aeecb435c6a45d0edb3f016187276ec452cf8094d813896276c4"
+        },
+        "packagetype": "bdist_wheel"
+      },
+      {
+        "filename": "openai_codex-0.1.0b3.tar.gz",
+        "url": "https://files.pythonhosted.org/packages/ae/1c/1e5e8b83ea72164d32b1f4e67fc703c8b83591f498a7aaf96f39d352b453/openai_codex-0.1.0b3.tar.gz",
+        "size": 58995,
+        "digests": {
+          "blake2b_256": "ae1c1e5e8b83ea72164d32b1f4e67fc703c8b83591f498a7aaf96f39d352b453",
+          "md5": "c39214d17a4be1e853746dd5abc46cc5",
+          "sha256": "b76b7afe97953ac65648e9b8ca116b5ff273de91086549bd7ec88037cdc16cab"
+        },
+        "packagetype": "sdist"
+      }
+    ]
+  },
+  {
+    "name": "claude-agent-sdk",
+    "version": "0.2.90",
+    "url": "https://pypi.org/pypi/claude-agent-sdk/0.2.90/json",
+    "at": "2026-10-17T21:48:34.381Z",
+    "meaning": "declared lower bound in pinned wrapper, not previously installed runtime dependency",
+    "license": "MIT",
+    "license_expression": null,
+    "project_urls": {
+      "Documentation": "https://docs.anthropic.com/en/docs/claude-code/sdk",
+      "Homepage": "https://github.com/anthropics/claude-agent-sdk-python",
+      "Issues": "https://github.com/anthropics/claude-agent-sdk-python/issues"
+    },
+    "requires_dist": [
+      "anyio>=4.0.0",
+      "mcp>=1.23.0",
+      "sniffio>=1.0.0",
+      "typing-extensions>=4.0.0; python_version < \"3.11\"",
+      "anyio[trio]>=4.0.0; extra == \"dev\"",
+      "mypy>=1.0.0; extra == \"dev\"",
+      "pytest-asyncio>=0.20.0; extra == \"dev\"",
+      "pytest-cov>=4.0.0; extra == \"dev\"",
+      "pytest>=7.0.0; extra == \"dev\"",
+      "ruff>=0.1.0; extra == \"dev\"",
+      "asyncpg>=0.27.0; extra == \"examples\"",
+      "boto3>=1.28.0; extra == \"examples\"",
+      "fakeredis>=2.20.0; extra == \"examples\"",
+      "moto[s3]>=5.0.0; extra == \"examples\"",
+      "redis>=4.2.0; extra == \"examples\"",
+      "opentelemetry-api>=1.20.0; extra == \"otel\""
+    ],
+    "files": [
+      {
+        "filename": "claude_agent_sdk-0.2.90-py3-none-macosx_11_0_arm64.whl",
+        "url": "https://files.pythonhosted.org/packages/3e/99/4ccc944e5682f73ce6cc171c8c931d9ef889c6e823a44d46d6c6ca493d7a/claude_agent_sdk-0.2.90-py3-none-macosx_11_0_arm64.whl",
+        "size": 64690218,
+        "digests": {
+          "blake2b_256": "3e994ccc944e5682f73ce6cc171c8c931d9ef889c6e823a44d46d6c6ca493d7a",
+          "md5": "b915d6a2183b4eecb6e99cbb203ecad7",
+          "sha256": "1a00048896fd2932f29c9f4621d490e6f8b0a06bdc633ac74887e276ef319682"
+        },
+        "packagetype": "bdist_wheel"
+      },
+      {
+        "filename": "claude_agent_sdk-0.2.90-py3-none-macosx_11_0_x86_64.whl",
+        "url": "https://files.pythonhosted.org/packages/24/fe/af406af5c6ad94d04ee255ff92292330d64af5acebc0167bdd534d5356b3/claude_agent_sdk-0.2.90-py3-none-macosx_11_0_x86_64.whl",
+        "size": 66726979,
+        "digests": {
+          "blake2b_256": "24feaf406af5c6ad94d04ee255ff92292330d64af5acebc0167bdd534d5356b3",
+          "md5": "a3aa910013aec8b83f5ca98c7422502b",
+          "sha256": "052ee830ac1752f31c75b280b9d22a9dae956c9ae7934202b247654928ac4465"
+        },
+        "packagetype": "bdist_wheel"
+      },
+      {
+        "filename": "claude_agent_sdk-0.2.90-py3-none-manylinux_2_17_aarch64.whl",
+        "url": "https://files.pythonhosted.org/packages/20/19/ad4151a3e3d8f17ca585f2bd7dbf8848560b5d700c46c91f68f9205bba74/claude_agent_sdk-0.2.90-py3-none-manylinux_2_17_aarch64.whl",
+        "size": 74311402,
+        "digests": {
+          "blake2b_256": "2019ad4151a3e3d8f17ca585f2bd7dbf8848560b5d700c46c91f68f9205bba74",
+          "md5": "30d460e0c662d8e3953bbc5cd852865a",
+          "sha256": "20bcc8d9514040c8549101380e092ff316189cf10f5bfe65f8dc27434d7188e2"
+        },
+        "packagetype": "bdist_wheel"
+      },
+      {
+        "filename": "claude_agent_sdk-0.2.90-py3-none-manylinux_2_17_x86_64.whl",
+        "url": "https://files.pythonhosted.org/packages/af/15/cf29b53d4d3e2e7d4727d96d69429c31694e5fa52c2a0b1ff45f660e86fa/claude_agent_sdk-0.2.90-py3-none-manylinux_2_17_x86_64.whl",
+        "size": 74484333,
+        "digests": {
+          "blake2b_256": "af15cf29b53d4d3e2e7d4727d96d69429c31694e5fa52c2a0b1ff45f660e86fa",
+          "md5": "110352f7f28d9f3d5e35931794f8e9dc",
+          "sha256": "4854bf70ee006969c098ee61431b51300b9c49e9f2f86c4239ea3c50621db67c"
+        },
+        "packagetype": "bdist_wheel"
+      },
+      {
+        "filename": "claude_agent_sdk-0.2.90-py3-none-win_amd64.whl",
+        "url": "https://files.pythonhosted.org/packages/c2/87/7d82f52e8e5c83c606f35d875bc6ca355547206f1d8eca949c04072a2a7a/claude_agent_sdk-0.2.90-py3-none-win_amd64.whl",
+        "size": 75111916,
+        "digests": {
+          "blake2b_256": "c2877d82f52e8e5c83c606f35d875bc6ca355547206f1d8eca949c04072a2a7a",
+          "md5": "1bf4955ca2eaff1dbdb3c734f6e82516",
+          "sha256": "3783d89d10050c2e4551ffa0102aa0b671525a5c831be8c485f0ad5302a9fc3c"
+        },
+        "packagetype": "bdist_wheel"
+      },
+      {
+        "filename": "claude_agent_sdk-0.2.90.tar.gz",
+        "url": "https://files.pythonhosted.org/packages/0c/d6/0d215ffd601fae784344f098658846cc2555ed22f1c86afbb13764cc3c6a/claude_agent_sdk-0.2.90.tar.gz",
+        "size": 253307,
+        "digests": {
+          "blake2b_256": "0cd60d215ffd601fae784344f098658846cc2555ed22f1c86afbb13764cc3c6a",
+          "md5": "cd689a95880933e6314e6ea5b359678f",
+          "sha256": "00bebd2e6132ea448eb09343e0065cd4344dbd0a433d92e9155abd561108517b"
+        },
+        "packagetype": "sdist"
+      }
+    ]
+  }
+]

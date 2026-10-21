@@ -1,0 +1,183 @@
+{
+  "title": "REA and ten repositories for NBRT cybersecurity workflow research",
+  "date": "2026-10-16",
+  "status": "Initial source assessment; exhaustive line-by-line audit remains incomplete",
+  "scope": "Public repositories, local source inspection only. No tools installed, targets scanned, samples executed, or live systems modified.",
+  "nbrt_context": "Resolved from repository README: NBRET, Network Based Reverse Engineering Tool. Engagement types remain to be selected.",
+  "selection": "Ten curated related or distinctive repositories, not a global popularity ranking.",
+  "repositories": [
+    {
+      "repo": "morluto/rea",
+      "role": "Agent-facing investigation and evidence workflows",
+      "inspected": [
+        "README.md",
+        "AGENTS.md",
+        "docs/architecture.mermaid",
+        "src/application/WorkflowEvidence.ts",
+        "src/application/AnalysisProvider.ts",
+        "src/application/ProviderOperationExecution.ts",
+        "src/artifacts/readStableArtifact.ts",
+        "src/browser/PlaywrightExecutionBoundary.ts",
+        "src/application/InvestigationProviders.ts"
+      ],
+      "partial_reads": [
+        "package.json",
+        "src/domain/evidence.ts:1-230",
+        "docs/windows-ghidra-p0.md:1-120",
+        "experiments/analysis-efficiency/README.md"
+      ],
+      "learning": "Provider-neutral observations, explicit confidence and authority, preserved upstream caveats, artifact digests, and residual unknowns.",
+      "proposal": "Investigation records that connect artifact identity, suspected weakness, evidence, validation experiment, and remediation regression.",
+      "limitations": "Source review does not establish real-provider behavior. Windows Ghidra support is explicitly experimental and narrower than general cross-platform support. Local analysis does not make the connected model local or establish isolation."
+    },
+    {
+      "repo": "NationalSecurityAgency/ghidra",
+      "role": "Binary analysis engine",
+      "partial_reads": [
+        "Ghidra/Features/Decompiler/src/main/java/ghidra/app/decompiler/DecompInterface.java:1-130"
+      ],
+      "learning": "Persistent program-bound decompiler interface, explicit completion checks, process recovery.",
+      "proposal": "Repeatable headless analysis of owned native software and comparisons across releases.",
+      "limitations": "Decompiled pseudocode is a reconstruction; engine correctness and architecture coverage need target-specific validation."
+    },
+    {
+      "repo": "frida/frida",
+      "role": "Runtime instrumentation",
+      "inspected": [
+        ".gitmodules"
+      ],
+      "partial_reads": [
+        "frida-gum/gum/guminterceptor.c:1-150 at pinned submodule 3f13ee69c738013e61884701d8c1c39eed0cc679"
+      ],
+      "learning": "The release repository delegates implementation to separate core, gum, language binding, and tooling repositories; interceptor state includes transactions and per-thread invocation context.",
+      "proposal": "Validate narrowly defined runtime hypotheses in disposable lab instances.",
+      "limitations": "Instrumentation can change timing and behavior. Main repository review alone cannot cover implementation."
+    },
+    {
+      "repo": "semgrep/semgrep",
+      "role": "Source pattern and dataflow checks",
+      "partial_reads": [
+        "cli/src/semgrep/run_scan.py:1-130",
+        "src/matching/Match_patterns.ml:1-210"
+      ],
+      "learning": "Language-neutral AST pattern matching preserves metavariables and source ranges; scan orchestration is distinct from matching.",
+      "proposal": "Convert a confirmed source-level weakness into a reviewed rule with positive and negative fixtures.",
+      "limitations": "Pattern matches are not exploitability proof; commercial engine capabilities must be distinguished from this repository."
+    },
+    {
+      "repo": "projectdiscovery/nuclei",
+      "role": "Template-based checks",
+      "inspected": [
+        "pkg/core/engine.go"
+      ],
+      "learning": "Separate protocol/headless concurrency and per-template lifecycle callbacks; failed origin-scoped attempts should not suppress later attempts.",
+      "proposal": "Versioned approved checks with target scope, rate budgets, and lifecycle receipts.",
+      "limitations": "Templates vary in side effects; scanner output needs independent confirmation and pinned template provenance."
+    },
+    {
+      "repo": "apache/caldera",
+      "role": "Adversary emulation orchestration",
+      "inspected": [
+        "app/service/planning_svc.py"
+      ],
+      "learning": "Ability selection uses agent capabilities and operation facts; sequential and batch execution have different stop-check granularity; cleanup links are generated separately.",
+      "proposal": "Bounded purple-team exercises with expected telemetry and explicit stopping conditions.",
+      "limitations": "Generated cleanup is not proof that cleanup completed. Batch behavior can delay stopping-condition checks. Plugin submodules were not recursively inspected."
+    },
+    {
+      "repo": "redcanaryco/atomic-red-team",
+      "role": "Technique-specific detection tests",
+      "partial_reads": [
+        "atomics/T1082/T1082.yaml:1-210"
+      ],
+      "learning": "Tests carry stable identities, platforms, arguments, prerequisites, executors, and optional cleanup.",
+      "proposal": "Detection coverage matrix that distinguishes selected, executed, observed, alerted, investigated, and cleaned-up tests.",
+      "limitations": "Even one technique file mixes simple discovery with tests that download external code; technique ID alone is not an adequate scope or risk boundary."
+    },
+    {
+      "repo": "NVIDIA/garak",
+      "role": "LLM probe and detector evaluation",
+      "inspected": [
+        "garak/harnesses/base.py"
+      ],
+      "partial_reads": [
+        "garak/detectors/base.py",
+        "garak/evaluators/base.py:1-210"
+      ],
+      "learning": "Separate generation, probes, detectors, and evaluators; unscored outputs are counted separately from passes; plugin metadata and attempt identity are retained.",
+      "proposal": "Independent evaluation of agent boundary failures with preserved attempts and uncertainty.",
+      "limitations": "Detector scores are measurements under a rubric, not confirmed real-world vulnerabilities. Some components require external models or services."
+    },
+    {
+      "repo": "promptfoo/promptfoo",
+      "role": "Application-level AI regression and red-team evaluation",
+      "inspected": [
+        "src/redteam/remoteGeneration.ts"
+      ],
+      "partial_reads": [
+        "src/redteam/index.ts:1-130",
+        "src/redteam/plugins/base.ts:1-210"
+      ],
+      "learning": "Separate test plugins, strategies, providers, and assertions. Remote generation selection depends on credentials, cloud login, endpoints, and flags.",
+      "proposal": "Agent tests for untrusted document instructions, cross-tenant access, inappropriate tool calls, and canary-data leakage, scored against tool traces and deterministic assertions.",
+      "limitations": "Local CLI installation does not ensure local processing. Model-judge agreement alone is insufficient evidence; review data flow and costs before real cases."
+    },
+    {
+      "repo": "temporalio/temporal",
+      "role": "Durable workflow service",
+      "partial_reads": [
+        "docs/architecture/README.md",
+        "service/history/api/respondworkflowtaskcompleted/workflow_task_completed_handler.go:181-340"
+      ],
+      "learning": "Validate command sequences and preserve distinctions between workflow completion, retry, and unprocessed updates.",
+      "proposal": "Long-running engagements that survive restarts and retain approval and result history.",
+      "limitations": "Retryable workflows need idempotent external activities; durability is not automatic permission to repeat an action. Running a service introduces operational cost."
+    },
+    {
+      "repo": "langchain-ai/langgraph",
+      "role": "Stateful agent orchestration",
+      "partial_reads": [
+        "libs/langgraph/langgraph/pregel/main.py:1-130,201-370",
+        "libs/checkpoint/langgraph/checkpoint/base/__init__.py"
+      ],
+      "learning": "Explicit node subscriptions, writes, retries, timeouts, checkpoint versions and pending writes. Delta-channel retention can depend on ancestor history.",
+      "proposal": "Branching investigations with review interrupts and replayable state; borrow state design before adopting another orchestration framework.",
+      "limitations": "Checkpoints are not a sandbox. Naive checkpoint pruning can break delta reconstruction; persistence adapters and serializer policy require separate review."
+    }
+  ],
+  "proposed_pilots": [
+    {
+      "name": "Finding to regression",
+      "flow": "Owned artifact -> REA investigation -> independently confirmed finding -> reviewed Semgrep or Nuclei check -> regression fixtures -> retest after remediation",
+      "measure": "Analyst time, reproducibility, false positives, and whether the fixed version passes while the vulnerable fixture fails."
+    },
+    {
+      "name": "Agent boundary evaluation",
+      "flow": "Synthetic untrusted input -> agent in lab -> tool-call and data-access receipts -> deterministic policy checks -> promptfoo regression and independent garak comparison",
+      "measure": "Unauthorized tool calls, synthetic canary disclosure, benign-task success, repeated-run failure frequency, cost."
+    },
+    {
+      "name": "Detection evidence matrix",
+      "flow": "Selected reviewed Atomic tests -> disposable instrumented endpoints -> optional CALDERA scenario -> telemetry collection -> alert and cleanup verification",
+      "measure": "Execution success separately from telemetry visibility, alert generation, investigation time, and verified cleanup."
+    }
+  ],
+  "adoption_order": [
+    "Choose one NBRT use case and a known-answer lab fixture",
+    "Benchmark REA against an existing CLI workflow on the same question",
+    "Preserve evidence and build one regression test",
+    "Add orchestration only after the small workflow is useful"
+  ],
+  "unresolved": [
+    "Full line-by-line reading across all eleven repositories and their required submodules",
+    "Runtime integration tests and tool/provider availability on this PC",
+    "NBRT-specific requirements and existing architecture",
+    "Current release versus main behavior for each proposed integration",
+    "Costs and data processing destinations under the eventual configuration"
+  ],
+  "handoff": {
+    "file": "2026-10-16-rea-and-security-workflows.md",
+    "status": "Paused at Kotaro request; resume another day",
+    "date": "2026-10-16"
+  }
+}

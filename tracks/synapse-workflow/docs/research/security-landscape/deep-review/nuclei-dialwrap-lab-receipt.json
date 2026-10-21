@@ -1,0 +1,39 @@
+{
+  "at": "2026-10-17T20:55:18.810Z",
+  "out": "C:\\Users\\kotar\\githubprojects\\NBRET\\runs\\dialwrap-research-1792270517298",
+  "scope": "Read upstream loopback-only DialWrap test selected exactly; no public target, Fastdialer.NewDialer, DNS, model or real credentials.",
+  "command": {
+    "executable": "C:\\Users\\kotar\\githubprojects\\NBRET\\.tools\\security-research-go\\sdk\\go\\bin\\go.exe",
+    "args": [
+      "test",
+      "github.com/projectdiscovery/fastdialer/fastdialer/utils",
+      "-run",
+      "^TestDialWrapFirstDialOpensOneConnection$",
+      "-count=1",
+      "-json"
+    ],
+    "cwd": "C:/Users/kotar/.codex/research/nuclei"
+  },
+  "moduleNetwork": {
+    "GOPROXY": "off",
+    "GOSUMDB": "off"
+  },
+  "moduleListExit": 0,
+  "moduleListSha256": "70ce3e9f352fccc93621850b0e7cb914af489476077e0c65d98e84af661424db",
+  "exit": 0,
+  "elapsedMs": 1477.7799,
+  "tests": [
+    {
+      "test": "TestDialWrapFirstDialOpensOneConnection",
+      "action": "pass"
+    }
+  ],
+  "sourceSha256": {
+    "fastdialer/utils/dialwrap.go": "988701bb3df8881ba7186c217ac4ecf673cab9bc92af8dcf45710698fa116834",
+    "fastdialer/utils/dialwrap_test.go": "da16840ddcee4940b1fbd1e658818f2e1b7b1d50ad5c0a2b2e2ebf94cde85388",
+    "go.mod": "f454f6a007136e46c5fb1f2cc081312e1938f134f57d252edfe0ba9f3419997b",
+    "go.sum": "d86881ee44347b0972acf20fd0e26fec4ec638380adfaca4672d333cb2a0620f"
+  },
+  "logSha256": "e915dfe31850436d1109e68e2e250129a939f9b689cf086ead2aa68f968c93d0",
+  "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

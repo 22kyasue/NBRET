@@ -1,0 +1,367 @@
+{
+  "at": "2026-10-18T04:36:08.933Z",
+  "basis": "Byte and range consistency, not semantic/runtime verification",
+  "errors": [],
+  "summary": [
+    {
+      "path": "VERSION",
+      "status": "complete",
+      "ranges": [
+        [
+          1,
+          3
+        ]
+      ]
+    },
+    {
+      "path": "LICENSE",
+      "status": "complete",
+      "ranges": [
+        [
+          1,
+          28
+        ]
+      ]
+    },
+    {
+      "path": "src/net/http/client.go",
+      "status": "complete",
+      "ranges": [
+        [
+          1,
+          1071
+        ]
+      ]
+    },
+    {
+      "path": "src/net/http/request.go",
+      "status": "complete",
+      "ranges": [
+        [
+          1,
+          1610
+        ]
+      ]
+    },
+    {
+      "path": "src/net/http/transfer.go",
+      "status": "complete",
+      "ranges": [
+        [
+          1,
+          1184
+        ]
+      ]
+    },
+    {
+      "path": "src/net/http/transport.go",
+      "status": "complete",
+      "ranges": [
+        [
+          1,
+          3489
+        ]
+      ]
+    },
+    {
+      "path": "src/net/http/httputil/dump.go",
+      "status": "complete",
+      "ranges": [
+        [
+          1,
+          337
+        ]
+      ]
+    },
+    {
+      "path": "src/net/http/client_test.go",
+      "status": "complete",
+      "ranges": [
+        [
+          1,
+          2334
+        ]
+      ]
+    },
+    {
+      "path": "src/net/http/transfer_test.go",
+      "status": "complete",
+      "ranges": [
+        [
+          1,
+          374
+        ]
+      ]
+    },
+    {
+      "path": "src/net/http/request_test.go",
+      "status": "complete",
+      "ranges": [
+        [
+          1,
+          1667
+        ]
+      ]
+    },
+    {
+      "path": "src/net/http/transport_test.go",
+      "status": "complete",
+      "ranges": [
+        [
+          1,
+          8107
+        ]
+      ]
+    },
+    {
+      "path": "src/net/http/httputil/dump_test.go",
+      "status": "complete",
+      "ranges": [
+        [
+          1,
+          533
+        ]
+      ]
+    },
+    {
+      "path": "src/vendor/golang.org/x/net/http/httpguts/httplex.go",
+      "status": "complete",
+      "ranges": [
+        [
+          1,
+          348
+        ]
+      ]
+    },
+    {
+      "path": "src/vendor/golang.org/x/net/http/httpproxy/proxy.go",
+      "status": "complete",
+      "ranges": [
+        [
+          1,
+          374
+        ]
+      ]
+    },
+    {
+      "path": "src/net/http/internal/chunked.go",
+      "status": "complete",
+      "ranges": [
+        [
+          1,
+          301
+        ]
+      ]
+    },
+    {
+      "path": "src/net/http/internal/chunked_test.go",
+      "status": "complete",
+      "ranges": [
+        [
+          1,
+          329
+        ]
+      ]
+    },
+    {
+      "path": "src/net/http/response.go",
+      "status": "complete",
+      "ranges": [
+        [
+          1,
+          376
+        ]
+      ]
+    },
+    {
+      "path": "src/net/http/header.go",
+      "status": "complete",
+      "ranges": [
+        [
+          1,
+          275
+        ]
+      ]
+    },
+    {
+      "path": "src/net/textproto/header.go",
+      "status": "complete",
+      "ranges": [
+        [
+          1,
+          57
+        ]
+      ]
+    },
+    {
+      "path": "src/net/textproto/reader.go",
+      "status": "complete",
+      "ranges": [
+        [
+          1,
+          858
+        ]
+      ]
+    },
+    {
+      "path": "src/net/http/clientserver_test.go",
+      "status": "complete",
+      "ranges": [
+        [
+          1,
+          2041
+        ]
+      ]
+    },
+    {
+      "path": "src/net/http/header_test.go",
+      "status": "complete",
+      "ranges": [
+        [
+          1,
+          273
+        ]
+      ]
+    },
+    {
+      "path": "src/net/http/response_test.go",
+      "status": "complete",
+      "ranges": [
+        [
+          1,
+          1139
+        ]
+      ]
+    },
+    {
+      "path": "src/net/textproto/reader_test.go",
+      "status": "complete",
+      "ranges": [
+        [
+          1,
+          567
+        ]
+      ]
+    },
+    {
+      "path": "src/net/http/main_test.go",
+      "status": "complete",
+      "ranges": [
+        [
+          1,
+          176
+        ]
+      ]
+    },
+    {
+      "path": "src/net/http/netconn_test.go",
+      "status": "complete",
+      "ranges": [
+        [
+          1,
+          441
+        ]
+      ]
+    },
+    {
+      "path": "src/net/http/httptest/server.go",
+      "status": "complete",
+      "ranges": [
+        [
+          1,
+          662
+        ]
+      ]
+    },
+    {
+      "path": "src/internal/nettest/listener.go",
+      "status": "complete",
+      "ranges": [
+        [
+          1,
+          149
+        ]
+      ]
+    },
+    {
+      "path": "src/internal/nettest/queue.go",
+      "status": "complete",
+      "ranges": [
+        [
+          1,
+          34
+        ]
+      ]
+    },
+    {
+      "path": "src/internal/nettest/conn.go",
+      "status": "complete",
+      "ranges": [
+        [
+          1,
+          438
+        ]
+      ]
+    },
+    {
+      "path": "src/internal/nettest/listener_test.go",
+      "status": "complete",
+      "ranges": [
+        [
+          1,
+          213
+        ]
+      ]
+    },
+    {
+      "path": "src/internal/gate/gate.go",
+      "status": "complete",
+      "ranges": [
+        [
+          1,
+          77
+        ]
+      ]
+    },
+    {
+      "path": "src/internal/gate/gate_test.go",
+      "status": "complete",
+      "ranges": [
+        [
+          1,
+          85
+        ]
+      ]
+    },
+    {
+      "path": "src/internal/nettest/conn_test.go",
+      "status": "complete",
+      "ranges": [
+        [
+          1,
+          452
+        ]
+      ]
+    },
+    {
+      "path": "src/internal/nettest/nettest_test.go",
+      "status": "complete",
+      "ranges": [
+        [
+          1,
+          135
+        ]
+      ]
+    },
+    {
+      "path": "src/net/http/httptest/server_test.go",
+      "status": "complete",
+      "ranges": [
+        [
+          1,
+          441
+        ]
+      ]
+    }
+  ]
+}

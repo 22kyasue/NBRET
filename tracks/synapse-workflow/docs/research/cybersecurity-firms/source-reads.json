@@ -1,0 +1,1585 @@
+{
+  "generated": "2026-10-18T03:40:28.636Z",
+  "files": [
+    {
+      "path": "runs/cybersecurity-firms-20261017/source/falcon/pyproject.toml",
+      "sha256": "e2ec7448e45b4f56a5132c58cf36ba035c48df9ccb14cb6024811631b227268a",
+      "bytes": 2466,
+      "lines": 99,
+      "state": "complete-file",
+      "ranges": [
+        [
+          1,
+          99
+        ]
+      ],
+      "annotation": "falcon-host-action-source.md",
+      "runtime": "not executed"
+    },
+    {
+      "path": "runs/cybersecurity-firms-20261017/source/falcon/samples/hosts/quarantine_hosts_new.py",
+      "sha256": "a7483e5dcddfb31e9b383c8bec9337f8ebae80860bc85b0ac3625d9a08702766",
+      "bytes": 2702,
+      "lines": 71,
+      "state": "complete-file",
+      "ranges": [
+        [
+          1,
+          71
+        ]
+      ],
+      "annotation": "falcon-host-action-source.md",
+      "runtime": "not executed"
+    },
+    {
+      "path": "runs/cybersecurity-firms-20261017/source/falcon/src/falconpy/hosts.py",
+      "sha256": "e6eec3a7b2d531005169a375f4074a618df9e85fefb09a0daddc358019f6be4f",
+      "bytes": 108202,
+      "lines": 1730,
+      "state": "partial",
+      "ranges": [
+        [
+          1,
+          60
+        ],
+        [
+          482,
+          555
+        ],
+        [
+          1013,
+          1070
+        ]
+      ],
+      "annotation": "falcon-host-action-source.md",
+      "runtime": "not executed"
+    },
+    {
+      "path": "runs/cybersecurity-firms-20261017/source/falcon/src/falconpy/oauth2.py",
+      "sha256": "bc5c398f34b76402287af8c999f70dbe587f4987649331be271c387607931923",
+      "bytes": 10885,
+      "lines": 270,
+      "state": "complete-file",
+      "ranges": [
+        [
+          1,
+          270
+        ]
+      ],
+      "annotation": "falcon-auth-source.md",
+      "runtime": "not executed"
+    },
+    {
+      "path": "runs/cybersecurity-firms-20261017/source/falcon/src/falconpy/_api_request/_request.py",
+      "sha256": "a29b87de1335ff3d608471c9a2ec9a679721c30d1272f0eef6143c83a3f4c0c1",
+      "bytes": 11670,
+      "lines": 284,
+      "state": "complete-file",
+      "ranges": [
+        [
+          1,
+          284
+        ]
+      ],
+      "annotation": "falcon-host-action-source.md",
+      "runtime": "not executed"
+    },
+    {
+      "path": "runs/cybersecurity-firms-20261017/source/falcon/src/falconpy/_api_request/_request_behavior.py",
+      "sha256": "591c8a82fd25280e20c48707100b4fadd2c56de69c5957bea498bba641bc1565",
+      "bytes": 5869,
+      "lines": 159,
+      "state": "complete-file",
+      "ranges": [
+        [
+          1,
+          159
+        ]
+      ],
+      "annotation": "falcon-host-action-source.md",
+      "runtime": "not executed"
+    },
+    {
+      "path": "runs/cybersecurity-firms-20261017/source/falcon/src/falconpy/_api_request/_request_connection.py",
+      "sha256": "da6251b6f2abc0ea444cbad3e4e26af3ed5c048947e900f9338179140808f725",
+      "bytes": 2254,
+      "lines": 56,
+      "state": "complete-file",
+      "ranges": [
+        [
+          1,
+          56
+        ]
+      ],
+      "annotation": "falcon-host-action-source.md",
+      "runtime": "not executed"
+    },
+    {
+      "path": "runs/cybersecurity-firms-20261017/source/falcon/src/falconpy/_api_request/_request_meta.py",
+      "sha256": "92efc089d89e543e48f6b80da98b50c48145bbdd50ad35fccf314197c6594228",
+      "bytes": 3585,
+      "lines": 94,
+      "state": "complete-file",
+      "ranges": [
+        [
+          1,
+          94
+        ]
+      ],
+      "annotation": "falcon-auth-source.md",
+      "runtime": "not executed"
+    },
+    {
+      "path": "runs/cybersecurity-firms-20261017/source/falcon/src/falconpy/_api_request/_request_payloads.py",
+      "sha256": "9d4a7145caecd71eb1336cf4741eabe6c723865ca41cd236324eb0051e67724c",
+      "bytes": 2345,
+      "lines": 54,
+      "state": "complete-file",
+      "ranges": [
+        [
+          1,
+          54
+        ]
+      ],
+      "annotation": "falcon-host-action-source.md",
+      "runtime": "not executed"
+    },
+    {
+      "path": "runs/cybersecurity-firms-20261017/source/falcon/src/falconpy/_api_request/_request_validator.py",
+      "sha256": "e67fdd8dada527107a04a041ec17fb213caf0d4e52d018341072bfa7ebb0de2c",
+      "bytes": 2112,
+      "lines": 52,
+      "state": "complete-file",
+      "ranges": [
+        [
+          1,
+          52
+        ]
+      ],
+      "annotation": "falcon-auth-source.md",
+      "runtime": "not executed"
+    },
+    {
+      "path": "runs/cybersecurity-firms-20261017/source/falcon/src/falconpy/_auth_object/_base_falcon_auth.py",
+      "sha256": "e69bae6cb44b13f74f965db8ac5d007bc842060e271da8da5d8b125ccab4339a",
+      "bytes": 3926,
+      "lines": 88,
+      "state": "complete-file",
+      "ranges": [
+        [
+          1,
+          88
+        ]
+      ],
+      "annotation": "falcon-auth-source.md",
+      "runtime": "not executed"
+    },
+    {
+      "path": "runs/cybersecurity-firms-20261017/source/falcon/src/falconpy/_auth_object/_bearer_token.py",
+      "sha256": "a4f64c12120492f1d23214c4b07bddd334c6582938f9e6cc6fd6178eecbdd5d7",
+      "bytes": 5890,
+      "lines": 159,
+      "state": "complete-file",
+      "ranges": [
+        [
+          1,
+          159
+        ]
+      ],
+      "annotation": "falcon-auth-source.md",
+      "runtime": "not executed"
+    },
+    {
+      "path": "runs/cybersecurity-firms-20261017/source/falcon/src/falconpy/_auth_object/_falcon_interface.py",
+      "sha256": "3c3351c0650465e9ba2d99f731d5097bacd18b4ec433ac2eb23d27a4c9af8254",
+      "bytes": 27540,
+      "lines": 634,
+      "state": "complete-file",
+      "ranges": [
+        [
+          1,
+          634
+        ]
+      ],
+      "annotation": "falcon-auth-source.md",
+      "runtime": "not executed"
+    },
+    {
+      "path": "runs/cybersecurity-firms-20261017/source/falcon/src/falconpy/_auth_object/_interface_config.py",
+      "sha256": "c6578677f4aedce317e0f4ee623bf98487325078604ce39ecb160b763278e28f",
+      "bytes": 4805,
+      "lines": 132,
+      "state": "complete-file",
+      "ranges": [
+        [
+          1,
+          132
+        ]
+      ],
+      "annotation": "falcon-auth-source.md",
+      "runtime": "not executed"
+    },
+    {
+      "path": "runs/cybersecurity-firms-20261017/source/falcon/src/falconpy/_constant/__init__.py",
+      "sha256": "459cf34f83e3881ebb93f55aab2a1eb12996276cd928908e950e6e58fd03417e",
+      "bytes": 4380,
+      "lines": 82,
+      "state": "complete-file",
+      "ranges": [
+        [
+          1,
+          82
+        ]
+      ],
+      "annotation": "falcon-auth-source.md",
+      "runtime": "not executed"
+    },
+    {
+      "path": "runs/cybersecurity-firms-20261017/source/falcon/src/falconpy/_endpoint/_hosts.py",
+      "sha256": "7d7a5c9875397fe80da41508becaadbd8a37df8a2cfb00be64e45d75728586e6",
+      "bytes": 31646,
+      "lines": 891,
+      "state": "partial",
+      "ranges": [
+        [
+          609,
+          637
+        ],
+        [
+          858,
+          890
+        ]
+      ],
+      "annotation": "falcon-host-action-source.md",
+      "runtime": "not executed"
+    },
+    {
+      "path": "runs/cybersecurity-firms-20261017/source/falcon/src/falconpy/_endpoint/_oauth2.py",
+      "sha256": "bce9fa369bc3f9ec52d652ed3a18016191f402589d0c826810452aebc6a70236",
+      "bytes": 3600,
+      "lines": 97,
+      "state": "complete-file",
+      "ranges": [
+        [
+          1,
+          97
+        ]
+      ],
+      "annotation": "falcon-auth-source.md",
+      "runtime": "not executed"
+    },
+    {
+      "path": "runs/cybersecurity-firms-20261017/source/falcon/src/falconpy/_enum/_base_url.py",
+      "sha256": "1d4a08c96b1dc40f3cf3213ca3040f68ef4550c6640e111467daefb17b3079be",
+      "bytes": 2205,
+      "lines": 56,
+      "state": "complete-file",
+      "ranges": [
+        [
+          1,
+          56
+        ]
+      ],
+      "annotation": "falcon-auth-source.md",
+      "runtime": "not executed"
+    },
+    {
+      "path": "runs/cybersecurity-firms-20261017/source/falcon/src/falconpy/_enum/_token_fail_reason.py",
+      "sha256": "26b895ff9e4002c880922d6540c75076749c3ae02c6369e3a78b29a9e536a32e",
+      "bytes": 2218,
+      "lines": 53,
+      "state": "complete-file",
+      "ranges": [
+        [
+          1,
+          53
+        ]
+      ],
+      "annotation": "falcon-auth-source.md",
+      "runtime": "not executed"
+    },
+    {
+      "path": "runs/cybersecurity-firms-20261017/source/falcon/src/falconpy/_log/_facility.py",
+      "sha256": "fcbc3717a06e673eb4771243f3b8e38d40e7a13d68bc9467bd0d3ddca1f14c87",
+      "bytes": 3860,
+      "lines": 110,
+      "state": "complete-file",
+      "ranges": [
+        [
+          1,
+          110
+        ]
+      ],
+      "annotation": "falcon-auth-source.md",
+      "runtime": "not executed"
+    },
+    {
+      "path": "runs/cybersecurity-firms-20261017/source/falcon/src/falconpy/_payload/_generic.py",
+      "sha256": "79e67c12956d299e95750b5df2c849f1880e1670f23332a343590d86ceb7c285",
+      "bytes": 8016,
+      "lines": 242,
+      "state": "downloaded-unread",
+      "ranges": [],
+      "runtime": "not executed"
+    },
+    {
+      "path": "runs/cybersecurity-firms-20261017/source/falcon/src/falconpy/_payload/_hosts.py",
+      "sha256": "a3c0d48435902e6ba81db92e86547bf9b06ebf8c0d7e90befae23a745aacc6e1",
+      "bytes": 2255,
+      "lines": 60,
+      "state": "complete-file",
+      "ranges": [
+        [
+          1,
+          60
+        ]
+      ],
+      "annotation": "falcon-host-action-source.md",
+      "runtime": "not executed"
+    },
+    {
+      "path": "runs/cybersecurity-firms-20261017/source/falcon/src/falconpy/_result/_base_dictionary.py",
+      "sha256": "edd1eaee63c828b9e8bdfb61b4a78da243947f47d05f4429227db78f013e8a7b",
+      "bytes": 4464,
+      "lines": 113,
+      "state": "complete-file",
+      "ranges": [
+        [
+          1,
+          113
+        ]
+      ],
+      "annotation": "falcon-host-action-source.md",
+      "runtime": "not executed"
+    },
+    {
+      "path": "runs/cybersecurity-firms-20261017/source/falcon/src/falconpy/_result/_errors.py",
+      "sha256": "d3eb897dc766520f1a0f094be4a8998ec084b3105499f1a37d4eba19f820cf77",
+      "bytes": 1825,
+      "lines": 43,
+      "state": "complete-file",
+      "ranges": [
+        [
+          1,
+          43
+        ]
+      ],
+      "annotation": "falcon-host-action-source.md",
+      "runtime": "not executed"
+    },
+    {
+      "path": "runs/cybersecurity-firms-20261017/source/falcon/src/falconpy/_result/_expanded_result.py",
+      "sha256": "1b14c62e44e0076fa76f08ba15f0ea7c4d72beae8161be155d7e7109194eb54b",
+      "bytes": 2691,
+      "lines": 66,
+      "state": "complete-file",
+      "ranges": [
+        [
+          1,
+          66
+        ]
+      ],
+      "annotation": "falcon-host-action-source.md",
+      "runtime": "not executed"
+    },
+    {
+      "path": "runs/cybersecurity-firms-20261017/source/falcon/src/falconpy/_result/_headers.py",
+      "sha256": "c4576e842658f738623f9a2daecfdd58c42fd0e166e80be58095f056d0d669d9",
+      "bytes": 3302,
+      "lines": 84,
+      "state": "complete-file",
+      "ranges": [
+        [
+          1,
+          84
+        ]
+      ],
+      "annotation": "falcon-host-action-source.md",
+      "runtime": "not executed"
+    },
+    {
+      "path": "runs/cybersecurity-firms-20261017/source/falcon/src/falconpy/_result/_meta.py",
+      "sha256": "d606cc2b71355b8c6a196f66c20524c717bccf906da6db53b0e5855c3f1d8b98",
+      "bytes": 3476,
+      "lines": 89,
+      "state": "complete-file",
+      "ranges": [
+        [
+          1,
+          89
+        ]
+      ],
+      "annotation": "falcon-host-action-source.md",
+      "runtime": "not executed"
+    },
+    {
+      "path": "runs/cybersecurity-firms-20261017/source/falcon/src/falconpy/_result/_resources.py",
+      "sha256": "d2b3ce6725102093aebd31a26933dce64e4520e6b0dc1b4c11167c49f3ebc52e",
+      "bytes": 2489,
+      "lines": 67,
+      "state": "complete-file",
+      "ranges": [
+        [
+          1,
+          67
+        ]
+      ],
+      "annotation": "falcon-host-action-source.md",
+      "runtime": "not executed"
+    },
+    {
+      "path": "runs/cybersecurity-firms-20261017/source/falcon/src/falconpy/_result/_response_component.py",
+      "sha256": "3c7da24e9ffd232df9c485b2e37b47ba643d6c68c3847ea874da87c79c3c5277",
+      "bytes": 4320,
+      "lines": 94,
+      "state": "complete-file",
+      "ranges": [
+        [
+          1,
+          94
+        ]
+      ],
+      "annotation": "falcon-host-action-source.md",
+      "runtime": "not executed"
+    },
+    {
+      "path": "runs/cybersecurity-firms-20261017/source/falcon/src/falconpy/_result/_result.py",
+      "sha256": "8de22f4729943e4990372061b408e928a8886dad1507735303d89b2f9f1c4300",
+      "bytes": 17505,
+      "lines": 448,
+      "state": "complete-file",
+      "ranges": [
+        [
+          1,
+          448
+        ]
+      ],
+      "annotation": "falcon-host-action-source.md",
+      "runtime": "not executed"
+    },
+    {
+      "path": "runs/cybersecurity-firms-20261017/source/falcon/src/falconpy/_result/__base_resource.py",
+      "sha256": "20ae3bb904b754506c2e2a5c8a376ef5b35668bf09b8cc2a85e26f8c53fc6353",
+      "bytes": 4301,
+      "lines": 103,
+      "state": "complete-file",
+      "ranges": [
+        [
+          1,
+          103
+        ]
+      ],
+      "annotation": "falcon-host-action-source.md",
+      "runtime": "not executed"
+    },
+    {
+      "path": "runs/cybersecurity-firms-20261017/source/falcon/src/falconpy/_result/__init__.py",
+      "sha256": "bb369c5fc2870e00d5d411f103f52a0853d4eb51c14b0dce4ab501168f0314a9",
+      "bytes": 2186,
+      "lines": 50,
+      "state": "complete-file",
+      "ranges": [
+        [
+          1,
+          50
+        ]
+      ],
+      "annotation": "falcon-host-action-source.md",
+      "runtime": "not executed"
+    },
+    {
+      "path": "runs/cybersecurity-firms-20261017/source/falcon/src/falconpy/_service_class/_base_service_class.py",
+      "sha256": "86db5e69cabf2c1d1a8017c6acc31a10d591ab901be2d08db7584e1a6530c9e5",
+      "bytes": 12403,
+      "lines": 294,
+      "state": "complete-file",
+      "ranges": [
+        [
+          1,
+          294
+        ]
+      ],
+      "annotation": "falcon-auth-source.md",
+      "runtime": "not executed"
+    },
+    {
+      "path": "runs/cybersecurity-firms-20261017/source/falcon/src/falconpy/_service_class/_service_class.py",
+      "sha256": "7976a60d1542974a97011602222a0e2262432a6b4f98d5daf7cc03c69bc2ad32",
+      "bytes": 16583,
+      "lines": 396,
+      "state": "complete-file",
+      "ranges": [
+        [
+          1,
+          396
+        ]
+      ],
+      "annotation": "falcon-auth-source.md",
+      "runtime": "not executed"
+    },
+    {
+      "path": "runs/cybersecurity-firms-20261017/source/falcon/src/falconpy/_util/_auth.py",
+      "sha256": "504e8e221261865947a6a105fb8656d7054589aef102fcc7fc8d55ee447664d1",
+      "bytes": 5226,
+      "lines": 126,
+      "state": "complete-file",
+      "ranges": [
+        [
+          1,
+          126
+        ]
+      ],
+      "annotation": "falcon-auth-source.md",
+      "runtime": "not executed"
+    },
+    {
+      "path": "runs/cybersecurity-firms-20261017/source/falcon/src/falconpy/_util/_functions.py",
+      "sha256": "d738a5a2e5a6e56f33fbc1842487680c64fe7e2a4ea4a84e8bcaf5353076f3d6",
+      "bytes": 47087,
+      "lines": 1025,
+      "state": "complete-file",
+      "ranges": [
+        [
+          1,
+          1025
+        ]
+      ],
+      "annotation": "falcon-auth-source.md",
+      "runtime": "not executed"
+    },
+    {
+      "path": "runs/cybersecurity-firms-20261017/source/falcon/src/falconpy/_util/_service.py",
+      "sha256": "7584629102cbcffeace18e245242b7759b1ad98758b0b5f19274a105f8846737",
+      "bytes": 2874,
+      "lines": 71,
+      "state": "downloaded-unread",
+      "ranges": [],
+      "runtime": "not executed"
+    },
+    {
+      "path": "runs/cybersecurity-firms-20261017/source/falcon/tests/test_authentications.py",
+      "sha256": "fcc621e8e5cb1097b5accc7a6bfd195d810c7b1eeca38231da39ecd7db7fba69",
+      "bytes": 26855,
+      "lines": 657,
+      "state": "complete-file",
+      "ranges": [
+        [
+          1,
+          657
+        ]
+      ],
+      "annotation": "falcon-auth-source.md",
+      "runtime": "not executed"
+    },
+    {
+      "path": "runs/cybersecurity-firms-20261017/source/falcon/tests/test_authorization.py",
+      "sha256": "6ba9ae0a45dfe731dae89acaa9dea2d20ac80842fe1a8ab59c5a7d6be0f84858",
+      "bytes": 11321,
+      "lines": 299,
+      "state": "complete-file",
+      "ranges": [
+        [
+          1,
+          299
+        ]
+      ],
+      "annotation": "falcon-auth-source.md",
+      "runtime": "not executed"
+    },
+    {
+      "path": "runs/cybersecurity-firms-20261017/source/falcon/tests/test_hosts.py",
+      "sha256": "086a50d327d4647fb0f94fc0bf3daaed3a3a6cb610a56aa059b75a6311c4d0cc",
+      "bytes": 12727,
+      "lines": 292,
+      "state": "complete-file",
+      "ranges": [
+        [
+          1,
+          292
+        ]
+      ],
+      "annotation": "falcon-host-action-source.md",
+      "runtime": "not executed"
+    },
+    {
+      "path": "runs/cybersecurity-firms-20261017/source/falcon/tests/test_result_object.py",
+      "sha256": "c4df47b0fe41e8300430f0acfadd14b0ba24fe72e42e5dcd04a3d7a14a9d4755",
+      "bytes": 28512,
+      "lines": 915,
+      "state": "complete-file",
+      "ranges": [
+        [
+          1,
+          915
+        ]
+      ],
+      "annotation": "falcon-host-action-source.md",
+      "runtime": "not executed"
+    },
+    {
+      "path": "runs/cybersecurity-firms-20261017/source/fort/microsoft-sentinel/connector.py",
+      "sha256": "6e591979afac12194a8bd59b1a0696ff2ab91d719d69fc845785b4a37542f54c",
+      "bytes": 2041,
+      "lines": 50,
+      "state": "complete-file",
+      "ranges": [
+        [
+          1,
+          50
+        ]
+      ],
+      "annotation": "fortinet-sentinel-source.md",
+      "runtime": "not executed"
+    },
+    {
+      "path": "runs/cybersecurity-firms-20261017/source/fort/microsoft-sentinel/constant.py",
+      "sha256": "53ee8e8f70743de3e269c732ba4be9693f9b49bbde6dc906eef871d20a0d7910",
+      "bytes": 1767,
+      "lines": 43,
+      "state": "complete-file",
+      "ranges": [
+        [
+          1,
+          43
+        ]
+      ],
+      "annotation": "fortinet-sentinel-source.md",
+      "runtime": "not executed"
+    },
+    {
+      "path": "runs/cybersecurity-firms-20261017/source/fort/microsoft-sentinel/info.json",
+      "sha256": "d0b91871219c3b2db3c5b99c8dc8730bcab17125a89e1b35f8a43331270e394c",
+      "bytes": 101076,
+      "lines": 2654,
+      "state": "partial",
+      "ranges": [],
+      "annotation": "fortinet-sentinel-source.md",
+      "runtime": "not executed"
+    },
+    {
+      "path": "runs/cybersecurity-firms-20261017/source/fort/microsoft-sentinel/microsoft_api_auth.py",
+      "sha256": "d587d90cdc98b9625859a6fa8e639a9df4540ecde09430110595c71b87fdbfa4",
+      "bytes": 9539,
+      "lines": 208,
+      "state": "complete-file",
+      "ranges": [
+        [
+          1,
+          208
+        ]
+      ],
+      "annotation": "fortinet-sentinel-source.md",
+      "runtime": "not executed"
+    },
+    {
+      "path": "runs/cybersecurity-firms-20261017/source/fort/microsoft-sentinel/operations.py",
+      "sha256": "0a5bbf8b6dccdf4fdb037f0ad4097985528c42ab85be24eeb1eb947c58643e3c",
+      "bytes": 23472,
+      "lines": 574,
+      "state": "partial",
+      "ranges": [
+        [
+          1,
+          325
+        ]
+      ],
+      "annotation": "fortinet-sentinel-source.md",
+      "runtime": "not executed"
+    },
+    {
+      "path": "runs/cybersecurity-firms-20261017/source/fort/microsoft-sentinel/release_notes.md",
+      "sha256": "291e78f5ae7b3db134ad553ed5584034efd202e65b90eaccbe1e303c91769bc3",
+      "bytes": 447,
+      "lines": 7,
+      "state": "complete-file",
+      "ranges": [
+        [
+          1,
+          7
+        ]
+      ],
+      "annotation": "fortinet-sentinel-source.md",
+      "runtime": "not executed"
+    },
+    {
+      "path": "runs/cybersecurity-firms-20261017/source/fort/microsoft-sentinel/requirements.txt",
+      "sha256": "7ace07d707185ae6b24cd9a95a847f833e55ca7783eb3b8adc95027791f69868",
+      "bytes": 4,
+      "lines": 1,
+      "state": "complete-file",
+      "ranges": [
+        [
+          1,
+          1
+        ]
+      ],
+      "annotation": "fortinet-sentinel-source.md",
+      "runtime": "not executed"
+    },
+    {
+      "path": "runs/cybersecurity-firms-20261017/source/google/examples/investigations_example.py",
+      "sha256": "581402327fe90510d3d95ced2274e63291fc530f2851823067b596eea0c7cb05",
+      "bytes": 13512,
+      "lines": 387,
+      "state": "downloaded-unread",
+      "ranges": [],
+      "runtime": "not executed"
+    },
+    {
+      "path": "runs/cybersecurity-firms-20261017/source/google/pyproject.toml",
+      "sha256": "fba9f5db70c1e105a642915c169fb056b9c3e1153a4e9cbf77f957c1c717aee9",
+      "bytes": 1680,
+      "lines": 64,
+      "state": "complete-file",
+      "ranges": [
+        [
+          1,
+          64
+        ]
+      ],
+      "annotation": "google-investigations-source.md",
+      "runtime": "not executed"
+    },
+    {
+      "path": "runs/cybersecurity-firms-20261017/source/google/README.md",
+      "sha256": "250406b9ad35306121b2dc6017e8aae7ea261b7442f6e4e7e4426f42bb1f6698",
+      "bytes": 115663,
+      "lines": 3839,
+      "state": "downloaded-unread",
+      "ranges": [],
+      "runtime": "not executed"
+    },
+    {
+      "path": "runs/cybersecurity-firms-20261017/source/google/src/secops/auth.py",
+      "sha256": "aa81e5c61e23f5068fff09a99d0ca35bad463794b6d4db20eafe48914f7fe8aa",
+      "bytes": 9403,
+      "lines": 278,
+      "state": "complete-file",
+      "ranges": [
+        [
+          1,
+          278
+        ]
+      ],
+      "annotation": "google-investigations-source.md",
+      "runtime": "not executed"
+    },
+    {
+      "path": "runs/cybersecurity-firms-20261017/source/google/src/secops/chronicle/client.py",
+      "sha256": "32671f838799f6d147ecfa814ff8216075505a6a0d7d9f0ffc3c075dec6ce894",
+      "bytes": 168660,
+      "lines": 5028,
+      "state": "partial",
+      "ranges": [
+        [
+          1,
+          574
+        ],
+        [
+          949,
+          1036
+        ],
+        [
+          1651,
+          1710
+        ],
+        [
+          2051,
+          2152
+        ],
+        [
+          2194,
+          2320
+        ],
+        [
+          3216,
+          3400
+        ],
+        [
+          4938,
+          5028
+        ]
+      ],
+      "annotation": "google-investigations-source.md",
+      "runtime": "not executed"
+    },
+    {
+      "path": "runs/cybersecurity-firms-20261017/source/google/src/secops/chronicle/gemini.py",
+      "sha256": "6454713fa1a73eee71893f2792952d2109a6b1ac19e9e7aad8ccbbca8c488498",
+      "bytes": 16199,
+      "lines": 491,
+      "state": "complete-file",
+      "ranges": [
+        [
+          1,
+          491
+        ]
+      ],
+      "annotation": "google-gemini-client-source.md",
+      "runtime": "not executed"
+    },
+    {
+      "path": "runs/cybersecurity-firms-20261017/source/google/src/secops/chronicle/investigations.py",
+      "sha256": "26506a35efaa7539546dc720aca5fa0daf24c41a58794bf4cbfa641a25ebbbf8",
+      "bytes": 6639,
+      "lines": 203,
+      "state": "complete-file",
+      "ranges": [
+        [
+          1,
+          203
+        ]
+      ],
+      "annotation": "google-investigations-source.md",
+      "runtime": "not executed"
+    },
+    {
+      "path": "runs/cybersecurity-firms-20261017/source/google/src/secops/chronicle/models.py",
+      "sha256": "544cf3b70dcfed022174a61d62adaaad755dc271904c8fec84ecaa7fa017aef8",
+      "bytes": 30527,
+      "lines": 1081,
+      "state": "partial",
+      "ranges": [
+        [
+          15,
+          76
+        ],
+        [
+          1062,
+          1065
+        ]
+      ],
+      "annotation": "google-investigations-source.md",
+      "runtime": "not executed"
+    },
+    {
+      "path": "runs/cybersecurity-firms-20261017/source/google/src/secops/chronicle/nl_search.py",
+      "sha256": "7b9954c1a25f95d08ba2dd892484437483296178ca08f2de27c285fa87ef705e",
+      "bytes": 3868,
+      "lines": 124,
+      "state": "complete-file",
+      "ranges": [
+        [
+          1,
+          124
+        ]
+      ],
+      "annotation": "google-natural-language-search-source.md",
+      "runtime": "not executed"
+    },
+    {
+      "path": "runs/cybersecurity-firms-20261017/source/google/src/secops/chronicle/rule.py",
+      "sha256": "f1c4e4e46ced460aadb25fb4a7c0e99db08f443393e8e499544cf9901c3cd823",
+      "bytes": 15756,
+      "lines": 511,
+      "state": "complete-file",
+      "ranges": [
+        [
+          1,
+          511
+        ]
+      ],
+      "annotation": "google-rule-lifecycle-source.md",
+      "runtime": "not executed"
+    },
+    {
+      "path": "runs/cybersecurity-firms-20261017/source/google/src/secops/chronicle/rule_validation.py",
+      "sha256": "24757f38ba32690426d88c61fb8898b6df563f599574b14d2b4f1e269424adc8",
+      "bytes": 2915,
+      "lines": 96,
+      "state": "complete-file",
+      "ranges": [
+        [
+          1,
+          96
+        ]
+      ],
+      "annotation": "google-natural-language-search-source.md",
+      "runtime": "not executed"
+    },
+    {
+      "path": "runs/cybersecurity-firms-20261017/source/google/src/secops/chronicle/search.py",
+      "sha256": "22571da15fed54627914c5c87437a1dcecdcb58269d26e46116cdf27a7347d27",
+      "bytes": 3220,
+      "lines": 101,
+      "state": "complete-file",
+      "ranges": [
+        [
+          1,
+          101
+        ]
+      ],
+      "annotation": "google-natural-language-search-source.md",
+      "runtime": "not executed"
+    },
+    {
+      "path": "runs/cybersecurity-firms-20261017/source/google/src/secops/chronicle/soar/service.py",
+      "sha256": "f2b81fa64e4c183c22199fa58a26f3ccc531093a4c0fd2c607962756f08887ae",
+      "bytes": 40940,
+      "lines": 1094,
+      "state": "partial",
+      "ranges": [
+        [
+          1,
+          90
+        ]
+      ],
+      "annotation": "google-investigations-source.md",
+      "runtime": "not executed"
+    },
+    {
+      "path": "runs/cybersecurity-firms-20261017/source/google/src/secops/chronicle/soar/__init__.py",
+      "sha256": "90b98feaa55b2d686528ea04652288a97fac4a31fbe6fb0ca49409729099160f",
+      "bytes": 2364,
+      "lines": 75,
+      "state": "complete-file",
+      "ranges": [
+        [
+          1,
+          75
+        ]
+      ],
+      "annotation": "google-investigations-source.md",
+      "runtime": "not executed"
+    },
+    {
+      "path": "runs/cybersecurity-firms-20261017/source/google/src/secops/chronicle/utils/format_utils.py",
+      "sha256": "51ecd64e51b9ed827205d538d4fd438e766f2182c665e0be212a24ad765c7b24",
+      "bytes": 3294,
+      "lines": 104,
+      "state": "complete-file",
+      "ranges": [
+        [
+          1,
+          104
+        ]
+      ],
+      "annotation": "google-investigations-source.md",
+      "runtime": "not executed"
+    },
+    {
+      "path": "runs/cybersecurity-firms-20261017/source/google/src/secops/chronicle/utils/request_utils.py",
+      "sha256": "48d889ea7bb17dde43b7ed9a25a17df633a78178a6719a093e4e46973ce01cfe",
+      "bytes": 16283,
+      "lines": 441,
+      "state": "complete-file",
+      "ranges": [
+        [
+          1,
+          441
+        ]
+      ],
+      "annotation": "google-investigations-source.md",
+      "runtime": "not executed"
+    },
+    {
+      "path": "runs/cybersecurity-firms-20261017/source/google/src/secops/exceptions.py",
+      "sha256": "c12bb647cbe9db62fb62465d7c65ba87518b4c901773b31f4ec991f8216f9691",
+      "bytes": 887,
+      "lines": 34,
+      "state": "complete-file",
+      "ranges": [
+        [
+          1,
+          34
+        ]
+      ],
+      "annotation": "google-investigations-source.md",
+      "runtime": "not executed"
+    },
+    {
+      "path": "runs/cybersecurity-firms-20261017/source/google/tests/chronicle/test_gemini.py",
+      "sha256": "3ac7ca6735e38f44810e1a3d3bcc357b79285d30f3f87e3c30eb7fde4699c9ac",
+      "bytes": 22380,
+      "lines": 631,
+      "state": "complete-file",
+      "ranges": [
+        [
+          1,
+          631
+        ]
+      ],
+      "annotation": "google-gemini-client-source.md",
+      "runtime": "not executed"
+    },
+    {
+      "path": "runs/cybersecurity-firms-20261017/source/google/tests/chronicle/test_investigations.py",
+      "sha256": "fd35673ea35355f81b010076e7599cbd14bfa6bc0d07c30b7ce0cdbd1a9eb646",
+      "bytes": 19922,
+      "lines": 578,
+      "state": "complete-file",
+      "ranges": [
+        [
+          1,
+          578
+        ]
+      ],
+      "annotation": "google-investigations-source.md",
+      "runtime": "not executed"
+    },
+    {
+      "path": "runs/cybersecurity-firms-20261017/source/google/tests/chronicle/test_nl_search.py",
+      "sha256": "d5b1e8f9cd0c5c3e03dd406e5922e4c03c5c7a1980e2068c094202f2eefaed5c",
+      "bytes": 8617,
+      "lines": 247,
+      "state": "complete-file",
+      "ranges": [
+        [
+          1,
+          247
+        ]
+      ],
+      "annotation": "google-natural-language-search-source.md",
+      "runtime": "not executed"
+    },
+    {
+      "path": "runs/cybersecurity-firms-20261017/source/google/tests/chronicle/test_rule.py",
+      "sha256": "a63af4ba6168e4dae6b70880f67423ad31bd1125824daace392bda803032157f",
+      "bytes": 25990,
+      "lines": 811,
+      "state": "complete-file",
+      "ranges": [
+        [
+          1,
+          811
+        ]
+      ],
+      "annotation": "google-rule-lifecycle-source.md",
+      "runtime": "not executed"
+    },
+    {
+      "path": "runs/cybersecurity-firms-20261017/source/google/tests/chronicle/test_rule_deployment.py",
+      "sha256": "760f7700fe120a26b33e5f77ad089459295c6fc74338e514ec3167821d96d9b2",
+      "bytes": 5474,
+      "lines": 169,
+      "state": "complete-file",
+      "ranges": [
+        [
+          1,
+          169
+        ]
+      ],
+      "annotation": "google-rule-lifecycle-source.md",
+      "runtime": "not executed"
+    },
+    {
+      "path": "runs/cybersecurity-firms-20261017/source/google/tests/chronicle/test_rule_validation.py",
+      "sha256": "678e7e5426243208e3fb1762e1af905c78e49c004bbd1cfd481e286b115a815e",
+      "bytes": 3639,
+      "lines": 123,
+      "state": "complete-file",
+      "ranges": [
+        [
+          1,
+          123
+        ]
+      ],
+      "annotation": "google-natural-language-search-source.md",
+      "runtime": "not executed"
+    },
+    {
+      "path": "runs/cybersecurity-firms-20261017/source/google/tests/chronicle/test_search.py",
+      "sha256": "4a1115a22a43816549f2e5b50449400063005b7ea6bd2243e8dd998ecedbd173",
+      "bytes": 6638,
+      "lines": 201,
+      "state": "complete-file",
+      "ranges": [
+        [
+          1,
+          201
+        ]
+      ],
+      "annotation": "google-natural-language-search-source.md",
+      "runtime": "not executed"
+    },
+    {
+      "path": "runs/cybersecurity-firms-20261017/source/google/tests/chronicle/utils/test_format_utils.py",
+      "sha256": "56281a12734d7c16c0d0eac9ffcbe8c3b667e5c66296c04371686f03a63ce9d5",
+      "bytes": 9234,
+      "lines": 265,
+      "state": "complete-file",
+      "ranges": [
+        [
+          1,
+          265
+        ]
+      ],
+      "annotation": "google-investigations-source.md",
+      "runtime": "not executed"
+    },
+    {
+      "path": "runs/cybersecurity-firms-20261017/source/google/tests/chronicle/utils/test_request_utils.py",
+      "sha256": "fb181a81abf6932f14de01549c613a98accd7d3fb97c7fff9c621864f58dadb2",
+      "bytes": 30872,
+      "lines": 921,
+      "state": "complete-file",
+      "ranges": [
+        [
+          1,
+          921
+        ]
+      ],
+      "annotation": "google-investigations-source.md",
+      "runtime": "not executed"
+    },
+    {
+      "path": "runs/cybersecurity-firms-20261017/source/google/tests/cli/test_rule_deployment_integration.py",
+      "sha256": "9d67f4227393ed9bf27421b198a80af2596e6045e6db284e4c19dd54c14681d3",
+      "bytes": 8627,
+      "lines": 293,
+      "state": "complete-file",
+      "ranges": [
+        [
+          1,
+          293
+        ]
+      ],
+      "annotation": "google-rule-lifecycle-source.md",
+      "runtime": "not executed"
+    },
+    {
+      "path": "runs/cybersecurity-firms-20261017/source/google/tests/test_auth.py",
+      "sha256": "51f00c8e4f6f0d0c00d252afd97cf7127425d1ff76a90111af726291f3ca46cd",
+      "bytes": 3305,
+      "lines": 88,
+      "state": "complete-file",
+      "ranges": [
+        [
+          1,
+          88
+        ]
+      ],
+      "annotation": "google-investigations-source.md",
+      "runtime": "not executed"
+    },
+    {
+      "path": "runs/cybersecurity-firms-20261017/source/pan/Packs/CommonPlaybooks/Playbooks/playbook-Isolate_Endpoint_-_Generic_V2.yml",
+      "sha256": "581a003fa475c2c8c65610af316df18aff52bb8af03a6a33002939cc455fae6d",
+      "bytes": 9908,
+      "lines": 348,
+      "state": "complete-file",
+      "ranges": [
+        [
+          1,
+          348
+        ]
+      ],
+      "annotation": "pan-isolation-source.md",
+      "runtime": "not executed"
+    },
+    {
+      "path": "runs/cybersecurity-firms-20261017/source/pan/Packs/CommonPlaybooks/Playbooks/playbook-Isolate_Endpoint_-_Generic_V2_6_8.yml",
+      "sha256": "b3500069ed08550b92630ba4fa8545636ec0dc4f9ec30aefe715b923dfd444f2",
+      "bytes": 11434,
+      "lines": 466,
+      "state": "complete-file",
+      "ranges": [
+        [
+          1,
+          466
+        ]
+      ],
+      "annotation": "pan-isolation-source.md",
+      "runtime": "not executed"
+    },
+    {
+      "path": "runs/cybersecurity-firms-20261017/source/pan/Packs/CommonPlaybooks/Playbooks/playbook-Isolate_Endpoint_-_Generic_V2_README.md",
+      "sha256": "ed6abfbd9774c68dbfa85a99b85c7f0e5ff6463f0894fb7b6a7ae74845b2c8f1",
+      "bytes": 2706,
+      "lines": 61,
+      "state": "complete-file",
+      "ranges": [
+        [
+          1,
+          61
+        ]
+      ],
+      "annotation": "pan-isolation-source.md",
+      "runtime": "not executed"
+    },
+    {
+      "path": "runs/cybersecurity-firms-20261017/source/pan/Packs/CommonPlaybooks/TestPlaybooks/playbook-Isolate_and_unisolate_endpoint_-_test.yml",
+      "sha256": "b78f9cbef5f3e5a68073eb8fac9b4aff183875fe6c3ade037e41c789ccb862b7",
+      "bytes": 10224,
+      "lines": 399,
+      "state": "complete-file",
+      "ranges": [
+        [
+          1,
+          399
+        ]
+      ],
+      "annotation": "pan-isolation-source.md",
+      "runtime": "not executed"
+    },
+    {
+      "path": "runs/cybersecurity-firms-20261017/source/pan/Packs/CrowdStrikeFalcon/Playbooks/playbook-Crowdstrike_Falcon_-_Isolate_Endpoint.yml",
+      "sha256": "e1ecf1c01ac22aaa047fae9a569f2a57c87082f7baf533d5c456f7ecfb29196f",
+      "bytes": 5856,
+      "lines": 278,
+      "state": "complete-file",
+      "ranges": [
+        [
+          1,
+          278
+        ]
+      ],
+      "annotation": "pan-isolation-source.md",
+      "runtime": "not executed"
+    },
+    {
+      "path": "runs/cybersecurity-firms-20261017/source/sentinel/Playbooks/AS-Incident-Response-Approval-Email/azuredeploy.json",
+      "sha256": "e0793c833cb5d3271d8dc40fddc2702d77e69534dc8adcfcb13a6337ad603a1f",
+      "bytes": 19410,
+      "lines": 348,
+      "state": "complete-file",
+      "ranges": [
+        [
+          1,
+          348
+        ]
+      ],
+      "annotation": "sentinel-playbooks-source.md",
+      "runtime": "not executed"
+    },
+    {
+      "path": "runs/cybersecurity-firms-20261017/source/sentinel/Playbooks/AS-Incident-Response-Approval-Email/README.md",
+      "sha256": "0991badb02cb146f2f0a02715ac4cbd3d6dd43d4b9b7bb96b4be0f0d85fb9a96",
+      "bytes": 10518,
+      "lines": 164,
+      "state": "partial",
+      "ranges": [
+        [
+          1,
+          45
+        ]
+      ],
+      "annotation": "sentinel-playbooks-source.md",
+      "runtime": "not executed"
+    },
+    {
+      "path": "runs/cybersecurity-firms-20261017/source/sentinel/Playbooks/AS-MDE-Isolate-Machine/azuredeploy.json",
+      "sha256": "81ba17f103e15931ff1c08cbcdf2cf0b74d9ff25d3b50607436c0291f29983a2",
+      "bytes": 17271,
+      "lines": 338,
+      "state": "complete-file",
+      "ranges": [
+        [
+          1,
+          338
+        ]
+      ],
+      "annotation": "sentinel-playbooks-source.md",
+      "runtime": "not executed"
+    },
+    {
+      "path": "runs/cybersecurity-firms-20261017/source/sentinel/Playbooks/AS-MDE-Isolate-Machine/README.md",
+      "sha256": "1ca8cc7c3a0a4528b7dc496777277595f04450261143fd479bff41fc68f6fdd4",
+      "bytes": 10804,
+      "lines": 175,
+      "state": "partial",
+      "ranges": [
+        [
+          1,
+          45
+        ]
+      ],
+      "annotation": "sentinel-playbooks-source.md",
+      "runtime": "not executed"
+    },
+    {
+      "path": "runs/cybersecurity-firms-20261017/source/splunk/data_sources/sysmon_eventid_10.yml",
+      "sha256": "0c04bdce518186b587b80b2733218020e5c1c3b580e39e5803bdd34de425a91c",
+      "bytes": 4095,
+      "lines": 113,
+      "state": "complete-file",
+      "ranges": [
+        [
+          1,
+          113
+        ]
+      ],
+      "annotation": "splunk-lsass-source.md",
+      "runtime": "not executed"
+    },
+    {
+      "path": "runs/cybersecurity-firms-20261017/source/splunk/detections/endpoint/detect_credential_dumping_through_lsass_access.yml",
+      "sha256": "fb757a720c264099109c4b0ba94d48230561886cee0661ba2212309403830802",
+      "bytes": 5021,
+      "lines": 96,
+      "state": "complete-file",
+      "ranges": [
+        [
+          1,
+          96
+        ]
+      ],
+      "annotation": "splunk-lsass-source.md",
+      "runtime": "not executed"
+    },
+    {
+      "path": "runs/cybersecurity-firms-20261017/source/splunk/macros/security_content_ctime.yml",
+      "sha256": "c3e612f478fd7a6002fa9f65e15f882876d550433228d086f25bd17d333c31cb",
+      "bytes": 310,
+      "lines": 11,
+      "state": "complete-file",
+      "ranges": [
+        [
+          1,
+          11
+        ]
+      ],
+      "annotation": "splunk-lsass-source.md",
+      "runtime": "not executed"
+    },
+    {
+      "path": "runs/cybersecurity-firms-20261017/source/splunk/macros/sysmon.yml",
+      "sha256": "0b838f0637bcb7566b0b101033dfa79d1e097169e772a9976ce7b4b60ed34041",
+      "bytes": 498,
+      "lines": 9,
+      "state": "complete-file",
+      "ranges": [
+        [
+          1,
+          9
+        ]
+      ],
+      "annotation": "splunk-lsass-source.md",
+      "runtime": "not executed"
+    },
+    {
+      "path": "runs/cybersecurity-firms-20261017/source/trend/cmd/v1-mcp-server/main.go",
+      "sha256": "d75bd733ac076e48d72bd2b09b1da7e89332900ac3f8eebddc38f13fdcf214df",
+      "bytes": 2303,
+      "lines": 116,
+      "state": "complete-file",
+      "ranges": [
+        [
+          1,
+          116
+        ]
+      ],
+      "annotation": "trend-mcp-source.md",
+      "runtime": "not executed"
+    },
+    {
+      "path": "runs/cybersecurity-firms-20261017/source/trend/go.mod",
+      "sha256": "aa0f7a62d3e9739f9b565d009a4c47adf3fc7e8da4c7aa3781423453b5a64100",
+      "bytes": 729,
+      "lines": 24,
+      "state": "complete-file",
+      "ranges": [
+        [
+          1,
+          24
+        ]
+      ],
+      "annotation": "trend-mcp-source.md",
+      "runtime": "not executed"
+    },
+    {
+      "path": "runs/cybersecurity-firms-20261017/source/trend/go.sum",
+      "sha256": "2d93d13ceb179bd4487cc01ca9b65ef08eb94b9d7d417129ff77dda96edd3ee5",
+      "bytes": 3482,
+      "lines": 41,
+      "state": "complete-file",
+      "ranges": [
+        [
+          1,
+          41
+        ]
+      ],
+      "annotation": "trend-mcp-source.md",
+      "runtime": "not executed"
+    },
+    {
+      "path": "runs/cybersecurity-firms-20261017/source/trend/internal/v1client/endpoint.go",
+      "sha256": "064e3e2d8924c2f8181d5f50224822630938f673ddebcb82489bec0f4664e060",
+      "bytes": 3705,
+      "lines": 99,
+      "state": "complete-file",
+      "ranges": [
+        [
+          1,
+          99
+        ]
+      ],
+      "annotation": "trend-mcp-source.md",
+      "runtime": "not executed"
+    },
+    {
+      "path": "runs/cybersecurity-firms-20261017/source/trend/internal/v1client/request.go",
+      "sha256": "154ae9673d282e9190b11b91f2a285d0b4b3e076addd9acae6f71f1561d65dfb",
+      "bytes": 3181,
+      "lines": 139,
+      "state": "complete-file",
+      "ranges": [
+        [
+          1,
+          139
+        ]
+      ],
+      "annotation": "trend-mcp-source.md",
+      "runtime": "not executed"
+    },
+    {
+      "path": "runs/cybersecurity-firms-20261017/source/trend/internal/v1client/request_test.go",
+      "sha256": "575328434f4cc8c7d575659b9255e317596225cccbb7c2e5e117a5e94d265867",
+      "bytes": 4049,
+      "lines": 125,
+      "state": "complete-file",
+      "ranges": [
+        [
+          1,
+          125
+        ]
+      ],
+      "annotation": "trend-mcp-source.md",
+      "runtime": "not executed"
+    },
+    {
+      "path": "runs/cybersecurity-firms-20261017/source/trend/internal/v1client/v1client.go",
+      "sha256": "2ba64ccefe19c7fe811d2413a92929814d2b770802483df1abff078c39b5d2d3",
+      "bytes": 5115,
+      "lines": 235,
+      "state": "complete-file",
+      "ranges": [
+        [
+          1,
+          235
+        ]
+      ],
+      "annotation": "trend-mcp-source.md",
+      "runtime": "not executed"
+    },
+    {
+      "path": "runs/cybersecurity-firms-20261017/source/trend/internal/v1mcp/server.go",
+      "sha256": "27207613c5ddab9c01e7c8fee3c4ab6d9134c844eba15e290bf078c946430396",
+      "bytes": 2736,
+      "lines": 121,
+      "state": "complete-file",
+      "ranges": [
+        [
+          1,
+          121
+        ]
+      ],
+      "annotation": "trend-mcp-source.md",
+      "runtime": "not executed"
+    },
+    {
+      "path": "runs/cybersecurity-firms-20261017/source/trend/internal/v1mcp/server_test.go",
+      "sha256": "493ba281237d56417c6af7458aff03e768363efa6d22235c267fae8d96164b28",
+      "bytes": 2976,
+      "lines": 107,
+      "state": "complete-file",
+      "ranges": [
+        [
+          1,
+          107
+        ]
+      ],
+      "annotation": "trend-mcp-source.md",
+      "runtime": "not executed"
+    },
+    {
+      "path": "runs/cybersecurity-firms-20261017/source/trend/internal/v1mcp/tools/endpoint.go",
+      "sha256": "0ff46fb2645031597f61270542706f1cb9d9dcedb4f681e82d647e85c6746d71",
+      "bytes": 29920,
+      "lines": 672,
+      "state": "complete-file",
+      "ranges": [
+        [
+          1,
+          672
+        ]
+      ],
+      "annotation": "trend-mcp-source.md",
+      "runtime": "not executed"
+    },
+    {
+      "path": "runs/cybersecurity-firms-20261017/source/trend/internal/v1mcp/tools/endpoint_test.go",
+      "sha256": "faa5c7bef400697b1ca5534254df88897595e79c06efff3ea6fcedff6a316141",
+      "bytes": 4370,
+      "lines": 130,
+      "state": "complete-file",
+      "ranges": [
+        [
+          1,
+          130
+        ]
+      ],
+      "annotation": "trend-mcp-source.md",
+      "runtime": "not executed"
+    },
+    {
+      "path": "runs/cybersecurity-firms-20261017/source/trend/internal/v1mcp/tools/request.go",
+      "sha256": "3f47bc4eca569817df5480df5112557e21c1e3fa82016997909ce7b9dfce1369",
+      "bytes": 7633,
+      "lines": 327,
+      "state": "complete-file",
+      "ranges": [
+        [
+          1,
+          327
+        ]
+      ],
+      "annotation": "trend-mcp-source.md",
+      "runtime": "not executed"
+    },
+    {
+      "path": "runs/cybersecurity-firms-20261017/source/trend/internal/v1mcp/tools/request_test.go",
+      "sha256": "d2858f9e9dbfe1042105d9be09752abc1acec0a8f50272a6dabc2588e7317af6",
+      "bytes": 7501,
+      "lines": 206,
+      "state": "complete-file",
+      "ranges": [
+        [
+          1,
+          206
+        ]
+      ],
+      "annotation": "trend-mcp-source.md",
+      "runtime": "not executed"
+    },
+    {
+      "path": "runs/cybersecurity-firms-20261017/source/trend/internal/v1mcp/tools/tools.go",
+      "sha256": "cf03e4ad921b0105e4c0e0a6c27b54a8275d30cf9123674f6193028259264160",
+      "bytes": 3268,
+      "lines": 145,
+      "state": "complete-file",
+      "ranges": [
+        [
+          1,
+          145
+        ]
+      ],
+      "annotation": "trend-mcp-source.md",
+      "runtime": "not executed"
+    },
+    {
+      "path": "runs/cybersecurity-firms-20261017/source/trend/internal/v1mcp/toolsets.go",
+      "sha256": "49effb82d58b8b05a43e45aa4d6e2e865bc9931580d29612c8fb7ab9c36bf733",
+      "bytes": 3960,
+      "lines": 119,
+      "state": "complete-file",
+      "ranges": [
+        [
+          1,
+          119
+        ]
+      ],
+      "annotation": "trend-mcp-source.md",
+      "runtime": "not executed"
+    },
+    {
+      "path": "runs/cybersecurity-firms-20261017/source/trend/README.md",
+      "sha256": "27685029f7129480ad65d30dad7b2cc6fa8152d9299782571976d73f75c884a0",
+      "bytes": 39515,
+      "lines": 624,
+      "state": "downloaded-unread",
+      "ranges": [],
+      "runtime": "not executed"
+    }
+  ]
+}

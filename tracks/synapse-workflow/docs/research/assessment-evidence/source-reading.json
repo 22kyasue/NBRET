@@ -1,0 +1,56 @@
+{
+  "date": "2026-10-17",
+  "repository": "https://github.com/morluto/rea",
+  "commit": "54c71313aeb2cbdf21626af9557673a6f6397180",
+  "license": "MIT; LICENSE read complete",
+  "files": [
+    {
+      "path": "src/artifacts/readStableArtifact.ts",
+      "sha256": "98b8bb62e43fc0bcf77a4b03d83e8ebee55f4c28a9d6278328d009113e381b03",
+      "lines": 145,
+      "read": "complete file; source inspection only"
+    },
+    {
+      "path": "src/artifacts/ArtifactFileOperation.ts",
+      "sha256": "8f126d574adca8b9cecff75cbe9d44e9d4e68259be04579acb9e43dd08ed511d",
+      "lines": 269,
+      "read": "complete file; source inspection only"
+    },
+    {
+      "path": "src/artifacts/ArtifactResourceScope.ts",
+      "sha256": "6b4d4402aaae8719860050a3834437e3fdb68b8bf006320bbb1657e6200969ad",
+      "lines": 214,
+      "read": "complete file; source inspection only"
+    },
+    {
+      "path": "src/browser/assets/WebArtifactReads.ts",
+      "sha256": "daddd99e94d30cb4605f3a727cc6a4cb34f59ddca810d1d13fbeaeccc9700619",
+      "lines": 167,
+      "read": "complete file; source inspection only"
+    },
+    {
+      "path": "src/filesystem/OwnedFileHandle.ts",
+      "sha256": "323c9a8cb354ee02f819a3c543afaa3aa7b136b203404b91b171ed958c95104a",
+      "lines": 46,
+      "read": "complete file; source inspection only"
+    },
+    {
+      "path": "src/filesystem/OwnedRegularFile.ts",
+      "sha256": "7a2d80814164aec7dbf0c455ac9a10dc5b72040da303510a2cdc4e0e95b07f9e",
+      "lines": 183,
+      "read": "complete file; source inspection only"
+    },
+    {
+      "path": "src/filesystem/RegularFile.ts",
+      "sha256": "4f8640415953c6fd12f2ae4cfdd8ef0f7558ea9cda34a3dbe38f016c1e1c96b5",
+      "lines": 174,
+      "read": "complete file; source inspection only"
+    },
+    {
+      "path": "src/domain/safeJson.ts",
+      "sha256": "a62ea3b454a21a097c6d49f52031ce05f86793f566b6922af2bd54331a4fb91a",
+      "lines": 18,
+      "read": "complete file; source inspection only"
+    }
+  ]
+}

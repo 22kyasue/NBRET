@@ -1,0 +1,120 @@
+{
+  "at": 1792271347246,
+  "node": "v24.21.0",
+  "file": "lib/RateLimiterMongo.js",
+  "sha256": "eede2960b18574df704ef9e9861c9202053d4b6916c0467adbabff4086805f21",
+  "scope": "unchanged adapter; inert collection; no Mongo runtime",
+  "checks": [
+    {
+      "name": "three updates after two synthetic duplicate errors",
+      "pass": true
+    },
+    {
+      "name": "initial and replacement retain tenant",
+      "pass": true
+    },
+    {
+      "name": "recursive retry omits tenant",
+      "pass": true
+    },
+    {
+      "name": "operation returns fixed synthetic response",
+      "pass": true
+    }
+  ],
+  "calls": [
+    {
+      "where": {
+        "$or": [
+          {
+            "expire": {
+              "$gt": "2026-10-17T21:09:07.245Z"
+            }
+          },
+          {
+            "expire": {
+              "$eq": null
+            }
+          }
+        ],
+        "key": "rlflx:synthetic-key",
+        "tenant": "synthetic-a"
+      },
+      "data": {
+        "$setOnInsert": {
+          "key": "rlflx:synthetic-key",
+          "expire": "2026-10-17T21:09:08.245Z",
+          "tenant": "synthetic-a"
+        },
+        "$inc": {
+          "points": 1
+        }
+      },
+      "options": {
+        "upsert": true,
+        "returnDocument": "after"
+      }
+    },
+    {
+      "where": {
+        "$or": [
+          {
+            "expire": {
+              "$lte": "2026-10-17T21:09:07.246Z"
+            }
+          },
+          {
+            "expire": {
+              "$eq": null
+            }
+          }
+        ],
+        "key": "rlflx:synthetic-key",
+        "tenant": "synthetic-a"
+      },
+      "data": {
+        "$set": {
+          "key": "rlflx:synthetic-key",
+          "points": 1,
+          "expire": "2026-10-17T21:09:08.246Z",
+          "tenant": "synthetic-a"
+        }
+      },
+      "options": {
+        "upsert": true,
+        "returnDocument": "after"
+      }
+    },
+    {
+      "where": {
+        "$or": [
+          {
+            "expire": {
+              "$gt": "2026-10-17T21:09:07.246Z"
+            }
+          },
+          {
+            "expire": {
+              "$eq": null
+            }
+          }
+        ],
+        "key": "rlflx:synthetic-key"
+      },
+      "data": {
+        "$setOnInsert": {
+          "key": "rlflx:synthetic-key",
+          "expire": "2026-10-17T21:09:08.246Z"
+        },
+        "$inc": {
+          "points": 1
+        }
+      },
+      "options": {
+        "upsert": true,
+        "returnDocument": "after"
+      }
+    }
+  ],
+  "allSyntheticPromisesSettled": true
+}

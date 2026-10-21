@@ -1,0 +1,3663 @@
+{
+  "schemaVersion": 1,
+  "builtAt": "2026-10-18",
+  "builtBy": "Bodhi (Claude) from nine independent slice audits of the original 264-file snapshot plus the Synapse mapping",
+  "verification": "Every quote verified verbatim (whitespace/emphasis-normalized) within ±2 lines of its cited line by find-research.mjs --check",
+  "caveat": "Cards summarize studies; they do not replace reading the cited lines before a client-facing claim. Absence from the register is not absence from the research.",
+  "corrections": [
+    {
+      "id": "corr.agent-runtime.codex-router-validated",
+      "kind": "confirmed-later",
+      "risk": "medium",
+      "earlier": {
+        "path": "docs/research/assessment-evidence/sdk-boundaries-continuation.md",
+        "line": 14,
+        "quote": "This is not yet a demonstrated production hang",
+        "says": "Early completion loss is a source candidate."
+      },
+      "later": {
+        "path": "docs/research/assessment-evidence/sdk-boundaries-continuation.md",
+        "line": 34,
+        "quote": "It does not establish that native app-server scheduling actually produces that order",
+        "says": "Loss confirmed under injected interleaving only."
+      },
+      "guidance": "Treat Codex early-completion loss as confirmed for the Python router under injected order, unconfirmed natively."
+    },
+    {
+      "id": "corr.agent-runtime.codex-schema-status",
+      "kind": "status-outdated",
+      "risk": "low",
+      "earlier": {
+        "path": "docs/research/assessment-evidence/sdk-boundaries-continuation.md",
+        "line": 9,
+        "quote": "Generated/v2_all.py8,619lines is separately unread",
+        "says": "Codex generated schema unread/partial."
+      },
+      "later": {
+        "path": "docs/research/assessment-evidence/sdk-boundaries-continuation.md",
+        "line": 280,
+        "quote": "Completed the contiguous read of src/openai_codex/generated/v2_all.py (1–8619)",
+        "says": "Schema fully read."
+      },
+      "guidance": "The Codex schema is fully source-read; native runtime remains unvalidated."
+    },
+    {
+      "id": "corr.agent-runtime.connection-closed-wire",
+      "kind": "reversed",
+      "risk": "low",
+      "earlier": {
+        "path": "docs/research/assessment-evidence/sdk-boundaries-continuation.md",
+        "line": 234,
+        "quote": "describes CONNECTION_CLOSED as never emitted on wire",
+        "says": "Doc: CONNECTION_CLOSED never on wire."
+      },
+      "later": {
+        "path": "docs/research/assessment-evidence/sdk-boundaries-continuation.md",
+        "line": 234,
+        "quote": "explicitly attempts a shutdown error response using that code",
+        "says": "Dispatcher attempts to send it on shutdown."
+      },
+      "guidance": "Capture error origin layer; do not infer origin from the code alone."
+    },
+    {
+      "id": "corr.agent-runtime.cost-zero-vs-dash",
+      "kind": "narrowed",
+      "risk": "low",
+      "earlier": {
+        "path": "docs/research/assessment-evidence/deep-pentestgpt.md",
+        "line": 13,
+        "quote": "Missing cost becomes zero in aggregation",
+        "says": "Unknown cost recorded as zero."
+      },
+      "later": {
+        "path": "docs/research/assessment-evidence/monitor-web-continuation.md",
+        "line": 17,
+        "quote": "useful contrary evidence to the prior higher-level aggregate treating unknown costs as zero",
+        "says": "Monitor UI shows unknown cost as a dash."
+      },
+      "guidance": "The zero-cost conflation is in trial aggregation, not the monitor UI."
+    },
+    {
+      "id": "corr.agent-runtime.import-fixture-expectation",
+      "kind": "narrowed",
+      "risk": "low",
+      "earlier": {
+        "path": "docs/research/assessment-evidence/sdk-boundaries-continuation.md",
+        "line": 137,
+        "quote": "Initial receipt1792274765310 preserves one pass/one failed assertion",
+        "says": "Session import receipt had a failure."
+      },
+      "later": {
+        "path": "docs/research/assessment-evidence/sdk-boundaries-continuation.md",
+        "line": 137,
+        "quote": "whereas the adapter returns None",
+        "says": "Fixture wrongly expected []; v2 corrected only that expectation."
+      },
+      "guidance": "The import failure was a fixture error; use the v2 receipt."
+    },
+    {
+      "id": "corr.agent-runtime.live-tests-credit",
+      "kind": "status-outdated",
+      "risk": "low",
+      "earlier": {
+        "path": "docs/research/assessment-evidence/sdk-boundaries-continuation.md",
+        "line": 157,
+        "quote": "Tests using live env DSNs/buckets and destructive teardown were read only",
+        "says": "Live tests described as read."
+      },
+      "later": {
+        "path": "docs/research/assessment-evidence/sdk-boundaries-continuation.md",
+        "line": 531,
+        "quote": "earlier adapter annotations describing live tests as read-only should not be interpreted as earlier complete-range credit",
+        "says": "Live test files were only fully read later, and never run."
+      },
+      "guidance": "Live Redis/S3 tests were read (late), never executed; they supply no backend evidence."
+    },
+    {
+      "id": "corr.agent-runtime.mirror-at-most-once",
+      "kind": "reversed",
+      "risk": "medium",
+      "earlier": {
+        "path": "docs/research/assessment-evidence/sdk-boundaries-continuation.md",
+        "line": 84,
+        "quote": "conflicts with these actual ordinary-error retries",
+        "says": "SDK Query comment claims dropped batches are at-most-once and not retried."
+      },
+      "later": {
+        "path": "docs/research/assessment-evidence/sdk-boundaries-continuation.md",
+        "line": 131,
+        "quote": "Tests368–426 establish three ordinary-error attempts and one final error report",
+        "says": "Ordinary errors retry 3x; timeouts get one attempt."
+      },
+      "guidance": "Transcript mirror is not at-most-once; remote stores need idempotent appends."
+    },
+    {
+      "id": "corr.agent-runtime.path-traversal-docstring",
+      "kind": "narrowed",
+      "risk": "low",
+      "earlier": {
+        "path": "docs/research/assessment-evidence/sdk-boundaries-continuation.md",
+        "line": 389,
+        "quote": "says reject values containing any `..` path component",
+        "says": "Template docstring: any '..' rejected."
+      },
+      "later": {
+        "path": "docs/research/assessment-evidence/sdk-boundaries-continuation.md",
+        "line": 389,
+        "quote": "permits internal normalization that never moves above the starting point",
+        "says": "Only base-escaping traversal is rejected."
+      },
+      "guidance": "Record the actual base-escape predicate."
+    },
+    {
+      "id": "corr.agent-runtime.pentestgpt-obsolete-root",
+      "kind": "narrowed",
+      "risk": "medium",
+      "earlier": {
+        "path": "docs/research/security-landscape/technical-library.md",
+        "line": 22,
+        "quote": "Multiple implementations: modernized legacy, obsolete root compatibility code",
+        "says": "PentestGPT has several code paths."
+      },
+      "later": {
+        "path": "docs/research/security-landscape/technical-library.md",
+        "line": 24,
+        "quote": "Reviewing it as the current runtime would be a material attribution error.",
+        "says": "Only pentestgpt_agent with external wrapper is current."
+      },
+      "guidance": "Attribute PentestGPT behavior only to pentestgpt_agent at e8b1bb7."
+    },
+    {
+      "id": "corr.agent-runtime.prompt-bound-narrowed",
+      "kind": "narrowed",
+      "risk": "low",
+      "earlier": {
+        "path": "docs/research/assessment-evidence/agent-recovery-continuation.md",
+        "line": 21,
+        "quote": "These are bounded recent slices",
+        "says": "Prompt projection has no fixed total bound and can grow."
+      },
+      "later": {
+        "path": "docs/research/assessment-evidence/agent-recovery-continuation.md",
+        "line": 44,
+        "quote": "This narrows the preceding prompt-size concern for normal compiled state",
+        "says": "Individual fields and counts are bounded and one task is leased at a time; still no total token budget."
+      },
+      "guidance": "Normal compiled state is field-bounded; only arbitrary library-constructed snapshots remain unbounded."
+    },
+    {
+      "id": "corr.agent-runtime.query-test-failures-explained",
+      "kind": "narrowed",
+      "risk": "medium",
+      "earlier": {
+        "path": "docs/research/assessment-evidence/sdk-boundaries-continuation.md",
+        "line": 111,
+        "quote": "All four failures occur constructing in-process MCP server",
+        "says": "Four Claude SDK query tests fail."
+      },
+      "later": {
+        "path": "docs/research/assessment-evidence/sdk-boundaries-continuation.md",
+        "line": 117,
+        "quote": "This explains the four retained query-test setup failures in this exact dependency combination.",
+        "says": "MCP 2.3.0 replaced the list_tools decorator API."
+      },
+      "guidance": "These failures are dependency drift, not model or SDK security failures."
+    },
+    {
+      "id": "corr.agent-runtime.standalone-get-reconnect",
+      "kind": "reversed",
+      "risk": "low",
+      "earlier": {
+        "path": "docs/research/assessment-evidence/sdk-boundaries-continuation.md",
+        "line": 381,
+        "quote": "says standalone GET reconnection is not implemented",
+        "says": "Context docstring: no standalone GET reconnection."
+      },
+      "later": {
+        "path": "docs/research/assessment-evidence/sdk-boundaries-continuation.md",
+        "line": 381,
+        "quote": "The actual source contradicts that comment at this installed version",
+        "says": "Client contains an auto-reconnect loop with cursor headers."
+      },
+      "guidance": "Do not repeat the docstring; reconnection code exists, though delivery completeness is unproven."
+    },
+    {
+      "id": "corr.agent-runtime.structuredcontent-by-design",
+      "kind": "narrowed",
+      "risk": "low",
+      "earlier": {
+        "path": "docs/research/assessment-evidence/sdk-boundaries-continuation.md",
+        "line": 54,
+        "quote": "does not copy structuredContent into its response",
+        "says": "In-process MCP bridge drops structuredContent."
+      },
+      "later": {
+        "path": "docs/research/assessment-evidence/sdk-boundaries-continuation.md",
+        "line": 68,
+        "quote": "this resolves that intent rather than treating it as a newly demonstrated normal-path defect",
+        "says": "Wrapper uses external stdio MCP by design."
+      },
+      "guidance": "Not a defect in the wrapper's normal path."
+    },
+    {
+      "id": "corr.agent-runtime.transport-security-defaults",
+      "kind": "narrowed",
+      "risk": "medium",
+      "earlier": {
+        "path": "docs/research/assessment-evidence/sdk-boundaries-continuation.md",
+        "line": 198,
+        "quote": "middleware constructed with no settings explicitly disables host/origin checks for backward compatibility",
+        "says": "MCP host/origin checks may be off by default."
+      },
+      "later": {
+        "path": "docs/research/assessment-evidence/sdk-boundaries-continuation.md",
+        "line": 333,
+        "quote": "automatically enables host/origin checks only for its named loopback host defaults",
+        "says": "High-level SSE builder enables checks for loopback defaults only."
+      },
+      "guidance": "Host/origin protection depends on construction path and host; verify per deployment."
+    },
+    {
+      "id": "corr.agent-runtime.windows-oskill-prediction-wrong",
+      "kind": "reversed",
+      "risk": "medium",
+      "earlier": {
+        "path": "docs/research/assessment-evidence/deep-lab-plan.md",
+        "line": 26,
+        "quote": "Official Python documentation predicts os.kill(pid,0) terminates that child while helper returns true.",
+        "says": "The monitor liveness helper would kill a Windows child process via signal 0."
+      },
+      "later": {
+        "path": "docs/research/assessment-evidence/deep-monitor.md",
+        "line": 28,
+        "quote": "That inference was **wrong**: zero is Windows CTRL_C_EVENT, a special branch.",
+        "says": "Signal 0 maps to CTRL_C_EVENT; the child stayed alive. Only a portability concern remains."
+      },
+      "guidance": "The _owner_alive helper did not terminate the child; cite only the narrower console-signal portability concern."
+    },
+    {
+      "id": "corr.ai-evaluation.agentdojo-canary-check-narrowed",
+      "kind": "narrowed",
+      "risk": "medium",
+      "earlier": {
+        "path": "docs/research/assessment-evidence/deep-agentdojo.md",
+        "line": 37,
+        "quote": "This can falsely fail the suite validation path; it is not an observed model defense.",
+        "says": "The canary representation mismatch affects suite injection validation."
+      },
+      "later": {
+        "path": "docs/research/assessment-evidence/deep-agentdojo.md",
+        "line": 104,
+        "quote": "That positive implementation contrast narrows the earlier representation finding to the checker",
+        "says": "Attack candidate discovery extracts list content correctly; only the is_task_injectable checker has the mismatch."
+      },
+      "guidance": "The mismatch is confined to the optional injectable precheck, not to injection placement in attacks."
+    },
+    {
+      "id": "corr.ai-evaluation.agentdojo-not-blanket-weak",
+      "kind": "narrowed",
+      "risk": "medium",
+      "earlier": {
+        "path": "docs/research/assessment-evidence/deep-agentdojo.md",
+        "line": 53,
+        "quote": "It does **not** check recipient or whether a new transaction was created.",
+        "says": "UserTask6 oracle misses recipient."
+      },
+      "later": {
+        "path": "docs/research/assessment-evidence/deep-agentdojo.md",
+        "line": 57,
+        "quote": "There is also contrary evidence to a claim that all task definitions ignore authorization-relevant fields",
+        "says": "Other tasks/versions check recipients and exact fields; the benchmark is heterogeneous."
+      },
+      "guidance": "Cite per-task, per-version oracle weaknesses; do not dismiss the whole benchmark."
+    },
+    {
+      "id": "corr.ai-evaluation.garak-evaluator-coverage",
+      "kind": "status-outdated",
+      "risk": "low",
+      "earlier": {
+        "path": "docs/research/2026-10-16-rea-and-security-workflows.md",
+        "line": 178,
+        "quote": "Partial read: [garak/evaluators/base.py:1-210]",
+        "says": "garak evaluator only partially read."
+      },
+      "later": {
+        "path": "docs/research/security-landscape/implementation-reviews.md",
+        "line": 95,
+        "quote": "complete 1–544",
+        "says": "Evaluator fully read on 2026-10-17."
+      },
+      "guidance": "Use implementation-reviews.md for garak evaluator behavior."
+    },
+    {
+      "id": "corr.ai.nuclei-llm-default-confidence",
+      "kind": "reversed",
+      "risk": "medium",
+      "earlier": {
+        "path": "docs/research/security-landscape/deep-review/nuclei-matchers.md",
+        "line": 9,
+        "quote": "model confidence threshold (default0)",
+        "says": "Default LLM confidence threshold 0."
+      },
+      "later": {
+        "path": "docs/research/security-landscape/deep-review/nuclei-matchers.md",
+        "line": 27,
+        "quote": "actual default confidence0.5 (correcting matcher field comment claiming default0)",
+        "says": "Actual default is 0.5."
+      },
+      "guidance": "Nuclei LLM matcher default confidence is 0.5."
+    },
+    {
+      "id": "corr.authorization.cel-sync-once-not-reachable",
+      "kind": "narrowed",
+      "risk": "high",
+      "earlier": {
+        "path": "docs/research/assessment-evidence/deep-openfga.md",
+        "line": 112,
+        "quote": "The complete file also exposes a concrete failure-state defect at **68–78**",
+        "says": "Calls the CEL compile sync.Once handling a concrete failure-state defect."
+      },
+      "later": {
+        "path": "docs/research/assessment-evidence/continuation-exhaustion.md",
+        "line": 104,
+        "quote": "records the passing `TestEvidenceOrdinaryModelAdmission` using unchanged production command",
+        "says": "Ordinary model writes reject invalid conditions before storage, so the failed-compile path is not reached through the normal public path."
+      },
+      "guidance": "Do not report the CEL sync.Once issue as a vendor vulnerability; it is a component-level defect not reachable through ordinary model writes."
+    },
+    {
+      "id": "corr.authorization.copyobject-express-token",
+      "kind": "narrowed",
+      "risk": "medium",
+      "earlier": {
+        "path": "docs/research/toolchain/go-material-review.md",
+        "line": 753,
+        "quote": "Thus the earlier Express session-token redirect hypothesis cannot be automatically attributed to CopyObject",
+        "says": "Earlier session-token redirect hypothesis assumed for Express buckets generally."
+      },
+      "later": {
+        "path": "docs/research/toolchain/go-material-review.md",
+        "line": 753,
+        "quote": "explicitly set DisableS3ExpressSessionAuth true for this operation",
+        "says": "CopyObject disables Express session auth."
+      },
+      "guidance": "Do not attribute the Express token redirect hypothesis to CopyObject."
+    },
+    {
+      "id": "corr.authorization.express-binding-resolved",
+      "kind": "narrowed",
+      "risk": "high",
+      "earlier": {
+        "path": "docs/research/toolchain/go-material-review.md",
+        "line": 569,
+        "quote": "Important unresolved binding: CloneWithBaseCredentials changes `v4creds` used for cache keying but retains `p.client`.",
+        "says": "Which credentials sign CreateSession is unresolved."
+      },
+      "later": {
+        "path": "docs/research/toolchain/go-material-review.md",
+        "line": 563,
+        "quote": "the default Express provider keys the cache using B but the nested CreateSession path still resolves A",
+        "says": "Concrete conditional mismatch between cache-key and minting identity."
+      },
+      "guidance": "Believe the conditional A/B mismatch; it is not a demonstrated bypass."
+    },
+    {
+      "id": "corr.authorization.express-lru-race",
+      "kind": "reversed",
+      "risk": "low",
+      "earlier": {
+        "path": "docs/research/toolchain/go-material-review.md",
+        "line": 567,
+        "quote": "Default provider shares a mutex-protected LRU cache",
+        "says": "Default cache concurrency questioned."
+      },
+      "later": {
+        "path": "docs/research/toolchain/go-material-review.md",
+        "line": 565,
+        "quote": "contrary to a simple default unprotected-cache race claim",
+        "says": "Wrapper locks Get and Put."
+      },
+      "guidance": "No default unprotected-cache race."
+    },
+    {
+      "id": "corr.authorization.express-no-anonymous-fallback",
+      "kind": "narrowed",
+      "risk": "medium",
+      "earlier": {
+        "path": "docs/research/toolchain/go-material-review.md",
+        "line": 563,
+        "quote": "Custom providers, custom middleware and provider behavior can alter the path.",
+        "says": "Mismatch scope open."
+      },
+      "later": {
+        "path": "docs/research/toolchain/go-material-review.md",
+        "line": 561,
+        "quote": "Static nonnil client provider A therefore bounds the earlier A-versus-B mismatch",
+        "says": "Bounded to static provider A; no anonymous fallback after credential denial."
+      },
+      "guidance": "Scope the Express mismatch to static default credentials plus per-operation override."
+    },
+    {
+      "id": "corr.authorization.gateway-echo4-hypothesis",
+      "kind": "superseded-plan",
+      "risk": "low",
+      "earlier": {
+        "path": "docs/research/assessment-evidence/continuation-exhaustion.md",
+        "line": 704,
+        "quote": "originating Swagger/flattening cause is an explicit open hypothesis",
+        "says": "Echo4 NoNote omission cause unknown."
+      },
+      "later": {
+        "path": "docs/research/assessment-evidence/continuation-exhaustion.md",
+        "line": 706,
+        "quote": "Earlier open hypothesis superseded by this traced source chain",
+        "says": "Prefix-insensitive shared-field exclusion explains the omission."
+      },
+      "guidance": "The Echo4 omission is explained by generator shared-field exclusion, not a bypass."
+    },
+    {
+      "id": "corr.authorization.gateway-trie-misreading",
+      "kind": "reversed",
+      "risk": "low",
+      "earlier": {
+        "path": "docs/research/assessment-evidence/continuation-exhaustion.md",
+        "line": 714,
+        "quote": "Trie174 complete re-read disproves a possible parent-filter misreading",
+        "says": "A parent filter was thought to exclude sibling nId.val."
+      },
+      "later": {
+        "path": "docs/research/assessment-evidence/continuation-exhaustion.md",
+        "line": 714,
+        "quote": "so sibling nId.val is not excluded by that literal filter",
+        "says": "Repeated token uses two transitions."
+      },
+      "guidance": "Sibling nId.val is not excluded by the gateway filter."
+    },
+    {
+      "id": "corr.authorization.history-cache-body",
+      "kind": "narrowed",
+      "risk": "medium",
+      "earlier": {
+        "path": "docs/research/security-landscape/deep-review/zap-history.md",
+        "line": 31,
+        "quote": "equality compares method, host, port and case-insensitive pathQuery, returning early when both pathQueries exist",
+        "says": "HttpMessage.equals ignores POST body and headers."
+      },
+      "later": {
+        "path": "docs/research/security-landscape/deep-review/zap-history-lab.md",
+        "line": 13,
+        "quote": "**The SQL cache still filters body**; do not infer body-blind cache from object equality alone.",
+        "says": "The history-cache SQL filters body; only headers/principal are ignored."
+      },
+      "guidance": "ZAP history cache is auth/cookie-blind but not body-blind."
+    },
+    {
+      "id": "corr.authorization.history-cache-legacy-caller",
+      "kind": "narrowed",
+      "risk": "high",
+      "earlier": {
+        "path": "docs/research/security-landscape/deep-review/zap-history-lab.md",
+        "line": 13,
+        "quote": "Actual default table getHistoryCache selects saved principalA row despite differing synthetic principalB auth/cookie headers.",
+        "says": "Installed table selects another principal's saved row."
+      },
+      "later": {
+        "path": "docs/research/security-landscape/deep-review/zap-history.md",
+        "line": 39,
+        "quote": "Do not describe the component receipt as a current-default live-proxy cross-principal vulnerability.",
+        "says": "Only caller is the deprecated ProxyThread; active addon does not replay cached bytes."
+      },
+      "guidance": "Report it as a component property, not a live proxy vulnerability."
+    },
+    {
+      "id": "corr.authorization.nuclei-project-cache-lab",
+      "kind": "narrowed",
+      "risk": "medium",
+      "earlier": {
+        "path": "docs/research/security-landscape/deep-review/nuclei-http-path.md",
+        "line": 37,
+        "quote": "**Project cache identity is computed before auth-provider injection**, a source concern requiring cache implementation and identity-isolation tests before a finding claim.",
+        "says": "Pre-auth cache key is a source concern."
+      },
+      "later": {
+        "path": "docs/research/security-landscape/deep-review/nuclei-http-path.md",
+        "line": 75,
+        "quote": "This establishes byte-key component behavior and negative controls; **full cross-principal engine behavior remains a source prediction**",
+        "says": "Component replay confirmed; engine-level still unproven."
+      },
+      "guidance": "Cache replay of pre-auth bytes is confirmed at component level only."
+    },
+    {
+      "id": "corr.authorization.nuclei-regex-rejected",
+      "kind": "reversed",
+      "risk": "low",
+      "earlier": {
+        "path": "docs/research/security-landscape/deep-review/nuclei-auth.md",
+        "line": 15,
+        "quote": "invalid regex is silently skipped at this point (validation dependency may reject earlier)",
+        "says": "Invalid auth regex silently skipped."
+      },
+      "later": {
+        "path": "docs/research/security-landscape/deep-review/nuclei-auth.md",
+        "line": 41,
+        "quote": "This resolves prior uncertainty: malformed regex is rejected during construction, before init's silent-skip fallback.",
+        "says": "Rejected at construction."
+      },
+      "guidance": "Malformed secret-file regexes fail validation."
+    },
+    {
+      "id": "corr.authorization.openfga-admission-wrong-receipt",
+      "kind": "reversed",
+      "risk": "high",
+      "earlier": {
+        "path": "docs/research/assessment-evidence/continuation-exhaustion.md",
+        "line": 104,
+        "quote": "records the passing `TestEvidenceOrdinaryModelAdmission`",
+        "says": "Admission receipt 1792271857692 is the admission evidence."
+      },
+      "later": {
+        "path": "docs/research/assessment-evidence/continuation-exhaustion.md",
+        "line": 106,
+        "quote": "therefore records a redundant cache test, **not admission evidence**",
+        "says": "Receipt 1792271828082 silently ran the default cache fixture and is not admission evidence."
+      },
+      "guidance": "Cite only receipt 1792271857692 for OpenFGA admission; never 1792271828082."
+    },
+    {
+      "id": "corr.authorization.openfga-constructor-cleanup",
+      "kind": "narrowed",
+      "risk": "low",
+      "earlier": {
+        "path": "docs/research/assessment-evidence/continuation-exhaustion.md",
+        "line": 225,
+        "quote": "Constructor error cleanup is not demonstrated merely by that successful shutdown method",
+        "says": "PostgreSQL constructor lacks error cleanup."
+      },
+      "later": {
+        "path": "docs/research/assessment-evidence/continuation-exhaustion.md",
+        "line": 251,
+        "quote": "do not generalize one adapter's cleanup path to all backends",
+        "says": "MySQL constructor closes pools on later setup errors."
+      },
+      "guidance": "Constructor cleanup behaviour is adapter-specific."
+    },
+    {
+      "id": "corr.authorization.openfga-extra-context-keys",
+      "kind": "reversed",
+      "risk": "medium",
+      "earlier": {
+        "path": "docs/research/assessment-evidence/continuation-exhaustion.md",
+        "line": 159,
+        "quote": "Contrary to its introductory comment, extra context keys are not explicitly rejected",
+        "says": "Source comment claims extra condition context keys are rejected; code does not reject them when parameters are declared."
+      },
+      "later": {
+        "path": "docs/research/assessment-evidence/continuation-exhaustion.md",
+        "line": 159,
+        "quote": "they are not copied to the resulting activation",
+        "says": "Extra keys are ignored, not rejected; with zero parameters nonempty context errors."
+      },
+      "guidance": "OpenFGA ignores extra context keys when parameters exist; do not rely on the comment."
+    },
+    {
+      "id": "corr.authorization.openfga-failed-compile-not-public",
+      "kind": "narrowed",
+      "risk": "high",
+      "earlier": {
+        "path": "docs/research/assessment-evidence/synthesis.md",
+        "line": 42,
+        "quote": "actual condition compilation loses its first error on repeated Compile before a caught evaluation panic",
+        "says": "Proposes mutation-testing repeated failing compilation through the validation/reuse caller as an open experiment."
+      },
+      "later": {
+        "path": "docs/research/assessment-evidence/continuation-exhaustion.md",
+        "line": 104,
+        "quote": "invalid CEL returns an error and nil response; latest-model lookup finds no persisted model",
+        "says": "Ordinary admission rejects invalid CEL before persistence and the resolver caches only validated models; all predefined criteria passed."
+      },
+      "guidance": "The failed-compile state is an internal component observation only; ordinary model writes reject invalid conditions."
+    },
+    {
+      "id": "corr.authorization.openfga-invalidation-suspicion",
+      "kind": "narrowed",
+      "risk": "low",
+      "earlier": {
+        "path": "docs/research/assessment-evidence/continuation-exhaustion.md",
+        "line": 455,
+        "quote": "Invalidation relation-stripping suspicion from old commentary was narrowed by actual GetUser/key code",
+        "says": "Earlier commentary suspected relation-stripping in cache invalidation."
+      },
+      "later": {
+        "path": "docs/research/assessment-evidence/continuation-exhaustion.md",
+        "line": 455,
+        "quote": "PostgreSQL/MySQL ordering also narrows the optional ordering-key concern",
+        "says": "Actual key code and adapter ordering narrow both concerns."
+      },
+      "guidance": "Do not repeat the old invalidation suspicion without the key-code trace in openfga-request-contract.md."
+    },
+    {
+      "id": "corr.authorization.openfga-numeric-caller",
+      "kind": "confirmed-later",
+      "risk": "medium",
+      "earlier": {
+        "path": "docs/research/assessment-evidence/continuation-exhaustion.md",
+        "line": 151,
+        "quote": "an internal exact-Go-value fixture does not establish what values the public JSON API can represent",
+        "says": "Saturation observed only in the exact-Go converter."
+      },
+      "later": {
+        "path": "docs/research/assessment-evidence/continuation-exhaustion.md",
+        "line": 196,
+        "quote": "The second test closes the numeric **component caller** gap",
+        "says": "Saturation confirmed through protobuf caller; equality to max uint evaluates false; still not an authorization defect."
+      },
+      "guidance": "Cite the caller-level receipt, but keep the finding as a conversion boundary, not a bypass."
+    },
+    {
+      "id": "corr.authorization.openfga-or-witness",
+      "kind": "narrowed",
+      "risk": "medium",
+      "earlier": {
+        "path": "docs/research/assessment-evidence/continuation-exhaustion.md",
+        "line": 374,
+        "quote": "intentionally permit a valid existential witness despite a sibling resolution error",
+        "says": "Allowed with sibling error could look like fail-open."
+      },
+      "later": {
+        "path": "docs/research/assessment-evidence/continuation-exhaustion.md",
+        "line": 374,
+        "quote": "not evidence that errors always fail open",
+        "says": "Intended OR semantics; without a true witness, errors propagate."
+      },
+      "guidance": "Do not report OpenFGA as failing open on resolver errors."
+    },
+    {
+      "id": "corr.authorization.openfga-readchanges-cache",
+      "kind": "narrowed",
+      "risk": "high",
+      "earlier": {
+        "path": "docs/research/assessment-evidence/continuation-exhaustion.md",
+        "line": 223,
+        "quote": "Source therefore shows an incomplete error-inspection contract in this method",
+        "says": "ReadChanges suppresses terminal errors, implying possible stale authorization cache."
+      },
+      "later": {
+        "path": "docs/research/assessment-evidence/continuation-exhaustion.md",
+        "line": 231,
+        "quote": "this contradicts a casual claim that a zero-row terminal error necessarily leaves authorization cache trusted",
+        "says": "Cache controller invalidates conservatively on any error; harm must be demonstrated."
+      },
+      "guidance": "Report terminal-error suppression as an evidence-quality issue, not stale authorization or missed revocation."
+    },
+    {
+      "id": "corr.authorization.openfga-readchanges-runtime",
+      "kind": "confirmed-later",
+      "risk": "medium",
+      "earlier": {
+        "path": "docs/research/assessment-evidence/continuation-exhaustion.md",
+        "line": 241,
+        "quote": "No actual server error or interrupted connection has been generated.",
+        "says": "Terminal-error suppression is source inference only."
+      },
+      "later": {
+        "path": "docs/research/assessment-evidence/continuation-exhaustion.md",
+        "line": 259,
+        "quote": "This upgrades the SQLite adapter's terminal-error suppression from source inference to component runtime evidence.",
+        "says": "Inert-driver receipt confirms three subcases on SQLite."
+      },
+      "guidance": "SQLite has component runtime evidence; PostgreSQL/MySQL remain source-only."
+    },
+    {
+      "id": "corr.authorization.openfga-receipt-metadata",
+      "kind": "narrowed",
+      "risk": "low",
+      "earlier": {
+        "path": "docs/research/assessment-evidence/continuation-exhaustion.md",
+        "line": 153,
+        "quote": "The admission/numeric receipts originally inherited a generic intervention description from the older runner.",
+        "says": "Receipt intervention field was wrong."
+      },
+      "later": {
+        "path": "docs/research/assessment-evidence/continuation-exhaustion.md",
+        "line": 153,
+        "quote": "Metadata correction preserves that original field and supplies the actual fixture description",
+        "says": "Corrected metadata added; raw outputs unchanged."
+      },
+      "guidance": "Read the corrected fixture description in those receipts, not the inherited one."
+    },
+    {
+      "id": "corr.authorization.openfga-unread-statuses",
+      "kind": "status-outdated",
+      "risk": "low",
+      "earlier": {
+        "path": "docs/research/assessment-evidence/continuation-exhaustion.md",
+        "line": 202,
+        "quote": "PostgreSQL/MySQL/SQLite main adapter implementations and their callers remain unread in the per-file queue.",
+        "says": "Adapters unread."
+      },
+      "later": {
+        "path": "docs/research/assessment-evidence/continuation-exhaustion.md",
+        "line": 245,
+        "quote": "Complete additional files: sqlite/sqlite.go1406lines and mysql/mysql.go1006lines.",
+        "says": "All three adapters later fully read (postgres at line 217)."
+      },
+      "guidance": "Adapter reading statuses in early paragraphs are outdated; check later checkpoints."
+    },
+    {
+      "id": "corr.authorization.openfga-upsertedge-loss",
+      "kind": "reversed",
+      "risk": "medium",
+      "earlier": {
+        "path": "docs/research/assessment-evidence/continuation-exhaustion.md",
+        "line": 120,
+        "quote": "The UpsertEdge result at172 is not checked",
+        "says": "Weighted graph builder may silently lose TTU edges."
+      },
+      "later": {
+        "path": "docs/research/assessment-evidence/continuation-exhaustion.md",
+        "line": 129,
+        "quote": "does not establish a reachable lost error",
+        "says": "UpsertEdge only errors on nil endpoints, which the builder never passes."
+      },
+      "guidance": "No lost-edge defect exists on the ordinary builder path."
+    },
+    {
+      "id": "corr.authorization.redirect-changelog",
+      "kind": "narrowed",
+      "risk": "low",
+      "earlier": {
+        "path": "docs/research/toolchain/go-material-review.md",
+        "line": 299,
+        "quote": "core 1.41.4 announces redirect removal of `X-Amz-Security-Token`",
+        "says": "Changelog announces token removal on redirect."
+      },
+      "later": {
+        "path": "docs/research/toolchain/go-material-review.md",
+        "line": 299,
+        "quote": "without resolving the separately recorded multi-hop redirect header-restoration candidate",
+        "says": "Announcement does not resolve the multi-hop case."
+      },
+      "guidance": "Release note does not close the redirect candidate."
+    },
+    {
+      "id": "corr.authorization.redirect-sdk-only",
+      "kind": "narrowed",
+      "risk": "medium",
+      "earlier": {
+        "path": "docs/research/toolchain/go-material-review.md",
+        "line": 1021,
+        "quote": "so this is not a confirmed credential disclosure",
+        "says": "SDK-only view; stdlib behavior unknown."
+      },
+      "later": {
+        "path": "docs/research/toolchain/go-material-review.md",
+        "line": 999,
+        "quote": "X-Amz-S3session-Token has no removal in either reviewed layer",
+        "says": "Both layers reviewed; neither removes the Express token."
+      },
+      "guidance": "Use go-material-review.md:999 as the current state of the redirect question."
+    },
+    {
+      "id": "corr.authorization.redirect-token-restoration",
+      "kind": "confirmed-later",
+      "risk": "high",
+      "earlier": {
+        "path": "docs/research/toolchain/go-material-review.md",
+        "line": 1009,
+        "quote": "concrete standard-library header copying is still unread and prevents a disclosure conclusion",
+        "says": "No disclosure conclusion possible."
+      },
+      "later": {
+        "path": "docs/research/toolchain/go-material-review.md",
+        "line": 999,
+        "quote": "Consequently a source trace A→B→B gives a restoration candidate",
+        "says": "Stdlib original-snapshot copy yields an A→B→B token restoration candidate; S3session token never stripped."
+      },
+      "guidance": "Treat the A→B→B redirect token restoration as an open source-level candidate."
+    },
+    {
+      "id": "corr.authorization.signer-property-collision",
+      "kind": "narrowed",
+      "risk": "medium",
+      "earlier": {
+        "path": "docs/research/toolchain/go-material-review.md",
+        "line": 703,
+        "quote": "merges SignerProperties from **every** endpoint auth option into that scheme without checking SchemeID",
+        "says": "Merged properties could cause wrong-region signing."
+      },
+      "later": {
+        "path": "docs/research/toolchain/go-material-review.md",
+        "line": 693,
+        "quote": "the unfiltered merge alone does not establish wrong-region signing",
+        "says": "V4 and V4a regions use different keys."
+      },
+      "guidance": "No default conflicting-region signing issue."
+    },
+    {
+      "id": "corr.authorization.takumi-runner-vs-app-permissions",
+      "kind": "narrowed",
+      "risk": "medium",
+      "earlier": {
+        "path": "docs/research/cybersecurity-firms/takumi-github-scope-boundary.md",
+        "line": 7,
+        "quote": "documents repository Actions and Checks read/write, Metadata read, and organization self-hosted-runner read/write",
+        "says": "A Takumi GitHub permission list exists."
+      },
+      "later": {
+        "path": "docs/research/cybersecurity-firms/takumi-github-scope-boundary.md",
+        "line": 9,
+        "quote": "These are Runner permissions, not the assessment/autofix App's complete manifest.",
+        "says": "Assessment/autofix App manifest remains unknown."
+      },
+      "guidance": "Do not use Runner permissions to describe what the assessment or Autofix app can access."
+    },
+    {
+      "id": "corr.authorization.v4a-stale-cache",
+      "kind": "narrowed",
+      "risk": "low",
+      "earlier": {
+        "path": "docs/research/toolchain/go-material-review.md",
+        "line": 687,
+        "quote": "Symmetric Retrieve clears the cache only when AccessKeyID changes",
+        "says": "V4a key cache can go stale."
+      },
+      "later": {
+        "path": "docs/research/toolchain/go-material-review.md",
+        "line": 683,
+        "quote": "a deployment-wide shared stale-cache claim cannot be inferred from the adapter alone",
+        "says": "New adaptor per resolver call."
+      },
+      "guidance": "No deployment-wide stale V4a cache inference."
+    },
+    {
+      "id": "corr.cloud.changelog-revert-access-analyzer",
+      "kind": "reversed",
+      "risk": "medium",
+      "earlier": {
+        "path": "docs/research/toolchain/go-material-review.md",
+        "line": 307,
+        "quote": "The Access Analyzer addition on April 6 (1269–1270)",
+        "says": "Feature added."
+      },
+      "later": {
+        "path": "docs/research/toolchain/go-material-review.md",
+        "line": 307,
+        "quote": "is explicitly followed by a revert on April 7",
+        "says": "Reverted next day."
+      },
+      "guidance": "Preserve both; do not catalog the addition as retained."
+    },
+    {
+      "id": "corr.cloud.changelog-revert-lambda-bpa",
+      "kind": "reversed",
+      "risk": "medium",
+      "earlier": {
+        "path": "docs/research/toolchain/go-material-review.md",
+        "line": 207,
+        "quote": "Lambda resource-policy/block-public-access support is announced September 17",
+        "says": "Lambda BPA announced."
+      },
+      "later": {
+        "path": "docs/research/toolchain/go-material-review.md",
+        "line": 211,
+        "quote": "a Lambda resource-policy/BPA API revert (10658–10659)",
+        "says": "Reverted."
+      },
+      "guidance": "Do not treat the Lambda BPA announcement as durable functionality."
+    },
+    {
+      "id": "corr.cloud.complete-multipart-validation",
+      "kind": "confirmed-later",
+      "risk": "low",
+      "earlier": {
+        "path": "docs/research/toolchain/go-material-review.md",
+        "line": 1585,
+        "quote": "This establishes the serializer boundary, not a claim that the manager or service lacks those checks",
+        "says": "Part ordering checks unknown."
+      },
+      "later": {
+        "path": "docs/research/toolchain/go-material-review.md",
+        "line": 2039,
+        "quote": "this resolves earlier serializer-validation question: no local helper enforcement for those constraints",
+        "says": "Validators do not check part order/count either."
+      },
+      "guidance": "SDK does not locally validate completed part lists."
+    },
+    {
+      "id": "corr.cloud.continuation-prowler-plan-stopped",
+      "kind": "superseded-plan",
+      "risk": "high",
+      "earlier": {
+        "path": "docs/research/toolchain/continuation.md",
+        "line": 333,
+        "quote": "next trace real report-model/failed-check propagation under mocked denied policy-version collection",
+        "says": "Lists the denied-collection Prowler trace as a next step."
+      },
+      "later": {
+        "path": "docs/research/toolchain/continuation.md",
+        "line": 289,
+        "quote": "is superseded wherever it proposes the cloud denied-collection runtime experiment: that operation remains stopped",
+        "says": "Every proposal of that experiment is superseded; it remains stopped."
+      },
+      "guidance": "Treat every numbered next step in toolchain/continuation.md that proposes the cloud denied-collection experiment as stopped."
+    },
+    {
+      "id": "corr.cloud.express-control-plane-path",
+      "kind": "narrowed",
+      "risk": "low",
+      "earlier": {
+        "path": "docs/research/toolchain/go-material-review.md",
+        "line": 631,
+        "quote": "bucket names move into the path, bucketless control endpoints are valid",
+        "says": "Express control plane uses path style."
+      },
+      "later": {
+        "path": "docs/research/toolchain/go-material-review.md",
+        "line": 627,
+        "quote": "the earlier default control-plane path statement is conditional on absence of this custom endpoint",
+        "says": "Custom DNS endpoint yields bucket-prefixed host."
+      },
+      "guidance": "Path style only without custom endpoint."
+    },
+    {
+      "id": "corr.cloud.getobject-partial-output",
+      "kind": "narrowed",
+      "risk": "low",
+      "earlier": {
+        "path": "docs/research/toolchain/go-material-review.md",
+        "line": 1879,
+        "quote": "this narrows the earlier raw-deserializer observation that a result may be assigned before an error",
+        "says": "Raw deserializer may return output with error."
+      },
+      "later": {
+        "path": "docs/research/toolchain/go-material-review.md",
+        "line": 1879,
+        "quote": "Public `GetObject` returns `nil, err` when `invokeOperation` fails",
+        "says": "Public method returns nil on error."
+      },
+      "guidance": "No usable partial output from public GetObject on error."
+    },
+    {
+      "id": "corr.cloud.http200-embedded-error",
+      "kind": "reversed",
+      "risk": "medium",
+      "earlier": {
+        "path": "docs/research/toolchain/go-material-review.md",
+        "line": 1409,
+        "quote": "The generic success deserializer tolerates EOF before a root",
+        "says": "Generic deserializer accepts empty 200 responses."
+      },
+      "later": {
+        "path": "docs/research/toolchain/go-material-review.md",
+        "line": 1411,
+        "quote": "Thus reject a blanket claim that HTTP 200 embedded errors are silently accepted.",
+        "says": "Special processor turns empty/Error-root 200s into errors for CompleteMultipartUpload/CopyObject."
+      },
+      "guidance": "Check per-operation registration before claiming silent acceptance."
+    },
+    {
+      "id": "corr.cloud.initiation-nil-uploadid",
+      "kind": "confirmed-later",
+      "risk": "medium",
+      "earlier": {
+        "path": "docs/research/toolchain/go-material-review.md",
+        "line": 1493,
+        "quote": "the generated deserializer supplies a potential wire route",
+        "says": "Nil UploadId route needs registration check."
+      },
+      "later": {
+        "path": "docs/research/toolchain/go-material-review.md",
+        "line": 1499,
+        "quote": "This strengthens the source route from an empty 2xx initiation body through a nil UploadId output to the manager dereference.",
+        "says": "CreateMultipartUpload lacks the 2xx processor and output-ID check."
+      },
+      "guidance": "Nil UploadId dereference is a conditional source route, not an observed panic."
+    },
+    {
+      "id": "corr.cloud.legacy-empty-bucket",
+      "kind": "confirmed-later",
+      "risk": "medium",
+      "earlier": {
+        "path": "docs/research/toolchain/go-material-review.md",
+        "line": 747,
+        "quote": "do not label a public panic established yet",
+        "says": "Empty bucket index reachability unknown."
+      },
+      "later": {
+        "path": "docs/research/toolchain/go-material-review.md",
+        "line": 667,
+        "quote": "the reviewed caller chain therefore reaches the unchecked bucket[0] index",
+        "says": "Conditional reachability under mutable legacy resolver, non-ARN empty bucket, path style false."
+      },
+      "guidance": "Conditional legacy-path source reachability; modern path rejects empty buckets."
+    },
+    {
+      "id": "corr.cloud.multipart-checksum-of-checksums",
+      "kind": "narrowed",
+      "risk": "low",
+      "earlier": {
+        "path": "docs/research/toolchain/go-material-review.md",
+        "line": 1356,
+        "quote": "This narrows upload.go general comment that multipart precomputed checksums are always checksums-of-checksums",
+        "says": "Upload comment: multipart checksums always checksum-of-checksums."
+      },
+      "later": {
+        "path": "docs/research/toolchain/go-material-review.md",
+        "line": 1356,
+        "quote": "while CRC64NVME explicitly uses a running full-object checksum",
+        "says": "Algorithm-specific."
+      },
+      "guidance": "Interpret multipart checksum by algorithm and checksum type."
+    },
+    {
+      "id": "corr.cloud.options-copy-depth",
+      "kind": "confirmed-later",
+      "risk": "low",
+      "earlier": {
+        "path": "docs/research/toolchain/go-material-review.md",
+        "line": 1379,
+        "quote": "Copy depth remains to be checked.",
+        "says": "Options copy depth unknown."
+      },
+      "later": {
+        "path": "docs/research/toolchain/go-material-review.md",
+        "line": 1427,
+        "quote": "This resolves the earlier copy-depth question",
+        "says": "Copy is shallow for nested state."
+      },
+      "guidance": "Options.Copy is shallow."
+    },
+    {
+      "id": "corr.cloud.presign-negative-expiry",
+      "kind": "reversed",
+      "risk": "medium",
+      "earlier": {
+        "path": "docs/research/toolchain/go-material-review.md",
+        "line": 611,
+        "quote": "No duration bound exists in this file; caller validation remains to follow",
+        "says": "Presign expiry may accept invalid values."
+      },
+      "later": {
+        "path": "docs/research/toolchain/go-material-review.md",
+        "line": 607,
+        "quote": "this disproves a default negative-duration acceptance claim based on the leaf file alone",
+        "says": "Caller rejects negative expiry for URL presign."
+      },
+      "guidance": "URL presign rejects negative expiry; POST presign still lacks that guard (go-material-review.md:601)."
+    },
+    {
+      "id": "corr.cloud.presign-noop-overwrite",
+      "kind": "reversed",
+      "risk": "medium",
+      "earlier": {
+        "path": "docs/research/toolchain/go-material-review.md",
+        "line": 1945,
+        "quote": "potentially dropping the appended no-op option",
+        "says": "Presign option overwrite might let presigning reach the network."
+      },
+      "later": {
+        "path": "docs/research/toolchain/go-material-review.md",
+        "line": 1957,
+        "quote": "This rejects the proposed inference that UploadPart",
+        "says": "Presign middleware never calls next; no V4 application request is sent."
+      },
+      "guidance": "Presigning does not send the application request (V4 and Express); provider effects remain separate."
+    },
+    {
+      "id": "corr.cloud.prowler-next-oracle-stopped",
+      "kind": "superseded-plan",
+      "risk": "high",
+      "earlier": {
+        "path": "docs/research/toolchain/cloud-posture.md",
+        "line": 49,
+        "quote": "Next oracle should trace the real model/failed-check propagation under a mocked AccessDenied policy-version call",
+        "says": "Proposes the denied policy-version experiment as the next step."
+      },
+      "later": {
+        "path": "docs/research/toolchain/cloud-posture.md",
+        "line": 52,
+        "quote": "is stopped following the user-reported warning; no retry or alternate route",
+        "says": "That proposal is stopped with no retry or alternate route."
+      },
+      "guidance": "Do not run or re-propose the denied policy-version experiment; it is stopped and needs Kotaro's explicit instruction to resume."
+    },
+    {
+      "id": "corr.commercial.charlotte-credit-tiers",
+      "kind": "status-outdated",
+      "risk": "medium",
+      "earlier": {
+        "path": "docs/research/cybersecurity-firms/charlotte-agentworks-contract.md",
+        "line": 17,
+        "quote": "It retains endpoint-band entitlements",
+        "says": "Charlotte entitlements tied to endpoint bands."
+      },
+      "later": {
+        "path": "docs/research/cybersecurity-firms/charlotte-agentworks-contract.md",
+        "line": 17,
+        "quote": "customers select monthly credit tiers independently of endpoint volume",
+        "says": "From June 2026 credit tiers are independent of endpoint count."
+      },
+      "guidance": "Use the June 2026 credit-tier model for current pricing discussions; legacy applicability is unresolved."
+    },
+    {
+      "id": "corr.commercial.cobalt-pricing-inconsistent",
+      "kind": "narrowed",
+      "risk": "medium",
+      "earlier": {
+        "path": "docs/research/security-landscape/companies.md",
+        "line": 89,
+        "quote": "Standard/Premium/Enterprise quote-based annual credits",
+        "says": "Credits with rollover/retest terms."
+      },
+      "later": {
+        "path": "docs/research/security-landscape/coverage.md",
+        "line": 24,
+        "quote": "do not derive contract entitlement from the table alone",
+        "says": "Rollover/retest wording inconsistent."
+      },
+      "guidance": "Do not cite Cobalt entitlements as fact without a contract."
+    },
+    {
+      "id": "corr.crawling-load.calllateronce-hang",
+      "kind": "narrowed",
+      "risk": "low",
+      "earlier": {
+        "path": "docs/research/bots-swarms/continuation.md",
+        "line": 1985,
+        "quote": "Potential stranded waiters/rescheduling after cancellation require caller-specific reachability analysis",
+        "says": "CallLaterOnce cancellation may strand waiters."
+      },
+      "later": {
+        "path": "docs/research/bots-swarms/continuation.md",
+        "line": 1977,
+        "quote": "Thus the helper's retained cancelled _call alone does not prove an engine shutdown hang",
+        "says": "Caller recheck shows normal close stops the heartbeat; no engine hang established."
+      },
+      "guidance": "Do not claim a Scrapy shutdown hang from CallLaterOnce."
+    },
+    {
+      "id": "corr.crawling-load.etcd-sqlite-validated",
+      "kind": "confirmed-later",
+      "risk": "low",
+      "earlier": {
+        "path": "docs/research/bots-swarms/continuation.md",
+        "line": 2898,
+        "quote": "These are source control-flow concerns requiring an inert-client/real isolated adapter oracle",
+        "says": "SQLite release ordering is a source concern."
+      },
+      "later": {
+        "path": "docs/research/bots-swarms/continuation.md",
+        "line": 2904,
+        "quote": "This upgrades these exact local control-flow observations from source hypotheses to bounded runtime results",
+        "says": "Confirmed by the 7-check inert run."
+      },
+      "guidance": "Etcd expiry accumulation and SQLite early release are confirmed for adapter control flow only."
+    },
+    {
+      "id": "corr.crawling-load.filespipeline-tests-status",
+      "kind": "status-outdated",
+      "risk": "low",
+      "earlier": {
+        "path": "docs/research/bots-swarms/continuation.md",
+        "line": 2033,
+        "quote": "its 1799-line test file is still unread and must be traced next",
+        "says": "FilesPipeline tests unread."
+      },
+      "later": {
+        "path": "docs/research/bots-swarms/continuation.md",
+        "line": 2029,
+        "quote": "Full FilesPipeline tests (1799) now read.",
+        "says": "Tests read."
+      },
+      "guidance": "FilesPipeline tests are read; use cont:2029-2031."
+    },
+    {
+      "id": "corr.crawling-load.glide-res-length",
+      "kind": "narrowed",
+      "risk": "medium",
+      "earlier": {
+        "path": "docs/research/bots-swarms/continuation.md",
+        "line": 2884,
+        "quote": "_get196–199 assumes fcall result has length",
+        "says": "ValkeyGlide _get may fail on missing key (res.length)."
+      },
+      "later": {
+        "path": "docs/research/bots-swarms/continuation.md",
+        "line": 2888,
+        "quote": "contrary evidence to the source res.length hypothesis",
+        "says": "Upstream test expects null for missing key."
+      },
+      "guidance": "Treat the res.length concern as weakened by contrary test evidence; unresolved without runtime."
+    },
+    {
+      "id": "corr.crawling-load.limiter-ci",
+      "kind": "narrowed",
+      "risk": "low",
+      "earlier": {
+        "path": "docs/research/bots-swarms/continuation.md",
+        "line": 2977,
+        "quote": "The legacy Travis matrix lists Node8–14 while README advertises Node>=20",
+        "says": "CI evidence is a stale Travis matrix."
+      },
+      "later": {
+        "path": "docs/research/bots-swarms/continuation.md",
+        "line": 2980,
+        "quote": "This corrects any inference that the old Travis matrix is the only declared CI.",
+        "says": "GitHub Actions declares Node 22/24 and service matrix (no run observed)."
+      },
+      "guidance": "Current CI is GitHub Actions; still no passing-run receipt."
+    },
+    {
+      "id": "corr.defensive-response.coraza-include",
+      "kind": "reversed",
+      "risk": "medium",
+      "earlier": {
+        "path": "docs/research/bots-swarms/continuation.md",
+        "line": 2628,
+        "quote": "Include handler is a stub in this file, so the real parser Include special case must be traced before declaring includes unsupported.",
+        "says": "Include appears to be a stub."
+      },
+      "later": {
+        "path": "docs/research/bots-swarms/continuation.md",
+        "line": 2636,
+        "quote": "Include is implemented, not unsupported",
+        "says": "Include works through a parser special case; the 100 limit is cumulative per parser."
+      },
+      "guidance": "Coraza Include is implemented; the 100-include bound is cumulative, not depth."
+    },
+    {
+      "id": "corr.defensive-response.crowdstrike-rca-commitments",
+      "kind": "confirmed-later",
+      "risk": "low",
+      "earlier": {
+        "path": "docs/research/cybersecurity-firms/crowdstrike.md",
+        "line": 27,
+        "quote": "These were then remediation commitments, not proof they had already shipped.",
+        "says": "Preliminary review lists proposed fixes."
+      },
+      "later": {
+        "path": "docs/research/cybersecurity-firms/crowdstrike-final-rca.md",
+        "line": 7,
+        "quote": "It dates an internal compiler validation patch to July 27.",
+        "says": "Only some fixes were dated as implemented; others were future work at publication."
+      },
+      "guidance": "Keep implemented versus announced remediation separate; later implementation remains unverified."
+    },
+    {
+      "id": "corr.defensive-response.defender-air-retired",
+      "kind": "status-outdated",
+      "risk": "medium",
+      "earlier": {
+        "path": "docs/research/cybersecurity-firms/defender-automation-boundaries.md",
+        "line": 15,
+        "quote": "completed supported actions can be reviewed and undone through History",
+        "says": "Remediation page describes standalone automated investigation workflows."
+      },
+      "later": {
+        "path": "docs/research/cybersecurity-firms/defender-automation-boundaries.md",
+        "line": 7,
+        "quote": "AIR no longer runs as a separate investigation experience or supports manual triggering",
+        "says": "From September 1, 2026, standalone AIR is retired into the antivirus stack."
+      },
+      "guidance": "Verify current Defender interface and approval behavior per tenant; older AIR screens may be obsolete."
+    },
+    {
+      "id": "corr.defensive-response.multiselector-test-gap",
+      "kind": "narrowed",
+      "risk": "low",
+      "earlier": {
+        "path": "docs/research/bots-swarms/continuation.md",
+        "line": 1727,
+        "quote": "Existing new regression cases each supply one selector.",
+        "says": "No test supplies multiple selectors."
+      },
+      "later": {
+        "path": "docs/research/bots-swarms/continuation.md",
+        "line": 1677,
+        "quote": "refining the earlier test-gap statement",
+        "says": "An exclusion profile supplies multiple selectors but only rule 16 exists; the later-selector path is still untested."
+      },
+      "guidance": "Multi-selector update remains an untested source hypothesis."
+    },
+    {
+      "id": "corr.defensive-response.sentinel-dependency-closed",
+      "kind": "status-outdated",
+      "risk": "low",
+      "earlier": {
+        "path": "docs/research/cybersecurity-firms/sentinel-playbooks-source.md",
+        "line": 35,
+        "quote": "Defender's action-state contract remain dependencies to inspect",
+        "says": "Action-state contract unread."
+      },
+      "later": {
+        "path": "docs/research/cybersecurity-firms/sentinel-playbooks-source.md",
+        "line": 37,
+        "quote": "is now read and explains the missing creation-versus-status verification",
+        "says": "Defender action contract read."
+      },
+      "guidance": "Use defender-action-contract.md for completion states."
+    },
+    {
+      "id": "corr.defensive-response.trend-allowlist",
+      "kind": "narrowed",
+      "risk": "medium",
+      "earlier": {
+        "path": "docs/research/cybersecurity-firms/trend-response-task-boundary.md",
+        "line": 9,
+        "quote": "Its claim that custom allowlisting is future functionality differs",
+        "says": "Troubleshooting article says custom allowlisting during isolation is future functionality."
+      },
+      "later": {
+        "path": "docs/research/cybersecurity-firms/trend-response-task-boundary.md",
+        "line": 5,
+        "quote": "Critical-asset exceptions and connection restoration are separately configured/performed.",
+        "says": "Isolation manual documents exception configuration."
+      },
+      "guidance": "Treat allowlist capability as path/version-specific and verify on the managing product in use."
+    },
+    {
+      "id": "corr.defensive-response.trend-approval-gate",
+      "kind": "narrowed",
+      "risk": "high",
+      "earlier": {
+        "path": "docs/research/cybersecurity-firms/trend-mdr-approval.md",
+        "line": 15,
+        "quote": "The page broadly says disabling automatic approval requires approval for every response.",
+        "says": "Disabling auto-approval puts every Trend MDR response behind manual approval."
+      },
+      "later": {
+        "path": "docs/research/cybersecurity-firms/trend-mdr-approval.md",
+        "line": 7,
+        "quote": "places linking alerts, suspicious-object/model exceptions and process memory dumps in a",
+        "says": "Some actions are in a no-approval-required category regardless."
+      },
+      "guidance": "Do not promise clients a universal manual gate for Trend MDR; resolve per-action approval from the service terms and deployed configuration."
+    },
+    {
+      "id": "corr.evidence-handling.cbor-claims",
+      "kind": "reversed",
+      "risk": "low",
+      "earlier": {
+        "path": "docs/research/toolchain/go-material-review.md",
+        "line": 451,
+        "quote": "contrary to a simple header-sized immediate-allocation claim",
+        "says": "CBOR allocates from declared counts."
+      },
+      "later": {
+        "path": "docs/research/toolchain/go-material-review.md",
+        "line": 449,
+        "quote": "contrary to a zero-mantissa infinite-loop claim",
+        "says": "Float16 loop guarded; lists append incrementally."
+      },
+      "guidance": "Reject CBOR infinite-loop and header-sized allocation claims."
+    },
+    {
+      "id": "corr.evidence-handling.checksum-output-shorthand",
+      "kind": "narrowed",
+      "risk": "high",
+      "earlier": {
+        "path": "docs/research/toolchain/go-material-review.md",
+        "line": 1890,
+        "quote": "Output options describe using the first available algorithm",
+        "says": "Comments imply first algorithm used and all modeled algorithms validated."
+      },
+      "later": {
+        "path": "docs/research/toolchain/go-material-review.md",
+        "line": 1895,
+        "quote": "These observations supersede any shorthand implying that all ten modeled algorithms are validated",
+        "says": "Last present header wins, six algorithms, 200-only, Close never validates."
+      },
+      "guidance": "Treat GetObject checksum validation as conditional (200, EOF, supported algorithm, non-multipart)."
+    },
+    {
+      "id": "corr.evidence-handling.checksum-retry-intent",
+      "kind": "reversed",
+      "risk": "high",
+      "earlier": {
+        "path": "docs/research/toolchain/go-material-review.md",
+        "line": 1927,
+        "quote": "This is **contrary evidence to an assumption that this cache rehashes changed retry content**",
+        "says": "Retry keeps the old checksum even when the body changed (looks like a defect)."
+      },
+      "later": {
+        "path": "docs/research/toolchain/go-material-review.md",
+        "line": 1935,
+        "quote": "This changes interpretation: retaining the old checksum for a changed retry body is an intentional constraint",
+        "says": "Changelog v1.9.0 shows it is intended consistency protection, not a bypass."
+      },
+      "guidance": "Checksum retention across retries is intended; do not report it as an integrity bypass."
+    },
+    {
+      "id": "corr.evidence-handling.dump-memory-bound",
+      "kind": "confirmed-later",
+      "risk": "low",
+      "earlier": {
+        "path": "docs/research/toolchain/go-material-review.md",
+        "line": 1073,
+        "quote": "body logging adds content exposure and potential buffering in the separate standard-library dumper dependency",
+        "says": "Dump buffering bound unknown."
+      },
+      "later": {
+        "path": "docs/research/toolchain/go-material-review.md",
+        "line": 987,
+        "quote": "This resolves Smithy",
+        "says": "Enabled body dumping has no size cap."
+      },
+      "guidance": "SDK body logging buffers whole bodies."
+    },
+    {
+      "id": "corr.evidence-handling.e01-still-present",
+      "kind": "confirmed-later",
+      "risk": "high",
+      "earlier": {
+        "path": "docs/research/security-landscape/lab-results.md",
+        "line": 31,
+        "quote": "fails because `checks.mjs:82–83` ignores those headers when selecting saved evidence",
+        "says": "E01 observed on 2026-10-17 working tree."
+      },
+      "later": {
+        "path": "docs/research/security-landscape/lab-receipt.json",
+        "line": 153,
+        "quote": "\"src/checks.mjs\": \"301dca7083116a9f1d06aeb7861bac6f3f3f83fcf232b5566eb3bf186ec69682\"",
+        "says": "The lab receipt records this src/checks.mjs hash. On 2026-10-18 the audit hashed the current src/checks.mjs and got the same value, and lines 82-83 still match saved responses by method, URL and body only."
+      },
+      "guidance": "Legacy checks.mjs offline matching still ignores identity; only src/assessment has identity/session checks, and those labels are operator-declared."
+    },
+    {
+      "id": "corr.evidence-handling.eventstream-size-cap",
+      "kind": "narrowed",
+      "risk": "low",
+      "earlier": {
+        "path": "docs/research/toolchain/go-material-review.md",
+        "line": 2055,
+        "quote": "the10KiB caller buffer is not a cap",
+        "says": "Missing frame size cap is a parser/resource concern."
+      },
+      "later": {
+        "path": "docs/research/toolchain/go-material-review.md",
+        "line": 2075,
+        "quote": "absence of a size cap is intentional history, not by itself a defect",
+        "says": "Removal of max was intentional; malformed-length underflow remains open."
+      },
+      "guidance": "Report only the malformed-length relationship as an open candidate, not the missing cap."
+    },
+    {
+      "id": "corr.evidence-handling.falconpy-result-read",
+      "kind": "status-outdated",
+      "risk": "low",
+      "earlier": {
+        "path": "docs/research/cybersecurity-firms/falcon-host-action-source.md",
+        "line": 17,
+        "quote": "Other base-class methods, result conversion and third-party transport behavior remain partial/unread in the ledger.",
+        "says": "Result conversion unread."
+      },
+      "later": {
+        "path": "docs/research/cybersecurity-firms/falcon-host-action-source.md",
+        "line": 29,
+        "quote": "The entire pinned _result package (ten files) and tests/test_result_object.py are now read.",
+        "says": "Result package read; it does not poll or translate 202."
+      },
+      "guidance": "Result formatting is read; third-party transport remains unread."
+    },
+    {
+      "id": "corr.evidence-handling.falconpy-sample-overclaims",
+      "kind": "narrowed",
+      "risk": "high",
+      "earlier": {
+        "path": "docs/research/cybersecurity-firms/falcon-host-action-source.md",
+        "line": 7,
+        "quote": "Its 202 branch prints that the host has been contained/released.",
+        "says": "Sample output states containment completed."
+      },
+      "later": {
+        "path": "docs/research/cybersecurity-firms/falcon-host-action-source.md",
+        "line": 7,
+        "quote": "it sees the action request",
+        "says": "Only the request response is observed, not endpoint enforcement."
+      },
+      "guidance": "Never copy the sample's success message into reports; confirm host state via the device status contract."
+    },
+    {
+      "id": "corr.evidence-handling.json-trailing-value",
+      "kind": "narrowed",
+      "risk": "low",
+      "earlier": {
+        "path": "docs/research/toolchain/go-material-review.md",
+        "line": 475,
+        "quote": "so it can accept a valid first JSON value while overlooking a trailing value",
+        "says": "JSON test oracle misses trailing values."
+      },
+      "later": {
+        "path": "docs/research/toolchain/go-material-review.md",
+        "line": 445,
+        "quote": "Do not generalize the trailing-value weakness to every JSON test.",
+        "says": "General JSONEqual enforces full syntax."
+      },
+      "guidance": "Weakness limited to the shared document helper."
+    },
+    {
+      "id": "corr.evidence-handling.jsonschema-hash-collision",
+      "kind": "reversed",
+      "risk": "low",
+      "earlier": {
+        "path": "docs/research/toolchain/go-material-review.md",
+        "line": 1146,
+        "quote": "larger arrays bucket on a randomized maphash then still compare equality inside each bucket",
+        "says": "Hash bucketing might create false duplicates."
+      },
+      "later": {
+        "path": "docs/research/toolchain/go-material-review.md",
+        "line": 1146,
+        "quote": "do not report hash collision as acceptance bypass",
+        "says": "Equality recheck retained."
+      },
+      "guidance": "No jsonschema duplicate bypass from hash collisions."
+    },
+    {
+      "id": "corr.evidence-handling.pgx-commit-hash",
+      "kind": "narrowed",
+      "risk": "low",
+      "earlier": {
+        "path": "docs/research/assessment-evidence/pgx-binding-boundaries.md",
+        "line": 3,
+        "quote": "pgx v5.11.0 commit5e583fa7aabfa88b796292f849fc9d7d75ac159d6",
+        "says": "Pin commit hash with a trailing 6."
+      },
+      "later": {
+        "path": "docs/research/assessment-evidence/pgx-binding-boundaries.md",
+        "line": 47,
+        "quote": "the introductory prose above had an erroneous trailing6",
+        "says": "Correct origin is 5e583fa7aabfa88b796292f849fc9d7d75ac159d."
+      },
+      "guidance": "Use 5e583fa7aabfa88b796292f849fc9d7d75ac159d as the pgx v5.11.0 pin."
+    },
+    {
+      "id": "corr.evidence-handling.pgx-int-testgap",
+      "kind": "narrowed",
+      "risk": "medium",
+      "earlier": {
+        "path": "docs/research/assessment-evidence/pgx-binding-boundaries.md",
+        "line": 308,
+        "quote": "They do not enumerate every narrowing rejection, architecture or failed-scan reuse condition.",
+        "says": "Generated int tests lack narrowing-rejection cases."
+      },
+      "later": {
+        "path": "docs/research/assessment-evidence/pgx-binding-boundaries.md",
+        "line": 429,
+        "quote": "the wider repository does have selected rejection oracles",
+        "says": "query_test.go:704-984 supplies out-of-range and negative-to-unsigned rejection cases."
+      },
+      "guidance": "pgx does test selected integer narrowing rejection; do not claim that coverage is missing."
+    },
+    {
+      "id": "corr.evidence-handling.pgx-interval-annotation",
+      "kind": "reversed",
+      "risk": "low",
+      "earlier": {
+        "path": "docs/research/assessment-evidence/pgx-binding-boundaries.md",
+        "line": 217,
+        "quote": "converts duration using a fixed30-day month, then multiplies to nanoseconds without an explicit overflow check",
+        "says": "Final corrected text; an initial draft had claimed a nanosecond-capacity check."
+      },
+      "later": {
+        "path": "docs/research/assessment-evidence/pgx-binding-boundaries.md",
+        "line": 219,
+        "quote": "initial interval annotation incorrectly described a nanosecond-capacity check",
+        "says": "No capacity check exists; arithmetic only."
+      },
+      "guidance": "pgx interval-to-duration conversion has no overflow check and uses a fixed 30-day month."
+    },
+    {
+      "id": "corr.evidence-handling.pgx-ltree-reachability",
+      "kind": "narrowed",
+      "risk": "medium",
+      "earlier": {
+        "path": "docs/research/assessment-evidence/pgx-binding-boundaries.md",
+        "line": 121,
+        "quote": "index src[0] without their own nil/empty-length guard",
+        "says": "ltree binary scanners index without a length guard."
+      },
+      "later": {
+        "path": "docs/research/assessment-evidence/pgx-binding-boundaries.md",
+        "line": 126,
+        "quote": "The source precondition remains real at that method boundary but ordinary application reachability is unestablished.",
+        "says": "No production LtreeCodec registration; ordinary paths do not reach the scanners."
+      },
+      "guidance": "Do not report the ltree index as reachable without a registration path."
+    },
+    {
+      "id": "corr.evidence-handling.pgx-numeric-metadata",
+      "kind": "narrowed",
+      "risk": "low",
+      "earlier": {
+        "path": "docs/research/assessment-evidence/pgx-binding-boundaries.md",
+        "line": 384,
+        "quote": "Column metadata's suggested Numeric scan type is float64",
+        "says": "Numeric metadata suggests lossy float."
+      },
+      "later": {
+        "path": "docs/research/assessment-evidence/pgx-binding-boundaries.md",
+        "line": 384,
+        "quote": "metadata suggestions do not establish lossless value conversion",
+        "says": "Actual default row conversion uses string; Go1.27 adds a direct scan path (386)."
+      },
+      "guidance": "Inspect actual conversion, not metadata suggestions, when judging decimal precision."
+    },
+    {
+      "id": "corr.evidence-handling.pgx-rollback-oracle",
+      "kind": "narrowed",
+      "risk": "medium",
+      "earlier": {
+        "path": "docs/research/assessment-evidence/pgx-binding-boundaries.md",
+        "line": 356,
+        "quote": "A failed final read could satisfy that last assertion without establishing absence of the inserted row.",
+        "says": "Native batch rollback test has a zero-value bypass."
+      },
+      "later": {
+        "path": "docs/research/assessment-evidence/pgx-binding-boundaries.md",
+        "line": 391,
+        "quote": "do not generalize that weakness to all rollback testing",
+        "says": "stdlib transaction test checks Rollback, Scan error and exact counts."
+      },
+      "guidance": "The weakness is specific to one batch example; pgx stdlib rollback testing is strong."
+    },
+    {
+      "id": "corr.evidence-handling.pgx-rownext-oracles",
+      "kind": "narrowed",
+      "risk": "low",
+      "earlier": {
+        "path": "docs/research/assessment-evidence/pgx-binding-boundaries.md",
+        "line": 73,
+        "quote": "empty successful rows would avoid the advertised value checks",
+        "says": "Row-loop-only assertions are vacuous for empty results."
+      },
+      "later": {
+        "path": "docs/research/assessment-evidence/pgx-binding-boundaries.md",
+        "line": 330,
+        "quote": "supplies contrary positive evidence to earlier zero-row oracle gaps",
+        "says": "Pipeline, query and value tests check exact row counts and terminal status."
+      },
+      "guidance": "Cite specific weak oracles, not a blanket claim that pgx tests lack cardinality checks."
+    },
+    {
+      "id": "corr.evidence-handling.pgx-template-imports",
+      "kind": "narrowed",
+      "risk": "low",
+      "earlier": {
+        "path": "docs/research/assessment-evidence/pgx-binding-boundaries.md",
+        "line": 160,
+        "quote": "Source discrepancy means the template alone does not establish reproducible regeneration",
+        "says": "Template imports differ from checked-in generated tests, questioning regeneration."
+      },
+      "later": {
+        "path": "docs/research/assessment-evidence/pgx-binding-boundaries.md",
+        "line": 174,
+        "quote": "Therefore the stale template import list is not evidence that the documented whole generation pipeline fails",
+        "says": "Rakefile runs goimports after ERB, which repairs imports."
+      },
+      "guidance": "The template import mismatch is not a broken generation pipeline."
+    },
+    {
+      "id": "corr.evidence-handling.pgx-tsvector-registration",
+      "kind": "reversed",
+      "risk": "low",
+      "earlier": {
+        "path": "docs/research/assessment-evidence/pgx-binding-boundaries.md",
+        "line": 315,
+        "quote": "Exact default registration search confirms TSVectorOID in pgtype.go:99",
+        "says": "Corrected text; a draft had said the registration search was negative."
+      },
+      "later": {
+        "path": "docs/research/assessment-evidence/pgx-binding-boundaries.md",
+        "line": 318,
+        "quote": "an initial draft sentence incorrectly described the registration search as negative before its output was inspected",
+        "says": "Default tsvector and array registration exist."
+      },
+      "guidance": "tsvector has a default registered codec in pgx; there is no negative registration finding."
+    },
+    {
+      "id": "corr.evidence-handling.pgx-typed-nil-null",
+      "kind": "narrowed",
+      "risk": "low",
+      "earlier": {
+        "path": "docs/research/assessment-evidence/pgx-binding-boundaries.md",
+        "line": 440,
+        "quote": "its older v5 migration statement that all typed nils mean NULL",
+        "says": "Changelog: all typed nils become NULL."
+      },
+      "later": {
+        "path": "docs/research/assessment-evidence/pgx-binding-boundaries.md",
+        "line": 433,
+        "quote": "bounding the simplistic assumption that all nil Go values become SQL NULL",
+        "says": "Custom nil Valuers produce non-NULL empty objects/arrays."
+      },
+      "guidance": "Typed nil handling depends on the Valuer; do not assume NULL."
+    },
+    {
+      "id": "corr.evidence-handling.pgx-uint64-sql-path",
+      "kind": "narrowed",
+      "risk": "medium",
+      "earlier": {
+        "path": "docs/research/assessment-evidence/pgx-binding-boundaries.md",
+        "line": 294,
+        "quote": "scans uint64 then unconditionally converts to int64",
+        "says": "uint64 values may wrap to int64 via SQL decode."
+      },
+      "later": {
+        "path": "docs/research/assessment-evidence/pgx-binding-boundaries.md",
+        "line": 299,
+        "quote": "The ordinary database/sql row adapter must not be assumed to use Uint64Codec.DecodeDatabaseSQLValue",
+        "says": "stdlib Rows uses a string default for XID8."
+      },
+      "guidance": "The int64 conversion is reachable only via the sql.Scanner adapter path, not ordinary database/sql rows."
+    },
+    {
+      "id": "corr.evidence-handling.retryablehttp-redaction",
+      "kind": "narrowed",
+      "risk": "low",
+      "earlier": {
+        "path": "docs/research/assessment-evidence/continuation-exhaustion.md",
+        "line": 421,
+        "quote": "Library password-only URL redaction is qualified by the actual application disabling that logger.",
+        "says": "retryablehttp redacts password-only URLs, qualified because OpenFGA disables that logger."
+      },
+      "later": {
+        "path": "docs/research/assessment-evidence/continuation-exhaustion.md",
+        "line": 597,
+        "quote": "not a complete release history",
+        "says": "Changelog attributes the redaction repair to 0.7.7 but stops there despite the v0.7.8 pin."
+      },
+      "guidance": "Library-level redaction does not describe what OpenFGA logs; check application logger config."
+    },
+    {
+      "id": "corr.evidence-handling.select-end-event",
+      "kind": "narrowed",
+      "risk": "high",
+      "earlier": {
+        "path": "docs/research/toolchain/go-material-review.md",
+        "line": 2019,
+        "quote": "End event, channel closure, stream Err, HTTP success and whole-data evidence remain distinct.",
+        "says": "Completion signals listed as distinct, default reader unread."
+      },
+      "later": {
+        "path": "docs/research/toolchain/go-material-review.md",
+        "line": 2023,
+        "quote": "Decoder EOF returns nil without requiring an End event",
+        "says": "Stream can close with nil error without an End event."
+      },
+      "guidance": "Require an observed End event for completeness."
+    },
+    {
+      "id": "corr.evidence-handling.select-missing-body",
+      "kind": "reversed",
+      "risk": "medium",
+      "earlier": {
+        "path": "docs/research/toolchain/go-material-review.md",
+        "line": 1749,
+        "quote": "SelectObjectContent",
+        "says": "Generated Select handler only assigns an empty output (looks like no result stream)."
+      },
+      "later": {
+        "path": "docs/research/toolchain/go-material-review.md",
+        "line": 2025,
+        "quote": "this **resolves/rejects any missing-result/body inference from the generated Select response deserializer alone**",
+        "says": "Event middleware installs the stream reader."
+      },
+      "guidance": "Select results are delivered via the eventstream middleware."
+    },
+    {
+      "id": "corr.evidence-handling.typed-nil-assertion",
+      "kind": "narrowed",
+      "risk": "low",
+      "earlier": {
+        "path": "docs/research/toolchain/go-material-review.md",
+        "line": 429,
+        "quote": "Assertion wrappers then iterate no entries and return false without emitting a testing error.",
+        "says": "Typed-nil assertion returns false."
+      },
+      "later": {
+        "path": "docs/research/toolchain/go-material-review.md",
+        "line": 425,
+        "quote": "Therefore typed-nil success returning false does not by itself make this caller fail or skip validation",
+        "says": "Caller ignores the boolean."
+      },
+      "guidance": "Misleading return contract only."
+    },
+    {
+      "id": "corr.evidence-handling.uploadpart-checksum-reachability",
+      "kind": "narrowed",
+      "risk": "low",
+      "earlier": {
+        "path": "docs/research/toolchain/go-material-review.md",
+        "line": 1945,
+        "quote": "Exact checksum-package implementation observations therefore cannot simply be attributed to this operation",
+        "says": "UploadPart uses an S3-local helper so checksum findings may not apply."
+      },
+      "later": {
+        "path": "docs/research/toolchain/go-material-review.md",
+        "line": 1949,
+        "quote": "The S3-local setup **does instantiate the same internalChecksum.SetupInputContext/ComputeInputPayloadChecksum/AddInputChecksumTrailer**",
+        "says": "Same components are reached; only trailer ordering differs."
+      },
+      "guidance": "Checksum package findings apply to UploadPart/PutObject, with different trailer placement."
+    },
+    {
+      "id": "corr.evidence.bulk-settags-confirmed",
+      "kind": "confirmed-later",
+      "risk": "low",
+      "earlier": {
+        "path": "docs/research/security-landscape/deep-review/zap-history.md",
+        "line": 11,
+        "quote": "Unlike individual operations, an ordinary caught DB failure can leave cache/event state ahead of persisted state; source-only until fault fixture.",
+        "says": "Bulk setTags divergence is source-only."
+      },
+      "later": {
+        "path": "docs/research/security-landscape/deep-review/zap-history-lab.md",
+        "line": 17,
+        "quote": "This upgrades the history-tag cache divergence to **installed object behavior under explicit DB-interface fault injection**.",
+        "says": "Confirmed under injected DB failure; HTTP-history tags only."
+      },
+      "guidance": "Divergence confirmed for history tags; no alert-tag or report impact established."
+    },
+    {
+      "id": "corr.evidence.capture-finalization-confirmed",
+      "kind": "confirmed-later",
+      "risk": "medium",
+      "earlier": {
+        "path": "docs/research/security-landscape/deep-review/nbret-capture.md",
+        "line": 15,
+        "quote": "This is a source-predicted finalization recovery gap, pending synthetic validation.",
+        "says": "Finalization recovery gap is a source prediction."
+      },
+      "later": {
+        "path": "docs/research/security-landscape/deep-review/nbret-capture.md",
+        "line": 35,
+        "quote": "first finish rejected on injected detach error; second finish resolved",
+        "says": "Confirmed with stub CDP: retry resolves without evidence file."
+      },
+      "guidance": "Finalization gap is component-confirmed; real CDP failure frequency unknown."
+    },
+    {
+      "id": "corr.evidence.deepdiff-unprocessed-narrowed",
+      "kind": "narrowed",
+      "risk": "medium",
+      "earlier": {
+        "path": "docs/research/assessment-evidence/deep-deepdiff.md",
+        "line": 33,
+        "quote": "Explicit `unprocessed` reporting contradicts a blanket claim that extraction failure always means equality.",
+        "says": "Extraction failures surface as unprocessed rather than equality."
+      },
+      "later": {
+        "path": "docs/research/assessment-evidence/deep-deepdiff.md",
+        "line": 123,
+        "quote": "is a positive boundary for exceptions reaching that handler",
+        "says": "Slot getters raising AttributeError are filtered by hasattr and silently omitted, yielding {}."
+      },
+      "guidance": "An empty DeepDiff can hide unreadable slot fields; require an independent state schema/completeness check."
+    },
+    {
+      "id": "corr.evidence.initiator-hash-confirmed",
+      "kind": "confirmed-later",
+      "risk": "medium",
+      "earlier": {
+        "path": "docs/research/security-landscape/deep-review/nbret-discovery.md",
+        "line": 41,
+        "quote": "this concern is source-only pending synthetic mutation test",
+        "says": "Initiator misattribution on changed bytes is source-only."
+      },
+      "later": {
+        "path": "docs/research/security-landscape/deep-review/nbret-discovery.md",
+        "line": 49,
+        "quote": "Actual buildStructure indexed deliberately changed saved bytes despite supplied old SHA",
+        "says": "Confirmed by the structure-identity lab; coverage path rejects mismatch."
+      },
+      "guidance": "Initiator path inconsistency is component-confirmed."
+    },
+    {
+      "id": "corr.evidence.model-partial-closed",
+      "kind": "status-outdated",
+      "risk": "low",
+      "earlier": {
+        "path": "docs/research/security-landscape/deep-review/zap-alert-persistence.md",
+        "line": 65,
+        "quote": "Model.java155–254 read (file remains **partial**,631lines total)",
+        "says": "Model.java only partially read."
+      },
+      "later": {
+        "path": "docs/research/security-landscape/deep-review/zap-history.md",
+        "line": 59,
+        "quote": "Model1–631 is now complete",
+        "says": "Model.java fully read."
+      },
+      "guidance": "Model.java is fully read."
+    },
+    {
+      "id": "corr.evidence.readme-history-concerns",
+      "kind": "confirmed-later",
+      "risk": "low",
+      "earlier": {
+        "path": "docs/research/security-landscape/deep-review/README.md",
+        "line": 65,
+        "quote": "these are source concerns pending default table and fault validation",
+        "says": "History empty-body and tag-cache issues are source concerns."
+      },
+      "later": {
+        "path": "docs/research/security-landscape/deep-review/README.md",
+        "line": 69,
+        "quote": "now separately validates eighteen controls including injected history-tag DB failures",
+        "says": "History lab validated them."
+      },
+      "guidance": "Deep-review README checkpoints are historical; read the linked walkthroughs for current status."
+    },
+    {
+      "id": "corr.evidence.sarif-builder-confirmed",
+      "kind": "confirmed-later",
+      "risk": "high",
+      "earlier": {
+        "path": "docs/research/security-landscape/deep-review/zap-reports.md",
+        "line": 29,
+        "quote": "**Builder source finding only:** follow report support, JSON template and tests before asserting exact artifact contents or downstream exploitability.",
+        "says": "SARIF secret preservation is a builder-level source finding."
+      },
+      "later": {
+        "path": "docs/research/security-landscape/deep-review/zap-reports.md",
+        "line": 43,
+        "quote": "Follow-up now validates selected JSON serialization: two identical artifacts, parsed locally, preserve the same fields and mask Authorization.",
+        "says": "Confirmed in the serialized artifact."
+      },
+      "guidance": "SARIF artifacts preserve cookies/API keys/bodies; only Authorization is masked."
+    },
+    {
+      "id": "corr.evidence.sqltablealert-mismatch-narrowed",
+      "kind": "narrowed",
+      "risk": "medium",
+      "earlier": {
+        "path": "docs/research/security-landscape/deep-review/zap-alert-persistence.md",
+        "line": 37,
+        "quote": "This reveals a source mismatch in alternate SqlTableAlert.update300–301: it binds16=alertId and17=nodeName.",
+        "says": "SqlTableAlert update binds parameters in the wrong positions."
+      },
+      "later": {
+        "path": "docs/research/security-landscape/deep-review/zap-alert-persistence.md",
+        "line": 65,
+        "quote": "This narrows the positional mismatch to alternate experimental SQL route; no default-path failure inferred.",
+        "says": "Default ZAP uses ParosTableAlert with correct positions; mismatch only affects experimental DbSQL."
+      },
+      "guidance": "Do not attribute the alert-update mismatch to default ZAP or NBRET."
+    },
+    {
+      "id": "corr.evidence.zap-fatal-test-defect-scoped",
+      "kind": "narrowed",
+      "risk": "low",
+      "earlier": {
+        "path": "docs/research/assessment-evidence/grpc-logging-evidence.md",
+        "line": 165,
+        "quote": "Consequently those two assertions do not fail when the stub",
+        "says": "Fatal adapter tests are vacuous."
+      },
+      "later": {
+        "path": "docs/research/assessment-evidence/grpc-logging-evidence.md",
+        "line": 185,
+        "quote": "the defect in global_test.go does not imply fatal behavior is untested across the project",
+        "says": "sugar_test correctly asserts exit."
+      },
+      "guidance": "Only two global_test assertions are vacuous; fatal exit is tested elsewhere."
+    },
+    {
+      "id": "corr.identity-ad.operator-collision-narrowed",
+      "kind": "narrowed",
+      "risk": "medium",
+      "earlier": {
+        "path": "docs/research/toolchain/identity-analysis.md",
+        "line": 31,
+        "quote": "SortedMatchExpressions sorts by key/operator but does not encode the operator into the digest",
+        "says": "equals and equals_ignore_case can share a cache key, suggesting misresolution."
+      },
+      "later": {
+        "path": "docs/research/toolchain/identity-analysis.md",
+        "line": 19,
+        "quote": "do not claim the operator-pair scenario is reachable through schema-validated generic uploads",
+        "says": "The upload schema admits only equals, so the collision is not reachable through validated uploads."
+      },
+      "guidance": "Do not report the operator digest collision as reachable through BloodHound's validated upload path."
+    },
+    {
+      "id": "corr.interception-proxy.addon-forwarding-confirmed",
+      "kind": "confirmed-later",
+      "risk": "medium",
+      "earlier": {
+        "path": "docs/research/toolchain/source-notes.md",
+        "line": 21,
+        "quote": "still queued",
+        "says": "Whether a request is forwarded after an addon error depends on the caller; still queued."
+      },
+      "later": {
+        "path": "docs/research/toolchain/findings.md",
+        "line": 7,
+        "quote": "An ordinary addon exception after mutation can leave a request forwarded",
+        "says": "A real loopback run confirmed the request is forwarded after the exception."
+      },
+      "guidance": "Treat forwarding after an addon exception as lab-confirmed, not open."
+    },
+    {
+      "id": "corr.interception-proxy.content-length-mismatch",
+      "kind": "narrowed",
+      "risk": "medium",
+      "earlier": {
+        "path": "docs/research/toolchain/go-material-review.md",
+        "line": 1083,
+        "quote": "Neither establishes equality between declared length and bytes ultimately transmitted.",
+        "says": "Smithy does not check declared vs transmitted length."
+      },
+      "later": {
+        "path": "docs/research/toolchain/go-material-review.md",
+        "line": 979,
+        "quote": "Short and excess bodies therefore produce an error in this HTTP/1 writer rather than silently accepting arbitrary mismatches.",
+        "says": "HTTP/1 writer errors on mismatch, after bytes were written."
+      },
+      "guidance": "Length mismatches error at transport but may have partial remote effect."
+    },
+    {
+      "id": "corr.interception-proxy.early-close-reuse",
+      "kind": "reversed",
+      "risk": "low",
+      "earlier": {
+        "path": "docs/research/toolchain/go-material-review.md",
+        "line": 895,
+        "quote": "These are meaningful counterexamples to the old blanket claim that an unread closed body can never reuse a connection.",
+        "says": "Old claim: unread closed body never reuses a connection."
+      },
+      "later": {
+        "path": "docs/research/toolchain/go-material-review.md",
+        "line": 951,
+        "quote": "may asynchronously drain at most256KiB plus a probe and wait50ms",
+        "says": "Bounded drain allows reuse."
+      },
+      "guidance": "Closed bodies may be drained (≤256KiB) and reused."
+    },
+    {
+      "id": "corr.interception-proxy.header-injection",
+      "kind": "narrowed",
+      "risk": "medium",
+      "earlier": {
+        "path": "docs/research/toolchain/go-material-review.md",
+        "line": 1467,
+        "quote": "store string values directly in the map without local newline validation or canonicalization",
+        "says": "SDK header binding has no newline validation."
+      },
+      "later": {
+        "path": "docs/research/toolchain/go-material-review.md",
+        "line": 961,
+        "quote": "This narrows header-injection concerns based only on SDK Header.Set accepting input",
+        "says": "Transport validates every outgoing header before connecting."
+      },
+      "guidance": "No header injection claim via standard transport; custom RoundTrippers differ."
+    },
+    {
+      "id": "corr.interception-proxy.huffman-verified",
+      "kind": "status-outdated",
+      "risk": "low",
+      "earlier": {
+        "path": "docs/research/toolchain/proxy-http2.md",
+        "line": 17,
+        "quote": "is **partial, only1–180 of4742 read**",
+        "says": "Huffman table only partly read; no full correctness."
+      },
+      "later": {
+        "path": "docs/research/toolchain/proxy-http2.md",
+        "line": 9,
+        "quote": "1–4742 is now fully read in contiguous bounded outputs",
+        "says": "All 4096 transitions checked by an independent trie oracle."
+      },
+      "guidance": "The HPACK Huffman table was verified in full."
+    },
+    {
+      "id": "corr.interception-proxy.nopcloser-leak",
+      "kind": "narrowed",
+      "risk": "low",
+      "earlier": {
+        "path": "docs/research/toolchain/go-material-review.md",
+        "line": 1411,
+        "quote": "Replacing Body with NopCloser(MultiReader(...)) loses direct forwarding of Close to the original body.",
+        "says": "Possible resource leak from lost Close."
+      },
+      "later": {
+        "path": "docs/research/toolchain/go-material-review.md",
+        "line": 1419,
+        "quote": "missing original Close is not by itself proof of a retained TCP connection",
+        "says": "Full drain allows reuse."
+      },
+      "guidance": "Do not claim a connection leak from the NopCloser wrapper alone."
+    },
+    {
+      "id": "corr.interception-proxy.recursion-detection",
+      "kind": "narrowed",
+      "risk": "low",
+      "earlier": {
+        "path": "docs/research/toolchain/go-material-review.md",
+        "line": 141,
+        "quote": "the original recursion middleware announcement says it avoids Lambda recursive invocation",
+        "says": "Changelog: recursion middleware avoids recursive invocation."
+      },
+      "later": {
+        "path": "docs/research/toolchain/go-material-review.md",
+        "line": 369,
+        "quote": "it does not locally detect a recursive call graph or reject any request",
+        "says": "Only forwards a trace header."
+      },
+      "guidance": "Do not cite RecursionDetection as a loop detector."
+    },
+    {
+      "id": "corr.interception-proxy.textproto-space-keys",
+      "kind": "narrowed",
+      "risk": "low",
+      "earlier": {
+        "path": "docs/research/toolchain/go-material-review.md",
+        "line": 783,
+        "quote": "the comment that net/http rejects them is broader than the previously read HTTP response-parser path",
+        "says": "Comment says net/http rejects space-bearing header keys."
+      },
+      "later": {
+        "path": "docs/research/toolchain/go-material-review.md",
+        "line": 803,
+        "quote": "field names containing spaces are retained without canonicalization",
+        "says": "Inbound parser keeps them."
+      },
+      "guidance": "Response parsing tolerates spaces in field names."
+    },
+    {
+      "id": "corr.interception-proxy.zap-proxy-cache-caller",
+      "kind": "narrowed",
+      "risk": "high",
+      "earlier": {
+        "path": "docs/research/security-landscape/coverage.md",
+        "line": 78,
+        "quote": "injected history-tag persistence/cache divergence",
+        "says": "History cache divergence observed in component experiment."
+      },
+      "later": {
+        "path": "docs/research/security-landscape/coverage.md",
+        "line": 78,
+        "quote": "do not claim default live-proxy cross-principal impact",
+        "says": "Traced caller is deprecated/unused; no live-proxy impact."
+      },
+      "guidance": "Report only a helper-level divergence, not a live ZAP proxy vulnerability."
+    },
+    {
+      "id": "corr.network-discovery.nsock-assertions-kept",
+      "kind": "narrowed",
+      "risk": "low",
+      "earlier": {
+        "path": "docs/research/toolchain/nsock-flow.md",
+        "line": 49,
+        "quote": "Important qualification to earlier assertion-build questions",
+        "says": "Earlier text questioned whether nsock assertions are compiled out in release builds."
+      },
+      "later": {
+        "path": "docs/research/toolchain/nsock-flow.md",
+        "line": 49,
+        "quote": "deliberately undefine NDEBUG to keep assertions active",
+        "says": "nsock.h undefines NDEBUG so assertions stay active."
+      },
+      "guidance": "Do not presume nsock assertions are removed in release builds."
+    },
+    {
+      "id": "corr.network-discovery.timing-complete",
+      "kind": "status-outdated",
+      "risk": "low",
+      "earlier": {
+        "path": "docs/research/toolchain/discovery-timing.md",
+        "line": 13,
+        "quote": "File remains partial",
+        "says": "File remains partial."
+      },
+      "later": {
+        "path": "docs/research/toolchain/discovery-timing.md",
+        "line": 5,
+        "quote": "Prior partial-range text below is historical",
+        "says": "Now complete; prior partial text is historical."
+      },
+      "guidance": "discovery-timing.md is complete; ignore earlier partial-status lines."
+    },
+    {
+      "id": "corr.operations.openfga-fixture-cleanup",
+      "kind": "narrowed",
+      "risk": "low",
+      "earlier": {
+        "path": "docs/research/assessment-evidence/continuation-exhaustion.md",
+        "line": 277,
+        "quote": "Consequently running their seemingly isolated unit tests would still invoke cleanup dependencies.",
+        "says": "Package tests trigger container cleanup."
+      },
+      "later": {
+        "path": "docs/research/assessment-evidence/continuation-exhaustion.md",
+        "line": 281,
+        "quote": "This narrows the earlier cleanup concern",
+        "says": "Containers use fresh ULID names; cleanup targets owned resources."
+      },
+      "guidance": "Cleanup targets generated containers, but those tests still provision Docker infrastructure and should not be run casually."
+    },
+    {
+      "id": "corr.providers.google-architecture-vs-tin",
+      "kind": "narrowed",
+      "risk": "high",
+      "earlier": {
+        "path": "docs/research/cybersecurity-firms/google-architecture-boundary.md",
+        "line": 9,
+        "quote": "The page describes AI verdicts triggering response playbooks and false positives closing cases.",
+        "says": "Google SecOps architecture implies AI verdicts drive response playbooks and auto-close false positives."
+      },
+      "later": {
+        "path": "docs/research/cybersecurity-firms/google-cloud-security.md",
+        "line": 23,
+        "quote": "This manual does not establish automatic endpoint containment or full incident recovery",
+        "says": "The TIN feature manual only documents disposition, confidence, explanation, timeline and suggested next steps."
+      },
+      "guidance": "Treat TIN as an investigation/recommendation agent; any automated closure or response requires separately verified configuration."
+    },
+    {
+      "id": "corr.providers.google-tin-doc-dates",
+      "kind": "narrowed",
+      "risk": "low",
+      "earlier": {
+        "path": "docs/research/cybersecurity-firms/google-cloud-security.md",
+        "line": 15,
+        "quote": "captured with an update date of 2026-10-15",
+        "says": "TIN manual dated Oct 15."
+      },
+      "later": {
+        "path": "docs/research/cybersecurity-firms/google-cloud-security.md",
+        "line": 48,
+        "quote": "English main content is updated October 13",
+        "says": "English manual Oct 13 vs Japanese translation Oct 15."
+      },
+      "guidance": "Cite the language-specific date of the source used."
+    },
+    {
+      "id": "corr.providers.lac-log-volume",
+      "kind": "narrowed",
+      "risk": "low",
+      "earlier": {
+        "path": "docs/research/cybersecurity-firms/service-artifact-boundaries.md",
+        "line": 9,
+        "quote": "The English page says 2.5 billion logs/day",
+        "says": "JSOC processes 2.5B logs/day."
+      },
+      "later": {
+        "path": "docs/research/cybersecurity-firms/lac.md",
+        "line": 9,
+        "quote": "16B daily logs/alerts",
+        "says": "Newer Japanese material reports 16B logs/alerts (2025 actuals)."
+      },
+      "guidance": "Cite the dated source with any volume; they are not interchangeable."
+    },
+    {
+      "id": "corr.providers.microsoft-dossier-status",
+      "kind": "status-outdated",
+      "risk": "low",
+      "earlier": {
+        "path": "docs/research/cybersecurity-firms/microsoft-phishing-agent.md",
+        "line": 3,
+        "quote": "company history, economics and the full portfolio remain pending",
+        "says": "Microsoft dossier incomplete."
+      },
+      "later": {
+        "path": "docs/research/cybersecurity-firms/microsoft.md",
+        "line": 5,
+        "quote": "traces the January 2002 security engineering initiative",
+        "says": "Microsoft dossier now covers history/portfolio, with security revenue still unresolved."
+      },
+      "guidance": "Read microsoft.md for portfolio context."
+    },
+    {
+      "id": "corr.providers.ms-privacy-retention-conflict",
+      "kind": "narrowed",
+      "risk": "medium",
+      "earlier": {
+        "path": "docs/research/cybersecurity-firms/microsoft-phishing-agent.md",
+        "line": 38,
+        "quote": "one section gives 90-day evaluation retention and deletion within 30 days after opt-out",
+        "says": "Shared data retained 90 days."
+      },
+      "later": {
+        "path": "docs/research/cybersecurity-firms/microsoft-phishing-agent.md",
+        "line": 38,
+        "quote": "a later section permits previously shared data for up to 180 days",
+        "says": "Shared data may be retained up to 180 days."
+      },
+      "guidance": "Neither figure is authoritative; confirm contractually before stating Security Copilot shared-data retention."
+    },
+    {
+      "id": "corr.providers.splunk-training-consent",
+      "kind": "confirmed-later",
+      "risk": "low",
+      "earlier": {
+        "path": "docs/research/cybersecurity-firms/cisco-splunk.md",
+        "line": 17,
+        "quote": "Historical 2024 terms mentioning improvement/training cannot substitute for current feature-specific terms.",
+        "says": "Current training use unknown."
+      },
+      "later": {
+        "path": "docs/research/cybersecurity-firms/splunk-triage-controls.md",
+        "line": 45,
+        "quote": "This narrows the earlier unknown: the assistant has a documented training-consent control.",
+        "says": "Training/fine-tuning is off by default with opt-in; opt-out does not delete."
+      },
+      "guidance": "Training consent is documented; inference retention and Triage-specific paths remain unknown."
+    },
+    {
+      "id": "corr.providers.splunk-triage-frontier-only",
+      "kind": "narrowed",
+      "risk": "medium",
+      "earlier": {
+        "path": "docs/research/cybersecurity-firms/splunk-guided-response.md",
+        "line": 15,
+        "quote": "offers Frontier versus Splunk-hosted model usage according to compliance needs",
+        "says": "Administrators can choose Splunk-hosted models for compliance."
+      },
+      "later": {
+        "path": "docs/research/cybersecurity-firms/splunk-triage-controls.md",
+        "line": 17,
+        "quote": "this manual supports only frontier models for Triage",
+        "says": "Triage agent ignores the hosted-model choice; incompatible deployments must leave it off."
+      },
+      "guidance": "Do not assume the general model setting governs Triage data routing."
+    },
+    {
+      "id": "corr.providers.takumi-domestic-inference",
+      "kind": "narrowed",
+      "risk": "high",
+      "earlier": {
+        "path": "docs/research/cybersecurity-firms/takumi-domestic-inference-announcement.md",
+        "line": 5,
+        "quote": "It asserts assessment inputs remain in Japan under the option.",
+        "says": "Announcement suggests Japan-only processing for Takumi."
+      },
+      "later": {
+        "path": "docs/research/cybersecurity-firms/gmo-flatt-security.md",
+        "line": 61,
+        "quote": "It does not replace the default inference boundary as of October 17.",
+        "says": "Default service still may infer outside Japan; the paid option starts 2026-11-02 if delivered."
+      },
+      "guidance": "Assume overseas inference for Takumi unless a signed domestic-inference arrangement is in place and active."
+    },
+    {
+      "id": "corr.reporting.context-filter-resolved",
+      "kind": "confirmed-later",
+      "risk": "high",
+      "earlier": {
+        "path": "docs/research/security-landscape/deep-review/zap-reports.md",
+        "line": 11,
+        "quote": "Context exclusions require inspecting Context.isIncluded semantics before claim.",
+        "says": "Unclear whether report context filter honors exclusions."
+      },
+      "later": {
+        "path": "docs/research/security-landscape/deep-review/zap-context.md",
+        "line": 17,
+        "quote": "Thus context exclusion and inScope are not applied by this report filter.",
+        "says": "Report filter ignores exclusions and inScope (lab-confirmed)."
+      },
+      "guidance": "Context exclusions do not remove alerts from ZAP reports."
+    },
+    {
+      "id": "corr.reporting.defectdojo-reimport-complete",
+      "kind": "status-outdated",
+      "risk": "low",
+      "earlier": {
+        "path": "docs/research/toolchain/reporting-retest.md",
+        "line": 21,
+        "quote": "remainder unread",
+        "says": "Reimport remainder unread; no complete transactional audit."
+      },
+      "later": {
+        "path": "docs/research/toolchain/reporting-retest.md",
+        "line": 39,
+        "quote": "1–1508 at the existing DefectDojo pin is now complete",
+        "says": "The reimport file is complete through line 1508."
+      },
+      "guidance": "The DefectDojo reimport source was fully read; earlier 'unread' text is historical."
+    },
+    {
+      "id": "corr.reporting.exit-reset-not-established",
+      "kind": "reversed",
+      "risk": "medium",
+      "earlier": {
+        "path": "docs/research/security-landscape/deep-review/zap-reports.md",
+        "line": 356,
+        "quote": "No explicit reset of static exit override here; separate ExtensionAutomation CLI reset/consumption previously read remains relevant.",
+        "says": "Implies the CLI resets the exit override."
+      },
+      "later": {
+        "path": "docs/research/security-landscape/deep-review/zap-reports.md",
+        "line": 382,
+        "quote": "should not imply an established automatic reset",
+        "says": "No internal reset exists."
+      },
+      "guidance": "Assume the exit override persists across plans in one process."
+    },
+    {
+      "id": "corr.reporting.filter-fail-open-confirmed",
+      "kind": "confirmed-later",
+      "risk": "medium",
+      "earlier": {
+        "path": "docs/research/security-landscape/deep-review/zap-reports.md",
+        "line": 13,
+        "quote": "Source-only concern: report selection can fail open at this boundary; no injected-failure report experiment yet.",
+        "says": "Fail-open is a source concern."
+      },
+      "later": {
+        "path": "docs/research/security-landscape/deep-review/zap-report-filter-lab.md",
+        "line": 7,
+        "quote": "Explicit risk-getter fault returns the original root with both instances.",
+        "says": "Confirmed under injected fault."
+      },
+      "guidance": "Fail-open confirmed under injection; target-triggerability unknown."
+    },
+    {
+      "id": "corr.reporting.garak-stale-digest-rebuild",
+      "kind": "narrowed",
+      "risk": "low",
+      "earlier": {
+        "path": "docs/research/assessment-evidence/deep-garak.md",
+        "line": 97,
+        "quote": "Freshness requires choosing a revision deliberately rather than assuming the first embedded summary is current.",
+        "says": "Appended digests leave the first (stale) one selected."
+      },
+      "later": {
+        "path": "docs/research/assessment-evidence/deep-garak.md",
+        "line": 202,
+        "quote": "positive contrary evidence against assuming this tool necessarily leaves the first-stale-digest issue described above",
+        "says": "rebuild_cis strips all stale digests before appending."
+      },
+      "guidance": "The stale-first-digest risk applies to append/rebuild paths other than rebuild_cis."
+    },
+    {
+      "id": "corr.reporting.garak-tags-not-always-live",
+      "kind": "narrowed",
+      "risk": "medium",
+      "earlier": {
+        "path": "docs/research/assessment-evidence/deep-garak.md",
+        "line": 73,
+        "quote": "Historical tag provenance therefore depends on installed code",
+        "says": "garak report tags come from currently installed probe classes."
+      },
+      "later": {
+        "path": "docs/research/assessment-evidence/deep-garak.md",
+        "line": 91,
+        "quote": "obtains metadata from live plugins",
+        "says": "The modern digest prefers embedded plugin-cache metadata; only the AVID export path uses live classes."
+      },
+      "guidance": "Live-plugin tag dependence applies to Report.get_evaluations/AVID export, not the modern digest."
+    },
+    {
+      "id": "corr.reporting.garak-unit-is-outputs-not-prompts",
+      "kind": "narrowed",
+      "risk": "medium",
+      "earlier": {
+        "path": "docs/research/assessment-evidence/framework.md",
+        "line": 30,
+        "quote": "traces evaluation counts (prompt × detector opportunities)",
+        "says": "garak evaluation counts are prompt × detector."
+      },
+      "later": {
+        "path": "docs/research/assessment-evidence/deep-garak.md",
+        "line": 178,
+        "quote": "Thus under multi-output/generation attempts this displayed unit is output/generation count, not distinct prompts.",
+        "says": "The unit is outputs (generations) × detector, not prompts."
+      },
+      "guidance": "Describe garak evaluation counts as output-per-detector judgments, not prompt counts."
+    },
+    {
+      "id": "corr.reporting.nuclei-writer-order-confirmed",
+      "kind": "confirmed-later",
+      "risk": "medium",
+      "earlier": {
+        "path": "docs/research/security-landscape/deep-review/nuclei-output.md",
+        "line": 19,
+        "quote": "This is a source-predicted writer-order effect, not yet runtime-tested.",
+        "says": "Writer-order effect is source-only."
+      },
+      "later": {
+        "path": "docs/research/security-landscape/deep-review/nuclei-output-lab.md",
+        "line": 5,
+        "quote": "Omit-first sink clears shared Request/Response",
+        "says": "Confirmed in component composition test."
+      },
+      "guidance": "Sink order and fail-fast are component-confirmed."
+    },
+    {
+      "id": "corr.reporting.report-propagation-validated",
+      "kind": "confirmed-later",
+      "risk": "medium",
+      "earlier": {
+        "path": "docs/research/security-landscape/deep-review/nbret-scanner.md",
+        "line": 56,
+        "quote": "synthetic reporting propagation is a next lab, not yet runtime validated",
+        "says": "Failed-scan propagation into NBRET reports is unvalidated."
+      },
+      "later": {
+        "path": "docs/research/security-landscape/deep-review/nbret-scanner.md",
+        "line": 54,
+        "quote": "It retains scanner.status=failed in analysis JSON while emitting coverage=no-recorded-gaps.",
+        "says": "The report-state lab confirmed failed scan + no-recorded-gaps + SCAN_FAILED omitted."
+      },
+      "guidance": "The reporting gap is runtime-confirmed with synthetic inputs."
+    },
+    {
+      "id": "corr.reporting.template-boundary-closed",
+      "kind": "status-outdated",
+      "risk": "low",
+      "earlier": {
+        "path": "docs/research/security-landscape/deep-review/zap-reports.md",
+        "line": 329,
+        "quote": "Remaining boundaries: three template snapshots unread",
+        "says": "Template snapshots unread."
+      },
+      "later": {
+        "path": "docs/research/security-landscape/deep-review/zap-reports.md",
+        "line": 342,
+        "quote": "The previous unread-template boundary is superseded by this complete read",
+        "says": "Snapshots fully read."
+      },
+      "guidance": "Template snapshots are read; runtime policy still separate."
+    },
+    {
+      "id": "corr.safety.flagged-operation-reader-map",
+      "kind": "reversed",
+      "risk": "medium",
+      "earlier": {
+        "path": "docs/research/security-landscape/learning-reader-map.md",
+        "line": 40,
+        "quote": "The flagged operation stays stopped; no retry, equivalent fixture or alternate route is authorized by this handoff.",
+        "says": "A specific operation was flagged."
+      },
+      "later": {
+        "path": "docs/research/safety-context/README.md",
+        "line": 33,
+        "quote": "They recorded a conservative stop instruction; they did not recover an exact rejected call.",
+        "says": "Wording overstated."
+      },
+      "guidance": "Keep the stop, drop the implied certainty about a flag."
+    },
+    {
+      "id": "corr.safety.flagged-operation-wording",
+      "kind": "narrowed",
+      "risk": "medium",
+      "earlier": {
+        "path": "docs/research/assessment-evidence/cel-async-boundaries.md",
+        "line": 27,
+        "quote": "The flagged operation remains stopped with no equivalent reproduction.",
+        "says": "Repeated 'flagged operation' wording implies a confirmed safety rejection."
+      },
+      "later": {
+        "path": "docs/research/safety-context/README.md",
+        "line": 33,
+        "quote": "They recorded a conservative stop instruction; they did not recover an exact rejected call.",
+        "says": "No original warning or rejected call was recovered; cause is unknown."
+      },
+      "guidance": "Keep the OpenFGA recovery reproduction stopped, but do not claim a specific policy flag or cause."
+    },
+    {
+      "id": "corr.safety.flagged-operation-wording-2",
+      "kind": "reversed",
+      "risk": "high",
+      "earlier": {
+        "path": "docs/research/security-landscape/coverage.md",
+        "line": 90,
+        "quote": "Flagged operation remains stopped; this continuation performed no new runtime labs.",
+        "says": "An operation was flagged (implies a specific safety system flag)."
+      },
+      "later": {
+        "path": "docs/research/safety-context/README.md",
+        "line": 33,
+        "quote": "Repeated phrases such as “flagged operation” sounded more definite than the evidence.",
+        "says": "No rejected call or warning was recovered; cause unknown."
+      },
+      "guidance": "Treat pauses as stops with unknown cause; keep them stopped but do not assert a specific flagged action."
+    },
+    {
+      "id": "corr.scanners.alert-api-pagination",
+      "kind": "narrowed",
+      "risk": "low",
+      "earlier": {
+        "path": "docs/research/security-landscape/deep-review/zap-control-path.md",
+        "line": 100,
+        "quote": "NBRET uses the legacy core endpoint; its exact selection path is still queued, so do not transfer this pagination conclusion to that endpoint until delegation is traced.",
+        "says": "Legacy core alerts delegation untraced."
+      },
+      "later": {
+        "path": "docs/research/security-landscape/deep-review/zap-control-path.md",
+        "line": 98,
+        "quote": "Correction/closure of the prior open edge: core alerts uses AlertAPI",
+        "says": "Delegation traced; boundary-duplicate pagination remains a prediction needing a receipt."
+      },
+      "guidance": "Core alerts uses AlertAPI; the pagination duplicate is still an unverified prediction."
+    },
+    {
+      "id": "corr.scanners.control-path-real-daemon-needed",
+      "kind": "status-outdated",
+      "risk": "medium",
+      "earlier": {
+        "path": "docs/research/security-landscape/deep-review/zap-control-path.md",
+        "line": 78,
+        "quote": "A real-daemon receipt is still needed to verify interruption timing, worker quiescence and specific exception behavior.",
+        "says": "Interruption timing/quiescence lacks real-daemon evidence."
+      },
+      "later": {
+        "path": "docs/research/security-landscape/deep-review/zap-control-path.md",
+        "line": 108,
+        "quote": "[stop receipt](real-zap-stop-receipt.json) confirms status100 and adapter completed while an in-flight response remained pending",
+        "says": "Real-daemon stop receipt exists (exception behavior still untested)."
+      },
+      "guidance": "Interruption timing is runtime-observed; specific engine exception paths remain source-only."
+    },
+    {
+      "id": "corr.scanners.coverage-unread-labels",
+      "kind": "status-outdated",
+      "risk": "medium",
+      "earlier": {
+        "path": "docs/research/security-landscape/coverage.md",
+        "line": 52,
+        "quote": "compile/execution/match/output remain unread",
+        "says": "Nuclei compile/execution/match/output unread."
+      },
+      "later": {
+        "path": "docs/research/security-landscape/coverage.md",
+        "line": 76,
+        "quote": "Later evidence supersedes only the corresponding historical unread/source-only labels above.",
+        "says": "Later checkpoints traced Nuclei HTTP, execution, output and ZAP reports."
+      },
+      "guidance": "Use the latest checkpoint and deep-review files for current reading state."
+    },
+    {
+      "id": "corr.scanners.filter-exception-scope-gate",
+      "kind": "narrowed",
+      "risk": "medium",
+      "earlier": {
+        "path": "docs/research/security-landscape/deep-review/zap-network.md",
+        "line": 200,
+        "quote": "Therefore optional selection filters are not a fail-closed authorization boundary",
+        "says": "Filter exceptions let nodes through."
+      },
+      "later": {
+        "path": "docs/research/security-landscape/deep-review/zap-network.md",
+        "line": 204,
+        "quote": "Consequently a filter exception does not by itself bypass the independent scope gate.",
+        "says": "Scope check runs before optional filters."
+      },
+      "guidance": "Filter failures do not bypass node scope; scope gaps come from crafted destinations instead."
+    },
+    {
+      "id": "corr.scanners.h2-limits-exist",
+      "kind": "narrowed",
+      "risk": "low",
+      "earlier": {
+        "path": "docs/research/security-landscape/deep-review/zap-network.md",
+        "line": 127,
+        "quote": "No explicit total message-body cap in this file",
+        "says": "H2 adapter has no body cap."
+      },
+      "later": {
+        "path": "docs/research/security-landscape/deep-review/zap-network.md",
+        "line": 129,
+        "quote": "These are affirmative resource controls, contrary to an unqualified no-H2-limits claim.",
+        "says": "Header-list, control-frame and empty-DATA guards exist."
+      },
+      "guidance": "ZAP H2 has resource guards; total body cap remains unestablished."
+    },
+    {
+      "id": "corr.scanners.hostprocess-auth-header-removal",
+      "kind": "narrowed",
+      "risk": "medium",
+      "earlier": {
+        "path": "docs/research/security-landscape/deep-review/zap-control-path.md",
+        "line": 54,
+        "quote": "create active-scanner HttpSender with user-defined authentication header removal",
+        "says": "HostProcess configures authentication header removal on the scanner sender."
+      },
+      "later": {
+        "path": "docs/research/security-landscape/deep-review/zap-control-path.md",
+        "line": 92,
+        "quote": "Correction to any overbroad reading of HostProcess's setter: auth header removal is documented for challenge handling, not unconditional header stripping.",
+        "says": "Removal applies to challenge handling only."
+      },
+      "guidance": "Do not claim ZAP strips auth headers from all scanner requests."
+    },
+    {
+      "id": "corr.scanners.lowmemory-activation-narrowed",
+      "kind": "narrowed",
+      "risk": "medium",
+      "earlier": {
+        "path": "docs/research/security-landscape/deep-review/zap-history.md",
+        "line": 97,
+        "quote": "This duplicate-summary observation needs low-memory lookup/runtime validation",
+        "says": "Structural duplicate-summary defect may affect lookups."
+      },
+      "later": {
+        "path": "docs/research/security-landscape/deep-review/zap-history.md",
+        "line": 121,
+        "quote": "This prevents claiming all context scans encounter the defective wrapper",
+        "says": "Low-memory context-only scans are rejected; lab later confirmed the lookup miss for the helper."
+      },
+      "guidance": "Defect is component-confirmed but reachability is limited; no scan impact shown."
+    },
+    {
+      "id": "corr.scanners.networkpolicy-not-dialer",
+      "kind": "narrowed",
+      "risk": "medium",
+      "earlier": {
+        "path": "docs/research/security-landscape/deep-review/nuclei-native-network.md",
+        "line": 7,
+        "quote": "A nonempty allow scheme list can reject valid schemes, while deny scheme matching can miss.",
+        "says": "NetworkPolicy scheme matching bug."
+      },
+      "later": {
+        "path": "docs/research/security-landscape/deep-review/nuclei-native-network.md",
+        "line": 27,
+        "quote": "source-only scheme/empty-map concerns above must not be asserted as this dialer's behavior",
+        "says": "Fastdialer calls policy.Validate on IPs only; scheme bug does not apply there."
+      },
+      "guidance": "Scheme/port concerns are library-API only, not Nuclei dialer behavior."
+    },
+    {
+      "id": "corr.scanners.nuclei-origin-map-reuse",
+      "kind": "narrowed",
+      "risk": "low",
+      "earlier": {
+        "path": "docs/research/security-landscape/deep-review/nuclei-input-identity.md",
+        "line": 71,
+        "quote": "No origin-map reset in this complete file; broader caller reuse remains next.",
+        "says": "Origin reservations may persist across runs."
+      },
+      "later": {
+        "path": "docs/research/security-landscape/deep-review/nuclei-input-identity.md",
+        "line": 89,
+        "quote": "Engine is created per RunEnumeration at735, narrowing the hypothesized same-engine origin-map reuse",
+        "says": "CLI creates a fresh engine per enumeration; only single-instance SDK reuse retains it."
+      },
+      "guidance": "Cross-run origin suppression is only a concern for reused SDK instances."
+    },
+    {
+      "id": "corr.scanners.nuclei-template-cache-freshness",
+      "kind": "reversed",
+      "risk": "low",
+      "earlier": {
+        "path": "docs/research/security-landscape/deep-review/nuclei-template-path.md",
+        "line": 7,
+        "quote": "freshness and cache-sharing semantics need tests/cache implementation review before declaring stale-state defects",
+        "says": "Parsed-template cache may be path-only."
+      },
+      "later": {
+        "path": "docs/research/security-landscape/deep-review/nuclei-template-path.md",
+        "line": 13,
+        "quote": "This corrects the overly simple path-only-cache suspicion: local modification freshness exists, though mtime is not content digest.",
+        "says": "mtime-based freshness exists."
+      },
+      "guidance": "Template cache checks mtime, not content."
+    },
+    {
+      "id": "corr.scanners.pilot-flow-nuclei-first",
+      "kind": "narrowed",
+      "risk": "medium",
+      "earlier": {
+        "path": "docs/research/review-findings.json",
+        "line": 151,
+        "quote": "independently confirmed finding -> reviewed Semgrep or Nuclei check",
+        "says": "Pilot goes directly to a Semgrep or Nuclei check."
+      },
+      "later": {
+        "path": "docs/research/2026-10-16-rea-and-security-workflows.md",
+        "line": 232,
+        "quote": "first use NBRET's existing assertions/probes; evaluate a narrowly selected Nuclei template only if it adds coverage",
+        "says": "Existing NBRET checks first; Nuclei only on demonstrated gap."
+      },
+      "guidance": "Follow the Markdown order: existing NBRET checks before any new scanner."
+    },
+    {
+      "id": "corr.scanners.retry-test-found",
+      "kind": "reversed",
+      "risk": "high",
+      "earlier": {
+        "path": "docs/research/security-landscape/deep-review/zap-network.md",
+        "line": 45,
+        "quote": "No targeted retry unit test was found by filename search; broad HttpSenderImplUnitTest remains unread and may contain coverage.",
+        "says": "No retry test known."
+      },
+      "later": {
+        "path": "docs/research/security-landscape/deep-review/zap-network-tests.md",
+        "line": 11,
+        "quote": "expects five received requests for every parameterized method, including POST/PATCH/DELETE",
+        "says": "Upstream test expects retries of mutating methods."
+      },
+      "guidance": "ZAP intentionally retries mutating methods on IO failure."
+    },
+    {
+      "id": "corr.scanners.sc01-real-alert-selection",
+      "kind": "confirmed-later",
+      "risk": "high",
+      "earlier": {
+        "path": "docs/research/security-landscape/deep-review/nbret-scanner.md",
+        "line": 41,
+        "quote": "Next: verify real ZAP alert API selection and a passive-only owned-daemon fixture.",
+        "says": "Out-of-path alert retention is only shown with a simulated API."
+      },
+      "later": {
+        "path": "docs/research/security-landscape/deep-review/zap-directory-rule.md",
+        "line": 17,
+        "quote": "Adapter completed and kept the /allowed/ alert because local alert filtering is origin-only.",
+        "says": "The real daemon requested a path outside exact scope and the adapter kept that alert."
+      },
+      "guidance": "Out-of-path request and alert retention are runtime-observed on a real daemon."
+    },
+    {
+      "id": "corr.scanners.sc05-interruption-untested",
+      "kind": "status-outdated",
+      "risk": "high",
+      "earlier": {
+        "path": "docs/research/security-landscape/deep-review/nbret-scanner.md",
+        "line": 49,
+        "quote": "This is a cross-source semantic finding; no real interrupted scan has yet been exercised.",
+        "says": "No real interrupted ZAP scan has been run; status-100-on-stop is only a source finding."
+      },
+      "later": {
+        "path": "docs/research/security-landscape/deep-review/zap-directory-rule.md",
+        "line": 25,
+        "quote": "NBRET wrote completed, errors=[], contextRemoved=true and returned at19:51:45.656Z while fixture response remained pending until19:51:47.487Z",
+        "says": "Two real-daemon stop runs show completed reported before quiescence, with a later alert missing from the report."
+      },
+      "guidance": "Treat stop-as-completed as runtime-confirmed for this scenario; nbret-scanner.md SC-05 was never back-annotated."
+    },
+    {
+      "id": "corr.service-delivery.bounded-pass-superseded",
+      "kind": "status-outdated",
+      "risk": "medium",
+      "earlier": {
+        "path": "docs/research/assessment-evidence/coverage.md",
+        "line": 59,
+        "quote": "Current continuation supersedes the historical bounded-pass paragraph below.",
+        "says": "Coverage ledger marks its older bounded-pass completion as superseded."
+      },
+      "later": {
+        "path": "docs/research/assessment-evidence/continuation-exhaustion.md",
+        "line": 58,
+        "quote": "This continuation supersedes the earlier bounded-pass completion.",
+        "says": "The six-system review is ongoing; the bounded pass is not completion."
+      },
+      "guidance": "Do not treat the earlier bounded pass as complete coverage; even the later cutoff is not exhaustion (continuation-exhaustion.md:801)."
+    },
+    {
+      "id": "corr.service-delivery.continuation-plan-superseded",
+      "kind": "superseded-plan",
+      "risk": "low",
+      "earlier": {
+        "path": "docs/research/cybersecurity-firms/continuation.md",
+        "line": 55,
+        "quote": "Next: selected PAN isolation playbook; pin and inspect a Fortinet connector",
+        "says": "Pending reading queue."
+      },
+      "later": {
+        "path": "docs/research/cybersecurity-firms/continuation.md",
+        "line": 137,
+        "quote": "Earlier dated checkpoint pending lists remain historical.",
+        "says": "Those items were completed; lists are historical."
+      },
+      "guidance": "Use coverage-audit.md and scope-audit.md for current remaining evidence, not continuation queues."
+    },
+    {
+      "id": "corr.service-delivery.lac-sla-scope",
+      "kind": "narrowed",
+      "risk": "high",
+      "earlier": {
+        "path": "docs/research/cybersecurity-firms/service-artifact-boundaries.md",
+        "line": 7,
+        "quote": "explicitly advertises 15-minute notification/protection for critical incidents as SLA guaranteed",
+        "says": "LAC guarantees 15-minute notification/protection."
+      },
+      "later": {
+        "path": "docs/research/cybersecurity-firms/lac.md",
+        "line": 9,
+        "quote": "It is not an ingestion-to-resolution SLA",
+        "says": "The 15 minutes runs from analyst analysis start to customer contact."
+      },
+      "guidance": "Describe LAC 15 minutes as analysis-start-to-contact, not detection-to-containment."
+    },
+    {
+      "id": "corr.service-delivery.mandiant-3cx-dates",
+      "kind": "narrowed",
+      "risk": "medium",
+      "earlier": {
+        "path": "docs/research/cybersecurity-firms/mandiant-3cx-assessment.md",
+        "line": 9,
+        "quote": "Page three says all critical/high findings were mitigated or remediated by January 10, 2024",
+        "says": "All critical/high fixed by January 2024."
+      },
+      "later": {
+        "path": "docs/research/cybersecurity-firms/mandiant-3cx-assessment.md",
+        "line": 9,
+        "quote": "page two includes later testing and an April 2024 critical-issue remediation",
+        "says": "A critical issue was remediated in April 2024."
+      },
+      "guidance": "Do not cite a clean remediation date; the document conflicts."
+    },
+    {
+      "id": "corr.service-delivery.rea-pinned-vs-upstream",
+      "kind": "narrowed",
+      "risk": "medium",
+      "earlier": {
+        "path": "docs/research/2026-10-16-rea-and-security-workflows.md",
+        "line": 40,
+        "quote": "Stable artifact reads check file identity and changes during the read before returning a SHA-256 digest.",
+        "says": "REA capability described from upstream main snapshot."
+      },
+      "later": {
+        "path": "docs/research/2026-10-16-rea-and-security-workflows.md",
+        "line": 9,
+        "quote": "Capabilities seen upstream must not be assumed to exist in the pinned package.",
+        "says": "NBRET uses rea-agents 6.4.0, not the reviewed snapshot."
+      },
+      "guidance": "Verify each REA feature in 6.4.0 before relying on it."
+    },
+    {
+      "id": "corr.service-delivery.reader-start-point",
+      "kind": "superseded-plan",
+      "risk": "low",
+      "earlier": {
+        "path": "docs/research/learning/CONTEXT.md",
+        "line": 11,
+        "quote": "Read `beginner.json` for the eight accessible lessons",
+        "says": "Start with beginner lessons."
+      },
+      "later": {
+        "path": "docs/research/learning/CONTEXT.md",
+        "line": 5,
+        "quote": "Latest October 17 direction supersedes the beginner-first homepage",
+        "says": "Start with publication.json, chapters and blueprints."
+      },
+      "guidance": "Start with publication.json/chapters; beginner lessons are optional introductions."
+    },
+    {
+      "id": "corr.service-delivery.roadmap-tables-historical",
+      "kind": "status-outdated",
+      "risk": "low",
+      "earlier": {
+        "path": "docs/research/security-landscape/inventory.md",
+        "line": 18,
+        "quote": "the branch roadmap's initial table lists ZAP/mitmproxy as unimplemented",
+        "says": "ZAP/mitmproxy unimplemented."
+      },
+      "later": {
+        "path": "docs/research/security-landscape/inventory.md",
+        "line": 18,
+        "quote": "Treat early tables as historical, not authoritative current capability registers.",
+        "says": "Later verification records completed local experiments."
+      },
+      "guidance": "Use receipts and source, not early roadmap tables, for current capability."
+    },
+    {
+      "id": "corr.service-delivery.takumi-queued-items",
+      "kind": "confirmed-later",
+      "risk": "low",
+      "earlier": {
+        "path": "docs/research/cybersecurity-firms/gmo-flatt-security.md",
+        "line": 49,
+        "quote": "complete App permission enumeration, actual report samples, API/SDK source and complete pricing remain queued",
+        "says": "App permissions pending."
+      },
+      "later": {
+        "path": "docs/research/cybersecurity-firms/takumi-github-scope-boundary.md",
+        "line": 11,
+        "quote": "did not establish a complete assessment/autofix App manifest",
+        "says": "Bounded discovery ended without finding the manifest."
+      },
+      "guidance": "Treat the App manifest as unknown, not merely queued."
+    },
+    {
+      "id": "corr.standards.attack-version",
+      "kind": "reversed",
+      "risk": "low",
+      "earlier": {
+        "path": "docs/research/security-landscape/standards.md",
+        "line": 14,
+        "quote": "cached summaries mentioned v19",
+        "says": "ATT&CK v19."
+      },
+      "later": {
+        "path": "docs/research/security-landscape/standards.md",
+        "line": 14,
+        "quote": "The live official updates page resolves the version for this review",
+        "says": "v20 per live page."
+      },
+      "guidance": "Cite ATT&CK v20 (as of 2026-10-17) and re-check the live page."
+    },
+    {
+      "id": "corr.standards.gateway-license-bsd",
+      "kind": "reversed",
+      "risk": "low",
+      "earlier": {
+        "path": "docs/research/assessment-evidence/continuation-exhaustion.md",
+        "line": 735,
+        "quote": "BSD-3-Clause gateway dependency (correct any context-only Apache label",
+        "says": "Gateway dependency might have been labelled Apache in context."
+      },
+      "later": {
+        "path": "docs/research/assessment-evidence/continuation-exhaustion.md",
+        "line": 735,
+        "quote": "no matching wrong label found in own persisted md/json search",
+        "says": "License confirmed BSD-3-Clause."
+      },
+      "guidance": "grpc-gateway is BSD-3-Clause."
+    },
+    {
+      "id": "corr.status.agentdojo-lock-partial",
+      "kind": "status-outdated",
+      "risk": "low",
+      "earlier": {
+        "path": "docs/research/assessment-evidence/deep-agentdojo.md",
+        "line": 262,
+        "quote": "The pinned uv.lock is now fully source-read through2160/4030 contiguous lines, not complete.",
+        "says": "AgentDojo lock partially read."
+      },
+      "later": {
+        "path": "docs/research/assessment-evidence/deep-agentdojo.md",
+        "line": 277,
+        "quote": "uv.lock now has complete1?4030 source ranges",
+        "says": "Lock fully read as metadata."
+      },
+      "guidance": "AgentDojo uv.lock is fully read as metadata (not installed or implementation-reviewed)."
+    },
+    {
+      "id": "corr.status.catalog-bullmq",
+      "kind": "status-outdated",
+      "risk": "medium",
+      "earlier": {
+        "path": "docs/research/bots-swarms/catalog.md",
+        "line": 8,
+        "quote": "partial worker/tests; adapted class lab with synthetic backend",
+        "says": "BullMQ worker/tests partially read."
+      },
+      "later": {
+        "path": "docs/research/bots-swarms/scope-closure.md",
+        "line": 3,
+        "quote": "The unchanged main inventory has1511 complete files",
+        "says": "All main files complete."
+      },
+      "guidance": "catalog.md status cells are historical; use scope-closure.md."
+    },
+    {
+      "id": "corr.status.catalog-coraza",
+      "kind": "status-outdated",
+      "risk": "medium",
+      "earlier": {
+        "path": "docs/research/bots-swarms/catalog.md",
+        "line": 10,
+        "quote": "partial internal transaction; no Go runtime test",
+        "says": "Coraza transaction partially read."
+      },
+      "later": {
+        "path": "docs/research/bots-swarms/findings.md",
+        "line": 19,
+        "quote": "body/rule/parser source path now reviewed",
+        "says": "Transaction/body/parser path reviewed."
+      },
+      "guidance": "Coraza enforcement path is fully traced at source level (still no Go run)."
+    },
+    {
+      "id": "corr.status.cel-generated-parser-unread",
+      "kind": "status-outdated",
+      "risk": "low",
+      "earlier": {
+        "path": "docs/research/assessment-evidence/cel-optimizer-boundaries.md",
+        "line": 43,
+        "quote": "these remain unread, not completed by inventory",
+        "says": "Generated CEL parser unread."
+      },
+      "later": {
+        "path": "docs/research/assessment-evidence/cel-generated-parser-boundaries.md",
+        "line": 3,
+        "quote": "directory is fully source-read",
+        "says": "parser/gen fully read."
+      },
+      "guidance": "Generated parser is source-read; see cel-generated-parser-boundaries.md."
+    },
+    {
+      "id": "corr.status.cel-planning-garak-lock",
+      "kind": "status-outdated",
+      "risk": "low",
+      "earlier": {
+        "path": "docs/research/assessment-evidence/cel-planning-provenance.md",
+        "line": 27,
+        "quote": "existing garak lock remains partial1–640/6002",
+        "says": "garak UI lock partial."
+      },
+      "later": {
+        "path": "docs/research/assessment-evidence/garak-report-fixture-evidence.md",
+        "line": 87,
+        "quote": "Completed yarn.lock1?6002 by bounded contiguous reads",
+        "says": "Lock fully read."
+      },
+      "guidance": "garak-report yarn.lock fully read as metadata."
+    },
+    {
+      "id": "corr.status.checkpoint-counts",
+      "kind": "status-outdated",
+      "risk": "medium",
+      "earlier": {
+        "path": "docs/research/bots-swarms/continuation-checkpoint.md",
+        "line": 23,
+        "quote": "Latest sustained checkpoint:267 main files complete,0partial,1244unread",
+        "says": "1244 files unread."
+      },
+      "later": {
+        "path": "docs/research/bots-swarms/scope-closure.md",
+        "line": 30,
+        "quote": "There is no unread/partial item left in the agreed finite local inventories.",
+        "says": "All complete."
+      },
+      "guidance": "continuation-checkpoint.md counts are historical."
+    },
+    {
+      "id": "corr.status.coverage-bounded-pass-superseded",
+      "kind": "status-outdated",
+      "risk": "medium",
+      "earlier": {
+        "path": "docs/research/assessment-evidence/coverage.md",
+        "line": 63,
+        "quote": "The agreed five core deep implementation studies are a completed bounded pass.",
+        "says": "Coverage table and bounded pass describe current scope and remaining gaps."
+      },
+      "later": {
+        "path": "docs/research/assessment-evidence/coverage.md",
+        "line": 59,
+        "quote": "Current continuation supersedes the historical bounded-pass paragraph below.",
+        "says": "Later continuation work closed many items the older table lists as missing; continuation-exhaustion.md is the active ledger."
+      },
+      "guidance": "Treat coverage.md's 'Still missing' table as historical; check continuation-exhaustion.md and the per-study files for current status."
+    },
+    {
+      "id": "corr.status.coverage-ipmatch-partial",
+      "kind": "status-outdated",
+      "risk": "low",
+      "earlier": {
+        "path": "docs/research/bots-swarms/coverage.md",
+        "line": 40,
+        "quote": "The large Coraza ipMatch.json fixture remains partially read",
+        "says": "ipMatch.json partial."
+      },
+      "later": {
+        "path": "docs/research/bots-swarms/continuation.md",
+        "line": 157,
+        "quote": "The supporting ledger now records this entire 25,364-line file as read.",
+        "says": "Fully read."
+      },
+      "guidance": "ipMatch.json is fully read; coverage.md:40 contradicts coverage.md:3."
+    },
+    {
+      "id": "corr.status.coverage-ledger-api-descriptor",
+      "kind": "status-outdated",
+      "risk": "low",
+      "earlier": {
+        "path": "docs/research/assessment-evidence/coverage-ledger.md",
+        "line": 9,
+        "quote": "API generated descriptor remains partial through 5440/6799.",
+        "says": "API descriptor partial."
+      },
+      "later": {
+        "path": "docs/research/assessment-evidence/coverage-ledger.md",
+        "line": 13,
+        "quote": "API queue closure supersedes earlier partial descriptor checkpoints",
+        "says": "API module queue complete."
+      },
+      "guidance": "OpenFGA API queue is fully source-read."
+    },
+    {
+      "id": "corr.status.coverage-supporting-unread",
+      "kind": "status-outdated",
+      "risk": "medium",
+      "earlier": {
+        "path": "docs/research/bots-swarms/coverage.md",
+        "line": 7,
+        "quote": "Supporting material files remain unread.",
+        "says": "Supporting files unread."
+      },
+      "later": {
+        "path": "docs/research/bots-swarms/coverage.md",
+        "line": 3,
+        "quote": "Both queues now contain complete bounded read ranges: main1511/1511 and supporting651/651",
+        "says": "All read."
+      },
+      "guidance": "Use coverage.md:3 and scope-closure.md; earlier coverage text is historical."
+    },
+    {
+      "id": "corr.status.deepdiff-agentdojo-lock-1-400",
+      "kind": "status-outdated",
+      "risk": "low",
+      "earlier": {
+        "path": "docs/research/assessment-evidence/deep-deepdiff.md",
+        "line": 181,
+        "quote": "Raw AgentDojo lock reading is1–400 only",
+        "says": "Only 400 lock lines read."
+      },
+      "later": {
+        "path": "docs/research/assessment-evidence/deep-agentdojo.md",
+        "line": 277,
+        "quote": "uv.lock now has complete1?4030 source ranges",
+        "says": "Fully read."
+      },
+      "guidance": "Superseded; lock fully read."
+    },
+    {
+      "id": "corr.status.defense-incident-queue",
+      "kind": "status-outdated",
+      "risk": "low",
+      "earlier": {
+        "path": "docs/research/bots-swarms/defense.md",
+        "line": 33,
+        "quote": "additional first-party incident reports remain on the reading queue",
+        "says": "Incident reports pending."
+      },
+      "later": {
+        "path": "docs/research/bots-swarms/incident-review.md",
+        "line": 3,
+        "quote": "These are attributed defender reports, not our malware analysis",
+        "says": "Incident review completed."
+      },
+      "guidance": "Use incident-review.md."
+    },
+    {
+      "id": "corr.status.garak-digest-partial",
+      "kind": "status-outdated",
+      "risk": "low",
+      "earlier": {
+        "path": "docs/research/assessment-evidence/garak-report-fixture-evidence.md",
+        "line": 67,
+        "quote": "extracted_digest.json is deliberately still partial",
+        "says": "Digest artifact partially read."
+      },
+      "later": {
+        "path": "docs/research/assessment-evidence/garak-report-fixture-evidence.md",
+        "line": 77,
+        "quote": "The remaining artifact1721–7425 is now read in bounded complete ranges",
+        "says": "Fully read as text."
+      },
+      "guidance": "extracted_digest.json fully read as text."
+    },
+    {
+      "id": "corr.status.orderly-set-pending",
+      "kind": "status-outdated",
+      "risk": "low",
+      "earlier": {
+        "path": "docs/research/assessment-evidence/sources.md",
+        "line": 30,
+        "quote": "tests/other metadata pending, no runtime claim",
+        "says": "orderly-set tests unread."
+      },
+      "later": {
+        "path": "docs/research/assessment-evidence/deep-deepdiff.md",
+        "line": 131,
+        "quote": "All files in the current orderly-set5.5.0 text-source inventory are now completely read",
+        "says": "Full inventory read."
+      },
+      "guidance": "orderly-set 5.5.0 text inventory is fully read (no runtime)."
+    },
+    {
+      "id": "corr.status.readme-latest-checkpoint",
+      "kind": "status-outdated",
+      "risk": "medium",
+      "earlier": {
+        "path": "docs/research/bots-swarms/README.md",
+        "line": 5,
+        "quote": "Read the [current enforcement checkpoint](continuation-checkpoint.md) for the latest accessible findings.",
+        "says": "continuation-checkpoint.md is the latest."
+      },
+      "later": {
+        "path": "docs/research/bots-swarms/README.md",
+        "line": 9,
+        "quote": "Earlier counts below remain historical checkpoints.",
+        "says": "Finite continuation closed; scope-closure.md is the final disposition."
+      },
+      "guidance": "Start from scope-closure.md, then findings.md."
+    },
+    {
+      "id": "corr.status.source-notes-drain",
+      "kind": "status-outdated",
+      "risk": "medium",
+      "earlier": {
+        "path": "docs/research/bots-swarms/source-notes.md",
+        "line": 39,
+        "quote": "Full drain, sandboxed child cleanup and backend close still need tracing.",
+        "says": "Drain/child cleanup untraced."
+      },
+      "later": {
+        "path": "docs/research/bots-swarms/continuation.md",
+        "line": 2465,
+        "quote": "Child.kill (157–178) registers an exit promise, sends termination, escalates to SIGKILL",
+        "says": "Child lifecycle and drain traced; kill is not a hard bound."
+      },
+      "guidance": "Use cont:2449-2465 for drain/child shutdown semantics."
+    },
+    {
+      "id": "corr.status.source-notes-helper",
+      "kind": "status-outdated",
+      "risk": "low",
+      "earlier": {
+        "path": "docs/research/bots-swarms/source-notes.md",
+        "line": 31,
+        "quote": "The helper `moveJobToWait` remains unread",
+        "says": "moveJobToWait unread."
+      },
+      "later": {
+        "path": "docs/research/bots-swarms/source-notes.md",
+        "line": 43,
+        "quote": "complete `includes/moveJobToWait.lua` 1–16",
+        "says": "Read."
+      },
+      "guidance": "moveJobToWait is read."
+    },
+    {
+      "id": "corr.workers-queues.elixir-worker-read-status",
+      "kind": "status-outdated",
+      "risk": "low",
+      "earlier": {
+        "path": "docs/research/bots-swarms/continuation.md",
+        "line": 557,
+        "quote": "Worker.ex remains explicitly partial",
+        "says": "Elixir worker.ex only partially read."
+      },
+      "later": {
+        "path": "docs/research/bots-swarms/continuation.md",
+        "line": 547,
+        "quote": "Finished worker.ex:1–2724, closing this newly material caller file",
+        "says": "worker.ex fully read with pause/close findings."
+      },
+      "guidance": "worker.ex is fully reviewed; use cont:547-553 findings."
+    },
+    {
+      "id": "corr.workers-queues.finalization-order",
+      "kind": "narrowed",
+      "risk": "low",
+      "earlier": {
+        "path": "docs/research/bots-swarms/continuation.md",
+        "line": 1623,
+        "quote": "Finalization validates job/lock state and processes parent conditions before pending-next requeue",
+        "says": "Parent conditions are processed before dedup requeue."
+      },
+      "later": {
+        "path": "docs/research/bots-swarms/continuation.md",
+        "line": 1617,
+        "quote": "'Parent conditions before requeue' in the preceding broad description should be read only as completion dependency checks",
+        "says": "Only completion dependency checks precede requeue; original-parent updates follow it."
+      },
+      "guidance": "Read finalization order per cont:1617."
+    },
+    {
+      "id": "corr.workers-queues.flow-maxchildren",
+      "kind": "narrowed",
+      "risk": "medium",
+      "earlier": {
+        "path": "docs/research/bots-swarms/continuation.md",
+        "line": 2987,
+        "quote": "Read-flow depth defaults10 and maxChildren20 per type; these are observation bounds",
+        "says": "getFlow depth/maxChildren are observation bounds."
+      },
+      "later": {
+        "path": "docs/research/bots-swarms/continuation.md",
+        "line": 3007,
+        "quote": "the `maxChildren` value is forwarded as scan count, not enforced by slicing returned children",
+        "says": "maxChildren is a scan hint, not a hard cap on returned children."
+      },
+      "guidance": "Do not use getFlow maxChildren as a memory or result cap."
+    },
+    {
+      "id": "corr.workers-queues.flow-suite-status",
+      "kind": "status-outdated",
+      "risk": "low",
+      "earlier": {
+        "path": "docs/research/bots-swarms/continuation.md",
+        "line": 2983,
+        "quote": "General flow suite is explicitly partial:1–150 and6418–6630 only",
+        "says": "Flow suite partially read."
+      },
+      "later": {
+        "path": "docs/research/bots-swarms/continuation.md",
+        "line": 3001,
+        "quote": "the entire6630-line file is complete",
+        "says": "Fully read."
+      },
+      "guidance": "Flow suite is fully read."
+    },
+    {
+      "id": "corr.workers-queues.memberlist-decompression",
+      "kind": "narrowed",
+      "risk": "low",
+      "earlier": {
+        "path": "docs/research/bots-swarms/continuation.md",
+        "line": 2543,
+        "quote": "decompression and codec allocation enforcement remain dependency questions",
+        "says": "Decompression budget open."
+      },
+      "later": {
+        "path": "docs/research/bots-swarms/continuation.md",
+        "line": 2568,
+        "quote": "This closes the previously open per-decompression budget question",
+        "says": "40 MiB per-decompression cap; not a global cap."
+      },
+      "guidance": "memberlist has a 40 MiB per-decompression cap only."
+    },
+    {
+      "id": "corr.workers-queues.middleware-duplicate-ids",
+      "kind": "reversed",
+      "risk": "low",
+      "earlier": {
+        "path": "docs/research/toolchain/go-material-review.md",
+        "line": 423,
+        "quote": "public group Add/Insert reject empty IDs and existing IDs",
+        "says": "Middleware stacks reject duplicate IDs."
+      },
+      "later": {
+        "path": "docs/research/toolchain/go-material-review.md",
+        "line": 415,
+        "quote": "must not be attributed to the actual five stack stages",
+        "says": "Actual linked stages accept duplicates."
+      },
+      "guidance": "Stack steps do not reject duplicate middleware IDs."
+    },
+    {
+      "id": "corr.workers-queues.postgres-shared-setup",
+      "kind": "narrowed",
+      "risk": "medium",
+      "earlier": {
+        "path": "docs/research/bots-swarms/continuation.md",
+        "line": 3094,
+        "quote": "The global setup drops the configured schema; it is not a read-only preflight.",
+        "says": "Postgres shared-suite setup switches backend and drops schema."
+      },
+      "later": {
+        "path": "docs/research/bots-swarms/continuation.md",
+        "line": 3094,
+        "quote": "Thus their existence does not prove shared suites run on SQL or that the schema drop executes under the declared command",
+        "says": "Neither setup is referenced by the dedicated Postgres configs."
+      },
+      "guidance": "Do not claim BullMQ shared suites are validated on Postgres from the setup files."
+    },
+    {
+      "id": "corr.workers-queues.python-worker-status",
+      "kind": "status-outdated",
+      "risk": "low",
+      "earlier": {
+        "path": "docs/research/bots-swarms/continuation.md",
+        "line": 1485,
+        "quote": "Ledger inventory also shows worker.py is still unread",
+        "says": "Python worker.py unread."
+      },
+      "later": {
+        "path": "docs/research/bots-swarms/continuation.md",
+        "line": 1477,
+        "quote": "Closed worker.py1-745 with contiguous bounded reads.",
+        "says": "Fully read."
+      },
+      "guidance": "Python worker.py is fully reviewed."
+    },
+    {
+      "id": "corr.workers-queues.queue-clean-validated",
+      "kind": "confirmed-later",
+      "risk": "low",
+      "earlier": {
+        "path": "docs/research/bots-swarms/continuation.md",
+        "line": 3042,
+        "quote": "this is a source hypothesis requiring a bounded backend oracle, not an observed deletion",
+        "says": "Queue.clean limit overshoot is a hypothesis."
+      },
+      "later": {
+        "path": "docs/research/bots-swarms/continuation.md",
+        "line": 3062,
+        "quote": "The caller total-limit hypothesis is now validated at its exact method boundary.",
+        "says": "Validated by the 4-check receipt."
+      },
+      "guidance": "Queue.clean overshoot is confirmed at the caller boundary (real deletion untested)."
+    },
+    {
+      "id": "corr.workers-queues.queueevents-sync-listener",
+      "kind": "narrowed",
+      "risk": "medium",
+      "earlier": {
+        "path": "docs/research/bots-swarms/continuation.md",
+        "line": 1573,
+        "quote": "Malformed/custom built-in-shaped event data or a synchronous listener failure can reject the run",
+        "says": "TS QueueEvents run can be rejected by a synchronous listener failure."
+      },
+      "later": {
+        "path": "docs/research/bots-swarms/continuation.md",
+        "line": 1569,
+        "quote": "so an ordinary synchronous listener exception is not expected to reject QueueEvents.run directly",
+        "says": "Inherited emit catches synchronous listener exceptions; only JSON decoding and async listener rejections escape (Python emitter differs)."
+      },
+      "guidance": "For TypeScript BullMQ, sync listener throws are caught; malformed JSON and async rejections remain the failure modes."
+    },
+    {
+      "id": "corr.workers-queues.reschedule-local-fields",
+      "kind": "narrowed",
+      "risk": "low",
+      "earlier": {
+        "path": "docs/research/bots-swarms/continuation.md",
+        "line": 1601,
+        "quote": "Public Job delegates to backend, then updates its local opts after await",
+        "says": "Job updates its local opts after await."
+      },
+      "later": {
+        "path": "docs/research/bots-swarms/continuation.md",
+        "line": 1597,
+        "quote": "Job updates its local delay/priority properties after await, not its opts object",
+        "says": "It updates delay/priority properties, not the opts object."
+      },
+      "guidance": "Job rescheduling updates local delay/priority properties, not opts."
+    },
+    {
+      "id": "corr.workers-queues.retry-body-replacement",
+      "kind": "narrowed",
+      "risk": "medium",
+      "earlier": {
+        "path": "docs/research/toolchain/go-material-review.md",
+        "line": 1927,
+        "quote": "clones/rewinds and optionally replaces the second stream",
+        "says": "Mock tests replace retry body content."
+      },
+      "later": {
+        "path": "docs/research/toolchain/go-material-review.md",
+        "line": 1973,
+        "quote": "default retries share/reseek a body, while external mutation remains possible",
+        "says": "Real retry loop never replaces bytes."
+      },
+      "guidance": "Changed retry bodies require external mutation, not the SDK retry loop."
+    },
+    {
+      "id": "corr.workers-queues.retry-max-zero-reopened",
+      "kind": "narrowed",
+      "risk": "medium",
+      "earlier": {
+        "path": "docs/research/toolchain/go-material-review.md",
+        "line": 1983,
+        "quote": "constructor replaces nonpositive MaxAttempts with three",
+        "says": "Unlimited attempts unreachable by default construction."
+      },
+      "later": {
+        "path": "docs/research/toolchain/go-material-review.md",
+        "line": 2093,
+        "quote": "so wrapping Standard with0 reopens generic unlimited-attempt-count behavior previously narrowed for NewStandard alone",
+        "says": "AddWithMaxAttempts(0) re-enables unlimited attempts (quota/context may still bound)."
+      },
+      "guidance": "Check for retry wrappers with max 0 before assuming a bounded retry count."
+    },
+    {
+      "id": "corr.workers-queues.retry-token-leak",
+      "kind": "reversed",
+      "risk": "low",
+      "earlier": {
+        "path": "docs/research/toolchain/go-material-review.md",
+        "line": 1965,
+        "quote": "Rewind failure returns after obtaining attempt token, before the later release block",
+        "says": "Rewind failure might leak an attempt token."
+      },
+      "later": {
+        "path": "docs/research/toolchain/go-material-review.md",
+        "line": 1983,
+        "quote": "**This rejects a default Standard attempt-token resource-leak inference on rewind failure.**",
+        "says": "Standard tokens reserve no resource; only quota accounting is affected."
+      },
+      "guidance": "No default token leak; record only a quota-accounting boundary."
+    },
+    {
+      "id": "corr.workers-queues.retry-unbounded-attempts",
+      "kind": "narrowed",
+      "risk": "medium",
+      "earlier": {
+        "path": "docs/research/toolchain/go-material-review.md",
+        "line": 1965,
+        "quote": "A configured max <=0 does not impose an attempt cap here",
+        "says": "Attempt loop can retry without limit."
+      },
+      "later": {
+        "path": "docs/research/toolchain/go-material-review.md",
+        "line": 1983,
+        "quote": "**Thus the generic Attempt loop",
+        "says": "NewStandard replaces nonpositive max with 3, so default is bounded."
+      },
+      "guidance": "Default retries are bounded at 3; see the later AddWithMaxAttempts(0) exception."
+    },
+    {
+      "id": "corr.workers-queues.waiter-negative-delay",
+      "kind": "narrowed",
+      "risk": "low",
+      "earlier": {
+        "path": "docs/research/toolchain/go-material-review.md",
+        "line": 393,
+        "quote": "Last-attempt adjustment can produce negative remainingTime-minDelay",
+        "says": "Waiter delay helper can go negative."
+      },
+      "later": {
+        "path": "docs/research/toolchain/go-material-review.md",
+        "line": 375,
+        "quote": "so the helper",
+        "says": "HeadBucket loops guard before ComputeDelay."
+      },
+      "guidance": "Negative delay not reached through HeadBucket/HeadObject waiters."
+    },
+    {
+      "id": "corr.workers-queues.watchdog-cap",
+      "kind": "narrowed",
+      "risk": "medium",
+      "earlier": {
+        "path": "docs/research/bots-swarms/continuation.md",
+        "line": 2479,
+        "quote": "The watchdog fired, yet the outer wait remained pending while reset's reconnect promise was unresolved",
+        "says": "Watchdog fired but public wait stayed pending under a pending reconnect (synthetic)."
+      },
+      "later": {
+        "path": "docs/research/bots-swarms/continuation.md",
+        "line": 2497,
+        "quote": "does contain a separate default 30-second cap on one cluster.connect attempt",
+        "says": "Real cluster connect has its own 30 s cap; the synthetic receipt must not be presented as \"no cap\"."
+      },
+      "guidance": "The watchdog finding is about method ordering; real cluster reconnect attempts are capped at 30 s each, though there is still no end-to-end bound."
+    }
+  ]
+}

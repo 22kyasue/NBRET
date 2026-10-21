@@ -1,0 +1,266 @@
+{
+  "at": "2026-10-17T20:24:24.744Z",
+  "out": "C:\\Users\\kotar\\githubprojects\\NBRET\\runs\\nuclei-auth-research-1792268648570",
+  "suite": "auth",
+  "scope": "Read upstream component tests with stub callbacks/helpers/URL source, no target/model/OOB or real credentials; module network disabled",
+  "command": {
+    "executable": "C:\\Users\\kotar\\githubprojects\\NBRET\\.tools\\security-research-go\\sdk\\go\\bin\\go.exe",
+    "args": [
+      "test",
+      "./pkg/authprovider/authx",
+      "-run",
+      "^(TestDynamic|TestFetchWithout|TestSetLazy|TestGetStrategies|TestGetDomain|TestApplyValues|TestCookieAuth|TestHeaderAuthCookie)",
+      "-count=1",
+      "-json"
+    ],
+    "cwd": "C:/Users/kotar/.codex/research/nuclei"
+  },
+  "moduleNetwork": {
+    "GOPROXY": "off",
+    "GOSUMDB": "off"
+  },
+  "exit": 0,
+  "elapsedMs": 16172.6933,
+  "tests": [
+    {
+      "test": "TestCookieAuthOwnershipIsRequestLocal",
+      "action": "pass"
+    },
+    {
+      "test": "TestHeaderAuthCookieOwnershipIgnoresQuotedFragments/payload=\"a;session=probe\"",
+      "action": "pass"
+    },
+    {
+      "test": "TestHeaderAuthCookieOwnershipIgnoresQuotedFragments/payload=\"a\\\";session=probe\"",
+      "action": "pass"
+    },
+    {
+      "test": "TestHeaderAuthCookieOwnershipIgnoresQuotedFragments/payload=\"a;session=probe",
+      "action": "pass"
+    },
+    {
+      "test": "TestHeaderAuthCookieOwnershipIgnoresQuotedFragments",
+      "action": "pass"
+    },
+    {
+      "test": "TestDynamicUnmarshalJSON/basic-unmarshal",
+      "action": "pass"
+    },
+    {
+      "test": "TestDynamicUnmarshalJSON/complex-unmarshal",
+      "action": "pass"
+    },
+    {
+      "test": "TestDynamicUnmarshalJSON/invalid-json",
+      "action": "pass"
+    },
+    {
+      "test": "TestDynamicUnmarshalJSON/empty-json",
+      "action": "pass"
+    },
+    {
+      "test": "TestDynamicUnmarshalJSON",
+      "action": "pass"
+    },
+    {
+      "test": "TestDynamicFetchConcurrent/all-waiters-block-until-done",
+      "action": "pass"
+    },
+    {
+      "test": "TestDynamicFetchConcurrent/fetch-callback-runs-once",
+      "action": "pass"
+    },
+    {
+      "test": "TestDynamicFetchConcurrent",
+      "action": "pass"
+    },
+    {
+      "test": "TestDynamicFetchReentry/nested_Fetch_from_callback_does_not_deadlock",
+      "action": "pass"
+    },
+    {
+      "test": "TestDynamicFetchReentry/nested_GetStrategies_does_not_apply_unresolved_secrets",
+      "action": "pass"
+    },
+    {
+      "test": "TestDynamicFetchReentry",
+      "action": "pass"
+    },
+    {
+      "test": "TestDynamicValidate/missing_template_path",
+      "action": "pass"
+    },
+    {
+      "test": "TestDynamicValidate/missing_variables",
+      "action": "pass"
+    },
+    {
+      "test": "TestDynamicValidate/valid_minimal_dynamic",
+      "action": "pass"
+    },
+    {
+      "test": "TestDynamicValidate/valid_with_inline_secret",
+      "action": "pass"
+    },
+    {
+      "test": "TestDynamicValidate/valid_with_secrets_array",
+      "action": "pass"
+    },
+    {
+      "test": "TestDynamicValidate/invalid_inline_secret_propagates_error",
+      "action": "pass"
+    },
+    {
+      "test": "TestDynamicValidate/invalid_secret_in_array_propagates_error",
+      "action": "pass"
+    },
+    {
+      "test": "TestDynamicValidate/re-validate_resets_fetch_state",
+      "action": "pass"
+    },
+    {
+      "test": "TestDynamicValidate",
+      "action": "pass"
+    },
+    {
+      "test": "TestApplyValuesToSecret/replaces_header_values",
+      "action": "pass"
+    },
+    {
+      "test": "TestApplyValuesToSecret/replaces_header_keys",
+      "action": "pass"
+    },
+    {
+      "test": "TestApplyValuesToSecret/replaces_cookie_key_and_value",
+      "action": "pass"
+    },
+    {
+      "test": "TestApplyValuesToSecret/replaces_cookie_raw",
+      "action": "pass"
+    },
+    {
+      "test": "TestApplyValuesToSecret/replaces_query_params",
+      "action": "pass"
+    },
+    {
+      "test": "TestApplyValuesToSecret/replaces_query_param_keys",
+      "action": "pass"
+    },
+    {
+      "test": "TestApplyValuesToSecret/replaces_username_password_token",
+      "action": "pass"
+    },
+    {
+      "test": "TestApplyValuesToSecret/leaves_static_values_untouched",
+      "action": "pass"
+    },
+    {
+      "test": "TestApplyValuesToSecret/multiple_extracted_values_in_same_template",
+      "action": "pass"
+    },
+    {
+      "test": "TestApplyValuesToSecret/invalid_raw_cookie_returns_error",
+      "action": "pass"
+    },
+    {
+      "test": "TestApplyValuesToSecret",
+      "action": "pass"
+    },
+    {
+      "test": "TestFetchWithoutValidate",
+      "action": "pass"
+    },
+    {
+      "test": "TestFetchWithoutCallback",
+      "action": "pass"
+    },
+    {
+      "test": "TestSetLazyFetchCallbackAppliesValues/applies_to_inline_secret",
+      "action": "pass"
+    },
+    {
+      "test": "TestSetLazyFetchCallbackAppliesValues/applies_to_secrets_array",
+      "action": "pass"
+    },
+    {
+      "test": "TestSetLazyFetchCallbackAppliesValues/callback_error_propagates",
+      "action": "pass"
+    },
+    {
+      "test": "TestSetLazyFetchCallbackAppliesValues/empty_extracted_returns_error",
+      "action": "pass"
+    },
+    {
+      "test": "TestSetLazyFetchCallbackAppliesValues",
+      "action": "pass"
+    },
+    {
+      "test": "TestGetStrategies/returns_nil_after_failed_fetch",
+      "action": "pass"
+    },
+    {
+      "test": "TestGetStrategies/returns_strategies_after_successful_fetch_with_inline_secret",
+      "action": "pass"
+    },
+    {
+      "test": "TestGetStrategies/returns_strategies_for_secrets_array",
+      "action": "pass"
+    },
+    {
+      "test": "TestGetStrategies/returns_nil_without_validate",
+      "action": "pass"
+    },
+    {
+      "test": "TestGetStrategies",
+      "action": "pass"
+    },
+    {
+      "test": "TestDynamicError/nil_before_validate",
+      "action": "pass"
+    },
+    {
+      "test": "TestDynamicError/nil_after_successful_fetch",
+      "action": "pass"
+    },
+    {
+      "test": "TestDynamicError/non-nil_after_failed_fetch",
+      "action": "pass"
+    },
+    {
+      "test": "TestDynamicError",
+      "action": "pass"
+    },
+    {
+      "test": "TestGetDomainAndDomainRegex/inline_secret_only",
+      "action": "pass"
+    },
+    {
+      "test": "TestGetDomainAndDomainRegex/secrets_array_only",
+      "action": "pass"
+    },
+    {
+      "test": "TestGetDomainAndDomainRegex/deduplicates",
+      "action": "pass"
+    },
+    {
+      "test": "TestGetDomainAndDomainRegex/no_secret_returns_nil",
+      "action": "pass"
+    },
+    {
+      "test": "TestGetDomainAndDomainRegex",
+      "action": "pass"
+    }
+  ],
+  "sourceSha256": {
+    "pkg/authprovider/authx/dynamic.go": "7bdd94cf9982fe34245b7d4698d18dd44a1688943472b79b93a3a0541843cdfa",
+    "pkg/authprovider/authx/dynamic_test.go": "8fd26ffaa5eff395f365945f05d0591690f0994b15c141ee2c1e936b1479e7c8",
+    "pkg/authprovider/authx/cookie_context.go": "d95204723e730839f73c054e976b4e0fecf2f99985026efd522cd6131d665c8c",
+    "pkg/authprovider/authx/cookie_context_test.go": "6ec9b4c60635304176588c614b77b645690679fb43ed6f6468cbabb297499d47",
+    "pkg/authprovider/authx/strategy.go": "1a0a4d633074755e84c358b3c01b46f4a0c4809b8572ffea9b29b947f431653f",
+    "pkg/authprovider/authx/file.go": "911020f9a42a04bb9c3b82fd33e2994060b491695f92a5daff9b04e3a7e22f19",
+    "go.mod": "d960ba91e597d8500c1d7bc68b6daaf07631fa795ee0972eb5dad2bfa49697c5",
+    "go.sum": "df80e4e570143a2abebf4174236e9ccc114292d0a2f3f6102848a4610cd396c1"
+  },
+  "logSha256": "4e0faa4b5c0f3535f960a6830798b9621a0174c04984b2a7a18aaca38e4dbb2c",
+  "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

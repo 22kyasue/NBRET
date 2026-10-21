@@ -1,0 +1,5 @@
+{
+  "meaning": "Exact-byte reconstruction of failed first Go fixture, verified against its original receipt hash; not a passing test",
+  "receipt": "../deep-openfga-receipt-1792267376264.json",
+  "sha256": "62766720492981cf78d86a2efbedc991b65a53dddf05645128c40a7e3f49c655"
+}

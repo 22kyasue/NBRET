@@ -1,0 +1,649 @@
+{
+  "schemaVersion": 1,
+  "builtAt": "2026-10-18",
+  "builtBy": "Bodhi (Claude) from nine independent slice audits of the original 264-file snapshot plus the Synapse mapping",
+  "verification": "Every quote verified verbatim (whitespace/emphasis-normalized) within ±2 lines of its cited line by find-research.mjs --check",
+  "caveat": "Cards summarize studies; they do not replace reading the cited lines before a client-facing claim. Absence from the register is not absence from the research.",
+  "hazards": [
+    {
+      "id": "hazard.active-continuation-status",
+      "path": "docs/research/assessment-evidence/coverage.md",
+      "line": 59,
+      "quote": "Rowan task24a86df3-40b3-41bb-9b56-3ca16a18760b remains active.",
+      "hazard": "An agent may believe Rowan's exhaustion task is still active and continue its queue autonomously.",
+      "guidance": "Historical status as of 2026-10-18; the user's current instructions take precedence (docs/research/reconciliation/README.md:5)."
+    },
+    {
+      "id": "hazard.anti-blocking-advice",
+      "path": "docs/research/bots-swarms/continuation.md",
+      "line": 1035,
+      "quote": "The later anti-blocking section mixes transparent crawler identification with identity-disguise/egress-rotation advice.",
+      "hazard": "Adopting evasion/IP-rotation advice for client crawling.",
+      "guidance": "Identify crawlers and use negotiated quotas; docs/research/bots-swarms/model.md:60 (study, not operational evasion)."
+    },
+    {
+      "id": "hazard.assurance-prototype",
+      "path": "docs/research/security-landscape/deep-review/report-assurance-proposal.md",
+      "line": 42,
+      "quote": "Design-only at this checkpoint.",
+      "hazard": "An agent may build the interpretation-envelope prototype as product work.",
+      "guidance": "It is a design proposal only; reconciliation forbids launching product implementation (docs/research/reconciliation/README.md:5)."
+    },
+    {
+      "id": "hazard.atomic-technique-execution",
+      "path": "docs/research/cybersecurity-firms/splunk-lsass-source.md",
+      "line": 21,
+      "quote": "A separate Atomic reference identifies a test technique; no technique was executed.",
+      "hazard": "An agent validating the LSASS detection could execute the credential-dumping Atomic technique.",
+      "guidance": "Do not execute attack techniques outside an authorized lab (splunk-lsass-source.md:23; safety-context/README.md:29)."
+    },
+    {
+      "id": "hazard.atomic-whatif-as-dry-run",
+      "path": "docs/research/assessment-evidence/deep-atomic.md",
+      "line": 38,
+      "quote": "`-WhatIf` reached the **mock** execution dispatcher",
+      "hazard": "An agent may assume -WhatIf is a safe dry run on a real endpoint.",
+      "guidance": "Do not run Atomic tests on this PC or client endpoints without explicit approval (docs/research/assessment-evidence/implementations.md:25)."
+    },
+    {
+      "id": "hazard.blocked-build",
+      "path": "docs/research/security-landscape/coverage.md",
+      "line": 70,
+      "quote": "ran zero tests because Windows blocked downloaded transitive goimpacket archive",
+      "hazard": "Agent may retry the build with a different download route or disabled protection.",
+      "guidance": "Do not retry or route around the block (docs/research/safety-context/README.md:11,21,37)."
+    },
+    {
+      "id": "hazard.ce-gateway-continuation-priorities",
+      "path": "docs/research/assessment-evidence/continuation-exhaustion.md",
+      "line": 801,
+      "quote": "Continuation priorities, if requested",
+      "hazard": "An agent could resume the 8,622-line Swagger and binary-asset reading as if it were the active task.",
+      "guidance": "Only if Kotaro requests it; the review ended at a user-approved cutoff (continuation-exhaustion.md:799)."
+    },
+    {
+      "id": "hazard.ce-outdated-next-queue-model-write",
+      "path": "docs/research/assessment-evidence/continuation-exhaustion.md",
+      "line": 94,
+      "quote": "Ordinary model-write/reuse fixture with predefined rejection/persistence/reuse criteria",
+      "hazard": "An agent may rerun an already completed admission fixture as a 'next step'.",
+      "guidance": "Already done and passed (continuation-exhaustion.md:104); do not rerun for volume (continuation-exhaustion.md:147)."
+    },
+    {
+      "id": "hazard.checkpoint-continue",
+      "path": "docs/research/bots-swarms/continuation-checkpoint.md",
+      "line": 30,
+      "quote": "Continue QueueGetters, administrative test/result paths",
+      "hazard": "Resuming an already-closed reading queue.",
+      "guidance": "Closed per docs/research/bots-swarms/scope-closure.md:30."
+    },
+    {
+      "id": "hazard.continuation-next-step",
+      "path": "docs/research/bots-swarms/continuation.md",
+      "line": 2463,
+      "quote": "Next: complete child lifecycle/cancel dependencies and selected tests",
+      "hazard": "Outdated next-step instruction; the work is done.",
+      "guidance": "Reading is closed per docs/research/bots-swarms/scope-closure.md:30."
+    },
+    {
+      "id": "hazard.continuation-pending-queue",
+      "path": "docs/research/cybersecurity-firms/continuation.md",
+      "line": 33,
+      "quote": "Continuation questions and their current disposition",
+      "hazard": "Agents may treat continuation questions (more filings, buyer evidence, connector reads) as instructions to fetch more sources or contact vendors.",
+      "guidance": "These are retained questions, not instructions; reader-handoff.md:40 and AGENTS.md say research plans are not instructions to execute."
+    },
+    {
+      "id": "hazard.control-path-real-daemon-needed",
+      "path": "docs/research/security-landscape/deep-review/zap-control-path.md",
+      "line": 78,
+      "quote": "A real-daemon receipt is still needed to verify interruption timing",
+      "hazard": "An agent may run new real-daemon interruption experiments.",
+      "guidance": "Existing receipts cover it (zap-directory-rule.md:23-33); new scanner runs are outside the current stop (docs/research/safety-context/README.md:14)."
+    },
+    {
+      "id": "hazard.coverage-extension-priorities",
+      "path": "docs/research/bots-swarms/coverage.md",
+      "line": 34,
+      "quote": "Extension priorities: review Redis conditional cleanup/dependency helpers",
+      "hazard": "Outdated plan read as current priority.",
+      "guidance": "Historical; see docs/research/bots-swarms/coverage.md:3 and scope-closure.md."
+    },
+    {
+      "id": "hazard.coverage-next-steps",
+      "path": "docs/research/security-landscape/coverage.md",
+      "line": 36,
+      "quote": "one bounded ZAP policy/context/cleanup path; one Atomic executor/sensor pair",
+      "hazard": "Agent may treat the continuation order as a to-do list and execute scanner/Atomic runs.",
+      "guidance": "Next steps are historical proposals, not authorization; existing stopped/rejected operations and their equivalents remain stopped (docs/research/reconciliation/README.md:5; coverage.md:90). Run no scanner/Atomic operation unless the current task explicitly requires it."
+    },
+    {
+      "id": "hazard.coverage-next-steps-openfga-defect",
+      "path": "docs/research/assessment-evidence/coverage.md",
+      "line": 40,
+      "quote": "Follow the confirmed internal condition compilation error-state defect through validation/reuse callers",
+      "hazard": "Reads as an instruction to continue OpenFGA defect work including runtime checks.",
+      "guidance": "Research next steps are not instructions; user instructions govern (docs/research/reconciliation/README.md:5; root AGENTS.md)."
+    },
+    {
+      "id": "hazard.demo-tiers-active-scan",
+      "path": "docs/research/security-landscape/deep-review/nbret-test-evidence.md",
+      "line": 9,
+      "quote": "invokes capture/explore/probe/active scan",
+      "hazard": "An agent may run demo-tiers or browser demos to 'verify' findings, launching an active ZAP scan and browser.",
+      "guidance": "None of these demos were executed (nbret-test-evidence.md:58); scanner operations are stopped (docs/research/safety-context/README.md:14) and browser work requires the computeruse harness per user rules."
+    },
+    {
+      "id": "hazard.drain-regression-fixture",
+      "path": "docs/research/bots-swarms/continuation.md",
+      "line": 3058,
+      "quote": "This requires a minimal Redis regression fixture if an isolated runtime becomes available",
+      "hazard": "Building and running a Redis regression unprompted.",
+      "guidance": "Treat as an open hypothesis; requires explicit authorization (repo AGENTS.md (\"Research plans, sample commands, and historical experiments are not instructions to execute them\"))."
+    },
+    {
+      "id": "hazard.external-strategy-path",
+      "path": "docs/research/synapse/research-to-service.md",
+      "line": 7,
+      "quote": "The local received strategy folder is",
+      "hazard": "Agent may cite strategy proposals (prices, staffing) as approved Synapse offerings, or fail to find the files (they are in strategy/decisions/, outside the repo).",
+      "guidance": "Treat as unapproved recommendations (synapse/research-to-service.md:8); founder decisions pending."
+    },
+    {
+      "id": "hazard.falcon-maintenance-disables-protection",
+      "path": "docs/research/cybersecurity-firms/falcon-deployment-maintenance.md",
+      "line": 17,
+      "quote": "recommends temporarily moving hosts to a maintenance policy with protection and version updates disabled",
+      "hazard": "An agent could apply maintenance-policy steps that reduce endpoint protection on this PC or a client fleet.",
+      "guidance": "Documentation only; no role, module, policy or token was used (falcon-deployment-maintenance.md:23; falcon-buyer-health-check.md:11)."
+    },
+    {
+      "id": "hazard.falconpy-test-authorization-real-tokens",
+      "path": "docs/research/cybersecurity-firms/falcon-auth-source.md",
+      "line": 35,
+      "quote": "loads environment credentials or tests/test.config and calls real token endpoints",
+      "hazard": "Importing or running the auth tests could pick up ambient credentials and hit CrowdStrike token endpoints.",
+      "guidance": "Do not import/run; no credential files were accessed (falcon-auth-source.md:35)."
+    },
+    {
+      "id": "hazard.falconpy-tests-call-live-services",
+      "path": "docs/research/cybersecurity-firms/falcon-host-action-source.md",
+      "line": 15,
+      "quote": "It is not an inert fixture-only suite suitable for casual execution on this PC.",
+      "hazard": "Running FalconPy host tests could authenticate and perform hide/unhide actions on a real tenant.",
+      "guidance": "Do not execute these tests; they were read only (falcon-host-action-source.md:15; safety-context/README.md:29)."
+    },
+    {
+      "id": "hazard.flagged-operation-cause",
+      "path": "docs/research/security-landscape/deep-review/zap-reports.md",
+      "line": 81,
+      "quote": "Exact warning/rejected action is not visible in this session; reason unavailable.",
+      "hazard": "An agent may infer which specific operation was flagged from nearby source comments, or treat 'flagged operation' as a known classification.",
+      "guidance": "The cause is unknown; 'flagged operation' wording overstated the evidence (docs/research/safety-context/README.md:33). Keep the stop, do not reconstruct it."
+    },
+    {
+      "id": "hazard.flagged-operation-certainty",
+      "path": "docs/research/security-landscape/coverage.md",
+      "line": 90,
+      "quote": "Flagged operation remains stopped; this continuation performed no new runtime labs.",
+      "hazard": "Agent may tell Kotaro or clients that a specific action was flagged by a safety system, or try to identify/recreate it.",
+      "guidance": "Cause is unknown; keep stopped and do not reproduce (docs/research/safety-context/README.md:25,33,37)."
+    },
+    {
+      "id": "hazard.flagged-wording-overclaim",
+      "path": "docs/research/assessment-evidence/cel-async-boundaries.md",
+      "line": 27,
+      "quote": "The flagged operation remains stopped with no equivalent reproduction.",
+      "hazard": "An agent may report a confirmed policy violation or invent the stop's cause from this repeated wording.",
+      "guidance": "Cause unknown; no rejected call was recovered (docs/research/safety-context/README.md:33)."
+    },
+    {
+      "id": "hazard.garak-init-network",
+      "path": "docs/research/assessment-evidence/deep-garak.md",
+      "line": 27,
+      "quote": "Thus construction can contact a configured service before probe execution.",
+      "hazard": "An agent may initialize garak assuming it is local-only, generating provider traffic and cost.",
+      "guidance": "Treat scanner construction as network activity requiring authorization (docs/research/reconciliation/README.md:5)."
+    },
+    {
+      "id": "hazard.go-flagged-operation-wording",
+      "path": "docs/research/toolchain/go-material-review.md",
+      "line": 9,
+      "quote": "flagged operation stopped",
+      "hazard": "Agent infers a specific recovered safety warning or rejected call behind repeated \"flagged operation\" phrases, or guesses what it was.",
+      "guidance": "Treat it as a conservative stop instruction with unknown cause; do not infer or retry (safety-context/README.md:33)."
+    },
+    {
+      "id": "hazard.go-integration-tests-live",
+      "path": "docs/research/toolchain/go-material-review.md",
+      "line": 1350,
+      "quote": "TestMain explicitly creates a randomly named bucket and later invokes destructive cleanup",
+      "hazard": "Agent runs upstream SDK integration/perf tests that load AWS config and create/delete real buckets.",
+      "guidance": "Do not run; go-material-review.md:1348 heading says do not run; research is source-only."
+    },
+    {
+      "id": "hazard.go-jsonschema-example-network",
+      "path": "docs/research/toolchain/go-material-review.md",
+      "line": 1200,
+      "quote": "Therefore do not run an unfiltered upstream go test assuming it is inert",
+      "hazard": "Agent runs `go test` on jsonschema and triggers an outbound GitHub request.",
+      "guidance": "Run nothing without containment review; filter tests."
+    },
+    {
+      "id": "hazard.go-partial-file-status",
+      "path": "docs/research/toolchain/go-material-review.md",
+      "line": 1379,
+      "quote": "Read api_client.go (1–400 of 1372); the file remains partial.",
+      "hazard": "Agent reports api_client.go as partially reviewed.",
+      "guidance": "Completed at go-material-review.md:1391 (1–1372)."
+    },
+    {
+      "id": "hazard.go-prioritized-queue-outdated",
+      "path": "docs/research/toolchain/go-material-review.md",
+      "line": 1118,
+      "quote": "S3 manager upload buffering/multipart/retry/abort and service request serialization/preconditions/metadata",
+      "hazard": "Agent takes the old \"Prioritized unread queue\" as current next work.",
+      "guidance": "Queue was completed later (S3 manager closure go-material-review.md:1361; serializers go-material-review.md:1623); verify in go-material-queue.json."
+    },
+    {
+      "id": "hazard.go-stale-unread-counts",
+      "path": "docs/research/toolchain/go-material-review.md",
+      "line": 9,
+      "quote": "175 files remain unread",
+      "hazard": "Agent believes S3 module review is incomplete and re-reads or re-plans based on stale counts.",
+      "guidance": "Section order is newest-first in lines 3–712; later passages record file closures (e.g. go-material-review.md:1623, 1869, 2049). Check go-material-queue.json."
+    },
+    {
+      "id": "hazard.go-transport-test-large-workloads",
+      "path": "docs/research/toolchain/go-material-review.md",
+      "line": 827,
+      "quote": "this source is not authorization to run a large workload",
+      "hazard": "Agent runs net/http transport tests with 1GiB bodies, unbounded producers or real DNS.",
+      "guidance": "Keep unexecuted; see go-material-review.md:847 (real DNS) and go-material-review.md:881."
+    },
+    {
+      "id": "hazard.google-rule-integration-test-live",
+      "path": "docs/research/cybersecurity-firms/google-rule-lifecycle-source.md",
+      "line": 48,
+      "quote": "is an explicitly integration-marked live workflow",
+      "hazard": "Running the CLI integration test creates, enables and alerts on a real rule in a SecOps tenant.",
+      "guidance": "Read only; it was not run (google-rule-lifecycle-source.md:48)."
+    },
+    {
+      "id": "hazard.lab-plan-spawns-processes",
+      "path": "docs/research/assessment-evidence/deep-lab-plan.md",
+      "line": 26,
+      "quote": "On Windows only, spawn one new hidden synthetic Python child that prints READY then sleeps",
+      "hazard": "An agent may re-run the planned process-kill experiment (which also carries a now-wrong prediction) and spawn console processes.",
+      "guidance": "Plans are historical; result already recorded in deep-monitor.md:28. Do not re-run labs (docs/research/reconciliation/README.md:5)."
+    },
+    {
+      "id": "hazard.lab-script-rerun",
+      "path": "docs/research/security-landscape/lab-results.md",
+      "line": 7,
+      "quote": "From NBRET: `node scripts/research-security-lab.mjs`.",
+      "hazard": "Agent may rerun research labs as part of a reconciliation or audit task.",
+      "guidance": "Research commands are historical, not instructions (AGENTS.md); rerun only when the current task explicitly calls for it, loopback only."
+    },
+    {
+      "id": "hazard.mockserver-all-interfaces",
+      "path": "docs/research/bots-swarms/continuation.md",
+      "line": 1967,
+      "quote": "Do not reuse these defaults as an isolated-lab harness.",
+      "hazard": "Reusing Scrapy mock servers as an isolated lab (they bind all interfaces).",
+      "guidance": "Bind explicitly to loopback in any authorized lab."
+    },
+    {
+      "id": "hazard.nbret-scanner-next-daemon-fixture",
+      "path": "docs/research/security-landscape/deep-review/nbret-scanner.md",
+      "line": 41,
+      "quote": "Next: verify real ZAP alert API selection and a passive-only owned-daemon fixture.",
+      "hazard": "An agent may launch new ZAP daemon/scanner experiments as the 'next step'.",
+      "guidance": "Done already (zap-directory-rule.md:17); scanner capability/reachability work stopped (docs/research/safety-context/README.md:14; zap-reports.md:81). Do not start new scanner runs without Kotaro's explicit instruction."
+    },
+    {
+      "id": "hazard.networkpolicy-future-run",
+      "path": "docs/research/security-landscape/deep-review/nuclei-network-policy-lab.md",
+      "line": 5,
+      "quote": "A future run must explicitly record resolved dependency graph and availability",
+      "hazard": "An agent may enable module downloads to make the failed NetworkPolicy lab pass.",
+      "guidance": "No dependency downloads or control changes were authorized (nuclei-network-policy-lab.md:5; priorities.md:14)."
+    },
+    {
+      "id": "hazard.nuclei-full-path-reproduce",
+      "path": "docs/research/security-landscape/deep-review/nuclei-input-identity.md",
+      "line": 23,
+      "quote": "reproduce full HTTP path only with owned loopback targets when build dependencies permit",
+      "hazard": "An agent may retry the blocked Nuclei build or work around Windows controls to reproduce the full engine.",
+      "guidance": "Blocked goimpacket build must not be retried (priorities.md:13; nuclei-matchers.md:3; docs/research/safety-context/README.md:11)."
+    },
+    {
+      "id": "hazard.nuclei-public-target-tests",
+      "path": "docs/research/security-landscape/deep-review/nuclei-execution.md",
+      "line": 51,
+      "quote": "Those tests are not authorized local labs and were not executed.",
+      "hazard": "An agent may run upstream Nuclei/Fastdialer/SDK test suites that contact public DNS/HTTP targets.",
+      "guidance": "Do not run upstream suites that contact public targets (nuclei-execution.md:51; nuclei-native-network.md:31; AGENTS.md: research plans are not instructions to execute)."
+    },
+    {
+      "id": "hazard.openfga-condition-followup-near-stopped-op",
+      "path": "docs/research/assessment-evidence/coverage.md",
+      "line": 63,
+      "quote": "A continuation should first follow `condition.NewUncompiled`/`Compile` through model-write validation and cached graph reuse",
+      "hazard": "An agent may resume OpenFGA runtime experiments (compile/panic, recovery) adjacent to the suspended recovery reproduction.",
+      "guidance": "Source-only reading at most; do not recreate the suspended reproduction or equivalents (docs/research/safety-context/README.md:15 and :37; docs/research/reconciliation/README.md:5)."
+    },
+    {
+      "id": "hazard.openfga-container-tests",
+      "path": "docs/research/assessment-evidence/continuation-exhaustion.md",
+      "line": 283,
+      "quote": "These are integration-lab provisioning operations, not something to run casually",
+      "hazard": "Running OpenFGA Postgres/MySQL package tests publishes all container ports and modifies replication auth, plus package-wide cleanup.",
+      "guidance": "Use the inert-driver approach (continuation-exhaustion.md:257) unless a fixture/ownership review is done and the user approves."
+    },
+    {
+      "id": "hazard.openfga-recovery-channel-close-stopped",
+      "path": "docs/research/assessment-evidence/continuation-exhaustion.md",
+      "line": 334,
+      "quote": "User and Rowan explicitly stopped the pending recovery/channel-close reproduction.",
+      "hazard": "An agent might design an equivalent recovery, panic or channel-close fixture for OpenFGA to close an open question.",
+      "guidance": "Permanently stopped for this scope (continuation-exhaustion.md:360, :799); see docs/research/safety-context/README.md:15 (Agate pause, cause unknown). Do not reproduce by another route."
+    },
+    {
+      "id": "hazard.order-lab-public",
+      "path": "docs/research/learning/chapters/07-replication.md",
+      "line": 15,
+      "quote": "Open the loopback address printed by the process.",
+      "hazard": "Agent may expose the deliberately vulnerable lab beyond loopback or treat its toy identity selector as a login model.",
+      "guidance": "Keep loopback-only; identity selector is a simulation (learning/chapters/07-replication.md:15,27)."
+    },
+    {
+      "id": "hazard.pan-isolation-test-performs-real-isolation",
+      "path": "docs/research/cybersecurity-firms/pan-isolation-source.md",
+      "line": 21,
+      "quote": "It can perform real isolation/release and context deletion.",
+      "hazard": "An agent could run the demisto isolate/unisolate test playbook to validate behavior, isolating real endpoints.",
+      "guidance": "Read only; do not run vendor test playbooks or response actions without client authorization and scope (safety-context/README.md:29; scope-audit.md:9)."
+    },
+    {
+      "id": "hazard.pgx-benchmark-drop-table",
+      "path": "docs/research/assessment-evidence/pgx-binding-boundaries.md",
+      "line": 373,
+      "quote": "Write benchmark setup contains drop/create of a non-temporary table named t",
+      "hazard": "Running pgx benchmarks against an existing database would drop table t.",
+      "guidance": "Never run against a non-disposable database; source review only (pgx-binding-boundaries.md:373)."
+    },
+    {
+      "id": "hazard.pgx-dev-commands",
+      "path": "docs/research/assessment-evidence/pgx-binding-boundaries.md",
+      "line": 202,
+      "quote": "Host setup may install mise through a live installer if absent",
+      "hazard": "Running pgx host setup or devcontainer scripts would install unpinned software and privileged services.",
+      "guidance": "Read only (pgx-binding-boundaries.md:190, :202); no installs without approval."
+    },
+    {
+      "id": "hazard.priorities-capability-backlog",
+      "path": "docs/research/security-landscape/deep-review/priorities.md",
+      "line": 7,
+      "quote": "Resume/cluster/parallel state, cleanup, auth/session failure and scope guarantees then follow in call order.",
+      "hazard": "An agent may treat the finite backlog as authorization to continue capability/scope/auth-failure investigation.",
+      "guidance": "Tomo's continuation was stopped and moved to report interpretation (docs/research/safety-context/README.md:14); later entries say no further capability/reachability lab is authorized (priorities.md:31)."
+    },
+    {
+      "id": "hazard.private-cluster-seeds",
+      "path": "docs/research/bots-swarms/continuation.md",
+      "line": 1227,
+      "quote": "private10.0.6.161 cluster seeds: never execute blindly",
+      "hazard": "Executing tests that contact private network addresses.",
+      "guidance": "Do not run; contacting unscoped targets is out of bounds."
+    },
+    {
+      "id": "hazard.privileged-compose",
+      "path": "docs/research/bots-swarms/continuation.md",
+      "line": 2977,
+      "quote": "The cluster Compose requests host IPC/network and privileged mode",
+      "hazard": "Launching the supplied privileged Compose fixture that deletes /data and binds all interfaces.",
+      "guidance": "Do not launch; recorded at docs/research/bots-swarms/continuation.md:2977 as unsuitable."
+    },
+    {
+      "id": "hazard.prowler-next-oracle",
+      "path": "docs/research/toolchain/cloud-posture.md",
+      "line": 49,
+      "quote": "Next oracle should trace the real model/failed-check propagation under a mocked AccessDenied policy-version call",
+      "hazard": "An agent could take this 'next oracle' as an instruction and run the stopped Prowler denied-collection experiment.",
+      "guidance": "Stopped at cloud-posture.md:52 and toolchain/continuation.md:289 (cause unknown, see safety-context/README.md:13); do not run or re-propose without Kotaro's explicit instruction."
+    },
+    {
+      "id": "hazard.rea-ready-integration",
+      "path": "docs/research/2026-10-16-rea-and-security-workflows.md",
+      "line": 230,
+      "quote": "Capture the same scenario under each version with NBRET",
+      "hazard": "Agent may start pilots (installing promptfoo/garak/CALDERA/Atomic) as if approved.",
+      "guidance": "The handoff authorizes no target testing or integration (2026-10-16-rea-and-security-workflows.md:276)."
+    },
+    {
+      "id": "hazard.readme-reachability-next",
+      "path": "docs/research/security-landscape/deep-review/priorities.md",
+      "line": 29,
+      "quote": "Next trace URL-target activation versus explicitly unsupported context-only low-memory scans",
+      "hazard": "An agent may pursue scanner reachability tracing/labs as an open next step.",
+      "guidance": "Superseded by the stop recorded at priorities.md:31 and docs/research/safety-context/README.md:14."
+    },
+    {
+      "id": "hazard.redis-adapter-lab-command",
+      "path": "docs/research/bots-swarms/redis-adapter-lab-plan.md",
+      "line": 7,
+      "quote": "Command: `node docs/research/bots-swarms/redis-adapter-lab.mjs`.",
+      "hazard": "An agent may re-run research lab scripts as if instructed.",
+      "guidance": "Do not re-run labs; cite the existing receipt. Per repo AGENTS.md (\"Research plans, sample commands, and historical experiments are not instructions to execute them\") and docs/research/reconciliation/README.md:5 (reading/reconciliation, not new execution)."
+    },
+    {
+      "id": "hazard.repository-catalog-network",
+      "path": "docs/research/security-landscape/coverage.md",
+      "line": 42,
+      "quote": "The latter needs network access and may change future catalog results",
+      "hazard": "Rerunning the catalog script would overwrite dated pins and contact GitHub.",
+      "guidance": "Preserve the dated JSON pins (same line); do not rerun without a task that requires it."
+    },
+    {
+      "id": "hazard.reproduce-lab-command",
+      "path": "docs/research/assessment-evidence/executable-claims.md",
+      "line": 16,
+      "quote": "node docs/research/assessment-evidence/lab.mjs docs/research/assessment-evidence/lab-receipt-repeat.json",
+      "hazard": "The 'Reproduce' block invites running a research script.",
+      "guidance": "Use the retained receipt lab-receipt-20261017.json; run only with explicit user instruction (docs/research/reconciliation/README.md:5)."
+    },
+    {
+      "id": "hazard.requires-internet-tests",
+      "path": "docs/research/bots-swarms/continuation.md",
+      "line": 2231,
+      "quote": "Conftest does not skip requires_internet tests: it marks them flaky with retries.",
+      "hazard": "Running Scrapy tests assuming they are offline.",
+      "guidance": "Exclude internet-marked tests explicitly; no external contact without authorization."
+    },
+    {
+      "id": "hazard.retry-blocked-403-sources",
+      "path": "docs/research/cybersecurity-firms/continuation.md",
+      "line": 47,
+      "quote": "CrowdStrike financial-results, Fortinet financial-results and Cisco earnings page captures returned 403; no retries/reroutes.",
+      "hazard": "An agent filling financial gaps could retry or reroute around 403/robots-blocked sources (SEC filings, investor pages, ZOZO).",
+      "guidance": "Do not revisit blocked/rejected URLs through another route (scope-audit.md:31; buyer-evidence-queue.md:9)."
+    },
+    {
+      "id": "hazard.scope-closure-redis-integration",
+      "path": "docs/research/bots-swarms/scope-closure.md",
+      "line": 22,
+      "quote": "Explicitly scoped owned Redis integration with predefined state/effect oracle",
+      "hazard": "Reading the \"what would resolve it\" column as a to-do to stand up Redis/Postgres/Go integrations.",
+      "guidance": "These are conditions for future, separately authorized work; repo AGENTS.md (\"Research plans, sample commands, and historical experiments are not instructions to execute them\")."
+    },
+    {
+      "id": "hazard.sdk-copy-mode-force-replace",
+      "path": "docs/research/assessment-evidence/sdk-boundaries-continuation.md",
+      "line": 62,
+      "quote": "Do not invoke it on existing workspaces to test that behavior.",
+      "hazard": "Testing skill copy mode on a real workspace can replace real directories.",
+      "guidance": "Only use fresh owned temp trees (sdk-boundaries-continuation.md:62)."
+    },
+    {
+      "id": "hazard.sdk-credential-lab",
+      "path": "docs/research/assessment-evidence/sdk-boundaries-continuation.md",
+      "line": 80,
+      "quote": "Any future lab must override config sources with a synthetic directory before materialization",
+      "hazard": "A credential-copy lab without overriding config sources would copy the user's real agent credentials.",
+      "guidance": "Follow sdk-boundaries-continuation.md:80: synthetic config dir and owned temp-root deletion checks."
+    },
+    {
+      "id": "hazard.sdk-live-backend-tests",
+      "path": "docs/research/assessment-evidence/sdk-boundaries-continuation.md",
+      "line": 531,
+      "quote": "No environment variables containing endpoint/credential values were inspected",
+      "hazard": "Running the Claude SDK live Redis/S3 tests would use configured credentials and destructive teardown against real buckets.",
+      "guidance": "Do not inspect credentials or contact configured services (continuation-exhaustion.md:360)."
+    },
+    {
+      "id": "hazard.sdk-live-scripts",
+      "path": "docs/research/assessment-evidence/sdk-boundaries-continuation.md",
+      "line": 64,
+      "quote": "They use real auth/provider calls or import generated code and some recursively replace example workspaces.",
+      "hazard": "Running wrapper live scripts makes paid provider calls with real credentials and deletes workspaces.",
+      "guidance": "Source only; historical plan steps are not authorization (sdk-boundaries-continuation.md:60)."
+    },
+    {
+      "id": "hazard.sdk-tests-visible-windows",
+      "path": "docs/research/assessment-evidence/sdk-boundaries-continuation.md",
+      "line": 125,
+      "quote": "launch actual Python children without this PC's required hidden-window adaptation",
+      "hazard": "Running these transport tests opens console windows on the user's monitor.",
+      "guidance": "Do not run without hidden-window adaptation (user CLAUDE.md no-terminal-popup rule)."
+    },
+    {
+      "id": "hazard.sentinel-replay-next-step",
+      "path": "docs/research/assessment-evidence/coverage.md",
+      "line": 39,
+      "quote": "Replay the pinned Sentinel query against a local or approved test backend",
+      "hazard": "An agent may run detection replays against a client or shared SIEM.",
+      "guidance": "Requires explicit approval and an isolated backend; treat as proposal (docs/research/reconciliation/README.md:5)."
+    },
+    {
+      "id": "hazard.sentinel-template-deploy",
+      "path": "docs/research/cybersecurity-firms/sentinel-playbooks-source.md",
+      "line": 17,
+      "quote": "instructs a customer administrator to grant Graph application User.Read.All with admin consent",
+      "hazard": "An agent could follow README setup steps to deploy playbooks and grant tenant-wide Graph permissions.",
+      "guidance": "No deployment or authorization was performed (sentinel-playbooks-source.md:35); tenant changes require client approval."
+    },
+    {
+      "id": "hazard.stale-ledger-scope",
+      "path": "docs/research/cybersecurity-firms/manual-reading-ledger.json",
+      "line": 3,
+      "quote": "Captures 025",
+      "hazard": "The ledger header claims captures 025-037 only, while entries run to capture-052; an agent may think later manuals were never logged.",
+      "guidance": "Trust entries, not the header; scope-audit.md:7 says 025-047 and entries extend to 052."
+    },
+    {
+      "id": "hazard.status-catalog",
+      "path": "docs/research/bots-swarms/catalog.md",
+      "line": 8,
+      "quote": "partial worker/tests; adapted class lab with synthetic backend",
+      "hazard": "Stale partial statuses lead to wrong evidence-strength claims.",
+      "guidance": "Use docs/research/bots-swarms/scope-closure.md:3."
+    },
+    {
+      "id": "hazard.status-checkpoint-counts",
+      "path": "docs/research/bots-swarms/continuation-checkpoint.md",
+      "line": 23,
+      "quote": "Latest sustained checkpoint:267 main files complete,0partial,1244unread",
+      "hazard": "Treating historical counts as current.",
+      "guidance": "Use docs/research/bots-swarms/scope-closure.md:30."
+    },
+    {
+      "id": "hazard.status-coverage-unread",
+      "path": "docs/research/bots-swarms/coverage.md",
+      "line": 7,
+      "quote": "Supporting material files remain unread.",
+      "hazard": "Believing supporting files are unread and re-reading or under-citing them.",
+      "guidance": "All 651 supporting files are complete (docs/research/bots-swarms/coverage.md:3)."
+    },
+    {
+      "id": "hazard.status-readme-checkpoint",
+      "path": "docs/research/bots-swarms/README.md",
+      "line": 5,
+      "quote": "Read the [current enforcement checkpoint](continuation-checkpoint.md) for the latest accessible findings.",
+      "hazard": "Starting from an outdated checkpoint.",
+      "guidance": "Start at docs/research/bots-swarms/scope-closure.md."
+    },
+    {
+      "id": "hazard.status-source-notes",
+      "path": "docs/research/bots-swarms/source-notes.md",
+      "line": 39,
+      "quote": "Full drain, sandboxed child cleanup and backend close still need tracing.",
+      "hazard": "Re-tracing completed work or claiming it is unknown.",
+      "guidance": "Traced at docs/research/bots-swarms/continuation.md:2449-2465."
+    },
+    {
+      "id": "hazard.synthesis-open-compile-experiment",
+      "path": "docs/research/assessment-evidence/synthesis.md",
+      "line": 42,
+      "quote": "mutation-test repeated failing compilation through the actual validation/reuse caller",
+      "hazard": "Proposes an experiment whose answer already exists, inviting new runtime work against OpenFGA internals.",
+      "guidance": "Read continuation-exhaustion.md:60-70 and :104 first; any new OpenFGA runtime work must respect the stop at continuation-exhaustion.md:334."
+    },
+    {
+      "id": "hazard.takumi-connect-repo",
+      "path": "docs/research/cybersecurity-firms/gmo-flatt-security.md",
+      "line": 35,
+      "quote": "Nothing here authorizes us to upload this repository or connect its GitHub account.",
+      "hazard": "An agent evaluating Takumi could upload NBRET or client code or install the write-enabled GitHub App.",
+      "guidance": "Do not upload code or install apps without explicit approval (gmo-flatt-security.md:35; takumi-github-scope-boundary.md:11)."
+    },
+    {
+      "id": "hazard.takumi-ownership-tokens",
+      "path": "docs/research/cybersecurity-firms/takumi-authority-boundary.md",
+      "line": 7,
+      "quote": "verifies a target through a DNS TXT token at",
+      "hazard": "An agent could place ownership tokens in DNS or a web root and dispatch dynamic assessments against a target.",
+      "guidance": "No tokens, DNS records or target requests were used; dynamic testing needs client authorization (takumi-authority-boundary.md:11; safety-context/README.md:29)."
+    },
+    {
+      "id": "hazard.toolchain-continuation-prowler",
+      "path": "docs/research/toolchain/continuation.md",
+      "line": 333,
+      "quote": "next trace real report-model/failed-check propagation under mocked denied policy-version collection",
+      "hazard": "A numbered next step still proposes the stopped Prowler experiment.",
+      "guidance": "Superseded at toolchain/continuation.md:289; the operation remains stopped. Toolchain continuation entries are partly reverse-chronological, so read the top first."
+    },
+    {
+      "id": "hazard.tox-aws-credentials",
+      "path": "docs/research/bots-swarms/continuation.md",
+      "line": 585,
+      "quote": "Base testenv passes named AWS credential variables",
+      "hazard": "Running Scrapy tox environments that pass through cloud credentials and download dependencies.",
+      "guidance": "Do not run; repo AGENTS.md (\"Research plans, sample commands, and historical experiments are not instructions to execute them\")."
+    },
+    {
+      "id": "hazard.trend-mdr-password-docs",
+      "path": "docs/research/cybersecurity-firms/trend-mdr-access-boundary.md",
+      "line": 5,
+      "quote": "It explicitly says those documents are password-protected",
+      "hazard": "An agent might seek credentials or alternate copies of protected Trend MDR service descriptions.",
+      "guidance": "Leave them unread; no password, account access or alternate copy was sought (trend-mdr-access-boundary.md:5)."
+    },
+    {
+      "id": "hazard.upstream-flushall-suite",
+      "path": "docs/research/bots-swarms/continuation.md",
+      "line": 2734,
+      "quote": "calls flushAll before every test; this suite must not be pointed at an existing/shared service",
+      "hazard": "Running upstream test suites against a shared Redis wipes data.",
+      "guidance": "Do not run; repo AGENTS.md (\"Research plans, sample commands, and historical experiments are not instructions to execute them\"); docs/research/safety-context/README.md:37 (do not recreate actions)."
+    },
+    {
+      "id": "hazard.zap-control-path-stale-unread",
+      "path": "docs/research/security-landscape/deep-review/zap-control-path.md",
+      "line": 104,
+      "quote": "Those files remain unread or partial in the queue and are the immediate continuation",
+      "hazard": "An agent may believe ActiveScan/Session/AlertAPI sources are unread and restart reading or labs, or distrust the complete annotations above it.",
+      "guidance": "Files are recorded complete earlier in the same file (zap-control-path.md:43-104) and in file-queue.json; use those annotations."
+    }
+  ]
+}

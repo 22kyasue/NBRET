@@ -1,0 +1,73 @@
+{
+  "checkedAt": "2026-10-18T18:39:51.889Z",
+  "kind": "Local retrieval smoke checks",
+  "results": [
+    {
+      "query": "what penetration testing service components do clients need",
+      "expected": "service-definition",
+      "returned": [
+        "service-definition"
+      ],
+      "pass": true
+    },
+    {
+      "query": "checksum retries changed body",
+      "expected": "retry-checksum-correction",
+      "returned": [
+        "retry-checksum-correction"
+      ],
+      "pass": true
+    },
+    {
+      "query": "identity tenant saved observation",
+      "expected": "identity-and-reuse",
+      "returned": [
+        "identity-and-reuse"
+      ],
+      "pass": true
+    },
+    {
+      "query": "scanner completed clean report",
+      "expected": "scanner-completion",
+      "returned": [
+        "scanner-completion"
+      ],
+      "pass": true
+    },
+    {
+      "query": "AI",
+      "expected": "ai-validation",
+      "returned": [
+        "ai-validation"
+      ],
+      "pass": true
+    },
+    {
+      "query": "cloud encryption bucket policy",
+      "expected": "cloud-effective-state",
+      "returned": [
+        "cloud-effective-state"
+      ],
+      "pass": true
+    },
+    {
+      "query": "queue worker cancellation budget",
+      "expected": "workers-and-effects",
+      "returned": [
+        "workers-and-effects",
+        "scanner-completion"
+      ],
+      "pass": true
+    },
+    {
+      "query": "defender isolation containment action",
+      "expected": "defender-effect",
+      "returned": [
+        "defender-effect"
+      ],
+      "pass": true
+    }
+  ],
+  "limits": "Eight authored questions check routing only, not held-out retrieval recall, source correctness, agent adherence or completion of reconciliation.",
+  "supersededBy": "eval/ (independent held-out and auditor question sets; run find-research.mjs --eval)"
+}

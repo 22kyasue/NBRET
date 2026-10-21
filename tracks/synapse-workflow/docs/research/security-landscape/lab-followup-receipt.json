@@ -1,0 +1,184 @@
+{
+  "kind": "synthetic-authorization-assertion-evaluation",
+  "finishedAt": "2026-10-17T19:04:37.052Z",
+  "environment": {
+    "node": "v24.21.0",
+    "platform": "win32",
+    "arch": "x64"
+  },
+  "records": [
+    {
+      "mode": "vulnerable",
+      "repetition": 1,
+      "result": "failed",
+      "own": "passed",
+      "security": "failed",
+      "weakDenial": "failed",
+      "availability": "passed",
+      "offlineRequests": 0,
+      "elapsedMs": [
+        6,
+        0
+      ],
+      "evidence": "C:\\Users\\kotar\\githubprojects\\NBRET\\runs\\security-lab-1792263876973\\vulnerable-1"
+    },
+    {
+      "mode": "vulnerable",
+      "repetition": 2,
+      "result": "failed",
+      "own": "passed",
+      "security": "failed",
+      "weakDenial": "failed",
+      "availability": "passed",
+      "offlineRequests": 0,
+      "elapsedMs": [
+        1,
+        0
+      ],
+      "evidence": "C:\\Users\\kotar\\githubprojects\\NBRET\\runs\\security-lab-1792263876973\\vulnerable-2"
+    },
+    {
+      "mode": "vulnerable",
+      "repetition": 3,
+      "result": "failed",
+      "own": "passed",
+      "security": "failed",
+      "weakDenial": "failed",
+      "availability": "passed",
+      "offlineRequests": 0,
+      "elapsedMs": [
+        0,
+        0
+      ],
+      "evidence": "C:\\Users\\kotar\\githubprojects\\NBRET\\runs\\security-lab-1792263876973\\vulnerable-3"
+    },
+    {
+      "mode": "fixed",
+      "repetition": 1,
+      "result": "passed",
+      "own": "passed",
+      "security": "passed",
+      "weakDenial": "passed",
+      "availability": "failed",
+      "offlineRequests": 0,
+      "elapsedMs": [
+        0,
+        0
+      ],
+      "evidence": "C:\\Users\\kotar\\githubprojects\\NBRET\\runs\\security-lab-1792263876973\\fixed-1"
+    },
+    {
+      "mode": "fixed",
+      "repetition": 2,
+      "result": "passed",
+      "own": "passed",
+      "security": "passed",
+      "weakDenial": "passed",
+      "availability": "failed",
+      "offlineRequests": 0,
+      "elapsedMs": [
+        1,
+        1
+      ],
+      "evidence": "C:\\Users\\kotar\\githubprojects\\NBRET\\runs\\security-lab-1792263876973\\fixed-2"
+    },
+    {
+      "mode": "fixed",
+      "repetition": 3,
+      "result": "passed",
+      "own": "passed",
+      "security": "passed",
+      "weakDenial": "passed",
+      "availability": "failed",
+      "offlineRequests": 0,
+      "elapsedMs": [
+        0,
+        0
+      ],
+      "evidence": "C:\\Users\\kotar\\githubprojects\\NBRET\\runs\\security-lab-1792263876973\\fixed-3"
+    },
+    {
+      "mode": "deceptive",
+      "repetition": 1,
+      "result": "failed",
+      "own": "passed",
+      "security": "failed",
+      "weakDenial": "passed",
+      "availability": "failed",
+      "offlineRequests": 0,
+      "elapsedMs": [
+        0,
+        1
+      ],
+      "evidence": "C:\\Users\\kotar\\githubprojects\\NBRET\\runs\\security-lab-1792263876973\\deceptive-1"
+    },
+    {
+      "mode": "deceptive",
+      "repetition": 2,
+      "result": "failed",
+      "own": "passed",
+      "security": "failed",
+      "weakDenial": "passed",
+      "availability": "failed",
+      "offlineRequests": 0,
+      "elapsedMs": [
+        1,
+        0
+      ],
+      "evidence": "C:\\Users\\kotar\\githubprojects\\NBRET\\runs\\security-lab-1792263876973\\deceptive-2"
+    },
+    {
+      "mode": "deceptive",
+      "repetition": 3,
+      "result": "failed",
+      "own": "passed",
+      "security": "failed",
+      "weakDenial": "passed",
+      "availability": "failed",
+      "offlineRequests": 0,
+      "elapsedMs": [
+        0,
+        0
+      ],
+      "evidence": "C:\\Users\\kotar\\githubprojects\\NBRET\\runs\\security-lab-1792263876973\\deceptive-3"
+    }
+  ],
+  "identityMismatch": {
+    "fresh": "passed",
+    "offline": "failed",
+    "savedIdentity": "A",
+    "requestedIdentity": "B",
+    "sameUrl": true,
+    "offlineRequests": 0,
+    "interpretation": "Offline matcher ignored fixture identity headers; not a live application vulnerability."
+  },
+  "sourceSha256": {
+    "scripts/research-security-lab.mjs": "107b40f81f08ecc632a7adc9e489740cc75eac8ca2ddf71a91deabf00f53f0e7",
+    "docs/research/security-landscape/lab-plan.md": "9e20385ada2cce6cfdd3329d3dd0891c38dcaa1b4a0aa0b99064b9f74d8c8413",
+    "docs/research/security-landscape/lab-followup-plan.md": "7270b08a9955d4fe5ef515f1713bb228bd43d4b1e2fd3d11b0cf63ed1ef97b4e",
+    "src/scope.mjs": "4a949e59c99b150a019eab8dd3aac5415948dfac6a95f68ca9888bce708b4cac",
+    "src/http.mjs": "be2d47f1ad59ce3237bdd4e2e567556b39b3532def402312209ebdfe138690fb",
+    "src/probe.mjs": "62c6ba4d3eb5789aa803068f7723eed50bc2d7ea4d2c71652c6bb192bae51873",
+    "src/assertions.mjs": "677b156f97735ce16019cb1315f02374506236d2d157ab8b81f7f5771fcd6774",
+    "src/checks.mjs": "301dca7083116a9f1d06aeb7861bac6f3f3f83fcf232b5566eb3bf186ec69682"
+  },
+  "requests": 21,
+  "redirectRequests": 0,
+  "strongFalseNegatives": 0,
+  "strongFalsePositives": 0,
+  "weakDenialFalseNegatives": 3,
+  "missingEvidence": "incomplete",
+  "rejectedCasesSent": 0,
+  "cleanup": {
+    "appListening": false,
+    "sinkListening": false
+  },
+  "modelCalls": 0,
+  "modelCostUsd": 0,
+  "elapsedMs": 79.6385,
+  "limitations": [
+    "Hand-authored cases with known fixture truth; not autonomous discovery.",
+    "No TLS, real identity provider, concurrency, production deployment or external-tool validation.",
+    "No customer-performance or cross-tool ranking claim."
+  ]
+}

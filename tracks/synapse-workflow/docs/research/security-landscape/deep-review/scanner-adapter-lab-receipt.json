@@ -1,0 +1,707 @@
+{
+  "at": "2026-10-17T19:37:57.170Z",
+  "node": "v24.21.0",
+  "scope": "In-memory API simulation only; zero network calls or scanner execution",
+  "sourceSha256": {
+    "src/zap.mjs": "9f3fd2ea88f4055f0a66386bd5f5654ee8992135a6ff11b1ffd0de3a0595572f",
+    "src/managed-zap.mjs": "9a1095ffd6264d608a3ad96090ad8e97802e08eed6803b15f2bdee55f881bb52",
+    "scripts/research-scanner-adapter-lab.mjs": "7ceb0ddd4dd657a4105b525785f6e327f6b22e1e26413c858693ffc682acc310",
+    "docs/research/security-landscape/deep-review/scanner-adapter-lab-plan.md": "bf9e38c6a49a7eda247dac9cb1165f266554a65c7cd18039796d356fd8c73bd3"
+  },
+  "results": [
+    {
+      "mode": "alert-attribution",
+      "label": "simulated API; adapter runtime validated, daemon not executed",
+      "elapsedMs": 2.5473,
+      "serverState": {
+        "contextCreated": true,
+        "scanStarted": false,
+        "stopRequested": false,
+        "removeRequested": true
+      },
+      "calls": [
+        {
+          "component": "core",
+          "operation": "version",
+          "params": {}
+        },
+        {
+          "component": "context",
+          "operation": "newContext",
+          "params": {
+            "contextName": "nbret-f81d2754-4248-4c42-b012-7aff82a5ccfc"
+          }
+        },
+        {
+          "component": "context",
+          "operation": "includeInContext",
+          "params": {
+            "contextName": "nbret-f81d2754-4248-4c42-b012-7aff82a5ccfc",
+            "regex": "^http://fixture\\.invalid/allowed(?:\\?.*)?$"
+          }
+        },
+        {
+          "component": "context",
+          "operation": "setContextInScope",
+          "params": {
+            "contextName": "nbret-f81d2754-4248-4c42-b012-7aff82a5ccfc",
+            "booleanInScope": "true"
+          }
+        },
+        {
+          "component": "core",
+          "operation": "accessUrl",
+          "params": {
+            "url": "http://fixture.invalid/allowed",
+            "followRedirects": "false"
+          }
+        },
+        {
+          "component": "core",
+          "operation": "urls",
+          "params": {
+            "baseurl": "http://fixture.invalid/allowed"
+          }
+        },
+        {
+          "component": "pscan",
+          "operation": "recordsToScan",
+          "params": {}
+        },
+        {
+          "component": "core",
+          "operation": "alerts",
+          "params": {
+            "baseurl": "http://fixture.invalid/",
+            "start": "0",
+            "count": "100"
+          }
+        },
+        {
+          "component": "context",
+          "operation": "removeContext",
+          "params": {
+            "contextName": "nbret-f81d2754-4248-4c42-b012-7aff82a5ccfc"
+          }
+        }
+      ],
+      "result": {
+        "schemaVersion": 1,
+        "tier": 4,
+        "mode": "passive",
+        "origins": [
+          "http://fixture.invalid"
+        ],
+        "scopeMode": "urls",
+        "urls": [
+          "http://fixture.invalid/allowed"
+        ],
+        "startedAt": "2026-10-17T19:37:56.162Z",
+        "maxMs": 1000,
+        "status": "completed",
+        "scans": [],
+        "alerts": [
+          {
+            "pluginId": "1",
+            "name": "synthetic selected",
+            "risk": "Low",
+            "confidence": "High",
+            "url": "http://fixture.invalid/allowed"
+          },
+          {
+            "pluginId": "1",
+            "name": "synthetic prior unrelated",
+            "risk": "Low",
+            "confidence": "High",
+            "url": "http://fixture.invalid/outside"
+          }
+        ],
+        "errors": [],
+        "limitations": [
+          "ZAP findings require review; absence of alerts is not proof of security.",
+          "Only explicitly listed URLs are seeded; recursive scanning and spidering are disabled.",
+          "Active scanning sends attack requests and requires explicit authorization for the supplied scope."
+        ],
+        "version": "simulated-2.17.0",
+        "contextRemoved": true,
+        "finishedAt": "2026-10-17T19:37:56.163Z"
+      }
+    },
+    {
+      "mode": "lost-scan-response",
+      "label": "simulated API; adapter runtime validated, daemon not executed",
+      "elapsedMs": 0.8492000000000033,
+      "serverState": {
+        "contextCreated": true,
+        "scanStarted": true,
+        "stopRequested": false,
+        "removeRequested": true
+      },
+      "calls": [
+        {
+          "component": "core",
+          "operation": "version",
+          "params": {}
+        },
+        {
+          "component": "context",
+          "operation": "newContext",
+          "params": {
+            "contextName": "nbret-d47c9378-c383-40a1-a1ab-5b45c07d8f39"
+          }
+        },
+        {
+          "component": "context",
+          "operation": "includeInContext",
+          "params": {
+            "contextName": "nbret-d47c9378-c383-40a1-a1ab-5b45c07d8f39",
+            "regex": "^http://fixture\\.invalid/allowed(?:\\?.*)?$"
+          }
+        },
+        {
+          "component": "context",
+          "operation": "setContextInScope",
+          "params": {
+            "contextName": "nbret-d47c9378-c383-40a1-a1ab-5b45c07d8f39",
+            "booleanInScope": "true"
+          }
+        },
+        {
+          "component": "core",
+          "operation": "accessUrl",
+          "params": {
+            "url": "http://fixture.invalid/allowed",
+            "followRedirects": "false"
+          }
+        },
+        {
+          "component": "core",
+          "operation": "urls",
+          "params": {
+            "baseurl": "http://fixture.invalid/allowed"
+          }
+        },
+        {
+          "component": "ascan",
+          "operation": "scan",
+          "params": {
+            "url": "http://fixture.invalid/allowed",
+            "recurse": "false",
+            "inScopeOnly": "true",
+            "contextId": "17"
+          }
+        },
+        {
+          "component": "context",
+          "operation": "removeContext",
+          "params": {
+            "contextName": "nbret-d47c9378-c383-40a1-a1ab-5b45c07d8f39"
+          }
+        }
+      ],
+      "result": {
+        "schemaVersion": 1,
+        "tier": 4,
+        "mode": "active",
+        "origins": [
+          "http://fixture.invalid"
+        ],
+        "scopeMode": "urls",
+        "urls": [
+          "http://fixture.invalid/allowed"
+        ],
+        "startedAt": "2026-10-17T19:37:56.164Z",
+        "maxMs": 1000,
+        "status": "failed",
+        "scans": [],
+        "alerts": [],
+        "errors": [
+          {
+            "code": "SCAN_FAILED",
+            "operation": "ascan/action/scan",
+            "message": "ZAP unavailable, scan deadline exceeded, or API operation failed"
+          }
+        ],
+        "limitations": [
+          "ZAP findings require review; absence of alerts is not proof of security.",
+          "Only explicitly listed URLs are seeded; recursive scanning and spidering are disabled.",
+          "Active scanning sends attack requests and requires explicit authorization for the supplied scope."
+        ],
+        "version": "simulated-2.17.0",
+        "contextRemoved": true,
+        "finishedAt": "2026-10-17T19:37:56.164Z"
+      }
+    },
+    {
+      "mode": "lost-context-response",
+      "label": "simulated API; adapter runtime validated, daemon not executed",
+      "elapsedMs": 0.6246000000000009,
+      "serverState": {
+        "contextCreated": true,
+        "scanStarted": false,
+        "stopRequested": false,
+        "removeRequested": false
+      },
+      "calls": [
+        {
+          "component": "core",
+          "operation": "version",
+          "params": {}
+        },
+        {
+          "component": "context",
+          "operation": "newContext",
+          "params": {
+            "contextName": "nbret-3bf9daed-0989-42ee-8d7c-f1b6ddbb4c84"
+          }
+        }
+      ],
+      "result": {
+        "schemaVersion": 1,
+        "tier": 4,
+        "mode": "passive",
+        "origins": [
+          "http://fixture.invalid"
+        ],
+        "scopeMode": "urls",
+        "urls": [
+          "http://fixture.invalid/allowed"
+        ],
+        "startedAt": "2026-10-17T19:37:56.165Z",
+        "maxMs": 1000,
+        "status": "failed",
+        "scans": [],
+        "alerts": [],
+        "errors": [
+          {
+            "code": "SCAN_FAILED",
+            "operation": "context/action/newContext",
+            "message": "ZAP unavailable, scan deadline exceeded, or API operation failed"
+          }
+        ],
+        "limitations": [
+          "ZAP findings require review; absence of alerts is not proof of security.",
+          "Only explicitly listed URLs are seeded; recursive scanning and spidering are disabled.",
+          "Active scanning sends attack requests and requires explicit authorization for the supplied scope."
+        ],
+        "version": "simulated-2.17.0",
+        "finishedAt": "2026-10-17T19:37:56.165Z"
+      }
+    },
+    {
+      "mode": "shared-passive-queue",
+      "label": "simulated API; adapter runtime validated, daemon not executed",
+      "elapsedMs": 1003.3672000000001,
+      "serverState": {
+        "contextCreated": true,
+        "scanStarted": false,
+        "stopRequested": false,
+        "removeRequested": true
+      },
+      "calls": [
+        {
+          "component": "core",
+          "operation": "version",
+          "params": {}
+        },
+        {
+          "component": "context",
+          "operation": "newContext",
+          "params": {
+            "contextName": "nbret-ca5b272b-a178-4078-b4fe-34278dc96b97"
+          }
+        },
+        {
+          "component": "context",
+          "operation": "includeInContext",
+          "params": {
+            "contextName": "nbret-ca5b272b-a178-4078-b4fe-34278dc96b97",
+            "regex": "^http://fixture\\.invalid/allowed(?:\\?.*)?$"
+          }
+        },
+        {
+          "component": "context",
+          "operation": "setContextInScope",
+          "params": {
+            "contextName": "nbret-ca5b272b-a178-4078-b4fe-34278dc96b97",
+            "booleanInScope": "true"
+          }
+        },
+        {
+          "component": "core",
+          "operation": "accessUrl",
+          "params": {
+            "url": "http://fixture.invalid/allowed",
+            "followRedirects": "false"
+          }
+        },
+        {
+          "component": "core",
+          "operation": "urls",
+          "params": {
+            "baseurl": "http://fixture.invalid/allowed"
+          }
+        },
+        {
+          "component": "pscan",
+          "operation": "recordsToScan",
+          "params": {}
+        },
+        {
+          "component": "pscan",
+          "operation": "recordsToScan",
+          "params": {}
+        },
+        {
+          "component": "pscan",
+          "operation": "recordsToScan",
+          "params": {}
+        },
+        {
+          "component": "pscan",
+          "operation": "recordsToScan",
+          "params": {}
+        },
+        {
+          "component": "pscan",
+          "operation": "recordsToScan",
+          "params": {}
+        },
+        {
+          "component": "pscan",
+          "operation": "recordsToScan",
+          "params": {}
+        },
+        {
+          "component": "pscan",
+          "operation": "recordsToScan",
+          "params": {}
+        },
+        {
+          "component": "pscan",
+          "operation": "recordsToScan",
+          "params": {}
+        },
+        {
+          "component": "pscan",
+          "operation": "recordsToScan",
+          "params": {}
+        },
+        {
+          "component": "pscan",
+          "operation": "recordsToScan",
+          "params": {}
+        },
+        {
+          "component": "pscan",
+          "operation": "recordsToScan",
+          "params": {}
+        },
+        {
+          "component": "pscan",
+          "operation": "recordsToScan",
+          "params": {}
+        },
+        {
+          "component": "pscan",
+          "operation": "recordsToScan",
+          "params": {}
+        },
+        {
+          "component": "pscan",
+          "operation": "recordsToScan",
+          "params": {}
+        },
+        {
+          "component": "pscan",
+          "operation": "recordsToScan",
+          "params": {}
+        },
+        {
+          "component": "pscan",
+          "operation": "recordsToScan",
+          "params": {}
+        },
+        {
+          "component": "pscan",
+          "operation": "recordsToScan",
+          "params": {}
+        },
+        {
+          "component": "pscan",
+          "operation": "recordsToScan",
+          "params": {}
+        },
+        {
+          "component": "pscan",
+          "operation": "recordsToScan",
+          "params": {}
+        },
+        {
+          "component": "pscan",
+          "operation": "recordsToScan",
+          "params": {}
+        },
+        {
+          "component": "pscan",
+          "operation": "recordsToScan",
+          "params": {}
+        },
+        {
+          "component": "pscan",
+          "operation": "recordsToScan",
+          "params": {}
+        },
+        {
+          "component": "pscan",
+          "operation": "recordsToScan",
+          "params": {}
+        },
+        {
+          "component": "pscan",
+          "operation": "recordsToScan",
+          "params": {}
+        },
+        {
+          "component": "pscan",
+          "operation": "recordsToScan",
+          "params": {}
+        },
+        {
+          "component": "pscan",
+          "operation": "recordsToScan",
+          "params": {}
+        },
+        {
+          "component": "pscan",
+          "operation": "recordsToScan",
+          "params": {}
+        },
+        {
+          "component": "pscan",
+          "operation": "recordsToScan",
+          "params": {}
+        },
+        {
+          "component": "pscan",
+          "operation": "recordsToScan",
+          "params": {}
+        },
+        {
+          "component": "pscan",
+          "operation": "recordsToScan",
+          "params": {}
+        },
+        {
+          "component": "pscan",
+          "operation": "recordsToScan",
+          "params": {}
+        },
+        {
+          "component": "pscan",
+          "operation": "recordsToScan",
+          "params": {}
+        },
+        {
+          "component": "pscan",
+          "operation": "recordsToScan",
+          "params": {}
+        },
+        {
+          "component": "pscan",
+          "operation": "recordsToScan",
+          "params": {}
+        },
+        {
+          "component": "pscan",
+          "operation": "recordsToScan",
+          "params": {}
+        },
+        {
+          "component": "pscan",
+          "operation": "recordsToScan",
+          "params": {}
+        },
+        {
+          "component": "pscan",
+          "operation": "recordsToScan",
+          "params": {}
+        },
+        {
+          "component": "pscan",
+          "operation": "recordsToScan",
+          "params": {}
+        },
+        {
+          "component": "pscan",
+          "operation": "recordsToScan",
+          "params": {}
+        },
+        {
+          "component": "pscan",
+          "operation": "recordsToScan",
+          "params": {}
+        },
+        {
+          "component": "pscan",
+          "operation": "recordsToScan",
+          "params": {}
+        },
+        {
+          "component": "pscan",
+          "operation": "recordsToScan",
+          "params": {}
+        },
+        {
+          "component": "pscan",
+          "operation": "recordsToScan",
+          "params": {}
+        },
+        {
+          "component": "pscan",
+          "operation": "recordsToScan",
+          "params": {}
+        },
+        {
+          "component": "pscan",
+          "operation": "recordsToScan",
+          "params": {}
+        },
+        {
+          "component": "pscan",
+          "operation": "recordsToScan",
+          "params": {}
+        },
+        {
+          "component": "pscan",
+          "operation": "recordsToScan",
+          "params": {}
+        },
+        {
+          "component": "pscan",
+          "operation": "recordsToScan",
+          "params": {}
+        },
+        {
+          "component": "pscan",
+          "operation": "recordsToScan",
+          "params": {}
+        },
+        {
+          "component": "pscan",
+          "operation": "recordsToScan",
+          "params": {}
+        },
+        {
+          "component": "pscan",
+          "operation": "recordsToScan",
+          "params": {}
+        },
+        {
+          "component": "pscan",
+          "operation": "recordsToScan",
+          "params": {}
+        },
+        {
+          "component": "pscan",
+          "operation": "recordsToScan",
+          "params": {}
+        },
+        {
+          "component": "pscan",
+          "operation": "recordsToScan",
+          "params": {}
+        },
+        {
+          "component": "pscan",
+          "operation": "recordsToScan",
+          "params": {}
+        },
+        {
+          "component": "pscan",
+          "operation": "recordsToScan",
+          "params": {}
+        },
+        {
+          "component": "pscan",
+          "operation": "recordsToScan",
+          "params": {}
+        },
+        {
+          "component": "pscan",
+          "operation": "recordsToScan",
+          "params": {}
+        },
+        {
+          "component": "pscan",
+          "operation": "recordsToScan",
+          "params": {}
+        },
+        {
+          "component": "pscan",
+          "operation": "recordsToScan",
+          "params": {}
+        },
+        {
+          "component": "pscan",
+          "operation": "recordsToScan",
+          "params": {}
+        },
+        {
+          "component": "pscan",
+          "operation": "recordsToScan",
+          "params": {}
+        },
+        {
+          "component": "pscan",
+          "operation": "recordsToScan",
+          "params": {}
+        },
+        {
+          "component": "pscan",
+          "operation": "recordsToScan",
+          "params": {}
+        },
+        {
+          "component": "context",
+          "operation": "removeContext",
+          "params": {
+            "contextName": "nbret-ca5b272b-a178-4078-b4fe-34278dc96b97"
+          }
+        }
+      ],
+      "result": {
+        "schemaVersion": 1,
+        "tier": 4,
+        "mode": "passive",
+        "origins": [
+          "http://fixture.invalid"
+        ],
+        "scopeMode": "urls",
+        "urls": [
+          "http://fixture.invalid/allowed"
+        ],
+        "startedAt": "2026-10-17T19:37:56.166Z",
+        "maxMs": 1000,
+        "status": "timed-out",
+        "scans": [],
+        "alerts": [],
+        "errors": [
+          {
+            "code": "SCAN_FAILED",
+            "operation": "pscan/view/recordsToScan",
+            "message": "ZAP unavailable, scan deadline exceeded, or API operation failed"
+          }
+        ],
+        "limitations": [
+          "ZAP findings require review; absence of alerts is not proof of security.",
+          "Only explicitly listed URLs are seeded; recursive scanning and spidering are disabled.",
+          "Active scanning sends attack requests and requires explicit authorization for the supplied scope."
+        ],
+        "version": "simulated-2.17.0",
+        "contextRemoved": true,
+        "finishedAt": "2026-10-17T19:37:57.168Z"
+      }
+    }
+  ]
+}

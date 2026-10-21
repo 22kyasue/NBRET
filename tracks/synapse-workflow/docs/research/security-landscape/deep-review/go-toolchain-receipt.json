@@ -1,0 +1,16 @@
+{
+  "at": "2026-10-17T19:58:37.308Z",
+  "source": "https://go.dev/dl/go1.27.2.windows-amd64.zip",
+  "index": "https://go.dev/dl/?mode=json",
+  "filename": "go1.27.2.windows-amd64.zip",
+  "os": "windows",
+  "arch": "amd64",
+  "version": "go1.27.2",
+  "sha256": "1314008898bd40df77af4b014f777f08873dbdfbcd3d92308728ee03304fe04f",
+  "size": 79008081,
+  "kind": "archive",
+  "actualSha256": "1314008898bd40df77af4b014f777f08873dbdfbcd3d92308728ee03304fe04f",
+  "executable": "C:\\Users\\kotar\\githubprojects\\NBRET\\.tools\\security-research-go\\sdk\\go\\bin\\go.exe",
+  "versionOutput": "go version go1.27.2 windows/amd64\n",
+  "exit": 0
+}

@@ -1,0 +1,14 @@
+{
+  "startedAt": "2026-10-17T20:07:21.070Z",
+  "finishedAt": "2026-10-17T20:07:21.908Z",
+  "executable": "C:\\Users\\kotar\\githubprojects\\NBRET\\.tools\\toolchain\\venv\\Scripts\\python.exe",
+  "args": [
+    "C:\\Users\\kotar\\githubprojects\\NBRET\\docs\\research\\toolchain\\proxy-boundaries.py"
+  ],
+  "code": 0,
+  "stdout": "{\r\n  \"oraclesPassed\": true,\r\n  \"http1HeaderProbe\": {\r\n    \"bodySizeLimit\": 32,\r\n    \"payloadBytes\": 131072,\r\n    \"incompleteBufferedBytes\": 131132,\r\n    \"eventsAfterTerminator\": [\r\n      \"RequestHeaders\",\r\n      \"RequestEndOfMessage\"\r\n    ],\r\n    \"scope\": \"Http1Server parser, no socket or whole-process resource exhaustion test\"\r\n  },\r\n  \"scriptImportProbe\": {\r\n    \"restoredByLoader\": false,\r\n    \"insertedPathPersisted\": true,\r\n    \"restoredByHarness\": true,\r\n    \"fixtureSha256\": \"8121efcea9fc1593e0a1123a4d464cf737148fbbfac3f869d3c5057bcc625cd2\"\r\n  },\r\n  \"cleanup\": \"No sockets/listeners started; child sys.path restored; no-op artifact retained\"\r\n}\r\n",
+  "stderr": "",
+  "fixtureSha256": "3d6ad050e3d36313876e93183a121691d7b68a35efe136e12ed074797fa01480",
+  "sourceCommit": "77355977e5ea540b51ed029a40ed1dc2f1c2ba7b",
+  "packageVersions": "proxy-lab-packages.txt"
+}

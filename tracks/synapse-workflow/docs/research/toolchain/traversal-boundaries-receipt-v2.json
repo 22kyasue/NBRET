@@ -1,0 +1,48 @@
+{
+  "startedAt": "2026-10-17T20:22:34.201Z",
+  "finishedAt": "2026-10-17T20:22:35.553Z",
+  "go": "go version go1.27.2 windows/amd64",
+  "cwd": "C:\\Users\\kotar\\githubprojects\\NBRET\\.tools\\toolchain\\BloodHound",
+  "args": [
+    "test",
+    "-p=2",
+    "-count=1",
+    "-timeout=15s",
+    "-json",
+    "C:\\Users\\kotar\\githubprojects\\NBRET\\docs\\research\\toolchain\\traversal_boundaries_test.go",
+    "-run",
+    "^TestSyntheticTraversalBoundaries$"
+  ],
+  "environmentOverrides": {
+    "GOTOOLCHAIN": "local",
+    "GOWORK": "off",
+    "GOFLAGS": "-mod=readonly",
+    "GOPROXY": "off",
+    "GOSUMDB": "off",
+    "GOMAXPROCS": "2",
+    "GOPATH": "C:\\Users\\kotar\\githubprojects\\NBRET\\.tools\\toolchain\\go\\path",
+    "GOCACHE": "C:\\Users\\kotar\\githubprojects\\NBRET\\.tools\\toolchain\\go\\cache",
+    "GOMODCACHE": "C:\\Users\\kotar\\githubprojects\\NBRET\\.tools\\toolchain\\go\\modules"
+  },
+  "fixtureSha256": "083840032c295718909a92f4060bed4d3102848108972600965f6a861a7a71e3",
+  "goModSha256": "acc95448c2e68118020ce5b7d98e89b3c6af38430969fd63f70d98b9f634364c",
+  "goSumSha256": "0eb760d56fed383d4e003b5c81e591f3feaa736f9f7a2e9c8888c3047f42c42c",
+  "sourcePin": "d0640cfb421e2b9f4fc249de733c3d6e52f1a57f",
+  "passed": [
+    "TestSyntheticTraversalBoundaries/finite_chain",
+    "TestSyntheticTraversalBoundaries/sentinel_error",
+    "TestSyntheticTraversalBoundaries/cancelled_partial",
+    "TestSyntheticTraversalBoundaries/memory_limit",
+    "TestSyntheticTraversalBoundaries"
+  ],
+  "oraclePassed": true,
+  "code": 0,
+  "stdout": "{\"Time\":\"2026-10-17T13:22:34.936758-07:00\",\"Action\":\"start\",\"Package\":\"command-line-arguments\"}\n{\"Time\":\"2026-10-17T13:22:35.5249332-07:00\",\"Action\":\"run\",\"Package\":\"command-line-arguments\",\"Test\":\"TestSyntheticTraversalBoundaries\"}\n{\"Time\":\"2026-10-17T13:22:35.5249332-07:00\",\"Action\":\"output\",\"Package\":\"command-line-arguments\",\"Test\":\"TestSyntheticTraversalBoundaries\",\"Output\":\"=== RUN   TestSyntheticTraversalBoundaries\\n\",\"OutputType\":\"frame\"}\n{\"Time\":\"2026-10-17T13:22:35.5249332-07:00\",\"Action\":\"run\",\"Package\":\"command-line-arguments\",\"Test\":\"TestSyntheticTraversalBoundaries/finite_chain\"}\n{\"Time\":\"2026-10-17T13:22:35.5249332-07:00\",\"Action\":\"output\",\"Package\":\"command-line-arguments\",\"Test\":\"TestSyntheticTraversalBoundaries/finite_chain\",\"Output\":\"=== RUN   TestSyntheticTraversalBoundaries/finite_chain\\n\",\"OutputType\":\"frame\"}\n{\"Time\":\"2026-10-17T13:22:35.5249332-07:00\",\"Action\":\"output\",\"Package\":\"command-line-arguments\",\"Test\":\"TestSyntheticTraversalBoundaries/finite_chain\",\"Output\":\"    traversal_boundaries_test.go:31: visits=[1 2 3] err=\\u003cnil\\u003e\\n\"}\n{\"Time\":\"2026-10-17T13:22:35.5249332-07:00\",\"Action\":\"output\",\"Package\":\"command-line-arguments\",\"Test\":\"TestSyntheticTraversalBoundaries/finite_chain\",\"Output\":\"--- PASS: TestSyntheticTraversalBoundaries/finite_chain (0.00s)\\n\",\"OutputType\":\"frame\"}\n{\"Time\":\"2026-10-17T13:22:35.5249332-07:00\",\"Action\":\"pass\",\"Package\":\"command-line-arguments\",\"Test\":\"TestSyntheticTraversalBoundaries/finite_chain\",\"Elapsed\":0}\n{\"Time\":\"2026-10-17T13:22:35.5249332-07:00\",\"Action\":\"run\",\"Package\":\"command-line-arguments\",\"Test\":\"TestSyntheticTraversalBoundaries/sentinel_error\"}\n{\"Time\":\"2026-10-17T13:22:35.5249332-07:00\",\"Action\":\"output\",\"Package\":\"command-line-arguments\",\"Test\":\"TestSyntheticTraversalBoundaries/sentinel_error\",\"Output\":\"=== RUN   TestSyntheticTraversalBoundaries/sentinel_error\\n\",\"OutputType\":\"frame\"}\n{\"Time\":\"2026-10-17T13:22:35.5254327-07:00\",\"Action\":\"output\",\"Package\":\"command-line-arguments\",\"Test\":\"TestSyntheticTraversalBoundaries/sentinel_error\",\"Output\":\"    traversal_boundaries_test.go:38: sentinel propagated=reader 0 failed: synthetic driver failure\\n\"}\n{\"Time\":\"2026-10-17T13:22:35.5254327-07:00\",\"Action\":\"output\",\"Package\":\"command-line-arguments\",\"Test\":\"TestSyntheticTraversalBoundaries/sentinel_error\",\"Output\":\"--- PASS: TestSyntheticTraversalBoundaries/sentinel_error (0.00s)\\n\",\"OutputType\":\"frame\"}\n{\"Time\":\"2026-10-17T13:22:35.5254327-07:00\",\"Action\":\"pass\",\"Package\":\"command-line-arguments\",\"Test\":\"TestSyntheticTraversalBoundaries/sentinel_error\",\"Elapsed\":0}\n{\"Time\":\"2026-10-17T13:22:35.5254327-07:00\",\"Action\":\"run\",\"Package\":\"command-line-arguments\",\"Test\":\"TestSyntheticTraversalBoundaries/cancelled_partial\"}\n{\"Time\":\"2026-10-17T13:22:35.5254327-07:00\",\"Action\":\"output\",\"Package\":\"command-line-arguments\",\"Test\":\"TestSyntheticTraversalBoundaries/cancelled_partial\",\"Output\":\"=== RUN   TestSyntheticTraversalBoundaries/cancelled_partial\\n\",\"OutputType\":\"frame\"}\n{\"Time\":\"2026-10-17T13:22:35.5254327-07:00\",\"Action\":\"output\",\"Package\":\"command-line-arguments\",\"Test\":\"TestSyntheticTraversalBoundaries/cancelled_partial\",\"Output\":\"    traversal_boundaries_test.go:45: visits=1 aggregate=\\u003cnil\\u003e context=context canceled\\n\"}\n{\"Time\":\"2026-10-17T13:22:35.5254327-07:00\",\"Action\":\"output\",\"Package\":\"command-line-arguments\",\"Test\":\"TestSyntheticTraversalBoundaries/cancelled_partial\",\"Output\":\"--- PASS: TestSyntheticTraversalBoundaries/cancelled_partial (0.00s)\\n\",\"OutputType\":\"frame\"}\n{\"Time\":\"2026-10-17T13:22:35.5254327-07:00\",\"Action\":\"pass\",\"Package\":\"command-line-arguments\",\"Test\":\"TestSyntheticTraversalBoundaries/cancelled_partial\",\"Elapsed\":0}\n{\"Time\":\"2026-10-17T13:22:35.5254327-07:00\",\"Action\":\"run\",\"Package\":\"command-line-arguments\",\"Test\":\"TestSyntheticTraversalBoundaries/memory_limit\"}\n{\"Time\":\"2026-10-17T13:22:35.5254327-07:00\",\"Action\":\"output\",\"Package\":\"command-line-arguments\",\"Test\":\"TestSyntheticTraversalBoundaries/memory_limit\",\"Output\":\"=== RUN   TestSyntheticTraversalBoundaries/memory_limit\\n\",\"OutputType\":\"frame\"}\n{\"Time\":\"2026-10-17T13:22:35.5254327-07:00\",\"Action\":\"output\",\"Package\":\"command-line-arguments\",\"Test\":\"TestSyntheticTraversalBoundaries/memory_limit\",\"Output\":\"    traversal_boundaries_test.go:52: visits=0 err=reader 0 failed: graph query required more memory than allowed - Limit: 0.00 MB - Memory In-Use: 0.00 MB\\n\"}\n{\"Time\":\"2026-10-17T13:22:35.5254327-07:00\",\"Action\":\"output\",\"Package\":\"command-line-arguments\",\"Test\":\"TestSyntheticTraversalBoundaries/memory_limit\",\"Output\":\"--- PASS: TestSyntheticTraversalBoundaries/memory_limit (0.00s)\\n\",\"OutputType\":\"frame\"}\n{\"Time\":\"2026-10-17T13:22:35.5254327-07:00\",\"Action\":\"pass\",\"Package\":\"command-line-arguments\",\"Test\":\"TestSyntheticTraversalBoundaries/memory_limit\",\"Elapsed\":0}\n{\"Time\":\"2026-10-17T13:22:35.5254327-07:00\",\"Action\":\"output\",\"Package\":\"command-line-arguments\",\"Test\":\"TestSyntheticTraversalBoundaries\",\"Output\":\"--- PASS: TestSyntheticTraversalBoundaries (0.00s)\\n\",\"OutputType\":\"frame\"}\n{\"Time\":\"2026-10-17T13:22:35.5254327-07:00\",\"Action\":\"pass\",\"Package\":\"command-line-arguments\",\"Test\":\"TestSyntheticTraversalBoundaries\",\"Elapsed\":0}\n{\"Time\":\"2026-10-17T13:22:35.5254327-07:00\",\"Action\":\"output\",\"Package\":\"command-line-arguments\",\"Output\":\"PASS\\n\",\"OutputType\":\"frame\"}\n{\"Time\":\"2026-10-17T13:22:35.5264319-07:00\",\"Action\":\"output\",\"Package\":\"command-line-arguments\",\"Output\":\"ok  \\tcommand-line-arguments\\t0.590s\\n\"}\n{\"Time\":\"2026-10-17T13:22:35.5264319-07:00\",\"Action\":\"pass\",\"Package\":\"command-line-arguments\",\"Elapsed\":0.59}\n",
+  "stderr": "",
+  "cleanup": "Mock-only subprocess exited; no listener, DB, directory or global configuration created.",
+  "limitations": [
+    "Synthetic engine seams, not real graph query/driver execution",
+    "Cancellation may be separately handled by callers",
+    "No process-wide memory or all error-path guarantee"
+  ]
+}

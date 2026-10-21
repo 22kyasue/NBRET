@@ -1,0 +1,14 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import {pathToFileURL} from 'node:url';
+const own=path.resolve('docs/research/assessment-evidence');
+let source=fs.readFileSync(path.join(own,'run-claude-cleanup-lab.mjs'),'utf8');
+source=source.replaceAll('claude-cleanup','s3-reference-evidence');
+source=source.replace('test_claude_cleanup_contract.py','test_s3_reference_evidence_contract.py');
+source=source.replace("PYTHONPATH:path.join(root,'src')","PYTHONPATH:path.join(root,'src')+';'+path.join(root,'examples')");
+source=source.replace("sourceSha256:hash(path.join(root,'src/claude_agent_sdk/client.py'))","sourceSha256:Object.fromEntries(['examples/session_stores/s3_session_store.py'].map(p=>[p,hash(path.join(root,p))]))");
+source=source.replace(/criteria:'[^']*'/,"criteria:'two writers with injected clock skew sort by filename time, duplicate UUID retained; malformed line skipped; one-writer same-time ordering control'");
+source=source.replace(/intervention:'[^']*'/,"intervention:'actual reference adapter with shipped in-memory recording client; patched synthetic wall clocks, no boto3 or network'");
+const generated=path.join(own,'run-s3-reference-evidence-generated.mjs');
+fs.writeFileSync(generated,source,{flag:'wx'});
+await import(pathToFileURL(generated).href);

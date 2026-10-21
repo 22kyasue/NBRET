@@ -1,0 +1,37 @@
+{
+  "at": "2026-10-17T22:34:03.495Z",
+  "command": [
+    "C:/Users/kotar/.codex/research/assessment-evidence-venv/Scripts/python.exe",
+    "-m",
+    "pytest",
+    "-q",
+    "-p",
+    "no:cacheprovider",
+    "-p",
+    "pytest_asyncio.plugin",
+    "--basetemp",
+    "C:\\Users\\kotar\\.codex\\research\\assessment-evidence-receipts\\agentdojo-runtime-suite-1792276442613\\pytest-temp",
+    "C:\\Users\\kotar\\.codex\\research\\agentdojo-20261017\\tests\\test_functions_runtime\\test_functions_runtime.py",
+    "C:\\Users\\kotar\\.codex\\research\\agentdojo-20261017\\tests\\test_ast_utils.py"
+  ],
+  "out": "C:\\Users\\kotar\\.codex\\research\\assessment-evidence-receipts\\agentdojo-runtime-suite-1792276442613",
+  "exitCode": 0,
+  "stdout": "...............                                                          [100%]\r\n15 passed in 0.39s\r\n",
+  "stderr": "",
+  "elapsedMs": 882,
+  "sourceSha256": {
+    "C:\\Users\\kotar\\.codex\\research\\agentdojo-20261017\\src\\agentdojo\\functions_runtime.py": "dce2bdf4b1c04b77ebd82f9ee165c283cda492045615a9e510e6d5c9423e9248",
+    "C:\\Users\\kotar\\.codex\\research\\agentdojo-20261017\\src\\agentdojo\\strenum.py": "50cad98e9f29926c3f6ba1167fde52705920079b0e67d888d8e8ee1e4fe0da01",
+    "C:\\Users\\kotar\\.codex\\research\\agentdojo-20261017\\src\\agentdojo\\ast_utils.py": "075f0decdc1f0c456b2bcd2398273f3d7b65525ee0cb1b45872d5f66c498a0da",
+    "C:\\Users\\kotar\\.codex\\research\\agentdojo-20261017\\src\\agentdojo\\__init__.py": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6",
+    "C:\\Users\\kotar\\.codex\\research\\agentdojo-20261017\\tests\\test_functions_runtime\\test_functions_runtime.py": "904fd1670aaeeac5aa8fce87e4a7b0e203ea6c8b6d6bd80f2f603519ada0ea21",
+    "C:\\Users\\kotar\\.codex\\research\\agentdojo-20261017\\tests\\test_ast_utils.py": "20bdd862e12dedc979ce5e7f202a2b442c01576d2170377b96cb8ee6b829d115"
+  },
+  "fixtureSha256": "904fd1670aaeeac5aa8fce87e4a7b0e203ea6c8b6d6bd80f2f603519ada0ea21",
+  "runnerSha256": "76fd14c80dafe341e8d3b7f19e3ab6ba1624ae66d726092e65d932356b0af472",
+  "packages": "annotated-types==0.8.0\r\nanyio==4.15.1\r\nattrs==26.1.0\r\ncertifi==2026.7.22\r\ncffi==2.1.1\r\nclick==8.5.0\r\ncolorama==0.4.6\r\ncryptography==50.0.2\r\ndocstring_parser==0.18.0\r\nh11==0.16.0\r\nhttpcore==1.0.9\r\nhttpcore2==2.13.1\r\nhttpx==0.28.1\r\nhttpx2==2.13.1\r\nidna==3.20\r\niniconfig==2.3.1\r\njsonschema==4.26.0\r\njsonschema-specifications==2025.9.1\r\nmcp==2.3.0\r\nmcp-types==2.3.0\r\nopentelemetry-api==1.45.1\r\npackaging==26.3\r\npluggy==1.7.0\r\npycparser==3.11\r\npydantic==2.14.1\r\npydantic_core==2.50.1\r\nPygments==2.21.0\r\nPyJWT==2.15.1\r\npytest==9.1.1\r\npytest-asyncio==1.4.0\r\npython-multipart==0.0.32\r\npywin32==312\r\nPyYAML==6.0.3\r\nreferencing==0.37.0\r\nrpds-py==2026.9.1\r\nsniffio==1.3.1\r\nsse-starlette==3.5.0\r\nstarlette==1.8.0\r\ntruststore==0.10.5\r\ntyping-inspection==0.4.4\r\ntyping_extensions==4.16.0\r\nuvicorn==0.54.0\r\n",
+  "criteria": "unchanged reviewed runtime registration/state/nested-call/error tests and restricted AST parser tests",
+  "intervention": "unchanged upstream synthetic unit tests only; bytecode/cache disabled and temporary outputs in owned directory",
+  "limits": "No provider, agent, external system or real tool operation; passing tests cover selected runtime/parser contracts, not all nested side effects or authorization",
+  "cost": "local CPU/storage only"
+}

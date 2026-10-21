@@ -1,0 +1,176 @@
+{
+  "at": "2026-10-17T22:35:19.323Z",
+  "runtime": "v24.21.0",
+  "command": "node docs/research/bots-swarms/verify.mjs",
+  "selectedFiles": 923,
+  "supportingSelected": 61,
+  "mismatches": [],
+  "scripts": [
+    {
+      "file": "adapter-boundary-lab.mjs",
+      "sha256": "33ecdd5f646237a4d205b30aaff5c6eab703fd775d5235a9729bfdf2673e59b8"
+    },
+    {
+      "file": "archive-sources.mjs",
+      "sha256": "f3ac8d86d5edefa8bff0c8fc478a1ca7968149ef673a2c1f42a2392905373734"
+    },
+    {
+      "file": "audit.mjs",
+      "sha256": "d92a921696fcc70f1a1827997fa3738e1216ad9703eef9c386ffceacb522686c"
+    },
+    {
+      "file": "bootstrap.mjs",
+      "sha256": "32a5c8eae476cb2b9b94f453f0d7da2f9eb8b7887d7b58790fc1e729f80c87fc"
+    },
+    {
+      "file": "cancellation-lab.mjs",
+      "sha256": "e2c27a4bb9fd650c630c156f7749dbe4838f5c0ef232eb9fa3d07b3fbdaf2474"
+    },
+    {
+      "file": "continuation-record.mjs",
+      "sha256": "30fda00a42fff422aa9c7f42696798604912c165e366a04816803ec83bc21398"
+    },
+    {
+      "file": "cookie-policy-source.mjs",
+      "sha256": "fee83cda2f4db98dec7e455c4304984d6b01accdf8315ffc64333d16a17f626d"
+    },
+    {
+      "file": "extend-memberlist.mjs",
+      "sha256": "ba5776f1b47a597190b6ec6f970a1dd9b3ddff393c5a6686bb0b3fb5c3c7b823"
+    },
+    {
+      "file": "fifo-lab.mjs",
+      "sha256": "d70cf33f00bdd583bca2f8342d2a91ec5585114e43c3f43cf02b6e20d8cb13c9"
+    },
+    {
+      "file": "flow-inventory.mjs",
+      "sha256": "1b11098bb5cdcc847a1a82b483286f8b872847b1c28e35410484c64aac076319"
+    },
+    {
+      "file": "identity-lab.mjs",
+      "sha256": "88eb92c27966cc7fadbd815f12e766463841d86c0d0c08052b072a17fe575dff"
+    },
+    {
+      "file": "incident-sources.mjs",
+      "sha256": "0b77afb352d3c41dca3e2b5e9316da12dfe11b4ae0782c7914b683945aa1c038"
+    },
+    {
+      "file": "inventory-supporting.mjs",
+      "sha256": "aff83a1bfcae6e87201283c0f084846268306cc5bc962346c39dca7ffeb6637e"
+    },
+    {
+      "file": "lab.mjs",
+      "sha256": "d388eada53f3e3cf3cf7570a046a3c2d3c15c34773fcb508b9d8b766f1614aa3"
+    },
+    {
+      "file": "limiter-composition-lab.mjs",
+      "sha256": "aa1fb623dc098667749c3fd643731bd453d199bc3f9c95162cdcd48fd5543736"
+    },
+    {
+      "file": "mongo-retry-lab.mjs",
+      "sha256": "b1392edda236c9fc752cc12fdc93a53994a7521d69f175bd8f2b9504fc5fc8b3"
+    },
+    {
+      "file": "primary-read.mjs",
+      "sha256": "18a2f421ee701a15bc1edc2c9af257e0b9a23d490a8c538809735a4436e45b1f"
+    },
+    {
+      "file": "prisma-contract-lab.mjs",
+      "sha256": "c1e111fae57d5dfecd52f5d162c8f18fc4279f41a86ad7bf7db9d87ce8dd3187"
+    },
+    {
+      "file": "queue-clean-contract-lab.mjs",
+      "sha256": "f1fa60d48c3708234e17207b32a985ef4d015d39c0fbc14732498cf1eec098fc"
+    },
+    {
+      "file": "record-drizzle.mjs",
+      "sha256": "c0f9b6201979031cf8271811626cf005b15ff9abcff58f8cab0bf47a05ad1e34"
+    },
+    {
+      "file": "record-limiter-docs.mjs",
+      "sha256": "356038a32170c52ee29e3f535a81a12571f58fa9190a9619f1dade05acc2c3c3"
+    },
+    {
+      "file": "record-netranges.mjs",
+      "sha256": "ecfc9e06cef908f06feb0d6379958a0f173833baa16ef839439c7434ba1190ea"
+    },
+    {
+      "file": "record-prisma.mjs",
+      "sha256": "a5b254864320bd52a5898dd1ac1fedb24dd387b10e2f0f6ba5179919dc219356"
+    },
+    {
+      "file": "record-reads.mjs",
+      "sha256": "09add9c36aa88c47a91f2b33b395fef67c4c8f105db77f0b8520c5ad99d4340d"
+    },
+    {
+      "file": "record-reviewed.mjs",
+      "sha256": "9780d9dde7ae638d350ffffb3cdb3f922aad96dd79cada4797911a7e5bae4ef4"
+    },
+    {
+      "file": "redis-adapter-lab.mjs",
+      "sha256": "7beca6595fc7aded084fdeb8ca77eb58b0d0154aabfcbb6623122a0b3b8d6848"
+    },
+    {
+      "file": "source.mjs",
+      "sha256": "706b721dd546e0619908f2fcf8ee01b1214618447284632028be2f61275f5df6"
+    },
+    {
+      "file": "supporting-read.mjs",
+      "sha256": "bc74fe0ca1964fa62bf3696ae30b80438491ce564872d324aa6dd089088febf9"
+    },
+    {
+      "file": "verify.mjs",
+      "sha256": "9e9ce8c02e39bcdc6c644d372ab0b9d4979db3405de55f53d1f1aa131ddcdd1d"
+    },
+    {
+      "file": "watchdog-lab.mjs",
+      "sha256": "56208b60b298e371e57941bc68d2376ad95f2bab84ebbd4df2716d4a4691fb3f"
+    }
+  ],
+  "pythonScripts": [
+    {
+      "file": "cookie-policy-lab.py",
+      "sha256": "edb8f7385f1819c9ddcc9efa8a5ea5cc34e3724f4df70f20f540e0fddb51914d"
+    },
+    {
+      "file": "parallel-lab.py",
+      "sha256": "c14520cb88ef502fb8e150a83a97b00e6bd645827abc4942ff58f52781353b3a"
+    }
+  ],
+  "jsonFilesChecked": 96,
+  "supplementary": [
+    {
+      "file": ".tools/bots-swarms/cpython-cookiejar.py",
+      "sha256": "b0b75f457b4d1bbc6e8cfa3b286bd1cc878434c5941dbd8a766331092ecc1887"
+    },
+    {
+      "file": "C:/Python314/Lib/http/cookiejar.py",
+      "sha256": "b0b75f457b4d1bbc6e8cfa3b286bd1cc878434c5941dbd8a766331092ecc1887"
+    },
+    {
+      "file": "C:\\Users\\kotar\\githubprojects\\NBRET\\.tools\\bots-swarms\\primary-sources\\fbi-residential-2026.html",
+      "status": 403,
+      "sha256": "9d92a1e6a153e787648178a088270ab4e564e0856bc075d78913b354501f43fb",
+      "note": "Failed403 fetch integrity only; not article content"
+    },
+    {
+      "file": "C:\\Users\\kotar\\githubprojects\\NBRET\\.tools\\bots-swarms\\primary-sources\\fbi-badbox-2025.html",
+      "status": 403,
+      "sha256": "342c52354143a168553b4126c161bbcbe1379f4995397ca330b7fede656a5513",
+      "note": "Failed403 fetch integrity only; not article content"
+    },
+    {
+      "file": "C:\\Users\\kotar\\githubprojects\\NBRET\\.tools\\bots-swarms\\primary-sources\\fbi-qakbot-2023.html",
+      "status": 403,
+      "sha256": "abb19f1106793f3b44d4b881728dbfcda6f3aa0200ecf051316a0e90fe91f5d4",
+      "note": "Failed403 fetch integrity only; not article content"
+    },
+    {
+      "file": "C:\\Users\\kotar\\githubprojects\\NBRET\\.tools\\bots-swarms\\primary-sources\\fbi-911-removal.html",
+      "status": 403,
+      "sha256": "92d2c97c8828ca6fb3ddb4e2e6439c13525d097b348a463a695659a6ead9d842",
+      "note": "Failed403 fetch integrity only; not article content"
+    }
+  ],
+  "limits": "Integrity and syntax checks only; no reading credit or runtime correctness inferred. Python compilation does not execute the lab or write bytecode."
+}

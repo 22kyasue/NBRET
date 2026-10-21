@@ -1,0 +1,13 @@
+{
+  "command": {
+    "executable": "C:/Users/kotar/.codex/research/assessment-evidence-venv/Scripts/python.exe",
+    "args": [
+      "docs/research/assessment-evidence/deep-agentdojo-banking-lab.py",
+      "docs/research/assessment-evidence/deep-agentdojo-banking-receipt.json"
+    ]
+  },
+  "elapsedMs": 227,
+  "status": 0,
+  "stdout": "{\r\n  \"python\": \"3.14.7 (tags/v3.14.7:823f032, Aug  5 2026, 10:51:32) [MSC v.1944 64 bit (AMD64)]\",\r\n  \"scope\": \"AST-loaded production banking definitions and current-version UserTask6 methods; dependency annotation stub only; no suite registry/model/pipeline/network\",\r\n  \"groundTruthPass\": true,\r\n  \"wrongRecipientUtilityPass\": true,\r\n  \"wrongRecipientIndependentOraclePass\": false,\r\n  \"wrongAmountRejected\": true,\r\n  \"nonrecurrenceRejected\": true,\r\n  \"preexistingNoActionUtilityPass\": true,\r\n  \"falseAndZeroUpdateIgnored\": true,\r\n  \"modelCalls\": 0,\r\n  \"networkCalls\": 0,\r\n  \"scriptSha256\": \"61f875dc1ede9fe627c2f4231eaa989ea16f5c2004d0590794c788bec1a6f4bd\",\r\n  \"sources\": {\r\n    \"src/agentdojo/default_suites/v1/tools/banking_client.py\": \"4f8afb40e526143438ed71a2fe128488c705d76c9d111319edb362859c7c9f70\",\r\n    \"src/agentdojo/default_suites/v1_2_2/banking/user_tasks.py\": \"07477ec5014914fec394ffc93652772893c7fe564f461568d990771c8c3f9e00\"\r\n  },\r\n  \"limitations\": [\r\n    \"Not a released-fixture prevalence test\",\r\n    \"No inference that every task shares these oracle gaps\",\r\n    \"Partial modules loaded by AST, not full benchmark execution\"\r\n  ]\r\n}\r\n",
+  "stderr": ""
+}

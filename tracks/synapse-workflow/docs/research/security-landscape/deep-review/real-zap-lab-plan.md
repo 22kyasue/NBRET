@@ -1,0 +1,11 @@
+# Real-daemon directory-rule experiment
+
+Predeclared 2026-10-17 after complete directory rule and test reading. Own one temporary ZAP daemon and one loopback HTTP fixture. Synthetic content only, no third-party targets, credentials, redirects, external links or exploit execution. Configure the fresh daemon's default policy to disable all active rules except directory-browsing rule 0. Do not modify shared scanner/browser state. Stop only the owned daemon and fixture.
+
+Question: does NBRET's `scopeMode=urls` context for `/allowed` prevent a rule from requesting its rewritten `/allowed/` path? Source predicts rule 0 removes query and appends slash before initial send, while scope is checked for candidate node and redirects. This is a hypothesis, not a runtime finding yet. All fixture paths are authorized for this experiment, including deliberate outside-context observation.
+
+Success criteria: preserve exact API calls, configured scanners, context regex and fixture traffic; determine whether `/allowed/` was requested, whether its synthetic listing produced an alert, whether rich upstream evidence remains in NBRET summary, and whether cleanup closes owned resources. Record failure/inconclusive outcomes too. Collect per-rule progress and scan state after run. One run establishes controlled behavior only, not consistency or broad scanner quality. Bound adapter to 30 seconds and startup to 60 seconds. Zero model cost. Preserve archive/source hashes; source tag match is not reproducible-build proof.
+
+## Additional predeclared interruption case
+
+Before running `stop` mode, delay the rewritten fixture response by 2500ms. After the daemon reports its scan ID and the fixture observes that request, explicitly stop that owned scan. Then let unmodified runScan process API status. Reproduction criteria: actual stop receipt, numeric 100 and completed adapter outcome while fixture response is pending, supported by per-rule state and timestamps. Wait for fixture completion before cleanup and collect later state. A delayed in-flight response is not proof no earlier rule work occurred; the narrower question is terminal interpretation and worker quiescence. This case still targets only the owned fixture and stops only its known scan.

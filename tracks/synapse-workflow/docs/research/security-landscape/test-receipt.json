@@ -1,0 +1,10 @@
+{
+  "at": "2026-10-17T19:04:52.340Z",
+  "command": "node --test test/scope.test.mjs test/testing.test.mjs",
+  "node": "v24.21.0",
+  "status": 0,
+  "elapsedMs": 300,
+  "stdout": "✔ scope matches exact scheme, hostname and port, rejecting credentials and malformed entries (0.7002ms)\n✔ compressed responses decode with wire/decoded budgets and typed failures (46.6983ms)\n✔ expectations distinguish failures, missing evidence and redacted values (1.0264ms)\n✔ structure parser maps imports, functions, calls, branches, event/storage/DOM effects without execution (7.5538ms)\n✔ checks produce pass/fail assertions, regression changes, offline evaluation and CI output (20.7234ms)\n✔ analyzer links datasets, auth observations, static workflows and runtime initiators with honest coverage (20.1364ms)\n✔ diagnosis separates site failures, scanner findings, hypotheses and collector gaps (0.3676ms)\n✔ browser inventory caps data, rejects unsafe scenarios and marks loading shells unsettled (0.5973ms)\n✔ total probe output budget omits bodies explicitly instead of growing without bound (5.4556ms)\nℹ tests 9\nℹ suites 0\nℹ pass 9\nℹ fail 0\nℹ cancelled 0\nℹ skipped 0\nℹ todo 0\nℹ duration_ms 255.253\n",
+  "stderr": "",
+  "scope": "Existing tests inspected; loopback servers, synthetic saved evidence and fake harness only; no real browser or external scan"
+}

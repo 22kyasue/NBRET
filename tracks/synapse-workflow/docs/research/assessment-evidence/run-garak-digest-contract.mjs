@@ -1,0 +1,13 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import {pathToFileURL} from 'node:url';
+const own=path.resolve('docs/research/assessment-evidence');
+let source=fs.readFileSync(path.join(own,'run-claude-cleanup-lab.mjs'),'utf8');
+source=source.replaceAll('claude-cleanup','garak-digest-contract');
+source=source.replace('test_claude_cleanup_contract.py','test_garak_digest_contract.py');
+source=source.replace("sourceSha256:hash(path.join(root,'src/claude_agent_sdk/client.py'))","sourceSha256:Object.fromEntries(['C:/Users/kotar/.codex/research/garak/garak/analyze/report_digest.py'].map(p=>[p,hash(p)]))");
+source=source.replace(/criteria:'[^']*'/,"criteria:'empty selection display fallback; same class name collision in shared taxonomy group; distinct class control'");
+source=source.replace(/intervention:'[^']*'/,"intervention:'actual complete function ASTs with SQLite memory and synthetic plugin metadata only; no garak imports, report rendering, provider, real payload or network'");
+const generated=path.join(own,'run-garak-digest-contract-generated.mjs');
+fs.writeFileSync(generated,source,{flag:'wx'});
+await import(pathToFileURL(generated).href);

@@ -1,0 +1,88 @@
+{
+  "at": "2026-10-17T19:43:37.250Z",
+  "root": "C:\\Users\\kotar\\githubprojects\\NBRET\\runs\\report-state-research-1792266217235",
+  "node": "v24.21.0",
+  "elapsedMs": 11.486600000000003,
+  "scope": "Synthetic local artifacts only; zero network or captured-code execution",
+  "inputs": {
+    "capture/network/evidence.json": {
+      "origins": [
+        "http://fixture.invalid"
+      ],
+      "requests": [
+        {
+          "requestId": "synthetic-1",
+          "inScope": true,
+          "request": {
+            "url": "http://fixture.invalid/",
+            "method": "GET"
+          },
+          "response": {
+            "status": 200,
+            "mimeType": "text/html"
+          },
+          "finished": {
+            "encodedDataLength": 1
+          }
+        }
+      ],
+      "scripts": [],
+      "snapshots": []
+    },
+    "capture/summary.json": {
+      "targetOrigin": "http://fixture.invalid",
+      "page": {
+        "title": "Synthetic fixture"
+      }
+    },
+    "explore/explore.json": {
+      "status": "completed",
+      "states": [],
+      "pages": []
+    },
+    "probe/probe.json": {
+      "status": "completed",
+      "cases": []
+    },
+    "scan/scan.json": {
+      "status": "failed",
+      "mode": "active",
+      "alerts": [],
+      "scans": [],
+      "errors": [
+        {
+          "code": "SCAN_FAILED",
+          "operation": "ascan/view/status"
+        }
+      ]
+    }
+  },
+  "sha256": {
+    "capture/network/evidence.json": "a4d7af3813a5b5fa7cdfc08eba687efe6b6315c09e6a22bd238997c594260c08",
+    "capture/summary.json": "fcb339e411242309e19e168902600f7724fa522000ab1583428442e58696cf5b",
+    "explore/explore.json": "6fb0de647f4e9be9f610aa93250270463250fbf38f4366b6922ae362c62a235d",
+    "probe/probe.json": "fad62e46450daaf301ab5981e848b0ca725b9ca279f81c8c2c9d5111e93fdd6d",
+    "scan/scan.json": "4aab7033398f2220eb8c8f7c342ac91cd5b757eb55e913a0b357249f21c41c86",
+    "analysis/analysis.json": "15dc3659b3aed2bdf8d4b3d2353f7897ba94acd301d018b5789fa192889cb9cd",
+    "analysis/ANALYSIS.md": "b7883639e090611adfcd25a7e75ff25a671275ee6af041567eaeac1df15fc869",
+    "analysis/REPORT.html": "edc7fad988150d8d51ffbcd67afea473101b16fe90fef8229d15c1902946ef20"
+  },
+  "sourceSha256": {
+    "src/analyze.mjs": "fa4350581013296e65ee7711449761e6b4ba3caadd4a34727962ffe3187af291",
+    "src/diagnose.mjs": "7cd3df99e83561c3fa20da2d0c7b5d713ecc59823d3b50782a14a7e6d0b21122",
+    "src/report-html.mjs": "1323a352da97c0999daef363962c76263b486e2a14934c1dcefe297b34c1eb82",
+    "scripts/research-report-state-lab.mjs": "de157806a79397b75d388a98d0c1c5f9266322ce69cf232b2f6b6303b3d565fa",
+    "docs/research/security-landscape/deep-review/report-state-lab-plan.md": "fbb4dcf09230c4ce9277fe7857ce695069abb818b75458507ddb646c7733c754"
+  },
+  "observed": {
+    "analysisStatus": "analyzed",
+    "scannerStatus": "failed",
+    "coverage": {
+      "gaps": [],
+      "missingStructuredResources": [],
+      "status": "no-recorded-gaps"
+    },
+    "scannerFailureShownInMarkdown": false,
+    "scannerFailureShownInHtml": false
+  }
+}

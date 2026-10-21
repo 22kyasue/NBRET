@@ -1,0 +1,17 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import crypto from 'node:crypto';
+import {spawnSync} from 'node:child_process';
+const own=path.resolve('docs/research/assessment-evidence');
+const root='C:/Users/kotar/.codex/research/assessment-evidence-sdk-sources/claude-agent-sdk-0.2.90-source/claude_agent_sdk-0.2.90';
+const exe='C:/Users/kotar/.codex/research/assessment-evidence-venv/Scripts/python.exe';
+const at=Date.now(), out=path.resolve(`C:/Users/kotar/.codex/research/assessment-evidence-receipts/preview-grounding-${at}`);
+fs.mkdirSync(out);
+const fixture=path.join(own,'test_preview_grounding_contract.py');
+const args=['-m','pytest','-q','-p','no:cacheprovider','-p','pytest_asyncio.plugin','--basetemp',path.join(out,'pytest-temp'),fixture];
+const env={...process.env,PYTHONPATH:path.join(root,'src')+';C:/Users/kotar/.codex/research/unified-agent-acff8ee;C:/Users/kotar/.codex/research/pentestgpt-20261017/pentestgpt_agent/src',PYTEST_DISABLE_PLUGIN_AUTOLOAD:'1',PYTHONDONTWRITEBYTECODE:'1'};
+const r=spawnSync(exe,args,{windowsHide:true,env,encoding:'utf8',timeout:30000,maxBuffer:2000000});
+const hash=p=>crypto.createHash('sha256').update(fs.readFileSync(p)).digest('hex');
+const receipt={at:new Date().toISOString(),command:[exe,...args],out,exitCode:r.status,stdout:r.stdout,stderr:r.stderr,elapsedMs:Date.now()-at,sourceSha256:Object.fromEntries([path.join(root,'src/claude_agent_sdk/_internal/message_parser.py'),'C:/Users/kotar/.codex/research/unified-agent-acff8ee/unified_agent/backends/claude_code.py','C:/Users/kotar/.codex/research/pentestgpt-20261017/pentestgpt_agent/src/pentestgpt_agent/execution.py','C:/Users/kotar/.codex/research/pentestgpt-20261017/pentestgpt_agent/src/pentestgpt_agent/trace.py'].map(p=>[p,hash(p)])),fixtureSha256:hash(fixture),runnerSha256:hash(new URL(import.meta.url)),packages:spawnSync(exe,['-m','pip','freeze'],{windowsHide:true,encoding:'utf8'}).stdout,criteria:'short injected preview marker accepted as exact captured evidence without truncation flag; 4001char control downgrades to progress',intervention:'synthetic supplied native message and constructed lease/trace; actual parser, normalizer and execution compiler; no tool or CLI',limits:'No process, real credential, materialization or filesystem deletion; not evidence of an actual orphan or retained secret',cost:'local CPU/storage only'};
+fs.writeFileSync(path.join(own,`preview-grounding-receipt-${at}.json`),JSON.stringify(receipt,null,2)+'\n');
+console.log(JSON.stringify({exitCode:r.status,stdout:r.stdout,stderr:r.stderr}));

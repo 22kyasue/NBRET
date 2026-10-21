@@ -1,0 +1,433 @@
+[
+  {
+    "name": "mitmproxy",
+    "url": "https://github.com/mitmproxy/mitmproxy.git",
+    "root": "C:\\Users\\kotar\\githubprojects\\NBRET\\.tools\\toolchain\\mitmproxy",
+    "commit": "77355977e5ea540b51ed029a40ed1dc2f1c2ba7b",
+    "commitDate": "2026-10-13T20:07:55+02:00",
+    "dirty": "",
+    "retrievedAt": "2026-10-17T19:51:25.930Z",
+    "basis": "Shallow upstream default-branch snapshot; not a release or a claim of latest installed software"
+  },
+  {
+    "name": "nmap",
+    "url": "https://github.com/nmap/nmap.git",
+    "root": "C:\\Users\\kotar\\githubprojects\\NBRET\\.tools\\toolchain\\nmap",
+    "commit": "f06480daed9a9b2cdce61904222cc87788afdf84",
+    "commitDate": "2026-10-15T22:30:27Z",
+    "dirty": "",
+    "retrievedAt": "2026-10-17T19:51:27.389Z",
+    "basis": "Shallow upstream default-branch snapshot; not a release or a claim of latest installed software"
+  },
+  {
+    "name": "SharpHound",
+    "url": "https://github.com/SpecterOps/SharpHound.git",
+    "root": "C:\\Users\\kotar\\githubprojects\\NBRET\\.tools\\toolchain\\SharpHound",
+    "commit": "85924979a9d23ab0e83a3fcfabee3b9962bb14be",
+    "commitDate": "2026-10-16T15:15:32-04:00",
+    "dirty": "",
+    "retrievedAt": "2026-10-17T19:51:24.174Z",
+    "basis": "Shallow upstream default-branch snapshot; not a release or a claim of latest installed software"
+  },
+  {
+    "name": "BloodHound",
+    "url": "https://github.com/SpecterOps/BloodHound.git",
+    "root": "C:\\Users\\kotar\\githubprojects\\NBRET\\.tools\\toolchain\\BloodHound",
+    "commit": "5d615873dcdf25462dd6e35ddb4dec1c882c331e",
+    "commitDate": "2026-10-17T15:25:38Z",
+    "dirty": "",
+    "retrievedAt": "2026-10-17T19:51:37.204Z",
+    "basis": "Shallow upstream default-branch snapshot; not a release or a claim of latest installed software"
+  },
+  {
+    "name": "burp-examples",
+    "url": "https://github.com/PortSwigger/burp-extensions-montoya-api-examples.git",
+    "root": "C:\\Users\\kotar\\githubprojects\\NBRET\\.tools\\toolchain\\burp-examples",
+    "commit": "e4c83c505e6ad42207710f26c7cdd41b232500a6",
+    "commitDate": "2026-05-01T13:37:02+01:00",
+    "dirty": "",
+    "retrievedAt": "2026-10-17T19:51:24.179Z",
+    "basis": "Shallow upstream default-branch snapshot; not a release or a claim of latest installed software"
+  },
+  {
+    "name": "wireshark",
+    "url": "https://gitlab.com/wireshark/wireshark",
+    "mirror": "https://github.com/wireshark/wireshark",
+    "root": "C:\\Users\\kotar\\githubprojects\\NBRET\\.tools\\toolchain\\wireshark",
+    "commit": "2d548b197c7582332f143c15259e1650aff7cc26",
+    "ref": "v4.6.9",
+    "commitDate": "2026-09-23T17:31:03Z",
+    "retrievedAt": "2026-10-17T19:59:56.728Z",
+    "basis": "Selected raw files from release tag resolved through project GitHub mirror; not whole repository; no download signature verification",
+    "pinReceipt": {
+      "url": "https://api.github.com/repos/wireshark/wireshark/commits/v4.6.9",
+      "sha256": "e561f659b7ae9b58868b165d2084e23963982ccf82ef572af5dc1bf8aca3a815"
+    },
+    "artifacts": [
+      {
+        "file": "tshark.c",
+        "url": "https://raw.githubusercontent.com/wireshark/wireshark/2d548b197c7582332f143c15259e1650aff7cc26/tshark.c",
+        "sha256": "1de0ec44edc33dcbcf33c94de06ef6f91071e5b7f8ea4cbaa51a2afb5d420ba0"
+      },
+      {
+        "file": "capture_opts.c",
+        "url": "https://raw.githubusercontent.com/wireshark/wireshark/2d548b197c7582332f143c15259e1650aff7cc26/capture_opts.c",
+        "status": 404
+      },
+      {
+        "file": "capture/capture_session.c",
+        "url": "https://raw.githubusercontent.com/wireshark/wireshark/2d548b197c7582332f143c15259e1650aff7cc26/capture/capture_session.c",
+        "status": 404
+      },
+      {
+        "file": "epan/epan.c",
+        "url": "https://raw.githubusercontent.com/wireshark/wireshark/2d548b197c7582332f143c15259e1650aff7cc26/epan/epan.c",
+        "sha256": "4335ad6500bbc6e1739f2c5e38bb935b6eb83b266414d2b5b8368be30665e4e1"
+      },
+      {
+        "file": "wiretap/wtap.c",
+        "url": "https://raw.githubusercontent.com/wireshark/wireshark/2d548b197c7582332f143c15259e1650aff7cc26/wiretap/wtap.c",
+        "sha256": "c0cc70a41c85a17dfd4d1e9fa74f4e138c634073f825267f3c7cbe7c021dcb05"
+      },
+      {
+        "file": "wiretap/file_access.c",
+        "url": "https://raw.githubusercontent.com/wireshark/wireshark/2d548b197c7582332f143c15259e1650aff7cc26/wiretap/file_access.c",
+        "sha256": "841a059969007f3bc0944b8ff0bd05dc5d02395e34b2c43ee3af95dbce6f780a"
+      },
+      {
+        "file": "wiretap/pcapng.c",
+        "url": "https://raw.githubusercontent.com/wireshark/wireshark/2d548b197c7582332f143c15259e1650aff7cc26/wiretap/pcapng.c",
+        "sha256": "6b14318a45689ae8f41c7411f1933c1d65603b64019e529196936be0674d0b7b"
+      },
+      {
+        "file": "epan/dfilter/dfilter.c",
+        "url": "https://raw.githubusercontent.com/wireshark/wireshark/2d548b197c7582332f143c15259e1650aff7cc26/epan/dfilter/dfilter.c",
+        "sha256": "4a55e45637b308208063232604aff3c5243ac094bbcc3abbaeaf7cd663fd06e6"
+      },
+      {
+        "file": "test/suite_clopts.py",
+        "url": "https://raw.githubusercontent.com/wireshark/wireshark/2d548b197c7582332f143c15259e1650aff7cc26/test/suite_clopts.py",
+        "sha256": "e1d1a3d37ad660e92b127b9f67bbc5a098abf4d9b6b84fb9ab27c112c02c15e5"
+      },
+      {
+        "file": "test/suite_dissection.py",
+        "url": "https://raw.githubusercontent.com/wireshark/wireshark/2d548b197c7582332f143c15259e1650aff7cc26/test/suite_dissection.py",
+        "sha256": "93f9602bf36b0c098898b7da076e1fcbddb16ce23048220f092d3a0c5069e2d6"
+      },
+      {
+        "file": "COPYING",
+        "url": "https://raw.githubusercontent.com/wireshark/wireshark/2d548b197c7582332f143c15259e1650aff7cc26/COPYING",
+        "sha256": "edaef632cbb643e4e7a221717a6c441a4c1a7c918e6e4d56debc3d8739b233f6"
+      },
+      {
+        "file": "wiretap/libpcap.c",
+        "url": "https://raw.githubusercontent.com/wireshark/wireshark/2d548b197c7582332f143c15259e1650aff7cc26/wiretap/libpcap.c",
+        "sha256": "5975f915563df52373450ae243e179e0a71de62146564c95bde327af7f32d89c",
+        "retrievedAt": "2026-10-17T20:23:10.827Z"
+      },
+      {
+        "file": "epan/packet.c",
+        "url": "https://raw.githubusercontent.com/wireshark/wireshark/2d548b197c7582332f143c15259e1650aff7cc26/epan/packet.c",
+        "sha256": "8c5c0d06366634149b85c6cef05f5852e682461bb7b80ab0ef4073d2596f7606",
+        "retrievedAt": "2026-10-17T20:23:10.970Z"
+      },
+      {
+        "file": "epan/dfilter/dfvm.c",
+        "url": "https://raw.githubusercontent.com/wireshark/wireshark/2d548b197c7582332f143c15259e1650aff7cc26/epan/dfilter/dfvm.c",
+        "sha256": "464b01d80e2cbaa9daf32aaeafb9f9cb9b17a269e8fa7a104378cd1af867755e",
+        "retrievedAt": "2026-10-17T20:23:11.114Z"
+      }
+    ]
+  },
+  {
+    "name": "SharpHoundCommon",
+    "url": "https://github.com/SpecterOps/SharpHoundCommon.git",
+    "root": "C:\\Users\\kotar\\githubprojects\\NBRET\\.tools\\toolchain\\SharpHoundCommon-4.9.1",
+    "commit": "1b8c9eabe3753bac13fcd0fe9e271e02bcd4ebe7",
+    "ref": "v4.9.1",
+    "retrievedAt": "2026-10-17T20:01:04.188Z",
+    "basis": "Explicit Stable dependency candidate 4.9.1; NOT proof of collector default Dev wildcard-resolved package source/binary equivalence"
+  },
+  {
+    "name": "dawgs",
+    "url": "https://github.com/specterops/dawgs",
+    "root": "C:\\Users\\kotar\\githubprojects\\NBRET\\.tools\\toolchain\\go\\modules\\github.com\\specterops\\dawgs@v0.9.2",
+    "commit": "d0640cfb421e2b9f4fc249de733c3d6e52f1a57f",
+    "ref": "v0.9.2",
+    "moduleOrigin": {
+      "Version": "v0.9.2",
+      "Time": "2026-10-15T03:17:35Z",
+      "Origin": {
+        "VCS": "git",
+        "URL": "https://github.com/specterops/dawgs",
+        "Hash": "d0640cfb421e2b9f4fc249de733c3d6e52f1a57f",
+        "Ref": "refs/tags/v0.9.2"
+      }
+    },
+    "moduleZipSum": "h1:mAFyKpGlxSu8qzvtDxkFe2mAIoz/1q0WIjJg2brhS44=",
+    "retrievedAt": "2026-10-17T20:09:06.549Z",
+    "basis": "Actual dependency obtained by isolated Go test with go.sum; origin VCS/hash from Go module info; module h1 is a content sum, not raw ZIP SHA256 or a signature"
+  },
+  {
+    "name": "h11",
+    "url": "https://github.com/python-hyper/h11",
+    "root": "C:\\Users\\kotar\\githubprojects\\NBRET\\.tools\\toolchain\\h11-installed-0.16.0",
+    "commit": "installed-wheel:h11==0.16.0",
+    "artifactIdentity": "installed-wheel:h11==0.16.0",
+    "retrievedAt": "2026-10-17T20:12:39.848Z",
+    "basis": "Copied installed package actually used by proxy lab; Python source bytes verified against installed distribution RECORD. commit field is artifact identity, NOT a VCS commit; RECORD is not an independent signature.",
+    "recordVerified": [
+      "h11/__init__.py",
+      "h11/_abnf.py",
+      "h11/_connection.py",
+      "h11/_events.py",
+      "h11/_headers.py",
+      "h11/_readers.py",
+      "h11/_receivebuffer.py",
+      "h11/_state.py",
+      "h11/_util.py",
+      "h11/_version.py",
+      "h11/_writers.py"
+    ]
+  },
+  {
+    "name": "impacket",
+    "url": "https://github.com/fortra/impacket",
+    "root": "C:\\Users\\kotar\\githubprojects\\NBRET\\.tools\\toolchain\\impacket",
+    "commit": "c456746d7a0f0bb25e8968a59f25aae1ad519935",
+    "ref": "impacket_0_13_1",
+    "retrievedAt": "2026-10-17T20:25:22.588Z",
+    "basis": "Release tag matches earlier retained catalog resolution; source only, no install or protocol execution"
+  },
+  {
+    "name": "defectdojo",
+    "url": "https://github.com/DefectDojo/django-DefectDojo",
+    "root": "C:\\Users\\kotar\\githubprojects\\NBRET\\.tools\\toolchain\\defectdojo",
+    "commit": "10453d6c62d68eee6d6b0ecc0acde5d61d1dd02d",
+    "ref": "3.4.101",
+    "retrievedAt": "2026-10-17T20:28:40.862Z",
+    "basis": "Selected raw importer and Nmap parser files; full recursive tree receipt is file-name metadata only, not downloaded/read source",
+    "treeReceipt": {
+      "url": "https://api.github.com/repos/DefectDojo/django-DefectDojo/git/trees/10453d6c62d68eee6d6b0ecc0acde5d61d1dd02d?recursive=1",
+      "sha256": "6e676387b5bbc23ad0f48f48ea3af39d42219b744586d6ade16cdc86ab48cb0b"
+    },
+    "artifacts": [
+      {
+        "file": "LICENSE.md",
+        "url": "https://raw.githubusercontent.com/DefectDojo/django-DefectDojo/10453d6c62d68eee6d6b0ecc0acde5d61d1dd02d/LICENSE.md",
+        "sha256": "7e6db954594a85fd09d22f9808b30f3701ce67129c1be949a25f9bb1b07cb780"
+      },
+      {
+        "file": "dojo/importers/__init__.py",
+        "url": "https://raw.githubusercontent.com/DefectDojo/django-DefectDojo/10453d6c62d68eee6d6b0ecc0acde5d61d1dd02d/dojo/importers/__init__.py",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "file": "dojo/importers/auto_create_context.py",
+        "url": "https://raw.githubusercontent.com/DefectDojo/django-DefectDojo/10453d6c62d68eee6d6b0ecc0acde5d61d1dd02d/dojo/importers/auto_create_context.py",
+        "sha256": "659d16f7dbef2ee8cab341eec719720b511083d7c49931d839f37149fbbfef0c"
+      },
+      {
+        "file": "dojo/importers/base_importer.py",
+        "url": "https://raw.githubusercontent.com/DefectDojo/django-DefectDojo/10453d6c62d68eee6d6b0ecc0acde5d61d1dd02d/dojo/importers/base_importer.py",
+        "sha256": "00d88bd88963e124d3f0d31bb9d79db0d616db408162231b3b6e21d6ec4bd14b"
+      },
+      {
+        "file": "dojo/importers/base_location_manager.py",
+        "url": "https://raw.githubusercontent.com/DefectDojo/django-DefectDojo/10453d6c62d68eee6d6b0ecc0acde5d61d1dd02d/dojo/importers/base_location_manager.py",
+        "sha256": "6293cbd1816b964df1bfdacf0c2d8dc265f225e620d7bbdf5eab927877afaa4a"
+      },
+      {
+        "file": "dojo/importers/default_importer.py",
+        "url": "https://raw.githubusercontent.com/DefectDojo/django-DefectDojo/10453d6c62d68eee6d6b0ecc0acde5d61d1dd02d/dojo/importers/default_importer.py",
+        "sha256": "10d26a672ce403ee18009cd63a6598b8cc363d12d42ba0fa7235e2018ef4dcc6"
+      },
+      {
+        "file": "dojo/importers/default_reimporter.py",
+        "url": "https://raw.githubusercontent.com/DefectDojo/django-DefectDojo/10453d6c62d68eee6d6b0ecc0acde5d61d1dd02d/dojo/importers/default_reimporter.py",
+        "sha256": "204e62470eb5d74450787a3fcd901fd0f77a6a45c425f0f62303ffc6fcbf815e"
+      },
+      {
+        "file": "dojo/importers/endpoint_manager.py",
+        "url": "https://raw.githubusercontent.com/DefectDojo/django-DefectDojo/10453d6c62d68eee6d6b0ecc0acde5d61d1dd02d/dojo/importers/endpoint_manager.py",
+        "sha256": "3f6aab4340dba14f08513022fbe8b2263895f1768a8281de3e5c236bcdf3d1d7"
+      },
+      {
+        "file": "dojo/importers/location_manager.py",
+        "url": "https://raw.githubusercontent.com/DefectDojo/django-DefectDojo/10453d6c62d68eee6d6b0ecc0acde5d61d1dd02d/dojo/importers/location_manager.py",
+        "sha256": "7d91ab0feb5878c6a153cc9d4d41c8e818192fc67d0d0c4f74bbd520e80fac21"
+      },
+      {
+        "file": "dojo/importers/options.py",
+        "url": "https://raw.githubusercontent.com/DefectDojo/django-DefectDojo/10453d6c62d68eee6d6b0ecc0acde5d61d1dd02d/dojo/importers/options.py",
+        "sha256": "aeef2dda856fd438c81a8e6bbcf32dde486fa5bd14b11167bad2c873e67114c6"
+      },
+      {
+        "file": "dojo/importers/services.py",
+        "url": "https://raw.githubusercontent.com/DefectDojo/django-DefectDojo/10453d6c62d68eee6d6b0ecc0acde5d61d1dd02d/dojo/importers/services.py",
+        "sha256": "38c52dbb46948758b6e032c46a6ae4ce6735344309041d534791a46fcee91b37"
+      },
+      {
+        "file": "dojo/tools/nmap/__init__.py",
+        "url": "https://raw.githubusercontent.com/DefectDojo/django-DefectDojo/10453d6c62d68eee6d6b0ecc0acde5d61d1dd02d/dojo/tools/nmap/__init__.py",
+        "sha256": "12bd22a7568989f474ebc0ebc73d0c5aa5b63a5a6e28dde39e7a910b2817aefd"
+      },
+      {
+        "file": "dojo/tools/nmap/parser.py",
+        "url": "https://raw.githubusercontent.com/DefectDojo/django-DefectDojo/10453d6c62d68eee6d6b0ecc0acde5d61d1dd02d/dojo/tools/nmap/parser.py",
+        "sha256": "abab1a971ebff832271b20614b73e5902f149ac4be9db75b281a06ecf81f61e8"
+      },
+      {
+        "file": "unittests/tools/test_nmap_parser.py",
+        "url": "https://raw.githubusercontent.com/DefectDojo/django-DefectDojo/10453d6c62d68eee6d6b0ecc0acde5d61d1dd02d/unittests/tools/test_nmap_parser.py",
+        "sha256": "f0885f53f64d066d5fcb1cc60d893ce6b7220c5649811f701c1a535fe0abfbd7"
+      }
+    ]
+  },
+  {
+    "name": "prowler",
+    "url": "https://github.com/prowler-cloud/prowler",
+    "root": "C:\\Users\\kotar\\githubprojects\\NBRET\\.tools\\toolchain\\prowler",
+    "commit": "bffc8844c1c9a3666e37a2ada4ee05f62e1446b0",
+    "ref": "5.45.0",
+    "retrievedAt": "2026-10-17T20:31:08.779Z",
+    "basis": "Selected source artifacts at retained release pin; tree metadata is not full downloaded/read source; no SDK credential discovery or provider execution",
+    "treeReceipt": {
+      "url": "https://api.github.com/repos/prowler-cloud/prowler/git/trees/bffc8844c1c9a3666e37a2ada4ee05f62e1446b0?recursive=1",
+      "commit": "bffc8844c1c9a3666e37a2ada4ee05f62e1446b0",
+      "ref": "5.45.0",
+      "retrievedAt": "2026-10-17T20:30:46.023Z",
+      "sha256": "a55908ba2b86043efa868b5d9f96e31453136adb06b107c04346d0c847f898a8",
+      "basis": "File-name tree only, no source reading"
+    },
+    "artifacts": [
+      {
+        "file": "LICENSE",
+        "url": "https://raw.githubusercontent.com/prowler-cloud/prowler/bffc8844c1c9a3666e37a2ada4ee05f62e1446b0/LICENSE",
+        "sha256": "a0666bd9911fb4b653372b3721c500fdbd097ed1ca83466adb07e7ae7afb82e0"
+      },
+      {
+        "file": "pyproject.toml",
+        "url": "https://raw.githubusercontent.com/prowler-cloud/prowler/bffc8844c1c9a3666e37a2ada4ee05f62e1446b0/pyproject.toml",
+        "sha256": "e94ad3a352d5d584f5d4bcf869ad4f03096b9eb62e8e4775b85ab1c4ce1e95ba"
+      },
+      {
+        "file": "prowler/__main__.py",
+        "url": "https://raw.githubusercontent.com/prowler-cloud/prowler/bffc8844c1c9a3666e37a2ada4ee05f62e1446b0/prowler/__main__.py",
+        "sha256": "d9156b9a73a520ebcbed95e8b9a7d8eae3eb1c50d0da8bdfc400f97f307031ab"
+      },
+      {
+        "file": "prowler/lib/check/check.py",
+        "url": "https://raw.githubusercontent.com/prowler-cloud/prowler/bffc8844c1c9a3666e37a2ada4ee05f62e1446b0/prowler/lib/check/check.py",
+        "sha256": "657a1dc3841522bd3d68fd413f1a2462b9ec093c74c92b92b0de84f4740b0ace"
+      },
+      {
+        "file": "prowler/lib/check/models.py",
+        "url": "https://raw.githubusercontent.com/prowler-cloud/prowler/bffc8844c1c9a3666e37a2ada4ee05f62e1446b0/prowler/lib/check/models.py",
+        "sha256": "422db283f9b16025c584593bb74c9bef2cc6c3570385ec15334184f2985c2e9d"
+      },
+      {
+        "file": "prowler/providers/aws/aws_provider.py",
+        "url": "https://raw.githubusercontent.com/prowler-cloud/prowler/bffc8844c1c9a3666e37a2ada4ee05f62e1446b0/prowler/providers/aws/aws_provider.py",
+        "sha256": "c225294eac19c135b14c9de56d857d6e4f581b8fe6b2e42ca65f952194f617af"
+      },
+      {
+        "file": "prowler/providers/aws/services/iam/iam_client.py",
+        "url": "https://raw.githubusercontent.com/prowler-cloud/prowler/bffc8844c1c9a3666e37a2ada4ee05f62e1446b0/prowler/providers/aws/services/iam/iam_client.py",
+        "sha256": "eb418f225f42ef9fe8007486a7301d48cc2175d025ad10a5f9cea617ecd37759"
+      },
+      {
+        "file": "prowler/providers/aws/services/iam/iam_service.py",
+        "url": "https://raw.githubusercontent.com/prowler-cloud/prowler/bffc8844c1c9a3666e37a2ada4ee05f62e1446b0/prowler/providers/aws/services/iam/iam_service.py",
+        "sha256": "d5e87ac4e0e3f17df5ebb5e610451b2a538fe00b6ca4f19c19ebd87fe2eb849d"
+      },
+      {
+        "file": "prowler/providers/aws/services/iam/iam_aws_attached_policy_no_administrative_privileges/iam_aws_attached_policy_no_administrative_privileges.py",
+        "url": "https://raw.githubusercontent.com/prowler-cloud/prowler/bffc8844c1c9a3666e37a2ada4ee05f62e1446b0/prowler/providers/aws/services/iam/iam_aws_attached_policy_no_administrative_privileges/iam_aws_attached_policy_no_administrative_privileges.py",
+        "sha256": "6c95489ad921cc7700a5e0086017e72e4828f06c4d3e7d6b23d617558f0dceb0"
+      },
+      {
+        "file": "prowler/providers/aws/services/iam/iam_aws_attached_policy_no_administrative_privileges/iam_aws_attached_policy_no_administrative_privileges.metadata.json",
+        "url": "https://raw.githubusercontent.com/prowler-cloud/prowler/bffc8844c1c9a3666e37a2ada4ee05f62e1446b0/prowler/providers/aws/services/iam/iam_aws_attached_policy_no_administrative_privileges/iam_aws_attached_policy_no_administrative_privileges.metadata.json",
+        "sha256": "6f588a0700ed84b3b6a5b0d78273836a19ac863e93d8d21cab4fb86a962644e0"
+      },
+      {
+        "file": "tests/lib/check/check_test.py",
+        "url": "https://raw.githubusercontent.com/prowler-cloud/prowler/bffc8844c1c9a3666e37a2ada4ee05f62e1446b0/tests/lib/check/check_test.py",
+        "sha256": "0ba7cb2fc45adb6de0185f25afc2ffe5fc87ed61ad7915a2b360406e607bbdc9"
+      },
+      {
+        "file": "prowler/providers/aws/services/iam/lib/policy.py",
+        "url": "https://raw.githubusercontent.com/prowler-cloud/prowler/bffc8844c1c9a3666e37a2ada4ee05f62e1446b0/prowler/providers/aws/services/iam/lib/policy.py",
+        "sha256": "a589d9d90e80287b1491ac8cb7d98ebffd2bad9ae27a897cb2e3d023436f8cc3",
+        "retrievedAt": "2026-10-17T20:31:25.365Z"
+      },
+      {
+        "file": "prowler/providers/aws/lib/service/service.py",
+        "url": "https://raw.githubusercontent.com/prowler-cloud/prowler/bffc8844c1c9a3666e37a2ada4ee05f62e1446b0/prowler/providers/aws/lib/service/service.py",
+        "sha256": "2c52360a6839c1a786d7000bf2b02f619c5f8fa420af8c1518c24555daeca097",
+        "retrievedAt": "2026-10-17T20:31:25.480Z"
+      },
+      {
+        "file": "prowler/providers/common/provider.py",
+        "url": "https://raw.githubusercontent.com/prowler-cloud/prowler/bffc8844c1c9a3666e37a2ada4ee05f62e1446b0/prowler/providers/common/provider.py",
+        "sha256": "1080b11456deb6426307167067a3066ec79c87c7af07bb85dd3c507d6c76a1da",
+        "retrievedAt": "2026-10-17T20:31:25.607Z"
+      },
+      {
+        "file": "prowler/lib/outputs/outputs.py",
+        "url": "https://raw.githubusercontent.com/prowler-cloud/prowler/bffc8844c1c9a3666e37a2ada4ee05f62e1446b0/prowler/lib/outputs/outputs.py",
+        "sha256": "a2896c5566331efcf7108c28e1be5993fa35dc911ce92dba2975c6d27a33749b",
+        "retrievedAt": "2026-10-17T20:36:24.687Z"
+      },
+      {
+        "file": "prowler/lib/outputs/finding.py",
+        "url": "https://raw.githubusercontent.com/prowler-cloud/prowler/bffc8844c1c9a3666e37a2ada4ee05f62e1446b0/prowler/lib/outputs/finding.py",
+        "sha256": "00ed79bee5e32239d3cce4943c70df33dbfe3f85056deb750ad11f2073613cce",
+        "retrievedAt": "2026-10-17T20:36:24.800Z"
+      },
+      {
+        "file": "prowler/lib/outputs/common.py",
+        "url": "https://raw.githubusercontent.com/prowler-cloud/prowler/bffc8844c1c9a3666e37a2ada4ee05f62e1446b0/prowler/lib/outputs/common.py",
+        "sha256": "06a3e8e228375f9f81cb610029eb588a074cdcae37ec1a427fcf131a4cc75925",
+        "retrievedAt": "2026-10-17T20:36:43.460Z"
+      }
+    ]
+  },
+  {
+    "name": "metasploit",
+    "url": "https://github.com/rapid7/metasploit-framework",
+    "root": "C:\\Users\\kotar\\githubprojects\\NBRET\\.tools\\toolchain\\metasploit",
+    "commit": "b22ce1fbae63e8caeb3a773366a6d3336bd66fb8",
+    "ref": "master",
+    "retrievedAt": "2026-10-17T20:33:47.203Z",
+    "basis": "Selected raw orchestration/control/test files from retained default-branch snapshot, not a release/binary claim; no module, payload, listener or framework executed",
+    "artifacts": [
+      {
+        "file": "LICENSE",
+        "url": "https://raw.githubusercontent.com/rapid7/metasploit-framework/b22ce1fbae63e8caeb3a773366a6d3336bd66fb8/LICENSE",
+        "sha256": "3188f34049114e64d1f9e40fc352c730507380bcbaf5b57686a8d55fb9e7b572"
+      },
+      {
+        "file": "lib/msf/core/exploit/remote/auto_check.rb",
+        "url": "https://raw.githubusercontent.com/rapid7/metasploit-framework/b22ce1fbae63e8caeb3a773366a6d3336bd66fb8/lib/msf/core/exploit/remote/auto_check.rb",
+        "sha256": "0b516da667ad00bb2588fc30d411bc4fe722c5730e90c8b4f7bffe2ffee4f7e5"
+      },
+      {
+        "file": "lib/msf/base/simple/exploit.rb",
+        "url": "https://raw.githubusercontent.com/rapid7/metasploit-framework/b22ce1fbae63e8caeb3a773366a6d3336bd66fb8/lib/msf/base/simple/exploit.rb",
+        "sha256": "d92b0953c2b1d3981750fa1c6921bd5c32760344a1e843d4d8d8a9d941f35309"
+      },
+      {
+        "file": "lib/msf/core/exploit_driver.rb",
+        "url": "https://raw.githubusercontent.com/rapid7/metasploit-framework/b22ce1fbae63e8caeb3a773366a6d3336bd66fb8/lib/msf/core/exploit_driver.rb",
+        "sha256": "185f81dccb1363658f934b3ab01bc541517aa5a1c8674f08a51e9b2dc8634496"
+      },
+      {
+        "file": "spec/lib/msf/core/exploit/remote/auto_check_spec.rb",
+        "url": "https://raw.githubusercontent.com/rapid7/metasploit-framework/b22ce1fbae63e8caeb3a773366a6d3336bd66fb8/spec/lib/msf/core/exploit/remote/auto_check_spec.rb",
+        "sha256": "39b639d2660532eb7408fd6efe551951a37c0797a917fef94093e5f14b3aad34"
+      }
+    ]
+  }
+]

@@ -1,0 +1,70 @@
+[
+  {
+    "name": "NBRET",
+    "root": "C:\\Users\\kotar\\githubprojects\\NBRET",
+    "commit": "0fcdfa667d1276cfe7e9834ae87d42d917251dfb",
+    "date": "2026-10-12T22:50:16+09:00",
+    "dirty": "M .gitignore\n M README.md\n M package.json\n M scripts/demo.mjs\n M src/capture.mjs\n M src/cli.mjs\n M src/run.mjs\n M test/capture.test.mjs\n M test/run.test.mjs\n?? docs/articles/\n?? docs/evaluation/\n?? docs/examples/\n?? docs/reader-reports.md\n?? docs/research/\n?? docs/route-discovery.md\n?? docs/testing-plan.md\n?? docs/testing-verification.md\n?? docs/testing.md\n?? docs/tier-implementation-plan.md\n?? docs/tier-verification.md\n?? docs/tiers.md\n?? docs/workflow-understanding.md\n?? experiments/\n?? scripts/demo-testing.mjs\n?? scripts/demo-tiers.mjs\n?? scripts/harness-browser.py\n?? scripts/research-repository-catalog.mjs\n?? scripts/research-security-lab.mjs\n?? scripts/research-source-queue.mjs\n?? scripts/setup-zap.mjs\n?? src/analyze.mjs\n?? src/assertions.mjs\n?? src/checks.mjs\n?? src/contracts.mjs\n?? src/diagnose.mjs\n?? src/discover.mjs\n?? src/evidence-files.mjs\n?? src/explore.mjs\n?? src/harness-capture.mjs\n?? src/harness.mjs\n?? src/http.mjs\n?? src/interactions.mjs\n?? src/managed-zap.mjs\n?? src/probe.mjs\n?? src/reader-report.mjs\n?? src/report-html.mjs\n?? src/scenario.mjs\n?? src/scope.mjs\n?? src/structure.mjs\n?? src/tiers-cli.mjs\n?? src/tiers.mjs\n?? src/understand-cli.mjs\n?? src/understand.mjs\n?? src/workflow-examples.mjs\n?? src/zap.mjs\n?? test/contracts.test.mjs\n?? test/discover.test.mjs\n?? test/scope.test.mjs\n?? test/testing.test.mjs\n?? test/tiers.test.mjs\n?? test/understand.test.mjs\n?? test/workflow-examples.test.mjs",
+    "basis": "Saved snapshot; no assumption that upstream HEAD is identical"
+  },
+  {
+    "name": "ZAP",
+    "root": "C:/Users/kotar/.codex/research/zaproxy-2.17.0",
+    "commit": "8a1bff313f4d183dba5aa154ecbe89ad751c9153",
+    "date": "2025-12-15T12:59:39Z",
+    "dirty": "",
+    "basis": "Installed release v2.17.0 source tag; resolved commit recorded"
+  },
+  {
+    "name": "Nuclei",
+    "root": "C:/Users/kotar/.codex/research/nuclei",
+    "commit": "a151a1d54fad0d5ef71f01662b0bb3955a98c7c5",
+    "date": "2026-10-14T16:06:57+03:00",
+    "dirty": "",
+    "basis": "Saved snapshot; no assumption that upstream HEAD is identical"
+  },
+  {
+    "name": "ZAPNetwork",
+    "root": "C:/Users/kotar/.codex/research/zap-extensions-network-0.25.0",
+    "commit": "edad2323431a8dec407d46129fedc74fd30d3ba6",
+    "date": "2025-12-15T12:23:16Z",
+    "dirty": "",
+    "basis": "Official source tag matching installed addon filename; not reproducible-build verification"
+  },
+  {
+    "name": "ZAPRules",
+    "root": "C:/Users/kotar/.codex/research/zap-extensions-ascanrules-78",
+    "commit": "8b171e1c8704d2996b75d4bc119cbf9495d9aa12",
+    "date": "2025-12-15T10:56:56Z",
+    "dirty": "",
+    "basis": "Official source tag matching installed addon filename; not reproducible-build verification"
+  },
+  {
+    "name": "Fastdialer",
+    "root": "C:\\Users\\kotar\\githubprojects\\NBRET\\.tools\\security-research-go\\module-cache\\pkg\\mod\\github.com\\projectdiscovery\\fastdialer@v0.5.25",
+    "commit": null,
+    "module": "github.com/projectdiscovery/fastdialer",
+    "version": "v0.5.25",
+    "goSum": [
+      "github.com/projectdiscovery/fastdialer v0.5.25 h1:xGFpc5B7cmogqnBrcVYV5yXh6UFlqRA6u5KqautKgD0=",
+      "github.com/projectdiscovery/fastdialer v0.5.25/go.mod h1:CZZ0PwdTw2KCI/PrZTW9wyBY88MIjpT8WhsKWSw3bkw="
+    ],
+    "accessedAt": "2026-10-17T20:51:24.030Z",
+    "basis": "Existing official Go module cache resolved by pinned parent. Module version/checksum, not invented Git commit; inventory not reading.",
+    "files": 37
+  },
+  {
+    "name": "NetworkPolicy",
+    "root": "C:\\Users\\kotar\\githubprojects\\NBRET\\.tools\\security-research-go\\module-cache\\pkg\\mod\\github.com\\projectdiscovery\\networkpolicy@v0.1.54",
+    "commit": null,
+    "module": "github.com/projectdiscovery/networkpolicy",
+    "version": "v0.1.54",
+    "goSum": [
+      "github.com/projectdiscovery/networkpolicy v0.1.54 h1:+v7yyuRBu2S7dzeIJToDENy1i+HjRhNzqnQrDlm00z8=",
+      "github.com/projectdiscovery/networkpolicy v0.1.54/go.mod h1:tN+YAFVlJjHv/znPEhkcSAjmBMkMhslC9XpWKTrKEHw="
+    ],
+    "accessedAt": "2026-10-17T20:51:24.034Z",
+    "basis": "Existing official Go module cache resolved by pinned parent. Module version/checksum, not invented Git commit; inventory not reading.",
+    "files": 11
+  }
+]

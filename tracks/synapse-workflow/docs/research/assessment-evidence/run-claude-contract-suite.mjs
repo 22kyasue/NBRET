@@ -1,0 +1,14 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import {pathToFileURL} from 'node:url';
+const own=path.resolve('docs/research/assessment-evidence');
+let source=fs.readFileSync(path.join(own,'run-claude-mirror-generated.mjs'),'utf8');
+source=source.replaceAll('claude-mirror','claude-contract-suite');
+source=source.replace('tests/test_transcript_mirror.py','tests/test_message_parser.py');
+source=source.replace(',fixture];',",fixture,path.join(root,'tests/test_subprocess_buffering.py'),path.join(root,'tests/test_session_store_conformance.py'),path.join(root,'tests/test_session_summary.py')];");
+source=source.replace("'src/claude_agent_sdk/_internal/query.py','src/claude_agent_sdk/_internal/transcript_mirror_batcher.py','src/claude_agent_sdk/_internal/session_store.py','src/claude_agent_sdk/_internal/session_resume.py'","'src/claude_agent_sdk/_internal/message_parser.py','src/claude_agent_sdk/_internal/transport/subprocess_cli.py','src/claude_agent_sdk/_internal/session_store.py','src/claude_agent_sdk/_internal/session_summary.py','src/claude_agent_sdk/_internal/sessions.py','src/claude_agent_sdk/testing/session_store_conformance.py','tests/test_subprocess_buffering.py','tests/test_session_store_conformance.py','tests/test_session_summary.py'");
+source=source.replace(/criteria:'[^']*'/,"criteria:'Unchanged fully reviewed parser/buffering/conformance/summary tests pass; no native process, provider or remote store'");
+source=source.replace(/intervention:'[^']*'/,"intervention:'upstream inert text streams and synthetic memory adapters; normal test fixtures only'");
+const generated=path.join(own,'run-claude-contract-suite-generated.mjs');
+fs.writeFileSync(generated,source,{flag:'wx'});
+await import(pathToFileURL(generated).href);

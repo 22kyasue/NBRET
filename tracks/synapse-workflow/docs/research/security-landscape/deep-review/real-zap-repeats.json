@@ -1,0 +1,52 @@
+{
+  "at": "2026-10-17T19:54:47.807Z",
+  "scope": "Two controlled runs per condition; small timing experiment, not general success rate",
+  "results": [
+    {
+      "file": "normal-1.json",
+      "sha256": "63002e6726a512ec7185b437709282828937cf6b0b0f1b2549cd511bc3d2b8fb",
+      "mode": "normal",
+      "rewrittenPathRequested": true,
+      "status": "completed",
+      "pendingAtReturn": false,
+      "earlyRuleAlert": true,
+      "cleanup": true,
+      "elapsedMs": 13192.7057
+    },
+    {
+      "file": "normal-2.json",
+      "sha256": "3f3203228b4b6946154be7ff063ba61ed346b2e5ab8b8ce2526d8523bd1ea4c1",
+      "mode": "normal",
+      "rewrittenPathRequested": true,
+      "status": "completed",
+      "pendingAtReturn": false,
+      "earlyRuleAlert": true,
+      "cleanup": true,
+      "elapsedMs": 10578.6049
+    },
+    {
+      "file": "stop-1.json",
+      "sha256": "1ddc4cd8f42ef44f3c793b9d14f2455219faa728fa52950729a0288d1ef6dbb0",
+      "mode": "stop",
+      "rewrittenPathRequested": true,
+      "status": "completed",
+      "pendingAtReturn": true,
+      "earlyRuleAlert": false,
+      "laterRuleAlert": true,
+      "cleanup": true,
+      "elapsedMs": 14881.909399999999
+    },
+    {
+      "file": "stop-2.json",
+      "sha256": "311aebbb6bf8284e3090e3c4b8c22cc5923ce566142b7116357552e2305da4be",
+      "mode": "stop",
+      "rewrittenPathRequested": true,
+      "status": "completed",
+      "pendingAtReturn": true,
+      "earlyRuleAlert": false,
+      "laterRuleAlert": true,
+      "cleanup": true,
+      "elapsedMs": 14204.819899999999
+    }
+  ]
+}

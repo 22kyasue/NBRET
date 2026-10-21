@@ -1,0 +1,102 @@
+{
+  "at": "2026-10-17T22:05:22.609Z",
+  "runs": [
+    {
+      "at": "2026-10-17T22:04:53.434Z",
+      "out": "C:\\Users\\kotar\\githubprojects\\NBRET\\runs\\zap-structure-research-1792274692415",
+      "scope": "Installed structural nodes/default table with fresh in-memory HSQLDB; injected Database interface supplies only synthetic table. No daemon, network, disk DB or real credentials.",
+      "command": {
+        "executable": "C:/Users/kotar/AppData/Local/Programs/BurpSuite/jre/bin/java.exe",
+        "args": [
+          "-Djava.awt.headless=true",
+          "--class-path",
+          "C:\\Users\\kotar\\githubprojects\\NBRET\\.tools\\ZAP_2.17.0\\zap-2.17.0.jar;C:\\Users\\kotar\\githubprojects\\NBRET\\.tools\\ZAP_2.17.0\\lib\\*",
+          "C:\\Users\\kotar\\githubprojects\\NBRET\\runs\\zap-structure-research-1792274692415\\StructureResearch.java"
+        ],
+        "cwd": "C:\\Users\\kotar\\githubprojects\\NBRET\\runs\\zap-structure-research-1792274692415"
+      },
+      "exit": 0,
+      "signal": null,
+      "elapsedMs": 1018.739,
+      "passes": [
+        "PASS stored_parent_id_control",
+        "PASS database_leaf_count_control",
+        "PASS parent_returns_current_record_counterexample",
+        "PASS leaf_count_reports_siblings_counterexample",
+        "PASS iterator_has_no_actual_children_control",
+        "PASS actual_leaf_classified_nonleaf_counterexample",
+        "PASS bounded_parent_calls_only_no_regex_loop"
+      ],
+      "jarSha256": "015dda4709b5ef79736086bb41e8e2a4e95b04cf6625f14d6bcc02b197c99c0c",
+      "reviewedSourceSha256": "a8bce00b8bb8b066381975342a91b05c72c6bf741a288e0791ec7c74dc037db4",
+      "fixtureSha256": "18198c0e11e4b444985436a0dcce354ff5b7f0c603b659f900f851a0f601471f",
+      "stdoutSha256": "ff5ef28d8200d67cde59f92a0f63d08937840cc9b508eb8e8bb7b3d5e4f4600c",
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "at": "2026-10-17T22:05:07.650Z",
+      "out": "C:\\Users\\kotar\\githubprojects\\NBRET\\runs\\zap-structure-research-1792274706584",
+      "scope": "Installed structural nodes/default table with fresh in-memory HSQLDB; injected Database interface supplies only synthetic table. No daemon, network, disk DB or real credentials.",
+      "command": {
+        "executable": "C:/Users/kotar/AppData/Local/Programs/BurpSuite/jre/bin/java.exe",
+        "args": [
+          "-Djava.awt.headless=true",
+          "--class-path",
+          "C:\\Users\\kotar\\githubprojects\\NBRET\\.tools\\ZAP_2.17.0\\zap-2.17.0.jar;C:\\Users\\kotar\\githubprojects\\NBRET\\.tools\\ZAP_2.17.0\\lib\\*",
+          "C:\\Users\\kotar\\githubprojects\\NBRET\\runs\\zap-structure-research-1792274706584\\StructureResearch.java"
+        ],
+        "cwd": "C:\\Users\\kotar\\githubprojects\\NBRET\\runs\\zap-structure-research-1792274706584"
+      },
+      "exit": 0,
+      "signal": null,
+      "elapsedMs": 1064.9237,
+      "passes": [
+        "PASS stored_parent_id_control",
+        "PASS database_leaf_count_control",
+        "PASS parent_returns_current_record_counterexample",
+        "PASS leaf_count_reports_siblings_counterexample",
+        "PASS iterator_has_no_actual_children_control",
+        "PASS actual_leaf_classified_nonleaf_counterexample",
+        "PASS bounded_parent_calls_only_no_regex_loop"
+      ],
+      "jarSha256": "015dda4709b5ef79736086bb41e8e2a4e95b04cf6625f14d6bcc02b197c99c0c",
+      "reviewedSourceSha256": "e038675efc5c324a23e04cbaea49ea0ee4a67a4599eb52463876ba8a60a53826",
+      "fixtureSha256": "18198c0e11e4b444985436a0dcce354ff5b7f0c603b659f900f851a0f601471f",
+      "stdoutSha256": "ff5ef28d8200d67cde59f92a0f63d08937840cc9b508eb8e8bb7b3d5e4f4600c",
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "at": "2026-10-17T22:05:09.235Z",
+      "out": "C:\\Users\\kotar\\githubprojects\\NBRET\\runs\\zap-structure-research-1792274708241",
+      "scope": "Installed structural nodes/default table with fresh in-memory HSQLDB; injected Database interface supplies only synthetic table. No daemon, network, disk DB or real credentials.",
+      "command": {
+        "executable": "C:/Users/kotar/AppData/Local/Programs/BurpSuite/jre/bin/java.exe",
+        "args": [
+          "-Djava.awt.headless=true",
+          "--class-path",
+          "C:\\Users\\kotar\\githubprojects\\NBRET\\.tools\\ZAP_2.17.0\\zap-2.17.0.jar;C:\\Users\\kotar\\githubprojects\\NBRET\\.tools\\ZAP_2.17.0\\lib\\*",
+          "C:\\Users\\kotar\\githubprojects\\NBRET\\runs\\zap-structure-research-1792274708241\\StructureResearch.java"
+        ],
+        "cwd": "C:\\Users\\kotar\\githubprojects\\NBRET\\runs\\zap-structure-research-1792274708241"
+      },
+      "exit": 0,
+      "signal": null,
+      "elapsedMs": 992.8903,
+      "passes": [
+        "PASS stored_parent_id_control",
+        "PASS database_leaf_count_control",
+        "PASS parent_returns_current_record_counterexample",
+        "PASS leaf_count_reports_siblings_counterexample",
+        "PASS iterator_has_no_actual_children_control",
+        "PASS actual_leaf_classified_nonleaf_counterexample",
+        "PASS bounded_parent_calls_only_no_regex_loop"
+      ],
+      "jarSha256": "015dda4709b5ef79736086bb41e8e2a4e95b04cf6625f14d6bcc02b197c99c0c",
+      "reviewedSourceSha256": "e038675efc5c324a23e04cbaea49ea0ee4a67a4599eb52463876ba8a60a53826",
+      "fixtureSha256": "18198c0e11e4b444985436a0dcce354ff5b7f0c603b659f900f851a0f601471f",
+      "stdoutSha256": "ff5ef28d8200d67cde59f92a0f63d08937840cc9b508eb8e8bb7b3d5e4f4600c",
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "provenanceCorrection": "First run reviewedSourceSha256 accidentally references AlertSet from copied harness; subsequent two runs reference StructuralTableNode. Fixture and jar identical across all three."
+}

@@ -1,0 +1,23 @@
+{
+  "python": "3.14.7 (tags/v3.14.7:823f032, Aug  5 2026, 10:51:32) [MSC v.1944 64 bit (AMD64)]",
+  "scope": "AST-loaded production banking definitions and current-version UserTask6 methods; dependency annotation stub only; no suite registry/model/pipeline/network",
+  "groundTruthPass": true,
+  "wrongRecipientUtilityPass": true,
+  "wrongRecipientIndependentOraclePass": false,
+  "wrongAmountRejected": true,
+  "nonrecurrenceRejected": true,
+  "preexistingNoActionUtilityPass": true,
+  "falseAndZeroUpdateIgnored": true,
+  "modelCalls": 0,
+  "networkCalls": 0,
+  "scriptSha256": "61f875dc1ede9fe627c2f4231eaa989ea16f5c2004d0590794c788bec1a6f4bd",
+  "sources": {
+    "src/agentdojo/default_suites/v1/tools/banking_client.py": "4f8afb40e526143438ed71a2fe128488c705d76c9d111319edb362859c7c9f70",
+    "src/agentdojo/default_suites/v1_2_2/banking/user_tasks.py": "07477ec5014914fec394ffc93652772893c7fe564f461568d990771c8c3f9e00"
+  },
+  "limitations": [
+    "Not a released-fixture prevalence test",
+    "No inference that every task shares these oracle gaps",
+    "Partial modules loaded by AST, not full benchmark execution"
+  ]
+}

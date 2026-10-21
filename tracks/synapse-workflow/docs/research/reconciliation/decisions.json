@@ -1,0 +1,193 @@
+{
+  "status": "SUPERSEDED 2026-10-18 by register/ (findings, corrections, hazards). Kept for provenance: Pine's initial eight notes. An independent audit found them accurate but narrow; see README.md. Do not extend this file.",
+  "notes": [
+    {
+      "id": "service-definition",
+      "question": "What security service are we delivering?",
+      "terms": [
+        "service",
+        "pentest",
+        "penetration",
+        "audit",
+        "client",
+        "product",
+        "components",
+        "workflow"
+      ],
+      "conclusion": "Choose a client question and acceptance criteria before tools. Vulnerability assessment inventories candidates; penetration testing validates scoped consequences; adversary assessment tests objectives and defensive handling. PTaaS describes delivery, not one testing method.",
+      "implication": "Define scope/access, assigned expertise, test coverage, evidence review, client deliverables, remediation ownership and retest. A scanner report alone does not supply the engagement.",
+      "limits": "The research does not establish a single best service, validated buyer demand, pricing or our readiness to deliver every specialist scope.",
+      "sources": [
+        "learning/chapters/02-services.md",
+        "security-landscape/discipline-map.md",
+        "security-landscape/companies.md",
+        "security-landscape/synthesis.md"
+      ]
+    },
+    {
+      "id": "identity-and-reuse",
+      "question": "Can this saved evidence prove access for this principal?",
+      "terms": [
+        "identity",
+        "tenant",
+        "principal",
+        "role",
+        "authorization",
+        "saved",
+        "observation",
+        "cache",
+        "reuse"
+      ],
+      "conclusion": "Method, URL and body equality do not establish principal, tenant, policy or environment equivalence. The synthetic NBRET study observed fresh/offline disagreement when identity headers were omitted from matching.",
+      "implication": "Bind the claim to authoritative identity and relevant state without persisting raw credentials; mark ambiguous or stale evidence unavailable and obtain fresh retest evidence.",
+      "limits": "This observation is attribution ambiguity in a fixture, not a demonstrated live-client authorization exploit. A complete identity-key design still needs validation.",
+      "sources": [
+        "security-landscape/deep-review/nbret-checks-identity.md",
+        "assessment-evidence/synthesis.md",
+        "assessment-evidence/openfga-request-contract.md"
+      ]
+    },
+    {
+      "id": "scanner-completion",
+      "question": "Does completed or no findings mean the assessment succeeded?",
+      "terms": [
+        "scanner",
+        "zap",
+        "nuclei",
+        "completed",
+        "completion",
+        "terminal",
+        "stop",
+        "cancellation",
+        "report",
+        "clean"
+      ],
+      "conclusion": "Scheduling, execution, matching, output delivery, reviewed findings and verified effect are separate states. A terminal label or empty report cannot establish complete tested coverage.",
+      "implication": "Retain native results and errors, tested and skipped scope, partial output and termination evidence. Reconcile the adapter report with native observations before client claims.",
+      "limits": "Component findings apply to pinned paths and fixtures. They do not establish that all scanner rules continue after stop or that every current integration has the same behavior.",
+      "sources": [
+        "security-landscape/deep-review/reporting-boundaries-comparison.md",
+        "security-landscape/deep-review/nbret-scanner.md",
+        "security-landscape/deep-review/zap-control-path.md",
+        "security-landscape/deep-review/nuclei-output.md"
+      ]
+    },
+    {
+      "id": "ai-validation",
+      "question": "Where could AI help and what validates its contribution?",
+      "terms": [
+        "ai",
+        "agent",
+        "model",
+        "llm",
+        "hypothesis",
+        "grounding",
+        "canary",
+        "evaluation",
+        "benchmark",
+        "autofix"
+      ],
+      "conclusion": "Enumeration, hypotheses, evidence organization, triage, patch proposals and reporting need different validators. Exact quotations and model agreement do not independently prove an effect; a generated PR does not prove deployed repair.",
+      "implication": "Evaluate one role at a time against a human/deterministic baseline on held-out cases, with independent effect oracles, misses, review effort, setup and total cost. Keep capability and scope enforcement outside the model.",
+      "limits": "Vendor feature studies, narrow benchmarks and no-model fixtures cannot support a general autonomous-pentest quality claim or transferable accuracy rate.",
+      "sources": [
+        "cybersecurity-firms/ai-evidence-matrix.md",
+        "assessment-evidence/synthesis.md",
+        "assessment-evidence/deep-pentestgpt.md",
+        "cybersecurity-firms/takumi-blackbox-benchmark.md",
+        "cybersecurity-firms/gmo-flatt-security.md"
+      ]
+    },
+    {
+      "id": "retry-checksum-correction",
+      "question": "Is retaining an earlier checksum across retries itself a vulnerability?",
+      "terms": [
+        "checksum",
+        "retry",
+        "retries",
+        "body",
+        "changed",
+        "hash",
+        "s3"
+      ],
+      "conclusion": "The pinned checksum history describes retaining the first checksum as consistency protection across attempts. Mock tests retain it even after replacing body content; they do not demonstrate service acceptance of mismatched bytes.",
+      "implication": "Carry this later intent correction with the earlier cache observation. Distinguish supplied checksum, computed checksum, transmitted content and server validation before asserting impact.",
+      "limits": "This does not settle separate source questions about response Base64 comparison, algorithm selection or EOF validation. It is not evidence of a real-service bypass.",
+      "sources": [
+        "toolchain/go-material-review.md"
+      ]
+    },
+    {
+      "id": "cloud-effective-state",
+      "question": "What does a cloud configuration audit establish?",
+      "terms": [
+        "cloud",
+        "audit",
+        "encryption",
+        "bucket",
+        "configuration",
+        "policy",
+        "unknown",
+        "permissions",
+        "s3",
+        "eof"
+      ],
+      "conclusion": "A collected default or service-reported status is different from effective permissions or all-object state. Missing, denied, partial, empty and explicitly disabled values must remain distinct. Closing a streamed body does not establish EOF checksum validation.",
+      "implication": "Define resource/version/region scope, collection permissions, pagination, freshness and the independent observation needed for the precise claim. Preserve unknown outcomes rather than reporting them clean.",
+      "limits": "Generated SDK comments and local parser/helper behavior are not a current service-support guarantee or a full effective-policy evaluation.",
+      "sources": [
+        "toolchain/cloud-posture.md",
+        "toolchain/go-material-review.md",
+        "toolchain/identity-analysis.md"
+      ]
+    },
+    {
+      "id": "workers-and-effects",
+      "question": "Can queue state or cancellation prove external work stopped?",
+      "terms": [
+        "queue",
+        "worker",
+        "swarm",
+        "retry",
+        "cancellation",
+        "lease",
+        "deduplication",
+        "budget",
+        "rate"
+      ],
+      "conclusion": "Job admission, deduplication, lease ownership, worker return and external effect completion are different contracts. Deleting state or acknowledging stop cannot by itself fence an already running effect.",
+      "implication": "Evaluate executor-level scope and budgets, external idempotency/fencing, cancellation propagation, process join and effect reconciliation across every adapter.",
+      "limits": "Source hypotheses and extracted component experiments need their actual caller path before claims about deployed reachability. No queue framework has been selected as the product architecture.",
+      "sources": [
+        "bots-swarms/model.md",
+        "bots-swarms/findings.md",
+        "bots-swarms/reader-map.md",
+        "bots-swarms/continuation.md"
+      ]
+    },
+    {
+      "id": "defender-effect",
+      "question": "Does an action API success prove containment or recovery?",
+      "terms": [
+        "defender",
+        "response",
+        "containment",
+        "isolation",
+        "action",
+        "incident",
+        "soc",
+        "mdr",
+        "recovery"
+      ],
+      "conclusion": "Task submission, service task status, endpoint enforcement and business recovery require different observations. The selected Sentinel template's HTTP success comment does not supply the missing action-status polling branch.",
+      "implication": "Specify the customer's mandate, action category, identity, approval policy, completion evidence and recovery ownership. Test telemetry, detection, triage, response and cleanup separately.",
+      "limits": "A particular connector or product manual cannot establish portfolio-wide authority, contractual terms or a verified client endpoint effect.",
+      "sources": [
+        "cybersecurity-firms/defender-action-contract.md",
+        "cybersecurity-firms/sentinel-playbooks-source.md",
+        "cybersecurity-firms/trend-response-task-boundary.md",
+        "assessment-evidence/deep-atomic.md"
+      ]
+    }
+  ]
+}

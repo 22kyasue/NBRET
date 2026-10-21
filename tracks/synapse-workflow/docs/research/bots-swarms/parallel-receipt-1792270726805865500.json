@@ -1,0 +1,61 @@
+{
+  "at_ns": 1792270726805865500,
+  "python": "3.14.7 (tags/v3.14.7:823f032, Aug  5 2026, 10:51:32) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26300-SP0",
+  "scope": "AST-selected pinned functions; stdlib only; no network or Scrapy import",
+  "hashes": {
+    "scrapy/utils/asyncgen.py": "bf4df1cd6dcf0ad95506ca33d29fba25ed8f973a53f63cfcdda3c81902798347",
+    "scrapy/utils/asyncio.py": "00df0c78d8e4d1e57e2ac8b9a082754b9c87e45ea08bacc3134518ae022554d9"
+  },
+  "checks": [
+    {
+      "name": "sync input completes exactly once per item",
+      "pass": true
+    },
+    {
+      "name": "observed concurrency two",
+      "pass": true
+    },
+    {
+      "name": "async input completes",
+      "pass": true
+    },
+    {
+      "name": "ordinary item failure permits siblings",
+      "pass": true
+    },
+    {
+      "name": "ordinary item failure logged",
+      "pass": true
+    },
+    {
+      "name": "parent cancellation propagated",
+      "pass": true
+    },
+    {
+      "name": "all cooperative children cancelled",
+      "pass": true
+    },
+    {
+      "name": "child finally cleanup awaited",
+      "pass": true
+    },
+    {
+      "name": "prior synthetic effects remain",
+      "pass": true
+    },
+    {
+      "name": "iterator failure propagated",
+      "pass": true
+    },
+    {
+      "name": "iterator failure cleans started child",
+      "pass": true
+    },
+    {
+      "name": "no pending child tasks",
+      "pass": true
+    }
+  ],
+  "pending_tasks": 0
+}

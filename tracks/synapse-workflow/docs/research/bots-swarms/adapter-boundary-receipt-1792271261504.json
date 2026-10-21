@@ -1,0 +1,45 @@
+{
+  "at": 1792271261504,
+  "node": "v24.21.0",
+  "scope": "unchanged adapter source with inert clients, no database/network",
+  "hashes": {
+    "lib/RateLimiterEtcd.js": "fdc332792dcc02710a48f81c937e5780baf3aa0b8d048b1b30b7ca50d4867b00",
+    "lib/RateLimiterEtcdNonAtomic.js": "968d348fe61b90c03e5a337af055bf713e994dc50a97155ff28eb0508a2b1314",
+    "lib/RateLimiterSQLite.js": "4e685f899c520350fbeaef1ce51654d2e10fb8a845f3b294a5e147531c859ba7",
+    "lib/RateLimiterStoreAbstract.js": "8844511c3231b96dcf89a0d3d56b69112f4e4b563f73018fdce26e670f6c551f",
+    "lib/RateLimiterInsuredAbstract.js": "8b515fc09ba78213b367962c9ff306c70f2889286a8bf9faa8a1ce70ddb05847",
+    "lib/RateLimiterAbstract.js": "f659ed1fa6065e8cbf554621997bb2192870b7efd091e80e9a006229e0d629a8",
+    "lib/RateLimiterRes.js": "26237351781d300c123b207009c5a84fe78c6e1e9a89bc5579e1c02f97452349"
+  },
+  "checks": [
+    {
+      "name": "expired JSON record still returned",
+      "pass": true
+    },
+    {
+      "name": "expired JSON reports zero retry time",
+      "pass": true
+    },
+    {
+      "name": "consume accumulates expired count and rejects",
+      "pass": true
+    },
+    {
+      "name": "new write contains accumulated count",
+      "pass": true
+    },
+    {
+      "name": "vanished CAS read rejects TypeError",
+      "pass": true
+    },
+    {
+      "name": "query callback pending after connection release",
+      "pass": true
+    },
+    {
+      "name": "query subsequently settles normally",
+      "pass": true
+    }
+  ],
+  "allSyntheticPromisesSettled": true
+}

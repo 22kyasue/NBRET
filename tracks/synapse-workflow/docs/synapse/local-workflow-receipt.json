@@ -1,0 +1,90 @@
+{
+  "kind": "integrated-local-workflow-receipt",
+  "recordedAt": "2026-10-19T01:15:07.264Z",
+  "validation": {
+    "command": "npm run synapse:acceptance",
+    "passed": 114,
+    "failed": 0,
+    "skipped": 0,
+    "cancelled": 0,
+    "durationMs": 2946.5483,
+    "scope": "Explicit local unit and integration tests; no historical research experiments or live targets"
+  },
+  "exampleDirectory": "runs/complete-workflow-58f0bf86-99d5-4e59-bfe8-9bbbf6d87135",
+  "example": {
+    "kind": "local-workflow-acceptance",
+    "url": "http://127.0.0.1:65177",
+    "runId": "session-a4ef218e-1db3-48d8-ab28-ae4bd4d0a74c",
+    "elapsedMs": 9717,
+    "actions": 50,
+    "complete": 50,
+    "incomplete": 0,
+    "targetRequests": 54,
+    "targetClosed": true,
+    "cases": 1,
+    "verified": 0,
+    "unconfirmed": 1,
+    "gateHistory": [
+      false,
+      true
+    ],
+    "retestStatus": "incomplete-or-mismatched",
+    "comparison": "descriptive",
+    "effort": {
+      "totalPersonMinutes": null,
+      "reviewerPersonMinutes": null,
+      "byStage": {},
+      "coverage": "reported-records-only",
+      "accounting": "Declared person-minutes; unreported labor and monetary cost unknown."
+    },
+    "ownerPending": 2,
+    "rejectionSample": 1,
+    "scriptedRecordDisclaimer": "Scripted acceptance review and unresolved owner verification do not establish independent reproduction.",
+    "report": {
+      "jsonPath": "C:\\Users\\kotar\\githubprojects\\NBRET\\runs\\complete-workflow-58f0bf86-99d5-4e59-bfe8-9bbbf6d87135\\report-115-68cd9413-4c14-4ea5-8d9f-53a81a962826.json",
+      "htmlPath": "C:\\Users\\kotar\\githubprojects\\NBRET\\runs\\complete-workflow-58f0bf86-99d5-4e59-bfe8-9bbbf6d87135\\report-115-68cd9413-4c14-4ea5-8d9f-53a81a962826.html",
+      "executivePath": "C:\\Users\\kotar\\githubprojects\\NBRET\\runs\\complete-workflow-58f0bf86-99d5-4e59-bfe8-9bbbf6d87135\\report-115-68cd9413-4c14-4ea5-8d9f-53a81a962826-executive.html"
+    }
+  },
+  "reviews": [
+    "Bryn: casebook and six independent workflow integration scenarios",
+    "Elm: measurement, checkpoints and session CLI checks",
+    "Aiko: requirements and purpose audit (see requirements-acceptance-matrix.md)"
+  ],
+  "limits": [
+    "Source-assisted synthetic acceptance; no discovered vulnerability or demonstrated repair",
+    "Shared account does not enforce reviewer or answer-key separation",
+    "Manual expert baseline absent; no performance superiority established",
+    "No live-target authority or broader-stack executor",
+    "Hashes identify bytes; they do not authenticate provenance"
+  ],
+  "sha256": {
+    "src/investigation/assessment-import.mjs": "c4ff1c943c1d5d1d4b16823d9cd5f2e92690c12afd0314b331566024f2d90f53",
+    "src/investigation/casebook.mjs": "f2bcd101065981512dccdfe2cf153054593ff951bdec3b2d8e811c7e33299dad",
+    "src/investigation/cli.mjs": "0c8c8a8043c5586489149b1e1909fc3c9cd9cb441abeb4a019db162af48fee8f",
+    "src/investigation/intake.mjs": "17facddcfb9aec65e0bf5f5695cb79e9eb04c376b1859b8d5a324124c1c86db3",
+    "src/investigation/journal.mjs": "52d9c342381f23a106d06c461a2c0e8f9776d2f965ebe797d75e051fcdf33e0a",
+    "src/investigation/local-input.mjs": "90656b560e11f1950b7808d28ef649ea00315fb323e591cdd9b9e017883a2c8a",
+    "src/investigation/measurement.mjs": "991ba3ef5e74964008e5889d77fffa3f10a85077088c20e839b007c1c410698f",
+    "src/investigation/output-path.mjs": "b917c24fe4a52f0b15b1a37b5b160c1ffb91e6a53befb45092a9d59b6d247499",
+    "src/investigation/records.mjs": "f7f4c551bdc00a6d6a60961e64aff778901e3392bb3180266906193a8e5a2e68",
+    "src/investigation/report.mjs": "e3a33cbf49ebd674b8b0095bde404443250f51c6772e72488117acec98479efe",
+    "src/practice/app.mjs": "e3cfbf3f43f8720a16aeb651bb76a32462d94ebc5fa22ce4128a1419d079f6a1",
+    "src/practice/cli.mjs": "ea7c600e5c9eaf4eac48fd93cffe3bc23da360ef574edd92f814b5f97f9abd32",
+    "src/practice/demo.mjs": "0fe8795bb7a9861ee9a80b89aa0df85b11a4cc09734229a6908959b555ab7fd3",
+    "src/practice/intake-cli.mjs": "827b41a9aac27a8a8057b2b301ae8a06d46f4fc0cfc6bf28cfd20a7fb0c2a2f9",
+    "src/practice/investigate.mjs": "d576dfd0167d901e4fdf8bcbdcf172c87d120e18d184c55fe465e50b9654ecfb",
+    "src/practice/next-step.mjs": "5be7a43f5e6fb6892d133e67b76f38b7b55eb4fc7decca47dc07ee8e21d6ff20",
+    "src/practice/rehearsal-cli.mjs": "47369273257465d4f0405ae24cee499e2ab65284fe950fe4a0db1bb76093f042",
+    "src/practice/rehearsal.mjs": "54626ddec03121ac1cfaf34b6b090ac085b54a7e0a8ae00aa671f7ec02e7ec66",
+    "src/practice/session-cli.mjs": "e42708f01549c371eefbd79e07eb4a67e849aa575d918cb377309d0cc5eed55b",
+    "src/practice/session-target.mjs": "887c2239d22aec1c6681bc9f1014b63795faae973c640f6ceb79b576c3c4eb88",
+    "src/practice/workbench-server.mjs": "693b7a1067125cb6cd308866365151f6e4aac33fd2eed645efc1a9dfa88fcdd9",
+    "src/practice/workbench-ui.js": "e483dfd772d530b33afe6d49c5aadc7757f1f0562083daf683050df5dd8ba9a0",
+    "src/practice/workbench.css": "135abcf7e888fbb843cbc43996edb4e612bc414911b292e21f58fcfbf841409c",
+    "src/practice/workbench.html": "d6aa1168bf01f82e6918c8b1e4ad1a8e1146e7753bf75937e88d7580cca2592f",
+    "src/practice/workbench.mjs": "f4aacbab2a27573e7ffac9b588b9f139c5a157a89d0a31810f4d137b57369e1e",
+    "src/practice/workflow-report.mjs": "006c5d81f232b7c5983a59f1ab8e4c6e258656bfb5929a42f629eac6e7eeb0a5",
+    "package.json": "69474ab4301a86e046dd647bcd93934af4564804e559141d9a5d4b0c80ede990"
+  }
+}

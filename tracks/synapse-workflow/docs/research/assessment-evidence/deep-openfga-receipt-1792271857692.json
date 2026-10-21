@@ -1,0 +1,60 @@
+{
+  "at": "2026-10-17T21:17:44.307Z",
+  "scope": "ordinary model command rejection, persistence absence and valid model resolver reuse; synthetic in-memory store, no server",
+  "out": "C:\\Users\\kotar\\.codex\\research\\assessment-evidence-receipts\\openfga-1792271857691",
+  "command": {
+    "exe": "C:\\Users\\kotar\\githubprojects\\NBRET\\.tools\\security-research-go\\sdk\\go\\bin\\go.exe",
+    "args": [
+      "test",
+      "-p",
+      "2",
+      "-overlay",
+      "C:\\Users\\kotar\\.codex\\research\\assessment-evidence-receipts\\openfga-1792271857691\\overlay.json",
+      "./pkg/server/commands",
+      "-run",
+      "^TestEvidence",
+      "-count=1",
+      "-json"
+    ],
+    "cwd": "C:/Users/kotar/.codex/research/openfga-20261017"
+  },
+  "toolchain": "go version go1.27.2 windows/amd64",
+  "environment": {
+    "GOTOOLCHAIN": "local",
+    "CGO_ENABLED": "0",
+    "GOPATH": "C:\\Users\\kotar\\githubprojects\\NBRET\\.tools\\security-research-go\\module-cache",
+    "GOCACHE": "C:/Users/kotar/.codex/research/assessment-evidence-receipts/openfga-1792267376264/build-cache",
+    "GOPROXY": "https://proxy.golang.org",
+    "GOSUMDB": "sum.golang.org"
+  },
+  "code": 0,
+  "signal": null,
+  "elapsedMs": 6650,
+  "sourceSha256": {
+    "go.mod": "6c5e972de64e7e06f544873a77ddf84de5d86100d1ae96be3555c04b62c10be8",
+    "go.sum": "c08837e3f91fe661b0ae2c0e3c561d4f39141b15f40433d7e6d924568b19aa03",
+    "pkg/server/commands/write_authzmodel.go": "446929801595164a4f630bd6c1e457b910d178c5aa2502048c6757fe410bbd2b",
+    "pkg/typesystem/typesystem.go": "2b7eef88041312f6fd1ae0cb9cdc8727c191c63aa325a10662468fd5ec96ad9c",
+    "pkg/typesystem/resolver.go": "4d8612a0edadda8319aacfea6b4de31de25bf7f305b08d94f2e5600a9e02f571",
+    "pkg/storage/memory/memory.go": "517d431b31a0fa8a5517877a8717f7596c86c772645bf8d5ac10981ac7507463"
+  },
+  "fixtureSha256": "4beb4951b5075144f6ef72b79e524b8480120e8361ddd28ed5a27bedfaa09d28",
+  "fixturePath": "C:\\Users\\kotar\\githubprojects\\NBRET\\docs\\research\\assessment-evidence\\deep-openfga-admission-lab_test.go",
+  "runnerSha256": "8ae99c0ffa1462ecf76fcb1ec54dbb0de883156070c55958d8123c9e81e68a71",
+  "overlaySha256": "0b64d7be3896c7fa04672a76812986ae071b652593526ca23ab23feeb765837e",
+  "stdoutSha256": "0e71167106fbf3bf4deea7101f07a52e9c7b68850ba719da2b679193989b7c49",
+  "stderrSha256": "7a39ecb22acd66aa944af19f9907774f7877fd04ea68cb7cc44b279d52ff80b9",
+  "tests": [
+    {
+      "Time": "2026-10-17T14:17:44.2318171-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/pkg/server/commands",
+      "Test": "TestEvidenceOrdinaryModelAdmission",
+      "Elapsed": 0
+    }
+  ],
+  "intervention": "Researcher authored ordinary model-command fixture; actual command, memory backend and v1 resolver unchanged.",
+  "cost": "no provider calls; unmetered local CPU/build dependency download, no monetary estimate",
+  "originalIntervention": "fixture and map cache/delegate authored by researcher; production resolver unchanged",
+  "metadataCorrection": "Generic inherited runner intervention label corrected after run; original retained. Commands, hashes, raw logs, statuses and test results unchanged."
+}

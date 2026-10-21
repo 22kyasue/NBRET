@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "claim": {
+    "id": "SYNTHETIC-RECORD-ONLY",
+    "statement": "Invented metadata for reviewing an unperformed effect; no target was tested",
+    "context": {"environment":"synthetic","instance":"invented-instance","build":"invented-build","principal":"invented-actor","tenant":"invented-tenant","role":"member","object":"invented-object"}
+  },
+  "evidence": [{
+    "id":"invented-metadata",
+    "context":{"environment":"synthetic","instance":"invented-instance","build":"invented-build","principal":"invented-actor","tenant":"invented-tenant","role":"member","object":"invented-object"},
+    "provenance":{"producer":"Synthetic example author","collectedAt":"2026-10-19T00:00:00.000Z","artifact":"No artifact exists; invented metadata only","sha256":"0000000000000000000000000000000000000000000000000000000000000000","representation":"Invented synthetic record","limitations":["Not a collected observation; hash is a placeholder"]},
+    "completeness":"complete",
+    "freshness":"current"
+  }],
+  "requirements": [
+    {"id":"identity","kind":"identity","statement":"Invented identity declaration","expected":{"environment":"synthetic","instance":"invented-instance","build":"invented-build","principal":"invented-actor","tenant":"invented-tenant","role":"member","object":"invented-object"},"references":[{"evidenceId":"invented-metadata","relation":"supports"}]},
+    {"id":"control","kind":"control","statement":"Invented control declaration","expected":{"environment":"synthetic","instance":"invented-instance","build":"invented-build","principal":"invented-actor","tenant":"invented-tenant","role":"member","object":"invented-object"},"references":[{"evidenceId":"invented-metadata","relation":"supports"}]},
+    {"id":"attempt","kind":"attempt","statement":"Invented preliminary attempt declaration, not the final effect","expected":{"environment":"synthetic","instance":"invented-instance","build":"invented-build","principal":"invented-actor","tenant":"invented-tenant","role":"member","object":"invented-object"},"references":[{"evidenceId":"invented-metadata","relation":"supports"}]},
+    {"id":"effect","kind":"effect","statement":"Final effect has not been performed","expected":{"environment":"synthetic","instance":"invented-instance","build":"invented-build","principal":"invented-actor","tenant":"invented-tenant","role":"member","object":"invented-object"},"references":[]},
+    {"id":"precondition","kind":"prerequisite","statement":"One invented prerequisite only; enumeration may be incomplete","expected":{"environment":"synthetic","instance":"invented-instance","build":"invented-build","principal":"invented-actor","tenant":"invented-tenant","role":"member","object":"invented-object"},"references":[{"evidenceId":"invented-metadata","relation":"supports"}]}
+  ],
+  "effect":{"execution":"unperformed","oracle":"No effect evaluated; this is a structural-format example","limitations":["No consequence can be inferred from this invented record"]},
+  "oneStepAway":{"declaration":"enumerated-prerequisites-only","prerequisiteIds":["precondition"],"unexecutedStep":"Invented final action, left unexecuted","reason":"Format demonstration only; grants no authority"}
+}

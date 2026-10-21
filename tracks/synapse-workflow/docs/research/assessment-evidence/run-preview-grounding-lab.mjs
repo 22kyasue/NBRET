@@ -1,0 +1,14 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import {pathToFileURL} from 'node:url';
+const own=path.resolve('docs/research/assessment-evidence');
+let source=fs.readFileSync(path.join(own,'run-claude-cleanup-lab.mjs'),'utf8');
+source=source.replaceAll('claude-cleanup','preview-grounding');
+source=source.replace('test_claude_cleanup_contract.py','test_preview_grounding_contract.py');
+source=source.replace("PYTHONPATH:path.join(root,'src')","PYTHONPATH:path.join(root,'src')+';C:/Users/kotar/.codex/research/unified-agent-acff8ee;C:/Users/kotar/.codex/research/pentestgpt-20261017/pentestgpt_agent/src'");
+source=source.replace("sourceSha256:hash(path.join(root,'src/claude_agent_sdk/client.py'))","sourceSha256:Object.fromEntries([path.join(root,'src/claude_agent_sdk/_internal/message_parser.py'),'C:/Users/kotar/.codex/research/unified-agent-acff8ee/unified_agent/backends/claude_code.py','C:/Users/kotar/.codex/research/pentestgpt-20261017/pentestgpt_agent/src/pentestgpt_agent/execution.py','C:/Users/kotar/.codex/research/pentestgpt-20261017/pentestgpt_agent/src/pentestgpt_agent/trace.py'].map(p=>[p,hash(p)]))");
+source=source.replace(/criteria:'[^']*'/,"criteria:'short injected preview marker accepted as exact captured evidence without truncation flag; 4001char control downgrades to progress'");
+source=source.replace(/intervention:'[^']*'/,"intervention:'synthetic supplied native message and constructed lease/trace; actual parser, normalizer and execution compiler; no tool or CLI'");
+const generated=path.join(own,'run-preview-grounding-generated.mjs');
+fs.writeFileSync(generated,source,{flag:'wx'});
+await import(pathToFileURL(generated).href);

@@ -1,0 +1,122 @@
+{
+  "checkedAt": "2026-10-18T06:00:35.838Z",
+  "checks": [
+    "Original queue and range-credited supplemental bytes match SHA-256/commit/line counts",
+    "Read ranges bounded and statuses derived correctly",
+    "Local Markdown links resolve",
+    "Owned JavaScript/Python scripts parse without executing their actions"
+  ],
+  "files": 3888,
+  "recordedReadLines": 161139,
+  "summary": [
+    {
+      "repo": "mitmproxy",
+      "commit": "77355977e5ea540b51ed029a40ed1dc2f1c2ba7b",
+      "unread": 505,
+      "partial": 0,
+      "complete": 84
+    },
+    {
+      "repo": "nmap",
+      "commit": "f06480daed9a9b2cdce61904222cc87788afdf84",
+      "unread": 999,
+      "partial": 0,
+      "complete": 83
+    },
+    {
+      "repo": "SharpHound",
+      "commit": "85924979a9d23ab0e83a3fcfabee3b9962bb14be",
+      "unread": 19,
+      "partial": 0,
+      "complete": 9
+    },
+    {
+      "repo": "BloodHound",
+      "commit": "5d615873dcdf25462dd6e35ddb4dec1c882c331e",
+      "unread": 898,
+      "partial": 0,
+      "complete": 67
+    },
+    {
+      "repo": "burp-examples",
+      "commit": "e4c83c505e6ad42207710f26c7cdd41b232500a6",
+      "unread": 71,
+      "partial": 0,
+      "complete": 4
+    },
+    {
+      "repo": "wireshark",
+      "commit": "2d548b197c7582332f143c15259e1650aff7cc26",
+      "unread": 0,
+      "partial": 0,
+      "complete": 12
+    },
+    {
+      "repo": "SharpHoundCommon",
+      "commit": "1b8c9eabe3753bac13fcd0fe9e271e02bcd4ebe7",
+      "unread": 273,
+      "partial": 0,
+      "complete": 49
+    },
+    {
+      "repo": "dawgs",
+      "commit": "d0640cfb421e2b9f4fc249de733c3d6e52f1a57f",
+      "unread": 406,
+      "partial": 0,
+      "complete": 22
+    },
+    {
+      "repo": "h11",
+      "commit": "installed-wheel:h11==0.16.0",
+      "unread": 9,
+      "partial": 0,
+      "complete": 2
+    },
+    {
+      "repo": "impacket",
+      "commit": "c456746d7a0f0bb25e8968a59f25aae1ad519935",
+      "unread": 334,
+      "partial": 0,
+      "complete": 6
+    },
+    {
+      "repo": "defectdojo",
+      "commit": "10453d6c62d68eee6d6b0ecc0acde5d61d1dd02d",
+      "unread": 10,
+      "partial": 0,
+      "complete": 4
+    },
+    {
+      "repo": "prowler",
+      "commit": "bffc8844c1c9a3666e37a2ada4ee05f62e1446b0",
+      "unread": 4,
+      "partial": 0,
+      "complete": 13
+    },
+    {
+      "repo": "metasploit",
+      "commit": "b22ce1fbae63e8caeb3a773366a6d3336bd66fb8",
+      "unread": 1,
+      "partial": 0,
+      "complete": 4
+    }
+  ],
+  "supplemental": {
+    "inventoried": 7295,
+    "complete": 18,
+    "partial": 0,
+    "recordedReadLines": 8056
+  },
+  "dependencies": {
+    "inventoried": 241,
+    "complete": 110,
+    "partial": 0,
+    "recordedReadLines": 30703
+  },
+  "errors": [],
+  "limitations": [
+    "Verifies ledger/artifact consistency, not whether annotations are semantically correct or tools are safe",
+    "Uncredited supplemental material is not rehashed by this verification; inventory receipt and unread work remain separate",
+    "Raw catalog licenses not in source queue are described separately; download is not reading"
+  ]
+}

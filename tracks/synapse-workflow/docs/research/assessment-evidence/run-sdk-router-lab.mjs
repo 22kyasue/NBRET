@@ -1,0 +1,17 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import crypto from 'node:crypto';
+import {spawnSync} from 'node:child_process';
+const own=path.resolve('docs/research/assessment-evidence');
+const root='C:/Users/kotar/.codex/research/assessment-evidence-sdk-sources/openai-codex-0.1.0b3-source/openai_codex-0.1.0b3';
+const exe='C:/Users/kotar/.codex/research/assessment-evidence-venv/Scripts/python.exe';
+const fixture=path.join(own,'test_sdk_router_contract.py');
+const args=['-m','pytest','-q','-p','no:cacheprovider',fixture];
+const env={...process.env,PYTHONPATH:path.join(root,'src'),PYTEST_DISABLE_PLUGIN_AUTOLOAD:'1',PYTHONDONTWRITEBYTECODE:'1'};
+const at=Date.now();
+const r=spawnSync(exe,args,{windowsHide:true,env,encoding:'utf8',timeout:30000,maxBuffer:2000000});
+const hash=p=>crypto.createHash('sha256').update(fs.readFileSync(p)).digest('hex');
+const freeze=spawnSync(exe,['-m','pip','freeze'],{windowsHide:true,encoding:'utf8'});
+const receipt={at:new Date().toISOString(),command:[exe,...args],environment:{PYTHONPATH:env.PYTHONPATH,PYTEST_DISABLE_PLUGIN_AUTOLOAD:'1',PYTHONDONTWRITEBYTECODE:'1'},exitCode:r.status,stdout:r.stdout,stderr:r.stderr,elapsedMs:Date.now()-at,sourceSha256:Object.fromEntries(['src/openai_codex/client.py','src/openai_codex/_message_router.py','src/openai_codex/models.py','src/openai_codex/generated/v2_all.py'].map(p=>[p,hash(path.join(root,p))])),fixtureSha256:hash(fixture),runnerSha256:hash(new URL(import.meta.url)),packages:freeze.stdout,criteria:'injected pre-registration terminal is absent; identical post-registration terminal is available; existing waiter receives transport failure',intervention:'researcher replaces request on a fresh client with an inert function routing a typed event before returning a constructed response; no production source edited',scope:'actual SDK model/router/client methods with substituted response boundary; no app-server process, provider or actual timing experiment',limits:['demonstrates deterministic boundary behavior, not observed native notification ordering or production frequency','CLI binary and app-server enforcement not executed','source-path SDK declared lower bound, not installed assessment deployment'],cost:'local CPU/storage only, no paid calls'};
+fs.writeFileSync(path.join(own,`sdk-router-receipt-${at}.json`),JSON.stringify(receipt,null,2)+'\n');
+console.log(JSON.stringify({exitCode:r.status,stdout:r.stdout,stderr:r.stderr}));

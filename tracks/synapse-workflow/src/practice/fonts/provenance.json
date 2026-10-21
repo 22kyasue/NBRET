@@ -1,0 +1,42 @@
+{
+  "notoSource": "Installed NotoSansJP-VF.ttf",
+  "notoSourceSha256": "5113756f8a3b5d01b2211025e267c50121e3b36f465b7bbaf3cdaf4c3430bfd0",
+  "notoGlyphsPreserved": 16732,
+  "notoWeights": [
+    400,
+    700
+  ],
+  "latinSource": "Existing prompt private design library / twenty-com capture",
+  "files": [
+    {
+      "name": "Inter-400.woff2",
+      "bytes": 16708,
+      "sha256": "0364d368abf457d4e70dbc7a7a360f3486eaea2837b194915b23d4398bee91ac"
+    },
+    {
+      "name": "Inter-500.woff2",
+      "bytes": 17552,
+      "sha256": "d53336707c39d1ec20a2b1f7399ca9f183c45592e215a42fd596dfa2dbb8ad7a"
+    },
+    {
+      "name": "Inter-600.woff2",
+      "bytes": 17660,
+      "sha256": "048d136d592e66896cccc1fe4fada4feb16b7f6af671cd49a2fe6ed6b2276c6c"
+    },
+    {
+      "name": "Inter-OFL.txt",
+      "bytes": 4380,
+      "sha256": "262481e844521b326f5ecd053e59b98c8b2da78c8ee1bdbb6e8174305e54935a"
+    },
+    {
+      "name": "NotoSansJP-400-700.woff2",
+      "bytes": 4168332,
+      "sha256": "f8c6e271d5e88b9d79fa3678f83cba9c139e79131ac088a3c5fc1c661eb4655f"
+    },
+    {
+      "name": "NotoSansJP-OFL.txt",
+      "bytes": 4388,
+      "sha256": "1c05c68c34f9708415aada51f17e1b0092d2cea709bf4a94cd38114f9e73d7d9"
+    }
+  ]
+}

@@ -1,0 +1,3 @@
+# Static/runtime source identity experiment — declared before execution
+
+2026-10-17. Actual buildStructure with synthetic saved script/evidence only, no browser/HTTP/model. Store new source bytes but supply old script hash and historical initiator URL/position. Success criterion for reproducing concern: source gets indexed despite hash mismatch and historical initiator links to new function; V8 coverage hash guard should reject old coverage. Matching-source negative control should accept expected coverage. This is evidence-attribution behavior under deliberately inconsistent local artifacts, not an exploit or observed tampering prevalence. Preserve all artifacts.

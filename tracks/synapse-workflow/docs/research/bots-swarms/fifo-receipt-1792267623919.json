@@ -1,0 +1,113 @@
+{
+  "at": "2026-10-17T20:07:03.918Z",
+  "runtime": "v24.21.0",
+  "command": "node docs/research/bots-swarms/fifo-lab.mjs",
+  "pin": {
+    "name": "bullmq",
+    "upstream": "taskforcesh/bullmq",
+    "root": "C:\\Users\\kotar\\githubprojects\\NBRET\\.tools\\bots-swarms\\bullmq",
+    "commit": "a5e710bf4d1bf689fe40a372b3f0ddbbaaab33cc",
+    "date": "2026-10-16T23:27:34-07:00",
+    "dirty": "",
+    "retrievedAt": "2026-10-17T19:52:44.825Z",
+    "basis": "Upstream shallow snapshot; no release or runtime verification implied"
+  },
+  "sourceSha256": "88cd0979883861c4ddb11c75a4fe12bf3fe245e327facaf7c37c9ad4c793026f",
+  "transformedSha256": "f651713785a2c5f834ca0faf6371b50329ad6fe848707035ba7bd88e31e9bbae",
+  "scriptSha256": "d70cf33f00bdd583bca2f8342d2a91ec5585114e43c3f43cf02b6e20d8cb13c9",
+  "substitutions": "None; built-in TypeScript transform only",
+  "results": [
+    {
+      "name": "two pending",
+      "actual": 2,
+      "expected": 2
+    },
+    {
+      "name": "resolution order first result",
+      "actual": "second",
+      "expected": "second"
+    },
+    {
+      "name": "first still pending",
+      "actual": 1,
+      "expected": 1
+    },
+    {
+      "name": "resolution order second result",
+      "actual": "first",
+      "expected": "first"
+    },
+    {
+      "name": "success empty",
+      "actual": 0,
+      "expected": 0
+    },
+    {
+      "name": "rejected counts empty",
+      "actual": [
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        0
+      ]
+    },
+    {
+      "name": "existing waiter bounded nonresolution",
+      "actual": {
+        "state": "watchdog"
+      },
+      "expected": {
+        "state": "watchdog"
+      }
+    },
+    {
+      "name": "fresh fetch returns empty"
+    },
+    {
+      "name": "old waiter recovered",
+      "actual": "recovery",
+      "expected": "recovery"
+    },
+    {
+      "name": "recovered counts empty",
+      "actual": 0,
+      "expected": 0
+    },
+    {
+      "name": "ignore errors resolves waiter"
+    },
+    {
+      "name": "ignore errors counts empty",
+      "actual": 0,
+      "expected": 0
+    },
+    {
+      "name": "waitAll rejects",
+      "actual": true,
+      "expected": true
+    },
+    {
+      "name": "other work pending after waitAll",
+      "actual": 1,
+      "expected": 1
+    },
+    {
+      "name": "waitAll fixture cleaned",
+      "actual": 0,
+      "expected": 0
+    }
+  ],
+  "diagnostics": [
+    [
+      "(node:46528) ExperimentalWarning: stripTypeScriptTypes is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)"
+    ],
+    [
+      "Unexpected Error in AsyncFifoQueue",
+      "synthetic failure"
+    ]
+  ],
+  "cleanup": "Controlled promises settled and fetched; watchdog timers cleared; no broker, socket, child process or service",
+  "limits": "Actual helper class; bounded 30ms nonresolution; not a full worker/broker reachability or production failure claim"
+}

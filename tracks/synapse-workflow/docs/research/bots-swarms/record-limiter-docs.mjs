@@ -1,0 +1,14 @@
+import fs from 'node:fs';
+import {createHash} from 'node:crypto';
+import {execFileSync} from 'node:child_process';
+const base='docs/research/bots-swarms/',repo='rate-limiter-flexible';
+const ranges=[['README.md',232],['CONTEXT.md',482],['docker-compose.yml',58],['docker-compose.valkey-cluster.yml',21],['skills/rate-limiter-flexible/SKILL.md',82],['skills/rate-limiter-flexible/references/full-reference.md',558],['.travis.yml',11],['.eslintrc.json',29],['LICENSE.md',8]];
+for(const [file,end] of ranges)execFileSync(process.execPath,[base+'supporting-read.mjs','mark',repo,file,'1',String(end)],{windowsHide:true,stdio:'pipe'});
+const sq=JSON.parse(fs.readFileSync(base+'supporting-queue.json','utf8')),pin=JSON.parse(fs.readFileSync(base+'snapshots.json','utf8')).find(x=>x.name===repo);
+const file='test/scripts/cluster-setup.sh',bytes=fs.readFileSync(pin.root+'/'+file),lines=bytes.toString().split('\n').length;
+if(sq.entries.some(e=>e.repo===repo&&e.path===file))throw Error('Already inventoried');
+sq.entries.push({repo,path:file,commit:pin.commit,sha256:createHash('sha256').update(bytes).digest('hex'),bytes:bytes.length,lines,priority:2,status:'complete',readRanges:[[1,lines]],recordedAt:new Date().toISOString(),note:'Complete read-only review of exact Compose script dependency. Not executed.'});
+fs.writeFileSync(base+'supporting-queue.json',JSON.stringify(sq,null,2));
+const counts=['complete','partial','unread'].map(s=>sq.entries.filter(e=>e.status===s).length);
+const c=base+'coverage.md';fs.writeFileSync(c,fs.readFileSync(c,'utf8').replace(/Supporting queue:\d+separate config\/docs\/declaration\/data files;\d+complete,\d+partial,\d+unread/,`Supporting queue:${sq.entries.length}separate config/docs/declaration/data files;${counts[0]}complete,${counts[1]}partial,${counts[2]}unread`));
+console.log({total:sq.entries.length,counts,scriptLines:lines});

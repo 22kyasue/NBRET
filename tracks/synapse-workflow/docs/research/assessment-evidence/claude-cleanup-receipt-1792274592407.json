@@ -1,0 +1,29 @@
+{
+  "at": "2026-10-17T22:03:13.601Z",
+  "command": [
+    "C:/Users/kotar/.codex/research/assessment-evidence-venv/Scripts/python.exe",
+    "-m",
+    "pytest",
+    "-q",
+    "-p",
+    "no:cacheprovider",
+    "-p",
+    "pytest_asyncio.plugin",
+    "--basetemp",
+    "C:\\Users\\kotar\\.codex\\research\\assessment-evidence-receipts\\claude-cleanup-1792274592407\\pytest-temp",
+    "C:\\Users\\kotar\\githubprojects\\NBRET\\docs\\research\\assessment-evidence\\test_claude_cleanup_contract.py"
+  ],
+  "out": "C:\\Users\\kotar\\.codex\\research\\assessment-evidence-receipts\\claude-cleanup-1792274592407",
+  "exitCode": 0,
+  "stdout": "...                                                                      [100%]\r\n3 passed in 0.60s\r\n",
+  "stderr": "",
+  "elapsedMs": 1195,
+  "sourceSha256": "e67f4db7f38347632c2a6c1443423f99dd87f2a51cafcde499a0c9253a6508e6",
+  "fixtureSha256": "062463e34504938825e6cf6c5638c6b80890371fd6ac311b188f54ea60b7ce3d",
+  "runnerSha256": "37cfc45572188fc994068e2f873a0a3f213e5ea2bc2b72d6648e9c4e2d36099e",
+  "packages": "annotated-types==0.8.0\r\nanyio==4.15.1\r\nattrs==26.1.0\r\ncertifi==2026.7.22\r\ncffi==2.1.1\r\nclick==8.5.0\r\ncolorama==0.4.6\r\ncryptography==50.0.2\r\ndocstring_parser==0.18.0\r\nh11==0.16.0\r\nhttpcore==1.0.9\r\nhttpcore2==2.13.1\r\nhttpx==0.28.1\r\nhttpx2==2.13.1\r\nidna==3.20\r\niniconfig==2.3.1\r\njsonschema==4.26.0\r\njsonschema-specifications==2025.9.1\r\nmcp==2.3.0\r\nmcp-types==2.3.0\r\nopentelemetry-api==1.45.1\r\npackaging==26.3\r\npluggy==1.7.0\r\npycparser==3.11\r\npydantic==2.14.1\r\npydantic_core==2.50.1\r\nPygments==2.21.0\r\nPyJWT==2.15.1\r\npytest==9.1.1\r\npytest-asyncio==1.4.0\r\npython-multipart==0.0.32\r\npywin32==312\r\nPyYAML==6.0.3\r\nreferencing==0.37.0\r\nrpds-py==2026.9.1\r\nsniffio==1.3.1\r\nsse-starlette==3.5.0\r\nstarlette==1.8.0\r\ntruststore==0.10.5\r\ntyping-inspection==0.4.4\r\ntyping_extensions==4.16.0\r\nuvicorn==0.54.0\r\n",
+  "criteria": "connect failure before Query does not close transport; Query.close failure skips cleanup; normal close precedes cleanup",
+  "intervention": "inert custom transport, fake Query and fake cleanup counter",
+  "limits": "No process, real credential, materialization or filesystem deletion; not evidence of an actual orphan or retained secret",
+  "cost": "local CPU/storage only"
+}

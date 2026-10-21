@@ -1,0 +1,16 @@
+{
+  "source": "C:/Python314/Lib/http/cookiejar.py",
+  "localFile": ".tools/bots-swarms/cpython-cookiejar.py",
+  "version": "CPython3.14.7 tags/v3.14.7:823f032; observed isolated interpreter",
+  "sha256": "b0b75f457b4d1bbc6e8cfa3b286bd1cc878434c5941dbd8a766331092ecc1887",
+  "lines": 2123,
+  "readRanges": [
+    [
+      1,
+      2123
+    ]
+  ],
+  "status": "complete",
+  "at": "2026-10-17T20:41:00.803Z",
+  "reviewedAt": "2026-10-17T20:41:38.902Z"
+}

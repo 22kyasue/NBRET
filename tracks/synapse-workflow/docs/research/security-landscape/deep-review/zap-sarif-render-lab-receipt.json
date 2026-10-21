@@ -1,0 +1,51 @@
+{
+  "at": "2026-10-17T20:38:03.737Z",
+  "out": "C:\\Users\\kotar\\githubprojects\\NBRET\\runs\\zap-sarif-research-1792269482747",
+  "scope": "Installed addon builder/support/Thymeleaf with pinned source JSON template, synthetic hand-built alert tree. No daemon, target, database, filter or real credentials.",
+  "command": {
+    "executable": "C:/Users/kotar/AppData/Local/Programs/BurpSuite/jre/bin/java.exe",
+    "args": [
+      "-Djava.awt.headless=true",
+      "--class-path",
+      "C:\\Users\\kotar\\githubprojects\\NBRET\\.tools\\ZAP_2.17.0\\zap-2.17.0.jar;C:\\Users\\kotar\\githubprojects\\NBRET\\.tools\\ZAP_2.17.0\\lib\\*;C:\\Users\\kotar\\githubprojects\\NBRET\\.tools\\ZAP_2.17.0\\plugin\\reports-release-0.43.0.zap",
+      "C:\\Users\\kotar\\githubprojects\\NBRET\\runs\\zap-sarif-research-1792269482747\\SarifResearch.java",
+      "C:\\Users\\kotar\\.codex\\research\\zap-extensions-network-0.25.0\\addOns\\reports\\src\\main\\zapHomeFiles\\reports\\sarif-json\\report.json"
+    ],
+    "cwd": "C:\\Users\\kotar\\githubprojects\\NBRET\\runs\\zap-sarif-research-1792269482747"
+  },
+  "exit": 0,
+  "signal": null,
+  "elapsedMs": 910.0273,
+  "passes": [
+    "PASS authorization_masked_control",
+    "PASS request_cookie_preserved",
+    "PASS custom_key_preserved",
+    "PASS url_query_preserved",
+    "PASS request_body_preserved",
+    "PASS response_cookie_preserved",
+    "PASS response_body_preserved",
+    "PASS attack_preserved",
+    "PASS serialized_cookie_preserved",
+    "PASS serialized_authorization_masked"
+  ],
+  "addonSha256": "af27617b76a5f89594fe25109c3f811a431dda01e3b58d814f1589b698fad8ee",
+  "fixtureSha256": "e7140f028aaf5d6bd7504b8d32f9d508a164074692e40044e949d031d1141850",
+  "stdoutSha256": "2327865526aaf3bed3fd590f0e453a160104c96a8344fead8187da9cab58ee5f",
+  "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "artifact": {
+    "sha256": "8eb377bdf81048a126d56ee92f07939c9cef39bdee69004941faf3312dc7ad74",
+    "bytes": 6190,
+    "parse": true,
+    "checks": {
+      "oneResult": true,
+      "authorizationMasked": true,
+      "cookie": true,
+      "customKey": true,
+      "url": true,
+      "requestBody": true,
+      "responseCookie": true,
+      "responseBody": true,
+      "attack": true
+    }
+  }
+}

@@ -1,0 +1,2406 @@
+{
+  "at": "2026-10-17T19:50:41.246Z",
+  "node": "v24.21.0",
+  "scope": "Owned loopback daemon and synthetic HTTP fixture only; no external target testing",
+  "out": "C:\\Users\\kotar\\githubprojects\\NBRET\\runs\\real-zap-research-1792266641246",
+  "traffic": [
+    {
+      "at": "2026-10-17T19:50:53.248Z",
+      "method": "GET",
+      "path": "/allowed"
+    },
+    {
+      "at": "2026-10-17T19:50:53.435Z",
+      "method": "GET",
+      "path": "/allowed/"
+    }
+  ],
+  "apiCalls": [
+    {
+      "component": "ascan",
+      "type": "action",
+      "operation": "disableAllScanners",
+      "params": {},
+      "httpStatus": 200,
+      "data": {
+        "Result": "OK"
+      }
+    },
+    {
+      "component": "ascan",
+      "type": "action",
+      "operation": "enableScanners",
+      "params": {
+        "ids": "0"
+      },
+      "httpStatus": 200,
+      "data": {
+        "Result": "OK"
+      }
+    },
+    {
+      "component": "ascan",
+      "type": "view",
+      "operation": "scanners",
+      "params": {},
+      "httpStatus": 200,
+      "data": {
+        "scanners": [
+          {
+            "allDependenciesAvailable": "true",
+            "policyId": "2",
+            "cweId": "22",
+            "attackStrength": "DEFAULT",
+            "alertThreshold": "OFF",
+            "name": "Path Traversal",
+            "wascId": "33",
+            "id": "6",
+            "enabled": "false",
+            "quality": "release",
+            "status": "release",
+            "dependencies": []
+          },
+          {
+            "allDependenciesAvailable": "true",
+            "policyId": "2",
+            "cweId": "98",
+            "attackStrength": "DEFAULT",
+            "alertThreshold": "OFF",
+            "name": "Remote File Inclusion",
+            "wascId": "5",
+            "id": "7",
+            "enabled": "false",
+            "quality": "release",
+            "status": "release",
+            "dependencies": []
+          },
+          {
+            "allDependenciesAvailable": "true",
+            "policyId": "0",
+            "cweId": "541",
+            "attackStrength": "DEFAULT",
+            "alertThreshold": "OFF",
+            "name": "Source Code Disclosure - /WEB-INF Folder",
+            "wascId": "34",
+            "id": "10045",
+            "enabled": "false",
+            "quality": "release",
+            "status": "release",
+            "dependencies": []
+          },
+          {
+            "allDependenciesAvailable": "true",
+            "policyId": "2",
+            "cweId": "78",
+            "attackStrength": "DEFAULT",
+            "alertThreshold": "OFF",
+            "name": "Remote Code Execution - Shell Shock",
+            "wascId": "31",
+            "id": "10048",
+            "enabled": "false",
+            "quality": "release",
+            "status": "release",
+            "dependencies": []
+          },
+          {
+            "allDependenciesAvailable": "true",
+            "policyId": "0",
+            "cweId": "119",
+            "attackStrength": "DEFAULT",
+            "alertThreshold": "OFF",
+            "name": "Heartbleed OpenSSL Vulnerability",
+            "wascId": "20",
+            "id": "20015",
+            "enabled": "false",
+            "quality": "release",
+            "status": "release",
+            "dependencies": []
+          },
+          {
+            "allDependenciesAvailable": "true",
+            "policyId": "0",
+            "cweId": "20",
+            "attackStrength": "DEFAULT",
+            "alertThreshold": "OFF",
+            "name": "Source Code Disclosure - CVE-2012-1823",
+            "wascId": "20",
+            "id": "20017",
+            "enabled": "false",
+            "quality": "release",
+            "status": "release",
+            "dependencies": []
+          },
+          {
+            "allDependenciesAvailable": "true",
+            "policyId": "0",
+            "cweId": "20",
+            "attackStrength": "DEFAULT",
+            "alertThreshold": "OFF",
+            "name": "Remote Code Execution - CVE-2012-1823",
+            "wascId": "20",
+            "id": "20018",
+            "enabled": "false",
+            "quality": "release",
+            "status": "release",
+            "dependencies": []
+          },
+          {
+            "allDependenciesAvailable": "true",
+            "policyId": "3",
+            "cweId": "601",
+            "attackStrength": "DEFAULT",
+            "alertThreshold": "OFF",
+            "name": "External Redirect",
+            "wascId": "38",
+            "id": "20019",
+            "enabled": "false",
+            "quality": "release",
+            "status": "release",
+            "dependencies": []
+          },
+          {
+            "allDependenciesAvailable": "true",
+            "policyId": "4",
+            "cweId": "97",
+            "attackStrength": "DEFAULT",
+            "alertThreshold": "OFF",
+            "name": "Server Side Include",
+            "wascId": "31",
+            "id": "40009",
+            "enabled": "false",
+            "quality": "release",
+            "status": "release",
+            "dependencies": []
+          },
+          {
+            "allDependenciesAvailable": "true",
+            "policyId": "4",
+            "cweId": "79",
+            "attackStrength": "DEFAULT",
+            "alertThreshold": "OFF",
+            "name": "Cross Site Scripting (Reflected)",
+            "wascId": "8",
+            "id": "40012",
+            "enabled": "false",
+            "quality": "release",
+            "status": "release",
+            "dependencies": []
+          },
+          {
+            "allDependenciesAvailable": "true",
+            "policyId": "4",
+            "cweId": "79",
+            "attackStrength": "DEFAULT",
+            "alertThreshold": "OFF",
+            "name": "Cross Site Scripting (Persistent)",
+            "wascId": "8",
+            "id": "40014",
+            "enabled": "false",
+            "quality": "release",
+            "status": "release",
+            "dependencies": [
+              "40017"
+            ]
+          },
+          {
+            "allDependenciesAvailable": "true",
+            "policyId": "4",
+            "cweId": "89",
+            "attackStrength": "DEFAULT",
+            "alertThreshold": "OFF",
+            "name": "SQL Injection",
+            "wascId": "19",
+            "id": "40018",
+            "enabled": "false",
+            "quality": "release",
+            "status": "release",
+            "dependencies": []
+          },
+          {
+            "allDependenciesAvailable": "true",
+            "policyId": "4",
+            "cweId": "89",
+            "attackStrength": "DEFAULT",
+            "alertThreshold": "OFF",
+            "name": "SQL Injection - MySQL (Time Based)",
+            "wascId": "19",
+            "id": "40019",
+            "enabled": "false",
+            "quality": "release",
+            "status": "release",
+            "dependencies": []
+          },
+          {
+            "allDependenciesAvailable": "true",
+            "policyId": "4",
+            "cweId": "89",
+            "attackStrength": "DEFAULT",
+            "alertThreshold": "OFF",
+            "name": "SQL Injection - Hypersonic SQL (Time Based)",
+            "wascId": "19",
+            "id": "40020",
+            "enabled": "false",
+            "quality": "release",
+            "status": "release",
+            "dependencies": []
+          },
+          {
+            "allDependenciesAvailable": "true",
+            "policyId": "4",
+            "cweId": "89",
+            "attackStrength": "DEFAULT",
+            "alertThreshold": "OFF",
+            "name": "SQL Injection - Oracle (Time Based)",
+            "wascId": "19",
+            "id": "40021",
+            "enabled": "false",
+            "quality": "release",
+            "status": "release",
+            "dependencies": []
+          },
+          {
+            "allDependenciesAvailable": "true",
+            "policyId": "4",
+            "cweId": "89",
+            "attackStrength": "DEFAULT",
+            "alertThreshold": "OFF",
+            "name": "SQL Injection - PostgreSQL (Time Based)",
+            "wascId": "19",
+            "id": "40022",
+            "enabled": "false",
+            "quality": "release",
+            "status": "release",
+            "dependencies": []
+          },
+          {
+            "allDependenciesAvailable": "true",
+            "policyId": "4",
+            "cweId": "89",
+            "attackStrength": "DEFAULT",
+            "alertThreshold": "OFF",
+            "name": "SQL Injection - SQLite (Time Based)",
+            "wascId": "19",
+            "id": "40024",
+            "enabled": "false",
+            "quality": "release",
+            "status": "release",
+            "dependencies": []
+          },
+          {
+            "allDependenciesAvailable": "true",
+            "policyId": "1",
+            "cweId": "79",
+            "attackStrength": "DEFAULT",
+            "alertThreshold": "OFF",
+            "name": "Cross Site Scripting (DOM Based)",
+            "wascId": "8",
+            "id": "40026",
+            "enabled": "false",
+            "quality": "release",
+            "status": "release",
+            "dependencies": []
+          },
+          {
+            "allDependenciesAvailable": "true",
+            "policyId": "4",
+            "cweId": "89",
+            "attackStrength": "DEFAULT",
+            "alertThreshold": "OFF",
+            "name": "SQL Injection - MsSQL (Time Based)",
+            "wascId": "19",
+            "id": "40027",
+            "enabled": "false",
+            "quality": "release",
+            "status": "release",
+            "dependencies": []
+          },
+          {
+            "allDependenciesAvailable": "true",
+            "policyId": "3",
+            "cweId": "117",
+            "attackStrength": "DEFAULT",
+            "alertThreshold": "OFF",
+            "name": "Log4Shell",
+            "wascId": "20",
+            "id": "40043",
+            "enabled": "false",
+            "quality": "release",
+            "status": "release",
+            "dependencies": []
+          },
+          {
+            "allDependenciesAvailable": "true",
+            "policyId": "4",
+            "cweId": "78",
+            "attackStrength": "DEFAULT",
+            "alertThreshold": "OFF",
+            "name": "Spring4Shell",
+            "wascId": "20",
+            "id": "40045",
+            "enabled": "false",
+            "quality": "release",
+            "status": "release",
+            "dependencies": []
+          },
+          {
+            "allDependenciesAvailable": "true",
+            "policyId": "4",
+            "cweId": "78",
+            "attackStrength": "DEFAULT",
+            "alertThreshold": "OFF",
+            "name": "Remote Code Execution (React2Shell)",
+            "wascId": "32",
+            "id": "40048",
+            "enabled": "false",
+            "quality": "release",
+            "status": "release",
+            "dependencies": []
+          },
+          {
+            "allDependenciesAvailable": "true",
+            "policyId": "4",
+            "cweId": "94",
+            "attackStrength": "DEFAULT",
+            "alertThreshold": "OFF",
+            "name": "Server Side Code Injection",
+            "wascId": "20",
+            "id": "90019",
+            "enabled": "false",
+            "quality": "release",
+            "status": "release",
+            "dependencies": []
+          },
+          {
+            "allDependenciesAvailable": "true",
+            "policyId": "4",
+            "cweId": "78",
+            "attackStrength": "DEFAULT",
+            "alertThreshold": "OFF",
+            "name": "Remote OS Command Injection",
+            "wascId": "31",
+            "id": "90020",
+            "enabled": "false",
+            "quality": "release",
+            "status": "release",
+            "dependencies": []
+          },
+          {
+            "allDependenciesAvailable": "true",
+            "policyId": "4",
+            "cweId": "643",
+            "attackStrength": "DEFAULT",
+            "alertThreshold": "OFF",
+            "name": "XPath Injection",
+            "wascId": "39",
+            "id": "90021",
+            "enabled": "false",
+            "quality": "release",
+            "status": "release",
+            "dependencies": []
+          },
+          {
+            "allDependenciesAvailable": "true",
+            "policyId": "4",
+            "cweId": "611",
+            "attackStrength": "DEFAULT",
+            "alertThreshold": "OFF",
+            "name": "XML External Entity Attack",
+            "wascId": "43",
+            "id": "90023",
+            "enabled": "false",
+            "quality": "release",
+            "status": "release",
+            "dependencies": []
+          },
+          {
+            "allDependenciesAvailable": "true",
+            "policyId": "3",
+            "cweId": "209",
+            "attackStrength": "DEFAULT",
+            "alertThreshold": "OFF",
+            "name": "Generic Padding Oracle",
+            "wascId": "20",
+            "id": "90024",
+            "enabled": "false",
+            "quality": "release",
+            "status": "release",
+            "dependencies": []
+          },
+          {
+            "allDependenciesAvailable": "true",
+            "policyId": "4",
+            "cweId": "1230",
+            "attackStrength": "DEFAULT",
+            "alertThreshold": "OFF",
+            "name": "Cloud Metadata Potentially Exposed",
+            "wascId": "0",
+            "id": "90034",
+            "enabled": "false",
+            "quality": "release",
+            "status": "release",
+            "dependencies": []
+          },
+          {
+            "allDependenciesAvailable": "true",
+            "policyId": "4",
+            "cweId": "1336",
+            "attackStrength": "DEFAULT",
+            "alertThreshold": "OFF",
+            "name": "Server Side Template Injection",
+            "wascId": "20",
+            "id": "90035",
+            "enabled": "false",
+            "quality": "release",
+            "status": "release",
+            "dependencies": []
+          },
+          {
+            "allDependenciesAvailable": "true",
+            "policyId": "4",
+            "cweId": "1336",
+            "attackStrength": "DEFAULT",
+            "alertThreshold": "OFF",
+            "name": "Server Side Template Injection (Blind)",
+            "wascId": "20",
+            "id": "90036",
+            "enabled": "false",
+            "quality": "release",
+            "status": "release",
+            "dependencies": []
+          },
+          {
+            "allDependenciesAvailable": "true",
+            "policyId": "4",
+            "cweId": "78",
+            "attackStrength": "DEFAULT",
+            "alertThreshold": "OFF",
+            "name": "Remote OS Command Injection (Time Based)",
+            "wascId": "31",
+            "id": "90037",
+            "enabled": "false",
+            "quality": "release",
+            "status": "release",
+            "dependencies": []
+          },
+          {
+            "allDependenciesAvailable": "true",
+            "policyId": "0",
+            "cweId": "548",
+            "attackStrength": "DEFAULT",
+            "alertThreshold": "DEFAULT",
+            "name": "Directory Browsing",
+            "wascId": "48",
+            "id": "0",
+            "enabled": "true",
+            "quality": "release",
+            "status": "release",
+            "dependencies": []
+          },
+          {
+            "allDependenciesAvailable": "true",
+            "policyId": "3",
+            "cweId": "311",
+            "attackStrength": "DEFAULT",
+            "alertThreshold": "OFF",
+            "name": "HTTP Only Site",
+            "wascId": "4",
+            "id": "10106",
+            "enabled": "false",
+            "quality": "release",
+            "status": "release",
+            "dependencies": []
+          },
+          {
+            "allDependenciesAvailable": "true",
+            "policyId": "4",
+            "cweId": "120",
+            "attackStrength": "DEFAULT",
+            "alertThreshold": "OFF",
+            "name": "Buffer Overflow",
+            "wascId": "7",
+            "id": "30001",
+            "enabled": "false",
+            "quality": "release",
+            "status": "release",
+            "dependencies": []
+          },
+          {
+            "allDependenciesAvailable": "true",
+            "policyId": "4",
+            "cweId": "134",
+            "attackStrength": "DEFAULT",
+            "alertThreshold": "OFF",
+            "name": "Format String Error",
+            "wascId": "6",
+            "id": "30002",
+            "enabled": "false",
+            "quality": "release",
+            "status": "release",
+            "dependencies": []
+          },
+          {
+            "allDependenciesAvailable": "true",
+            "policyId": "4",
+            "cweId": "113",
+            "attackStrength": "DEFAULT",
+            "alertThreshold": "OFF",
+            "name": "CRLF Injection",
+            "wascId": "25",
+            "id": "40003",
+            "enabled": "false",
+            "quality": "release",
+            "status": "release",
+            "dependencies": []
+          },
+          {
+            "allDependenciesAvailable": "true",
+            "policyId": "4",
+            "cweId": "472",
+            "attackStrength": "DEFAULT",
+            "alertThreshold": "OFF",
+            "name": "Parameter Tampering",
+            "wascId": "20",
+            "id": "40008",
+            "enabled": "false",
+            "quality": "release",
+            "status": "release",
+            "dependencies": []
+          },
+          {
+            "allDependenciesAvailable": "true",
+            "policyId": "0",
+            "cweId": "94",
+            "attackStrength": "DEFAULT",
+            "alertThreshold": "OFF",
+            "name": "ELMAH Information Leak",
+            "wascId": "14",
+            "id": "40028",
+            "enabled": "false",
+            "quality": "release",
+            "status": "release",
+            "dependencies": []
+          },
+          {
+            "allDependenciesAvailable": "true",
+            "policyId": "0",
+            "cweId": "215",
+            "attackStrength": "DEFAULT",
+            "alertThreshold": "OFF",
+            "name": "Trace.axd Information Leak",
+            "wascId": "13",
+            "id": "40029",
+            "enabled": "false",
+            "quality": "release",
+            "status": "release",
+            "dependencies": []
+          },
+          {
+            "allDependenciesAvailable": "true",
+            "policyId": "0",
+            "cweId": "94",
+            "attackStrength": "DEFAULT",
+            "alertThreshold": "OFF",
+            "name": ".htaccess Information Leak",
+            "wascId": "14",
+            "id": "40032",
+            "enabled": "false",
+            "quality": "release",
+            "status": "release",
+            "dependencies": []
+          },
+          {
+            "allDependenciesAvailable": "true",
+            "policyId": "0",
+            "cweId": "215",
+            "attackStrength": "DEFAULT",
+            "alertThreshold": "OFF",
+            "name": ".env Information Leak",
+            "wascId": "13",
+            "id": "40034",
+            "enabled": "false",
+            "quality": "release",
+            "status": "release",
+            "dependencies": []
+          },
+          {
+            "allDependenciesAvailable": "true",
+            "policyId": "0",
+            "cweId": "538",
+            "attackStrength": "DEFAULT",
+            "alertThreshold": "OFF",
+            "name": "Hidden File Finder",
+            "wascId": "13",
+            "id": "40035",
+            "enabled": "false",
+            "quality": "release",
+            "status": "release",
+            "dependencies": []
+          },
+          {
+            "allDependenciesAvailable": "true",
+            "policyId": "0",
+            "cweId": "215",
+            "attackStrength": "DEFAULT",
+            "alertThreshold": "OFF",
+            "name": "Spring Actuator Information Leak",
+            "wascId": "13",
+            "id": "40042",
+            "enabled": "false",
+            "quality": "release",
+            "status": "release",
+            "dependencies": []
+          },
+          {
+            "allDependenciesAvailable": "true",
+            "policyId": "3",
+            "cweId": "776",
+            "attackStrength": "DEFAULT",
+            "alertThreshold": "OFF",
+            "name": "Exponential Entity Expansion (Billion Laughs Attack)",
+            "wascId": "44",
+            "id": "40044",
+            "enabled": "false",
+            "quality": "release",
+            "status": "release",
+            "dependencies": []
+          },
+          {
+            "allDependenciesAvailable": "true",
+            "policyId": "4",
+            "cweId": "91",
+            "attackStrength": "DEFAULT",
+            "alertThreshold": "OFF",
+            "name": "XSLT Injection",
+            "wascId": "23",
+            "id": "90017",
+            "enabled": "false",
+            "quality": "release",
+            "status": "release",
+            "dependencies": []
+          },
+          {
+            "allDependenciesAvailable": "true",
+            "policyId": "3",
+            "cweId": "311",
+            "attackStrength": "DEFAULT",
+            "alertThreshold": "OFF",
+            "name": "HTTPS Content Available via HTTP",
+            "wascId": "4",
+            "id": "10047",
+            "enabled": "false",
+            "quality": "release",
+            "status": "release",
+            "dependencies": []
+          },
+          {
+            "allDependenciesAvailable": "true",
+            "policyId": "3",
+            "cweId": "16",
+            "attackStrength": "DEFAULT",
+            "alertThreshold": "OFF",
+            "name": "GET for POST",
+            "wascId": "20",
+            "id": "10058",
+            "enabled": "false",
+            "quality": "release",
+            "status": "release",
+            "dependencies": []
+          },
+          {
+            "allDependenciesAvailable": "true",
+            "policyId": "0",
+            "cweId": "0",
+            "attackStrength": "DEFAULT",
+            "alertThreshold": "OFF",
+            "name": "User Agent Fuzzer",
+            "wascId": "0",
+            "id": "10104",
+            "enabled": "false",
+            "quality": "release",
+            "status": "release",
+            "dependencies": []
+          },
+          {
+            "allDependenciesAvailable": "true",
+            "policyId": "4",
+            "cweId": "79",
+            "attackStrength": "DEFAULT",
+            "alertThreshold": "OFF",
+            "name": "Cross Site Scripting (Persistent) - Prime",
+            "wascId": "8",
+            "id": "40016",
+            "enabled": "false",
+            "quality": "release",
+            "status": "release",
+            "dependencies": []
+          },
+          {
+            "allDependenciesAvailable": "true",
+            "policyId": "4",
+            "cweId": "79",
+            "attackStrength": "DEFAULT",
+            "alertThreshold": "OFF",
+            "name": "Cross Site Scripting (Persistent) - Spider",
+            "wascId": "8",
+            "id": "40017",
+            "enabled": "false",
+            "quality": "release",
+            "status": "release",
+            "dependencies": [
+              "40016"
+            ]
+          },
+          {
+            "allDependenciesAvailable": "true",
+            "policyId": "3",
+            "cweId": "0",
+            "attackStrength": "DEFAULT",
+            "alertThreshold": "OFF",
+            "name": "Script Active Scan Rules",
+            "wascId": "0",
+            "id": "50000",
+            "enabled": "false",
+            "quality": "release",
+            "status": "release",
+            "dependencies": []
+          },
+          {
+            "allDependenciesAvailable": "true",
+            "policyId": "3",
+            "cweId": "451",
+            "attackStrength": "DEFAULT",
+            "alertThreshold": "OFF",
+            "name": "SOAP Action Spoofing",
+            "wascId": "0",
+            "id": "90026",
+            "enabled": "false",
+            "quality": "beta",
+            "status": "beta",
+            "dependencies": []
+          },
+          {
+            "allDependenciesAvailable": "true",
+            "policyId": "3",
+            "cweId": "91",
+            "attackStrength": "DEFAULT",
+            "alertThreshold": "OFF",
+            "name": "SOAP XML Injection",
+            "wascId": "0",
+            "id": "90029",
+            "enabled": "false",
+            "quality": "beta",
+            "status": "beta",
+            "dependencies": []
+          }
+        ]
+      }
+    },
+    {
+      "component": "core",
+      "type": "view",
+      "operation": "version",
+      "params": {},
+      "httpStatus": 200,
+      "data": {
+        "version": "2.17.0"
+      }
+    },
+    {
+      "component": "context",
+      "type": "action",
+      "operation": "newContext",
+      "params": {
+        "contextName": "nbret-67ce8aee-1787-4a2e-a5b3-08321e10de81"
+      },
+      "httpStatus": 200,
+      "data": {
+        "contextId": "1"
+      }
+    },
+    {
+      "component": "context",
+      "type": "action",
+      "operation": "includeInContext",
+      "params": {
+        "contextName": "nbret-67ce8aee-1787-4a2e-a5b3-08321e10de81",
+        "regex": "^http://127\\.0\\.0\\.1:60917/allowed(?:\\?.*)?$"
+      },
+      "httpStatus": 200,
+      "data": {
+        "Result": "OK"
+      }
+    },
+    {
+      "component": "context",
+      "type": "action",
+      "operation": "setContextInScope",
+      "params": {
+        "contextName": "nbret-67ce8aee-1787-4a2e-a5b3-08321e10de81",
+        "booleanInScope": "true"
+      },
+      "httpStatus": 200,
+      "data": {
+        "Result": "OK"
+      }
+    },
+    {
+      "component": "core",
+      "type": "action",
+      "operation": "accessUrl",
+      "params": {
+        "url": "http://127.0.0.1:60917/allowed",
+        "followRedirects": "false"
+      },
+      "httpStatus": 200,
+      "data": {
+        "accessUrl": [
+          {
+            "note": "",
+            "rtt": "19",
+            "responseBody": "<html><title>Synthetic seed</title><body>fixture</body></html>",
+            "cookieParams": "",
+            "requestBody": "",
+            "responseHeader": "HTTP/1.1 200 OK\r\ncontent-type: text/html; charset=utf-8\r\nDate: Sat, 17 Oct 2026 19:50:53 GMT\r\nConnection: keep-alive\r\nKeep-Alive: timeout=5\r\ncontent-length: 62\r\n\r\n",
+            "requestHeader": "GET http://127.0.0.1:60917/allowed HTTP/1.1\r\nhost: 127.0.0.1:60917\r\nuser-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36\r\npragma: no-cache\r\ncache-control: no-cache\r\n\r\n",
+            "id": "1",
+            "type": "15",
+            "timestamp": "1792266653234",
+            "tags": []
+          }
+        ]
+      }
+    },
+    {
+      "component": "core",
+      "type": "view",
+      "operation": "urls",
+      "params": {
+        "baseurl": "http://127.0.0.1:60917/allowed"
+      },
+      "httpStatus": 200,
+      "data": {
+        "urls": []
+      }
+    },
+    {
+      "component": "core",
+      "type": "view",
+      "operation": "urls",
+      "params": {
+        "baseurl": "http://127.0.0.1:60917/allowed"
+      },
+      "httpStatus": 200,
+      "data": {
+        "urls": [
+          "http://127.0.0.1:60917/allowed"
+        ]
+      }
+    },
+    {
+      "component": "ascan",
+      "type": "action",
+      "operation": "scan",
+      "params": {
+        "url": "http://127.0.0.1:60917/allowed",
+        "recurse": "false",
+        "inScopeOnly": "true",
+        "contextId": "1"
+      },
+      "httpStatus": 200,
+      "data": {
+        "scan": "0"
+      }
+    },
+    {
+      "component": "ascan",
+      "type": "view",
+      "operation": "status",
+      "params": {
+        "scanId": "0"
+      },
+      "httpStatus": 200,
+      "data": {
+        "status": "0"
+      }
+    },
+    {
+      "component": "ascan",
+      "type": "view",
+      "operation": "status",
+      "params": {
+        "scanId": "0"
+      },
+      "httpStatus": 200,
+      "data": {
+        "status": "100"
+      }
+    },
+    {
+      "component": "pscan",
+      "type": "view",
+      "operation": "recordsToScan",
+      "params": {},
+      "httpStatus": 200,
+      "data": {
+        "recordsToScan": "5"
+      }
+    },
+    {
+      "component": "pscan",
+      "type": "view",
+      "operation": "recordsToScan",
+      "params": {},
+      "httpStatus": 200,
+      "data": {
+        "recordsToScan": "5"
+      }
+    },
+    {
+      "component": "pscan",
+      "type": "view",
+      "operation": "recordsToScan",
+      "params": {},
+      "httpStatus": 200,
+      "data": {
+        "recordsToScan": "5"
+      }
+    },
+    {
+      "component": "pscan",
+      "type": "view",
+      "operation": "recordsToScan",
+      "params": {},
+      "httpStatus": 200,
+      "data": {
+        "recordsToScan": "5"
+      }
+    },
+    {
+      "component": "pscan",
+      "type": "view",
+      "operation": "recordsToScan",
+      "params": {},
+      "httpStatus": 200,
+      "data": {
+        "recordsToScan": "5"
+      }
+    },
+    {
+      "component": "pscan",
+      "type": "view",
+      "operation": "recordsToScan",
+      "params": {},
+      "httpStatus": 200,
+      "data": {
+        "recordsToScan": "5"
+      }
+    },
+    {
+      "component": "pscan",
+      "type": "view",
+      "operation": "recordsToScan",
+      "params": {},
+      "httpStatus": 200,
+      "data": {
+        "recordsToScan": "5"
+      }
+    },
+    {
+      "component": "pscan",
+      "type": "view",
+      "operation": "recordsToScan",
+      "params": {},
+      "httpStatus": 200,
+      "data": {
+        "recordsToScan": "4"
+      }
+    },
+    {
+      "component": "pscan",
+      "type": "view",
+      "operation": "recordsToScan",
+      "params": {},
+      "httpStatus": 200,
+      "data": {
+        "recordsToScan": "0"
+      }
+    },
+    {
+      "component": "core",
+      "type": "view",
+      "operation": "alerts",
+      "params": {
+        "baseurl": "http://127.0.0.1:60917/",
+        "start": "0",
+        "count": "100"
+      },
+      "httpStatus": 200,
+      "data": {
+        "alerts": [
+          {
+            "nodeName": "http://127.0.0.1:60917/allowed/",
+            "sourceid": "1",
+            "other": "",
+            "method": "GET",
+            "evidence": "Parent Directory",
+            "pluginId": "0",
+            "cweid": "548",
+            "confidence": "Medium",
+            "sourceMessageId": 1,
+            "wascid": "48",
+            "description": "It is possible to view the directory listing. Directory listing may reveal hidden scripts, include files, backup source files, etc. which can be accessed to read sensitive information.",
+            "messageId": "4",
+            "inputVector": "",
+            "url": "http://127.0.0.1:60917/allowed/",
+            "tags": {
+              "OWASP_2021_A01": "https://owasp.org/Top10/A01_2021-Broken_Access_Control/",
+              "POLICY_API": "",
+              "POLICY_QA_STD": "",
+              "POLICY_QA_FULL": "",
+              "CWE-548": "https://cwe.mitre.org/data/definitions/548.html",
+              "POLICY_PENTEST": "",
+              "SYSTEMIC": "https://www.zaproxy.org/docs/desktop/addons/common-library/alerttags/#systemic",
+              "POLICY_QA_CICD": "",
+              "OWASP_2017_A05": "https://owasp.org/www-project-top-ten/2017/A5_2017-Broken_Access_Control.html"
+            },
+            "reference": "https://httpd.apache.org/docs/current/mod/core.html#options",
+            "solution": "Disable directory browsing. If this is required, make sure the listed files does not induce risks.",
+            "alert": "Directory Browsing",
+            "param": "",
+            "attack": "http://127.0.0.1:60917/allowed/",
+            "name": "Directory Browsing",
+            "risk": "Medium",
+            "id": "0",
+            "alertRef": "0"
+          },
+          {
+            "nodeName": "http://127.0.0.1:60917/allowed",
+            "sourceid": "3",
+            "other": "",
+            "method": "GET",
+            "evidence": "",
+            "pluginId": "10020",
+            "cweid": "1021",
+            "confidence": "Medium",
+            "sourceMessageId": 1,
+            "wascid": "15",
+            "description": "The response does not protect against 'ClickJacking' attacks. It should include either Content-Security-Policy with 'frame-ancestors' directive or X-Frame-Options.",
+            "messageId": "1",
+            "inputVector": "",
+            "url": "http://127.0.0.1:60917/allowed",
+            "tags": {
+              "OWASP_2021_A05": "https://owasp.org/Top10/A05_2021-Security_Misconfiguration/",
+              "POLICY_QA_STD": "",
+              "POLICY_PENTEST": "",
+              "CWE-1021": "https://cwe.mitre.org/data/definitions/1021.html",
+              "SYSTEMIC": "https://www.zaproxy.org/docs/desktop/addons/common-library/alerttags/#systemic",
+              "WSTG-v42-CLNT-09": "https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/11-Client-side_Testing/09-Testing_for_Clickjacking",
+              "OWASP_2017_A06": "https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html"
+            },
+            "reference": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/X-Frame-Options",
+            "solution": "Modern Web browsers support the Content-Security-Policy and X-Frame-Options HTTP headers. Ensure one of them is set on all web pages returned by your site/app.\nIf you expect the page to be framed only by pages on your server (e.g. it's part of a FRAMESET) then you'll want to use SAMEORIGIN, otherwise if you never expect the page to be framed, you should use DENY. Alternatively consider implementing Content Security Policy's \"frame-ancestors\" directive.",
+            "alert": "Missing Anti-clickjacking Header",
+            "param": "x-frame-options",
+            "attack": "",
+            "name": "Missing Anti-clickjacking Header",
+            "risk": "Medium",
+            "id": "1",
+            "alertRef": "10020-1"
+          },
+          {
+            "nodeName": "http://127.0.0.1:60917/allowed",
+            "sourceid": "3",
+            "other": "",
+            "method": "GET",
+            "evidence": "",
+            "pluginId": "10038",
+            "cweid": "693",
+            "confidence": "High",
+            "sourceMessageId": 1,
+            "wascid": "15",
+            "description": "Content Security Policy (CSP) is an added layer of security that helps to detect and mitigate certain types of attacks, including Cross Site Scripting (XSS) and data injection attacks. These attacks are used for everything from data theft to site defacement or distribution of malware. CSP provides a set of standard HTTP headers that allow website owners to declare approved sources of content that browsers should be allowed to load on that page — covered types are JavaScript, CSS, HTML frames, fonts, images and embeddable objects such as Java applets, ActiveX, audio and video files.",
+            "messageId": "1",
+            "inputVector": "",
+            "url": "http://127.0.0.1:60917/allowed",
+            "tags": {
+              "OWASP_2021_A05": "https://owasp.org/Top10/A05_2021-Security_Misconfiguration/",
+              "POLICY_QA_STD": "",
+              "POLICY_PENTEST": "",
+              "SYSTEMIC": "https://www.zaproxy.org/docs/desktop/addons/common-library/alerttags/#systemic",
+              "CWE-693": "https://cwe.mitre.org/data/definitions/693.html",
+              "OWASP_2017_A06": "https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html"
+            },
+            "reference": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/CSP\nhttps://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html\nhttps://www.w3.org/TR/CSP/\nhttps://w3c.github.io/webappsec-csp/\nhttps://web.dev/articles/csp\nhttps://caniuse.com/#feat=contentsecuritypolicy\nhttps://content-security-policy.com/",
+            "solution": "Ensure that your web server, application server, load balancer, etc. is configured to set the Content-Security-Policy header.",
+            "alert": "Content Security Policy (CSP) Header Not Set",
+            "param": "",
+            "attack": "",
+            "name": "Content Security Policy (CSP) Header Not Set",
+            "risk": "Medium",
+            "id": "2",
+            "alertRef": "10038-1"
+          },
+          {
+            "nodeName": "http://127.0.0.1:60917/allowed",
+            "sourceid": "3",
+            "other": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses.",
+            "method": "GET",
+            "evidence": "",
+            "pluginId": "10021",
+            "cweid": "693",
+            "confidence": "Medium",
+            "sourceMessageId": 1,
+            "wascid": "15",
+            "description": "The Anti-MIME-Sniffing header X-Content-Type-Options was not set to 'nosniff'. This allows older versions of Internet Explorer and Chrome to perform MIME-sniffing on the response body, potentially causing the response body to be interpreted and displayed as a content type other than the declared content type. Current (early 2014) and legacy versions of Firefox will use the declared content type (if one is set), rather than performing MIME-sniffing.",
+            "messageId": "1",
+            "inputVector": "",
+            "url": "http://127.0.0.1:60917/allowed",
+            "tags": {
+              "OWASP_2021_A05": "https://owasp.org/Top10/A05_2021-Security_Misconfiguration/",
+              "POLICY_QA_STD": "",
+              "POLICY_PENTEST": "",
+              "SYSTEMIC": "https://www.zaproxy.org/docs/desktop/addons/common-library/alerttags/#systemic",
+              "CWE-693": "https://cwe.mitre.org/data/definitions/693.html",
+              "OWASP_2017_A06": "https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html"
+            },
+            "reference": "https://learn.microsoft.com/en-us/previous-versions/windows/internet-explorer/ie-developer/compatibility/gg622941(v=vs.85)\nhttps://owasp.org/www-community/Security_Headers",
+            "solution": "Ensure that the application/web server sets the Content-Type header appropriately, and that it sets the X-Content-Type-Options header to 'nosniff' for all web pages.\nIf possible, ensure that the end user uses a standards-compliant and modern web browser that does not perform MIME-sniffing at all, or that can be directed by the web application/web server to not perform MIME-sniffing.",
+            "alert": "X-Content-Type-Options Header Missing",
+            "param": "x-content-type-options",
+            "attack": "",
+            "name": "X-Content-Type-Options Header Missing",
+            "risk": "Low",
+            "id": "3",
+            "alertRef": "10021"
+          }
+        ]
+      }
+    },
+    {
+      "component": "context",
+      "type": "action",
+      "operation": "removeContext",
+      "params": {
+        "contextName": "nbret-67ce8aee-1787-4a2e-a5b3-08321e10de81"
+      },
+      "httpStatus": 200,
+      "data": {
+        "Result": "OK"
+      }
+    },
+    {
+      "component": "ascan",
+      "type": "view",
+      "operation": "scans",
+      "params": {},
+      "httpStatus": 200,
+      "data": {
+        "scans": [
+          {
+            "reqCount": "1",
+            "alertCount": "1",
+            "progress": "100",
+            "newAlertCount": "1",
+            "id": "0",
+            "state": "FINISHED"
+          }
+        ]
+      }
+    },
+    {
+      "component": "ascan",
+      "type": "view",
+      "operation": "scanProgress",
+      "params": {
+        "scanId": "0"
+      },
+      "httpStatus": 200,
+      "data": {
+        "scanProgress": [
+          "http://127.0.0.1:60917",
+          {
+            "HostProcess": [
+              {
+                "Plugin": [
+                  "Directory Browsing",
+                  "0",
+                  "release",
+                  "Complete",
+                  "14",
+                  "1",
+                  "1"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "component": "alert",
+      "type": "view",
+      "operation": "alerts",
+      "params": {
+        "baseurl": "http://127.0.0.1:60917/",
+        "start": 0,
+        "count": 100
+      },
+      "httpStatus": 200,
+      "data": {
+        "alerts": [
+          {
+            "nodeName": "http://127.0.0.1:60917/allowed/",
+            "sourceid": "1",
+            "other": "",
+            "method": "GET",
+            "evidence": "Parent Directory",
+            "pluginId": "0",
+            "cweid": "548",
+            "confidence": "Medium",
+            "sourceMessageId": 1,
+            "wascid": "48",
+            "description": "It is possible to view the directory listing. Directory listing may reveal hidden scripts, include files, backup source files, etc. which can be accessed to read sensitive information.",
+            "messageId": "4",
+            "inputVector": "",
+            "url": "http://127.0.0.1:60917/allowed/",
+            "tags": {
+              "OWASP_2021_A01": "https://owasp.org/Top10/A01_2021-Broken_Access_Control/",
+              "POLICY_API": "",
+              "POLICY_QA_STD": "",
+              "POLICY_QA_FULL": "",
+              "CWE-548": "https://cwe.mitre.org/data/definitions/548.html",
+              "POLICY_PENTEST": "",
+              "SYSTEMIC": "https://www.zaproxy.org/docs/desktop/addons/common-library/alerttags/#systemic",
+              "POLICY_QA_CICD": "",
+              "OWASP_2017_A05": "https://owasp.org/www-project-top-ten/2017/A5_2017-Broken_Access_Control.html"
+            },
+            "reference": "https://httpd.apache.org/docs/current/mod/core.html#options",
+            "solution": "Disable directory browsing. If this is required, make sure the listed files does not induce risks.",
+            "alert": "Directory Browsing",
+            "param": "",
+            "attack": "http://127.0.0.1:60917/allowed/",
+            "name": "Directory Browsing",
+            "risk": "Medium",
+            "id": "0",
+            "alertRef": "0"
+          },
+          {
+            "nodeName": "http://127.0.0.1:60917/allowed",
+            "sourceid": "3",
+            "other": "",
+            "method": "GET",
+            "evidence": "",
+            "pluginId": "10020",
+            "cweid": "1021",
+            "confidence": "Medium",
+            "sourceMessageId": 1,
+            "wascid": "15",
+            "description": "The response does not protect against 'ClickJacking' attacks. It should include either Content-Security-Policy with 'frame-ancestors' directive or X-Frame-Options.",
+            "messageId": "1",
+            "inputVector": "",
+            "url": "http://127.0.0.1:60917/allowed",
+            "tags": {
+              "OWASP_2021_A05": "https://owasp.org/Top10/A05_2021-Security_Misconfiguration/",
+              "POLICY_QA_STD": "",
+              "POLICY_PENTEST": "",
+              "CWE-1021": "https://cwe.mitre.org/data/definitions/1021.html",
+              "SYSTEMIC": "https://www.zaproxy.org/docs/desktop/addons/common-library/alerttags/#systemic",
+              "WSTG-v42-CLNT-09": "https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/11-Client-side_Testing/09-Testing_for_Clickjacking",
+              "OWASP_2017_A06": "https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html"
+            },
+            "reference": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/X-Frame-Options",
+            "solution": "Modern Web browsers support the Content-Security-Policy and X-Frame-Options HTTP headers. Ensure one of them is set on all web pages returned by your site/app.\nIf you expect the page to be framed only by pages on your server (e.g. it's part of a FRAMESET) then you'll want to use SAMEORIGIN, otherwise if you never expect the page to be framed, you should use DENY. Alternatively consider implementing Content Security Policy's \"frame-ancestors\" directive.",
+            "alert": "Missing Anti-clickjacking Header",
+            "param": "x-frame-options",
+            "attack": "",
+            "name": "Missing Anti-clickjacking Header",
+            "risk": "Medium",
+            "id": "1",
+            "alertRef": "10020-1"
+          },
+          {
+            "nodeName": "http://127.0.0.1:60917/allowed",
+            "sourceid": "3",
+            "other": "",
+            "method": "GET",
+            "evidence": "",
+            "pluginId": "10038",
+            "cweid": "693",
+            "confidence": "High",
+            "sourceMessageId": 1,
+            "wascid": "15",
+            "description": "Content Security Policy (CSP) is an added layer of security that helps to detect and mitigate certain types of attacks, including Cross Site Scripting (XSS) and data injection attacks. These attacks are used for everything from data theft to site defacement or distribution of malware. CSP provides a set of standard HTTP headers that allow website owners to declare approved sources of content that browsers should be allowed to load on that page — covered types are JavaScript, CSS, HTML frames, fonts, images and embeddable objects such as Java applets, ActiveX, audio and video files.",
+            "messageId": "1",
+            "inputVector": "",
+            "url": "http://127.0.0.1:60917/allowed",
+            "tags": {
+              "OWASP_2021_A05": "https://owasp.org/Top10/A05_2021-Security_Misconfiguration/",
+              "POLICY_QA_STD": "",
+              "POLICY_PENTEST": "",
+              "SYSTEMIC": "https://www.zaproxy.org/docs/desktop/addons/common-library/alerttags/#systemic",
+              "CWE-693": "https://cwe.mitre.org/data/definitions/693.html",
+              "OWASP_2017_A06": "https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html"
+            },
+            "reference": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/CSP\nhttps://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html\nhttps://www.w3.org/TR/CSP/\nhttps://w3c.github.io/webappsec-csp/\nhttps://web.dev/articles/csp\nhttps://caniuse.com/#feat=contentsecuritypolicy\nhttps://content-security-policy.com/",
+            "solution": "Ensure that your web server, application server, load balancer, etc. is configured to set the Content-Security-Policy header.",
+            "alert": "Content Security Policy (CSP) Header Not Set",
+            "param": "",
+            "attack": "",
+            "name": "Content Security Policy (CSP) Header Not Set",
+            "risk": "Medium",
+            "id": "2",
+            "alertRef": "10038-1"
+          },
+          {
+            "nodeName": "http://127.0.0.1:60917/allowed",
+            "sourceid": "3",
+            "other": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses.",
+            "method": "GET",
+            "evidence": "",
+            "pluginId": "10021",
+            "cweid": "693",
+            "confidence": "Medium",
+            "sourceMessageId": 1,
+            "wascid": "15",
+            "description": "The Anti-MIME-Sniffing header X-Content-Type-Options was not set to 'nosniff'. This allows older versions of Internet Explorer and Chrome to perform MIME-sniffing on the response body, potentially causing the response body to be interpreted and displayed as a content type other than the declared content type. Current (early 2014) and legacy versions of Firefox will use the declared content type (if one is set), rather than performing MIME-sniffing.",
+            "messageId": "1",
+            "inputVector": "",
+            "url": "http://127.0.0.1:60917/allowed",
+            "tags": {
+              "OWASP_2021_A05": "https://owasp.org/Top10/A05_2021-Security_Misconfiguration/",
+              "POLICY_QA_STD": "",
+              "POLICY_PENTEST": "",
+              "SYSTEMIC": "https://www.zaproxy.org/docs/desktop/addons/common-library/alerttags/#systemic",
+              "CWE-693": "https://cwe.mitre.org/data/definitions/693.html",
+              "OWASP_2017_A06": "https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html"
+            },
+            "reference": "https://learn.microsoft.com/en-us/previous-versions/windows/internet-explorer/ie-developer/compatibility/gg622941(v=vs.85)\nhttps://owasp.org/www-community/Security_Headers",
+            "solution": "Ensure that the application/web server sets the Content-Type header appropriately, and that it sets the X-Content-Type-Options header to 'nosniff' for all web pages.\nIf possible, ensure that the end user uses a standards-compliant and modern web browser that does not perform MIME-sniffing at all, or that can be directed by the web application/web server to not perform MIME-sniffing.",
+            "alert": "X-Content-Type-Options Header Missing",
+            "param": "x-content-type-options",
+            "attack": "",
+            "name": "X-Content-Type-Options Header Missing",
+            "risk": "Low",
+            "id": "3",
+            "alertRef": "10021"
+          }
+        ]
+      }
+    }
+  ],
+  "origin": "http://127.0.0.1:60917",
+  "daemon": {
+    "version": "2.17.0",
+    "endpoint": "http://127.0.0.1:60918",
+    "owned": true
+  },
+  "configuredScanners": {
+    "scanners": [
+      {
+        "allDependenciesAvailable": "true",
+        "policyId": "2",
+        "cweId": "22",
+        "attackStrength": "DEFAULT",
+        "alertThreshold": "OFF",
+        "name": "Path Traversal",
+        "wascId": "33",
+        "id": "6",
+        "enabled": "false",
+        "quality": "release",
+        "status": "release",
+        "dependencies": []
+      },
+      {
+        "allDependenciesAvailable": "true",
+        "policyId": "2",
+        "cweId": "98",
+        "attackStrength": "DEFAULT",
+        "alertThreshold": "OFF",
+        "name": "Remote File Inclusion",
+        "wascId": "5",
+        "id": "7",
+        "enabled": "false",
+        "quality": "release",
+        "status": "release",
+        "dependencies": []
+      },
+      {
+        "allDependenciesAvailable": "true",
+        "policyId": "0",
+        "cweId": "541",
+        "attackStrength": "DEFAULT",
+        "alertThreshold": "OFF",
+        "name": "Source Code Disclosure - /WEB-INF Folder",
+        "wascId": "34",
+        "id": "10045",
+        "enabled": "false",
+        "quality": "release",
+        "status": "release",
+        "dependencies": []
+      },
+      {
+        "allDependenciesAvailable": "true",
+        "policyId": "2",
+        "cweId": "78",
+        "attackStrength": "DEFAULT",
+        "alertThreshold": "OFF",
+        "name": "Remote Code Execution - Shell Shock",
+        "wascId": "31",
+        "id": "10048",
+        "enabled": "false",
+        "quality": "release",
+        "status": "release",
+        "dependencies": []
+      },
+      {
+        "allDependenciesAvailable": "true",
+        "policyId": "0",
+        "cweId": "119",
+        "attackStrength": "DEFAULT",
+        "alertThreshold": "OFF",
+        "name": "Heartbleed OpenSSL Vulnerability",
+        "wascId": "20",
+        "id": "20015",
+        "enabled": "false",
+        "quality": "release",
+        "status": "release",
+        "dependencies": []
+      },
+      {
+        "allDependenciesAvailable": "true",
+        "policyId": "0",
+        "cweId": "20",
+        "attackStrength": "DEFAULT",
+        "alertThreshold": "OFF",
+        "name": "Source Code Disclosure - CVE-2012-1823",
+        "wascId": "20",
+        "id": "20017",
+        "enabled": "false",
+        "quality": "release",
+        "status": "release",
+        "dependencies": []
+      },
+      {
+        "allDependenciesAvailable": "true",
+        "policyId": "0",
+        "cweId": "20",
+        "attackStrength": "DEFAULT",
+        "alertThreshold": "OFF",
+        "name": "Remote Code Execution - CVE-2012-1823",
+        "wascId": "20",
+        "id": "20018",
+        "enabled": "false",
+        "quality": "release",
+        "status": "release",
+        "dependencies": []
+      },
+      {
+        "allDependenciesAvailable": "true",
+        "policyId": "3",
+        "cweId": "601",
+        "attackStrength": "DEFAULT",
+        "alertThreshold": "OFF",
+        "name": "External Redirect",
+        "wascId": "38",
+        "id": "20019",
+        "enabled": "false",
+        "quality": "release",
+        "status": "release",
+        "dependencies": []
+      },
+      {
+        "allDependenciesAvailable": "true",
+        "policyId": "4",
+        "cweId": "97",
+        "attackStrength": "DEFAULT",
+        "alertThreshold": "OFF",
+        "name": "Server Side Include",
+        "wascId": "31",
+        "id": "40009",
+        "enabled": "false",
+        "quality": "release",
+        "status": "release",
+        "dependencies": []
+      },
+      {
+        "allDependenciesAvailable": "true",
+        "policyId": "4",
+        "cweId": "79",
+        "attackStrength": "DEFAULT",
+        "alertThreshold": "OFF",
+        "name": "Cross Site Scripting (Reflected)",
+        "wascId": "8",
+        "id": "40012",
+        "enabled": "false",
+        "quality": "release",
+        "status": "release",
+        "dependencies": []
+      },
+      {
+        "allDependenciesAvailable": "true",
+        "policyId": "4",
+        "cweId": "79",
+        "attackStrength": "DEFAULT",
+        "alertThreshold": "OFF",
+        "name": "Cross Site Scripting (Persistent)",
+        "wascId": "8",
+        "id": "40014",
+        "enabled": "false",
+        "quality": "release",
+        "status": "release",
+        "dependencies": [
+          "40017"
+        ]
+      },
+      {
+        "allDependenciesAvailable": "true",
+        "policyId": "4",
+        "cweId": "89",
+        "attackStrength": "DEFAULT",
+        "alertThreshold": "OFF",
+        "name": "SQL Injection",
+        "wascId": "19",
+        "id": "40018",
+        "enabled": "false",
+        "quality": "release",
+        "status": "release",
+        "dependencies": []
+      },
+      {
+        "allDependenciesAvailable": "true",
+        "policyId": "4",
+        "cweId": "89",
+        "attackStrength": "DEFAULT",
+        "alertThreshold": "OFF",
+        "name": "SQL Injection - MySQL (Time Based)",
+        "wascId": "19",
+        "id": "40019",
+        "enabled": "false",
+        "quality": "release",
+        "status": "release",
+        "dependencies": []
+      },
+      {
+        "allDependenciesAvailable": "true",
+        "policyId": "4",
+        "cweId": "89",
+        "attackStrength": "DEFAULT",
+        "alertThreshold": "OFF",
+        "name": "SQL Injection - Hypersonic SQL (Time Based)",
+        "wascId": "19",
+        "id": "40020",
+        "enabled": "false",
+        "quality": "release",
+        "status": "release",
+        "dependencies": []
+      },
+      {
+        "allDependenciesAvailable": "true",
+        "policyId": "4",
+        "cweId": "89",
+        "attackStrength": "DEFAULT",
+        "alertThreshold": "OFF",
+        "name": "SQL Injection - Oracle (Time Based)",
+        "wascId": "19",
+        "id": "40021",
+        "enabled": "false",
+        "quality": "release",
+        "status": "release",
+        "dependencies": []
+      },
+      {
+        "allDependenciesAvailable": "true",
+        "policyId": "4",
+        "cweId": "89",
+        "attackStrength": "DEFAULT",
+        "alertThreshold": "OFF",
+        "name": "SQL Injection - PostgreSQL (Time Based)",
+        "wascId": "19",
+        "id": "40022",
+        "enabled": "false",
+        "quality": "release",
+        "status": "release",
+        "dependencies": []
+      },
+      {
+        "allDependenciesAvailable": "true",
+        "policyId": "4",
+        "cweId": "89",
+        "attackStrength": "DEFAULT",
+        "alertThreshold": "OFF",
+        "name": "SQL Injection - SQLite (Time Based)",
+        "wascId": "19",
+        "id": "40024",
+        "enabled": "false",
+        "quality": "release",
+        "status": "release",
+        "dependencies": []
+      },
+      {
+        "allDependenciesAvailable": "true",
+        "policyId": "1",
+        "cweId": "79",
+        "attackStrength": "DEFAULT",
+        "alertThreshold": "OFF",
+        "name": "Cross Site Scripting (DOM Based)",
+        "wascId": "8",
+        "id": "40026",
+        "enabled": "false",
+        "quality": "release",
+        "status": "release",
+        "dependencies": []
+      },
+      {
+        "allDependenciesAvailable": "true",
+        "policyId": "4",
+        "cweId": "89",
+        "attackStrength": "DEFAULT",
+        "alertThreshold": "OFF",
+        "name": "SQL Injection - MsSQL (Time Based)",
+        "wascId": "19",
+        "id": "40027",
+        "enabled": "false",
+        "quality": "release",
+        "status": "release",
+        "dependencies": []
+      },
+      {
+        "allDependenciesAvailable": "true",
+        "policyId": "3",
+        "cweId": "117",
+        "attackStrength": "DEFAULT",
+        "alertThreshold": "OFF",
+        "name": "Log4Shell",
+        "wascId": "20",
+        "id": "40043",
+        "enabled": "false",
+        "quality": "release",
+        "status": "release",
+        "dependencies": []
+      },
+      {
+        "allDependenciesAvailable": "true",
+        "policyId": "4",
+        "cweId": "78",
+        "attackStrength": "DEFAULT",
+        "alertThreshold": "OFF",
+        "name": "Spring4Shell",
+        "wascId": "20",
+        "id": "40045",
+        "enabled": "false",
+        "quality": "release",
+        "status": "release",
+        "dependencies": []
+      },
+      {
+        "allDependenciesAvailable": "true",
+        "policyId": "4",
+        "cweId": "78",
+        "attackStrength": "DEFAULT",
+        "alertThreshold": "OFF",
+        "name": "Remote Code Execution (React2Shell)",
+        "wascId": "32",
+        "id": "40048",
+        "enabled": "false",
+        "quality": "release",
+        "status": "release",
+        "dependencies": []
+      },
+      {
+        "allDependenciesAvailable": "true",
+        "policyId": "4",
+        "cweId": "94",
+        "attackStrength": "DEFAULT",
+        "alertThreshold": "OFF",
+        "name": "Server Side Code Injection",
+        "wascId": "20",
+        "id": "90019",
+        "enabled": "false",
+        "quality": "release",
+        "status": "release",
+        "dependencies": []
+      },
+      {
+        "allDependenciesAvailable": "true",
+        "policyId": "4",
+        "cweId": "78",
+        "attackStrength": "DEFAULT",
+        "alertThreshold": "OFF",
+        "name": "Remote OS Command Injection",
+        "wascId": "31",
+        "id": "90020",
+        "enabled": "false",
+        "quality": "release",
+        "status": "release",
+        "dependencies": []
+      },
+      {
+        "allDependenciesAvailable": "true",
+        "policyId": "4",
+        "cweId": "643",
+        "attackStrength": "DEFAULT",
+        "alertThreshold": "OFF",
+        "name": "XPath Injection",
+        "wascId": "39",
+        "id": "90021",
+        "enabled": "false",
+        "quality": "release",
+        "status": "release",
+        "dependencies": []
+      },
+      {
+        "allDependenciesAvailable": "true",
+        "policyId": "4",
+        "cweId": "611",
+        "attackStrength": "DEFAULT",
+        "alertThreshold": "OFF",
+        "name": "XML External Entity Attack",
+        "wascId": "43",
+        "id": "90023",
+        "enabled": "false",
+        "quality": "release",
+        "status": "release",
+        "dependencies": []
+      },
+      {
+        "allDependenciesAvailable": "true",
+        "policyId": "3",
+        "cweId": "209",
+        "attackStrength": "DEFAULT",
+        "alertThreshold": "OFF",
+        "name": "Generic Padding Oracle",
+        "wascId": "20",
+        "id": "90024",
+        "enabled": "false",
+        "quality": "release",
+        "status": "release",
+        "dependencies": []
+      },
+      {
+        "allDependenciesAvailable": "true",
+        "policyId": "4",
+        "cweId": "1230",
+        "attackStrength": "DEFAULT",
+        "alertThreshold": "OFF",
+        "name": "Cloud Metadata Potentially Exposed",
+        "wascId": "0",
+        "id": "90034",
+        "enabled": "false",
+        "quality": "release",
+        "status": "release",
+        "dependencies": []
+      },
+      {
+        "allDependenciesAvailable": "true",
+        "policyId": "4",
+        "cweId": "1336",
+        "attackStrength": "DEFAULT",
+        "alertThreshold": "OFF",
+        "name": "Server Side Template Injection",
+        "wascId": "20",
+        "id": "90035",
+        "enabled": "false",
+        "quality": "release",
+        "status": "release",
+        "dependencies": []
+      },
+      {
+        "allDependenciesAvailable": "true",
+        "policyId": "4",
+        "cweId": "1336",
+        "attackStrength": "DEFAULT",
+        "alertThreshold": "OFF",
+        "name": "Server Side Template Injection (Blind)",
+        "wascId": "20",
+        "id": "90036",
+        "enabled": "false",
+        "quality": "release",
+        "status": "release",
+        "dependencies": []
+      },
+      {
+        "allDependenciesAvailable": "true",
+        "policyId": "4",
+        "cweId": "78",
+        "attackStrength": "DEFAULT",
+        "alertThreshold": "OFF",
+        "name": "Remote OS Command Injection (Time Based)",
+        "wascId": "31",
+        "id": "90037",
+        "enabled": "false",
+        "quality": "release",
+        "status": "release",
+        "dependencies": []
+      },
+      {
+        "allDependenciesAvailable": "true",
+        "policyId": "0",
+        "cweId": "548",
+        "attackStrength": "DEFAULT",
+        "alertThreshold": "DEFAULT",
+        "name": "Directory Browsing",
+        "wascId": "48",
+        "id": "0",
+        "enabled": "true",
+        "quality": "release",
+        "status": "release",
+        "dependencies": []
+      },
+      {
+        "allDependenciesAvailable": "true",
+        "policyId": "3",
+        "cweId": "311",
+        "attackStrength": "DEFAULT",
+        "alertThreshold": "OFF",
+        "name": "HTTP Only Site",
+        "wascId": "4",
+        "id": "10106",
+        "enabled": "false",
+        "quality": "release",
+        "status": "release",
+        "dependencies": []
+      },
+      {
+        "allDependenciesAvailable": "true",
+        "policyId": "4",
+        "cweId": "120",
+        "attackStrength": "DEFAULT",
+        "alertThreshold": "OFF",
+        "name": "Buffer Overflow",
+        "wascId": "7",
+        "id": "30001",
+        "enabled": "false",
+        "quality": "release",
+        "status": "release",
+        "dependencies": []
+      },
+      {
+        "allDependenciesAvailable": "true",
+        "policyId": "4",
+        "cweId": "134",
+        "attackStrength": "DEFAULT",
+        "alertThreshold": "OFF",
+        "name": "Format String Error",
+        "wascId": "6",
+        "id": "30002",
+        "enabled": "false",
+        "quality": "release",
+        "status": "release",
+        "dependencies": []
+      },
+      {
+        "allDependenciesAvailable": "true",
+        "policyId": "4",
+        "cweId": "113",
+        "attackStrength": "DEFAULT",
+        "alertThreshold": "OFF",
+        "name": "CRLF Injection",
+        "wascId": "25",
+        "id": "40003",
+        "enabled": "false",
+        "quality": "release",
+        "status": "release",
+        "dependencies": []
+      },
+      {
+        "allDependenciesAvailable": "true",
+        "policyId": "4",
+        "cweId": "472",
+        "attackStrength": "DEFAULT",
+        "alertThreshold": "OFF",
+        "name": "Parameter Tampering",
+        "wascId": "20",
+        "id": "40008",
+        "enabled": "false",
+        "quality": "release",
+        "status": "release",
+        "dependencies": []
+      },
+      {
+        "allDependenciesAvailable": "true",
+        "policyId": "0",
+        "cweId": "94",
+        "attackStrength": "DEFAULT",
+        "alertThreshold": "OFF",
+        "name": "ELMAH Information Leak",
+        "wascId": "14",
+        "id": "40028",
+        "enabled": "false",
+        "quality": "release",
+        "status": "release",
+        "dependencies": []
+      },
+      {
+        "allDependenciesAvailable": "true",
+        "policyId": "0",
+        "cweId": "215",
+        "attackStrength": "DEFAULT",
+        "alertThreshold": "OFF",
+        "name": "Trace.axd Information Leak",
+        "wascId": "13",
+        "id": "40029",
+        "enabled": "false",
+        "quality": "release",
+        "status": "release",
+        "dependencies": []
+      },
+      {
+        "allDependenciesAvailable": "true",
+        "policyId": "0",
+        "cweId": "94",
+        "attackStrength": "DEFAULT",
+        "alertThreshold": "OFF",
+        "name": ".htaccess Information Leak",
+        "wascId": "14",
+        "id": "40032",
+        "enabled": "false",
+        "quality": "release",
+        "status": "release",
+        "dependencies": []
+      },
+      {
+        "allDependenciesAvailable": "true",
+        "policyId": "0",
+        "cweId": "215",
+        "attackStrength": "DEFAULT",
+        "alertThreshold": "OFF",
+        "name": ".env Information Leak",
+        "wascId": "13",
+        "id": "40034",
+        "enabled": "false",
+        "quality": "release",
+        "status": "release",
+        "dependencies": []
+      },
+      {
+        "allDependenciesAvailable": "true",
+        "policyId": "0",
+        "cweId": "538",
+        "attackStrength": "DEFAULT",
+        "alertThreshold": "OFF",
+        "name": "Hidden File Finder",
+        "wascId": "13",
+        "id": "40035",
+        "enabled": "false",
+        "quality": "release",
+        "status": "release",
+        "dependencies": []
+      },
+      {
+        "allDependenciesAvailable": "true",
+        "policyId": "0",
+        "cweId": "215",
+        "attackStrength": "DEFAULT",
+        "alertThreshold": "OFF",
+        "name": "Spring Actuator Information Leak",
+        "wascId": "13",
+        "id": "40042",
+        "enabled": "false",
+        "quality": "release",
+        "status": "release",
+        "dependencies": []
+      },
+      {
+        "allDependenciesAvailable": "true",
+        "policyId": "3",
+        "cweId": "776",
+        "attackStrength": "DEFAULT",
+        "alertThreshold": "OFF",
+        "name": "Exponential Entity Expansion (Billion Laughs Attack)",
+        "wascId": "44",
+        "id": "40044",
+        "enabled": "false",
+        "quality": "release",
+        "status": "release",
+        "dependencies": []
+      },
+      {
+        "allDependenciesAvailable": "true",
+        "policyId": "4",
+        "cweId": "91",
+        "attackStrength": "DEFAULT",
+        "alertThreshold": "OFF",
+        "name": "XSLT Injection",
+        "wascId": "23",
+        "id": "90017",
+        "enabled": "false",
+        "quality": "release",
+        "status": "release",
+        "dependencies": []
+      },
+      {
+        "allDependenciesAvailable": "true",
+        "policyId": "3",
+        "cweId": "311",
+        "attackStrength": "DEFAULT",
+        "alertThreshold": "OFF",
+        "name": "HTTPS Content Available via HTTP",
+        "wascId": "4",
+        "id": "10047",
+        "enabled": "false",
+        "quality": "release",
+        "status": "release",
+        "dependencies": []
+      },
+      {
+        "allDependenciesAvailable": "true",
+        "policyId": "3",
+        "cweId": "16",
+        "attackStrength": "DEFAULT",
+        "alertThreshold": "OFF",
+        "name": "GET for POST",
+        "wascId": "20",
+        "id": "10058",
+        "enabled": "false",
+        "quality": "release",
+        "status": "release",
+        "dependencies": []
+      },
+      {
+        "allDependenciesAvailable": "true",
+        "policyId": "0",
+        "cweId": "0",
+        "attackStrength": "DEFAULT",
+        "alertThreshold": "OFF",
+        "name": "User Agent Fuzzer",
+        "wascId": "0",
+        "id": "10104",
+        "enabled": "false",
+        "quality": "release",
+        "status": "release",
+        "dependencies": []
+      },
+      {
+        "allDependenciesAvailable": "true",
+        "policyId": "4",
+        "cweId": "79",
+        "attackStrength": "DEFAULT",
+        "alertThreshold": "OFF",
+        "name": "Cross Site Scripting (Persistent) - Prime",
+        "wascId": "8",
+        "id": "40016",
+        "enabled": "false",
+        "quality": "release",
+        "status": "release",
+        "dependencies": []
+      },
+      {
+        "allDependenciesAvailable": "true",
+        "policyId": "4",
+        "cweId": "79",
+        "attackStrength": "DEFAULT",
+        "alertThreshold": "OFF",
+        "name": "Cross Site Scripting (Persistent) - Spider",
+        "wascId": "8",
+        "id": "40017",
+        "enabled": "false",
+        "quality": "release",
+        "status": "release",
+        "dependencies": [
+          "40016"
+        ]
+      },
+      {
+        "allDependenciesAvailable": "true",
+        "policyId": "3",
+        "cweId": "0",
+        "attackStrength": "DEFAULT",
+        "alertThreshold": "OFF",
+        "name": "Script Active Scan Rules",
+        "wascId": "0",
+        "id": "50000",
+        "enabled": "false",
+        "quality": "release",
+        "status": "release",
+        "dependencies": []
+      },
+      {
+        "allDependenciesAvailable": "true",
+        "policyId": "3",
+        "cweId": "451",
+        "attackStrength": "DEFAULT",
+        "alertThreshold": "OFF",
+        "name": "SOAP Action Spoofing",
+        "wascId": "0",
+        "id": "90026",
+        "enabled": "false",
+        "quality": "beta",
+        "status": "beta",
+        "dependencies": []
+      },
+      {
+        "allDependenciesAvailable": "true",
+        "policyId": "3",
+        "cweId": "91",
+        "attackStrength": "DEFAULT",
+        "alertThreshold": "OFF",
+        "name": "SOAP XML Injection",
+        "wascId": "0",
+        "id": "90029",
+        "enabled": "false",
+        "quality": "beta",
+        "status": "beta",
+        "dependencies": []
+      }
+    ]
+  },
+  "scan": {
+    "schemaVersion": 1,
+    "tier": 4,
+    "mode": "active",
+    "origins": [
+      "http://127.0.0.1:60917"
+    ],
+    "scopeMode": "urls",
+    "urls": [
+      "http://127.0.0.1:60917/allowed"
+    ],
+    "startedAt": "2026-10-17T19:50:53.166Z",
+    "maxMs": 30000,
+    "status": "completed",
+    "scans": [
+      {
+        "id": "0",
+        "url": "http://127.0.0.1:60917/allowed",
+        "progress": 100
+      }
+    ],
+    "alerts": [
+      {
+        "pluginId": "0",
+        "name": "Directory Browsing",
+        "risk": "Medium",
+        "confidence": "Medium",
+        "url": "http://127.0.0.1:60917/allowed/",
+        "cweId": "548",
+        "wascId": "48"
+      },
+      {
+        "pluginId": "10020",
+        "name": "Missing Anti-clickjacking Header",
+        "risk": "Medium",
+        "confidence": "Medium",
+        "url": "http://127.0.0.1:60917/allowed",
+        "cweId": "1021",
+        "wascId": "15"
+      },
+      {
+        "pluginId": "10038",
+        "name": "Content Security Policy (CSP) Header Not Set",
+        "risk": "Medium",
+        "confidence": "High",
+        "url": "http://127.0.0.1:60917/allowed",
+        "cweId": "693",
+        "wascId": "15"
+      },
+      {
+        "pluginId": "10021",
+        "name": "X-Content-Type-Options Header Missing",
+        "risk": "Low",
+        "confidence": "Medium",
+        "url": "http://127.0.0.1:60917/allowed",
+        "cweId": "693",
+        "wascId": "15"
+      }
+    ],
+    "errors": [],
+    "limitations": [
+      "ZAP findings require review; absence of alerts is not proof of security.",
+      "Only explicitly listed URLs are seeded; recursive scanning and spidering are disabled.",
+      "Active scanning sends attack requests and requires explicit authorization for the supplied scope."
+    ],
+    "version": "2.17.0",
+    "contextRemoved": true,
+    "finishedAt": "2026-10-17T19:50:54.413Z"
+  },
+  "states": {
+    "scans": [
+      {
+        "reqCount": "1",
+        "alertCount": "1",
+        "progress": "100",
+        "newAlertCount": "1",
+        "id": "0",
+        "state": "FINISHED"
+      }
+    ]
+  },
+  "progress": [
+    {
+      "scanProgress": [
+        "http://127.0.0.1:60917",
+        {
+          "HostProcess": [
+            {
+              "Plugin": [
+                "Directory Browsing",
+                "0",
+                "release",
+                "Complete",
+                "14",
+                "1",
+                "1"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "richAlerts": {
+    "alerts": [
+      {
+        "nodeName": "http://127.0.0.1:60917/allowed/",
+        "sourceid": "1",
+        "other": "",
+        "method": "GET",
+        "evidence": "Parent Directory",
+        "pluginId": "0",
+        "cweid": "548",
+        "confidence": "Medium",
+        "sourceMessageId": 1,
+        "wascid": "48",
+        "description": "It is possible to view the directory listing. Directory listing may reveal hidden scripts, include files, backup source files, etc. which can be accessed to read sensitive information.",
+        "messageId": "4",
+        "inputVector": "",
+        "url": "http://127.0.0.1:60917/allowed/",
+        "tags": {
+          "OWASP_2021_A01": "https://owasp.org/Top10/A01_2021-Broken_Access_Control/",
+          "POLICY_API": "",
+          "POLICY_QA_STD": "",
+          "POLICY_QA_FULL": "",
+          "CWE-548": "https://cwe.mitre.org/data/definitions/548.html",
+          "POLICY_PENTEST": "",
+          "SYSTEMIC": "https://www.zaproxy.org/docs/desktop/addons/common-library/alerttags/#systemic",
+          "POLICY_QA_CICD": "",
+          "OWASP_2017_A05": "https://owasp.org/www-project-top-ten/2017/A5_2017-Broken_Access_Control.html"
+        },
+        "reference": "https://httpd.apache.org/docs/current/mod/core.html#options",
+        "solution": "Disable directory browsing. If this is required, make sure the listed files does not induce risks.",
+        "alert": "Directory Browsing",
+        "param": "",
+        "attack": "http://127.0.0.1:60917/allowed/",
+        "name": "Directory Browsing",
+        "risk": "Medium",
+        "id": "0",
+        "alertRef": "0"
+      },
+      {
+        "nodeName": "http://127.0.0.1:60917/allowed",
+        "sourceid": "3",
+        "other": "",
+        "method": "GET",
+        "evidence": "",
+        "pluginId": "10020",
+        "cweid": "1021",
+        "confidence": "Medium",
+        "sourceMessageId": 1,
+        "wascid": "15",
+        "description": "The response does not protect against 'ClickJacking' attacks. It should include either Content-Security-Policy with 'frame-ancestors' directive or X-Frame-Options.",
+        "messageId": "1",
+        "inputVector": "",
+        "url": "http://127.0.0.1:60917/allowed",
+        "tags": {
+          "OWASP_2021_A05": "https://owasp.org/Top10/A05_2021-Security_Misconfiguration/",
+          "POLICY_QA_STD": "",
+          "POLICY_PENTEST": "",
+          "CWE-1021": "https://cwe.mitre.org/data/definitions/1021.html",
+          "SYSTEMIC": "https://www.zaproxy.org/docs/desktop/addons/common-library/alerttags/#systemic",
+          "WSTG-v42-CLNT-09": "https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/11-Client-side_Testing/09-Testing_for_Clickjacking",
+          "OWASP_2017_A06": "https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html"
+        },
+        "reference": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/X-Frame-Options",
+        "solution": "Modern Web browsers support the Content-Security-Policy and X-Frame-Options HTTP headers. Ensure one of them is set on all web pages returned by your site/app.\nIf you expect the page to be framed only by pages on your server (e.g. it's part of a FRAMESET) then you'll want to use SAMEORIGIN, otherwise if you never expect the page to be framed, you should use DENY. Alternatively consider implementing Content Security Policy's \"frame-ancestors\" directive.",
+        "alert": "Missing Anti-clickjacking Header",
+        "param": "x-frame-options",
+        "attack": "",
+        "name": "Missing Anti-clickjacking Header",
+        "risk": "Medium",
+        "id": "1",
+        "alertRef": "10020-1"
+      },
+      {
+        "nodeName": "http://127.0.0.1:60917/allowed",
+        "sourceid": "3",
+        "other": "",
+        "method": "GET",
+        "evidence": "",
+        "pluginId": "10038",
+        "cweid": "693",
+        "confidence": "High",
+        "sourceMessageId": 1,
+        "wascid": "15",
+        "description": "Content Security Policy (CSP) is an added layer of security that helps to detect and mitigate certain types of attacks, including Cross Site Scripting (XSS) and data injection attacks. These attacks are used for everything from data theft to site defacement or distribution of malware. CSP provides a set of standard HTTP headers that allow website owners to declare approved sources of content that browsers should be allowed to load on that page — covered types are JavaScript, CSS, HTML frames, fonts, images and embeddable objects such as Java applets, ActiveX, audio and video files.",
+        "messageId": "1",
+        "inputVector": "",
+        "url": "http://127.0.0.1:60917/allowed",
+        "tags": {
+          "OWASP_2021_A05": "https://owasp.org/Top10/A05_2021-Security_Misconfiguration/",
+          "POLICY_QA_STD": "",
+          "POLICY_PENTEST": "",
+          "SYSTEMIC": "https://www.zaproxy.org/docs/desktop/addons/common-library/alerttags/#systemic",
+          "CWE-693": "https://cwe.mitre.org/data/definitions/693.html",
+          "OWASP_2017_A06": "https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html"
+        },
+        "reference": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/CSP\nhttps://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html\nhttps://www.w3.org/TR/CSP/\nhttps://w3c.github.io/webappsec-csp/\nhttps://web.dev/articles/csp\nhttps://caniuse.com/#feat=contentsecuritypolicy\nhttps://content-security-policy.com/",
+        "solution": "Ensure that your web server, application server, load balancer, etc. is configured to set the Content-Security-Policy header.",
+        "alert": "Content Security Policy (CSP) Header Not Set",
+        "param": "",
+        "attack": "",
+        "name": "Content Security Policy (CSP) Header Not Set",
+        "risk": "Medium",
+        "id": "2",
+        "alertRef": "10038-1"
+      },
+      {
+        "nodeName": "http://127.0.0.1:60917/allowed",
+        "sourceid": "3",
+        "other": "This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.\nAt \"High\" threshold this scan rule will not alert on client or server error responses.",
+        "method": "GET",
+        "evidence": "",
+        "pluginId": "10021",
+        "cweid": "693",
+        "confidence": "Medium",
+        "sourceMessageId": 1,
+        "wascid": "15",
+        "description": "The Anti-MIME-Sniffing header X-Content-Type-Options was not set to 'nosniff'. This allows older versions of Internet Explorer and Chrome to perform MIME-sniffing on the response body, potentially causing the response body to be interpreted and displayed as a content type other than the declared content type. Current (early 2014) and legacy versions of Firefox will use the declared content type (if one is set), rather than performing MIME-sniffing.",
+        "messageId": "1",
+        "inputVector": "",
+        "url": "http://127.0.0.1:60917/allowed",
+        "tags": {
+          "OWASP_2021_A05": "https://owasp.org/Top10/A05_2021-Security_Misconfiguration/",
+          "POLICY_QA_STD": "",
+          "POLICY_PENTEST": "",
+          "SYSTEMIC": "https://www.zaproxy.org/docs/desktop/addons/common-library/alerttags/#systemic",
+          "CWE-693": "https://cwe.mitre.org/data/definitions/693.html",
+          "OWASP_2017_A06": "https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html"
+        },
+        "reference": "https://learn.microsoft.com/en-us/previous-versions/windows/internet-explorer/ie-developer/compatibility/gg622941(v=vs.85)\nhttps://owasp.org/www-community/Security_Headers",
+        "solution": "Ensure that the application/web server sets the Content-Type header appropriately, and that it sets the X-Content-Type-Options header to 'nosniff' for all web pages.\nIf possible, ensure that the end user uses a standards-compliant and modern web browser that does not perform MIME-sniffing at all, or that can be directed by the web application/web server to not perform MIME-sniffing.",
+        "alert": "X-Content-Type-Options Header Missing",
+        "param": "x-content-type-options",
+        "attack": "",
+        "name": "X-Content-Type-Options Header Missing",
+        "risk": "Low",
+        "id": "3",
+        "alertRef": "10021"
+      }
+    ]
+  },
+  "observed": {
+    "rewrittenPathRequested": true,
+    "activeSummaryPresent": true,
+    "adapterStatus": "completed"
+  },
+  "ownedDaemonStopCalled": true,
+  "apiClosedAfterStop": true,
+  "fixtureClosed": true,
+  "elapsedMs": 13192.7057,
+  "sourceSha256": {
+    "src/zap.mjs": "9f3fd2ea88f4055f0a66386bd5f5654ee8992135a6ff11b1ffd0de3a0595572f",
+    "src/managed-zap.mjs": "9a1095ffd6264d608a3ad96090ad8e97802e08eed6803b15f2bdee55f881bb52",
+    "src/http.mjs": "be2d47f1ad59ce3237bdd4e2e567556b39b3532def402312209ebdfe138690fb",
+    "scripts/research-real-zap-lab.mjs": "f0110995bf5868d0d9363b078655c8c4fbb6ff45c58701a8114c2fa8cb9c46ef",
+    "docs/research/security-landscape/deep-review/real-zap-lab-plan.md": "86e33db6ae5c5298cab2410c301754014974622dad4d0e4b7e6c4b1a074e354f"
+  }
+}

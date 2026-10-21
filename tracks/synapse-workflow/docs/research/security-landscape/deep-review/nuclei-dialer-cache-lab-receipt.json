@@ -1,0 +1,45 @@
+{
+  "at": "2026-10-17T20:57:48.209Z",
+  "out": "C:\\Users\\kotar\\githubprojects\\NBRET\\runs\\dialer-cache-research-1792270664302",
+  "scope": "Actual Fastdialer component, owned dual loopback TCP listeners and UDP DNS trap, loopback-only net.Dialer guard. No Nuclei engine/third party/model/credentials.",
+  "command": {
+    "executable": "C:\\Users\\kotar\\githubprojects\\NBRET\\.tools\\security-research-go\\sdk\\go\\bin\\go.exe",
+    "args": [
+      "run",
+      "C:\\Users\\kotar\\githubprojects\\NBRET\\runs\\dialer-cache-research-1792270664302\\main.go"
+    ],
+    "cwd": "C:/Users/kotar/.codex/research/nuclei"
+  },
+  "moduleNetwork": {
+    "GOPROXY": "off",
+    "GOSUMDB": "off"
+  },
+  "exit": 0,
+  "elapsedMs": 3905.1653,
+  "passes": [
+    "PASS first_context_ip_a_connects",
+    "PASS first_listener_a_control",
+    "PASS cached_context_ip_b_connects",
+    "PASS cached_override_b_still_reaches_a",
+    "PASS cached_dial_skips_validation_callback",
+    "PASS cached_dial_after_callback_policy_revoke",
+    "PASS revoked_callback_not_rechecked_on_cache_hit",
+    "PASS fresh_dialer_revoke_control_denies",
+    "PASS rejection_opens_no_b_connection",
+    "PASS fresh_allowed_context_b_connects",
+    "PASS fresh_listener_b_control",
+    "PASS zero_dns_trap_queries"
+  ],
+  "counts": "COUNTS a=3 b=1 dns=0 validation=3",
+  "fixtureSha256": "3b5a9168498129f8a43e460e30a3143b3b3c9d7e8868d643f53664c506659cb6",
+  "sourceSha256": {
+    "fastdialer/dialer.go": "e721bf13228ffdbee4d161fd0f9acf1a415a13e563f550cdb476a116999cf8a9",
+    "fastdialer/dialer_private.go": "48a6b70508d73026f4ba6a6e055395c20652c53f69e8fa5a54ee9af4a28527f3",
+    "fastdialer/utils/dialwrap.go": "988701bb3df8881ba7186c217ac4ecf673cab9bc92af8dcf45710698fa116834",
+    "go.mod": "f454f6a007136e46c5fb1f2cc081312e1938f134f57d252edfe0ba9f3419997b"
+  },
+  "parentGoModSha256": "d960ba91e597d8500c1d7bc68b6daaf07631fa795ee0972eb5dad2bfa49697c5",
+  "parentGoSumSha256": "df80e4e570143a2abebf4174236e9ccc114292d0a2f3f6102848a4610cd396c1",
+  "stdoutSha256": "b6fca5f27361bf74b976d39eb7c56a0cd1f716ca7fe63a421b0518e676fa223a",
+  "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

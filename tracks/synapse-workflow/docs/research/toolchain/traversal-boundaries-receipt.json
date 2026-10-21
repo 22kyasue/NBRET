@@ -1,0 +1,44 @@
+{
+  "startedAt": "2026-10-17T20:22:23.724Z",
+  "finishedAt": "2026-10-17T20:22:24.159Z",
+  "go": "go version go1.27.2 windows/amd64",
+  "cwd": "C:\\Users\\kotar\\githubprojects\\NBRET\\.tools\\toolchain\\BloodHound",
+  "args": [
+    "test",
+    "-p=2",
+    "-count=1",
+    "-timeout=15s",
+    "-json",
+    "C:\\Users\\kotar\\githubprojects\\NBRET\\docs\\research\\toolchain\\traversal_boundaries_test.go",
+    "-run",
+    "^TestSyntheticTraversalBoundaries$"
+  ],
+  "environmentOverrides": {
+    "GOTOOLCHAIN": "local",
+    "GOWORK": "off",
+    "GOFLAGS": "-mod=readonly",
+    "GOPROXY": "off",
+    "GOSUMDB": "off",
+    "GOMAXPROCS": "2",
+    "GOPATH": "C:\\Users\\kotar\\githubprojects\\NBRET\\.tools\\toolchain\\go\\path",
+    "GOCACHE": "C:\\Users\\kotar\\githubprojects\\NBRET\\.tools\\toolchain\\go\\cache",
+    "GOMODCACHE": "C:\\Users\\kotar\\githubprojects\\NBRET\\.tools\\toolchain\\go\\modules"
+  },
+  "fixtureSha256": "da831c234513fda809349262e749d53552ad386f120af820e80f952fcea3a9c7",
+  "goModSha256": "acc95448c2e68118020ce5b7d98e89b3c6af38430969fd63f70d98b9f634364c",
+  "goSumSha256": "0eb760d56fed383d4e003b5c81e591f3feaa736f9f7a2e9c8888c3047f42c42c",
+  "sourcePin": "d0640cfb421e2b9f4fc249de733c3d6e52f1a57f",
+  "passed": [],
+  "oraclePassed": false,
+  "code": 1,
+  "killed": false,
+  "error": "Command failed: C:\\Users\\kotar\\githubprojects\\NBRET\\.tools\\security-research-go\\sdk\\go\\bin\\go.exe test -p=2 -count=1 -timeout=15s -json C:\\Users\\kotar\\githubprojects\\NBRET\\docs\\research\\toolchain\\traversal_boundaries_test.go -run ^TestSyntheticTraversalBoundaries$\n",
+  "stdout": "{\"ImportPath\":\"command-line-arguments_test [command-line-arguments.test]\",\"Action\":\"build-output\",\"Output\":\"# command-line-arguments_test [command-line-arguments.test]\\n\"}\n{\"ImportPath\":\"command-line-arguments_test [command-line-arguments.test]\",\"Action\":\"build-output\",\"Output\":\"..\\\\..\\\\..\\\\docs\\\\research\\\\toolchain\\\\traversal_boundaries_test.go:28:91: not enough arguments in call to graph.NewRelationship\\n\"}\n{\"ImportPath\":\"command-line-arguments_test [command-line-arguments.test]\",\"Action\":\"build-output\",\"Output\":\"\\thave (graph.ID, graph.ID, graph.ID, nil)\\n\"}\n{\"ImportPath\":\"command-line-arguments_test [command-line-arguments.test]\",\"Action\":\"build-output\",\"Output\":\"\\twant (graph.ID, graph.ID, graph.ID, *graph.Properties, graph.Kind)\\n\"}\n{\"ImportPath\":\"command-line-arguments_test [command-line-arguments.test]\",\"Action\":\"build-fail\"}\n{\"Time\":\"2026-10-17T13:22:24.1332801-07:00\",\"Action\":\"start\",\"Package\":\"command-line-arguments\"}\n{\"Time\":\"2026-10-17T13:22:24.1332801-07:00\",\"Action\":\"output\",\"Package\":\"command-line-arguments\",\"Output\":\"FAIL\\tcommand-line-arguments [build failed]\\n\",\"OutputType\":\"frame\"}\n{\"Time\":\"2026-10-17T13:22:24.1332801-07:00\",\"Action\":\"fail\",\"Package\":\"command-line-arguments\",\"Elapsed\":0,\"FailedBuild\":\"command-line-arguments_test [command-line-arguments.test]\"}\n",
+  "stderr": "",
+  "cleanup": "Mock-only subprocess exited; no listener, DB, directory or global configuration created.",
+  "limitations": [
+    "Synthetic engine seams, not real graph query/driver execution",
+    "Cancellation may be separately handled by callers",
+    "No process-wide memory or all error-path guarantee"
+  ]
+}

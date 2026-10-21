@@ -1,0 +1,12 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import {pathToFileURL} from 'node:url';
+const own=path.resolve('docs/research/assessment-evidence');
+let fixture=fs.readFileSync(path.join(own,'test_session_import_failure_contract.py'),'utf8');
+fixture=fixture.replace("'session_id': sid}) == []","'session_id': sid}) is None");
+fs.writeFileSync(path.join(own,'test_session_import_failure_contract_v2.py'),fixture,{flag:'wx'});
+let runner=fs.readFileSync(path.join(own,'run-session-import-failure-generated.mjs'),'utf8');
+runner=runner.replace('test_session_import_failure_contract.py','test_session_import_failure_contract_v2.py');
+const generated=path.join(own,'run-session-import-failure-v2.mjs');
+fs.writeFileSync(generated,runner,{flag:'wx'});
+await import(pathToFileURL(generated).href);

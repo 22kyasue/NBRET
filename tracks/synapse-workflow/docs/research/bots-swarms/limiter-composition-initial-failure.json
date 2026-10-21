@@ -1,0 +1,1 @@
+{"stage":"synthetic fixture construction before any checks or timers","node":"v24.21.0","error":"TypeError: Cannot set property keyPrefix of #<RateLimiterCompatibleAbstract> which has only a getter","correction":"Define an own synthetic keyPrefix property; keep source unchanged and all predeclared oracles unchanged."}

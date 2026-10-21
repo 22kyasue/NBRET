@@ -1,0 +1,122 @@
+{
+  "at": "2026-10-17T20:42:13.791366+00:00",
+  "python": "3.14.7 (tags/v3.14.7:823f032, Aug  5 2026, 10:51:32) [MSC v.1944 64 bit (AMD64)]",
+  "command": "C:\\Python314\\python.exe -I -S docs/research/bots-swarms/cookie-policy-lab.py",
+  "scriptSha256": "edb8f7385f1819c9ddcc9efa8a5ea5cc34e3724f4df70f20f540e0fddb51914d",
+  "dependencySha256": "b0b75f457b4d1bbc6e8cfa3b286bd1cc878434c5941dbd8a766331092ecc1887",
+  "checks": [
+    {
+      "name": "jar a independent identity",
+      "actual": "sid=account-a",
+      "expected": "sid=account-a",
+      "pass": true
+    },
+    {
+      "name": "jar b independent identity",
+      "actual": "sid=account-b",
+      "expected": "sid=account-b",
+      "pass": true
+    },
+    {
+      "name": "reused jar overwrites account tuple",
+      "actual": "sid=account-b",
+      "expected": "sid=account-b",
+      "pass": true
+    },
+    {
+      "name": "default no-Domain cookie reaches child",
+      "actual": "sid=account-b",
+      "expected": "sid=account-b",
+      "pass": true
+    },
+    {
+      "name": "strict non-domain exact host",
+      "actual": "sid=strict",
+      "expected": "sid=strict",
+      "pass": true
+    },
+    {
+      "name": "strict non-domain withholds child",
+      "actual": null,
+      "expected": null,
+      "pass": true
+    },
+    {
+      "name": "secure https",
+      "actual": "sid=secure",
+      "expected": "sid=secure",
+      "pass": true
+    },
+    {
+      "name": "secure withheld from http",
+      "actual": null,
+      "expected": null,
+      "pass": true
+    },
+    {
+      "name": "ordinary cookie crosses port",
+      "actual": "sid=account-b",
+      "expected": "sid=account-b",
+      "pass": true
+    },
+    {
+      "name": "path child allowed",
+      "actual": "sid=path",
+      "expected": "sid=path",
+      "pass": true
+    },
+    {
+      "name": "path string-prefix collision withheld",
+      "actual": null,
+      "expected": null,
+      "pass": true
+    },
+    {
+      "name": "foreign Domain rejected",
+      "actual": 0,
+      "expected": 0,
+      "pass": true
+    },
+    {
+      "name": "max-age zero deletes tuple",
+      "actual": null,
+      "expected": null,
+      "pass": true
+    },
+    {
+      "name": "explicit cookie header preserved",
+      "actual": "manual=synthetic",
+      "expected": "manual=synthetic",
+      "pass": true
+    },
+    {
+      "name": "SameSite metadata retained",
+      "actual": "Strict",
+      "expected": "Strict",
+      "pass": true
+    },
+    {
+      "name": "SameSite metadata not default third-party gate",
+      "actual": "sid=same",
+      "expected": "sid=same",
+      "pass": true
+    },
+    {
+      "name": "separate third-party policy withholds",
+      "actual": null,
+      "expected": null,
+      "pass": true
+    },
+    {
+      "name": "session cleanup empties jar",
+      "actual": 0,
+      "expected": 0,
+      "pass": true
+    }
+  ],
+  "error": null,
+  "success": true,
+  "networkRequests": 0,
+  "persistentCookieFiles": 0,
+  "limits": "Actual stdlib policy on synthetic objects; no Scrapy/browser/server authorization/device identity claim."
+}

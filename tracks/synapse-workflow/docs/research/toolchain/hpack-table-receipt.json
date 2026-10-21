@@ -1,0 +1,24 @@
+{
+  "at": "2026-10-17T22:28:39.407Z",
+  "command": "node docs/research/toolchain/hpack-table-oracle.mjs",
+  "node": "v24.21.0",
+  "inputHashes": {
+    "huffman_constants.py": "e0f84e31e97998dd1ab24151ae7e2756927f09339484ed6a6c544eeaefc87f63",
+    "huffman_table.py": "12452e981b596483c227a950ecb1bf6f07c38f58991225cce0035c5e34f5cd4b"
+  },
+  "oracle": "Four-bit trie derivation from separately parsed local codewords; no upstream module imports",
+  "codes": 257,
+  "states": 256,
+  "transitions": 4096,
+  "negativeControl": {
+    "mutation": "root nibble0 target changed to state1",
+    "rejected": true,
+    "error": "Flags/symbol mismatch 1/0"
+  },
+  "pass": true,
+  "cleanup": "No listeners, sockets, package state, key material or temporary files created; one exclusive receipt retained",
+  "limitations": [
+    "Internal consistency with local constants, not independent RFC codeword verification",
+    "No upstream decoder execution, arbitrary traffic, performance test or application impact claim"
+  ]
+}

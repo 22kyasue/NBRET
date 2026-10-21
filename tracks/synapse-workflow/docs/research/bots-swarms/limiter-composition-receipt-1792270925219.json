@@ -1,0 +1,54 @@
+{
+  "at": 1792270925219,
+  "node": "v24.21.0",
+  "scope": "unchanged pinned modules with synthetic compatible limiters; no stores or network",
+  "hashes": {
+    "lib/RLWrapperBlackAndWhite.js": "3fab135632e2f623f00ecdfbb624e06eb16f907827fbd51de9b06c88ffcee3d0",
+    "lib/RateLimiterUnion.js": "2b1e5e378f2a3d5a72e90e3350a7263b58bd1e2b660726b593dc2d947d208fe5",
+    "lib/RLWrapperTimeouts.js": "5a6aaeb8974383f01cf9a928ba5b6871c1e756dc9857de7ada82179dd5a4e8df",
+    "lib/RateLimiterCompatibleAbstract.js": "2f7a6f57aa844ff78a79326357c9eecfd04fec3e8ab972ef608b4746716fb88c",
+    "lib/RateLimiterInsuredAbstract.js": "8b515fc09ba78213b367962c9ff306c70f2889286a8bf9faa8a1ce70ddb05847",
+    "lib/RateLimiterAbstract.js": "f659ed1fa6065e8cbf554621997bb2192870b7efd091e80e9a006229e0d629a8",
+    "lib/RateLimiterRes.js": "26237351781d300c123b207009c5a84fe78c6e1e9a89bc5579e1c02f97452349",
+    "lib/helper/isRateLimiterCompatible.js": "0717ab25b470bddd7970f1068eb0f5d2bfb00dfe965c6c85ce1fc1903b866d47"
+  },
+  "checks": [
+    {
+      "name": "allow wins overlapping deny without inner consumption",
+      "pass": true
+    },
+    {
+      "name": "deny consume rejects",
+      "pass": true
+    },
+    {
+      "name": "deny get resolves synthetic result",
+      "pass": true
+    },
+    {
+      "name": "union rejection retains successful sibling consumption",
+      "pass": true
+    },
+    {
+      "name": "duplicate prefixes collapse reported entries",
+      "pass": true
+    },
+    {
+      "name": "timeout returns before primary effect",
+      "pass": true
+    },
+    {
+      "name": "primary effect still occurs after timeout",
+      "pass": true
+    },
+    {
+      "name": "insurance settles caller while primary pending",
+      "pass": true
+    },
+    {
+      "name": "primary also settles after insurance result",
+      "pass": true
+    }
+  ],
+  "allSyntheticPromisesSettled": true
+}

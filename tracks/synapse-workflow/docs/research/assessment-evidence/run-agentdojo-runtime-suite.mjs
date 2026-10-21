@@ -1,0 +1,16 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import {pathToFileURL} from 'node:url';
+const own=path.resolve('docs/research/assessment-evidence');
+let source=fs.readFileSync(path.join(own,'run-claude-cleanup-lab.mjs'),'utf8');
+source=source.replaceAll('claude-cleanup','agentdojo-runtime-suite');
+source=source.replace("const root='C:/Users/kotar/.codex/research/assessment-evidence-sdk-sources/claude-agent-sdk-0.2.90-source/claude_agent_sdk-0.2.90';","const root='C:/Users/kotar/.codex/research/agentdojo-20261017';");
+source=source.replace("path.join(own,'test_claude_cleanup_contract.py')","path.join(root,'tests/test_functions_runtime/test_functions_runtime.py')");
+source=source.replace("path.join(out,'pytest-temp'),fixture]","path.join(out,'pytest-temp'),fixture,path.join(root,'tests/test_ast_utils.py')]");
+source=source.replace("sourceSha256:hash(path.join(root,'src/claude_agent_sdk/client.py'))","sourceSha256:Object.fromEntries(['src/agentdojo/functions_runtime.py','src/agentdojo/strenum.py','src/agentdojo/ast_utils.py','src/agentdojo/__init__.py','tests/test_functions_runtime/test_functions_runtime.py','tests/test_ast_utils.py'].map(p=>[path.join(root,p),hash(path.join(root,p))]))");
+source=source.replace(/criteria:'[^']*'/,"criteria:'unchanged reviewed runtime registration/state/nested-call/error tests and restricted AST parser tests'");
+source=source.replace(/intervention:'[^']*'/,"intervention:'unchanged upstream synthetic unit tests only; bytecode/cache disabled and temporary outputs in owned directory'");
+source=source.replace(/limits:'[^']*'/,"limits:'No provider, agent, external system or real tool operation; passing tests cover selected runtime/parser contracts, not all nested side effects or authorization'");
+const generated=path.join(own,'run-agentdojo-runtime-suite-generated.mjs');
+fs.writeFileSync(generated,source,{flag:'wx'});
+await import(pathToFileURL(generated).href);

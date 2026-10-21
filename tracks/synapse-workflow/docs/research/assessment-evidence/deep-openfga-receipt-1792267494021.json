@@ -1,0 +1,84 @@
+{
+  "at": "2026-10-17T20:05:29.962Z",
+  "scope": "actual cache resolver; synthetic cache/delegate; no server, target or model",
+  "out": "C:\\Users\\kotar\\.codex\\research\\assessment-evidence-receipts\\openfga-1792267494020",
+  "command": {
+    "exe": "C:\\Users\\kotar\\githubprojects\\NBRET\\.tools\\security-research-go\\sdk\\go\\bin\\go.exe",
+    "args": [
+      "test",
+      "-p",
+      "2",
+      "-overlay",
+      "C:\\Users\\kotar\\.codex\\research\\assessment-evidence-receipts\\openfga-1792267494020\\overlay.json",
+      "./internal/graph",
+      "-run",
+      "^TestResearch",
+      "-count=1",
+      "-json"
+    ],
+    "cwd": "C:/Users/kotar/.codex/research/openfga-20261017"
+  },
+  "toolchain": "go version go1.27.2 windows/amd64",
+  "environment": {
+    "GOTOOLCHAIN": "local",
+    "CGO_ENABLED": "0",
+    "GOPATH": "C:\\Users\\kotar\\githubprojects\\NBRET\\.tools\\security-research-go\\module-cache",
+    "GOCACHE": "C:/Users/kotar/.codex/research/assessment-evidence-receipts/openfga-1792267376264/build-cache",
+    "GOPROXY": "https://proxy.golang.org",
+    "GOSUMDB": "sum.golang.org"
+  },
+  "code": 0,
+  "signal": null,
+  "elapsedMs": 35976,
+  "sourceSha256": {
+    "go.mod": "6c5e972de64e7e06f544873a77ddf84de5d86100d1ae96be3555c04b62c10be8",
+    "go.sum": "c08837e3f91fe661b0ae2c0e3c561d4f39141b15f40433d7e6d924568b19aa03",
+    "internal/graph/cached_resolver.go": "cc6bc3c9c9a314802d16b9364b67f775fc568863f34fa5c8d0ac000c546fd9e9",
+    "internal/graph/resolve_check_request.go": "9f030420c596c4f0603d3d6d43ee76a64e2f23be6b3686f81657954fce8f0248",
+    "internal/graph/resolve_check_response.go": "2dbe84841ab691704041bc8b6fad01119c8729303b5617c58d6ed3ae02cfb3fc",
+    "pkg/storage/cache.go": "169d22ee6050a13085abe2db7a1bf05be79e5adf9d42e055a950dd81110b8233"
+  },
+  "fixtureSha256": "ef7c243be59c37847403def20e04911ada32134b554a5d7c26229c76d675ccc4",
+  "overlaySha256": "23c5c66bdbf823698f4018b5ce234c6477ae52be2f110d0204daf132790adf37",
+  "stdoutSha256": "352a6ba74d09e74e39640dbbaa6586b532bfcab17855dac06db0dadc352d107a",
+  "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "tests": [
+    {
+      "Time": "2026-10-17T13:05:29.5379628-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/graph",
+      "Test": "TestResearchCacheConsistency",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T13:05:29.5379628-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/graph",
+      "Test": "TestResearchCacheIdentity",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T13:05:29.5379628-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/graph",
+      "Test": "TestResearchErrorsAndCyclesNotCached/error",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T13:05:29.5379628-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/graph",
+      "Test": "TestResearchErrorsAndCyclesNotCached/cycle",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T13:05:29.5379628-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/graph",
+      "Test": "TestResearchErrorsAndCyclesNotCached",
+      "Elapsed": 0
+    }
+  ],
+  "intervention": "fixture and map cache/delegate authored by researcher; production resolver unchanged",
+  "cost": "no provider calls; unmetered local CPU/build dependency download, no monetary estimate"
+}

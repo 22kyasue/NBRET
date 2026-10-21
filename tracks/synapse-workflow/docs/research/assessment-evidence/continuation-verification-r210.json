@@ -1,0 +1,22 @@
+{
+  "at": "2026-10-18T06:36:24.375Z",
+  "exitCode": 0,
+  "checks": [
+    "exact dependency file hashes and complete range unions",
+    "four distinct ordinary component fixture receipts and source/log hashes",
+    "selected upstream graph/conversion source/log hashes",
+    "PentestGPT scripted test receipt source/log and preserved runner hashes",
+    "preview normalization, encoding oracle and Atomic authoring synthetic receipt hashes",
+    "garak digest component and synthetic artifact-boundary receipts, including retained fixture failure",
+    "garak retry-state and AgentDojo disclosure predicate receipts with failed fixtures preserved",
+    "AgentDojo selected unchanged runtime/parser suite and deletion-oracle receipt provenance",
+    "OpenFGA selected unchanged iterator/fast-path suite source, runner and log provenance",
+    "benign MCP context and normal stream lifecycle fixture/source/runner receipt",
+    "SDK source fixtures and preserved runners, including expected query failures; installed MCP metadata hashes"
+  ],
+  "limitations": [
+    "provenance consistency, not experiment rerun or proof of security conclusions",
+    "mistaken redundant cache run excluded from new evidence",
+    "remaining source/runtime queue is not complete"
+  ]
+}

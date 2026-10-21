@@ -1,0 +1,15 @@
+{
+  "at": "2026-10-17T21:55:49.875Z",
+  "exitCode": 0,
+  "checks": [
+    "exact dependency file hashes and complete range unions",
+    "four distinct ordinary component fixture receipts and source/log hashes",
+    "selected upstream graph/conversion source/log hashes",
+    "PentestGPT scripted test receipt source/log and preserved runner hashes"
+  ],
+  "limitations": [
+    "provenance consistency, not experiment rerun or proof of security conclusions",
+    "mistaken redundant cache run excluded from new evidence",
+    "remaining source/runtime queue is not complete"
+  ]
+}

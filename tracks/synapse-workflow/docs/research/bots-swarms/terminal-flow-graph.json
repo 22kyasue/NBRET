@@ -1,0 +1,445 @@
+{
+  "at": "2026-10-17T20:11:35.728Z",
+  "pin": {
+    "name": "bullmq",
+    "upstream": "taskforcesh/bullmq",
+    "root": "C:\\Users\\kotar\\githubprojects\\NBRET\\.tools\\bots-swarms\\bullmq",
+    "commit": "a5e710bf4d1bf689fe40a372b3f0ddbbaaab33cc",
+    "date": "2026-10-16T23:27:34-07:00",
+    "dirty": "",
+    "retrievedAt": "2026-10-17T19:52:44.825Z",
+    "basis": "Upstream shallow snapshot; no release or runtime verification implied"
+  },
+  "roots": [
+    "src/commands/moveToFinished-14.lua",
+    "src/commands/moveStalledJobsToWait-9.lua",
+    "src/commands/extendLocks-1.lua"
+  ],
+  "nodes": [
+    {
+      "path": "src/commands/moveToFinished-14.lua",
+      "commit": "a5e710bf4d1bf689fe40a372b3f0ddbbaaab33cc",
+      "sha256": "b3eb11fde11a9908d4ea3943211d78d1f545eb3d10a87cf162d2c4dca75c19b2",
+      "lines": 240,
+      "status": "complete",
+      "includes": [
+        "src/commands/includes/collectMetrics.lua",
+        "src/commands/includes/fetchNextJob.lua",
+        "src/commands/includes/moveChildFromDependenciesIfNeeded.lua",
+        "src/commands/includes/removeDeduplicationKeyIfNeededOnFinalization.lua",
+        "src/commands/includes/removeJobKeys.lua",
+        "src/commands/includes/removeJobsByMaxAge.lua",
+        "src/commands/includes/removeJobsByMaxCount.lua",
+        "src/commands/includes/removeLock.lua",
+        "src/commands/includes/removeParentDependencyKey.lua",
+        "src/commands/includes/requeueDeduplicatedJob.lua",
+        "src/commands/includes/trimEvents.lua",
+        "src/commands/includes/updateParentDepsIfNeeded.lua",
+        "src/commands/includes/updateJobFields.lua"
+      ]
+    },
+    {
+      "path": "src/commands/includes/collectMetrics.lua",
+      "commit": "a5e710bf4d1bf689fe40a372b3f0ddbbaaab33cc",
+      "sha256": "07fdaa7eeb35eaf4411f8b136a44518e9cf22b23b768201516f46786cab32f25",
+      "lines": 47,
+      "status": "complete",
+      "includes": [
+        "src/commands/includes/batches.lua"
+      ]
+    },
+    {
+      "path": "src/commands/includes/batches.lua",
+      "commit": "a5e710bf4d1bf689fe40a372b3f0ddbbaaab33cc",
+      "sha256": "a4d779b7fad8f93318062cef70493348423eabce34721e3833355550f4081f29",
+      "lines": 19,
+      "status": "complete",
+      "includes": []
+    },
+    {
+      "path": "src/commands/includes/fetchNextJob.lua",
+      "commit": "a5e710bf4d1bf689fe40a372b3f0ddbbaaab33cc",
+      "sha256": "ad818b37c6e12d153ab0335133f4f2cbdefd56c9b843708506314fd2854209a7",
+      "lines": 95,
+      "status": "complete",
+      "includes": [
+        "src/commands/includes/getQueueMetadata.lua",
+        "src/commands/includes/getNextDelayedTimestamp.lua",
+        "src/commands/includes/getRateLimitTTL.lua",
+        "src/commands/includes/moveJobFromPrioritizedToActive.lua",
+        "src/commands/includes/prepareJobForProcessing.lua",
+        "src/commands/includes/promoteDelayedJobs.lua"
+      ]
+    },
+    {
+      "path": "src/commands/includes/getQueueMetadata.lua",
+      "commit": "a5e710bf4d1bf689fe40a372b3f0ddbbaaab33cc",
+      "sha256": "577f1e5fd1b253aaaa1b2223f2d6bff2a6d83b0a1cdffe49b2132075eef09322",
+      "lines": 22,
+      "status": "complete",
+      "includes": []
+    },
+    {
+      "path": "src/commands/includes/getNextDelayedTimestamp.lua",
+      "commit": "a5e710bf4d1bf689fe40a372b3f0ddbbaaab33cc",
+      "sha256": "0c4c87122b619e36a8c5b6d24ca8425c1f77d09bfbc7d6acc4ea42cf4bc38b9e",
+      "lines": 13,
+      "status": "complete",
+      "includes": []
+    },
+    {
+      "path": "src/commands/includes/getRateLimitTTL.lua",
+      "commit": "a5e710bf4d1bf689fe40a372b3f0ddbbaaab33cc",
+      "sha256": "f740eb2cc40d09398d9394ebfb7e447d07cb90039e7d4043ee6aaf3094bffb1b",
+      "lines": 18,
+      "status": "complete",
+      "includes": []
+    },
+    {
+      "path": "src/commands/includes/moveJobFromPrioritizedToActive.lua",
+      "commit": "a5e710bf4d1bf689fe40a372b3f0ddbbaaab33cc",
+      "sha256": "a0c81dc77dde2f6ba1aad225623578129f9c7932c0caef1976727911f5e3c82c",
+      "lines": 14,
+      "status": "complete",
+      "includes": []
+    },
+    {
+      "path": "src/commands/includes/prepareJobForProcessing.lua",
+      "commit": "a5e710bf4d1bf689fe40a372b3f0ddbbaaab33cc",
+      "sha256": "d62ea80b0e7d8acbfc0bed694c2a091f4acb05e94b479a4bb2019029af1e745d",
+      "lines": 53,
+      "status": "complete",
+      "includes": [
+        "src/commands/includes/addBaseMarkerIfNeeded.lua"
+      ]
+    },
+    {
+      "path": "src/commands/includes/addBaseMarkerIfNeeded.lua",
+      "commit": "a5e710bf4d1bf689fe40a372b3f0ddbbaaab33cc",
+      "sha256": "ec150950e3788f51a3357aed5526514d2998f5702b456de216a820d383468293",
+      "lines": 10,
+      "status": "complete",
+      "includes": []
+    },
+    {
+      "path": "src/commands/includes/promoteDelayedJobs.lua",
+      "commit": "a5e710bf4d1bf689fe40a372b3f0ddbbaaab33cc",
+      "sha256": "3c3ecd10c04c15bd00f3756b99d8bdc8f05fdbda3a000c6c871b5c9787056441",
+      "lines": 45,
+      "status": "complete",
+      "includes": [
+        "src/commands/includes/addBaseMarkerIfNeeded.lua",
+        "src/commands/includes/addJobInTargetList.lua",
+        "src/commands/includes/addJobWithPriority.lua",
+        "src/commands/includes/getPriorityScore.lua"
+      ]
+    },
+    {
+      "path": "src/commands/includes/addJobInTargetList.lua",
+      "commit": "a5e710bf4d1bf689fe40a372b3f0ddbbaaab33cc",
+      "sha256": "66931eea6265579271ee8a0ca704a393b817ef9a436c8af181ea62b4173cdef1",
+      "lines": 12,
+      "status": "complete",
+      "includes": [
+        "src/commands/includes/addBaseMarkerIfNeeded.lua"
+      ]
+    },
+    {
+      "path": "src/commands/includes/addJobWithPriority.lua",
+      "commit": "a5e710bf4d1bf689fe40a372b3f0ddbbaaab33cc",
+      "sha256": "9fe4619ad5877ac77917de5c4ab2a076f87785ae9a5c1ee3978c03b77bbb32ce",
+      "lines": 15,
+      "status": "complete",
+      "includes": [
+        "src/commands/includes/addBaseMarkerIfNeeded.lua",
+        "src/commands/includes/getPriorityScore.lua"
+      ]
+    },
+    {
+      "path": "src/commands/includes/getPriorityScore.lua",
+      "commit": "a5e710bf4d1bf689fe40a372b3f0ddbbaaab33cc",
+      "sha256": "a5acfd597ddf2e62d89bbb1a47250d1911373c739af1a2900f5cf41c8df98396",
+      "lines": 9,
+      "status": "complete",
+      "includes": []
+    },
+    {
+      "path": "src/commands/includes/moveChildFromDependenciesIfNeeded.lua",
+      "commit": "a5e710bf4d1bf689fe40a372b3f0ddbbaaab33cc",
+      "sha256": "5e0a619505a185b43e0eb99464f1d0d346d4a6d7aa4865387ff8ae3f04dfe908",
+      "lines": 71,
+      "status": "complete",
+      "includes": [
+        "src/commands/includes/moveParentToWaitIfNoPendingDependencies.lua",
+        "src/commands/includes/moveParentToWaitIfNeeded.lua",
+        "src/commands/includes/moveParentToWait.lua"
+      ]
+    },
+    {
+      "path": "src/commands/includes/moveParentToWaitIfNoPendingDependencies.lua",
+      "commit": "a5e710bf4d1bf689fe40a372b3f0ddbbaaab33cc",
+      "sha256": "5be65a341126037aeb4f03b0a363169186d09c5285ac2e6cfd68d36308dc82ff",
+      "lines": 14,
+      "status": "complete",
+      "includes": [
+        "src/commands/includes/moveParentToWaitIfNeeded.lua"
+      ]
+    },
+    {
+      "path": "src/commands/includes/moveParentToWaitIfNeeded.lua",
+      "commit": "a5e710bf4d1bf689fe40a372b3f0ddbbaaab33cc",
+      "sha256": "1f434a839559e4225485f87c474b81644ea636290c827879e1f7f25e4d61f062",
+      "lines": 15,
+      "status": "complete",
+      "includes": [
+        "src/commands/includes/moveParentToWait.lua"
+      ]
+    },
+    {
+      "path": "src/commands/includes/moveParentToWait.lua",
+      "commit": "a5e710bf4d1bf689fe40a372b3f0ddbbaaab33cc",
+      "sha256": "144c2a138b70fdbf98df543765fc339bb91e6e07295440717cba11a3e7f6aca3",
+      "lines": 45,
+      "status": "complete",
+      "includes": [
+        "src/commands/includes/addDelayMarkerIfNeeded.lua",
+        "src/commands/includes/addJobInTargetList.lua",
+        "src/commands/includes/addJobWithPriority.lua",
+        "src/commands/includes/isQueuePausedOrMaxed.lua"
+      ]
+    },
+    {
+      "path": "src/commands/includes/addDelayMarkerIfNeeded.lua",
+      "commit": "a5e710bf4d1bf689fe40a372b3f0ddbbaaab33cc",
+      "sha256": "3d7f8676494abd5efcc60ce7df38dfdc0ca0b16ce1cf42bc8a3c0b821cc6c960",
+      "lines": 16,
+      "status": "complete",
+      "includes": [
+        "src/commands/includes/getNextDelayedTimestamp.lua"
+      ]
+    },
+    {
+      "path": "src/commands/includes/isQueuePausedOrMaxed.lua",
+      "commit": "a5e710bf4d1bf689fe40a372b3f0ddbbaaab33cc",
+      "sha256": "fcaa97ed8a992af8a4b9b0a0f7ee4cd2f29cab27ffded187ea00bff1a8373a69",
+      "lines": 19,
+      "status": "complete",
+      "includes": []
+    },
+    {
+      "path": "src/commands/includes/removeDeduplicationKeyIfNeededOnFinalization.lua",
+      "commit": "a5e710bf4d1bf689fe40a372b3f0ddbbaaab33cc",
+      "sha256": "4218946031fbbbd620e9f0d9661d0e5b21d1d20fe3c64cb8f88a0ea5fae8e6c1",
+      "lines": 24,
+      "status": "complete",
+      "includes": []
+    },
+    {
+      "path": "src/commands/includes/removeJobKeys.lua",
+      "commit": "a5e710bf4d1bf689fe40a372b3f0ddbbaaab33cc",
+      "sha256": "8e2615bda8bb9cd297f8a1796a2ee022fd8436cf8d07b3af7f15fcab14593d9d",
+      "lines": 9,
+      "status": "complete",
+      "includes": []
+    },
+    {
+      "path": "src/commands/includes/removeJobsByMaxAge.lua",
+      "commit": "a5e710bf4d1bf689fe40a372b3f0ddbbaaab33cc",
+      "sha256": "dc9b6e76f0b6baffa21570b83e5bea681bfd4dd0d1fd34d3cf38cac80f8d0a35",
+      "lines": 25,
+      "status": "complete",
+      "includes": [
+        "src/commands/includes/batches.lua",
+        "src/commands/includes/removeJob.lua"
+      ]
+    },
+    {
+      "path": "src/commands/includes/removeJob.lua",
+      "commit": "a5e710bf4d1bf689fe40a372b3f0ddbbaaab33cc",
+      "sha256": "0a2435bed1feea6c70c4c5eebe80f03613c2ff16865edbfb2f5d69746de3e480",
+      "lines": 19,
+      "status": "complete",
+      "includes": [
+        "src/commands/includes/removeDeduplicationKeyIfNeededOnRemoval.lua",
+        "src/commands/includes/removeJobKeys.lua",
+        "src/commands/includes/removeParentDependencyKey.lua"
+      ]
+    },
+    {
+      "path": "src/commands/includes/removeDeduplicationKeyIfNeededOnRemoval.lua",
+      "commit": "a5e710bf4d1bf689fe40a372b3f0ddbbaaab33cc",
+      "sha256": "80dc49b0d5480a7ee1243219c34a000a145e652f58678b47997a12e2ba285aec",
+      "lines": 19,
+      "status": "complete",
+      "includes": []
+    },
+    {
+      "path": "src/commands/includes/removeParentDependencyKey.lua",
+      "commit": "a5e710bf4d1bf689fe40a372b3f0ddbbaaab33cc",
+      "sha256": "50463fd1d5058960e3c353170c6dc5b780488ffc0337de8b4b1ab378c8d04a11",
+      "lines": 91,
+      "status": "complete",
+      "includes": [
+        "src/commands/includes/addJobInTargetList.lua",
+        "src/commands/includes/destructureJobKey.lua",
+        "src/commands/includes/isQueuePausedOrMaxed.lua",
+        "src/commands/includes/removeJobKeys.lua"
+      ]
+    },
+    {
+      "path": "src/commands/includes/destructureJobKey.lua",
+      "commit": "a5e710bf4d1bf689fe40a372b3f0ddbbaaab33cc",
+      "sha256": "14f9487f246425067ac8127ca0c51b1971de984892a00475edd061c9526495c4",
+      "lines": 13,
+      "status": "complete",
+      "includes": []
+    },
+    {
+      "path": "src/commands/includes/removeJobsByMaxCount.lua",
+      "commit": "a5e710bf4d1bf689fe40a372b3f0ddbbaaab33cc",
+      "sha256": "d7419999c23b6c306639d3a49844c78f72887e067227798edf1821ca9b368012",
+      "lines": 16,
+      "status": "complete",
+      "includes": [
+        "src/commands/includes/removeJob.lua"
+      ]
+    },
+    {
+      "path": "src/commands/includes/removeLock.lua",
+      "commit": "a5e710bf4d1bf689fe40a372b3f0ddbbaaab33cc",
+      "sha256": "134e61baaae583104931ed55a47a000c86ebed80e543127805cb935f75e76362",
+      "lines": 20,
+      "status": "complete",
+      "includes": []
+    },
+    {
+      "path": "src/commands/includes/requeueDeduplicatedJob.lua",
+      "commit": "a5e710bf4d1bf689fe40a372b3f0ddbbaaab33cc",
+      "sha256": "0d26141ab6ccf894670d887cef8eb2be26db9db884eaef2ae82b06f8f049bd2e",
+      "lines": 66,
+      "status": "complete",
+      "includes": [
+        "src/commands/includes/getOrSetMaxEvents.lua",
+        "src/commands/includes/setDeduplicationKey.lua",
+        "src/commands/includes/storeAndEnqueueJob.lua"
+      ]
+    },
+    {
+      "path": "src/commands/includes/getOrSetMaxEvents.lua",
+      "commit": "a5e710bf4d1bf689fe40a372b3f0ddbbaaab33cc",
+      "sha256": "4d8b833674ac6edd192390760820202237c64113ea9aa602cda40c64978836d8",
+      "lines": 12,
+      "status": "complete",
+      "includes": []
+    },
+    {
+      "path": "src/commands/includes/setDeduplicationKey.lua",
+      "commit": "a5e710bf4d1bf689fe40a372b3f0ddbbaaab33cc",
+      "sha256": "7685a303a4d9a2a71d6031310392972021046e6e7e95125df415a286dbd8598f",
+      "lines": 13,
+      "status": "complete",
+      "includes": []
+    },
+    {
+      "path": "src/commands/includes/storeAndEnqueueJob.lua",
+      "commit": "a5e710bf4d1bf689fe40a372b3f0ddbbaaab33cc",
+      "sha256": "11bdd8745c091e93e2a45baf94b993b25c06f881966c1c7bdced11f2f97dd56b",
+      "lines": 43,
+      "status": "complete",
+      "includes": [
+        "src/commands/includes/addDelayedJob.lua",
+        "src/commands/includes/addJobInTargetList.lua",
+        "src/commands/includes/addJobWithPriority.lua",
+        "src/commands/includes/isQueuePausedOrMaxed.lua",
+        "src/commands/includes/storeJob.lua"
+      ]
+    },
+    {
+      "path": "src/commands/includes/addDelayedJob.lua",
+      "commit": "a5e710bf4d1bf689fe40a372b3f0ddbbaaab33cc",
+      "sha256": "18acfd7e96d09f13e2ef7d32aa3bd5c275f3e299a8feab828021729988ff9781",
+      "lines": 24,
+      "status": "complete",
+      "includes": [
+        "src/commands/includes/addDelayMarkerIfNeeded.lua",
+        "src/commands/includes/getDelayedScore.lua"
+      ]
+    },
+    {
+      "path": "src/commands/includes/getDelayedScore.lua",
+      "commit": "a5e710bf4d1bf689fe40a372b3f0ddbbaaab33cc",
+      "sha256": "0bbdffbea53afe77d8b0eba61d2244d0af5ec178c3d1e0bcf8ce53d28a43b96e",
+      "lines": 26,
+      "status": "complete",
+      "includes": []
+    },
+    {
+      "path": "src/commands/includes/storeJob.lua",
+      "commit": "a5e710bf4d1bf689fe40a372b3f0ddbbaaab33cc",
+      "sha256": "0f9d95ab1007536b59faa5fcc6065cf4d800db28541939f6b2ce5c044c5dc9df",
+      "lines": 37,
+      "status": "complete",
+      "includes": []
+    },
+    {
+      "path": "src/commands/includes/trimEvents.lua",
+      "commit": "a5e710bf4d1bf689fe40a372b3f0ddbbaaab33cc",
+      "sha256": "b1789c2944dcaf294549d370d71b69cfc2891e27edb0887b36867ccf00dbdd64",
+      "lines": 16,
+      "status": "complete",
+      "includes": [
+        "src/commands/includes/getOrSetMaxEvents.lua"
+      ]
+    },
+    {
+      "path": "src/commands/includes/updateParentDepsIfNeeded.lua",
+      "commit": "a5e710bf4d1bf689fe40a372b3f0ddbbaaab33cc",
+      "sha256": "41046a08ed3482f46f815fe616dda12586abca32b5f2932b38867798c3c25cd1",
+      "lines": 14,
+      "status": "complete",
+      "includes": [
+        "src/commands/includes/moveParentToWaitIfNoPendingDependencies.lua"
+      ]
+    },
+    {
+      "path": "src/commands/includes/updateJobFields.lua",
+      "commit": "a5e710bf4d1bf689fe40a372b3f0ddbbaaab33cc",
+      "sha256": "53e94aeb3799f690ab90045fb6ff0febaca58487e9ff4e8f9aaec9e3408f5358",
+      "lines": 12,
+      "status": "complete",
+      "includes": []
+    },
+    {
+      "path": "src/commands/moveStalledJobsToWait-9.lua",
+      "commit": "a5e710bf4d1bf689fe40a372b3f0ddbbaaab33cc",
+      "sha256": "8fb4ac0392dee823b7a46ec226ba1783921011d1d8c53eccd054f42e14c46688",
+      "lines": 123,
+      "status": "complete",
+      "includes": [
+        "src/commands/includes/batches.lua",
+        "src/commands/includes/moveJobToWait.lua",
+        "src/commands/includes/trimEvents.lua"
+      ]
+    },
+    {
+      "path": "src/commands/includes/moveJobToWait.lua",
+      "commit": "a5e710bf4d1bf689fe40a372b3f0ddbbaaab33cc",
+      "sha256": "9d329bb9c21bb07e46d8f8040db52b8cea0c4a6ee3352ab92e772cd397e64a40",
+      "lines": 16,
+      "status": "complete",
+      "includes": [
+        "src/commands/includes/addJobInTargetList.lua",
+        "src/commands/includes/isQueuePausedOrMaxed.lua"
+      ]
+    },
+    {
+      "path": "src/commands/extendLocks-1.lua",
+      "commit": "a5e710bf4d1bf689fe40a372b3f0ddbbaaab33cc",
+      "sha256": "73329acb4eada5acbddbc75d9f3b877accf7e0ffcf6f12014e8a0a2455dba657",
+      "lines": 49,
+      "status": "complete",
+      "includes": []
+    }
+  ],
+  "limits": "Literal include closure inventory only; source reading credit remains in queue.json. No Lua execution or production state claim."
+}

@@ -1,0 +1,29 @@
+# CEL async lifecycle and evidence boundaries
+
+Source-only review, 2026-10-18 UTC. Existing CEL v0.31.0 pin and license provenance apply. Complete reads: `cel/async/async.go:1–235`, `async_test.go:1–261`, BUILD1–35; `cel/program_async_test.go:1–998`; `interpreter/async.go:1–530`, `async_test.go:1–1046`; `test/async.go:1–39`. Caller re-reads: `cel/program.go:451–644`, `interpreter/frame.go:81–150/225–345`, `common/functions/functions.go:1–81`, `common/decls/decls.go:950–1010`. No tests, callbacks, evaluations, requests or reproductions executed. r78 verifies reading/provenance consistency, not these behaviors at runtime.
+
+## Cancellation is cooperative
+
+The actual adapter changes the cancellation interpretation. `decls.go:968–993` installs wrapAsyncOp, invoking the blocking callback inline at990 before returning its buffered channel. It does not spawn a second bridge worker. `interpreter/async.go:326–378` acquires admission, reports start synchronously and launches a worker, which calls impl at356. Only after impl returns does it select result versus cancellation363–375. A context-ignoring blocking AsyncBinding can therefore retain this worker and its slot after cancellation; the later select cannot interrupt the earlier synchronous call. A channel-based implementation promptly returning a channel has a different boundary. No duration, leak or customer impact is measured.
+
+ConcurrentEval `program.go:504–644` can return independently. `frame.Close:117–150` cancels and releases pooled tracking/activation without joining callbacks. Recovery `program:515–524` is evaluator-local, not arbitrary worker recovery. Timeout wrapper `async/async.go:124–137` adds a worker and abandons its result on timeout; documentation115–123 acknowledges continued work when cancellation is ignored. These interfaces provide cooperative cancellation, not execution isolation. Program concurrency defaults to100 (`program:474–485`); direct frame nonpositive limits are unlimited (`frame:304–316`). Gate.Complete `interpreter/async:505–522` decrements activity before completion delivery: zero active calls does not establish consumed notifications, despite frame comment265–266.
+
+## Identity and observer evidence
+
+Tracker218–243 uses locked lookup/recheck. Hash152–203 indexes candidates; matches381–405 verifies node/function/overload/arity and CEL equality, with NaN equivalence. Complex values share coarse buckets but still undergo matching. Arguments251–258 retain the slice, not an immutable deep evidence snapshot. Pool release420–443 clears maps/resets IDs: positive cleanup, no demonstrated cross-customer leak.
+
+Observer start345–347 receives raw arguments synchronously; finish350–353 precedes gate completion. These call sites provide no masking, persistence, callback timeout or worker-local recovery. A blocking observer could delay lifecycle progress (source inference); no observer fault, actual sink or secret disclosure established.
+
+## What authored tests actually establish
+
+Interpreter tests126–159/285–330 distinguish argument identities and repeated reuse;635–687 checks matching/NaN;475–532 checks immediate admitted count, eventual completion and high-water bound. Cancellation562–604 explicitly joins its cooperative synthetic callback with WaitGroup/deadline; this does not establish termination of ignoring callbacks. Observer378–435 checks call identity/function/overload/error text. Pool606–633/863–893 checks cleared maps/fresh IDs. Exhaustive trace895–1025 checks false and no unknown among returned state IDs, but no exact nonempty expected ID set. Setup1027–1046 requires missing-context errors. Fixed hash tests161–283 do not establish collision freedom.
+
+Program table runner440–504 checks values/errors, but launch assertion465–469 runs only for wantLaunches>0; zero-expected cases do not establish zero through this runner. Separate sync guard658–680 requires zero callbacks. maxLive460–464 is checked only for table maxConc>0; options-only limits are not that assertion. Aggregate goroutine check490–500 after one second is not an attributed join. Observer575–601 checks two starts/two finishes; cancellation640–656 checks errors.Is. Recovery816–916 asserts typed causes without an actual worker panic fixture. Drain707–781 checks exact pass counts/value/minimum elapsed time, not general performance.
+
+Wrapper tests `async/async_test.go:62–162` check retries, positive counts and nonretry errors; cancellation checks text/timing. Timeout238–261 ignores context and checks fast return without joining its worker. Accessor test174–185 exercises its own mock, not production state. Retry options `async.go:153–163` do not validate positive attempts; loop174–222 can return nil lastErr when no attempt occurs (source inference, no invocation). Retryability229–235 recognizes specific wrapped errors. DrainNone documentation69 says default, while actual program initialization251 uses DrainReady(100 microseconds): cite the configured layer.
+
+## Assessment connection and remaining boundaries
+
+Executable-claim receipts should distinguish evaluation result, callback attempts, completion, cancellation acknowledgement and resource cleanup. Observer events alone prove neither remote action nor callback termination. A future experiment would need exact identities/counts and explicit joins for cooperative and ignoring callbacks; none was performed. Actual customer callbacks and observer retention remain unknown. Named async files are closed; generated parser and existing optimizer/evaluation/dependency queues remain. The flagged operation remains stopped with no equivalent reproduction.
+
+Task105 initially reported the canonical annotation written, but the attempted shell append failed before modifying it. This standalone note is the corrected durable annotation; the failed append was a documentation command, not a test or runtime experiment.

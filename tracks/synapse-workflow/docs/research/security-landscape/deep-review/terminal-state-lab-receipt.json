@@ -1,0 +1,122 @@
+{
+  "at": "2026-10-17T19:41:47.233Z",
+  "node": "v24.21.0",
+  "elapsedMs": 4.276199999999996,
+  "scope": "In-memory transport only; zero network, daemon or target execution",
+  "groundTruth": {
+    "simulated": true,
+    "stoppedEarly": true,
+    "pendingRules": 3,
+    "workerTerminationObserved": false
+  },
+  "calls": [
+    {
+      "operation": "version",
+      "parameters": {}
+    },
+    {
+      "operation": "newContext",
+      "parameters": {
+        "contextName": "nbret-dff7539b-ddff-42bf-b8a5-0bae63cdf86a"
+      }
+    },
+    {
+      "operation": "includeInContext",
+      "parameters": {
+        "contextName": "nbret-dff7539b-ddff-42bf-b8a5-0bae63cdf86a",
+        "regex": "^http://fixture\\.invalid/allowed(?:\\?.*)?$"
+      }
+    },
+    {
+      "operation": "setContextInScope",
+      "parameters": {
+        "contextName": "nbret-dff7539b-ddff-42bf-b8a5-0bae63cdf86a",
+        "booleanInScope": "true"
+      }
+    },
+    {
+      "operation": "accessUrl",
+      "parameters": {
+        "url": "http://fixture.invalid/allowed",
+        "followRedirects": "false"
+      }
+    },
+    {
+      "operation": "urls",
+      "parameters": {
+        "baseurl": "http://fixture.invalid/allowed"
+      }
+    },
+    {
+      "operation": "scan",
+      "parameters": {
+        "url": "http://fixture.invalid/allowed",
+        "recurse": "false",
+        "inScopeOnly": "true",
+        "contextId": "17"
+      }
+    },
+    {
+      "operation": "status",
+      "parameters": {
+        "scanId": "23"
+      }
+    },
+    {
+      "operation": "recordsToScan",
+      "parameters": {}
+    },
+    {
+      "operation": "alerts",
+      "parameters": {
+        "baseurl": "http://fixture.invalid/",
+        "start": "0",
+        "count": "100"
+      }
+    },
+    {
+      "operation": "removeContext",
+      "parameters": {
+        "contextName": "nbret-dff7539b-ddff-42bf-b8a5-0bae63cdf86a"
+      }
+    }
+  ],
+  "result": {
+    "schemaVersion": 1,
+    "tier": 4,
+    "mode": "active",
+    "origins": [
+      "http://fixture.invalid"
+    ],
+    "scopeMode": "urls",
+    "urls": [
+      "http://fixture.invalid/allowed"
+    ],
+    "startedAt": "2026-10-17T19:41:47.229Z",
+    "maxMs": 1000,
+    "status": "completed",
+    "scans": [
+      {
+        "id": "23",
+        "url": "http://fixture.invalid/allowed",
+        "progress": 100
+      }
+    ],
+    "alerts": [],
+    "errors": [],
+    "limitations": [
+      "ZAP findings require review; absence of alerts is not proof of security.",
+      "Only explicitly listed URLs are seeded; recursive scanning and spidering are disabled.",
+      "Active scanning sends attack requests and requires explicit authorization for the supplied scope."
+    ],
+    "version": "simulated-2.17.0",
+    "contextRemoved": true,
+    "finishedAt": "2026-10-17T19:41:47.230Z"
+  },
+  "sourceSha256": {
+    "src/zap.mjs": "9f3fd2ea88f4055f0a66386bd5f5654ee8992135a6ff11b1ffd0de3a0595572f",
+    "src/tiers.mjs": "1d818bf93c8c700b6afe7c2773a3d602a917ee3f7cefdc1d6eb2c311f569cf64",
+    "scripts/research-scanner-terminal-lab.mjs": "09d78429b342566be6f6ee4955fcc2906b16daa46b5dd16e6bb8926a57d79de5",
+    "docs/research/security-landscape/deep-review/terminal-state-lab-plan.md": "d6a31f972f968d31a96a8ee4c9ca93356efdd36296e4856407ad1ebb88c89dd4"
+  }
+}

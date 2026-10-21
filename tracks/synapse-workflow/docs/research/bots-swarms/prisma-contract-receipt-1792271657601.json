@@ -1,0 +1,139 @@
+{
+  "at": "2026-10-17T21:14:17.601Z",
+  "node": "v24.21.0",
+  "scope": "unchanged adapter; inert sequential store; no ORM/database or concurrency validation",
+  "hashes": {
+    "lib/RateLimiterPrisma.js": "cc9238b83820eb8b8f3e4f7dd060013308594c2c48d356632bbe58dbc028fd1f",
+    "lib/RateLimiterStoreAbstract.js": "8844511c3231b96dcf89a0d3d56b69112f4e4b563f73018fdce26e670f6c551f",
+    "lib/RateLimiterInsuredAbstract.js": "8b515fc09ba78213b367962c9ff306c70f2889286a8bf9faa8a1ce70ddb05847",
+    "lib/RateLimiterAbstract.js": "f659ed1fa6065e8cbf554621997bb2192870b7efd091e80e9a006229e0d629a8",
+    "lib/RateLimiterRes.js": "26237351781d300c123b207009c5a84fe78c6e1e9a89bc5579e1c02f97452349"
+  },
+  "checks": [
+    {
+      "name": "finite live record increments",
+      "pass": true
+    },
+    {
+      "name": "expired record resets",
+      "pass": true
+    },
+    {
+      "name": "null expiry replaced on subsequent finite upsert",
+      "pass": true
+    },
+    {
+      "name": "duration zero consecutive upserts each return one",
+      "pass": true
+    },
+    {
+      "name": "false option still schedules timer",
+      "pass": true
+    },
+    {
+      "name": "cleanup timer destroyed",
+      "pass": true
+    }
+  ],
+  "calls": [
+    {
+      "op": "findFirst",
+      "query": {
+        "where": {
+          "key": "rlflx:synthetic"
+        }
+      }
+    },
+    {
+      "op": "update",
+      "query": {
+        "where": {
+          "key": "rlflx:synthetic"
+        },
+        "data": {
+          "points": 4
+        }
+      }
+    },
+    {
+      "op": "findFirst",
+      "query": {
+        "where": {
+          "key": "rlflx:synthetic"
+        }
+      }
+    },
+    {
+      "op": "update",
+      "query": {
+        "where": {
+          "key": "rlflx:synthetic"
+        },
+        "data": {
+          "points": 1,
+          "expire": "2026-10-17T21:15:17.601Z"
+        }
+      }
+    },
+    {
+      "op": "findFirst",
+      "query": {
+        "where": {
+          "key": "rlflx:synthetic"
+        }
+      }
+    },
+    {
+      "op": "update",
+      "query": {
+        "where": {
+          "key": "rlflx:synthetic"
+        },
+        "data": {
+          "points": 1,
+          "expire": "2026-10-17T21:15:17.601Z"
+        }
+      }
+    },
+    {
+      "op": "findFirst",
+      "query": {
+        "where": {
+          "key": "rlflx:synthetic"
+        }
+      }
+    },
+    {
+      "op": "create",
+      "query": {
+        "data": {
+          "key": "rlflx:synthetic",
+          "points": 1,
+          "expire": null
+        }
+      }
+    },
+    {
+      "op": "findFirst",
+      "query": {
+        "where": {
+          "key": "rlflx:synthetic"
+        }
+      }
+    },
+    {
+      "op": "update",
+      "query": {
+        "where": {
+          "key": "rlflx:synthetic"
+        },
+        "data": {
+          "points": 1,
+          "expire": null
+        }
+      }
+    }
+  ],
+  "allSyntheticPromisesSettled": true,
+  "timerCleared": true
+}

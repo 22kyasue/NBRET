@@ -1,0 +1,106 @@
+{
+  "at": "2026-10-17T21:40:29.019Z",
+  "runs": [
+    {
+      "at": "2026-10-17T21:40:13.292Z",
+      "out": "C:\\Users\\kotar\\githubprojects\\NBRET\\runs\\nuclei-http-cache-budget-1792273212306",
+      "exit": 0,
+      "elapsedMs": 983.7626,
+      "scope": "Exact budget decision functions; minimal structure; synthetic local filesystem only",
+      "source": {
+        "commit": "a151a1d54fad0d5ef71f01662b0bb3955a98c7c5",
+        "path": "pkg/protocols/http/httpcache/httpcache.go",
+        "range": [
+          173,
+          202
+        ],
+        "sha256": "5be76e94a7fccbe86383aed0022404ce2c876a338a4b040ecf1b6575d59978b8",
+        "extractedSha256": "3ee4147dcfd514b97ddc2208ea910446bec2c4bc3e83d2d4a98b638a67b8f415"
+      },
+      "fixtureSha256": "683ef83200a08aa1d5e8b5811b59e0fedbdda99aaaf9fb16d7e81e7e5cf4b030",
+      "implementationSha256": "7d11aa20e75202866e90dd595129b8b06aaef433682f54dbe05ea52e22fb40e0",
+      "command": {
+        "executable": "C:\\Users\\kotar\\githubprojects\\NBRET\\.tools\\security-research-go\\sdk\\go\\bin\\go.exe",
+        "args": [
+          "test",
+          "-count=1",
+          "-json",
+          "."
+        ],
+        "cwd": "C:\\Users\\kotar\\githubprojects\\NBRET\\runs\\nuclei-http-cache-budget-1792273212306"
+      },
+      "version": "go version go1.27.2 windows/amd64",
+      "moduleNetwork": {
+        "GOPROXY": "off",
+        "GOSUMDB": "off"
+      },
+      "tests": [
+        {
+          "test": "TestBelowBudgetControl",
+          "action": "pass"
+        },
+        {
+          "test": "TestFullDirectoryOnlySampled",
+          "action": "pass"
+        },
+        {
+          "test": "TestMemoryFallbackNoBudget",
+          "action": "pass"
+        }
+      ],
+      "stdoutSha256": "dd31d63eb2db7c8a2d5879bc8b160a298f90755df05d9bfee03b8de9f5cfe590",
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "at": "2026-10-17T21:40:14.810Z",
+      "out": "C:\\Users\\kotar\\githubprojects\\NBRET\\runs\\nuclei-http-cache-budget-1792273213899",
+      "exit": 0,
+      "elapsedMs": 910.0743,
+      "scope": "Exact budget decision functions; minimal structure; synthetic local filesystem only",
+      "source": {
+        "commit": "a151a1d54fad0d5ef71f01662b0bb3955a98c7c5",
+        "path": "pkg/protocols/http/httpcache/httpcache.go",
+        "range": [
+          173,
+          202
+        ],
+        "sha256": "5be76e94a7fccbe86383aed0022404ce2c876a338a4b040ecf1b6575d59978b8",
+        "extractedSha256": "3ee4147dcfd514b97ddc2208ea910446bec2c4bc3e83d2d4a98b638a67b8f415"
+      },
+      "fixtureSha256": "683ef83200a08aa1d5e8b5811b59e0fedbdda99aaaf9fb16d7e81e7e5cf4b030",
+      "implementationSha256": "7d11aa20e75202866e90dd595129b8b06aaef433682f54dbe05ea52e22fb40e0",
+      "command": {
+        "executable": "C:\\Users\\kotar\\githubprojects\\NBRET\\.tools\\security-research-go\\sdk\\go\\bin\\go.exe",
+        "args": [
+          "test",
+          "-count=1",
+          "-json",
+          "."
+        ],
+        "cwd": "C:\\Users\\kotar\\githubprojects\\NBRET\\runs\\nuclei-http-cache-budget-1792273213899"
+      },
+      "version": "go version go1.27.2 windows/amd64",
+      "moduleNetwork": {
+        "GOPROXY": "off",
+        "GOSUMDB": "off"
+      },
+      "tests": [
+        {
+          "test": "TestBelowBudgetControl",
+          "action": "pass"
+        },
+        {
+          "test": "TestFullDirectoryOnlySampled",
+          "action": "pass"
+        },
+        {
+          "test": "TestMemoryFallbackNoBudget",
+          "action": "pass"
+        }
+      ],
+      "stdoutSha256": "b09b651675005df866b72971dd7d11141dd8f24e9528d5281839f860277fb35e",
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "semanticRepeatConsistent": true
+}

@@ -7,3 +7,5 @@ sessions/
 .env*
 *.log
 __pycache__/
+.scratch/
+.tools/

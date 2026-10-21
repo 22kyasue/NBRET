@@ -1,0 +1,59 @@
+{
+  "at": "2026-10-17T21:22:46.712Z",
+  "scope": "ordinary numeric conversion representation controls and boundary values; no authorization model/server/target",
+  "out": "C:\\Users\\kotar\\.codex\\research\\assessment-evidence-receipts\\openfga-1792272163632",
+  "command": {
+    "exe": "C:\\Users\\kotar\\githubprojects\\NBRET\\.tools\\security-research-go\\sdk\\go\\bin\\go.exe",
+    "args": [
+      "test",
+      "-p",
+      "2",
+      "-overlay",
+      "C:\\Users\\kotar\\.codex\\research\\assessment-evidence-receipts\\openfga-1792272163632\\overlay.json",
+      "./internal/condition/types",
+      "-run",
+      "^TestEvidence",
+      "-count=1",
+      "-json"
+    ],
+    "cwd": "C:/Users/kotar/.codex/research/openfga-20261017"
+  },
+  "toolchain": "go version go1.27.2 windows/amd64",
+  "environment": {
+    "GOTOOLCHAIN": "local",
+    "CGO_ENABLED": "0",
+    "GOPATH": "C:\\Users\\kotar\\githubprojects\\NBRET\\.tools\\security-research-go\\module-cache",
+    "GOCACHE": "C:/Users/kotar/.codex/research/assessment-evidence-receipts/openfga-1792267376264/build-cache",
+    "GOPROXY": "https://proxy.golang.org",
+    "GOSUMDB": "sum.golang.org"
+  },
+  "code": 0,
+  "signal": null,
+  "elapsedMs": 3114,
+  "sourceSha256": {
+    "go.mod": "6c5e972de64e7e06f544873a77ddf84de5d86100d1ae96be3555c04b62c10be8",
+    "go.sum": "c08837e3f91fe661b0ae2c0e3c561d4f39141b15f40433d7e6d924568b19aa03",
+    "internal/condition/types/types.go": "f90f6f4a36b9b1027c87457b34e7f223d270198d1961862b699e303fb6fc15ad",
+    "internal/condition/types/converters.go": "795105dc9163c92bc99e825f00c5f3554a8ace198090ffc2bed98b700e69c18a",
+    "internal/condition/types/primitives.go": "8424e88655bba776f7ce238da1b46a2843b01a304ff76793b6eec96c13acf24f"
+  },
+  "fixtureSha256": "730cee19b99d6e2d9ec95b3a377a3b6905865023f2c25de24f678569cf76b08a",
+  "fixturePath": "C:\\Users\\kotar\\githubprojects\\NBRET\\docs\\research\\assessment-evidence\\deep-openfga-numeric-lab_test.go",
+  "runnerSha256": "5a87c4c27c2cc2e23bb5dccecfe5e3b85955b2f4cd1c23773a9bb9d97802b4d8",
+  "overlaySha256": "536437844798df5ba0018ce994d2ef21c5dab8d173446799b4021c3bc1bb39b9",
+  "stdoutSha256": "783fe9a8fc5933fd418cb87d35e2c50825d4d2ec27b0e104e238fa3145499303",
+  "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "tests": [
+    {
+      "Time": "2026-10-17T14:22:46.6710292-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/condition/types",
+      "Test": "TestEvidenceNumericRepresentations",
+      "Elapsed": 0
+    }
+  ],
+  "intervention": "Researcher authored numeric representation fixture; actual ParameterType/converter implementations unchanged.",
+  "cost": "no provider calls; unmetered local CPU/build dependency download, no monetary estimate",
+  "originalIntervention": "fixture and map cache/delegate authored by researcher; production resolver unchanged",
+  "metadataCorrection": "Generic inherited runner intervention label corrected after run; original retained. Commands, hashes, raw logs, statuses and test results unchanged."
+}

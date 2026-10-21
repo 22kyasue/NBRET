@@ -1,0 +1,79 @@
+{
+  "at": "2026-10-17T20:24:17.582Z",
+  "scope": "actual in-memory tuples/model/resolver with synthetic grant/revoke; descriptor deletion and iterator policy; no app/server/target",
+  "out": "C:\\Users\\kotar\\.codex\\research\\assessment-evidence-receipts\\openfga-1792268648171",
+  "command": {
+    "exe": "C:\\Users\\kotar\\githubprojects\\NBRET\\.tools\\security-research-go\\sdk\\go\\bin\\go.exe",
+    "args": [
+      "test",
+      "-p",
+      "2",
+      "-overlay",
+      "C:\\Users\\kotar\\.codex\\research\\assessment-evidence-receipts\\openfga-1792268648171\\overlay.json",
+      "./internal/check",
+      "-run",
+      "^TestEvidence",
+      "-count=1",
+      "-json"
+    ],
+    "cwd": "C:/Users/kotar/.codex/research/openfga-20261017"
+  },
+  "toolchain": "go version go1.27.2 windows/amd64",
+  "environment": {
+    "GOTOOLCHAIN": "local",
+    "CGO_ENABLED": "0",
+    "GOPATH": "C:\\Users\\kotar\\githubprojects\\NBRET\\.tools\\security-research-go\\module-cache",
+    "GOCACHE": "C:/Users/kotar/.codex/research/assessment-evidence-receipts/openfga-1792267376264/build-cache",
+    "GOPROXY": "https://proxy.golang.org",
+    "GOSUMDB": "sum.golang.org"
+  },
+  "code": 0,
+  "signal": null,
+  "elapsedMs": 9477,
+  "sourceSha256": {
+    "go.mod": "6c5e972de64e7e06f544873a77ddf84de5d86100d1ae96be3555c04b62c10be8",
+    "go.sum": "c08837e3f91fe661b0ae2c0e3c561d4f39141b15f40433d7e6d924568b19aa03",
+    "internal/check/check.go": "63e0093011f434f9925b4321c258b8e0ba0a3f2985a8c04c0b92d8dcb48b79d3",
+    "internal/check/request.go": "32caff9e413f333a1df77a935c3ca5abc3055919bf81a82420fc9e1e89af6cec",
+    "internal/check/default.go": "961efaceea2bff071558acba4dc8db1d78b9b4b4520f5257f389120e445e6eeb",
+    "internal/check/recursive.go": "50cc2c2fd0230f270a5ef08d7b624733c5db581e3279f5c4ceada4ac010db496",
+    "internal/check/bottom_up.go": "2256eb4cc8981ad9ad7b5e9f29a5f7ea4af92a45f698fd4fa8779aa138eaaf2a",
+    "internal/check/weight2.go": "9415f58d09c90e98c6658ddec3489f114fa67a31cf7e2fc20b823f6c194b3efa",
+    "internal/check/filters.go": "3e10a03e893418acbe9c16b901a0a0632cb4fb1bb1c3647c5bdee8044868a8f8",
+    "internal/check/recursive_ttu_collision_test.go": "5eefb97640044824e4ada83387fa673b3c4ac190967bbfffdf763f8173f4c17f",
+    "pkg/storage/memory/memory.go": "517d431b31a0fa8a5517877a8717f7596c86c772645bf8d5ac10981ac7507463",
+    "internal/modelgraph/model.go": "8f78dac27b8425f2a10d8f46ea818d201be3e2b0b775e9917cfe20d29d7f3c48",
+    "internal/iterator/filter.go": "e168528eb3c24f505e46fadd3aeea240d22e3b3181acbe3fac41b9cce2069fcd"
+  },
+  "fixtureSha256": "af854a00b0764a23f99beeff19a6f746d5b51864d6bed3ed5782bb1ff2613663",
+  "fixturePath": "C:\\Users\\kotar\\githubprojects\\NBRET\\docs\\research\\assessment-evidence\\deep-openfga-state-lab_test.go",
+  "runnerSha256": "f6dc966bce4fff752c465ed28be138a38600475d28377320d6ba9bf491297803",
+  "overlaySha256": "7e3463d346a6b9d00f88aa44c47b8d9d1d1ae78422e1a960572d51a93d699588",
+  "stdoutSha256": "23e59c416cc35b1e3de406bea7df572aa98469aa101ea2233db5acdc08554f7c",
+  "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "tests": [
+    {
+      "Time": "2026-10-17T13:24:17.4152926-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/check",
+      "Test": "TestEvidenceActualGrantRevoke",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T13:24:17.4152926-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/check",
+      "Test": "TestEvidenceStoreDescriptorNotErasure",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T13:24:17.4152926-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/check",
+      "Test": "TestEvidenceFilterErrorPolicy",
+      "Elapsed": 0
+    }
+  ],
+  "intervention": "researcher-authored model/states/map cache; actual production implementations unchanged",
+  "cost": "no provider calls; unmetered local CPU/build dependency download, no monetary estimate"
+}

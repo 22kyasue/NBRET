@@ -1,0 +1,52 @@
+[
+  {
+    "name": "scrapy",
+    "upstream": "scrapy/scrapy",
+    "root": "C:\\Users\\kotar\\githubprojects\\NBRET\\.tools\\bots-swarms\\scrapy",
+    "commit": "32579047288e06656d10b7fe97fc9acb092de8ad",
+    "date": "2026-10-17T19:36:25+05:00",
+    "dirty": "",
+    "retrievedAt": "2026-10-17T19:52:43.116Z",
+    "basis": "Upstream shallow snapshot; no release or runtime verification implied"
+  },
+  {
+    "name": "bullmq",
+    "upstream": "taskforcesh/bullmq",
+    "root": "C:\\Users\\kotar\\githubprojects\\NBRET\\.tools\\bots-swarms\\bullmq",
+    "commit": "a5e710bf4d1bf689fe40a372b3f0ddbbaaab33cc",
+    "date": "2026-10-16T23:27:34-07:00",
+    "dirty": "",
+    "retrievedAt": "2026-10-17T19:52:44.825Z",
+    "basis": "Upstream shallow snapshot; no release or runtime verification implied"
+  },
+  {
+    "name": "rate-limiter-flexible",
+    "upstream": "animir/node-rate-limiter-flexible",
+    "root": "C:\\Users\\kotar\\githubprojects\\NBRET\\.tools\\bots-swarms\\rate-limiter-flexible",
+    "commit": "d19a457455338b73172d47d004f402bd0b748152",
+    "date": "2026-10-17T10:22:50+02:00",
+    "dirty": "",
+    "retrievedAt": "2026-10-17T19:52:46.273Z",
+    "basis": "Upstream shallow snapshot; no release or runtime verification implied"
+  },
+  {
+    "name": "coraza",
+    "upstream": "corazawaf/coraza",
+    "root": "C:\\Users\\kotar\\githubprojects\\NBRET\\.tools\\bots-swarms\\coraza",
+    "commit": "b3c652296752293652db04a54079c020e1be3c01",
+    "date": "2026-10-17T14:25:44Z",
+    "dirty": "",
+    "retrievedAt": "2026-10-17T19:52:48.285Z",
+    "basis": "Upstream shallow snapshot; no release or runtime verification implied"
+  },
+  {
+    "name": "memberlist",
+    "upstream": "hashicorp/memberlist",
+    "root": "C:\\Users\\kotar\\githubprojects\\NBRET\\.tools\\bots-swarms\\memberlist",
+    "commit": "5cd2c4b0fb09caea5de03aae1adb9c36374ef3e0",
+    "date": "2026-10-12T07:36:59+01:00",
+    "dirty": "",
+    "retrievedAt": "2026-10-17T20:02:25.721Z",
+    "basis": "Default branch shallow snapshot; legitimate gossip membership/failure detection study; no execution"
+  }
+]

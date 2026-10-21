@@ -1,0 +1,31 @@
+{
+  "at": "2026-10-17T22:09:49.396Z",
+  "command": [
+    "C:/Users/kotar/.codex/research/assessment-evidence-venv/Scripts/python.exe",
+    "-m",
+    "pytest",
+    "-q",
+    "-p",
+    "no:cacheprovider",
+    "-p",
+    "pytest_asyncio.plugin",
+    "--basetemp",
+    "C:\\Users\\kotar\\.codex\\research\\assessment-evidence-receipts\\s3-reference-evidence-1792274988114\\pytest-temp",
+    "C:\\Users\\kotar\\githubprojects\\NBRET\\docs\\research\\assessment-evidence\\test_s3_reference_evidence_contract.py"
+  ],
+  "out": "C:\\Users\\kotar\\.codex\\research\\assessment-evidence-receipts\\s3-reference-evidence-1792274988114",
+  "exitCode": 0,
+  "stdout": "...                                                                      [100%]\r\n3 passed in 0.67s\r\n",
+  "stderr": "",
+  "elapsedMs": 1283,
+  "sourceSha256": {
+    "examples/session_stores/s3_session_store.py": "d21a843773be8cfd8baad768c4b34e5f3b3bb65fb676f882aab61705244cfeab"
+  },
+  "fixtureSha256": "9e651ed706b5a500dcc6015b590a4f4f20fdcc32b9bd2e2e04dc5938f0ba5a06",
+  "runnerSha256": "81cebb969d437dc026ca5918416b7bab9dafe37ae8914e9564b2dca294cb51fa",
+  "packages": "annotated-types==0.8.0\r\nanyio==4.15.1\r\nattrs==26.1.0\r\ncertifi==2026.7.22\r\ncffi==2.1.1\r\nclick==8.5.0\r\ncolorama==0.4.6\r\ncryptography==50.0.2\r\ndocstring_parser==0.18.0\r\nh11==0.16.0\r\nhttpcore==1.0.9\r\nhttpcore2==2.13.1\r\nhttpx==0.28.1\r\nhttpx2==2.13.1\r\nidna==3.20\r\niniconfig==2.3.1\r\njsonschema==4.26.0\r\njsonschema-specifications==2025.9.1\r\nmcp==2.3.0\r\nmcp-types==2.3.0\r\nopentelemetry-api==1.45.1\r\npackaging==26.3\r\npluggy==1.7.0\r\npycparser==3.11\r\npydantic==2.14.1\r\npydantic_core==2.50.1\r\nPygments==2.21.0\r\nPyJWT==2.15.1\r\npytest==9.1.1\r\npytest-asyncio==1.4.0\r\npython-multipart==0.0.32\r\npywin32==312\r\nPyYAML==6.0.3\r\nreferencing==0.37.0\r\nrpds-py==2026.9.1\r\nsniffio==1.3.1\r\nsse-starlette==3.5.0\r\nstarlette==1.8.0\r\ntruststore==0.10.5\r\ntyping-inspection==0.4.4\r\ntyping_extensions==4.16.0\r\nuvicorn==0.54.0\r\n",
+  "criteria": "two writers with injected clock skew sort by filename time, duplicate UUID retained; malformed line skipped; one-writer same-time ordering control",
+  "intervention": "actual reference adapter with shipped in-memory recording client; patched synthetic wall clocks, no boto3 or network",
+  "limits": "No process, real credential, materialization or filesystem deletion; not evidence of an actual orphan or retained secret",
+  "cost": "local CPU/storage only"
+}

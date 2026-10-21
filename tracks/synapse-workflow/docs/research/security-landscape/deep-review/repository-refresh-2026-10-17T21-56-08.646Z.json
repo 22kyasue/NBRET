@@ -1,0 +1,9 @@
+{
+  "at": "2026-10-17T21:56:08.646Z",
+  "fetch": {
+    "stdout": "",
+    "stderr": ""
+  },
+  "refs": "62e2b7274daee13750a0b974edf0af599f8e2d19 refs/heads/feat/api-investigation\n0fcdfa667d1276cfe7e9834ae87d42d917251dfb refs/heads/main\n0fcdfa667d1276cfe7e9834ae87d42d917251dfb refs/remotes/origin/HEAD\n0fcdfa667d1276cfe7e9834ae87d42d917251dfb refs/remotes/origin/main\n",
+  "worktrees": "worktree C:/Users/kotar/githubprojects/NBRET\nHEAD 0fcdfa667d1276cfe7e9834ae87d42d917251dfb\nbranch refs/heads/main\n\nworktree C:/Users/kotar/githubprojects/NBRET-api-investigation\nHEAD 62e2b7274daee13750a0b974edf0af599f8e2d19\nbranch refs/heads/feat/api-investigation\n\n"
+}

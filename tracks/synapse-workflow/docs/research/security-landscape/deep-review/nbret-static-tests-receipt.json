@@ -1,0 +1,45 @@
+{
+  "at": "2026-10-17T21:04:57.823Z",
+  "out": "C:\\Users\\kotar\\githubprojects\\NBRET\\runs\\nbret-static-research-1792271096705",
+  "scope": "Read browser-free Node tests using synthetic files/stub capture and owned loopback acquisition. No browser, third-party target, model or real credentials.",
+  "environment": {
+    "node": "v24.21.0",
+    "platform": "win32"
+  },
+  "command": {
+    "executable": "C:\\Program Files\\nodejs\\node.exe",
+    "args": [
+      "--test",
+      "--test-reporter=tap",
+      "test/contracts.test.mjs",
+      "test/discover.test.mjs",
+      "test/understand.test.mjs",
+      "test/workflow-examples.test.mjs"
+    ],
+    "cwd": "C:\\Users\\kotar\\githubprojects\\NBRET"
+  },
+  "exit": 0,
+  "elapsedMs": 1116.7732,
+  "totals": [
+    "# tests 11",
+    "# suites 0",
+    "# pass 11",
+    "# fail 0",
+    "# cancelled 0",
+    "# skipped 0",
+    "# todo 0",
+    "# duration_ms 1074.1134"
+  ],
+  "sourceSha256": {
+    "test/contracts.test.mjs": "92aafa9ac8e4796d25bf5756bafa209c7b367aebbb8d914e13264bece8b5b3b5",
+    "test/discover.test.mjs": "9d470f154acacd7f435d590cab0d63e9f29c3fec3092b307b7909d4cf854c21e",
+    "test/understand.test.mjs": "b0ab1916b4261f5ead1c00f91864310ed1b4d145ad87b7f9fee4224916d4905f",
+    "test/workflow-examples.test.mjs": "183fcf782c022369c7a69551faa0d995ae0869fca9fb4a5a370123971cca111b",
+    "src/contracts.mjs": "216200a3a43558bfe571f83e2f69d41f3d6cb1072e467017fca7f9d867d06d41",
+    "src/discover.mjs": "a1aac47e118168ce79355f103b8ea84a20c0da1ea3fe0264e100c739e9c9cb49",
+    "src/understand.mjs": "912c89e0cd8572dbf103a8304235dd22f6a6256a260de806f4d674f3ebbc2b9b",
+    "src/workflow-examples.mjs": "b681a1064fd29c07c87a6e107057d9752e1bb980c686b1d31e72d9229397b09e"
+  },
+  "tapSha256": "eff3981205233494d3dca779f1417e624d7a6b3551e183cea99cc0ccaaaa1685",
+  "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

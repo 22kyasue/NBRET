@@ -1,0 +1,584 @@
+{
+  "files": {
+    "runs/cybersecurity-firms-20261017/source/trend/cmd/v1-mcp-server/main.go": {
+      "state": "complete-file",
+      "ranges": [],
+      "annotation": "trend-mcp-source.md"
+    },
+    "runs/cybersecurity-firms-20261017/source/trend/internal/v1mcp/server.go": {
+      "state": "complete-file",
+      "ranges": [],
+      "annotation": "trend-mcp-source.md"
+    },
+    "runs/cybersecurity-firms-20261017/source/trend/internal/v1mcp/toolsets.go": {
+      "state": "complete-file",
+      "ranges": [],
+      "annotation": "trend-mcp-source.md"
+    },
+    "runs/cybersecurity-firms-20261017/source/trend/internal/v1mcp/tools/tools.go": {
+      "state": "complete-file",
+      "ranges": [],
+      "annotation": "trend-mcp-source.md"
+    },
+    "runs/cybersecurity-firms-20261017/source/trend/internal/v1mcp/tools/request.go": {
+      "state": "complete-file",
+      "ranges": [],
+      "annotation": "trend-mcp-source.md"
+    },
+    "runs/cybersecurity-firms-20261017/source/trend/internal/v1client/v1client.go": {
+      "state": "complete-file",
+      "ranges": [],
+      "annotation": "trend-mcp-source.md"
+    },
+    "runs/cybersecurity-firms-20261017/source/trend/internal/v1client/request.go": {
+      "state": "complete-file",
+      "ranges": [],
+      "annotation": "trend-mcp-source.md"
+    },
+    "runs/cybersecurity-firms-20261017/source/trend/internal/v1client/endpoint.go": {
+      "state": "complete-file",
+      "ranges": [],
+      "annotation": "trend-mcp-source.md"
+    },
+    "runs/cybersecurity-firms-20261017/source/trend/internal/v1mcp/server_test.go": {
+      "state": "complete-file",
+      "ranges": [],
+      "annotation": "trend-mcp-source.md"
+    },
+    "runs/cybersecurity-firms-20261017/source/trend/internal/v1mcp/tools/request_test.go": {
+      "state": "complete-file",
+      "ranges": [],
+      "annotation": "trend-mcp-source.md"
+    },
+    "runs/cybersecurity-firms-20261017/source/trend/internal/v1client/request_test.go": {
+      "state": "complete-file",
+      "ranges": [],
+      "annotation": "trend-mcp-source.md"
+    },
+    "runs/cybersecurity-firms-20261017/source/trend/go.mod": {
+      "state": "complete-file",
+      "ranges": [],
+      "annotation": "trend-mcp-source.md"
+    },
+    "runs/cybersecurity-firms-20261017/source/trend/internal/v1mcp/tools/endpoint.go": {
+      "state": "complete-file",
+      "ranges": [],
+      "annotation": "trend-mcp-source.md"
+    },
+    "runs/cybersecurity-firms-20261017/source/google/src/secops/chronicle/investigations.py": {
+      "state": "complete-file",
+      "ranges": [],
+      "annotation": "google-investigations-source.md"
+    },
+    "runs/cybersecurity-firms-20261017/source/google/src/secops/chronicle/utils/request_utils.py": {
+      "state": "complete-file",
+      "ranges": [],
+      "annotation": "google-investigations-source.md"
+    },
+    "runs/cybersecurity-firms-20261017/source/google/src/secops/chronicle/utils/format_utils.py": {
+      "state": "complete-file",
+      "ranges": [],
+      "annotation": "google-investigations-source.md"
+    },
+    "runs/cybersecurity-firms-20261017/source/google/src/secops/auth.py": {
+      "state": "complete-file",
+      "ranges": [],
+      "annotation": "google-investigations-source.md"
+    },
+    "runs/cybersecurity-firms-20261017/source/google/src/secops/exceptions.py": {
+      "state": "complete-file",
+      "ranges": [],
+      "annotation": "google-investigations-source.md"
+    },
+    "runs/cybersecurity-firms-20261017/source/google/tests/chronicle/test_investigations.py": {
+      "state": "complete-file",
+      "ranges": [],
+      "annotation": "google-investigations-source.md"
+    },
+    "runs/cybersecurity-firms-20261017/source/google/tests/chronicle/utils/test_request_utils.py": {
+      "state": "complete-file",
+      "ranges": [],
+      "annotation": "google-investigations-source.md"
+    },
+    "runs/cybersecurity-firms-20261017/source/google/tests/chronicle/utils/test_format_utils.py": {
+      "state": "complete-file",
+      "ranges": [],
+      "annotation": "google-investigations-source.md"
+    },
+    "runs/cybersecurity-firms-20261017/source/google/tests/test_auth.py": {
+      "state": "complete-file",
+      "ranges": [],
+      "annotation": "google-investigations-source.md"
+    },
+    "runs/cybersecurity-firms-20261017/source/google/pyproject.toml": {
+      "state": "complete-file",
+      "ranges": [],
+      "annotation": "google-investigations-source.md"
+    },
+    "runs/cybersecurity-firms-20261017/source/google/src/secops/chronicle/client.py": {
+      "state": "partial",
+      "ranges": [
+        [
+          1,
+          574
+        ],
+        [
+          949,
+          1036
+        ],
+        [
+          1651,
+          1710
+        ],
+        [
+          2051,
+          2152
+        ],
+        [
+          2194,
+          2320
+        ],
+        [
+          3216,
+          3400
+        ],
+        [
+          4938,
+          5028
+        ]
+      ],
+      "annotation": "google-investigations-source.md"
+    },
+    "runs/cybersecurity-firms-20261017/source/google/src/secops/chronicle/models.py": {
+      "state": "partial",
+      "ranges": [
+        [
+          15,
+          76
+        ],
+        [
+          1062,
+          1065
+        ]
+      ],
+      "annotation": "google-investigations-source.md"
+    },
+    "runs/cybersecurity-firms-20261017/source/falcon/samples/hosts/quarantine_hosts_new.py": {
+      "state": "complete-file",
+      "ranges": [],
+      "annotation": "falcon-host-action-source.md"
+    },
+    "runs/cybersecurity-firms-20261017/source/splunk/detections/endpoint/detect_credential_dumping_through_lsass_access.yml": {
+      "state": "complete-file",
+      "ranges": [],
+      "annotation": "splunk-lsass-source.md"
+    },
+    "runs/cybersecurity-firms-20261017/source/splunk/macros/sysmon.yml": {
+      "state": "complete-file",
+      "ranges": [],
+      "annotation": "splunk-lsass-source.md"
+    },
+    "runs/cybersecurity-firms-20261017/source/splunk/macros/security_content_ctime.yml": {
+      "state": "complete-file",
+      "ranges": [],
+      "annotation": "splunk-lsass-source.md"
+    },
+    "runs/cybersecurity-firms-20261017/source/splunk/data_sources/sysmon_eventid_10.yml": {
+      "state": "complete-file",
+      "ranges": [],
+      "annotation": "splunk-lsass-source.md"
+    },
+    "runs/cybersecurity-firms-20261017/source/sentinel/Playbooks/AS-Incident-Response-Approval-Email/azuredeploy.json": {
+      "state": "complete-file",
+      "ranges": [],
+      "annotation": "sentinel-playbooks-source.md"
+    },
+    "runs/cybersecurity-firms-20261017/source/sentinel/Playbooks/AS-Incident-Response-Approval-Email/README.md": {
+      "state": "partial",
+      "ranges": [
+        [
+          1,
+          45
+        ]
+      ],
+      "annotation": "sentinel-playbooks-source.md"
+    },
+    "runs/cybersecurity-firms-20261017/source/sentinel/Playbooks/AS-MDE-Isolate-Machine/azuredeploy.json": {
+      "state": "complete-file",
+      "ranges": [],
+      "annotation": "sentinel-playbooks-source.md"
+    },
+    "runs/cybersecurity-firms-20261017/source/sentinel/Playbooks/AS-MDE-Isolate-Machine/README.md": {
+      "state": "partial",
+      "ranges": [
+        [
+          1,
+          45
+        ]
+      ],
+      "annotation": "sentinel-playbooks-source.md"
+    },
+    "runs/cybersecurity-firms-20261017/source/falcon/src/falconpy/hosts.py": {
+      "state": "partial",
+      "ranges": [
+        [
+          1,
+          60
+        ],
+        [
+          482,
+          555
+        ],
+        [
+          1013,
+          1070
+        ]
+      ],
+      "annotation": "falcon-host-action-source.md"
+    },
+    "runs/cybersecurity-firms-20261017/source/falcon/src/falconpy/_endpoint/_hosts.py": {
+      "state": "partial",
+      "ranges": [
+        [
+          609,
+          637
+        ],
+        [
+          858,
+          890
+        ]
+      ],
+      "annotation": "falcon-host-action-source.md"
+    },
+    "runs/cybersecurity-firms-20261017/source/falcon/src/falconpy/_util/_functions.py": {
+      "state": "complete-file",
+      "ranges": [],
+      "annotation": "falcon-auth-source.md"
+    },
+    "runs/cybersecurity-firms-20261017/source/falcon/src/falconpy/_service_class/_service_class.py": {
+      "state": "complete-file",
+      "ranges": [],
+      "annotation": "falcon-auth-source.md"
+    },
+    "runs/cybersecurity-firms-20261017/source/falcon/src/falconpy/_service_class/_base_service_class.py": {
+      "state": "complete-file",
+      "ranges": [],
+      "annotation": "falcon-auth-source.md"
+    },
+    "runs/cybersecurity-firms-20261017/source/falcon/src/falconpy/_api_request/_request.py": {
+      "state": "complete-file",
+      "ranges": [],
+      "annotation": "falcon-host-action-source.md"
+    },
+    "runs/cybersecurity-firms-20261017/source/falcon/src/falconpy/_api_request/_request_connection.py": {
+      "state": "complete-file",
+      "ranges": [],
+      "annotation": "falcon-host-action-source.md"
+    },
+    "runs/cybersecurity-firms-20261017/source/falcon/src/falconpy/_api_request/_request_payloads.py": {
+      "state": "complete-file",
+      "ranges": [],
+      "annotation": "falcon-host-action-source.md"
+    },
+    "runs/cybersecurity-firms-20261017/source/falcon/src/falconpy/_api_request/_request_behavior.py": {
+      "state": "complete-file",
+      "ranges": [],
+      "annotation": "falcon-host-action-source.md"
+    },
+    "runs/cybersecurity-firms-20261017/source/falcon/tests/test_hosts.py": {
+      "state": "complete-file",
+      "ranges": [],
+      "annotation": "falcon-host-action-source.md"
+    },
+    "runs/cybersecurity-firms-20261017/source/falcon/pyproject.toml": {
+      "state": "complete-file",
+      "ranges": [],
+      "annotation": "falcon-host-action-source.md"
+    },
+    "runs/cybersecurity-firms-20261017/source/falcon/src/falconpy/_payload/_hosts.py": {
+      "state": "complete-file",
+      "ranges": [],
+      "annotation": "falcon-host-action-source.md"
+    },
+    "runs/cybersecurity-firms-20261017/source/pan/Packs/CommonPlaybooks/Playbooks/playbook-Isolate_Endpoint_-_Generic_V2.yml": {
+      "state": "complete-file",
+      "ranges": [],
+      "annotation": "pan-isolation-source.md"
+    },
+    "runs/cybersecurity-firms-20261017/source/pan/Packs/CommonPlaybooks/Playbooks/playbook-Isolate_Endpoint_-_Generic_V2_README.md": {
+      "state": "complete-file",
+      "ranges": [],
+      "annotation": "pan-isolation-source.md"
+    },
+    "runs/cybersecurity-firms-20261017/source/pan/Packs/CommonPlaybooks/Playbooks/playbook-Isolate_Endpoint_-_Generic_V2_6_8.yml": {
+      "state": "complete-file",
+      "ranges": [],
+      "annotation": "pan-isolation-source.md"
+    },
+    "runs/cybersecurity-firms-20261017/source/pan/Packs/CrowdStrikeFalcon/Playbooks/playbook-Crowdstrike_Falcon_-_Isolate_Endpoint.yml": {
+      "state": "complete-file",
+      "ranges": [],
+      "annotation": "pan-isolation-source.md"
+    },
+    "runs/cybersecurity-firms-20261017/source/pan/Packs/CommonPlaybooks/TestPlaybooks/playbook-Isolate_and_unisolate_endpoint_-_test.yml": {
+      "state": "complete-file",
+      "ranges": [],
+      "annotation": "pan-isolation-source.md"
+    },
+    "runs/cybersecurity-firms-20261017/source/fort/microsoft-sentinel/connector.py": {
+      "state": "complete-file",
+      "ranges": [],
+      "annotation": "fortinet-sentinel-source.md"
+    },
+    "runs/cybersecurity-firms-20261017/source/fort/microsoft-sentinel/constant.py": {
+      "state": "complete-file",
+      "ranges": [],
+      "annotation": "fortinet-sentinel-source.md"
+    },
+    "runs/cybersecurity-firms-20261017/source/fort/microsoft-sentinel/microsoft_api_auth.py": {
+      "state": "complete-file",
+      "ranges": [],
+      "annotation": "fortinet-sentinel-source.md"
+    },
+    "runs/cybersecurity-firms-20261017/source/fort/microsoft-sentinel/requirements.txt": {
+      "state": "complete-file",
+      "ranges": [],
+      "annotation": "fortinet-sentinel-source.md"
+    },
+    "runs/cybersecurity-firms-20261017/source/fort/microsoft-sentinel/release_notes.md": {
+      "state": "complete-file",
+      "ranges": [],
+      "annotation": "fortinet-sentinel-source.md"
+    },
+    "runs/cybersecurity-firms-20261017/source/fort/microsoft-sentinel/operations.py": {
+      "state": "partial",
+      "ranges": [
+        [
+          1,
+          325
+        ]
+      ],
+      "annotation": "fortinet-sentinel-source.md"
+    },
+    "runs/cybersecurity-firms-20261017/source/fort/microsoft-sentinel/info.json": {
+      "state": "partial",
+      "ranges": [],
+      "annotation": "fortinet-sentinel-source.md"
+    },
+    "runs/cybersecurity-firms-20261017/source/falcon/src/falconpy/_util/_auth.py": {
+      "state": "complete-file",
+      "ranges": [],
+      "annotation": "falcon-auth-source.md"
+    },
+    "runs/cybersecurity-firms-20261017/source/falcon/src/falconpy/_auth_object/_bearer_token.py": {
+      "state": "complete-file",
+      "ranges": [],
+      "annotation": "falcon-auth-source.md"
+    },
+    "runs/cybersecurity-firms-20261017/source/falcon/src/falconpy/_auth_object/_falcon_interface.py": {
+      "state": "complete-file",
+      "ranges": [],
+      "annotation": "falcon-auth-source.md"
+    },
+    "runs/cybersecurity-firms-20261017/source/falcon/src/falconpy/_auth_object/_interface_config.py": {
+      "state": "complete-file",
+      "ranges": [],
+      "annotation": "falcon-auth-source.md"
+    },
+    "runs/cybersecurity-firms-20261017/source/falcon/src/falconpy/_auth_object/_base_falcon_auth.py": {
+      "state": "complete-file",
+      "ranges": [],
+      "annotation": "falcon-auth-source.md"
+    },
+    "runs/cybersecurity-firms-20261017/source/falcon/src/falconpy/_constant/__init__.py": {
+      "state": "complete-file",
+      "ranges": [],
+      "annotation": "falcon-auth-source.md"
+    },
+    "runs/cybersecurity-firms-20261017/source/falcon/src/falconpy/_endpoint/_oauth2.py": {
+      "state": "complete-file",
+      "ranges": [],
+      "annotation": "falcon-auth-source.md"
+    },
+    "runs/cybersecurity-firms-20261017/source/falcon/src/falconpy/_api_request/_request_validator.py": {
+      "state": "complete-file",
+      "ranges": [],
+      "annotation": "falcon-auth-source.md"
+    },
+    "runs/cybersecurity-firms-20261017/source/falcon/src/falconpy/_api_request/_request_meta.py": {
+      "state": "complete-file",
+      "ranges": [],
+      "annotation": "falcon-auth-source.md"
+    },
+    "runs/cybersecurity-firms-20261017/source/falcon/tests/test_authentications.py": {
+      "state": "complete-file",
+      "ranges": [],
+      "annotation": "falcon-auth-source.md"
+    },
+    "runs/cybersecurity-firms-20261017/source/falcon/src/falconpy/oauth2.py": {
+      "state": "complete-file",
+      "ranges": [],
+      "annotation": "falcon-auth-source.md"
+    },
+    "runs/cybersecurity-firms-20261017/source/falcon/src/falconpy/_log/_facility.py": {
+      "state": "complete-file",
+      "ranges": [],
+      "annotation": "falcon-auth-source.md"
+    },
+    "runs/cybersecurity-firms-20261017/source/google/src/secops/chronicle/soar/__init__.py": {
+      "state": "complete-file",
+      "ranges": [],
+      "annotation": "google-investigations-source.md"
+    },
+    "runs/cybersecurity-firms-20261017/source/google/src/secops/chronicle/soar/service.py": {
+      "state": "partial",
+      "ranges": [
+        [
+          1,
+          90
+        ]
+      ],
+      "annotation": "google-investigations-source.md"
+    },
+    "runs/cybersecurity-firms-20261017/source/trend/internal/v1mcp/tools/endpoint_test.go": {
+      "state": "complete-file",
+      "ranges": [],
+      "annotation": "trend-mcp-source.md"
+    },
+    "runs/cybersecurity-firms-20261017/source/trend/go.sum": {
+      "state": "complete-file",
+      "ranges": [],
+      "annotation": "trend-mcp-source.md"
+    },
+    "runs/cybersecurity-firms-20261017/source/falcon/tests/test_authorization.py": {
+      "state": "complete-file",
+      "ranges": [],
+      "annotation": "falcon-auth-source.md"
+    },
+    "runs/cybersecurity-firms-20261017/source/falcon/src/falconpy/_enum/_base_url.py": {
+      "state": "complete-file",
+      "ranges": [],
+      "annotation": "falcon-auth-source.md"
+    },
+    "runs/cybersecurity-firms-20261017/source/falcon/src/falconpy/_enum/_token_fail_reason.py": {
+      "state": "complete-file",
+      "ranges": [],
+      "annotation": "falcon-auth-source.md"
+    },
+    "runs/cybersecurity-firms-20261017/source/falcon/src/falconpy/_result/_base_dictionary.py": {
+      "state": "complete-file",
+      "ranges": [],
+      "annotation": "falcon-host-action-source.md"
+    },
+    "runs/cybersecurity-firms-20261017/source/falcon/src/falconpy/_result/_errors.py": {
+      "state": "complete-file",
+      "ranges": [],
+      "annotation": "falcon-host-action-source.md"
+    },
+    "runs/cybersecurity-firms-20261017/source/falcon/src/falconpy/_result/_expanded_result.py": {
+      "state": "complete-file",
+      "ranges": [],
+      "annotation": "falcon-host-action-source.md"
+    },
+    "runs/cybersecurity-firms-20261017/source/falcon/src/falconpy/_result/_headers.py": {
+      "state": "complete-file",
+      "ranges": [],
+      "annotation": "falcon-host-action-source.md"
+    },
+    "runs/cybersecurity-firms-20261017/source/falcon/src/falconpy/_result/_meta.py": {
+      "state": "complete-file",
+      "ranges": [],
+      "annotation": "falcon-host-action-source.md"
+    },
+    "runs/cybersecurity-firms-20261017/source/falcon/src/falconpy/_result/_resources.py": {
+      "state": "complete-file",
+      "ranges": [],
+      "annotation": "falcon-host-action-source.md"
+    },
+    "runs/cybersecurity-firms-20261017/source/falcon/src/falconpy/_result/_response_component.py": {
+      "state": "complete-file",
+      "ranges": [],
+      "annotation": "falcon-host-action-source.md"
+    },
+    "runs/cybersecurity-firms-20261017/source/falcon/src/falconpy/_result/_result.py": {
+      "state": "complete-file",
+      "ranges": [],
+      "annotation": "falcon-host-action-source.md"
+    },
+    "runs/cybersecurity-firms-20261017/source/falcon/src/falconpy/_result/__base_resource.py": {
+      "state": "complete-file",
+      "ranges": [],
+      "annotation": "falcon-host-action-source.md"
+    },
+    "runs/cybersecurity-firms-20261017/source/falcon/src/falconpy/_result/__init__.py": {
+      "state": "complete-file",
+      "ranges": [],
+      "annotation": "falcon-host-action-source.md"
+    },
+    "runs/cybersecurity-firms-20261017/source/falcon/tests/test_result_object.py": {
+      "state": "complete-file",
+      "ranges": [],
+      "annotation": "falcon-host-action-source.md"
+    },
+    "runs/cybersecurity-firms-20261017/source/google/src/secops/chronicle/gemini.py": {
+      "state": "complete-file",
+      "ranges": [],
+      "annotation": "google-gemini-client-source.md"
+    },
+    "runs/cybersecurity-firms-20261017/source/google/tests/chronicle/test_gemini.py": {
+      "state": "complete-file",
+      "ranges": [],
+      "annotation": "google-gemini-client-source.md"
+    },
+    "runs/cybersecurity-firms-20261017/source/google/src/secops/chronicle/nl_search.py": {
+      "state": "complete-file",
+      "ranges": [],
+      "annotation": "google-natural-language-search-source.md"
+    },
+    "runs/cybersecurity-firms-20261017/source/google/src/secops/chronicle/search.py": {
+      "state": "complete-file",
+      "ranges": [],
+      "annotation": "google-natural-language-search-source.md"
+    },
+    "runs/cybersecurity-firms-20261017/source/google/tests/chronicle/test_nl_search.py": {
+      "state": "complete-file",
+      "ranges": [],
+      "annotation": "google-natural-language-search-source.md"
+    },
+    "runs/cybersecurity-firms-20261017/source/google/tests/chronicle/test_search.py": {
+      "state": "complete-file",
+      "ranges": [],
+      "annotation": "google-natural-language-search-source.md"
+    },
+    "runs/cybersecurity-firms-20261017/source/google/src/secops/chronicle/rule_validation.py": {
+      "state": "complete-file",
+      "ranges": [],
+      "annotation": "google-natural-language-search-source.md"
+    },
+    "runs/cybersecurity-firms-20261017/source/google/tests/chronicle/test_rule_validation.py": {
+      "state": "complete-file",
+      "ranges": [],
+      "annotation": "google-natural-language-search-source.md"
+    },
+    "runs/cybersecurity-firms-20261017/source/google/src/secops/chronicle/rule.py": {
+      "state": "complete-file",
+      "ranges": [],
+      "annotation": "google-rule-lifecycle-source.md"
+    },
+    "runs/cybersecurity-firms-20261017/source/google/tests/chronicle/test_rule.py": {
+      "state": "complete-file",
+      "ranges": [],
+      "annotation": "google-rule-lifecycle-source.md"
+    },
+    "runs/cybersecurity-firms-20261017/source/google/tests/chronicle/test_rule_deployment.py": {
+      "state": "complete-file",
+      "ranges": [],
+      "annotation": "google-rule-lifecycle-source.md"
+    },
+    "runs/cybersecurity-firms-20261017/source/google/tests/cli/test_rule_deployment_integration.py": {
+      "state": "complete-file",
+      "ranges": [],
+      "annotation": "google-rule-lifecycle-source.md"
+    }
+  }
+}

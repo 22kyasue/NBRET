@@ -1,0 +1,13 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import {pathToFileURL} from 'node:url';
+const own=path.resolve('docs/research/assessment-evidence');
+let source=fs.readFileSync(path.join(own,'run-claude-cleanup-lab.mjs'),'utf8');
+source=source.replaceAll('claude-cleanup','session-import-failure');
+source=source.replace('test_claude_cleanup_contract.py','test_session_import_failure_contract.py');
+source=source.replace("sourceSha256:hash(path.join(root,'src/claude_agent_sdk/client.py'))","sourceSha256:Object.fromEntries(['src/claude_agent_sdk/_internal/session_import.py','src/claude_agent_sdk/_internal/session_store.py'].map(p=>[p,hash(path.join(root,p))]))");
+source=source.replace(/criteria:'[^']*'/,"criteria:'malformed tail preserves already appended prefix; replay duplicates in reference store; before-first-flush contrary control stays empty'");
+source=source.replace(/intervention:'[^']*'/,"intervention:'owned synthetic tmp JSONL and patched resolver; actual import and reference store, no user sessions'");
+const generated=path.join(own,'run-session-import-failure-generated.mjs');
+fs.writeFileSync(generated,source,{flag:'wx'});
+await import(pathToFileURL(generated).href);

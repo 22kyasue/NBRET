@@ -1,0 +1,34 @@
+{
+  "at": "2026-10-17T20:29:20.515Z",
+  "out": "C:\\Users\\kotar\\githubprojects\\NBRET\\runs\\zap-alert-object-research-1792268959769",
+  "scope": "Actual installed Alert object methods only; no daemon/network/browser/database",
+  "command": {
+    "executable": "C:/Users/kotar/AppData/Local/Programs/BurpSuite/jre/bin/java.exe",
+    "args": [
+      "-Djava.awt.headless=true",
+      "--class-path",
+      "C:\\Users\\kotar\\githubprojects\\NBRET\\.tools\\ZAP_2.17.0\\zap-2.17.0.jar;C:\\Users\\kotar\\githubprojects\\NBRET\\.tools\\ZAP_2.17.0\\lib\\*",
+      "C:\\Users\\kotar\\githubprojects\\NBRET\\runs\\zap-alert-object-research-1792268959769\\AlertObjectResearch.java"
+    ],
+    "cwd": "C:\\Users\\kotar\\githubprojects\\NBRET\\runs\\zap-alert-object-research-1792268959769"
+  },
+  "exit": 0,
+  "signal": null,
+  "elapsedMs": 745.4461,
+  "passes": [
+    "PASS unset_ids_equal",
+    "PASS equal_objects_different_hashes",
+    "PASS assigned_id_control_differs",
+    "PASS clone_custom_reference_defaults",
+    "PASS clone_explicit_source_history_lost",
+    "PASS original_identity_control_unchanged",
+    "PASS systemic_initial_false",
+    "PASS systemic_cached_after_tag_change",
+    "PASS systemic_tag_before_read_control_true"
+  ],
+  "jarSha256": "015dda4709b5ef79736086bb41e8e2a4e95b04cf6625f14d6bcc02b197c99c0c",
+  "reviewedSourceSha256": "471079926af55a2f517a5c1991d4138028940edbf961152af5fe88f69d494af5",
+  "fixtureSha256": "b2b42b9506a7f1fe6f0aa81633e53977f96f6c543dfdd4045ee92ed3b0dc531f",
+  "stdoutSha256": "cad7c2717fdadd34fddcf8e14ed0eb385bc0c2084d787853f59c4db4b6a1e1f7",
+  "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

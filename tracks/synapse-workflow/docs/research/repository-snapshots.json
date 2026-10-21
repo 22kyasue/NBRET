@@ -1,0 +1,79 @@
+[
+  {
+    "name": "rea",
+    "commit": "54c71313aeb2cbdf21626af9557673a6f6397180",
+    "origin": "https://github.com/morluto/rea.git",
+    "tracked_files": 4179,
+    "local_path": "C:/Users/kotar/.codex/research/rea"
+  },
+  {
+    "name": "ghidra",
+    "commit": "9a723ce99952771b8368329503aa589ae233e916",
+    "origin": "https://github.com/NationalSecurityAgency/ghidra.git",
+    "tracked_files": 20621,
+    "local_path": "C:/Users/kotar/.codex/research/ghidra"
+  },
+  {
+    "name": "frida",
+    "commit": "2ff8f72375c8d3d5e53bb3ad250ba240964a4a39",
+    "origin": "https://github.com/frida/frida.git",
+    "tracked_files": 43,
+    "local_path": "C:/Users/kotar/.codex/research/frida"
+  },
+  {
+    "name": "semgrep",
+    "commit": "51602ad27f09ef9342a5620601de5ef8f572fbc6",
+    "origin": "https://github.com/semgrep/semgrep.git",
+    "tracked_files": 12349,
+    "local_path": "C:/Users/kotar/.codex/research/semgrep"
+  },
+  {
+    "name": "nuclei",
+    "commit": "a151a1d54fad0d5ef71f01662b0bb3955a98c7c5",
+    "origin": "https://github.com/projectdiscovery/nuclei.git",
+    "tracked_files": 1412,
+    "local_path": "C:/Users/kotar/.codex/research/nuclei"
+  },
+  {
+    "name": "caldera",
+    "commit": "cb8d6a8160e0f4990af323a7c071d5e8482b42c7",
+    "origin": "https://github.com/apache/caldera.git",
+    "tracked_files": 406,
+    "local_path": "C:/Users/kotar/.codex/research/caldera"
+  },
+  {
+    "name": "atomic-red-team",
+    "commit": "388942adbd9641f4dfdcf079d7efe9a75ec0ac43",
+    "origin": "https://github.com/redcanaryco/atomic-red-team.git",
+    "tracked_files": 1376,
+    "local_path": "C:/Users/kotar/.codex/research/atomic-red-team"
+  },
+  {
+    "name": "garak",
+    "commit": "cc1215c5c301a69f115b0b2b7ef8e4172ae2e7fc",
+    "origin": "https://github.com/NVIDIA/garak.git",
+    "tracked_files": 877,
+    "local_path": "C:/Users/kotar/.codex/research/garak"
+  },
+  {
+    "name": "promptfoo",
+    "commit": "79011700b4cb544ddd9267565571a1d42d3a3051",
+    "origin": "https://github.com/promptfoo/promptfoo.git",
+    "tracked_files": 5948,
+    "local_path": "C:/Users/kotar/.codex/research/promptfoo"
+  },
+  {
+    "name": "temporal",
+    "commit": "48a1e5ff025e55b3d4d0f44247423d4c279ff636",
+    "origin": "https://github.com/temporalio/temporal.git",
+    "tracked_files": 4018,
+    "local_path": "C:/Users/kotar/.codex/research/temporal"
+  },
+  {
+    "name": "langgraph",
+    "commit": "41c9c22fdc83d68a2859d0c9a2b627c8615a792f",
+    "origin": "https://github.com/langchain-ai/langgraph.git",
+    "tracked_files": 693,
+    "local_path": "C:/Users/kotar/.codex/research/langgraph"
+  }
+]

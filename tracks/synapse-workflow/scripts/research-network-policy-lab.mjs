@@ -1,0 +1,20 @@
+import {readFileSync,writeFileSync,mkdirSync,openSync,closeSync,readdirSync} from 'node:fs';
+import {resolve,join} from 'node:path';
+import {spawnSync} from 'node:child_process';
+import {createHash} from 'node:crypto';
+const root='C:/Users/kotar/.codex/research/nuclei',moduleRoot=resolve('.tools/security-research-go/module-cache/pkg/mod/github.com/projectdiscovery/networkpolicy@v0.1.54'),out=resolve(`runs/network-policy-research-${Date.now()}`);mkdirSync(out);
+const moduleCopy=join(out,'module');mkdirSync(moduleCopy);for(const p of readdirSync(moduleRoot).filter(x=>x.endsWith('.go')||['go.mod','go.sum','LICENSE.md'].includes(x)))writeFileSync(join(moduleCopy,p),readFileSync(join(moduleRoot,p)));
+const source=`package networkpolicy
+import "testing"
+func TestResearchSchemeShadowing(t *testing.T){allow,e:=New(Options{AllowSchemeList:[]string{"https"}});if e!=nil{t.Fatal(e)};if allow.Validate("https://lab.invalid"){t.Fatal("expected current shadowed-scheme rejection")};deny,e:=New(Options{DenySchemeList:[]string{"file"}});if e!=nil{t.Fatal(e)};if !deny.Validate("file://lab.invalid"){t.Fatal("expected current shadowed-scheme acceptance")}}
+func TestResearchEmptyPortMap(t *testing.T){p,e:=New(Options{});if e!=nil{t.Fatal(e)};if p.ValidatePort(80){t.Fatal("expected empty nonnil allow map rejection")};if !p.Validate("lab.invalid"){t.Fatal("no-filter host control")}}
+func TestResearchRegexAllowVersusIP(t *testing.T){p,e:=New(Options{AllowList:[]string{\x60^lab[.]invalid$\x60}});if e!=nil{t.Fatal(e)};if !p.Validate("lab.invalid")||p.Validate("other.invalid"){t.Fatal("hostname regex controls")};if !p.Validate("203.0.113.10"){t.Fatal("expected literal IP path independent from regex allow rules")}}
+func TestResearchMissingExplicitPort(t *testing.T){p,e:=New(Options{AllowPortList:[]int{443}});if e!=nil{t.Fatal(e)};if !p.Validate("lab.invalid")||!p.Validate("https://lab.invalid:443"){t.Fatal("missing/allowed explicit port semantics")};if p.Validate("https://lab.invalid:80"){t.Fatal("explicit disallowed port control")}}
+`;
+const extra=join(out,'research_policy_test.go');writeFileSync(extra,source);const overlay=join(out,'overlay.json');writeFileSync(overlay,JSON.stringify({Replace:{[join(moduleCopy,'research_policy_test.go')]:extra}},null,2));
+const sdk=resolve('.tools/security-research-go/sdk/go/bin/go.exe'),args=['test','-overlay',overlay,'.','-run','^Test','-count=1','-json'];
+const env={...process.env,GOTOOLCHAIN:'local',CGO_ENABLED:'0',GOPATH:resolve('.tools/security-research-go/module-cache'),GOCACHE:resolve('.tools/security-research-go/cache'),GOPROXY:'off',GOSUMDB:'off'};
+const fd=openSync(join(out,'test.jsonl'),'w'),efd=openSync(join(out,'stderr.txt'),'w'),start=performance.now();const r=spawnSync(sdk,args,{cwd:moduleCopy,env,windowsHide:true,stdio:['ignore',fd,efd],timeout:60000});closeSync(fd);closeSync(efd);
+const hash=b=>createHash('sha256').update(b).digest('hex'),log=readFileSync(join(out,'test.jsonl'),'utf8'),events=log.split('\n').filter(Boolean).map(s=>{try{return JSON.parse(s)}catch{return{raw:s}}});
+const receipt={at:new Date().toISOString(),out,scope:'Byte-identical copied NetworkPolicy root package with upstream tests plus overlay string-only cases; no DNS/socket/engine/model/real credentials.',command:{executable:sdk,args,cwd:moduleCopy},moduleNetwork:{GOPROXY:'off',GOSUMDB:'off'},exit:r.status,error:r.error?.message,elapsedMs:performance.now()-start,tests:events.filter(e=>e.Test&&['pass','fail','skip'].includes(e.Action)).map(e=>({test:e.Test,action:e.Action})),sourceSha256:Object.fromEntries(['networkpolicy.go','networkpolicy_test.go','cidr.go','scheme.go','host.go','ip.go','port.go','go.mod','go.sum'].map(p=>[p,hash(readFileSync(join(moduleRoot,p)))])),fixtureSha256:hash(source),logSha256:hash(log),stderrSha256:hash(readFileSync(join(out,'stderr.txt')))};
+writeFileSync(join(out,'receipt.json'),JSON.stringify(receipt,null,2));writeFileSync('docs/research/security-landscape/deep-review/nuclei-network-policy-lab-receipt.json',JSON.stringify(receipt,null,2));console.log(JSON.stringify({...receipt,stderrTail:readFileSync(join(out,'stderr.txt'),'utf8').slice(-1500)}));

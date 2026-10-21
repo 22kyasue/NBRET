@@ -1,0 +1,118 @@
+{
+  "at": "2026-10-17T21:01:28.218Z",
+  "out": "C:\\Users\\kotar\\githubprojects\\NBRET\\runs\\normalization-research-1792270886119",
+  "scope": "Actual normalization/fingerprint upstream tests plus two owned-loopback response-equivalence counterexamples; no list provider/full engine/external target/model.",
+  "command": {
+    "executable": "C:\\Users\\kotar\\githubprojects\\NBRET\\.tools\\security-research-go\\sdk\\go\\bin\\go.exe",
+    "args": [
+      "test",
+      "-overlay",
+      "C:\\Users\\kotar\\githubprojects\\NBRET\\runs\\normalization-research-1792270886119\\overlay.json",
+      "./pkg/input/normalize",
+      "-run",
+      "^Test",
+      "-count=1",
+      "-json"
+    ],
+    "cwd": "C:/Users/kotar/.codex/research/nuclei"
+  },
+  "moduleNetwork": {
+    "GOPROXY": "off",
+    "GOSUMDB": "off"
+  },
+  "exit": 0,
+  "elapsedMs": 2096.0794,
+  "tests": [
+    {
+      "test": "TestPatternGroupsIdentifiers",
+      "action": "pass"
+    },
+    {
+      "test": "TestPatternGroupsUUIDsHashesAndDates",
+      "action": "pass"
+    },
+    {
+      "test": "TestPatternKeepsRouteNames",
+      "action": "pass"
+    },
+    {
+      "test": "TestPatternDropsQueryValuesButKeepsSortedNames",
+      "action": "pass"
+    },
+    {
+      "test": "TestPatternCollapsesHighCardinalityPosition",
+      "action": "pass"
+    },
+    {
+      "test": "TestCollapseStaysInsideTheParentPath",
+      "action": "pass"
+    },
+    {
+      "test": "TestAcceptKeepsUpToTheCap",
+      "action": "pass"
+    },
+    {
+      "test": "TestDisabledFingerprinterKeepsEverything",
+      "action": "pass"
+    },
+    {
+      "test": "TestAcceptKeepsNonURLTargets",
+      "action": "pass"
+    },
+    {
+      "test": "TestURLCollapsesEquivalentForms",
+      "action": "pass"
+    },
+    {
+      "test": "TestURLKeepsDifferencesThatMatter",
+      "action": "pass"
+    },
+    {
+      "test": "TestURLKeepsFunctionalParamsWhenStrippingTracking",
+      "action": "pass"
+    },
+    {
+      "test": "TestURLKeepsDefaultPortForOtherSchemes",
+      "action": "pass"
+    },
+    {
+      "test": "TestURLKeepsRootPath",
+      "action": "pass"
+    },
+    {
+      "test": "TestURLHandlesIPv6",
+      "action": "pass"
+    },
+    {
+      "test": "TestURLLeavesUnparsableInputAlone",
+      "action": "pass"
+    },
+    {
+      "test": "TestOriginIgnoresPathQueryAndDefaultPort",
+      "action": "pass"
+    },
+    {
+      "test": "TestIsTrackingParam",
+      "action": "pass"
+    },
+    {
+      "test": "TestResearchTrailingSlashDistinctResponse",
+      "action": "pass"
+    },
+    {
+      "test": "TestResearchTrackingKeyFunctionalResponse",
+      "action": "pass"
+    }
+  ],
+  "sourceSha256": {
+    "pkg/input/normalize/normalize.go": "0b823fcceec595b2f7219e6119651d8d1629a60a3a5ea42b012130641a2ec254",
+    "pkg/input/normalize/fingerprint.go": "c5d7c40bfe6c418b192ff718247c48049fceef68fa52a6751e161039f3a63a62",
+    "pkg/input/normalize/normalize_test.go": "cac69d1d745725a851dc37a821ed218190c7deef0c96a846b65fbf4fbf3d9c97",
+    "pkg/input/normalize/fingerprint_test.go": "5907ce42f98b5bff48830ccf3ab3dad52777c25f56c1225ac7454d8167cc8d23",
+    "go.mod": "d960ba91e597d8500c1d7bc68b6daaf07631fa795ee0972eb5dad2bfa49697c5",
+    "go.sum": "df80e4e570143a2abebf4174236e9ccc114292d0a2f3f6102848a4610cd396c1"
+  },
+  "fixtureSha256": "569be470c9c68336c3f8b680cd71d46fd494b6497ada4402f3147aabe3e67fa0",
+  "logSha256": "f2ecc09cdc49e4192bbe102eaea5abeae4d88d095f751983ade89d4d7a6b0c1b",
+  "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

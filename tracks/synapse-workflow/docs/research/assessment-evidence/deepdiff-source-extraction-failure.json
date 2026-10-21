@@ -1,0 +1,9 @@
+{
+  "at": "2026-10-17T23:39:09.520Z",
+  "scriptSha256": "258dbeb993a67d038b74ca91757e3f787fc945a0a4cd12e24c9645355df3801c",
+  "archiveSha256": "ec56d7a769ca80891b5200ec7bd41eec300ced91ebcc7797b41eb2b3f3ff643a",
+  "exitCode": 1,
+  "stage": "standard-library tar extraction",
+  "error": "FileNotFoundError on long docs/_static benchmark PNG path on Windows",
+  "state": "Archive hash verified; partially extracted source retained. Package not imported/installed. Independent permitted acquisition, not the stopped OpenFGA operation."
+}

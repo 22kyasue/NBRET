@@ -1,0 +1,247 @@
+[
+  {
+    "no": "06",
+    "title_en": "Legal and contract structure",
+    "proposal_en": "Option C: published standard terms (non-negotiable: confidentiality, liability cap such as total fees, disclaimers, data handling, subcontracting) plus a per-engagement authorization letter / rules of engagement (assets, period, methods, stop conditions, third-party assets) plus riders only when needed. The isolated environment is the default and production testing is a contracted exception; IT professional-liability insurance is prioritized; a lawyer must review all wording and METI service-standard registration is a medium-term goal.",
+    "verdict": "partly-supported",
+    "verdict_reason": "The research strongly supports per-target written authorization, out-of-tool scope enforcement, an isolated default and explicit retention/deletion terms, but it contains no Japanese legal analysis, no insurance research and no evidence about which contract form buyers accept.",
+    "supports": [
+      {"id": "service-delivery.engagement-checklist", "why": "The cross-provider framework requires verified ownership, written permission, excluded techniques, access revocation, cleanup verification and evidence retention/deletion, matching the proposal's clause checklist.", "strength": "synthesis"},
+      {"id": "authorization.takumi-org-approval-replaces-target-ownership", "why": "Takumi's org-level approval replaces per-target proof, so a per-engagement letter binding hosts, dates and accounts is a real differentiator over a company-wide consent model.", "strength": "public-doc"},
+      {"id": "safety.takumi-exclusions-not-access-block", "why": "The competitor's own manual says excluded URLs may still be requested and live tests can alter data, and recommends isolated staging, which backs making isolation the contractual default.", "strength": "public-doc"},
+      {"id": "scanners.zap-retries-mutating-requests", "why": "State-changing requests can be duplicated by standard tooling, which justifies treating production as a rider with stop conditions, backups and recovery responsibility.", "strength": "source-trace"},
+      {"id": "service-delivery.public-pages-are-not-signed-terms", "why": "Public pages are not contracts, which supports publishing Synapse's actual terms (scope, clocks, exclusions, authority) so clients can compare them.", "strength": "public-doc"},
+      {"id": "providers.japan-storage-not-japan-inference", "why": "Storage location, inference location, provider retention and training use must be contracted separately, which belongs in the data-handling and subcontracting clauses if any AI service touches client data.", "strength": "public-doc"},
+      {"id": "evidence-handling.zap-cleanup-not-erasure", "why": "A real ZAP run showed scan stop and context deletion are not erasure, so the deletion-and-deletion-report clause needs a verified procedure behind it.", "strength": "integrated-lab"}
+    ],
+    "cautions": [
+      {"id": "scanners.zap-path-scope-not-enforced", "why": "A contract that lists assets is only honored if scope is enforced outside the tools; ZAP requested an out-of-path URL in a real daemon run, so the authorization letter needs a matching technical control and request log."},
+      {"id": "network-discovery.target-expansion-needs-scope-check", "why": "Discovered targets can fall outside the signed scope, so the letter must say how newly found assets are handled (pause and confirm) rather than relying on the initial list."},
+      {"id": "cloud.posture-tool-not-read-only", "why": "Even 'read-only' cloud review can create account artifacts or run fixers, so the authorization letter must list which APIs are called and which tools are disabled."},
+      {"id": "standards.procurement-regimes", "why": "The research explicitly is not a legal opinion and did not cover Japanese regimes (IPA, FISC/TLPT), so compliance claims in the terms need separate legal analysis."},
+      {"id": "evidence-handling.proxy-captures-unredacted-ca-key-plain", "why": "Captures and interception keys hold client credentials in plain form, so liability terms must be backed by a handling and retention policy, not just a clause."},
+      {"id": "commercial.tool-licences-not-plain", "why": "Nmap, Impacket and others have non-standard licences, so tool use inside a commercial service needs licence review alongside contract review."}
+    ],
+    "unproven": [
+      "The research does not analyze Japan's Unauthorized Computer Access Act, Penal Code 168-2 / 234-2 or the APPI; every legal statement in the proposal remains unverified here.",
+      "No research covers IT professional-liability or cyber insurance, including whether assessment-caused incidents are covered.",
+      "There is no evidence on whether Japanese mid-market buyers accept non-negotiable published terms or demand bespoke contracts.",
+      "The liability cap of 'total fees' and its enforceability are not examined.",
+      "AWS/Azure/GCP pentest policies cited in the proposal are not in the register and must be re-read from the providers."
+    ],
+    "methods": [
+      {"name": "Signed authorization-to-target binding", "what": "A per-engagement record listing hosts/assets, dates, accounts, permitted techniques and stop conditions, signed by the asset owner, and checked automatically before every request.", "evidence_id": "authorization.takumi-org-approval-replaces-target-ownership"},
+      {"name": "Egress allowlist outside the tools", "what": "Run all assessment tools behind an independent egress firewall/proxy that enforces the signed asset list and logs every actual request, so the contract scope is technically enforced and auditable.", "evidence_id": "scanners.zap-path-scope-not-enforced"},
+      {"name": "Discovered-target scope gate", "what": "Hold any newly discovered host or address until it is checked against the authorized list and, if outside it, confirmed in writing by the client.", "evidence_id": "network-discovery.target-expansion-needs-scope-check"},
+      {"name": "Verified teardown and deletion receipt", "what": "Close each engagement with revoked test accounts, stopped and verified-quiescent workers, file removal checks and a dated deletion report to the client.", "evidence_id": "evidence-handling.zap-cleanup-not-erasure"},
+      {"name": "AI data-processing schedule", "what": "If any AI service processes client material, an annex stating storage location, inference location, provider retention and training use separately per feature.", "evidence_id": "providers.ai-feature-retention-clocks"}
+    ],
+    "open_questions": [
+      "Which lawyer reviews the terms, authorization letter and production rider, and with what budget and timeline?",
+      "Will Synapse offer production testing at all, given the rider, insurance and stop-condition requirements it brings?",
+      "How will Synapse verify that the client actually controls each asset (domain, cloud account, SaaS tenant) before signing?",
+      "Will the replica use real personal data, or only synthetic/masked data so that APPI entrustment obligations do not arise?",
+      "Will any AI provider process client data, and if so under which inference location and retention terms?"
+    ],
+    "proposal_changes": [
+      "Add to the authorization letter a clause on newly discovered assets (pause, confirm, or exclude) and a statement that scope is enforced by an egress control with a request log available to the client.",
+      "Add an AI/tool data-processing annex separating storage, inference location, retention and training use.",
+      "Make the deletion clause specify a verified teardown procedure and deletion receipt rather than a bare obligation.",
+      "Default the replica to synthetic or masked data and state this in the terms, reducing APPI and liability exposure.",
+      "Mark all statements of law in the decision document as unverified pending counsel; the research does not cover them."
+    ]
+  },
+  {
+    "no": "07",
+    "title_en": "Deliverables: report, visualization, executive summary",
+    "proposal_en": "Option B, a two-layer report: a standalone 1-2 page executive summary (one-line conclusion, operations that stop, information that leaks, one blast-radius diagram, top 3-5 improvement priorities, retest result) plus a technical volume (scope and replica-vs-production differences, findings, kill chain, blast-radius analysis, impact assessment, POA&M improvement plan, mirror-copy retest diff). Monetary loss ranges (simplified FAIR) are optional; a live dashboard is deferred to continuous contracts.",
+    "verdict": "partly-supported",
+    "verdict_reason": "The research backs the content discipline (explicit scope, exclusions, untested list, observation vs inference, same-conditions retest, redaction), but it adds requirements the proposal lacks and gives no basis for a loss model or for one-line 'cannot withstand' conclusions.",
+    "supports": [
+      {"id": "service-delivery.small-service-exercise-template", "why": "Defines a deliverable set (access matrix, observation, finding with demonstrated consequence and what it does not establish, repair, retest receipt, untested list) that maps onto the technical volume.", "strength": "synthesis"},
+      {"id": "commercial.trail-of-bits-engagement-artifact", "why": "A real report states people, effort, access, pinned target, milestones, covered flows and named exclusions, and separates severity from difficulty, which supports the proposal's scope/limits section.", "strength": "public-doc"},
+      {"id": "commercial.what-customers-buy", "why": "Buyers purchase stakeholder reporting, help deciding what to fix and rechecking, which supports making prioritization and retest main chapters rather than appendices.", "strength": "synthesis"},
+      {"id": "service-delivery.instance-vs-class-repair", "why": "A narrow fix passed the original case but failed a nearby sequence, which supports a retest diff that includes neighboring cases and a legitimate-operation control.", "strength": "component-lab"},
+      {"id": "evidence-handling.finding-record-separation", "why": "Findings should separate observed behavior, source facts, derived links, hypotheses and missing evidence, which gives the technical volume a defensible structure.", "strength": "source-trace"},
+      {"id": "standards.versions-to-cite", "why": "NIST 800-115 is 2008 and WSTG stable is 4.2, so the proposal's standards references need exact versions and visible age.", "strength": "public-doc"}
+    ],
+    "cautions": [
+      {"id": "service-delivery.prerequisite-graph-is-possibility-only", "why": "A blast-radius diagram built from prerequisites shows possibility, not demonstrated spread, so each edge must be labeled demonstrated or modeled in the executive diagram."},
+      {"id": "service-delivery.synapse-mapping-gaps", "why": "No calibrated monetary-loss model exists in the research, so the optional FAIR range must carry its client-supplied assumptions and should not be marketed as a standard output."},
+      {"id": "standards.recall-unknowable-measures", "why": "Recall is unknowable for a real client system, so the summary must not state coverage percentages and needs a limits ledger of tested space, exclusions and blocked items."},
+      {"id": "reporting.nbret-failed-scan-no-gaps", "why": "NBRET reported 'no recorded gaps' after a failed scan, so the report pipeline must surface tool failures before a 'reached / not reached' verdict is written."},
+      {"id": "evidence-handling.zap-sarif-keeps-secrets", "why": "Tool exports keep cookies, keys and bodies, so the 'information obtained' section and any appendix of tool output need field-by-field redaction."},
+      {"id": "reporting.takumi-not-vulnerable-means-not-reproduced", "why": "A negative retest can mean 'not reproduced' because of missing roles or data, so 'blocked' in the retest diff must record identities, data preconditions and version."},
+      {"id": "reporting.defectdojo-closure-not-fix", "why": "A finding disappearing from a tracker is not a fix, so the retest section must show a matched retest, not tracker status."}
+    ],
+    "unproven": [
+      "No research shows that executives read or act on a 1-2 page summary better than other formats.",
+      "Whether a replica-based result supports a one-line 'can / cannot withstand this attack' statement for the real system is not established; replica fidelity is unvalidated.",
+      "No calibrated method converts a demonstrated path into a monetary loss range.",
+      "Whether the blast-radius diagram can be simplified for executives without becoming technically misleading is untested.",
+      "No buyer evidence shows the four added elements are what buyers pay a premium for over GMO's kill chain and obtained-data report."
+    ],
+    "methods": [
+      {"name": "Claim record per finding", "what": "Each finding carries ID, predicate, environment/build, access used, positive and negative cases, dated evidence, status (observed, independently verified, contradicted, stale) and retest trigger; the executive summary cites these IDs.", "evidence_id": "standards.claim-record-fields"},
+      {"name": "Demonstrated vs modeled path labeling", "what": "Render the blast-radius diagram from a prerequisite graph where each edge is marked demonstrated (with evidence and date) or modeled, so readers can see what was proven.", "evidence_id": "service-delivery.prerequisite-graph-is-possibility-only"},
+      {"name": "Limits ledger and untested list", "what": "A mandatory section listing tested scope, exclusions, blocked or failed tool runs and replica-vs-production differences, replacing any coverage percentage.", "evidence_id": "standards.recall-unknowable-measures"},
+      {"name": "Mirror retest with neighbor cases", "what": "Retest the original path, nearby state sequences and a legitimate-operation positive control under the same identities, scope and version, and show the result in the same diagram and table.", "evidence_id": "service-delivery.instance-vs-class-repair"},
+      {"name": "Field-level redaction before delivery", "what": "Strip cookies, tokens, API keys, query and body secrets from all tool exports and obtained-data excerpts, keeping raw evidence in access-controlled storage.", "evidence_id": "evidence-handling.zap-sarif-keeps-secrets"},
+      {"name": "Content-based authorization verdicts", "what": "Judge 'information obtained' by returned content, not status codes, so a deceptive denial is not reported as blocked.", "evidence_id": "authorization.deceptive-403-status-only-oracle-fails"}
+    ],
+    "open_questions": [
+      "May the executive one-line conclusion state 'cannot withstand', and how must it be qualified by replica scope?",
+      "Is the monetary range offered at all in the first year, given no validated loss model?",
+      "Who independently reviews findings and the executive diagram before delivery (reviewer independence)?",
+      "Will the obtained-data section show real records, masked samples or counts only?",
+      "Should the retest diff be a fixed format agreed in the contract so the client can verify like-for-like?"
+    ],
+    "proposal_changes": [
+      "Add a mandatory 'limits and untested areas' section to both layers, including replica-vs-production differences and failed or blocked tool runs.",
+      "In the executive diagram, distinguish demonstrated edges from modeled ones.",
+      "Specify that 'blocked' in the retest requires the same identities, data preconditions, version and a legitimate-operation control.",
+      "Cite NIST SP 800-115 (2008) and OWASP WSTG 4.2 by exact version; PTES is v1.0 from 2014.",
+      "Keep the FAIR-style range explicitly optional with client-supplied assumptions printed beside the number."
+    ]
+  },
+  {
+    "no": "08",
+    "title_en": "Blast-radius reduction menu and implementation boundary",
+    "proposal_en": "Option B: Synapse designs improvements, sets priorities and acceptance criteria, supervises client/vendor implementation and retests, but does not build or resell products. A 12-item menu (data-linkage separation, least privilege, phishing-resistant MFA, segmentation, zero-trust evaluation, encryption and key management, secret sharing, backup isolation, recovery testing, logging, pre-agreed disconnect functions, non-persistence/redundancy) is ranked by business impact, implementation weight and Synapse's role.",
+    "verdict": "partly-supported",
+    "verdict_reason": "The research supports the role split (client fixes, assessor retests) and testing class-level repairs, but it does not evaluate most menu items' effectiveness and warns that configuration-level evidence cannot prove encryption, immutability or isolation claims.",
+    "supports": [
+      {"id": "service-delivery.mandiant-assessment-effort-and-roles", "why": "A documented engagement uses the same split: the client remediates and the assessor reassesses.", "strength": "public-doc"},
+      {"id": "service-delivery.instance-vs-class-repair", "why": "A class-level repair passed all six cases where a symptom fix failed, supporting structural improvements with acceptance criteria tested across related paths.", "strength": "component-lab"},
+      {"id": "commercial.what-customers-buy", "why": "Help deciding what to fix and rechecking fixes are distinct purchases, supporting a supervise-and-retest offer rather than proposal-only.", "strength": "synthesis"},
+      {"id": "ai-evaluation.takumi-autofix-completed-is-pr-created", "why": "The competitor's autofix ends at a created PR without verifying the fix, leaving room for an offer that verifies the deployed structural change.", "strength": "public-doc"},
+      {"id": "service-delivery.prerequisite-graph-is-possibility-only", "why": "Removing one authority made the target unreachable in the graph, supporting 'which edge to cut' as the basis for prioritizing segmentation and privilege changes, provided edges are validated.", "strength": "component-lab"}
+    ],
+    "cautions": [
+      {"id": "cloud.go-s3-default-encryption-not-existing-objects", "why": "A bucket default does not show existing objects are encrypted, so encryption acceptance criteria need per-object evidence."},
+      {"id": "cloud.go-s3-lock-retention-default-not-per-object", "why": "Immutable-backup claims need per-version retention and deletion-denial evidence, not a bucket default, which constrains how item 8 is verified."},
+      {"id": "authorization.revocation-retest-consistency", "why": "A revoked permission can still pass from cache, so least-privilege retests must record timing and consistency mode to avoid false 'fixed' or 'still vulnerable'."},
+      {"id": "identity-ad.bloodhound-edges-skip-deny", "why": "Graph tools can omit deny entries and a missing edge has many causes, so 'path removed after segmentation' must be confirmed by a controlled capability test."},
+      {"id": "defensive-response.response-state-machine", "why": "For logging, detection and disconnect items, a configured action or API success is not an observed effect; each stage must be verified separately."},
+      {"id": "reporting.defectdojo-closure-not-fix", "why": "Tracker closure is bookkeeping, so supervision must end in a matched retest, not in vendor-reported completion."}
+    ],
+    "unproven": [
+      "No research evaluates secret sharing, data-linkage separation, zero-trust products or phishing-resistant MFA as blast-radius controls.",
+      "The research gives no evidence that one encryption or secret-sharing architecture fits a given client.",
+      "Effort for 'supervision' is unmeasured, so its inclusion in a fixed price is unsupported.",
+      "Whether client IT or vendors will implement within a 90-day retest window is unknown.",
+      "Recovery-time and backup-restorability outcomes are not modeled in the research."
+    ],
+    "methods": [
+      {"name": "Edge-cut acceptance criterion", "what": "For each improvement, name the prerequisite edge it should remove and set acceptance as 'the original path and its neighbors no longer reach the asset while legitimate work still succeeds', checked by retest.", "evidence_id": "service-delivery.prerequisite-graph-is-possibility-only"},
+      {"name": "Two-tenant identity matrix tests", "what": "Use synthetic identities per role and tenant to verify least-privilege and separation changes by content, with own-tenant positive controls so deny-all repairs fail.", "evidence_id": "authorization.deceptive-403-status-only-oracle-fails"},
+      {"name": "Workflow invariant tests", "what": "Turn approved business rules into test sequences (edit, role change, replay) to check that a structural fix holds across the workflow, not one endpoint.", "evidence_id": "service-delivery.instance-vs-class-repair"},
+      {"name": "Per-object state evidence", "what": "Verify encryption and immutable-backup claims with per-object/per-version evidence and time comparison, not bucket or policy defaults.", "evidence_id": "cloud.go-s3-lock-retention-default-not-per-object"},
+      {"name": "Effect-stage verification for response controls", "what": "For logging and disconnect items, record intended effect, execution, telemetry, alert and restored state as separate observed stages.", "evidence_id": "defensive-response.response-state-machine"}
+    ],
+    "open_questions": [
+      "Which of the 12 menu items can Synapse actually retest in its isolated environment, and which can only be advised?",
+      "How many supervision hours are included before it becomes a separately quoted service?",
+      "Is the founder's own 'resilience system' a client deliverable, a product, or internal tooling, and does it bias product neutrality?",
+      "Will Synapse recommend specific secret-sharing or backup products, and on what evidence?",
+      "What happens commercially if the client has not implemented fixes within the retest window?"
+    ],
+    "proposal_changes": [
+      "Mark menu items as 'retestable in our environment' versus 'advice only', and attach a concrete acceptance test to each retestable item.",
+      "Replace configuration-level checks for encryption and backup immutability with per-object evidence requirements.",
+      "Cap included supervision hours and state what triggers a separate quote.",
+      "State that menu items 5, 7 and 12 have no supporting evaluation in Synapse's research and are offered as design advice only."
+    ]
+  },
+  {
+    "no": "09",
+    "title_en": "Ideal customer profile (ICP)",
+    "proposal_en": "Primary: mid-sized manufacturers and suppliers (50-500 employees, revenue ¥1-30bn) facing supply-chain security demands (METI star rating, JAMA/JAPIA guideline), with an assumed budget of ¥1-3M. Secondary: service, e-commerce and medical groups holding large personal-data sets. IPO-stage firms only via referral; general SMEs are honestly redirected to GMO's fixed-price test; a screening questionnaire separates 'GMO is enough' from 'needs Synapse'.",
+    "verdict": "unproven",
+    "verdict_reason": "The research contains no buyer, segment, demand or willingness-to-pay evidence and does not cover OT or manufacturing environments; it only supplies criteria for what buyers in general purchase and how to validate demand.",
+    "supports": [
+      {"id": "commercial.what-customers-buy", "why": "Buyers purchase accountable engagements, fix decisions and retests, which is consistent with targeting buyers who have an external trigger and an implementer, though it is synthesis, not market data.", "strength": "synthesis"},
+      {"id": "service-delivery.surface-access-requirements", "why": "Each surface needs specific accounts, ranges and vantage points, which supports a screening questionnaire that checks whether the client can supply what the replica needs.", "strength": "synthesis"},
+      {"id": "standards.procurement-regimes", "why": "Sector regimes such as TLPT shape deliverable formality and need legal analysis, supporting the decision not to target finance-sector TLPT demand first.", "strength": "public-doc"}
+    ],
+    "cautions": [
+      {"id": "commercial.evaluation-and-buyer-evidence-protocol", "why": "Buyer evidence must come from consented interviews or paid pilots, and a lab success is not market validation, so the ICP must be tested before it drives marketing spend."},
+      {"id": "commercial.five-falsifiable-hypotheses", "why": "The research lists candidate offerings with disproof criteria and no validated entry strategy, so the ICP choice should be framed as a hypothesis with a kill criterion."},
+      {"id": "service-delivery.synapse-mapping-gaps", "why": "No client-replica capability is established, which matters most for manufacturers whose networks and possibly OT may not be reproducible in isolation."},
+      {"id": "service-delivery.incident-counterfactuals-limits", "why": "Incident and ransomware statistics motivate test areas but cannot show that an assessment would have prevented losses, so they should not be the ICP's value argument."},
+      {"id": "service-delivery.surface-access-requirements", "why": "Internal network work depends heavily on vantage point and explicit ranges, which a supplier with shared servers and VPN links to customers may not be able to provide or authorize."}
+    ],
+    "unproven": [
+      "No research supports that supply-chain-pressured manufacturers will buy validation rather than checklist support.",
+      "The ¥1-3M budget band for the primary segment is not evidenced.",
+      "Whether Synapse's isolated environment can reproduce manufacturing IT, EDI/VPN links or OT is unknown.",
+      "Whether the screening questions actually separate buyers who need blast-radius analysis is untested.",
+      "Demand in medical, e-commerce and IPO-stage segments is not studied."
+    ],
+    "methods": [
+      {"name": "Consented buyer interviews", "what": "Interview 8-12 target-segment buyers on triggers, acceptance criteria, access preparation and budget owner before fixing the ICP, using the research's buyer-evidence protocol.", "evidence_id": "commercial.evaluation-and-buyer-evidence-protocol"},
+      {"name": "Replicability screen in intake", "what": "Add intake questions on which surfaces (web app, cloud, identity, internal network, OT) are in scope and whether per-role accounts, ranges and configuration can be supplied, and decline segments the replica cannot represent.", "evidence_id": "service-delivery.surface-access-requirements"},
+      {"name": "ICP as falsifiable hypothesis", "what": "State the primary-segment hypothesis with a disproof criterion (for example, fewer than N of M qualified conversations proceed to a paid scoping) and review it after the pilot window.", "evidence_id": "commercial.five-falsifiable-hypotheses"}
+    ],
+    "open_questions": [
+      "Which surfaces of a typical 50-500 person manufacturer can Synapse reproduce, and is OT excluded?",
+      "What conversion from first consultation to paid engagement would confirm or kill the manufacturing ICP?",
+      "Which existing relationships give access to supply-chain-pressured manufacturers?",
+      "Does the ¥1-3M budget band hold once price and capacity (decisions 03 and 12) are fixed?",
+      "Is the star-rating scheme's timing and content confirmed from METI primary sources?"
+    ],
+    "proposal_changes": [
+      "Reframe the primary ICP as a hypothesis with a measurable disproof criterion and an interview step before marketing spend.",
+      "Add replicability questions (surfaces, accounts, ranges, OT) to the screening questionnaire and exclude OT-centric environments until reproduction is demonstrated.",
+      "Do not use ransomware loss statistics as evidence that Synapse would reduce the client's losses; use them only to motivate the conversation."
+    ]
+  },
+  {
+    "no": "10",
+    "title_en": "Go-to-market: pricing visibility, landing page, materials, channels",
+    "proposal_en": "Option C: publish a price band for step 1 (initial validation in an isolated replica with blast-radius visualization and executive report) and quote step 2 (structural improvement and retest) after scoping. A landing page with a comparison table against fixed-price surprise tests, a sample report from a mock engagement, a 10-question self-check, referrals limited to manufacturer customers, insurance agents and audit firms, organic social posts instead of X ads, and a small search-ad test; target 10 consultations and 2-3 pilots by end of 2026.",
+    "verdict": "partly-supported",
+    "verdict_reason": "The research supports publishing real scope/terms, quoting from own scope rather than competitor prices, and treating pilots as distinct buyer evidence, but it has no data on channels, conversion, ads or referral partners and constrains what marketing claims may say.",
+    "supports": [
+      {"id": "service-delivery.public-pages-are-not-signed-terms", "why": "Recommends publishing actual SOW terms (scope, clocks, exclusions) clients can compare, which fits a public price band with an explicit included/excluded list.", "strength": "public-doc"},
+      {"id": "commercial.observed-public-prices", "why": "Comparator prices buy different work, supporting quoting from Synapse's own scope rather than positioning purely against ¥980k.", "strength": "public-doc"},
+      {"id": "commercial.japanese-managed-service-pricing", "why": "Japanese enterprise security services are mostly quoted per scope and AI is not promised as a price cut, consistent with a band for step 1 and quotes for step 2.", "strength": "public-doc"},
+      {"id": "commercial.evaluation-and-buyer-evidence-protocol", "why": "A paid pilot is separate evidence from a technical prototype, supporting the pilot-first plan as the way to obtain buyer validation.", "strength": "synthesis"},
+      {"id": "service-delivery.small-service-exercise-template", "why": "Provides a ready skeleton for the sample report (access matrix, finding, repair, retest, untested list) built on a synthetic environment.", "strength": "synthesis"}
+    ],
+    "cautions": [
+      {"id": "commercial.vendor-outcome-evidence-weak", "why": "Vendor case studies and speed claims are selected testimony, so landing-page claims and future case studies must not imply outcome statistics."},
+      {"id": "ai-evaluation.takumi-benchmark-threshold-dependent", "why": "Competitor benchmark numbers are vendor-designed and threshold-dependent, so the comparison table must not quote them as detection rates."},
+      {"id": "ai-evaluation.vendor-ai-metrics-are-not-accuracy", "why": "Any AI benefit claimed on the landing page needs Synapse's own held-out measurement, not borrowed percentages."},
+      {"id": "service-delivery.incident-counterfactuals-limits", "why": "Incident statistics on the landing page can motivate the question but cannot claim prevented losses."},
+      {"id": "commercial.no-measured-assessment-hours", "why": "No measured assessment hours exist, so the published step-1 band rests on unmeasured effort and should be revisited after the first pilot."},
+      {"id": "service-delivery.synapse-mapping-gaps", "why": "Replica fidelity and loss estimates are unestablished, so the landing page must not promise them; the sample report must be labeled as a synthetic mock."}
+    ],
+    "unproven": [
+      "No research measures search ads, X ads, organic posting, whitepapers or self-check forms for Japanese B2B security leads.",
+      "Insurance-agent, audit-firm and manufacturer-customer referral channels are not studied.",
+      "The end-of-2026 target of 10 consultations and 2-3 pilots has no evidentiary basis.",
+      "Step-2 conversion after step 1 is unknown and decides viability.",
+      "Whether naming GMO in a comparison table helps or harms is not studied."
+    ],
+    "methods": [
+      {"name": "Synthetic sample engagement", "what": "Build the sample report from a synthetic two-organization service with a planted chain, a narrow fix and a stronger fix, clearly labeled as a mock, so prospects see the deliverable without client data.", "evidence_id": "service-delivery.small-service-exercise-template"},
+      {"name": "Published scope sheet", "what": "Publish with the price band the included steps, exclusions, retest window, report timing and authorization requirements so prospects compare terms, not slogans.", "evidence_id": "service-delivery.public-pages-are-not-signed-terms"},
+      {"name": "Claims register for marketing", "what": "Check every landing-page and deck claim against evidence strength; exclude vendor percentages, prevention claims and unmeasured AI benefits.", "evidence_id": "ai-evaluation.vendor-ai-metrics-are-not-accuracy"},
+      {"name": "Pilot measurement log", "what": "In each pilot record setup effort, reviewer effort, machine time, retest effort and whether the client bought step 2, to calibrate the published band and the funnel.", "evidence_id": "commercial.no-measured-assessment-hours"}
+    ],
+    "open_questions": [
+      "What step-1 band is published, and what effort measurement will trigger a revision?",
+      "Will the landing page name GMO or describe a generic 'fixed-price surprise test'?",
+      "Which referral relationships exist now, and how many can be contacted before year end?",
+      "What step-2 conversion rate makes the two-step model viable, and how will it be tracked?",
+      "Who approves each public claim against the evidence before publication?"
+    ],
+    "proposal_changes": [
+      "Label the sample report as a synthetic mock and build it from the research's service-exercise skeleton with an untested-areas list.",
+      "Remove or qualify any landing-page wording that implies replica fidelity, prevented losses or AI accuracy.",
+      "Publish an included/excluded scope sheet next to the price band.",
+      "Treat the year-end targets as hypotheses and add a pilot measurement log that feeds price and channel decisions."
+    ]
+  }
+]

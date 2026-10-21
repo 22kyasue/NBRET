@@ -1,0 +1,58 @@
+{
+  "at": "2026-10-17T20:08:18.297Z",
+  "scope": "upstream v2 recursive TTU collision regression; in-memory model/data; no server or target",
+  "out": "C:\\Users\\kotar\\.codex\\research\\assessment-evidence-receipts\\openfga-1792267693084",
+  "command": {
+    "exe": "C:\\Users\\kotar\\githubprojects\\NBRET\\.tools\\security-research-go\\sdk\\go\\bin\\go.exe",
+    "args": [
+      "test",
+      "-p",
+      "2",
+      "./internal/check",
+      "-run",
+      "^TestRecursiveTTUVisitedCollision$",
+      "-count=1",
+      "-json"
+    ],
+    "cwd": "C:/Users/kotar/.codex/research/openfga-20261017"
+  },
+  "toolchain": "go version go1.27.2 windows/amd64",
+  "environment": {
+    "GOTOOLCHAIN": "local",
+    "CGO_ENABLED": "0",
+    "GOPATH": "C:\\Users\\kotar\\githubprojects\\NBRET\\.tools\\security-research-go\\module-cache",
+    "GOCACHE": "C:/Users/kotar/.codex/research/assessment-evidence-receipts/openfga-1792267376264/build-cache",
+    "GOPROXY": "https://proxy.golang.org",
+    "GOSUMDB": "sum.golang.org"
+  },
+  "code": 0,
+  "signal": null,
+  "elapsedMs": 5247,
+  "sourceSha256": {
+    "go.mod": "6c5e972de64e7e06f544873a77ddf84de5d86100d1ae96be3555c04b62c10be8",
+    "go.sum": "c08837e3f91fe661b0ae2c0e3c561d4f39141b15f40433d7e6d924568b19aa03",
+    "internal/check/check.go": "63e0093011f434f9925b4321c258b8e0ba0a3f2985a8c04c0b92d8dcb48b79d3",
+    "internal/check/request.go": "32caff9e413f333a1df77a935c3ca5abc3055919bf81a82420fc9e1e89af6cec",
+    "internal/check/default.go": "961efaceea2bff071558acba4dc8db1d78b9b4b4520f5257f389120e445e6eeb",
+    "internal/check/recursive.go": "50cc2c2fd0230f270a5ef08d7b624733c5db581e3279f5c4ceada4ac010db496",
+    "internal/check/bottom_up.go": "2256eb4cc8981ad9ad7b5e9f29a5f7ea4af92a45f698fd4fa8779aa138eaaf2a",
+    "internal/check/weight2.go": "9415f58d09c90e98c6658ddec3489f114fa67a31cf7e2fc20b823f6c194b3efa",
+    "internal/check/filters.go": "3e10a03e893418acbe9c16b901a0a0632cb4fb1bb1c3647c5bdee8044868a8f8",
+    "internal/check/recursive_ttu_collision_test.go": "5eefb97640044824e4ada83387fa673b3c4ac190967bbfffdf763f8173f4c17f"
+  },
+  "fixtureSha256": null,
+  "overlaySha256": null,
+  "stdoutSha256": "6d4f3838ccea81c547c0fc84d4092474a01793366676b55f445cbecafae237d3",
+  "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "tests": [
+    {
+      "Time": "2026-10-17T13:08:18.2320751-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/check",
+      "Test": "TestRecursiveTTUVisitedCollision",
+      "Elapsed": 0.02
+    }
+  ],
+  "intervention": "upstream test unchanged; selected run filter, local Go/environment",
+  "cost": "no provider calls; unmetered local CPU/build dependency download, no monetary estimate"
+}

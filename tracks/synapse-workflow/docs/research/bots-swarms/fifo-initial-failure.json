@@ -1,0 +1,10 @@
+{
+  "at": "2026-10-17T20:07:03.278Z",
+  "command": "node docs/research/bots-swarms/fifo-lab.mjs",
+  "scriptSha256": "dbe2e0dd10ccbf84e9e6a9052759ad7c3b4ea109722b17cf0b84c85ff4f8c7bf",
+  "exitCode": 1,
+  "error": "Unhandled Error: waitAll synthetic failure",
+  "cause": "waitAll fixture rejected without an active fetch consumer to observe internal nextPromise rejection",
+  "state": "Process exited; no sockets or child processes; watchdog was already cleared",
+  "scope": "Failed experiment setup; no full Worker or broker conclusion"
+}

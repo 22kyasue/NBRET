@@ -1,0 +1,485 @@
+{
+  "title": "Inside cybersecurity",
+  "chapters": [
+    {
+      "id": "attacks",
+      "title": "How hacking actually works",
+      "deck": "From an input or stolen account to an action the system should never have allowed.",
+      "icon": "key",
+      "guide": "01-how-attacks-work.md",
+      "studies": [
+        "assessment-evidence/incidents.md",
+        "assessment-evidence/overview.md",
+        "security-landscape/discipline-map.md"
+      ],
+      "deeper": [
+        "toolchain/identity-analysis.md",
+        "toolchain/cloud-posture.md",
+        "assessment-evidence/infrastructure-and-memory.md"
+      ]
+    },
+    {
+      "id": "services",
+      "title": "What security firms sell—and deliver",
+      "deck": "Pentesting, monitoring, incident response and the actual work behind each contract.",
+      "icon": "people",
+      "guide": "02-services.md",
+      "studies": [
+        "cybersecurity-firms/service-process-comparison.md",
+        "security-landscape/companies.md",
+        "cybersecurity-firms/service-artifact-boundaries.md"
+      ],
+      "deeper": [
+        "cybersecurity-firms/bt-falcon-service-schedule.md",
+        "cybersecurity-firms/cisco-xdr-premier-contract.md",
+        "cybersecurity-firms/mandiant-3cx-assessment.md"
+      ]
+    },
+    {
+      "id": "tools",
+      "title": "Inside the technical toolchain",
+      "deck": "Follow requests, packets, identities and scanner results through the tools we studied.",
+      "icon": "laptop",
+      "guide": "03-toolchain.md",
+      "studies": [
+        "toolchain/read-first.md",
+        "toolchain/map.md",
+        "toolchain/proxy-flow.md",
+        "toolchain/connectivity.md"
+      ],
+      "deeper": [
+        "toolchain/discovery-targets.md",
+        "toolchain/dns-flow.md",
+        "toolchain/packet-dependencies.md",
+        "toolchain/identity-flow.md",
+        "toolchain/reader-guide.md",
+        "security-landscape/technical-library.md"
+      ]
+    },
+    {
+      "id": "engines",
+      "title": "How a security-testing engine is built",
+      "deck": "Capture, scope, request generation, matching, evidence, reports and repeatable checks.",
+      "icon": "search",
+      "guide": "04-engines.md",
+      "studies": [
+        "security-landscape/inventory.md",
+        "security-landscape/implementation-reviews.md",
+        "security-landscape/lab-results.md"
+      ],
+      "deeper": [
+        "security-landscape/deep-review/nuclei-template-path.md",
+        "security-landscape/deep-review/nuclei-matchers.md",
+        "security-landscape/deep-review/zap-control-path.md",
+        "security-landscape/deep-review/nbret-checks-identity.md",
+        "security-landscape/learning-reader-map.md",
+        "assessment-evidence/pgx-binding-boundaries.md",
+        "assessment-evidence/coverage.md"
+      ]
+    },
+    {
+      "id": "operations",
+      "title": "Detection, investigation and response",
+      "deck": "What a security operations team does from the first event to containment and recovery.",
+      "icon": "radar",
+      "guide": "05-operations.md",
+      "studies": [
+        "cybersecurity-firms/service-process-comparison.md",
+        "assessment-evidence/deep-atomic.md",
+        "toolchain/reporting-retest.md"
+      ],
+      "deeper": [
+        "cybersecurity-firms/splunk-lsass-source.md",
+        "cybersecurity-firms/defender-action-contract.md",
+        "cybersecurity-firms/crowdstrike-final-rca.md",
+        "assessment-evidence/framework.md"
+      ]
+    },
+    {
+      "id": "agents",
+      "title": "AI agents, automation and worker fleets",
+      "deck": "Plans become tool calls. Jobs survive failures. Permissions and external effects still need engineering.",
+      "icon": "agent",
+      "guide": "06-agents-and-workers.md",
+      "studies": [
+        "cybersecurity-firms/ai-evidence-matrix.md",
+        "assessment-evidence/deep-pentestgpt.md",
+        "bots-swarms/model.md",
+        "bots-swarms/findings.md"
+      ],
+      "deeper": [
+        "assessment-evidence/agent-recovery-continuation.md",
+        "assessment-evidence/sdk-boundaries-continuation.md",
+        "bots-swarms/continuation-checkpoint.md",
+        "bots-swarms/scope-closure.md"
+      ]
+    },
+    {
+      "id": "replicate",
+      "title": "Reproduce the mechanisms. Build the workflow.",
+      "deck": "A runnable local lab, three build projects, and a blueprint for delivering an evidence-backed service.",
+      "icon": "repair",
+      "guide": "07-replication.md",
+      "studies": [
+        "assessment-evidence/executable-claims.md",
+        "assessment-evidence/framework.md",
+        "security-landscape/synthesis.md"
+      ],
+      "deeper": [
+        "toolchain/reporting-retest.md",
+        "bots-swarms/defense.md",
+        "security-landscape/deep-review/report-assurance-proposal.md"
+      ]
+    }
+  ],
+  "companies": [
+    {
+      "id": "crowdstrike",
+      "name": "CrowdStrike",
+      "focus": "Endpoint protection, managed response and Charlotte AI",
+      "icon": "radar",
+      "profile": "crowdstrike.md",
+      "plain": "CrowdStrike puts software on devices to observe and control activity. Customers can operate the Falcon platform themselves or purchase an operating service such as Falcon Complete.",
+      "mechanism": "Device events feed cloud analysis and an investigation queue. Analysts or permitted automations request actions such as containment. A separate check is needed to establish what happened on the device.",
+      "build": "Start with an endpoint-event simulator, event store, triage queue and an approved action adapter. Model connected and offline devices separately. Keep requested, acknowledged and verified containment as separate states.",
+      "service": "Define device/source onboarding, sensor-health checks, investigation ownership, escalation contacts, action authority and the boundary between containment and business recovery.",
+      "sections": [
+        {
+          "title": "Deploying and operating the product",
+          "docs": [
+            "falcon-deployment-maintenance.md",
+            "falcon-buyer-health-check.md",
+            "bt-falcon-service-schedule.md"
+          ]
+        },
+        {
+          "title": "Charlotte AI: triage and agent execution",
+          "docs": [
+            "charlotte-agentworks-contract.md"
+          ]
+        },
+        {
+          "title": "What an action request actually does",
+          "docs": [
+            "falcon-host-action-source.md",
+            "falcon-auth-source.md"
+          ]
+        },
+        {
+          "title": "Failure, recovery and contractual boundaries",
+          "docs": [
+            "crowdstrike-final-rca.md",
+            "falcon-public-terms-boundary.md"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "palo-alto",
+      "name": "Palo Alto Networks",
+      "focus": "Network controls, Cortex operations, Unit 42 and AgentiX",
+      "icon": "key",
+      "profile": "palo-alto-networks.md",
+      "plain": "Palo Alto Networks combines security products with operations and expert services. Cortex, network controls and Unit 42 engagements solve different parts of the customer's problem.",
+      "mechanism": "Signals from connected products support investigations. Action permissions and playbooks determine which response can occur. The reviewed Unit 42 permission model distinguishes actions that are permitted, forbidden or require the customer to be informed first.",
+      "build": "Build a policy-controlled action dispatcher with per-device-type permissions. Separate the investigation state from the action state. Add an approval wait and verify the target state after an adapter reports completion.",
+      "service": "Agree which systems and actions are included, document the approval matrix, establish escalation and rollback, and treat onboarding/upgrades as their own operating changes.",
+      "sections": [
+        {
+          "title": "Operating and upgrading the platform",
+          "docs": [
+            "pan-deployment-buyer-policy.md"
+          ]
+        },
+        {
+          "title": "AgentiX permissions and data handling",
+          "docs": [
+            "pan-agentix-controls.md"
+          ]
+        },
+        {
+          "title": "Isolation playbooks in public code",
+          "docs": [
+            "pan-isolation-source.md"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fortinet",
+      "name": "Fortinet",
+      "focus": "Network enforcement, security operations and connector automation",
+      "icon": "router",
+      "profile": "fortinet.md",
+      "plain": "Fortinet's business starts with network-security controls and extends into analysis, orchestration and managed offerings. A firewall, a reporting system and an operating service are different purchases.",
+      "mechanism": "Network devices apply configured traffic rules. Analysis and orchestration products consume events and can invoke connectors or playbooks. A fixed automation rule does not require a language model.",
+      "build": "Use a local gateway simulator, event collector, rule engine and connector dispatcher. Record which rule and credential caused each action. Add model assistance only where a defined task benefits from it.",
+      "service": "Separate policy design, device operation, incident handling and managed-service scope. State which connections are monitored and which changes the operator may make.",
+      "sections": [
+        {
+          "title": "What a managed offering includes",
+          "docs": [
+            "managed-fortigate-service.md"
+          ]
+        },
+        {
+          "title": "AI data and transparency boundaries",
+          "docs": [
+            "fortianalyzer-ai-privacy.md",
+            "fortianalyzer-transparency.md"
+          ]
+        },
+        {
+          "title": "Connector implementation",
+          "docs": [
+            "fortinet-sentinel-source.md"
+          ]
+        },
+        {
+          "title": "Business economics",
+          "docs": [
+            "fortinet-annual-economics.md"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "microsoft",
+      "name": "Microsoft Security",
+      "focus": "Defender, Sentinel, Entra, Copilot and expert services",
+      "icon": "server",
+      "profile": "microsoft.md",
+      "plain": "Microsoft supplies several connected security product families. Defender addresses threats, Sentinel works with security event records, Entra handles identity, and expert services add people with a defined mandate.",
+      "mechanism": "Tenant permissions, data connectors and product configuration determine what an investigator can see or do. The reviewed phishing agent classifies supported reports; message removal, account action and broader response have separate authorities.",
+      "build": "Create an event workspace, permission-scoped investigator identity and case queue. Implement classification as one state transition. Route consequential actions through separately allowed adapters and retain the investigation/action audit trail.",
+      "service": "Inventory licenses, tenants, devices, identities and data sources. Establish who runs the queue, who can close an alert, who can change an account and how mistakes are corrected.",
+      "sections": [
+        {
+          "title": "The phishing investigation agent",
+          "docs": [
+            "microsoft-phishing-agent.md",
+            "microsoft-phishing-trial.md"
+          ]
+        },
+        {
+          "title": "Response and endpoint action states",
+          "docs": [
+            "sentinel-playbooks-source.md",
+            "defender-action-contract.md",
+            "defender-automation-boundaries.md"
+          ]
+        },
+        {
+          "title": "Copilot provisioning and separate research agents",
+          "docs": [
+            "security-copilot-provisioning.md",
+            "microsoft-dtda-evaluation.md"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cisco-splunk",
+      "name": "Cisco / Splunk",
+      "focus": "Network and identity controls, event analytics and guided response",
+      "icon": "packet",
+      "profile": "cisco-splunk.md",
+      "plain": "Cisco brings network and security controls; Splunk brings search and analysis of machine-generated records. Their combined portfolio does not make every product or response action one interchangeable service.",
+      "mechanism": "Collected events are searched and correlated into detections. A rule depends on the fields and data sources it expects. Guided Response and the Triage agent have separate model and tool contracts. Preselected SOAR connectors can allow adaptive response as well as enrichment; reviewed triage limits include selected detections, batch coverage and a daily ceiling.",
+      "build": "Build event normalization, a versioned detection query, a case view and a documented response playbook. Test the complete source-event-to-alert chain with expected and nonmatching examples. Apply capability and capacity limits separately to each agent feature.",
+      "service": "Specify collection, rule maintenance, investigation and response responsibilities. Use the dated service contract to establish which promises apply, rather than transferring terms from one offering to another.",
+      "sections": [
+        {
+          "title": "Detection in public source",
+          "docs": [
+            "splunk-lsass-source.md"
+          ]
+        },
+        {
+          "title": "Guided response, triage and model boundaries",
+          "docs": [
+            "splunk-guided-response.md",
+            "splunk-triage-controls.md"
+          ]
+        },
+        {
+          "title": "Managed service contracts",
+          "docs": [
+            "cisco-mdr-service-description.md",
+            "cisco-xdr-premier-contract.md"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "google-mandiant",
+      "name": "Google Cloud Security / Mandiant",
+      "focus": "Security-event analysis, investigation agents and incident expertise",
+      "icon": "search",
+      "profile": "google-cloud-security.md",
+      "plain": "Google's security platform and Mandiant's specialist services have different origins and roles. A platform investigation feature and a consultant-led incident engagement should be understood separately.",
+      "mechanism": "An investigation feature consumes supported alert/context inputs and produces an investigation record. Conversational assistance, threat investigation and response execution have separate interfaces and permission contracts.",
+      "build": "Create an asynchronous investigation API with trigger/get/list, case state, source-linked findings and explicit failure/overflow handling. Keep a chat assistant's settings and outputs separate from an action-taking investigation engine.",
+      "service": "For an investigation engagement, agree evidence access, preservation, reporting and response responsibilities. For a platform service, agree ingestion, capacity, audit settings and who acts on recommendations.",
+      "sections": [
+        {
+          "title": "Platform architecture and investigation APIs",
+          "docs": [
+            "google-architecture-boundary.md",
+            "google-investigations-source.md",
+            "google-gemini-client-source.md"
+          ]
+        },
+        {
+          "title": "An actual published engagement artifact",
+          "docs": [
+            "mandiant-3cx-assessment.md"
+          ]
+        },
+        {
+          "title": "Failure and regional delivery evidence",
+          "docs": [
+            "mandiant-processing-incident.md",
+            "google-japan-delivery-evidence.md"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "trend-micro",
+      "name": "Trend Micro",
+      "focus": "Multi-source protection, managed detection and AI interfaces",
+      "icon": "shield",
+      "profile": "trend-micro.md",
+      "plain": "Trend Micro supplies protection and investigation products alongside managed services. Its product assistant and a bridge to an external AI model are different data paths.",
+      "mechanism": "Connected products supply events and action capabilities. Managed analysts investigate within the agreed scope. A response task can remain pending or fail; a task record alone does not establish enforcement.",
+      "build": "Create a normalized event interface, investigation workspace and response-task state machine. Put a read-only default on external AI tool exposure and make every write capability an explicit policy choice.",
+      "service": "Specify monitored products, analyst escalation, authority to act, task follow-up and customer responsibilities. Keep inaccessible service descriptions as unknown contract detail.",
+      "sections": [
+        {
+          "title": "Managed response, approval and task completion",
+          "docs": [
+            "trend-mdr-approval.md",
+            "trend-response-task-boundary.md",
+            "trend-mdr-access-boundary.md"
+          ]
+        },
+        {
+          "title": "External MCP bridge implementation",
+          "docs": [
+            "trend-mcp-source.md"
+          ]
+        },
+        {
+          "title": "Business and accounting boundaries",
+          "docs": [
+            "trend-annual-economics.md"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "lac",
+      "name": "LAC",
+      "focus": "Japanese security operations across vendor products",
+      "icon": "people",
+      "profile": "lac.md",
+      "plain": "LAC's research centers on specialist people operating security services across products. Its monitoring and investigation work is not the same thing as selling a single endpoint platform.",
+      "mechanism": "Customer products and log pipelines feed an operating team. The exact SIEM and service shape affect who deploys rules, handles alerts and owns the environment. LAC Falcon and CrowdStrike Falcon are distinct names.",
+      "build": "Build a multi-customer case workspace with separate source credentials, collection-health views, detection rules and escalation records. Do not let a shared operating interface blur customer boundaries.",
+      "service": "Model a real onboarding checklist, handover, analyst shift, severity rules, notification contract and response authorization. Separate supported SIEM models instead of promising universal compatibility.",
+      "sections": [
+        {
+          "title": "Two concrete SIEM operating models",
+          "docs": [
+            "lac-xpdr-operating-boundary.md"
+          ]
+        },
+        {
+          "title": "Ownership, accounts and the completed merger",
+          "docs": [
+            "lac-ownership-accounting.md",
+            "lac-latest-standalone-accounts.md"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "nri-secure",
+      "name": "NRI Secure",
+      "focus": "Managed security, consulting and AgenticBlue analysis",
+      "icon": "agent",
+      "profile": "nri-secure.md",
+      "plain": "NRI Secure sells consulting, assessments, products, education and managed operations. The reviewed AgenticBlue workflow helps analysts prepare and review investigations inside supported services.",
+      "mechanism": "The documented sequence is triage, analysis, severity scoring and reporting. Execution agents gather information; reviewer agents inspect phase outputs; people remain involved at important stages.",
+      "build": "Use an explicit phase orchestrator, versioned customer procedures, allowlisted query tools, reviewer gates and human escalation. Evaluate the investigator and reviewer together; agreement between them is not independent truth.",
+      "service": "Specify supported SIEMs, customer-context collection, source access, analyst ownership and report approval. Keep future automated protection-rule application separate from currently documented analysis work.",
+      "sections": [
+        {
+          "title": "AgenticBlue controls and evaluation limits",
+          "docs": [
+            "nri-agenticblue-controls.md"
+          ]
+        },
+        {
+          "title": "Public delivery artifacts and shared service boundaries",
+          "docs": [
+            "service-artifact-boundaries.md"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gmo-ierae",
+      "name": "GMO Cybersecurity by Ierae",
+      "focus": "Assessments, incident investigation, SOC and WAF operations",
+      "icon": "search",
+      "profile": "gmo-ierae.md",
+      "plain": "Ierae brings specialist testing and investigation together with operating services. Different purchased menus produce different deliverables: a second opinion, a report and automatic blocking are not the same output.",
+      "mechanism": "Assessment work validates agreed weaknesses and explains repairs. Operating services analyze events; a WAF-related action depends on the configured blocking path and its authorization.",
+      "build": "Create an assessment workspace with scoped test cases and reviewed findings. For a blocking service, add a separate decision-to-enforcement adapter and verify both blocked unwanted requests and allowed legitimate ones.",
+      "service": "Separate assessment scope, incident evidence handling and ongoing monitoring. Define how recommendations become approved changes and who checks false blocking or recovery.",
+      "sections": [
+        {
+          "title": "SOC brochure and delivery limits",
+          "docs": [
+            "ierae-soc-brochure.md"
+          ]
+        },
+        {
+          "title": "Service and action distinctions",
+          "docs": [
+            "service-process-comparison.md"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gmo-flatt",
+      "name": "GMO Flatt Security",
+      "focus": "Development security and Takumi's code-to-patch workflow",
+      "icon": "repair",
+      "profile": "gmo-flatt-security.md",
+      "plain": "This is a separate legal and operating entity from Ierae. Its development-security workflow provides a useful contrast with a SOC: investigate code or a running application, reproduce a problem, propose a patch and review it.",
+      "mechanism": "Source access, target approval and a claimed benchmark result answer different questions. A proposed patch or pull request needs separate verification against the original intended behavior.",
+      "build": "Build a repository/fixture intake, reproducible test case, patch workspace, human review and independent regression run. Track unconfirmed suspicions separately from reproduced defects and tested fixes.",
+      "service": "Define repository and live-target scope independently, identify who approves target ownership and patch changes, and deliver reproducibility evidence with the change proposal.",
+      "sections": [
+        {
+          "title": "Target and repository authority",
+          "docs": [
+            "takumi-authority-boundary.md",
+            "takumi-github-scope-boundary.md"
+          ]
+        },
+        {
+          "title": "Benchmark and deployment claims",
+          "docs": [
+            "takumi-blackbox-benchmark.md",
+            "takumi-domestic-inference-announcement.md"
+          ]
+        }
+      ]
+    }
+  ]
+}

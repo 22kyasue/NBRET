@@ -1,0 +1,96 @@
+{
+  "owner": "Rowan",
+  "purpose": "A visual HTML learning reader for the evolving cybersecurity research",
+  "requirements": [
+    "Preserve all meaningful detail without repeating explanations",
+    "One canonical explanation per concept; cross-link distinct applications",
+    "Progressive depth: accessible explanation, mechanism, source trace, evidence",
+    "Use annotated diagrams, drawings, sequences, timelines and comparisons where they improve understanding",
+    "Keep visual statements tied to source links and clearly distinguish source behavior, runtime evidence, hypotheses and corrections",
+    "Expose research milestones and unread boundaries without implying exhaustive assurance",
+    "Keep detailed annotations and immutable receipts accessible"
+  ],
+  "tracks": [
+    {
+      "id": "landscape",
+      "entry": "security-landscape/README.md",
+      "topics": [
+        "Assessment disciplines",
+        "Scanner and reporting workflows",
+        "NBRET implementation"
+      ],
+      "visuals": [
+        "Assessment workflow and evidence handoffs",
+        "Scanner state versus report interpretation"
+      ],
+      "guide": "security-landscape/learning-reader-map.md"
+    },
+    {
+      "id": "assessment",
+      "entry": "assessment-evidence/README.md",
+      "topics": [
+        "Incidents",
+        "Evidence quality",
+        "Agent execution and scoring",
+        "Authorization",
+        "Defensive validation"
+      ],
+      "visuals": [
+        "Claim-to-evidence chain",
+        "Execution versus detection",
+        "Scoring oracle and independent effect"
+      ]
+    },
+    {
+      "id": "toolchain",
+      "entry": "toolchain/read-first.md",
+      "topics": [
+        "Proxies",
+        "Discovery and packets",
+        "Identity",
+        "Connectivity"
+      ],
+      "visuals": [
+        "Request-response lifecycle",
+        "VPN, proxy and tunnel trust boundaries",
+        "Collection-to-graph data provenance"
+      ],
+      "guide": "toolchain/reader-guide.md"
+    },
+    {
+      "id": "bots",
+      "entry": "bots-swarms/reader-map.md",
+      "topics": [
+        "Workers and coordination",
+        "Account, session and network identity",
+        "Detection and containment"
+      ],
+      "visuals": [
+        "Controller, queue and worker leases",
+        "Cancellation versus quiescence",
+        "Identity layers and enforcement points"
+      ]
+    },
+    {
+      "id": "firms",
+      "entry": "cybersecurity-firms/README.md",
+      "availability": "Await Pearl's actual artifacts; do not fabricate entry content",
+      "topics": [
+        "Global and Japanese providers",
+        "Service delivery",
+        "History",
+        "AI mechanisms"
+      ],
+      "visuals": [
+        "Customer-provider responsibility swimlanes",
+        "Company and product timelines",
+        "AI input, decision, approval and action flows"
+      ]
+    }
+  ],
+  "navigationCorrections": {
+    "assessmentIndex": "assessment-evidence/README.md",
+    "incidentCases": "assessment-evidence/incidents.md"
+  },
+  "delivery": "Build from canonical research artifacts as they mature; research continues independently"
+}

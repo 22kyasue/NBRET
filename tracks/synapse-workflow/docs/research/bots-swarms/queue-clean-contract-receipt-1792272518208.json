@@ -1,0 +1,48 @@
+{
+  "at": "2026-10-17T21:28:38.209Z",
+  "node": "v24.21.0",
+  "file": "src/classes/queue.ts",
+  "sha256": "0593fd1ee17cd738e625d0c5ecbc0c67af2ccacd4112eee3b0111eef770ba89c",
+  "methodHash": "0c677fbf6ded0e5d29a1bff0deb08cb67da29a8379ade4242c3f17e9cbc485f8",
+  "adaptation": "Only Queue.clean extracted; built-in TypeScript stripping; inert backend, trace and events",
+  "scope": "fabricated return IDs only; no actual deletion or datastore",
+  "checks": [
+    {
+      "name": "nonmultiple total sends two unchanged10000 batches",
+      "pass": true
+    },
+    {
+      "name": "nonmultiple total returns20000 fabricated IDs",
+      "pass": true
+    },
+    {
+      "name": "exact batch total makes one call",
+      "pass": true
+    },
+    {
+      "name": "waiting normalized and each batch emitted",
+      "pass": true
+    }
+  ],
+  "calls": [
+    {
+      "state": "wait",
+      "timestamp": 1792272518204,
+      "limit": 10000
+    },
+    {
+      "state": "wait",
+      "timestamp": 1792272518204,
+      "limit": 10000
+    }
+  ],
+  "exactCalls": [
+    {
+      "state": "completed",
+      "timestamp": 1792272518207,
+      "limit": 10000
+    }
+  ],
+  "allSyntheticPromisesSettled": true,
+  "noTimersOrServicesStarted": true
+}

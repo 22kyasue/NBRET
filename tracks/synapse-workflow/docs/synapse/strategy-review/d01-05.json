@@ -1,0 +1,226 @@
+[
+  {
+    "no": "01",
+    "title_en": "Positioning: what Synapse is versus GMO nukiuchi, Takumi and staffed pentests",
+    "proposal_en": "Position Synapse as consulting that reproduces real attacks in an isolated environment, confirms how far damage spreads after intrusion, and changes structure starting where enterprise-value impact is largest (option C). The contrast with GMO rests on four elements GMO's pages do not show: isolated reproduction, post-intrusion spread, business-impact prioritisation, and retest. AI is kept as a means rather than the headline.",
+    "verdict": "partly-supported",
+    "verdict_reason": "The research supports selling an accountable engagement with fix prioritisation and retest rather than detection capability, but it has not shown that Synapse can deliver the replica, the impact assessment or the full cycle the sentence promises, and it weakens the claim that 'isolated' sets Synapse apart from GMO.",
+    "supports": [
+      {"id": "commercial.what-customers-buy", "why": "Provider workflows show buyers pay for a bounded, accountable engagement, credible evidence, help deciding what to fix, and rechecking fixes, which is the shape of option C rather than an 'AI pentest' (option A).", "strength": "synthesis"},
+      {"id": "ai-evaluation.takumi-autofix-completed-is-pr-created", "why": "Takumi's 'Completed' means only that a pull request was opened, and its manual says the fix is not verified, so independently verifying fixes is a gap Synapse can occupy.", "strength": "public-doc"},
+      {"id": "reporting.takumi-not-vulnerable-means-not-reproduced", "why": "Takumi's 'Not Vulnerable' means 'could not reproduce', so an assessor who reports retest negatives with their identities, data and version recorded offers a different kind of assurance.", "strength": "public-doc"},
+      {"id": "service-delivery.prerequisite-graph-is-possibility-only", "why": "A prerequisite graph showed a consequential asset becoming unreachable once one authority was removed, a concrete way to express 'how far damage spreads and which change breaks it'.", "strength": "component-lab"},
+      {"id": "service-delivery.instance-vs-class-repair", "why": "The approval fixture separates a symptom fix from a structural (class) fix, which is the kind of distinction the 'change structure' clause would rest on.", "strength": "component-lab"}
+    ],
+    "cautions": [
+      {"id": "service-delivery.synapse-mapping-gaps", "why": "No client-system replica, calibrated business-loss model or observed end-to-end Synapse engagement exists, so the positioning sentence promises three things that have not been demonstrated."},
+      {"id": "safety.takumi-exclusions-not-access-block", "why": "Takumi's own manual recommends an isolated staging target for live reproduction, so 'isolated' does not separate Synapse from GMO as a whole, only from the production-based nukiuchi offer."},
+      {"id": "service-delivery.discipline-distinctions", "why": "Labels such as pentest, red team, BAS and PTaaS answer different questions, so the offer should be named for what is tested and delivered, not for marketing categories."},
+      {"id": "service-delivery.incident-counterfactuals-limits", "why": "Public incident chains cannot show that an earlier test would have prevented a breach, so positioning copy must not imply prevented losses."},
+      {"id": "commercial.vendor-outcome-evidence-weak", "why": "Statements that overseas AEV/BAS products 'already do' impact prioritisation and retest come from vendor pages, not independent outcome evidence, so they are weak support for the claim that the market is moving that way."},
+      {"id": "commercial.evaluation-and-buyer-evidence-protocol", "why": "Buyer demand for this position has not been tested, and a lab result is not market validation; interviews and a paid pilot are separate evidence."}
+    ],
+    "unproven": [
+      "The research does not cover GMO's nukiuchi service at all; its price, scope and production premise come only from the strategy file's capture.",
+      "No study shows that Japanese SME or mid-market buyers value post-intrusion spread analysis over intrusion testing, or will pay for it.",
+      "The claim that domestic options for impact-led consulting with retest are scarce is not established by the research.",
+      "Nothing establishes that 'enterprise-value impact' can be assessed reliably; the research has no loss model and no client downtime-tolerance data."
+    ],
+    "methods": [
+      {"name": "Prerequisite path graph with dated evidence", "what": "Express 'how far damage spreads' as identity, privilege, connectivity and state prerequisites, each tied to collected evidence, and show which removed authority breaks the path; this is the visible artefact behind the positioning.", "evidence_id": "service-delivery.prerequisite-graph-is-possibility-only"},
+      {"name": "Class-versus-instance retest", "what": "Demonstrate a structural fix by retesting the original path, neighbouring state sequences and a legitimate-operation control, so 'change structure' is backed by a test result rather than an opinion.", "evidence_id": "service-delivery.instance-vs-class-repair"},
+      {"name": "Synthetic POC with manual baseline", "what": "Before publishing the sentence, run the research-suggested synthetic two-organisation service through one complete cycle and compare it with a careful manual process to check the positioning can be delivered.", "evidence_id": "service-delivery.synapse-mapping-gaps"}
+    ],
+    "open_questions": [
+      "Will the headline promise technical reach (which records and systems become reachable), business consequence (which operations stop), or both? Only technical reach currently has supporting methods.",
+      "Should 'isolated environment' appear in the one sentence, given that replica fidelity is the largest unproven element?",
+      "Which buyer-interview or pilot result would confirm that the post-intrusion framing wins over GMO's fixed-price intrusion test?"
+    ],
+    "proposal_changes": [
+      "Replace 'enterprise-value impact' with a claim the research can support, such as 'which records, operations and dependencies an intrusion reaches, reviewed with the business owner', until a loss method exists.",
+      "Narrow the GMO contrast: compare against nukiuchi's production-based testing specifically, because Takumi itself recommends isolated staging for live reproduction.",
+      "Add 'independently verified fixes, with what was not tested stated' as an explicit differentiator; GMO's own documentation marks this boundary for Takumi."
+    ]
+  },
+  {
+    "no": "02",
+    "title_en": "Service scope: how much of the post-intrusion 'plus-alpha' is standard",
+    "proposal_en": "Make a one-cycle engagement standard (option C): understand, intrusion validation, spread analysis, business-impact assessment, structural-improvement design, and one retest within a period limited to the improved items. Implementation, BCP documentation, drills, monetary BIA and further retests are options. The fallback is option B, with retest as an option, if capacity cannot cover the waiting time.",
+    "verdict": "partly-supported",
+    "verdict_reason": "Including a bounded retest and fix prioritisation is well supported by provider practice and the fixtures, but the business-impact and replica-based validation stages lack demonstrated methods, and 'retest limited to the improved items' conflicts with the research's retest rule.",
+    "supports": [
+      {"id": "commercial.hackerone-staffed-pentest-effort-terms", "why": "A staffed pentest provider documents a 30-90-day retest window and a lead QA step as part of the standard offer, a precedent for building one retest into scope.", "strength": "public-doc"},
+      {"id": "commercial.cobalt-workflow-and-retest-windows", "why": "Cobalt advertises defined six- or twelve-month retest windows, supporting retest as a time-boxed standard element.", "strength": "public-doc"},
+      {"id": "service-delivery.mandiant-assessment-effort-and-roles", "why": "Mandiant's 3CX work splits roles so the client remediates and the assessor reassesses, the same split as 'Synapse designs and verifies, client or partner implements'.", "strength": "public-doc"},
+      {"id": "commercial.what-customers-buy", "why": "Buyers pay for help deciding what to fix and for rechecking fixes, which supports placing impact prioritisation and retest inside the standard scope.", "strength": "synthesis"},
+      {"id": "service-delivery.small-service-exercise-template", "why": "A worked template already defines a small offer with access matrix, finding, proposed repair, retest receipt and untested list, a usable skeleton for the standard deliverable set.", "strength": "synthesis"}
+    ],
+    "cautions": [
+      {"id": "service-delivery.instance-vs-class-repair", "why": "A retest limited to the improved item can pass a symptom fix; retests must include the original path, nearby state sequences and a legitimate-operation control."},
+      {"id": "reporting.defectdojo-closure-not-fix", "why": "A finding disappearing at retest can reflect filters, failed authentication, narrower scope or parser changes, so the retest must reuse the same identity and scope before reporting a fix."},
+      {"id": "authorization.revocation-retest-consistency", "why": "A cached allow survived revocation until higher consistency was requested, so retest conditions (consistency mode, model/policy version) must be specified in scope."},
+      {"id": "service-delivery.synapse-mapping-gaps", "why": "The impact-assessment stage has no calibrated loss model and the validation stage has no replica builder; both are listed as standard deliverables without a demonstrated method."},
+      {"id": "service-delivery.engagement-checklist", "why": "A complete scope also needs access revocation, verified cleanup and evidence retention/deletion, which the stage list omits."},
+      {"id": "service-delivery.surface-access-requirements", "why": "What each stage can claim depends on per-surface access (role/tenant accounts, IdP configuration, ranges, vantage), which must be fixed in scope before the standard is priced."}
+    ],
+    "unproven": [
+      "That spread analysis and business-impact assessment can be completed within a fixed standard engagement; no Synapse engagement has been observed.",
+      "That clients can implement fixes inside a 90-day window so the included retest is actually used.",
+      "That structural-improvement design (separation, permissions, encryption, secret sharing) generalises; no study shows one architecture fits every client.",
+      "That stages 4 and 5 of the interrupted ChatGPT breakdown were meant as impact assessment and retest; this is the strategy author's inference."
+    ],
+    "methods": [
+      {"name": "Retest set: original, neighbours, positive control", "what": "Define the standard retest as the original failing case, adjacent state sequences and a legitimate operation that must still succeed, run with the same identities and versions.", "evidence_id": "service-delivery.instance-vs-class-repair"},
+      {"name": "Claim record per finding", "what": "Hold each finding as a versioned record (predicate, identity, environment build, positive/negative cases, evidence, status, retest trigger) so the scoped retest has a fixed reference.", "evidence_id": "standards.claim-record-fields"},
+      {"name": "Per-surface access checklist", "what": "Fix the accounts per role/tenant, vantage and data fixtures for each surface during stage 0 so that later stages have a defined claim boundary.", "evidence_id": "service-delivery.surface-access-requirements"},
+      {"name": "DefectDojo for tracking only", "what": "Use a tracker such as DefectDojo for finding lifecycle bookkeeping while keeping raw evidence and matched retests as the proof of repair.", "evidence_id": "reporting.defectdojo-closure-not-fix"}
+    ],
+    "open_questions": [
+      "Will business impact be qualitative (affected records, operations, dependencies, reviewed with the owner) by default, with any monetary figure kept out of the standard scope?",
+      "What retest window should apply (HackerOne 30-90 days and Cobalt 6-12 months are the documented comparators), and what happens when the client has not finished the fixes?",
+      "Who signs off the business rules that retests check against: the client owner or Synapse?",
+      "How much reviewer and setup effort does one full cycle take? This must be measured in a pilot before the scope is fixed."
+    ],
+    "proposal_changes": [
+      "Change 'retest once, limited to improved items' to 'one retest of the improved items plus neighbouring cases and a legitimate-operation control, under the same identities, scope and versions'.",
+      "Add closing steps to the standard scope: access revocation, verified cleanup, and evidence retention and deletion.",
+      "Make every deliverable list what was not tested and why, as a standard output."
+    ]
+  },
+  {
+    "no": "03",
+    "title_en": "Pricing: is an all-inclusive ¥1M viable",
+    "proposal_en": "The all-inclusive ¥1M does not work as stated: an assumed 16 manual person-days (¥60k/day) plus environment and tools comes to about ¥1.11M of direct cost, against about ¥0.63M after automation reduces it to 8 days. Recommend tiers: tier 1 fixed at ¥0.98-1.2M (validation, spread visualisation, improvement direction, with exclusions published); tier 2 at ¥1.8-2.5M with improvement design; tier 3 quoted or monthly for implementation support and retest. Early pilots are expected to lose money.",
+    "verdict": "unproven",
+    "verdict_reason": "The research has no measured assessment hours, cost model or buyer willingness-to-pay data, so both the ¥1.11M/¥0.63M cost estimate and the price bands rest on assumptions; it only supports quoting from Synapse's own scope and labour rather than from competitors' prices.",
+    "supports": [
+      {"id": "commercial.observed-public-prices", "why": "Public prices buy different work (licence, promotional autonomous test, staffed credits), which supports not matching GMO's ¥980k as if the work were equivalent and instead pricing from Synapse's own scope.", "strength": "public-doc"},
+      {"id": "commercial.takumi-credit-pricing", "why": "Takumi's ¥70k/month plus credits is a dated reference, and the research notes that credits bound consumption, not completeness, so a human-reviewed tier can be priced differently.", "strength": "public-doc"},
+      {"id": "service-delivery.labor-and-operating-definitions", "why": "The research recommends estimating labour across scoping, access, investigation, reporting and retest, matching the proposal's move to tiers with excluded items published.", "strength": "synthesis"},
+      {"id": "commercial.trail-of-bits-engagement-artifact", "why": "A real white-box report records 3.5 engineer-weeks for two consultants, an effort comparator suggesting that 8-16 person-days is a light budget for a full cycle.", "strength": "public-doc"},
+      {"id": "commercial.hackerone-staffed-pentest-effort-terms", "why": "A two-week, 40-hours-per-tester engagement with QA and a retest window gives a documented effort and turnaround comparator for sizing tier 1.", "strength": "public-doc"}
+    ],
+    "cautions": [
+      {"id": "commercial.no-measured-assessment-hours", "why": "No representative measured breakdown of assessment hours exists, and automation can add setup, false-positive review and maintenance, so the halving from 16 to 8 days is unsupported."},
+      {"id": "commercial.ai-cost-accounting-traps", "why": "AI tools can record unknown cost as zero, so the ¥30-100k AI/tool cost per job must come from invoices or usage receipts, not tool-reported totals."},
+      {"id": "commercial.ai-capacity-units-not-work-units", "why": "AI is sold as capacity with caps, so pricing must cover human follow-up and untriaged overflow rather than assume AI shrinks labour."},
+      {"id": "commercial.japanese-managed-service-pricing", "why": "Japanese providers such as NRI present AI efficiency as a secondary effect rather than a price cut, so promising lower prices because of AI has no market precedent in the sample."},
+      {"id": "commercial.evaluation-and-buyer-evidence-protocol", "why": "No buyer interviews or pilots exist; willingness to pay ¥0.98-2.5M needs a paid pilot, which is different evidence from a technical prototype."},
+      {"id": "service-delivery.synapse-mapping-gaps", "why": "Replica construction effort, which drives tier-1 cost, has never been measured because no replica builder exists."}
+    ],
+    "unproven": [
+      "The 16 and 8 person-day estimates and the ¥60k/day internal cost are assumptions with no measured basis in the research.",
+      "The environment cost of ¥50-150k per job for reproducing a client configuration has not been measured.",
+      "Whether buyers will accept a published inclusion/exclusion boundary at ¥0.98-1.2M, or will compare it with nukiuchi as a cheaper equivalent, is untested.",
+      "GMO's ¥980k nukiuchi price and its 2026-only status are not captured in the research register."
+    ],
+    "methods": [
+      {"name": "Phase time log in pilots", "what": "Record analyst hours per phase (scoping, access, replica setup, validation, review, reporting, retest), including failed runs, in each pilot, and set tier prices from verified outcomes per analyst hour.", "evidence_id": "commercial.no-measured-assessment-hours"},
+      {"name": "Invoice-based AI cost accounting", "what": "Measure model and tool spend per engagement from provider invoices and usage receipts, recording unknown cost as unknown.", "evidence_id": "commercial.ai-cost-accounting-traps"},
+      {"name": "Published SOW-style inclusions", "what": "Publish each tier's scope, exclusions, retest window and turnaround as comparable terms, because marketing pages are not signed terms.", "evidence_id": "service-delivery.public-pages-are-not-signed-terms"}
+    ],
+    "open_questions": [
+      "How much is the founder willing to lose per pilot, and how many pilots will be run, before tier 1 is priced from measured hours?",
+      "What scope cap (domains, components, systems) defines tier 1, given that replica effort is unknown?",
+      "Is retest inside tier 1 (as in decisions 02 and 14) or in tier 3 (as in this file's exclusions list)? The two documents currently conflict."
+    ],
+    "proposal_changes": [
+      "Label the cost table as hypotheses to be replaced by pilot measurements, and remove the implication that automation reliably halves effort.",
+      "Resolve the conflict between decisions: this file excludes retest from the ¥1M tier, while the summary says 02, 03 and 14 all include one retest in the standard scope.",
+      "Price on Synapse's own scope and labour; use GMO's ¥980k only as a buyer reference point, not as the cost anchor."
+    ]
+  },
+  {
+    "no": "04",
+    "title_en": "Delivery model: isolated environment versus production",
+    "proposal_en": "Make an isolated environment the standard (option C), with only non-destructive and difference checks on production under a separate agreement; start with isolated-only (in effect option A). Clients supply configuration, asset lists, settings, schemas and business flows, with no real data received in principle (synthetic or masked data instead). Deliverables state replica fidelity and what was not reproduced, and do not claim to substitute for TLPT.",
+    "verdict": "partly-supported",
+    "verdict_reason": "The research strongly supports keeping destructive or state-changing validation off production and enforcing scope outside the tools, but it has no demonstrated way to build a faithful client replica, which is the step the whole model depends on.",
+    "supports": [
+      {"id": "safety.takumi-exclusions-not-access-block", "why": "GMO Flatt's own Takumi manual says live reproduction can create, modify or delete accounts and data and recommends isolated staging, independent support for running destructive validation away from production.", "strength": "public-doc"},
+      {"id": "scanners.zap-retries-mutating-requests", "why": "ZAP treats every request as safe to retry, and its upstream tests expect POST/PATCH/DELETE to be sent five times, so state-changing duplication is a production risk that an isolated target removes.", "strength": "source-trace"},
+      {"id": "authorization.http-verb-not-safety", "why": "HTTP verbs do not show whether a request changes state, so 'non-destructive' production checks cannot be guaranteed by request type, which supports isolation as the default.", "strength": "source-trace"},
+      {"id": "cloud.posture-tool-not-read-only", "why": "Even a cloud posture tool creates account artifacts and has fixers, supporting the rule that tools run against isolated or explicitly scoped targets.", "strength": "source-trace"},
+      {"id": "scanners.zap-path-scope-not-enforced", "why": "A real ZAP daemon requested a path outside its configured scope, so tool scope cannot stand in for an authorization boundary on a client's production system.", "strength": "integrated-lab"}
+    ],
+    "cautions": [
+      {"id": "service-delivery.synapse-mapping-gaps", "why": "No validated general replica builder exists; the research has small fixtures only, so replica fidelity is the main unproven element of this decision."},
+      {"id": "service-delivery.prerequisite-graph-is-possibility-only", "why": "Paths modelled in a replica show possibility only; each edge needs dated evidence from the real environment before it can be claimed as a client finding."},
+      {"id": "service-delivery.surface-access-requirements", "why": "Results depend on vantage point, role/tenant accounts and IdP configuration; a replica built from diagrams lacks these unless they are supplied explicitly."},
+      {"id": "identity-ad.bloodhound-edges-skip-deny", "why": "Identity graph tools ignore deny ACEs and a missing edge has many causes, so spread analysis built from supplied directory data can overstate or miss real paths."},
+      {"id": "standards.procurement-regimes", "why": "Sector regimes (DORA, TIBER-EU) are specific and a standard test does not satisfy them, which supports the proposal's 'not a TLPT substitute' wording; the file does not cover Japanese FISC/TLPT rules."},
+      {"id": "authorization.takumi-org-approval-replaces-target-ownership", "why": "Any production supplement needs Synapse's own signed authorisation tied to each target; a vendor platform's organisation approval does not give per-target consent."}
+    ],
+    "unproven": [
+      "That a client's network, identity service, integrations and operations can be reproduced from configuration information and interviews at a useful fidelity and cost.",
+      "That validation without real data (synthetic or masked only) still reproduces the information linkages that spread analysis depends on.",
+      "That buyers will spend the information-gathering effort an isolated replica requires; the research has no buyer evidence.",
+      "That a production 'difference check' can establish whether the replica matches production; no such method has been studied."
+    ],
+    "methods": [
+      {"name": "Synthetic replica with declared inclusions", "what": "Build the test target from selected source/configuration, a running service, synthetic records and dedicated identities, and publish what the replica includes and excludes as a fidelity statement in each report.", "evidence_id": "service-delivery.synapse-mapping-gaps"},
+      {"name": "Egress allowlist outside the tools", "what": "Run all tooling in the isolated lab behind an independent egress firewall or proxy so no request can reach client production even if a tool ignores its scope.", "evidence_id": "scanners.zap-path-scope-not-enforced"},
+      {"name": "Per-target signed authorisation for any production work", "what": "For the production option, bind written permission to hosts, dates and accounts, check every discovered target against it, and record vantage and source addresses.", "evidence_id": "network-discovery.target-expansion-needs-scope-check"},
+      {"name": "Evidence-dated path edges", "what": "Mark each path edge derived in the replica as modelled or observed, with its source and collection date, so the report separates replica results from verified client facts.", "evidence_id": "evidence-handling.finding-record-separation"}
+    ],
+    "open_questions": [
+      "What is the minimum set of client facts needed for a useful replica, and which surfaces (web app, cloud, AD, internal network) will be offered at launch?",
+      "How will fidelity be checked for each tested behaviour, and who signs off that the replica corresponds to the client?",
+      "Will replicas be kept after the report for the retest, and under what data-handling and deletion terms?",
+      "Measure replica build effort per engagement in the first pilot; it decides both feasibility and tier-1 price."
+    ],
+    "proposal_changes": [
+      "Start with surfaces where the research has working methods (multi-tenant web application authorization, approval workflows, identity paths), not general network or OT replication.",
+      "Replace 'state replica fidelity' with a concrete per-report table: what was reproduced, from what source, what was synthetic, and which findings still need confirmation in the client environment.",
+      "Drop 'GMO requires production, Synapse does not' as a broad contrast; Takumi itself recommends isolated staging."
+    ]
+  },
+  {
+    "no": "05",
+    "title_en": "Execution model: degree of automation and own tools versus platforms",
+    "proposal_en": "Use a mixed model (option C): automation (own tools plus OSS) runs repeatedly in the isolated environment, and people handle scenario selection, validity checks, spread and impact interpretation, improvement design and retest judgement. No reselling of commercial BAS or autonomous pentest platforms; add them only when a client requires one. Operating rules: AI output is human-validated before reporting, scenarios, settings and results are recorded for re-runs, and direct production execution is a supervised exception.",
+    "verdict": "supported",
+    "verdict_reason": "The research consistently supports AI generating candidates under an independent effect oracle, human promotion of findings, and enforcement outside the model, though it warns that human review itself suffers automation bias and that no AI or OSS benefit has been measured for Synapse.",
+    "supports": [
+      {"id": "commercial.cobalt-workflow-and-retest-windows", "why": "Cobalt treats Nuclei-backed output as candidates that a tester discards or promotes with reproduction and impact, the same human-validation rule the proposal sets.", "strength": "public-doc"},
+      {"id": "ai-evaluation.text-canary-oracle-not-effect", "why": "A quoted canary passed PentestGPT's audit while the real effect was false, supporting the rule that AI output is not reported until an independent effect check confirms it.", "strength": "component-lab"},
+      {"id": "safety.capability-gate-outside-model", "why": "A code gate outside the model rejected cross-tenant and export actions, a demonstrated way to run automation safely in the isolated environment.", "strength": "component-lab"},
+      {"id": "ai-evaluation.takumi-pipeline-and-coverage-scope", "why": "Takumi documents separate enumerate, hypothesise, reproduce and verify stages with deterministic verifiers where available, a reusable pattern for the AI-plus-human split.", "strength": "public-doc"},
+      {"id": "commercial.what-customers-buy", "why": "The research found no evidence that AI has removed expert labour, supporting people for interpretation and design rather than full automation.", "strength": "synthesis"},
+      {"id": "providers.delivery-model-unknowns", "why": "Automated attack-path products have undisclosed stop latency, cleanup and retention terms, and 'agentless' still runs a host, supporting the decision not to resell them by default.", "strength": "public-doc"}
+    ],
+    "cautions": [
+      {"id": "ai-evaluation.ms-phishing-trial-automation-bias", "why": "Analysts shown AI verdicts missed more planted false negatives, so 'a person validates AI output' needs seeded-error checks, not just a review step."},
+      {"id": "agent-runtime.pentestgpt-full-access-no-scope", "why": "An open-source autonomous pentest agent runs with full access and no tool- or network-layer scope, so OSS agents need executor and egress controls added before use."},
+      {"id": "ai-evaluation.audit-evaluator-before-tester", "why": "Any claim that automation improves quality or cost requires an audited scorer and a manual baseline first; none exists for Synapse."},
+      {"id": "commercial.tool-licences-not-plain", "why": "Nmap (NPSL), Impacket (modified Apache 1.1) and AGPL tools carry non-standard licences, so 'own tools plus OSS' needs licence review before commercial use."},
+      {"id": "defensive-response.caldera-atomic-scope-granularity", "why": "CALDERA checks stop conditions only per batch and an ATT&CK ID is not a risk boundary, so emulation scenarios must be approved test by test."},
+      {"id": "identity-ad.traversal-cancel-returns-nil", "why": "A cancelled BloodHound traversal returned no error with incomplete work, so automated spread analysis needs a separate completeness state."},
+      {"id": "ai-evaluation.vendor-ai-metrics-are-not-accuracy", "why": "Vendor AI percentages measure agreement or timing, not accuracy; the Cobalt '9% trust full automation' survey in the proposal is also not in the register."}
+    ],
+    "unproven": [
+      "The maturity of Synapse's own tools and 'resilience system' on another PC; NBRET is not established as Synapse's engine.",
+      "That automation lowers per-engagement cost enough for the ¥1M tier; no measured hours or AI cost exist.",
+      "The Cobalt 2026 survey figures (9% support for full automation, 78% serious misses) cited in the proposal are not in the research register.",
+      "That reproducible re-runs in the replica give retest results that hold for the client's real environment."
+    ],
+    "methods": [
+      {"name": "Capability gate and egress control", "what": "Route every automated action (shell, network, file, tool) through a code gate that checks operation, tenant and target, with an independent egress firewall around the lab.", "evidence_id": "safety.capability-gate-outside-model"},
+      {"name": "Candidate-to-finding promotion with effect oracle", "what": "Treat AI and scanner output as candidates; promote a finding only after a deterministic check (e.g. a two-identity read/write comparison) shows the effect, keeping quoted text and demonstrated consequence as separate fields.", "evidence_id": "ai-evaluation.text-canary-oracle-not-effect"},
+      {"name": "Seeded-error reviewer checks", "what": "Periodically insert known wrong AI verdicts into the review queue and track reviewer misses, to show that human validation is effective.", "evidence_id": "ai-evaluation.ms-phishing-trial-automation-bias"},
+      {"name": "Two-tenant identity matrix tests", "what": "Bind every request and saved response to its principal and run owner/other-tenant pairs, since status-only checks missed a 403 that still returned another tenant's data.", "evidence_id": "authorization.deceptive-403-status-only-oracle-fails"},
+      {"name": "Per-test emulation approval and kill switch", "what": "Approve emulation tests individually rather than by ATT&CK ID, and implement stop as lease, fencing and verified quiescence, not a pause flag.", "evidence_id": "workers-queues.kill-switch-sequence"}
+    ],
+    "open_questions": [
+      "What can Synapse's existing tooling actually do today (automated replica execution, recording, re-run)? This must be inspected before the mixed model is advertised.",
+      "Which OSS components will be used commercially, and who performs the licence review?",
+      "How will AI benefit be measured: time per correct finding and missed cases against a manual baseline on held-out targets?",
+      "Where will AI inference run for client data, given that Japanese storage does not imply Japanese inference?"
+    ],
+    "proposal_changes": [
+      "Strengthen 'AI output is validated by a person' to 'AI output becomes a finding only after an independent effect check and a reviewer who is not the author', with seeded-error audits.",
+      "Add scope enforcement outside the model and tools (gate plus egress control) as a fourth operating rule.",
+      "Remove or flag the Cobalt survey statistics as unverified until the source is read, and do not quote vendor AI performance figures to clients."
+    ]
+  }
+]

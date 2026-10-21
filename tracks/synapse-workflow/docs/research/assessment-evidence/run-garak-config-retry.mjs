@@ -1,0 +1,13 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import {pathToFileURL} from 'node:url';
+const own=path.resolve('docs/research/assessment-evidence');
+let source=fs.readFileSync(path.join(own,'run-claude-cleanup-lab.mjs'),'utf8');
+source=source.replaceAll('claude-cleanup','garak-config-retry');
+source=source.replace('test_claude_cleanup_contract.py','test_garak_config_retry_contract.py');
+source=source.replace("sourceSha256:hash(path.join(root,'src/claude_agent_sdk/client.py'))","sourceSha256:Object.fromEntries(['C:/Users/kotar/.codex/research/garak/garak/_config.py'].map(p=>[p,hash(p)]))");
+source=source.replace(/criteria:'[^']*'/,"criteria:'failed open marks path; corrected same path skipped; fresh loader scope reads valid file'");
+source=source.replace(/intervention:'[^']*'/,"intervention:'actual loader/helper ASTs with owned synthetic JSON files; legacy migration stubbed because no legacy keys; no garak import, home config, plugin, provider or network'");
+const generated=path.join(own,'run-garak-config-retry-generated.mjs');
+fs.writeFileSync(generated,source,{flag:'wx'});
+await import(pathToFileURL(generated).href);

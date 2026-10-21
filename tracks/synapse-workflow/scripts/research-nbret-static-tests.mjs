@@ -1,0 +1,11 @@
+import {readFileSync,writeFileSync,mkdirSync,openSync,closeSync} from 'node:fs';
+import {resolve,join} from 'node:path';
+import {spawnSync} from 'node:child_process';
+import {createHash} from 'node:crypto';
+const out=resolve(`runs/nbret-static-research-${Date.now()}`);mkdirSync(out);
+const files=['test/contracts.test.mjs','test/discover.test.mjs','test/understand.test.mjs','test/workflow-examples.test.mjs'];
+const args=['--test','--test-reporter=tap',...files],fd=openSync(join(out,'tap.txt'),'w'),efd=openSync(join(out,'stderr.txt'),'w'),start=performance.now();
+const r=spawnSync(process.execPath,args,{cwd:resolve('.'),windowsHide:true,stdio:['ignore',fd,efd],timeout:60000});closeSync(fd);closeSync(efd);
+const hash=b=>createHash('sha256').update(b).digest('hex'),log=readFileSync(join(out,'tap.txt'),'utf8');
+const receipt={at:new Date().toISOString(),out,scope:'Read browser-free Node tests using synthetic files/stub capture and owned loopback acquisition. No browser, third-party target, model or real credentials.',environment:{node:process.version,platform:process.platform},command:{executable:process.execPath,args,cwd:resolve('.')},exit:r.status,error:r.error?.message,elapsedMs:performance.now()-start,totals:log.split(/\r?\n/).filter(x=>/^# (?:tests|suites|pass|fail|cancelled|skipped|todo|duration_ms) /.test(x)),sourceSha256:Object.fromEntries([...files,'src/contracts.mjs','src/discover.mjs','src/understand.mjs','src/workflow-examples.mjs'].map(p=>[p,hash(readFileSync(p))])),tapSha256:hash(log),stderrSha256:hash(readFileSync(join(out,'stderr.txt')))};
+writeFileSync(join(out,'receipt.json'),JSON.stringify(receipt,null,2));writeFileSync('docs/research/security-landscape/deep-review/nbret-static-tests-receipt.json',JSON.stringify(receipt,null,2));console.log(JSON.stringify({...receipt,stderrTail:readFileSync(join(out,'stderr.txt'),'utf8').slice(-1000)}));

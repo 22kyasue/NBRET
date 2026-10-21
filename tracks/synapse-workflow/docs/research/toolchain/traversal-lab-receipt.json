@@ -1,0 +1,63 @@
+{
+  "startedAt": "2026-10-17T20:21:05.557Z",
+  "finishedAt": "2026-10-17T20:21:07.409Z",
+  "go": "go version go1.27.2 windows/amd64",
+  "cwd": "C:\\Users\\kotar\\githubprojects\\NBRET\\.tools\\toolchain\\BloodHound",
+  "args": [
+    "test",
+    "-p=2",
+    "-count=1",
+    "-timeout=30s",
+    "-json",
+    "github.com/specterops/dawgs/traversal",
+    "-run",
+    "^(TestAcyclicSegmentVisitor|TestUniquePathSegmentVisitor|TestFilteredSkipLimit|TestNewNodeCollector|TestNodeCollectorAdd|TestNodeCollectorCollect|TestNewPathCollector|TestNodeCollectorPopulatePropertiesError|TestPathCollectorAdd)$"
+  ],
+  "environmentOverrides": {
+    "GOTOOLCHAIN": "local",
+    "GOWORK": "off",
+    "GOFLAGS": "-mod=readonly",
+    "GOPROXY": "off",
+    "GOSUMDB": "off",
+    "GOMAXPROCS": "2",
+    "GOPATH": "C:\\Users\\kotar\\githubprojects\\NBRET\\.tools\\toolchain\\go\\path",
+    "GOCACHE": "C:\\Users\\kotar\\githubprojects\\NBRET\\.tools\\toolchain\\go\\cache",
+    "GOMODCACHE": "C:\\Users\\kotar\\githubprojects\\NBRET\\.tools\\toolchain\\go\\modules"
+  },
+  "moduleSha256": "acc95448c2e68118020ce5b7d98e89b3c6af38430969fd63f70d98b9f634364c",
+  "sumSha256": "0eb760d56fed383d4e003b5c81e591f3feaa736f9f7a2e9c8888c3047f42c42c",
+  "sourcePin": "d0640cfb421e2b9f4fc249de733c3d6e52f1a57f",
+  "sourceModule": "github.com/specterops/dawgs@v0.9.2",
+  "expectedTests": [
+    "TestAcyclicSegmentVisitor",
+    "TestUniquePathSegmentVisitor",
+    "TestFilteredSkipLimit",
+    "TestNewNodeCollector",
+    "TestNodeCollectorAdd",
+    "TestNodeCollectorCollect",
+    "TestNewPathCollector",
+    "TestNodeCollectorPopulatePropertiesError",
+    "TestPathCollectorAdd"
+  ],
+  "passed": [
+    "TestNewNodeCollector",
+    "TestNodeCollectorAdd",
+    "TestNodeCollectorCollect",
+    "TestNewPathCollector",
+    "TestNodeCollectorPopulatePropertiesError",
+    "TestPathCollectorAdd",
+    "TestAcyclicSegmentVisitor",
+    "TestUniquePathSegmentVisitor",
+    "TestFilteredSkipLimit"
+  ],
+  "oraclePassed": true,
+  "code": 0,
+  "stdout": "{\"Time\":\"2026-10-17T13:21:06.5459928-07:00\",\"Action\":\"start\",\"Package\":\"github.com/specterops/dawgs/traversal\"}\n{\"Time\":\"2026-10-17T13:21:07.3765673-07:00\",\"Action\":\"run\",\"Package\":\"github.com/specterops/dawgs/traversal\",\"Test\":\"TestNewNodeCollector\"}\n{\"Time\":\"2026-10-17T13:21:07.3770673-07:00\",\"Action\":\"output\",\"Package\":\"github.com/specterops/dawgs/traversal\",\"Test\":\"TestNewNodeCollector\",\"Output\":\"=== RUN   TestNewNodeCollector\\n\",\"OutputType\":\"frame\"}\n{\"Time\":\"2026-10-17T13:21:07.3770673-07:00\",\"Action\":\"output\",\"Package\":\"github.com/specterops/dawgs/traversal\",\"Test\":\"TestNewNodeCollector\",\"Output\":\"--- PASS: TestNewNodeCollector (0.00s)\\n\",\"OutputType\":\"frame\"}\n{\"Time\":\"2026-10-17T13:21:07.3770673-07:00\",\"Action\":\"pass\",\"Package\":\"github.com/specterops/dawgs/traversal\",\"Test\":\"TestNewNodeCollector\",\"Elapsed\":0}\n{\"Time\":\"2026-10-17T13:21:07.3770673-07:00\",\"Action\":\"run\",\"Package\":\"github.com/specterops/dawgs/traversal\",\"Test\":\"TestNodeCollectorAdd\"}\n{\"Time\":\"2026-10-17T13:21:07.3770673-07:00\",\"Action\":\"output\",\"Package\":\"github.com/specterops/dawgs/traversal\",\"Test\":\"TestNodeCollectorAdd\",\"Output\":\"=== RUN   TestNodeCollectorAdd\\n\",\"OutputType\":\"frame\"}\n{\"Time\":\"2026-10-17T13:21:07.3770673-07:00\",\"Action\":\"output\",\"Package\":\"github.com/specterops/dawgs/traversal\",\"Test\":\"TestNodeCollectorAdd\",\"Output\":\"--- PASS: TestNodeCollectorAdd (0.00s)\\n\",\"OutputType\":\"frame\"}\n{\"Time\":\"2026-10-17T13:21:07.3770673-07:00\",\"Action\":\"pass\",\"Package\":\"github.com/specterops/dawgs/traversal\",\"Test\":\"TestNodeCollectorAdd\",\"Elapsed\":0}\n{\"Time\":\"2026-10-17T13:21:07.3770673-07:00\",\"Action\":\"run\",\"Package\":\"github.com/specterops/dawgs/traversal\",\"Test\":\"TestNodeCollectorCollect\"}\n{\"Time\":\"2026-10-17T13:21:07.3770673-07:00\",\"Action\":\"output\",\"Package\":\"github.com/specterops/dawgs/traversal\",\"Test\":\"TestNodeCollectorCollect\",\"Output\":\"=== RUN   TestNodeCollectorCollect\\n\",\"OutputType\":\"frame\"}\n{\"Time\":\"2026-10-17T13:21:07.3770673-07:00\",\"Action\":\"output\",\"Package\":\"github.com/specterops/dawgs/traversal\",\"Test\":\"TestNodeCollectorCollect\",\"Output\":\"--- PASS: TestNodeCollectorCollect (0.00s)\\n\",\"OutputType\":\"frame\"}\n{\"Time\":\"2026-10-17T13:21:07.3770673-07:00\",\"Action\":\"pass\",\"Package\":\"github.com/specterops/dawgs/traversal\",\"Test\":\"TestNodeCollectorCollect\",\"Elapsed\":0}\n{\"Time\":\"2026-10-17T13:21:07.3770673-07:00\",\"Action\":\"run\",\"Package\":\"github.com/specterops/dawgs/traversal\",\"Test\":\"TestNewPathCollector\"}\n{\"Time\":\"2026-10-17T13:21:07.3770673-07:00\",\"Action\":\"output\",\"Package\":\"github.com/specterops/dawgs/traversal\",\"Test\":\"TestNewPathCollector\",\"Output\":\"=== RUN   TestNewPathCollector\\n\",\"OutputType\":\"frame\"}\n{\"Time\":\"2026-10-17T13:21:07.3770673-07:00\",\"Action\":\"output\",\"Package\":\"github.com/specterops/dawgs/traversal\",\"Test\":\"TestNewPathCollector\",\"Output\":\"--- PASS: TestNewPathCollector (0.00s)\\n\",\"OutputType\":\"frame\"}\n{\"Time\":\"2026-10-17T13:21:07.3770673-07:00\",\"Action\":\"pass\",\"Package\":\"github.com/specterops/dawgs/traversal\",\"Test\":\"TestNewPathCollector\",\"Elapsed\":0}\n{\"Time\":\"2026-10-17T13:21:07.3770673-07:00\",\"Action\":\"run\",\"Package\":\"github.com/specterops/dawgs/traversal\",\"Test\":\"TestNodeCollectorPopulatePropertiesError\"}\n{\"Time\":\"2026-10-17T13:21:07.3770673-07:00\",\"Action\":\"output\",\"Package\":\"github.com/specterops/dawgs/traversal\",\"Test\":\"TestNodeCollectorPopulatePropertiesError\",\"Output\":\"=== RUN   TestNodeCollectorPopulatePropertiesError\\n\",\"OutputType\":\"frame\"}\n{\"Time\":\"2026-10-17T13:21:07.3770673-07:00\",\"Action\":\"output\",\"Package\":\"github.com/specterops/dawgs/traversal\",\"Test\":\"TestNodeCollectorPopulatePropertiesError\",\"Output\":\"--- PASS: TestNodeCollectorPopulatePropertiesError (0.00s)\\n\",\"OutputType\":\"frame\"}\n{\"Time\":\"2026-10-17T13:21:07.3770673-07:00\",\"Action\":\"pass\",\"Package\":\"github.com/specterops/dawgs/traversal\",\"Test\":\"TestNodeCollectorPopulatePropertiesError\",\"Elapsed\":0}\n{\"Time\":\"2026-10-17T13:21:07.3770673-07:00\",\"Action\":\"run\",\"Package\":\"github.com/specterops/dawgs/traversal\",\"Test\":\"TestPathCollectorAdd\"}\n{\"Time\":\"2026-10-17T13:21:07.3770673-07:00\",\"Action\":\"output\",\"Package\":\"github.com/specterops/dawgs/traversal\",\"Test\":\"TestPathCollectorAdd\",\"Output\":\"=== RUN   TestPathCollectorAdd\\n\",\"OutputType\":\"frame\"}\n{\"Time\":\"2026-10-17T13:21:07.3770673-07:00\",\"Action\":\"output\",\"Package\":\"github.com/specterops/dawgs/traversal\",\"Test\":\"TestPathCollectorAdd\",\"Output\":\"--- PASS: TestPathCollectorAdd (0.00s)\\n\",\"OutputType\":\"frame\"}\n{\"Time\":\"2026-10-17T13:21:07.3770673-07:00\",\"Action\":\"pass\",\"Package\":\"github.com/specterops/dawgs/traversal\",\"Test\":\"TestPathCollectorAdd\",\"Elapsed\":0}\n{\"Time\":\"2026-10-17T13:21:07.3770673-07:00\",\"Action\":\"run\",\"Package\":\"github.com/specterops/dawgs/traversal\",\"Test\":\"TestAcyclicSegmentVisitor\"}\n{\"Time\":\"2026-10-17T13:21:07.3770673-07:00\",\"Action\":\"output\",\"Package\":\"github.com/specterops/dawgs/traversal\",\"Test\":\"TestAcyclicSegmentVisitor\",\"Output\":\"=== RUN   TestAcyclicSegmentVisitor\\n\",\"OutputType\":\"frame\"}\n{\"Time\":\"2026-10-17T13:21:07.3770673-07:00\",\"Action\":\"output\",\"Package\":\"github.com/specterops/dawgs/traversal\",\"Test\":\"TestAcyclicSegmentVisitor\",\"Output\":\"--- PASS: TestAcyclicSegmentVisitor (0.00s)\\n\",\"OutputType\":\"frame\"}\n{\"Time\":\"2026-10-17T13:21:07.3770673-07:00\",\"Action\":\"pass\",\"Package\":\"github.com/specterops/dawgs/traversal\",\"Test\":\"TestAcyclicSegmentVisitor\",\"Elapsed\":0}\n{\"Time\":\"2026-10-17T13:21:07.3770673-07:00\",\"Action\":\"run\",\"Package\":\"github.com/specterops/dawgs/traversal\",\"Test\":\"TestUniquePathSegmentVisitor\"}\n{\"Time\":\"2026-10-17T13:21:07.3770673-07:00\",\"Action\":\"output\",\"Package\":\"github.com/specterops/dawgs/traversal\",\"Test\":\"TestUniquePathSegmentVisitor\",\"Output\":\"=== RUN   TestUniquePathSegmentVisitor\\n\",\"OutputType\":\"frame\"}\n{\"Time\":\"2026-10-17T13:21:07.3770673-07:00\",\"Action\":\"output\",\"Package\":\"github.com/specterops/dawgs/traversal\",\"Test\":\"TestUniquePathSegmentVisitor\",\"Output\":\"--- PASS: TestUniquePathSegmentVisitor (0.00s)\\n\",\"OutputType\":\"frame\"}\n{\"Time\":\"2026-10-17T13:21:07.3770673-07:00\",\"Action\":\"pass\",\"Package\":\"github.com/specterops/dawgs/traversal\",\"Test\":\"TestUniquePathSegmentVisitor\",\"Elapsed\":0}\n{\"Time\":\"2026-10-17T13:21:07.3770673-07:00\",\"Action\":\"run\",\"Package\":\"github.com/specterops/dawgs/traversal\",\"Test\":\"TestFilteredSkipLimit\"}\n{\"Time\":\"2026-10-17T13:21:07.3770673-07:00\",\"Action\":\"output\",\"Package\":\"github.com/specterops/dawgs/traversal\",\"Test\":\"TestFilteredSkipLimit\",\"Output\":\"=== RUN   TestFilteredSkipLimit\\n\",\"OutputType\":\"frame\"}\n{\"Time\":\"2026-10-17T13:21:07.3770673-07:00\",\"Action\":\"output\",\"Package\":\"github.com/specterops/dawgs/traversal\",\"Test\":\"TestFilteredSkipLimit\",\"Output\":\"--- PASS: TestFilteredSkipLimit (0.00s)\\n\",\"OutputType\":\"frame\"}\n{\"Time\":\"2026-10-17T13:21:07.3770673-07:00\",\"Action\":\"pass\",\"Package\":\"github.com/specterops/dawgs/traversal\",\"Test\":\"TestFilteredSkipLimit\",\"Elapsed\":0}\n{\"Time\":\"2026-10-17T13:21:07.3770673-07:00\",\"Action\":\"output\",\"Package\":\"github.com/specterops/dawgs/traversal\",\"Output\":\"PASS\\n\",\"OutputType\":\"frame\"}\n{\"Time\":\"2026-10-17T13:21:07.3780682-07:00\",\"Action\":\"output\",\"Package\":\"github.com/specterops/dawgs/traversal\",\"Output\":\"ok  \\tgithub.com/specterops/dawgs/traversal\\t0.832s\\n\"}\n{\"Time\":\"2026-10-17T13:21:07.3780682-07:00\",\"Action\":\"pass\",\"Package\":\"github.com/specterops/dawgs/traversal\",\"Elapsed\":0.832}\n",
+  "stderr": "",
+  "cleanup": "Bounded subprocess exited; no service/listener/database created; isolated caches retained.",
+  "limitations": [
+    "In-memory selected upstream fixtures only",
+    "Does not validate BFS workers, DB drivers or real-world graph completeness",
+    "GOPROXY/GOSUMDB disabled for acquisition, not an OS-level network sandbox"
+  ]
+}

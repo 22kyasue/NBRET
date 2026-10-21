@@ -1,0 +1,3381 @@
+{
+  "at": "2026-10-17T22:21:28.451Z",
+  "root": "C:\\Users\\kotar\\githubprojects\\NBRET\\.tools\\toolchain\\venv\\Lib\\site-packages",
+  "distributions": [
+    {
+      "name": "kaitaistruct",
+      "version": "0.11",
+      "source": "kaitaistruct.py",
+      "metadataSha256": "77e39925bb4acfab884100c592fe3a095f3cc0cb9fc89e4c0b5e353f861635c0",
+      "provenance": "Existing installed wheel; no VCS equivalence or source-distribution completeness claim"
+    },
+    {
+      "name": "h2",
+      "version": "4.4.1",
+      "source": "h2",
+      "metadataSha256": "b17f68f6127946c3b748ea5728a9b172589ede2b9cebfa353dd5f05263096c7f",
+      "provenance": "Existing installed wheel; no VCS equivalence or source-distribution completeness claim"
+    },
+    {
+      "name": "hpack",
+      "version": "4.2.0",
+      "source": "hpack",
+      "metadataSha256": "d2408cbb7b7d2f4bd041a96a850300da45e1bf79b1a380148a5fc29dcd55255f",
+      "provenance": "Existing installed wheel; no VCS equivalence or source-distribution completeness claim"
+    },
+    {
+      "name": "hyperframe",
+      "version": "6.1.0",
+      "source": "hyperframe",
+      "metadataSha256": "a29f5792b9459b47658804988520009156ef8c2dea66022c2969a145065bad69",
+      "provenance": "Existing installed wheel; no VCS equivalence or source-distribution completeness claim"
+    },
+    {
+      "name": "aioquic",
+      "version": "1.2.0",
+      "source": "aioquic",
+      "metadataSha256": "14881a52e10875b17d98673f76f59b33cb7c97ff4a77fb8fe6a7d6e0c54cec11",
+      "provenance": "Existing installed wheel; no VCS equivalence or source-distribution completeness claim"
+    },
+    {
+      "name": "pylsqpack",
+      "version": "0.3.24",
+      "source": "pylsqpack",
+      "metadataSha256": "01fe41a0cddc57f34ded69ac7c94c9bacbf2645df9bc58a0368b8e8784632f2d",
+      "provenance": "Existing installed wheel; no VCS equivalence or source-distribution completeness claim"
+    },
+    {
+      "name": "cryptography",
+      "version": "50.0.2",
+      "source": "cryptography",
+      "metadataSha256": "047cfc71226409de4318b360aef15c63a2adf609731e3dcf7fe932f14ea042ee",
+      "provenance": "Existing installed wheel; no VCS equivalence or source-distribution completeness claim"
+    },
+    {
+      "name": "pyopenssl",
+      "version": "26.4.0",
+      "source": "OpenSSL",
+      "metadataSha256": "caa9a9adf6c7307dc4ba4ec8379e9c2c9c194873ec562ef609d6b49fb64e3113",
+      "provenance": "Existing installed wheel; no VCS equivalence or source-distribution completeness claim"
+    }
+  ],
+  "entries": [
+    {
+      "dependency": "kaitaistruct",
+      "version": "0.11",
+      "path": "kaitaistruct.py",
+      "bytes": 34260,
+      "sha256": "27715071dc49dc915efeed1f61fd61233bec5a6ad2afc6a067aa607b0c691a30",
+      "lines": 1022,
+      "kind": "text_unread",
+      "status": "complete",
+      "readRanges": [
+        [
+          1,
+          1022
+        ]
+      ],
+      "recordedAt": "2026-10-17T22:21:58.408Z"
+    },
+    {
+      "dependency": "kaitaistruct",
+      "version": "0.11",
+      "path": "kaitaistruct-0.11.dist-info/INSTALLER",
+      "bytes": 4,
+      "sha256": "ceebae7b8927a3227e5303cf5e0f1f7b34bb542ad7250ac03fbcde36ec2f1508",
+      "lines": 2,
+      "kind": "text_unread",
+      "status": "complete",
+      "readRanges": [
+        [
+          1,
+          2
+        ]
+      ],
+      "recordedAt": "2026-10-17T22:32:12.390Z"
+    },
+    {
+      "dependency": "kaitaistruct",
+      "version": "0.11",
+      "path": "kaitaistruct-0.11.dist-info/licenses/LICENSE",
+      "bytes": 1076,
+      "sha256": "3c18fba8b8e1c6846e4fa18082adc1b46668950bb29f1c3eac5de042234c3b81",
+      "lines": 22,
+      "kind": "text_unread",
+      "status": "complete",
+      "readRanges": [
+        [
+          1,
+          22
+        ]
+      ],
+      "recordedAt": "2026-10-17T22:30:14.303Z"
+    },
+    {
+      "dependency": "kaitaistruct",
+      "version": "0.11",
+      "path": "kaitaistruct-0.11.dist-info/METADATA",
+      "bytes": 2859,
+      "sha256": "77e39925bb4acfab884100c592fe3a095f3cc0cb9fc89e4c0b5e353f861635c0",
+      "lines": 59,
+      "kind": "text_unread",
+      "status": "complete",
+      "readRanges": [
+        [
+          1,
+          59
+        ]
+      ],
+      "recordedAt": "2026-10-17T22:30:13.748Z"
+    },
+    {
+      "dependency": "kaitaistruct",
+      "version": "0.11",
+      "path": "kaitaistruct-0.11.dist-info/RECORD",
+      "bytes": 722,
+      "sha256": "f3d0a222dd3223fa44679d5d3ba7b68e2f2af8b8ab24e2a80b16c190aa1d5887",
+      "lines": 10,
+      "kind": "text_unread",
+      "status": "complete",
+      "readRanges": [
+        [
+          1,
+          10
+        ]
+      ],
+      "recordedAt": "2026-10-17T22:30:26.437Z"
+    },
+    {
+      "dependency": "kaitaistruct",
+      "version": "0.11",
+      "path": "kaitaistruct-0.11.dist-info/top_level.txt",
+      "bytes": 13,
+      "sha256": "a9dc84a14c0c600466adb9eb57e4919f3ddbd328ecd3147f3feaf916b356fd06",
+      "lines": 2,
+      "kind": "text_unread",
+      "status": "complete",
+      "readRanges": [
+        [
+          1,
+          2
+        ]
+      ],
+      "recordedAt": "2026-10-17T22:32:12.440Z"
+    },
+    {
+      "dependency": "kaitaistruct",
+      "version": "0.11",
+      "path": "kaitaistruct-0.11.dist-info/WHEEL",
+      "bytes": 109,
+      "sha256": "24d5a1d459b551dc08415d3be609429f8315b8246cd2ca2d248abe27aadbc425",
+      "lines": 7,
+      "kind": "text_unread",
+      "status": "complete",
+      "readRanges": [
+        [
+          1,
+          7
+        ]
+      ],
+      "recordedAt": "2026-10-17T22:32:12.489Z"
+    },
+    {
+      "dependency": "kaitaistruct",
+      "version": "0.11",
+      "path": "kaitaistruct-0.11.dist-info/zip-safe",
+      "bytes": 1,
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+      "lines": 2,
+      "kind": "text_unread",
+      "status": "complete",
+      "readRanges": [
+        [
+          1,
+          2
+        ]
+      ],
+      "recordedAt": "2026-10-17T22:32:16.811Z"
+    },
+    {
+      "dependency": "h2",
+      "version": "4.4.1",
+      "path": "h2/config.py",
+      "bytes": 8344,
+      "sha256": "67ec2be6b162cdc076f964d5582b86b5ef32fbc71e6f9076fab95c5742f9b6e5",
+      "lines": 213,
+      "kind": "text_unread",
+      "status": "complete",
+      "readRanges": [
+        [
+          1,
+          213
+        ]
+      ],
+      "recordedAt": "2026-10-17T22:22:04.246Z"
+    },
+    {
+      "dependency": "h2",
+      "version": "4.4.1",
+      "path": "h2/connection.py",
+      "bytes": 87316,
+      "sha256": "8283e14ad0875ecdd5d94fbd4c4111e3c08d298ef80ae6b3ff223c1ce1aa8e09",
+      "lines": 2118,
+      "kind": "text_unread",
+      "status": "complete",
+      "readRanges": [
+        [
+          1,
+          2118
+        ]
+      ],
+      "recordedAt": "2026-10-17T22:23:01.910Z"
+    },
+    {
+      "dependency": "h2",
+      "version": "4.4.1",
+      "path": "h2/errors.py",
+      "bytes": 1581,
+      "sha256": "4be4dd61a25f3ff8709458f6b90189190e12e3fc96894ffd138e1a3f174009b1",
+      "lines": 78,
+      "kind": "text_unread",
+      "status": "complete",
+      "readRanges": [
+        [
+          1,
+          78
+        ]
+      ],
+      "recordedAt": "2026-10-17T22:29:29.962Z"
+    },
+    {
+      "dependency": "h2",
+      "version": "4.4.1",
+      "path": "h2/events.py",
+      "bytes": 22283,
+      "sha256": "ae36193d2ffac6f8cc9c06a4ed51db607c93aa5f206e314327952495c5df9bb1",
+      "lines": 676,
+      "kind": "text_unread",
+      "status": "complete",
+      "readRanges": [
+        [
+          1,
+          676
+        ]
+      ],
+      "recordedAt": "2026-10-17T22:29:55.741Z"
+    },
+    {
+      "dependency": "h2",
+      "version": "4.4.1",
+      "path": "h2/exceptions.py",
+      "bytes": 5308,
+      "sha256": "dc49b798b310047c58a4e2a868f74a0861469fc03dadef4006d51d2a56376d93",
+      "lines": 195,
+      "kind": "text_unread",
+      "status": "complete",
+      "readRanges": [
+        [
+          1,
+          195
+        ]
+      ],
+      "recordedAt": "2026-10-17T22:29:30.512Z"
+    },
+    {
+      "dependency": "h2",
+      "version": "4.4.1",
+      "path": "h2/frame_buffer.py",
+      "bytes": 7237,
+      "sha256": "37febf771e38929065f7c270f555cdcceb386a1253e94dca481736bce08f6b47",
+      "lines": 176,
+      "kind": "text_unread",
+      "status": "complete",
+      "readRanges": [
+        [
+          1,
+          176
+        ]
+      ],
+      "recordedAt": "2026-10-17T22:23:20.900Z"
+    },
+    {
+      "dependency": "h2",
+      "version": "4.4.1",
+      "path": "h2/py.typed",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "lines": 1,
+      "kind": "text_unread",
+      "status": "complete",
+      "readRanges": [
+        [
+          1,
+          1
+        ]
+      ],
+      "recordedAt": "2026-10-17T22:32:16.862Z"
+    },
+    {
+      "dependency": "h2",
+      "version": "4.4.1",
+      "path": "h2/settings.py",
+      "bytes": 13477,
+      "sha256": "f356a3a890f7ec16eca6c14f53cb2083433db9eaa73eb2bf424044a8ec0ba356",
+      "lines": 364,
+      "kind": "text_unread",
+      "status": "complete",
+      "readRanges": [
+        [
+          1,
+          364
+        ]
+      ],
+      "recordedAt": "2026-10-17T22:23:51.095Z"
+    },
+    {
+      "dependency": "h2",
+      "version": "4.4.1",
+      "path": "h2/stream.py",
+      "bytes": 59574,
+      "sha256": "a52bed21bc71d78f7f004c44dec70450844d9c781b6e4d9f0236c3733065034a",
+      "lines": 1442,
+      "kind": "text_unread",
+      "status": "complete",
+      "readRanges": [
+        [
+          1,
+          1442
+        ]
+      ],
+      "recordedAt": "2026-10-17T22:25:15.530Z"
+    },
+    {
+      "dependency": "h2",
+      "version": "4.4.1",
+      "path": "h2/utilities.py",
+      "bytes": 27572,
+      "sha256": "6250a082e47953214db7fba7ca3259f4afcdf538bb3a9800404bbf6975dcf13d",
+      "lines": 727,
+      "kind": "text_unread",
+      "status": "complete",
+      "readRanges": [
+        [
+          1,
+          727
+        ]
+      ],
+      "recordedAt": "2026-10-17T22:24:24.785Z"
+    },
+    {
+      "dependency": "h2",
+      "version": "4.4.1",
+      "path": "h2/windows.py",
+      "bytes": 5492,
+      "sha256": "26958d843bfec782798c85d25a9d0834792af482203cfdbbc6bf455d8bdacc51",
+      "lines": 134,
+      "kind": "text_unread",
+      "status": "complete",
+      "readRanges": [
+        [
+          1,
+          134
+        ]
+      ],
+      "recordedAt": "2026-10-17T22:23:50.521Z"
+    },
+    {
+      "dependency": "h2",
+      "version": "4.4.1",
+      "path": "h2/_typing.py",
+      "bytes": 362,
+      "sha256": "a82c4f398c0b2e3d6feb190ccff82f1ab02815c499c4cbcd660a620648a292f2",
+      "lines": 22,
+      "kind": "text_unread",
+      "status": "complete",
+      "readRanges": [
+        [
+          1,
+          22
+        ]
+      ],
+      "recordedAt": "2026-10-17T22:29:56.309Z"
+    },
+    {
+      "dependency": "h2",
+      "version": "4.4.1",
+      "path": "h2/__init__.py",
+      "bytes": 109,
+      "sha256": "1baaac023c2da4d25451ad290ea0909519ca9eeef92b9dc13cfc61f338252bae",
+      "lines": 7,
+      "kind": "text_unread",
+      "status": "complete",
+      "readRanges": [
+        [
+          1,
+          7
+        ]
+      ],
+      "recordedAt": "2026-10-17T22:29:56.862Z"
+    },
+    {
+      "dependency": "h2",
+      "version": "4.4.1",
+      "path": "h2-4.4.1.dist-info/INSTALLER",
+      "bytes": 4,
+      "sha256": "ceebae7b8927a3227e5303cf5e0f1f7b34bb542ad7250ac03fbcde36ec2f1508",
+      "lines": 2,
+      "kind": "text_unread",
+      "status": "complete",
+      "readRanges": [
+        [
+          1,
+          2
+        ]
+      ],
+      "recordedAt": "2026-10-17T22:32:12.540Z"
+    },
+    {
+      "dependency": "h2",
+      "version": "4.4.1",
+      "path": "h2-4.4.1.dist-info/licenses/LICENSE",
+      "bytes": 1102,
+      "sha256": "7a65a5af0cbabf1c16251c7c6b2b7cb46d16a7222e79975b9b61fcd66a2e3f28",
+      "lines": 22,
+      "kind": "text_unread",
+      "status": "complete",
+      "readRanges": [
+        [
+          1,
+          22
+        ]
+      ],
+      "recordedAt": "2026-10-17T22:30:15.435Z"
+    },
+    {
+      "dependency": "h2",
+      "version": "4.4.1",
+      "path": "h2-4.4.1.dist-info/METADATA",
+      "bytes": 3765,
+      "sha256": "b17f68f6127946c3b748ea5728a9b172589ede2b9cebfa353dd5f05263096c7f",
+      "lines": 107,
+      "kind": "text_unread",
+      "status": "complete",
+      "readRanges": [
+        [
+          1,
+          107
+        ]
+      ],
+      "recordedAt": "2026-10-17T22:30:14.868Z"
+    },
+    {
+      "dependency": "h2",
+      "version": "4.4.1",
+      "path": "h2-4.4.1.dist-info/RECORD",
+      "bytes": 1904,
+      "sha256": "865c15884cfce2da007d11b29e6bd7374df2daaad9eb283d441104ea23f2d5c5",
+      "lines": 32,
+      "kind": "text_unread",
+      "status": "complete",
+      "readRanges": [
+        [
+          1,
+          32
+        ]
+      ],
+      "recordedAt": "2026-10-17T22:30:26.999Z"
+    },
+    {
+      "dependency": "h2",
+      "version": "4.4.1",
+      "path": "h2-4.4.1.dist-info/top_level.txt",
+      "bytes": 3,
+      "sha256": "1e2ba5c7c2b12368c550cd5d1bbf8265e4643b78f9d0c07008b1b7e95aeafa42",
+      "lines": 2,
+      "kind": "text_unread",
+      "status": "complete",
+      "readRanges": [
+        [
+          1,
+          2
+        ]
+      ],
+      "recordedAt": "2026-10-17T22:32:12.587Z"
+    },
+    {
+      "dependency": "h2",
+      "version": "4.4.1",
+      "path": "h2-4.4.1.dist-info/WHEEL",
+      "bytes": 91,
+      "sha256": "2b6eb4118ce7cd7b09601406aa623c553c4476265836f0d9c16f5c061f7efcc0",
+      "lines": 6,
+      "kind": "text_unread",
+      "status": "complete",
+      "readRanges": [
+        [
+          1,
+          6
+        ]
+      ],
+      "recordedAt": "2026-10-17T22:32:12.636Z"
+    },
+    {
+      "dependency": "hpack",
+      "version": "4.2.0",
+      "path": "hpack/exceptions.py",
+      "bytes": 1107,
+      "sha256": "5eacbcbe2aaf28a1c1c90ec8a3c169f873e50cfdd3ed133d6a994f4b176bf632",
+      "lines": 54,
+      "kind": "text_unread",
+      "status": "complete",
+      "readRanges": [
+        [
+          1,
+          54
+        ]
+      ],
+      "recordedAt": "2026-10-17T22:26:08.523Z"
+    },
+    {
+      "dependency": "hpack",
+      "version": "4.2.0",
+      "path": "hpack/hpack.py",
+      "bytes": 26058,
+      "sha256": "4ab14aab1a856cee45aea3169854167b16dac9ef9ec4cef1ed1d5da82439769d",
+      "lines": 678,
+      "kind": "text_unread",
+      "status": "complete",
+      "readRanges": [
+        [
+          1,
+          678
+        ]
+      ],
+      "recordedAt": "2026-10-17T22:25:56.271Z"
+    },
+    {
+      "dependency": "hpack",
+      "version": "4.2.0",
+      "path": "hpack/huffman.py",
+      "bytes": 2332,
+      "sha256": "cc3b91b4ec8511d29bf7f199acdb40a274c452ca882eb2b6b2d4a1e702e919ee",
+      "lines": 64,
+      "kind": "text_unread",
+      "status": "complete",
+      "readRanges": [
+        [
+          1,
+          64
+        ]
+      ],
+      "recordedAt": "2026-10-17T22:26:07.372Z"
+    },
+    {
+      "dependency": "hpack",
+      "version": "4.2.0",
+      "path": "hpack/huffman_constants.py",
+      "bytes": 4570,
+      "sha256": "e0f84e31e97998dd1ab24151ae7e2756927f09339484ed6a6c544eeaefc87f63",
+      "lines": 286,
+      "kind": "text_unread",
+      "status": "complete",
+      "readRanges": [
+        [
+          1,
+          286
+        ]
+      ],
+      "recordedAt": "2026-10-17T22:28:38.816Z"
+    },
+    {
+      "dependency": "hpack",
+      "version": "4.2.0",
+      "path": "hpack/huffman_table.py",
+      "bytes": 168663,
+      "sha256": "12452e981b596483c227a950ecb1bf6f07c38f58991225cce0035c5e34f5cd4b",
+      "lines": 4742,
+      "kind": "text_unread",
+      "status": "complete",
+      "readRanges": [
+        [
+          1,
+          4742
+        ]
+      ],
+      "recordedAt": "2026-10-17T22:27:55.619Z"
+    },
+    {
+      "dependency": "hpack",
+      "version": "4.2.0",
+      "path": "hpack/py.typed",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "lines": 1,
+      "kind": "text_unread",
+      "status": "complete",
+      "readRanges": [
+        [
+          1,
+          1
+        ]
+      ],
+      "recordedAt": "2026-10-17T22:32:16.912Z"
+    },
+    {
+      "dependency": "hpack",
+      "version": "4.2.0",
+      "path": "hpack/struct.py",
+      "bytes": 1476,
+      "sha256": "06a10e4b74f996ae341257efec6ec24385f6a7209a93ce6657367f5c8cb1a083",
+      "lines": 51,
+      "kind": "text_unread",
+      "status": "complete",
+      "readRanges": [
+        [
+          1,
+          51
+        ]
+      ],
+      "recordedAt": "2026-10-17T22:26:07.952Z"
+    },
+    {
+      "dependency": "hpack",
+      "version": "4.2.0",
+      "path": "hpack/table.py",
+      "bytes": 10000,
+      "sha256": "500937f5f52433fafc76704a3832ffa86afdff044e9ca4150761033f60032642",
+      "lines": 238,
+      "kind": "text_unread",
+      "status": "complete",
+      "readRanges": [
+        [
+          1,
+          238
+        ]
+      ],
+      "recordedAt": "2026-10-17T22:26:06.804Z"
+    },
+    {
+      "dependency": "hpack",
+      "version": "4.2.0",
+      "path": "hpack/__init__.py",
+      "bytes": 597,
+      "sha256": "8d7e285593c15d356e93f6b7c6856a51bb93e2cd6f95e7d74a091e5587b71471",
+      "lines": 24,
+      "kind": "text_unread",
+      "status": "complete",
+      "readRanges": [
+        [
+          1,
+          24
+        ]
+      ],
+      "recordedAt": "2026-10-17T22:29:29.400Z"
+    },
+    {
+      "dependency": "hpack",
+      "version": "4.2.0",
+      "path": "hpack-4.2.0.dist-info/INSTALLER",
+      "bytes": 4,
+      "sha256": "ceebae7b8927a3227e5303cf5e0f1f7b34bb542ad7250ac03fbcde36ec2f1508",
+      "lines": 2,
+      "kind": "text_unread",
+      "status": "complete",
+      "readRanges": [
+        [
+          1,
+          2
+        ]
+      ],
+      "recordedAt": "2026-10-17T22:32:12.684Z"
+    },
+    {
+      "dependency": "hpack",
+      "version": "4.2.0",
+      "path": "hpack-4.2.0.dist-info/licenses/LICENSE",
+      "bytes": 1080,
+      "sha256": "763a9342a04df62046c9dc748a5287934eb0a5331c6863b3ca0aee20e18cb4ed",
+      "lines": 22,
+      "kind": "text_unread",
+      "status": "complete",
+      "readRanges": [
+        [
+          1,
+          22
+        ]
+      ],
+      "recordedAt": "2026-10-17T22:30:16.549Z"
+    },
+    {
+      "dependency": "hpack",
+      "version": "4.2.0",
+      "path": "hpack-4.2.0.dist-info/METADATA",
+      "bytes": 3288,
+      "sha256": "d2408cbb7b7d2f4bd041a96a850300da45e1bf79b1a380148a5fc29dcd55255f",
+      "lines": 97,
+      "kind": "text_unread",
+      "status": "complete",
+      "readRanges": [
+        [
+          1,
+          97
+        ]
+      ],
+      "recordedAt": "2026-10-17T22:30:15.986Z"
+    },
+    {
+      "dependency": "hpack",
+      "version": "4.2.0",
+      "path": "hpack-4.2.0.dist-info/RECORD",
+      "bytes": 1529,
+      "sha256": "c5605d891eb7dbb1d7e5fcc22a0664ee63143ca95f4957d2b82bc6eee032310a",
+      "lines": 24,
+      "kind": "text_unread",
+      "status": "complete",
+      "readRanges": [
+        [
+          1,
+          24
+        ]
+      ],
+      "recordedAt": "2026-10-17T22:30:27.565Z"
+    },
+    {
+      "dependency": "hpack",
+      "version": "4.2.0",
+      "path": "hpack-4.2.0.dist-info/top_level.txt",
+      "bytes": 6,
+      "sha256": "9f2ad92db428fb49c2ea8b7760eff5d3da645224ed2b5334c1425f2c7b9071e1",
+      "lines": 2,
+      "kind": "text_unread",
+      "status": "complete",
+      "readRanges": [
+        [
+          1,
+          2
+        ]
+      ],
+      "recordedAt": "2026-10-17T22:32:12.731Z"
+    },
+    {
+      "dependency": "hpack",
+      "version": "4.2.0",
+      "path": "hpack-4.2.0.dist-info/WHEEL",
+      "bytes": 91,
+      "sha256": "69e6228a0d35958183cc1812f07c565ce837b95eb51bd8a33acba9fa4f68d6c9",
+      "lines": 6,
+      "kind": "text_unread",
+      "status": "complete",
+      "readRanges": [
+        [
+          1,
+          6
+        ]
+      ],
+      "recordedAt": "2026-10-17T22:32:12.781Z"
+    },
+    {
+      "dependency": "hyperframe",
+      "version": "6.1.0",
+      "path": "hyperframe/exceptions.py",
+      "bytes": 1516,
+      "sha256": "0d92eb670e72ecc2c13119310b1aea7f9121cfc0681369fb32955aa780f9bdc2",
+      "lines": 62,
+      "kind": "text_unread",
+      "status": "complete",
+      "readRanges": [
+        [
+          1,
+          62
+        ]
+      ],
+      "recordedAt": "2026-10-17T22:26:50.109Z"
+    },
+    {
+      "dependency": "hyperframe",
+      "version": "6.1.0",
+      "path": "hyperframe/flags.py",
+      "bytes": 1294,
+      "sha256": "f65be969e297adf61ebb18fc5deab6d440f8d0e0d38a9a376577835225f95992",
+      "lines": 48,
+      "kind": "text_unread",
+      "status": "complete",
+      "readRanges": [
+        [
+          1,
+          48
+        ]
+      ],
+      "recordedAt": "2026-10-17T22:26:49.534Z"
+    },
+    {
+      "dependency": "hyperframe",
+      "version": "6.1.0",
+      "path": "hyperframe/frame.py",
+      "bytes": 31659,
+      "sha256": "6ac62192190eaf5bd10777ee6581351c88532050f424d3965b067cbde7735b15",
+      "lines": 938,
+      "kind": "text_unread",
+      "status": "complete",
+      "readRanges": [
+        [
+          1,
+          938
+        ]
+      ],
+      "recordedAt": "2026-10-17T22:26:38.490Z"
+    },
+    {
+      "dependency": "hyperframe",
+      "version": "6.1.0",
+      "path": "hyperframe/py.typed",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "lines": 1,
+      "kind": "text_unread",
+      "status": "complete",
+      "readRanges": [
+        [
+          1,
+          1
+        ]
+      ],
+      "recordedAt": "2026-10-17T22:32:16.961Z"
+    },
+    {
+      "dependency": "hyperframe",
+      "version": "6.1.0",
+      "path": "hyperframe/__init__.py",
+      "bytes": 111,
+      "sha256": "43f3017642040964cbbe4b0e5e0e67607517f2303c861a10b2e8fa394436e252",
+      "lines": 7,
+      "kind": "text_unread",
+      "status": "complete",
+      "readRanges": [
+        [
+          1,
+          7
+        ]
+      ],
+      "recordedAt": "2026-10-17T22:26:50.706Z"
+    },
+    {
+      "dependency": "hyperframe",
+      "version": "6.1.0",
+      "path": "hyperframe-6.1.0.dist-info/INSTALLER",
+      "bytes": 4,
+      "sha256": "ceebae7b8927a3227e5303cf5e0f1f7b34bb542ad7250ac03fbcde36ec2f1508",
+      "lines": 2,
+      "kind": "text_unread",
+      "status": "complete",
+      "readRanges": [
+        [
+          1,
+          2
+        ]
+      ],
+      "recordedAt": "2026-10-17T22:32:12.829Z"
+    },
+    {
+      "dependency": "hyperframe",
+      "version": "6.1.0",
+      "path": "hyperframe-6.1.0.dist-info/LICENSE",
+      "bytes": 1080,
+      "sha256": "763a9342a04df62046c9dc748a5287934eb0a5331c6863b3ca0aee20e18cb4ed",
+      "lines": 22,
+      "kind": "text_unread",
+      "status": "complete",
+      "readRanges": [
+        [
+          1,
+          22
+        ]
+      ],
+      "recordedAt": "2026-10-17T22:30:17.664Z"
+    },
+    {
+      "dependency": "hyperframe",
+      "version": "6.1.0",
+      "path": "hyperframe-6.1.0.dist-info/METADATA",
+      "bytes": 4339,
+      "sha256": "a29f5792b9459b47658804988520009156ef8c2dea66022c2969a145065bad69",
+      "lines": 99,
+      "kind": "text_unread",
+      "status": "complete",
+      "readRanges": [
+        [
+          1,
+          99
+        ]
+      ],
+      "recordedAt": "2026-10-17T22:30:17.098Z"
+    },
+    {
+      "dependency": "hyperframe",
+      "version": "6.1.0",
+      "path": "hyperframe-6.1.0.dist-info/RECORD",
+      "bytes": 1087,
+      "sha256": "f8efed0d31c3ea496a92bcf050a8f2204ac3823366d5846cc0e9e706285e4f29",
+      "lines": 16,
+      "kind": "text_unread",
+      "status": "complete",
+      "readRanges": [
+        [
+          1,
+          16
+        ]
+      ],
+      "recordedAt": "2026-10-17T22:30:28.120Z"
+    },
+    {
+      "dependency": "hyperframe",
+      "version": "6.1.0",
+      "path": "hyperframe-6.1.0.dist-info/top_level.txt",
+      "bytes": 11,
+      "sha256": "6885d6371cca17f8f013c972586e4f6aa9f944fecf0c161e82eada89afa81c91",
+      "lines": 2,
+      "kind": "text_unread",
+      "status": "complete",
+      "readRanges": [
+        [
+          1,
+          2
+        ]
+      ],
+      "recordedAt": "2026-10-17T22:32:12.878Z"
+    },
+    {
+      "dependency": "hyperframe",
+      "version": "6.1.0",
+      "path": "hyperframe-6.1.0.dist-info/WHEEL",
+      "bytes": 91,
+      "sha256": "227f454cdc5e3fad0a9d3906c3bc24ea624f61dfdd4128c46665dd05d30223ef",
+      "lines": 6,
+      "kind": "text_unread",
+      "status": "complete",
+      "readRanges": [
+        [
+          1,
+          6
+        ]
+      ],
+      "recordedAt": "2026-10-17T22:32:12.925Z"
+    },
+    {
+      "dependency": "aioquic",
+      "version": "1.2.0",
+      "path": "aioquic/asyncio/client.py",
+      "bytes": 3889,
+      "sha256": "8eb11f11278224aefd85b3fdd025fb9ec250d02d27cdbeaf18b168dac1a01a69",
+      "lines": 99,
+      "kind": "text_unread",
+      "status": "complete",
+      "readRanges": [
+        [
+          1,
+          99
+        ]
+      ],
+      "recordedAt": "2026-10-17T22:40:06.085Z"
+    },
+    {
+      "dependency": "aioquic",
+      "version": "1.2.0",
+      "path": "aioquic/asyncio/protocol.py",
+      "bytes": 10115,
+      "sha256": "efb7ee5ca663e689b94d4e9fb811506c751a15e2e3d4e1dff8675f0c0ee00b38",
+      "lines": 273,
+      "kind": "text_unread",
+      "status": "complete",
+      "readRanges": [
+        [
+          1,
+          273
+        ]
+      ],
+      "recordedAt": "2026-10-17T22:40:06.138Z"
+    },
+    {
+      "dependency": "aioquic",
+      "version": "1.2.0",
+      "path": "aioquic/asyncio/server.py",
+      "bytes": 8647,
+      "sha256": "629554a0dadf5870bd762de13192aebb5ca484b7c59ea2349bbd92ac0f747f30",
+      "lines": 216,
+      "kind": "text_unread",
+      "status": "complete",
+      "readRanges": [
+        [
+          1,
+          216
+        ]
+      ],
+      "recordedAt": "2026-10-17T22:40:06.191Z"
+    },
+    {
+      "dependency": "aioquic",
+      "version": "1.2.0",
+      "path": "aioquic/asyncio/__init__.py",
+      "bytes": 126,
+      "sha256": "c6ce610846b85b76378906928bbd748ca93da781b0db0e108a8440744cf76164",
+      "lines": 4,
+      "kind": "text_unread",
+      "status": "complete",
+      "readRanges": [
+        [
+          1,
+          4
+        ]
+      ],
+      "recordedAt": "2026-10-17T22:40:28.613Z"
+    },
+    {
+      "dependency": "aioquic",
+      "version": "1.2.0",
+      "path": "aioquic/buffer.py",
+      "bytes": 800,
+      "sha256": "829bb5852b8c1c20d9ae27365f6b3814b793baeecc81b6f8667c5aca13fa649e",
+      "lines": 31,
+      "kind": "text_unread",
+      "status": "complete",
+      "readRanges": [
+        [
+          1,
+          31
+        ]
+      ],
+      "recordedAt": "2026-10-17T22:32:33.211Z"
+    },
+    {
+      "dependency": "aioquic",
+      "version": "1.2.0",
+      "path": "aioquic/h0/connection.py",
+      "bytes": 2626,
+      "sha256": "69016380c8452ec08739d116ddf81b9959b0ae1e36f4b9adbab94905cc6a494d",
+      "lines": 69,
+      "kind": "text_unread",
+      "status": "complete",
+      "readRanges": [
+        [
+          1,
+          69
+        ]
+      ],
+      "recordedAt": "2026-10-17T22:40:06.242Z"
+    },
+    {
+      "dependency": "aioquic",
+      "version": "1.2.0",
+      "path": "aioquic/h0/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "lines": 1,
+      "kind": "text_unread",
+      "status": "complete",
+      "readRanges": [
+        [
+          1,
+          1
+        ]
+      ],
+      "recordedAt": "2026-10-17T22:40:28.666Z"
+    },
+    {
+      "dependency": "aioquic",
+      "version": "1.2.0",
+      "path": "aioquic/h3/connection.py",
+      "bytes": 44456,
+      "sha256": "11cbac510a683b376a7b3ded0af2b16e688dc388d19693f2585791b1b2e26090",
+      "lines": 1219,
+      "kind": "text_unread",
+      "status": "complete",
+      "readRanges": [
+        [
+          1,
+          1219
+        ]
+      ],
+      "recordedAt": "2026-10-17T22:33:16.711Z"
+    },
+    {
+      "dependency": "aioquic",
+      "version": "1.2.0",
+      "path": "aioquic/h3/events.py",
+      "bytes": 2247,
+      "sha256": "17d8222a94bedcd1c9871d9bce5367d345ba193a6c17c62cacd2ccc6721731f3",
+      "lines": 101,
+      "kind": "text_unread",
+      "status": "complete",
+      "readRanges": [
+        [
+          1,
+          101
+        ]
+      ],
+      "recordedAt": "2026-10-17T22:33:34.137Z"
+    },
+    {
+      "dependency": "aioquic",
+      "version": "1.2.0",
+      "path": "aioquic/h3/exceptions.py",
+      "bytes": 358,
+      "sha256": "90b04962a11ec16223fb67ee0b135e1ed9e77b6da2c3b359c0341c229435c955",
+      "lines": 18,
+      "kind": "text_unread",
+      "status": "complete",
+      "readRanges": [
+        [
+          1,
+          18
+        ]
+      ],
+      "recordedAt": "2026-10-17T22:40:28.725Z"
+    },
+    {
+      "dependency": "aioquic",
+      "version": "1.2.0",
+      "path": "aioquic/h3/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "lines": 1,
+      "kind": "text_unread",
+      "status": "complete",
+      "readRanges": [
+        [
+          1,
+          1
+        ]
+      ],
+      "recordedAt": "2026-10-17T22:40:28.780Z"
+    },
+    {
+      "dependency": "aioquic",
+      "version": "1.2.0",
+      "path": "aioquic/py.typed",
+      "bytes": 8,
+      "sha256": "dd55705d4016544557eec0f0c980e75b965d042f7f67d0090057cb0a57945b49",
+      "lines": 2,
+      "kind": "text_unread",
+      "status": "complete",
+      "readRanges": [
+        [
+          1,
+          2
+        ]
+      ],
+      "recordedAt": "2026-10-17T22:40:28.839Z"
+    },
+    {
+      "dependency": "aioquic",
+      "version": "1.2.0",
+      "path": "aioquic/quic/configuration.py",
+      "bytes": 4712,
+      "sha256": "0a726f3f324f0692d585c7c19dd13260e7f39b99c9a1917ef5bdff7d621eb038",
+      "lines": 164,
+      "kind": "text_unread",
+      "status": "complete",
+      "readRanges": [
+        [
+          1,
+          164
+        ]
+      ],
+      "recordedAt": "2026-10-17T22:32:33.156Z"
+    },
+    {
+      "dependency": "aioquic",
+      "version": "1.2.0",
+      "path": "aioquic/quic/congestion/base.py",
+      "bytes": 3986,
+      "sha256": "0c8ee8c57dc30d96d2e208b33ce243a8182eb1cce55ab55e4178f322899c4c0a",
+      "lines": 129,
+      "kind": "text_unread",
+      "status": "complete",
+      "readRanges": [
+        [
+          1,
+          129
+        ]
+      ],
+      "recordedAt": "2026-10-17T22:35:47.328Z"
+    },
+    {
+      "dependency": "aioquic",
+      "version": "1.2.0",
+      "path": "aioquic/quic/congestion/cubic.py",
+      "bytes": 8230,
+      "sha256": "597f9afaa51423afb7641907b5f03acf0d2143b2352f32a0ee51705458e56722",
+      "lines": 213,
+      "kind": "text_unread",
+      "status": "complete",
+      "readRanges": [
+        [
+          1,
+          213
+        ]
+      ],
+      "recordedAt": "2026-10-17T22:35:47.436Z"
+    },
+    {
+      "dependency": "aioquic",
+      "version": "1.2.0",
+      "path": "aioquic/quic/congestion/reno.py",
+      "bytes": 2932,
+      "sha256": "1b967728031435ca7dc09b3d97fc99e54f5d84860a1642e935bf62a24ff50cb2",
+      "lines": 78,
+      "kind": "text_unread",
+      "status": "complete",
+      "readRanges": [
+        [
+          1,
+          78
+        ]
+      ],
+      "recordedAt": "2026-10-17T22:35:47.378Z"
+    },
+    {
+      "dependency": "aioquic",
+      "version": "1.2.0",
+      "path": "aioquic/quic/congestion/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "lines": 1,
+      "kind": "text_unread",
+      "status": "complete",
+      "readRanges": [
+        [
+          1,
+          1
+        ]
+      ],
+      "recordedAt": "2026-10-17T22:40:28.901Z"
+    },
+    {
+      "dependency": "aioquic",
+      "version": "1.2.0",
+      "path": "aioquic/quic/connection.py",
+      "bytes": 142882,
+      "sha256": "03f00aa9fe824c0f4cd63f69ce13c8a3eee55f3932f8250666e0795ddae88825",
+      "lines": 3624,
+      "kind": "text_unread",
+      "status": "complete",
+      "readRanges": [
+        [
+          1,
+          3624
+        ]
+      ],
+      "recordedAt": "2026-10-17T22:35:20.896Z"
+    },
+    {
+      "dependency": "aioquic",
+      "version": "1.2.0",
+      "path": "aioquic/quic/crypto.py",
+      "bytes": 8396,
+      "sha256": "91ad357131f3493fc5810debe2bbd0ddf37d27e09a7bad7127e07d2dba65e507",
+      "lines": 247,
+      "kind": "text_unread",
+      "status": "complete",
+      "readRanges": [
+        [
+          1,
+          247
+        ]
+      ],
+      "recordedAt": "2026-10-17T22:36:57.044Z"
+    },
+    {
+      "dependency": "aioquic",
+      "version": "1.2.0",
+      "path": "aioquic/quic/events.py",
+      "bytes": 2854,
+      "sha256": "9aba065c75683058404acbc231f621e08cff6b44067aa656cdc588c51ce58887",
+      "lines": 127,
+      "kind": "text_unread",
+      "status": "complete",
+      "readRanges": [
+        [
+          1,
+          127
+        ]
+      ],
+      "recordedAt": "2026-10-17T22:40:06.293Z"
+    },
+    {
+      "dependency": "aioquic",
+      "version": "1.2.0",
+      "path": "aioquic/quic/logger.py",
+      "bytes": 10665,
+      "sha256": "e9f3c53042848318f72f52d6f37f7bf402410422fbfb884178668e13d29cdcfe",
+      "lines": 330,
+      "kind": "text_unread",
+      "status": "complete",
+      "readRanges": [
+        [
+          1,
+          330
+        ]
+      ],
+      "recordedAt": "2026-10-17T22:40:06.343Z"
+    },
+    {
+      "dependency": "aioquic",
+      "version": "1.2.0",
+      "path": "aioquic/quic/packet.py",
+      "bytes": 20716,
+      "sha256": "0080065f543db8ba34479fe0940262dbbba049c9cac572465f2f31056f22d9e5",
+      "lines": 641,
+      "kind": "text_unread",
+      "status": "complete",
+      "readRanges": [
+        [
+          1,
+          641
+        ]
+      ],
+      "recordedAt": "2026-10-17T22:36:32.629Z"
+    },
+    {
+      "dependency": "aioquic",
+      "version": "1.2.0",
+      "path": "aioquic/quic/packet_builder.py",
+      "bytes": 13456,
+      "sha256": "be844fa781b5278be64f3447f49e69104d0042a0f46a1f911d30d716cb05694b",
+      "lines": 385,
+      "kind": "text_unread",
+      "status": "complete",
+      "readRanges": [
+        [
+          1,
+          385
+        ]
+      ],
+      "recordedAt": "2026-10-17T22:36:11.666Z"
+    },
+    {
+      "dependency": "aioquic",
+      "version": "1.2.0",
+      "path": "aioquic/quic/rangeset.py",
+      "bytes": 3231,
+      "sha256": "a13738920183494d7545f40f54f536bea17a8395ed87543d27c901776df8cc9c",
+      "lines": 99,
+      "kind": "text_unread",
+      "status": "complete",
+      "readRanges": [
+        [
+          1,
+          99
+        ]
+      ],
+      "recordedAt": "2026-10-17T22:33:52.462Z"
+    },
+    {
+      "dependency": "aioquic",
+      "version": "1.2.0",
+      "path": "aioquic/quic/recovery.py",
+      "bytes": 13923,
+      "sha256": "2057e843e82913797f68053e6ea3d91f031abaea3476d97146723d059db07185",
+      "lines": 390,
+      "kind": "text_unread",
+      "status": "complete",
+      "readRanges": [
+        [
+          1,
+          390
+        ]
+      ],
+      "recordedAt": "2026-10-17T22:35:37.931Z"
+    },
+    {
+      "dependency": "aioquic",
+      "version": "1.2.0",
+      "path": "aioquic/quic/retry.py",
+      "bytes": 1935,
+      "sha256": "8c4ac209f48a2a95da83259d0c48381755daf3d129259996b2f843fa2db89121",
+      "lines": 54,
+      "kind": "text_unread",
+      "status": "complete",
+      "readRanges": [
+        [
+          1,
+          54
+        ]
+      ],
+      "recordedAt": "2026-10-17T22:40:06.394Z"
+    },
+    {
+      "dependency": "aioquic",
+      "version": "1.2.0",
+      "path": "aioquic/quic/stream.py",
+      "bytes": 12445,
+      "sha256": "23a5d1e12804a8ad7afa1e643dadd6ae72e62884f922fdc922d150ff4568c45e",
+      "lines": 365,
+      "kind": "text_unread",
+      "status": "complete",
+      "readRanges": [
+        [
+          1,
+          365
+        ]
+      ],
+      "recordedAt": "2026-10-17T22:33:52.412Z"
+    },
+    {
+      "dependency": "aioquic",
+      "version": "1.2.0",
+      "path": "aioquic/quic/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "lines": 1,
+      "kind": "text_unread",
+      "status": "complete",
+      "readRanges": [
+        [
+          1,
+          1
+        ]
+      ],
+      "recordedAt": "2026-10-17T22:40:28.956Z"
+    },
+    {
+      "dependency": "aioquic",
+      "version": "1.2.0",
+      "path": "aioquic/tls.py",
+      "bytes": 78595,
+      "sha256": "a1df65b3733c3a5c82ba4201aeee9410a41090fc76e8118a4075da39472b1f97",
+      "lines": 2186,
+      "kind": "text_unread",
+      "status": "complete",
+      "readRanges": [
+        [
+          1,
+          2186
+        ]
+      ],
+      "recordedAt": "2026-10-17T22:38:36.829Z"
+    },
+    {
+      "dependency": "aioquic",
+      "version": "1.2.0",
+      "path": "aioquic/_buffer.c",
+      "bytes": 12704,
+      "sha256": "5411c3d8021f824944672e5d5cb04fee4a3f10fc84cc823d6b756f5abe7ab1c3",
+      "lines": 423,
+      "kind": "text_unread",
+      "status": "complete",
+      "readRanges": [
+        [
+          1,
+          423
+        ]
+      ],
+      "recordedAt": "2026-10-17T22:32:33.313Z"
+    },
+    {
+      "dependency": "aioquic",
+      "version": "1.2.0",
+      "path": "aioquic/_buffer.pyd",
+      "bytes": 16896,
+      "sha256": "48168bcb2eeae913c8b399b5b3b2b20f4fd9375329594d81656bb88b42d105c3",
+      "lines": null,
+      "kind": "binary_boundary",
+      "status": "unread",
+      "readRanges": []
+    },
+    {
+      "dependency": "aioquic",
+      "version": "1.2.0",
+      "path": "aioquic/_buffer.pyi",
+      "bytes": 1041,
+      "sha256": "a45f413a1c2d1966321abc3418130bcad47927206f9183baacef6f2d8ea4036f",
+      "lines": 28,
+      "kind": "text_unread",
+      "status": "complete",
+      "readRanges": [
+        [
+          1,
+          28
+        ]
+      ],
+      "recordedAt": "2026-10-17T22:32:33.263Z"
+    },
+    {
+      "dependency": "aioquic",
+      "version": "1.2.0",
+      "path": "aioquic/_crypto.c",
+      "bytes": 12505,
+      "sha256": "3881a1563d230831a9931db0abc1efd71f5b99b4f83927b05c5a4f6d0fa8f366",
+      "lines": 417,
+      "kind": "text_unread",
+      "status": "complete",
+      "readRanges": [
+        [
+          1,
+          417
+        ]
+      ],
+      "recordedAt": "2026-10-17T22:36:57.099Z"
+    },
+    {
+      "dependency": "aioquic",
+      "version": "1.2.0",
+      "path": "aioquic/_crypto.pyd",
+      "bytes": 3718656,
+      "sha256": "cc25e7412b1842507ca5f3c820c630ba87ad5c78ed2f1937486be8a4e5177a33",
+      "lines": null,
+      "kind": "binary_boundary",
+      "status": "unread",
+      "readRanges": []
+    },
+    {
+      "dependency": "aioquic",
+      "version": "1.2.0",
+      "path": "aioquic/_crypto.pyi",
+      "bytes": 627,
+      "sha256": "c019ac691be52f02161ddf8f78da7a3a54bd0fa5c26db82d055db40fcec4a049",
+      "lines": 18,
+      "kind": "text_unread",
+      "status": "complete",
+      "readRanges": [
+        [
+          1,
+          18
+        ]
+      ],
+      "recordedAt": "2026-10-17T22:36:57.152Z"
+    },
+    {
+      "dependency": "aioquic",
+      "version": "1.2.0",
+      "path": "aioquic/__init__.py",
+      "bytes": 23,
+      "sha256": "125d6c6e920d3be709da65facbfd3b5ba0c297b229461903373ddfa59a47208d",
+      "lines": 2,
+      "kind": "text_unread",
+      "status": "complete",
+      "readRanges": [
+        [
+          1,
+          2
+        ]
+      ],
+      "recordedAt": "2026-10-17T22:40:29.010Z"
+    },
+    {
+      "dependency": "aioquic",
+      "version": "1.2.0",
+      "path": "aioquic-1.2.0.dist-info/INSTALLER",
+      "bytes": 4,
+      "sha256": "ceebae7b8927a3227e5303cf5e0f1f7b34bb542ad7250ac03fbcde36ec2f1508",
+      "lines": 2,
+      "kind": "text_unread",
+      "status": "complete",
+      "readRanges": [
+        [
+          1,
+          2
+        ]
+      ],
+      "recordedAt": "2026-10-17T22:40:29.067Z"
+    },
+    {
+      "dependency": "aioquic",
+      "version": "1.2.0",
+      "path": "aioquic-1.2.0.dist-info/LICENSE",
+      "bytes": 1528,
+      "sha256": "fc13721d3a0186ff0947b9e95b65c06723b2da7414b17fcd84b2d55c8947fce8",
+      "lines": 26,
+      "kind": "text_unread",
+      "status": "complete",
+      "readRanges": [
+        [
+          1,
+          26
+        ]
+      ],
+      "recordedAt": "2026-10-17T22:40:29.121Z"
+    },
+    {
+      "dependency": "aioquic",
+      "version": "1.2.0",
+      "path": "aioquic-1.2.0.dist-info/METADATA",
+      "bytes": 6521,
+      "sha256": "14881a52e10875b17d98673f76f59b33cb7c97ff4a77fb8fe6a7d6e0c54cec11",
+      "lines": 195,
+      "kind": "text_unread",
+      "status": "complete",
+      "readRanges": [
+        [
+          1,
+          195
+        ]
+      ],
+      "recordedAt": "2026-10-17T22:39:13.684Z"
+    },
+    {
+      "dependency": "aioquic",
+      "version": "1.2.0",
+      "path": "aioquic-1.2.0.dist-info/RECORD",
+      "bytes": 4943,
+      "sha256": "4d5257cf6be44d9791071b78caf4d5f62785f4b7e7be92ca00635ab0cbf54200",
+      "lines": 72,
+      "kind": "text_unread",
+      "status": "complete",
+      "readRanges": [
+        [
+          1,
+          72
+        ]
+      ],
+      "recordedAt": "2026-10-17T22:40:29.171Z"
+    },
+    {
+      "dependency": "aioquic",
+      "version": "1.2.0",
+      "path": "aioquic-1.2.0.dist-info/top_level.txt",
+      "bytes": 8,
+      "sha256": "c08a185d84a24bbf90e264c43d0e37ecedb506589768146caa1443683a7f49e6",
+      "lines": 2,
+      "kind": "text_unread",
+      "status": "complete",
+      "readRanges": [
+        [
+          1,
+          2
+        ]
+      ],
+      "recordedAt": "2026-10-17T22:40:29.222Z"
+    },
+    {
+      "dependency": "aioquic",
+      "version": "1.2.0",
+      "path": "aioquic-1.2.0.dist-info/WHEEL",
+      "bytes": 100,
+      "sha256": "01abeae575e5e7cb4be9b2fe56c5eae8cd8a1f0485e08ed8aef4587de0339b90",
+      "lines": 6,
+      "kind": "text_unread",
+      "status": "complete",
+      "readRanges": [
+        [
+          1,
+          6
+        ]
+      ],
+      "recordedAt": "2026-10-17T22:40:29.271Z"
+    },
+    {
+      "dependency": "pylsqpack",
+      "version": "0.3.24",
+      "path": "pylsqpack/binding.c",
+      "bytes": 20847,
+      "sha256": "f5378935ace50f59e5b3df7198095116a55a4b8a4dcc6c1ed2c3452e1f5b91c8",
+      "lines": 620,
+      "kind": "text_unread",
+      "status": "complete",
+      "readRanges": [
+        [
+          1,
+          620
+        ]
+      ],
+      "recordedAt": "2026-10-17T22:39:13.191Z"
+    },
+    {
+      "dependency": "pylsqpack",
+      "version": "0.3.24",
+      "path": "pylsqpack/py.typed",
+      "bytes": 8,
+      "sha256": "dd55705d4016544557eec0f0c980e75b965d042f7f67d0090057cb0a57945b49",
+      "lines": 2,
+      "kind": "text_unread",
+      "status": "complete",
+      "readRanges": [
+        [
+          1,
+          2
+        ]
+      ],
+      "recordedAt": "2026-10-17T22:39:13.242Z"
+    },
+    {
+      "dependency": "pylsqpack",
+      "version": "0.3.24",
+      "path": "pylsqpack/_binding.pyd",
+      "bytes": 866816,
+      "sha256": "f84c9f20017000349fd05a69183334410249d7cca384c26f200aafd841671f1e",
+      "lines": null,
+      "kind": "binary_boundary",
+      "status": "unread",
+      "readRanges": []
+    },
+    {
+      "dependency": "pylsqpack",
+      "version": "0.3.24",
+      "path": "pylsqpack/__init__.py",
+      "bytes": 196,
+      "sha256": "da1bd19862a7858feba10c04c0bdc5b6ca5351e181d87f699681052a37378dc6",
+      "lines": 13,
+      "kind": "text_unread",
+      "status": "complete",
+      "readRanges": [
+        [
+          1,
+          13
+        ]
+      ],
+      "recordedAt": "2026-10-17T22:39:13.291Z"
+    },
+    {
+      "dependency": "pylsqpack",
+      "version": "0.3.24",
+      "path": "pylsqpack/__init__.pyi",
+      "bytes": 822,
+      "sha256": "b7b613f87c4779624fead5a962fb043f29a4efcd11d4cebf67f747bd0ca973a0",
+      "lines": 22,
+      "kind": "text_unread",
+      "status": "complete",
+      "readRanges": [
+        [
+          1,
+          22
+        ]
+      ],
+      "recordedAt": "2026-10-17T22:39:13.341Z"
+    },
+    {
+      "dependency": "pylsqpack",
+      "version": "0.3.24",
+      "path": "pylsqpack-0.3.24.dist-info/INSTALLER",
+      "bytes": 4,
+      "sha256": "ceebae7b8927a3227e5303cf5e0f1f7b34bb542ad7250ac03fbcde36ec2f1508",
+      "lines": 2,
+      "kind": "text_unread",
+      "status": "complete",
+      "readRanges": [
+        [
+          1,
+          2
+        ]
+      ],
+      "recordedAt": "2026-10-17T22:39:13.388Z"
+    },
+    {
+      "dependency": "pylsqpack",
+      "version": "0.3.24",
+      "path": "pylsqpack-0.3.24.dist-info/licenses/LICENSE",
+      "bytes": 1530,
+      "sha256": "d12ce6525f2c41783a48c13df546fe770079fd5d033a2560cb43c7aa20aab74c",
+      "lines": 26,
+      "kind": "text_unread",
+      "status": "complete",
+      "readRanges": [
+        [
+          1,
+          26
+        ]
+      ],
+      "recordedAt": "2026-10-17T22:39:13.436Z"
+    },
+    {
+      "dependency": "pylsqpack",
+      "version": "0.3.24",
+      "path": "pylsqpack-0.3.24.dist-info/METADATA",
+      "bytes": 2119,
+      "sha256": "01fe41a0cddc57f34ded69ac7c94c9bacbf2645df9bc58a0368b8e8784632f2d",
+      "lines": 57,
+      "kind": "text_unread",
+      "status": "complete",
+      "readRanges": [
+        [
+          1,
+          57
+        ]
+      ],
+      "recordedAt": "2026-10-17T22:39:13.487Z"
+    },
+    {
+      "dependency": "pylsqpack",
+      "version": "0.3.24",
+      "path": "pylsqpack-0.3.24.dist-info/RECORD",
+      "bytes": 947,
+      "sha256": "4e32ebcafe82a0c47d8178b6df5d11ad2cda5cf1422ebffeeff131b0f77e512e",
+      "lines": 13,
+      "kind": "text_unread",
+      "status": "complete",
+      "readRanges": [
+        [
+          1,
+          13
+        ]
+      ],
+      "recordedAt": "2026-10-17T22:39:13.535Z"
+    },
+    {
+      "dependency": "pylsqpack",
+      "version": "0.3.24",
+      "path": "pylsqpack-0.3.24.dist-info/top_level.txt",
+      "bytes": 10,
+      "sha256": "412f93977acc6029247e7ebb3c7e136c588e1b59294bfbfdeaee0c229c342d0d",
+      "lines": 2,
+      "kind": "text_unread",
+      "status": "complete",
+      "readRanges": [
+        [
+          1,
+          2
+        ]
+      ],
+      "recordedAt": "2026-10-17T22:39:13.585Z"
+    },
+    {
+      "dependency": "pylsqpack",
+      "version": "0.3.24",
+      "path": "pylsqpack-0.3.24.dist-info/WHEEL",
+      "bytes": 100,
+      "sha256": "151e712a7b5b69f92aed866f2a8ebe6a72227d01fbaabb166d99aca5758e226b",
+      "lines": 6,
+      "kind": "text_unread",
+      "status": "complete",
+      "readRanges": [
+        [
+          1,
+          6
+        ]
+      ],
+      "recordedAt": "2026-10-17T22:39:13.635Z"
+    },
+    {
+      "dependency": "cryptography",
+      "version": "50.0.2",
+      "path": "cryptography/cobblestone.py",
+      "bytes": 693,
+      "sha256": "4fff85d3cf8051fde58daca965e92535357585639b1f9ee8a38e66552ce4f707",
+      "lines": 22,
+      "kind": "text_unread",
+      "status": "unread",
+      "readRanges": []
+    },
+    {
+      "dependency": "cryptography",
+      "version": "50.0.2",
+      "path": "cryptography/exceptions.py",
+      "bytes": 1087,
+      "sha256": "f37e445882dcd9fc31c3e83214cae27220b64aa8558844c1d742c14b2b670c87",
+      "lines": 53,
+      "kind": "text_unread",
+      "status": "unread",
+      "readRanges": []
+    },
+    {
+      "dependency": "cryptography",
+      "version": "50.0.2",
+      "path": "cryptography/fernet.py",
+      "bytes": 7687,
+      "sha256": "dac2c23ce99e8e13956ee75c4b742c3353c8b876f109e45c46d5a49dc437982a",
+      "lines": 241,
+      "kind": "text_unread",
+      "status": "unread",
+      "readRanges": []
+    },
+    {
+      "dependency": "cryptography",
+      "version": "50.0.2",
+      "path": "cryptography/hazmat/asn1/asn1.py",
+      "bytes": 19152,
+      "sha256": "f6671fae676f2bb2ad8e1458a1f3330235b4bbb9efa9b7ecbcf7db84d40ad414",
+      "lines": 534,
+      "kind": "text_unread",
+      "status": "unread",
+      "readRanges": []
+    },
+    {
+      "dependency": "cryptography",
+      "version": "50.0.2",
+      "path": "cryptography/hazmat/asn1/__init__.py",
+      "bytes": 812,
+      "sha256": "62a613a071858cb38a8a0442d341c68fa86b8c4c1bbb548fa408aeebebbe7daa",
+      "lines": 48,
+      "kind": "text_unread",
+      "status": "unread",
+      "readRanges": []
+    },
+    {
+      "dependency": "cryptography",
+      "version": "50.0.2",
+      "path": "cryptography/hazmat/backends/openssl/backend.py",
+      "bytes": 10475,
+      "sha256": "d0d73315b8b01b17eaf6a8b6f281d8af4f2bfebed5420e005c78dbd2814fc2a0",
+      "lines": 310,
+      "kind": "text_unread",
+      "status": "complete",
+      "readRanges": [
+        [
+          1,
+          310
+        ]
+      ],
+      "recordedAt": "2026-10-17T22:43:20.382Z"
+    },
+    {
+      "dependency": "cryptography",
+      "version": "50.0.2",
+      "path": "cryptography/hazmat/backends/openssl/__init__.py",
+      "bytes": 305,
+      "sha256": "a778e625f9c26a0f62139b1d32b37a56f544bb9e6ee3ac5a4bf223a08d12ae60",
+      "lines": 10,
+      "kind": "text_unread",
+      "status": "unread",
+      "readRanges": []
+    },
+    {
+      "dependency": "cryptography",
+      "version": "50.0.2",
+      "path": "cryptography/hazmat/backends/__init__.py",
+      "bytes": 361,
+      "sha256": "3b98ef28541d6675e129ea89f87b6e95a10bf4d8bb9abd660f3658e641e56212",
+      "lines": 14,
+      "kind": "text_unread",
+      "status": "unread",
+      "readRanges": []
+    },
+    {
+      "dependency": "cryptography",
+      "version": "50.0.2",
+      "path": "cryptography/hazmat/bindings/openssl/binding.py",
+      "bytes": 3706,
+      "sha256": "16cb8bc5b4e7aea5bad3e7405ad6a482e7deabb4e7a9a41a8b53dcec3a30ae3a",
+      "lines": 108,
+      "kind": "text_unread",
+      "status": "complete",
+      "readRanges": [
+        [
+          1,
+          108
+        ]
+      ],
+      "recordedAt": "2026-10-17T22:43:20.183Z"
+    },
+    {
+      "dependency": "cryptography",
+      "version": "50.0.2",
+      "path": "cryptography/hazmat/bindings/openssl/_conditional.py",
+      "bytes": 5611,
+      "sha256": "bdfce2fb11dd4ad01c2508cbaaa3a54a8b3de0bf03feda85b417bb3afc3e2ad6",
+      "lines": 200,
+      "kind": "text_unread",
+      "status": "complete",
+      "readRanges": [
+        [
+          1,
+          200
+        ]
+      ],
+      "recordedAt": "2026-10-17T22:43:20.235Z"
+    },
+    {
+      "dependency": "cryptography",
+      "version": "50.0.2",
+      "path": "cryptography/hazmat/bindings/openssl/__init__.py",
+      "bytes": 216,
+      "sha256": "c0709b59f69e7daf9f93a4c74b0f6d87d7c952c4ad268ef6e39c1f141aa676e0",
+      "lines": 6,
+      "kind": "text_unread",
+      "status": "unread",
+      "readRanges": []
+    },
+    {
+      "dependency": "cryptography",
+      "version": "50.0.2",
+      "path": "cryptography/hazmat/bindings/_rust/asn1.pyi",
+      "bytes": 354,
+      "sha256": "06b1a30bc27a9f0b92fabdc455c757241f27768b5f63d99b41839fa5b3c6d070",
+      "lines": 8,
+      "kind": "text_unread",
+      "status": "unread",
+      "readRanges": []
+    },
+    {
+      "dependency": "cryptography",
+      "version": "50.0.2",
+      "path": "cryptography/hazmat/bindings/_rust/cobblestone.pyi",
+      "bytes": 1325,
+      "sha256": "f6551fd56d614ebb33109e18a527093483d20fd04e33ba3e0bcdbe9ad4831bda",
+      "lines": 34,
+      "kind": "text_unread",
+      "status": "unread",
+      "readRanges": []
+    },
+    {
+      "dependency": "cryptography",
+      "version": "50.0.2",
+      "path": "cryptography/hazmat/bindings/_rust/declarative_asn1.pyi",
+      "bytes": 3866,
+      "sha256": "30198e6732d37663c9ebed4ae80ab73d3b872753068117c8bb484881a83ba1c1",
+      "lines": 134,
+      "kind": "text_unread",
+      "status": "unread",
+      "readRanges": []
+    },
+    {
+      "dependency": "cryptography",
+      "version": "50.0.2",
+      "path": "cryptography/hazmat/bindings/_rust/exceptions.pyi",
+      "bytes": 640,
+      "sha256": "7b15ebdb1c3fd29075924f777186ccdcca216f3a149233a6b3564c522d2e4191",
+      "lines": 18,
+      "kind": "text_unread",
+      "status": "unread",
+      "readRanges": []
+    },
+    {
+      "dependency": "cryptography",
+      "version": "50.0.2",
+      "path": "cryptography/hazmat/bindings/_rust/ocsp.pyi",
+      "bytes": 4020,
+      "sha256": "54f556b8a1c8f4432cd3d64b458006bd1d08cf49823261335c0920247a2fa683",
+      "lines": 118,
+      "kind": "text_unread",
+      "status": "unread",
+      "readRanges": []
+    },
+    {
+      "dependency": "cryptography",
+      "version": "50.0.2",
+      "path": "cryptography/hazmat/bindings/_rust/openssl/aead.pyi",
+      "bytes": 4582,
+      "sha256": "eddfbec5d734beecd17b84b6bae41a1a6fbd1862afe0d7122d070bc9671a0fab",
+      "lines": 190,
+      "kind": "text_unread",
+      "status": "unread",
+      "readRanges": []
+    },
+    {
+      "dependency": "cryptography",
+      "version": "50.0.2",
+      "path": "cryptography/hazmat/bindings/_rust/openssl/ciphers.pyi",
+      "bytes": 1315,
+      "sha256": "2e13f31d649726ae20ac02579facd2bd249d57e698208b1c1c3c083e524618fb",
+      "lines": 39,
+      "kind": "text_unread",
+      "status": "unread",
+      "readRanges": []
+    },
+    {
+      "dependency": "cryptography",
+      "version": "50.0.2",
+      "path": "cryptography/hazmat/bindings/_rust/openssl/cmac.pyi",
+      "bytes": 564,
+      "sha256": "9cf1f45f9ed1629b00911a305698d0887139eba4e1513c7b617aec69d9ab9879",
+      "lines": 19,
+      "kind": "text_unread",
+      "status": "unread",
+      "readRanges": []
+    },
+    {
+      "dependency": "cryptography",
+      "version": "50.0.2",
+      "path": "cryptography/hazmat/bindings/_rust/openssl/dh.pyi",
+      "bytes": 1564,
+      "sha256": "6774c2f86d38f931ed49d00e3cb3358761bb9a5e5b75ad4495951c9f9c29ba19",
+      "lines": 52,
+      "kind": "text_unread",
+      "status": "unread",
+      "readRanges": []
+    },
+    {
+      "dependency": "cryptography",
+      "version": "50.0.2",
+      "path": "cryptography/hazmat/bindings/_rust/openssl/dsa.pyi",
+      "bytes": 1299,
+      "sha256": "a81b64823d9a95bb76a8572767d503ae1ce83610953bb1d36f2e5549fd445cc2",
+      "lines": 42,
+      "kind": "text_unread",
+      "status": "unread",
+      "readRanges": []
+    },
+    {
+      "dependency": "cryptography",
+      "version": "50.0.2",
+      "path": "cryptography/hazmat/bindings/_rust/openssl/ec.pyi",
+      "bytes": 1691,
+      "sha256": "cc9cb4a516b99fefe9d9d9b8e4fc44081ffe07a49567234a7e3c450e93ea4f7f",
+      "lines": 53,
+      "kind": "text_unread",
+      "status": "unread",
+      "readRanges": []
+    },
+    {
+      "dependency": "cryptography",
+      "version": "50.0.2",
+      "path": "cryptography/hazmat/bindings/_rust/openssl/ed25519.pyi",
+      "bytes": 532,
+      "sha256": "5577d77791ba8548af837f7d4750d87665b77936f411e6f30d3aa3442da0691c",
+      "lines": 14,
+      "kind": "text_unread",
+      "status": "unread",
+      "readRanges": []
+    },
+    {
+      "dependency": "cryptography",
+      "version": "50.0.2",
+      "path": "cryptography/hazmat/bindings/_rust/openssl/ed448.pyi",
+      "bytes": 514,
+      "sha256": "631e3d96a7678ec0fb6f188357591c68cac392dba0e5ebe2e5aeb37ab322cb6b",
+      "lines": 14,
+      "kind": "text_unread",
+      "status": "unread",
+      "readRanges": []
+    },
+    {
+      "dependency": "cryptography",
+      "version": "50.0.2",
+      "path": "cryptography/hazmat/bindings/_rust/openssl/hashes.pyi",
+      "bytes": 1076,
+      "sha256": "6c57b74f5dd47b24489d424c0fe47902b19318ba960e25a8d8bbf6286cd46dfe",
+      "lines": 31,
+      "kind": "text_unread",
+      "status": "unread",
+      "readRanges": []
+    },
+    {
+      "dependency": "cryptography",
+      "version": "50.0.2",
+      "path": "cryptography/hazmat/bindings/_rust/openssl/hmac.pyi",
+      "bytes": 702,
+      "sha256": "057667ecd0e32f72406d85b4490f298358b20b90db4175615008b0b22f03151f",
+      "lines": 23,
+      "kind": "text_unread",
+      "status": "unread",
+      "readRanges": []
+    },
+    {
+      "dependency": "cryptography",
+      "version": "50.0.2",
+      "path": "cryptography/hazmat/bindings/_rust/openssl/hpke.pyi",
+      "bytes": 2914,
+      "sha256": "a7f8462e7e981fe11aac91755796d4b14b638a9be2100a5c4793b4b141c92ed7",
+      "lines": 110,
+      "kind": "text_unread",
+      "status": "unread",
+      "readRanges": []
+    },
+    {
+      "dependency": "cryptography",
+      "version": "50.0.2",
+      "path": "cryptography/hazmat/bindings/_rust/openssl/kdf.pyi",
+      "bytes": 6619,
+      "sha256": "1e288b74407d9ea32c4ef330885a694297cfcfa7c7533f7f8298c407f5c03970",
+      "lines": 206,
+      "kind": "text_unread",
+      "status": "unread",
+      "readRanges": []
+    },
+    {
+      "dependency": "cryptography",
+      "version": "50.0.2",
+      "path": "cryptography/hazmat/bindings/_rust/openssl/keys.pyi",
+      "bytes": 912,
+      "sha256": "b5e22df0ce9910c26b9f8b375b45275b40d9fb7d0977af169d2b0a286d76e25d",
+      "lines": 35,
+      "kind": "text_unread",
+      "status": "unread",
+      "readRanges": []
+    },
+    {
+      "dependency": "cryptography",
+      "version": "50.0.2",
+      "path": "cryptography/hazmat/bindings/_rust/openssl/keywrap.pyi",
+      "bytes": 733,
+      "sha256": "9860891284389718b8091393044b94cdbf54e24cbc9f9d8bde20ef08e5cd0512",
+      "lines": 29,
+      "kind": "text_unread",
+      "status": "unread",
+      "readRanges": []
+    },
+    {
+      "dependency": "cryptography",
+      "version": "50.0.2",
+      "path": "cryptography/hazmat/bindings/_rust/openssl/mldsa.pyi",
+      "bytes": 1421,
+      "sha256": "1fce170d6d134372c785d1890f9b8f6834f98a31222ba319cad5d873cac135fe",
+      "lines": 36,
+      "kind": "text_unread",
+      "status": "unread",
+      "readRanges": []
+    },
+    {
+      "dependency": "cryptography",
+      "version": "50.0.2",
+      "path": "cryptography/hazmat/bindings/_rust/openssl/mlkem.pyi",
+      "bytes": 835,
+      "sha256": "6f2a1ebace3e9483a55a5122450742734d2a0a45e9381e6978163aca8f6293cb",
+      "lines": 19,
+      "kind": "text_unread",
+      "status": "unread",
+      "readRanges": []
+    },
+    {
+      "dependency": "cryptography",
+      "version": "50.0.2",
+      "path": "cryptography/hazmat/bindings/_rust/openssl/poly1305.pyi",
+      "bytes": 585,
+      "sha256": "fd25bd36d4391439406dd72516d5a94f89469b1288287a4dfb88fc27607361f4",
+      "lines": 16,
+      "kind": "text_unread",
+      "status": "unread",
+      "readRanges": []
+    },
+    {
+      "dependency": "cryptography",
+      "version": "50.0.2",
+      "path": "cryptography/hazmat/bindings/_rust/openssl/rsa.pyi",
+      "bytes": 1364,
+      "sha256": "d8e4023525e4c6073edeec35c620829682104d5ea9f7f90aefd62ed2b85980f7",
+      "lines": 56,
+      "kind": "text_unread",
+      "status": "unread",
+      "readRanges": []
+    },
+    {
+      "dependency": "cryptography",
+      "version": "50.0.2",
+      "path": "cryptography/hazmat/bindings/_rust/openssl/x25519.pyi",
+      "bytes": 523,
+      "sha256": "7b09f81a94326fbccfc04fa78bb1adc9080c0b403598bbaa62c4b2aafea723fb",
+      "lines": 14,
+      "kind": "text_unread",
+      "status": "unread",
+      "readRanges": []
+    },
+    {
+      "dependency": "cryptography",
+      "version": "50.0.2",
+      "path": "cryptography/hazmat/bindings/_rust/openssl/x448.pyi",
+      "bytes": 505,
+      "sha256": "8ee4d94e6962f233bfe5572e7e0faf1efc7fb42c9ece648b221ffd3d4dd37332",
+      "lines": 14,
+      "kind": "text_unread",
+      "status": "unread",
+      "readRanges": []
+    },
+    {
+      "dependency": "cryptography",
+      "version": "50.0.2",
+      "path": "cryptography/hazmat/bindings/_rust/openssl/__init__.pyi",
+      "bytes": 1578,
+      "sha256": "3ba18ecaf0f1b7aca589c0766851aebb945c199cbd5232a762a191f2bab3bddc",
+      "lines": 83,
+      "kind": "text_unread",
+      "status": "unread",
+      "readRanges": []
+    },
+    {
+      "dependency": "cryptography",
+      "version": "50.0.2",
+      "path": "cryptography/hazmat/bindings/_rust/pkcs12.pyi",
+      "bytes": 1605,
+      "sha256": "bc411de700e266f6fc64615ace22c26962f3030a06fedbcf5312d0c39fee3a5f",
+      "lines": 53,
+      "kind": "text_unread",
+      "status": "unread",
+      "readRanges": []
+    },
+    {
+      "dependency": "cryptography",
+      "version": "50.0.2",
+      "path": "cryptography/hazmat/bindings/_rust/pkcs7.pyi",
+      "bytes": 1601,
+      "sha256": "b711812628ea66c84472aadae9bc8f35b9e2b08765c733922073f6865f5aacfb",
+      "lines": 51,
+      "kind": "text_unread",
+      "status": "unread",
+      "readRanges": []
+    },
+    {
+      "dependency": "cryptography",
+      "version": "50.0.2",
+      "path": "cryptography/hazmat/bindings/_rust/test_support.pyi",
+      "bytes": 757,
+      "sha256": "3cf86577e5a43bbe3789714f79b786d0bb602b4693cc6763708b1acb51a6e461",
+      "lines": 24,
+      "kind": "text_unread",
+      "status": "unread",
+      "readRanges": []
+    },
+    {
+      "dependency": "cryptography",
+      "version": "50.0.2",
+      "path": "cryptography/hazmat/bindings/_rust/x509.pyi",
+      "bytes": 10211,
+      "sha256": "2d54f886d04db1ee608a3421e0685535811b00ed04d40360136f2d5aac378382",
+      "lines": 314,
+      "kind": "text_unread",
+      "status": "unread",
+      "readRanges": []
+    },
+    {
+      "dependency": "cryptography",
+      "version": "50.0.2",
+      "path": "cryptography/hazmat/bindings/_rust/_openssl.pyi",
+      "bytes": 228,
+      "sha256": "4ffe53a583bc6e08483e3010dc1b40001ab0f82718b241e9f76c26e4f358e9d7",
+      "lines": 9,
+      "kind": "text_unread",
+      "status": "unread",
+      "readRanges": []
+    },
+    {
+      "dependency": "cryptography",
+      "version": "50.0.2",
+      "path": "cryptography/hazmat/bindings/_rust/__init__.pyi",
+      "bytes": 2285,
+      "sha256": "b949e7bceabfb9a99e62704da66b2fdd244054ed16406a63239f1a47594be0ac",
+      "lines": 68,
+      "kind": "text_unread",
+      "status": "unread",
+      "readRanges": []
+    },
+    {
+      "dependency": "cryptography",
+      "version": "50.0.2",
+      "path": "cryptography/hazmat/bindings/_rust.pyd",
+      "bytes": 9897472,
+      "sha256": "1d4332a447cab13dec8e3a533ad579e0e562b79e40822c931f33769758fc7156",
+      "lines": null,
+      "kind": "binary_boundary",
+      "status": "unread",
+      "readRanges": []
+    },
+    {
+      "dependency": "cryptography",
+      "version": "50.0.2",
+      "path": "cryptography/hazmat/bindings/__init__.py",
+      "bytes": 216,
+      "sha256": "c0709b59f69e7daf9f93a4c74b0f6d87d7c952c4ad268ef6e39c1f141aa676e0",
+      "lines": 6,
+      "kind": "text_unread",
+      "status": "unread",
+      "readRanges": []
+    },
+    {
+      "dependency": "cryptography",
+      "version": "50.0.2",
+      "path": "cryptography/hazmat/decrepit/ciphers/algorithms.py",
+      "bytes": 3752,
+      "sha256": "5923e3336b177eb2c35ebb4de51ecdeab0355c5edbf772357bf96f0f8cb1da80",
+      "lines": 146,
+      "kind": "text_unread",
+      "status": "unread",
+      "readRanges": []
+    },
+    {
+      "dependency": "cryptography",
+      "version": "50.0.2",
+      "path": "cryptography/hazmat/decrepit/ciphers/modes.py",
+      "bytes": 1649,
+      "sha256": "3aafcf1300a47b938b73339faffbf300e27ac0fc7eae5b2f1c05cf06e8796fda",
+      "lines": 54,
+      "kind": "text_unread",
+      "status": "unread",
+      "readRanges": []
+    },
+    {
+      "dependency": "cryptography",
+      "version": "50.0.2",
+      "path": "cryptography/hazmat/decrepit/ciphers/__init__.py",
+      "bytes": 216,
+      "sha256": "c0709b59f69e7daf9f93a4c74b0f6d87d7c952c4ad268ef6e39c1f141aa676e0",
+      "lines": 6,
+      "kind": "text_unread",
+      "status": "unread",
+      "readRanges": []
+    },
+    {
+      "dependency": "cryptography",
+      "version": "50.0.2",
+      "path": "cryptography/hazmat/decrepit/__init__.py",
+      "bytes": 216,
+      "sha256": "c0709b59f69e7daf9f93a4c74b0f6d87d7c952c4ad268ef6e39c1f141aa676e0",
+      "lines": 6,
+      "kind": "text_unread",
+      "status": "unread",
+      "readRanges": []
+    },
+    {
+      "dependency": "cryptography",
+      "version": "50.0.2",
+      "path": "cryptography/hazmat/primitives/asymmetric/dh.py",
+      "bytes": 5793,
+      "sha256": "467b767cb683a501234125fc7cdb659935ce2478e5b7f0ca419d5595f85d8dae",
+      "lines": 254,
+      "kind": "text_unread",
+      "status": "unread",
+      "readRanges": []
+    },
+    {
+      "dependency": "cryptography",
+      "version": "50.0.2",
+      "path": "cryptography/hazmat/primitives/asymmetric/dsa.py",
+      "bytes": 4482,
+      "sha256": "910cd3562a8023d3e210b34e05ca3f9fa31f3f737d7a120f91276e3a9ba9b743",
+      "lines": 180,
+      "kind": "text_unread",
+      "status": "unread",
+      "readRanges": []
+    },
+    {
+      "dependency": "cryptography",
+      "version": "50.0.2",
+      "path": "cryptography/hazmat/primitives/asymmetric/ec.py",
+      "bytes": 10183,
+      "sha256": "2e495508b2f16db433aa213a1d16984d16ae2cca61614c37b44e9cf28048c584",
+      "lines": 370,
+      "kind": "text_unread",
+      "status": "unread",
+      "readRanges": []
+    },
+    {
+      "dependency": "cryptography",
+      "version": "50.0.2",
+      "path": "cryptography/hazmat/primitives/asymmetric/ed25519.py",
+      "bytes": 2998,
+      "sha256": "99b7df2efb3edcf8020de835ad05d55e1ec62e7b6554be004e390811ce29b793",
+      "lines": 117,
+      "kind": "text_unread",
+      "status": "unread",
+      "readRanges": []
+    },
+    {
+      "dependency": "cryptography",
+      "version": "50.0.2",
+      "path": "cryptography/hazmat/primitives/asymmetric/ed448.py",
+      "bytes": 4002,
+      "sha256": "9f474aeb2f952f1bb0fb3beb0f1b8f4f8e7df21ca6817fb5472fe3abd6944211",
+      "lines": 144,
+      "kind": "text_unread",
+      "status": "unread",
+      "readRanges": []
+    },
+    {
+      "dependency": "cryptography",
+      "version": "50.0.2",
+      "path": "cryptography/hazmat/primitives/asymmetric/mldsa.py",
+      "bytes": 13803,
+      "sha256": "2c731a694d26eba12c4ab4a87567f87b691d99d0d14c41910b5cbe7c22b118ad",
+      "lines": 506,
+      "kind": "text_unread",
+      "status": "unread",
+      "readRanges": []
+    },
+    {
+      "dependency": "cryptography",
+      "version": "50.0.2",
+      "path": "cryptography/hazmat/primitives/asymmetric/mlkem.py",
+      "bytes": 7901,
+      "sha256": "c2f5647854fee287fe55c500111dbecc8ff98574faaf04c93cc090f2017d1930",
+      "lines": 279,
+      "kind": "text_unread",
+      "status": "unread",
+      "readRanges": []
+    },
+    {
+      "dependency": "cryptography",
+      "version": "50.0.2",
+      "path": "cryptography/hazmat/primitives/asymmetric/padding.py",
+      "bytes": 3678,
+      "sha256": "8db81a8ef18763090f8cc0e58c7bb99713019437e60b15947b6005d92e8a135d",
+      "lines": 142,
+      "kind": "text_unread",
+      "status": "unread",
+      "readRanges": []
+    },
+    {
+      "dependency": "cryptography",
+      "version": "50.0.2",
+      "path": "cryptography/hazmat/primitives/asymmetric/rsa.py",
+      "bytes": 8492,
+      "sha256": "94813b9467b8e3d5b95112d3282a6f1467ab213a2e2a8655f46c2e4f349cb12a",
+      "lines": 296,
+      "kind": "text_unread",
+      "status": "unread",
+      "readRanges": []
+    },
+    {
+      "dependency": "cryptography",
+      "version": "50.0.2",
+      "path": "cryptography/hazmat/primitives/asymmetric/types.py",
+      "bytes": 2588,
+      "sha256": "4a32614eb9c544b9533dd62b043d69a0c8ba723606f9f8747d221a427dd0522c",
+      "lines": 95,
+      "kind": "text_unread",
+      "status": "unread",
+      "readRanges": []
+    },
+    {
+      "dependency": "cryptography",
+      "version": "50.0.2",
+      "path": "cryptography/hazmat/primitives/asymmetric/utils.py",
+      "bytes": 821,
+      "sha256": "42cf117bd1853e35bfb4da7fef721e2448cf09fd2c94e22c58ec68eaaca64fa9",
+      "lines": 29,
+      "kind": "text_unread",
+      "status": "unread",
+      "readRanges": []
+    },
+    {
+      "dependency": "cryptography",
+      "version": "50.0.2",
+      "path": "cryptography/hazmat/primitives/asymmetric/x25519.py",
+      "bytes": 3888,
+      "sha256": "950720524f8f8ae6e3f329c535641e6267b7b5864c80742a9112a42033872f3a",
+      "lines": 135,
+      "kind": "text_unread",
+      "status": "unread",
+      "readRanges": []
+    },
+    {
+      "dependency": "cryptography",
+      "version": "50.0.2",
+      "path": "cryptography/hazmat/primitives/asymmetric/x448.py",
+      "bytes": 3913,
+      "sha256": "6f7ee283b93ba681ba4890ebcb8da3f849428f9ab8790d17e421663744a7f33f",
+      "lines": 138,
+      "kind": "text_unread",
+      "status": "unread",
+      "readRanges": []
+    },
+    {
+      "dependency": "cryptography",
+      "version": "50.0.2",
+      "path": "cryptography/hazmat/primitives/asymmetric/__init__.py",
+      "bytes": 216,
+      "sha256": "c0709b59f69e7daf9f93a4c74b0f6d87d7c952c4ad268ef6e39c1f141aa676e0",
+      "lines": 6,
+      "kind": "text_unread",
+      "status": "unread",
+      "readRanges": []
+    },
+    {
+      "dependency": "cryptography",
+      "version": "50.0.2",
+      "path": "cryptography/hazmat/primitives/ciphers/aead.py",
+      "bytes": 634,
+      "sha256": "173972c7bc3c29841a9330e9d735a026722beb6ce066b815875bb68787b1079e",
+      "lines": 24,
+      "kind": "text_unread",
+      "status": "complete",
+      "readRanges": [
+        [
+          1,
+          24
+        ]
+      ],
+      "recordedAt": "2026-10-17T22:43:20.283Z"
+    },
+    {
+      "dependency": "cryptography",
+      "version": "50.0.2",
+      "path": "cryptography/hazmat/primitives/ciphers/algorithms.py",
+      "bytes": 3496,
+      "sha256": "2067c2c9c6093a1d53be8237e2b7f0f0a7c9ff19add69fc3a4186dd8582171ea",
+      "lines": 139,
+      "kind": "text_unread",
+      "status": "unread",
+      "readRanges": []
+    },
+    {
+      "dependency": "cryptography",
+      "version": "50.0.2",
+      "path": "cryptography/hazmat/primitives/ciphers/base.py",
+      "bytes": 4253,
+      "sha256": "6810bb1c7041a22c5e6e6a5aad5af4525383b37543d00ec1ea8cff01a4630eff",
+      "lines": 147,
+      "kind": "text_unread",
+      "status": "unread",
+      "readRanges": []
+    },
+    {
+      "dependency": "cryptography",
+      "version": "50.0.2",
+      "path": "cryptography/hazmat/primitives/ciphers/modes.py",
+      "bytes": 6003,
+      "sha256": "1fb0194a02624930428b482b2fdecdc5a912f79d09c852982ecadaf2d8c73f14",
+      "lines": 193,
+      "kind": "text_unread",
+      "status": "unread",
+      "readRanges": []
+    },
+    {
+      "dependency": "cryptography",
+      "version": "50.0.2",
+      "path": "cryptography/hazmat/primitives/ciphers/__init__.py",
+      "bytes": 680,
+      "sha256": "7b21179a393afc265768e3d80ebeef018197af6f50bf38162f6fb8092a252c5b",
+      "lines": 28,
+      "kind": "text_unread",
+      "status": "unread",
+      "readRanges": []
+    },
+    {
+      "dependency": "cryptography",
+      "version": "50.0.2",
+      "path": "cryptography/hazmat/primitives/cmac.py",
+      "bytes": 338,
+      "sha256": "b33fece87fdc6273afc7e54d59d20a85185edd89a9f33f09d03dc206a397de08",
+      "lines": 11,
+      "kind": "text_unread",
+      "status": "unread",
+      "readRanges": []
+    },
+    {
+      "dependency": "cryptography",
+      "version": "50.0.2",
+      "path": "cryptography/hazmat/primitives/constant_time.py",
+      "bytes": 422,
+      "sha256": "c5dba7593d277fc3af29d72a52186514a6b21a9e3f3e0549454d96d702d2aff0",
+      "lines": 15,
+      "kind": "text_unread",
+      "status": "unread",
+      "readRanges": []
+    },
+    {
+      "dependency": "cryptography",
+      "version": "50.0.2",
+      "path": "cryptography/hazmat/primitives/hashes.py",
+      "bytes": 7916,
+      "sha256": "4abb7081cdffa45bd97c88518fd7b5a7859d8be17f3e995e18796a240460b4e8",
+      "lines": 358,
+      "kind": "text_unread",
+      "status": "unread",
+      "readRanges": []
+    },
+    {
+      "dependency": "cryptography",
+      "version": "50.0.2",
+      "path": "cryptography/hazmat/primitives/hmac.py",
+      "bytes": 423,
+      "sha256": "469077cfdcf9b248ab090ae6ef341bb67a7da4b327023ae54d4bcaa85e5a0c37",
+      "lines": 14,
+      "kind": "text_unread",
+      "status": "unread",
+      "readRanges": []
+    },
+    {
+      "dependency": "cryptography",
+      "version": "50.0.2",
+      "path": "cryptography/hazmat/primitives/hpke.py",
+      "bytes": 865,
+      "sha256": "46c1e2b2c0b997e7533e7d69d896dcac8ac09c306b2ea339ba0045486a662aee",
+      "lines": 28,
+      "kind": "text_unread",
+      "status": "unread",
+      "readRanges": []
+    },
+    {
+      "dependency": "cryptography",
+      "version": "50.0.2",
+      "path": "cryptography/hazmat/primitives/kdf/argon2.py",
+      "bytes": 632,
+      "sha256": "649c7e7a7525000e28edbe3a0b5c25cc6fd7010416d3022416050a92b33fc00f",
+      "lines": 18,
+      "kind": "text_unread",
+      "status": "unread",
+      "readRanges": []
+    },
+    {
+      "dependency": "cryptography",
+      "version": "50.0.2",
+      "path": "cryptography/hazmat/primitives/kdf/concatkdf.py",
+      "bytes": 591,
+      "sha256": "0459ce292ef6b71285d3242f012af435aeee873bcb1e95027242b988d002fda4",
+      "lines": 17,
+      "kind": "text_unread",
+      "status": "unread",
+      "readRanges": []
+    },
+    {
+      "dependency": "cryptography",
+      "version": "50.0.2",
+      "path": "cryptography/hazmat/primitives/kdf/hkdf.py",
+      "bytes": 543,
+      "sha256": "33494011f468738929a78fa7c038fdc81faf359ba420e60442b5255ac04d9fda",
+      "lines": 17,
+      "kind": "text_unread",
+      "status": "complete",
+      "readRanges": [
+        [
+          1,
+          17
+        ]
+      ],
+      "recordedAt": "2026-10-17T22:43:20.334Z"
+    },
+    {
+      "dependency": "cryptography",
+      "version": "50.0.2",
+      "path": "cryptography/hazmat/primitives/kdf/kbkdf.py",
+      "bytes": 737,
+      "sha256": "0b7c3df6f8c5aa1ab3031cc5387e33cef5681e46f9002e8bcfa00440657b77f8",
+      "lines": 27,
+      "kind": "text_unread",
+      "status": "unread",
+      "readRanges": []
+    },
+    {
+      "dependency": "cryptography",
+      "version": "50.0.2",
+      "path": "cryptography/hazmat/primitives/kdf/pbkdf2.py",
+      "bytes": 468,
+      "sha256": "5dc86493df6cf8c93a6fa2920a8baa764f0557288d54e48521e9e69d6ded2e04",
+      "lines": 14,
+      "kind": "text_unread",
+      "status": "unread",
+      "readRanges": []
+    },
+    {
+      "dependency": "cryptography",
+      "version": "50.0.2",
+      "path": "cryptography/hazmat/primitives/kdf/scrypt.py",
+      "bytes": 590,
+      "sha256": "5f259475452686e23d57a4ea00f3afba3092306bf55d0760d1adb52160a63be5",
+      "lines": 20,
+      "kind": "text_unread",
+      "status": "unread",
+      "readRanges": []
+    },
+    {
+      "dependency": "cryptography",
+      "version": "50.0.2",
+      "path": "cryptography/hazmat/primitives/kdf/x963kdf.py",
+      "bytes": 456,
+      "sha256": "40a8e145e86e4ec02cb4bdfce1b29fbe3bafd727dd6a6007561b014567a7d95c",
+      "lines": 14,
+      "kind": "text_unread",
+      "status": "unread",
+      "readRanges": []
+    },
+    {
+      "dependency": "cryptography",
+      "version": "50.0.2",
+      "path": "cryptography/hazmat/primitives/kdf/__init__.py",
+      "bytes": 1037,
+      "sha256": "bf7ca2601194dbbd84a233576f07d865d6db7c8f5c54e0821b79d78530dd6b79",
+      "lines": 33,
+      "kind": "text_unread",
+      "status": "unread",
+      "readRanges": []
+    },
+    {
+      "dependency": "cryptography",
+      "version": "50.0.2",
+      "path": "cryptography/hazmat/primitives/keywrap.py",
+      "bytes": 735,
+      "sha256": "b7db7c299bb367852cdf4012521236ecc64f3cf2b2e041114439002be94ced34",
+      "lines": 26,
+      "kind": "text_unread",
+      "status": "unread",
+      "readRanges": []
+    },
+    {
+      "dependency": "cryptography",
+      "version": "50.0.2",
+      "path": "cryptography/hazmat/primitives/padding.py",
+      "bytes": 1865,
+      "sha256": "413f94f8dbd5d9e4063b5c153db0e234635273d91e4434be8a0e5c40eacbcf41",
+      "lines": 70,
+      "kind": "text_unread",
+      "status": "unread",
+      "readRanges": []
+    },
+    {
+      "dependency": "cryptography",
+      "version": "50.0.2",
+      "path": "cryptography/hazmat/primitives/poly1305.py",
+      "bytes": 355,
+      "sha256": "3f910f415f9107f1493da869834d6ed13b384bf3e7026b2ba312065db19e451a",
+      "lines": 12,
+      "kind": "text_unread",
+      "status": "unread",
+      "readRanges": []
+    },
+    {
+      "dependency": "cryptography",
+      "version": "50.0.2",
+      "path": "cryptography/hazmat/primitives/serialization/base.py",
+      "bytes": 651,
+      "sha256": "48006bbe8d12f3a41ca01963ec3a6378b5b2da5cd032bca28a827a0eb1184150",
+      "lines": 17,
+      "kind": "text_unread",
+      "status": "unread",
+      "readRanges": []
+    },
+    {
+      "dependency": "cryptography",
+      "version": "50.0.2",
+      "path": "cryptography/hazmat/primitives/serialization/pkcs12.py",
+      "bytes": 5104,
+      "sha256": "992f5c14d1b869fcefb1ea1ce5ed4c5a863656c91f2fc37c63f3858e5ebb96e6",
+      "lines": 177,
+      "kind": "text_unread",
+      "status": "unread",
+      "readRanges": []
+    },
+    {
+      "dependency": "cryptography",
+      "version": "50.0.2",
+      "path": "cryptography/hazmat/primitives/serialization/pkcs7.py",
+      "bytes": 13998,
+      "sha256": "98533b385b99f1c0b1506528a380a87fa06708773f21bc750108e37f19cf971a",
+      "lines": 413,
+      "kind": "text_unread",
+      "status": "unread",
+      "readRanges": []
+    },
+    {
+      "dependency": "cryptography",
+      "version": "50.0.2",
+      "path": "cryptography/hazmat/primitives/serialization/ssh.py",
+      "bytes": 53592,
+      "sha256": "162b177bf9d429d3c67ea10d5612a99a86b399a23ca87f067be5466dcd1dca4c",
+      "lines": 1616,
+      "kind": "text_unread",
+      "status": "unread",
+      "readRanges": []
+    },
+    {
+      "dependency": "cryptography",
+      "version": "50.0.2",
+      "path": "cryptography/hazmat/primitives/serialization/__init__.py",
+      "bytes": 2217,
+      "sha256": "7d772ee3dba02fdaf1869465ff06639cca84f430a484231cb11c5f8ffa93bde8",
+      "lines": 86,
+      "kind": "text_unread",
+      "status": "unread",
+      "readRanges": []
+    },
+    {
+      "dependency": "cryptography",
+      "version": "50.0.2",
+      "path": "cryptography/hazmat/primitives/twofactor/hotp.py",
+      "bytes": 3256,
+      "sha256": "8af668e41adc08658bb2aaa5e27655d175c28f218f8bf8877c3165b4694e2709",
+      "lines": 102,
+      "kind": "text_unread",
+      "status": "unread",
+      "readRanges": []
+    },
+    {
+      "dependency": "cryptography",
+      "version": "50.0.2",
+      "path": "cryptography/hazmat/primitives/twofactor/totp.py",
+      "bytes": 1652,
+      "sha256": "9b92cfa512f4d24a78cd8f204e3af9e477f3f5a3253d2e7790799591240299d6",
+      "lines": 57,
+      "kind": "text_unread",
+      "status": "unread",
+      "readRanges": []
+    },
+    {
+      "dependency": "cryptography",
+      "version": "50.0.2",
+      "path": "cryptography/hazmat/primitives/twofactor/__init__.py",
+      "bytes": 258,
+      "sha256": "b66319181fa0e08535afb94816a012534d7dcebd2e3e9ff010161cc1d0c22820",
+      "lines": 10,
+      "kind": "text_unread",
+      "status": "unread",
+      "readRanges": []
+    },
+    {
+      "dependency": "cryptography",
+      "version": "50.0.2",
+      "path": "cryptography/hazmat/primitives/_asymmetric.py",
+      "bytes": 532,
+      "sha256": "46181ca2e501e874e214306b4752f1aa4323a54c4888dbd0d6bff3263446eaa4",
+      "lines": 20,
+      "kind": "text_unread",
+      "status": "unread",
+      "readRanges": []
+    },
+    {
+      "dependency": "cryptography",
+      "version": "50.0.2",
+      "path": "cryptography/hazmat/primitives/_cipheralgorithm.py",
+      "bytes": 1522,
+      "sha256": "121de2ee5c1e7477e2d1e2d2b07f773d9c502b363d23a9642baeef2f8579b4e7",
+      "lines": 61,
+      "kind": "text_unread",
+      "status": "unread",
+      "readRanges": []
+    },
+    {
+      "dependency": "cryptography",
+      "version": "50.0.2",
+      "path": "cryptography/hazmat/primitives/_modes.py",
+      "bytes": 3075,
+      "sha256": "fc4880383f096fa5a915796ec247144f7102cff4c7f318c6bdb4251a4366e7d4",
+      "lines": 106,
+      "kind": "text_unread",
+      "status": "unread",
+      "readRanges": []
+    },
+    {
+      "dependency": "cryptography",
+      "version": "50.0.2",
+      "path": "cryptography/hazmat/primitives/_serialization.py",
+      "bytes": 4440,
+      "sha256": "862d3125b941019f29999c769566be96bba9871befbc6de0f4334ad06f0e75fb",
+      "lines": 137,
+      "kind": "text_unread",
+      "status": "unread",
+      "readRanges": []
+    },
+    {
+      "dependency": "cryptography",
+      "version": "50.0.2",
+      "path": "cryptography/hazmat/primitives/__init__.py",
+      "bytes": 216,
+      "sha256": "c0709b59f69e7daf9f93a4c74b0f6d87d7c952c4ad268ef6e39c1f141aa676e0",
+      "lines": 6,
+      "kind": "text_unread",
+      "status": "unread",
+      "readRanges": []
+    },
+    {
+      "dependency": "cryptography",
+      "version": "50.0.2",
+      "path": "cryptography/hazmat/_oid.py",
+      "bytes": 18150,
+      "sha256": "3a17b69d413a5e32b1d5417a4c0b06532daff06509f958bd0d2e32c52ba4b795",
+      "lines": 374,
+      "kind": "text_unread",
+      "status": "unread",
+      "readRanges": []
+    },
+    {
+      "dependency": "cryptography",
+      "version": "50.0.2",
+      "path": "cryptography/hazmat/__init__.py",
+      "bytes": 455,
+      "sha256": "e48c2b2d6ad5a7402312bff815d586fd5d39ecd489198fd6e1e80d36cb9cb748",
+      "lines": 14,
+      "kind": "text_unread",
+      "status": "unread",
+      "readRanges": []
+    },
+    {
+      "dependency": "cryptography",
+      "version": "50.0.2",
+      "path": "cryptography/py.typed",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "lines": 1,
+      "kind": "text_unread",
+      "status": "unread",
+      "readRanges": []
+    },
+    {
+      "dependency": "cryptography",
+      "version": "50.0.2",
+      "path": "cryptography/utils.py",
+      "bytes": 4635,
+      "sha256": "21aed2d106734b47b3c2920741f63c1b57bea381a3ac78a31175e3c00af58ae2",
+      "lines": 137,
+      "kind": "text_unread",
+      "status": "unread",
+      "readRanges": []
+    },
+    {
+      "dependency": "cryptography",
+      "version": "50.0.2",
+      "path": "cryptography/x509/base.py",
+      "bytes": 28311,
+      "sha256": "50830a9309acc75d01477fe09c14410814f0429d7e3bcc247d59bb6b31fefe61",
+      "lines": 835,
+      "kind": "text_unread",
+      "status": "unread",
+      "readRanges": []
+    },
+    {
+      "dependency": "cryptography",
+      "version": "50.0.2",
+      "path": "cryptography/x509/certificate_transparency.py",
+      "bytes": 797,
+      "sha256": "26aa0e203865c089eb60c156e88167efb589d2f885f8f07fae5655defb3d3187",
+      "lines": 36,
+      "kind": "text_unread",
+      "status": "unread",
+      "readRanges": []
+    },
+    {
+      "dependency": "cryptography",
+      "version": "50.0.2",
+      "path": "cryptography/x509/extensions.py",
+      "bytes": 77975,
+      "sha256": "fa25dcc169c82f5ce5e4c977055245904a3fef59dc5def387a1beacd6d6c2b83",
+      "lines": 2534,
+      "kind": "text_unread",
+      "status": "unread",
+      "readRanges": []
+    },
+    {
+      "dependency": "cryptography",
+      "version": "50.0.2",
+      "path": "cryptography/x509/general_name.py",
+      "bytes": 7836,
+      "sha256": "b0ffeb575d50969b24e31dd75c6258fccbf443fb3d76d8de2dc907b23a4b4284",
+      "lines": 282,
+      "kind": "text_unread",
+      "status": "unread",
+      "readRanges": []
+    },
+    {
+      "dependency": "cryptography",
+      "version": "50.0.2",
+      "path": "cryptography/x509/name.py",
+      "bytes": 15566,
+      "sha256": "a08db0e95758f33830eeaa4d865c44c79d765b40215835d0ac361fe44b0cd8f6",
+      "lines": 490,
+      "kind": "text_unread",
+      "status": "unread",
+      "readRanges": []
+    },
+    {
+      "dependency": "cryptography",
+      "version": "50.0.2",
+      "path": "cryptography/x509/ocsp.py",
+      "bytes": 12699,
+      "sha256": "61ecba35d155d4c3e3a29db8323fd57a78c4a60de451a328a5258e2b401b781b",
+      "lines": 380,
+      "kind": "text_unread",
+      "status": "unread",
+      "readRanges": []
+    },
+    {
+      "dependency": "cryptography",
+      "version": "50.0.2",
+      "path": "cryptography/x509/oid.py",
+      "bytes": 931,
+      "sha256": "054ce05d71955a296406474a3d39bd478a84944f600061e07583cc640a7b3c9a",
+      "lines": 38,
+      "kind": "text_unread",
+      "status": "unread",
+      "readRanges": []
+    },
+    {
+      "dependency": "cryptography",
+      "version": "50.0.2",
+      "path": "cryptography/x509/verification.py",
+      "bytes": 958,
+      "sha256": "811d82d9cf97650b5b959853e53e6f8d228eb426fbe1e7f66a53d59847301653",
+      "lines": 35,
+      "kind": "text_unread",
+      "status": "unread",
+      "readRanges": []
+    },
+    {
+      "dependency": "cryptography",
+      "version": "50.0.2",
+      "path": "cryptography/x509/__init__.py",
+      "bytes": 8253,
+      "sha256": "d0a54d4e646d758357fe2fdec2c4cdcdb4e6d9ed6ac9fa0e85ce1e9a883984be",
+      "lines": 271,
+      "kind": "text_unread",
+      "status": "unread",
+      "readRanges": []
+    },
+    {
+      "dependency": "cryptography",
+      "version": "50.0.2",
+      "path": "cryptography/__about__.py",
+      "bytes": 445,
+      "sha256": "95184137751279e4ccc0ababa44ed8bc380fbcdd5ba584f0407c5d14e31c109d",
+      "lines": 18,
+      "kind": "text_unread",
+      "status": "unread",
+      "readRanges": []
+    },
+    {
+      "dependency": "cryptography",
+      "version": "50.0.2",
+      "path": "cryptography/__init__.py",
+      "bytes": 364,
+      "sha256": "9ad86e52b4dde0544e0a9518ad322a863cfab3a4fd763019ad5ee7675a0c9b6a",
+      "lines": 14,
+      "kind": "text_unread",
+      "status": "unread",
+      "readRanges": []
+    },
+    {
+      "dependency": "cryptography",
+      "version": "50.0.2",
+      "path": "cryptography-50.0.2.dist-info/INSTALLER",
+      "bytes": 4,
+      "sha256": "ceebae7b8927a3227e5303cf5e0f1f7b34bb542ad7250ac03fbcde36ec2f1508",
+      "lines": 2,
+      "kind": "text_unread",
+      "status": "unread",
+      "readRanges": []
+    },
+    {
+      "dependency": "cryptography",
+      "version": "50.0.2",
+      "path": "cryptography-50.0.2.dist-info/licenses/LICENSE",
+      "bytes": 197,
+      "sha256": "3e0c7c091a948b82533ba98fd7cbb40432d6f1a9acbf85f5922d2f99a93ae6bb",
+      "lines": 4,
+      "kind": "text_unread",
+      "status": "unread",
+      "readRanges": []
+    },
+    {
+      "dependency": "cryptography",
+      "version": "50.0.2",
+      "path": "cryptography-50.0.2.dist-info/licenses/LICENSE.APACHE",
+      "bytes": 11360,
+      "sha256": "aac73b3148f6d1d7111dbca32099f68d26c644c6813ae1e4f05f6579aa2663fe",
+      "lines": 203,
+      "kind": "text_unread",
+      "status": "unread",
+      "readRanges": []
+    },
+    {
+      "dependency": "cryptography",
+      "version": "50.0.2",
+      "path": "cryptography-50.0.2.dist-info/licenses/LICENSE.BSD",
+      "bytes": 1532,
+      "sha256": "602c4c7482de6479dd2e9793cda275e5e63d773dacd1eca689232ab7008fb4fb",
+      "lines": 28,
+      "kind": "text_unread",
+      "status": "unread",
+      "readRanges": []
+    },
+    {
+      "dependency": "cryptography",
+      "version": "50.0.2",
+      "path": "cryptography-50.0.2.dist-info/METADATA",
+      "bytes": 4394,
+      "sha256": "047cfc71226409de4318b360aef15c63a2adf609731e3dcf7fe932f14ea042ee",
+      "lines": 112,
+      "kind": "text_unread",
+      "status": "unread",
+      "readRanges": []
+    },
+    {
+      "dependency": "cryptography",
+      "version": "50.0.2",
+      "path": "cryptography-50.0.2.dist-info/RECORD",
+      "bytes": 17865,
+      "sha256": "b4eabcea8d37b4d6bf9ee4bfb81b3e3552b4b2a26193848042d53524f6d46bef",
+      "lines": 200,
+      "kind": "text_unread",
+      "status": "unread",
+      "readRanges": []
+    },
+    {
+      "dependency": "cryptography",
+      "version": "50.0.2",
+      "path": "cryptography-50.0.2.dist-info/sboms/cryptography-rust.cyclonedx.json",
+      "bytes": 45629,
+      "sha256": "246af194b4c524807c5aaffd2b7ff86c2c9bee3eb3fceeac987709ad76e4e7ef",
+      "lines": 1365,
+      "kind": "text_unread",
+      "status": "unread",
+      "readRanges": []
+    },
+    {
+      "dependency": "cryptography",
+      "version": "50.0.2",
+      "path": "cryptography-50.0.2.dist-info/sboms/sbom.json",
+      "bytes": 1223,
+      "sha256": "5b5eea08dd952a16eef188f7a85ad439a4409efa0e2bce9ca339a4de9c8db3f0",
+      "lines": 44,
+      "kind": "text_unread",
+      "status": "unread",
+      "readRanges": []
+    },
+    {
+      "dependency": "cryptography",
+      "version": "50.0.2",
+      "path": "cryptography-50.0.2.dist-info/WHEEL",
+      "bytes": 96,
+      "sha256": "9efe56059dbb731c438c822ac4132a2b670e174db90f09059aa246a8bdd2a575",
+      "lines": 5,
+      "kind": "text_unread",
+      "status": "unread",
+      "readRanges": []
+    },
+    {
+      "dependency": "pyopenssl",
+      "version": "26.4.0",
+      "path": "OpenSSL/crypto.py",
+      "bytes": 62769,
+      "sha256": "3917cbd0336a0440680742eef261d7eb7e13d02cc1c19e460a926f75e8e4ecbf",
+      "lines": 1951,
+      "kind": "text_unread",
+      "status": "complete",
+      "readRanges": [
+        [
+          1,
+          1951
+        ]
+      ],
+      "recordedAt": "2026-10-17T22:42:56.845Z"
+    },
+    {
+      "dependency": "pyopenssl",
+      "version": "26.4.0",
+      "path": "OpenSSL/debug.py",
+      "bytes": 1008,
+      "sha256": "bc297bedfd8cb255284d14aef5fa8fe432fff432bf4520bb269bb4ec8a7d8103",
+      "lines": 41,
+      "kind": "text_unread",
+      "status": "unread",
+      "readRanges": []
+    },
+    {
+      "dependency": "pyopenssl",
+      "version": "26.4.0",
+      "path": "OpenSSL/py.typed",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "lines": 1,
+      "kind": "text_unread",
+      "status": "unread",
+      "readRanges": []
+    },
+    {
+      "dependency": "pyopenssl",
+      "version": "26.4.0",
+      "path": "OpenSSL/rand.py",
+      "bytes": 1252,
+      "sha256": "b52c5d03de484ce4b6e2b2c223eb44fe19b857cfa2ebc77a9c3185b78bd13903",
+      "lines": 51,
+      "kind": "text_unread",
+      "status": "unread",
+      "readRanges": []
+    },
+    {
+      "dependency": "pyopenssl",
+      "version": "26.4.0",
+      "path": "OpenSSL/SSL.py",
+      "bytes": 120247,
+      "sha256": "5d6bf8774eb8fd5f03e558a4663dd25d52dacd539069c76b8d8f8d4d55a82871",
+      "lines": 3362,
+      "kind": "text_unread",
+      "status": "unread",
+      "readRanges": []
+    },
+    {
+      "dependency": "pyopenssl",
+      "version": "26.4.0",
+      "path": "OpenSSL/version.py",
+      "bytes": 641,
+      "sha256": "750bde7a16a46a00bd427bfeb82e300addbb78eafbdb8c877c6917175c021fc7",
+      "lines": 29,
+      "kind": "text_unread",
+      "status": "unread",
+      "readRanges": []
+    },
+    {
+      "dependency": "pyopenssl",
+      "version": "26.4.0",
+      "path": "OpenSSL/_util.py",
+      "bytes": 3599,
+      "sha256": "8b9b3442fdbdf00c2683d061a1cfe5084b1f0581356a774fd4fd40884c38d6ec",
+      "lines": 127,
+      "kind": "text_unread",
+      "status": "complete",
+      "readRanges": [
+        [
+          1,
+          127
+        ]
+      ],
+      "recordedAt": "2026-10-17T22:42:56.794Z"
+    },
+    {
+      "dependency": "pyopenssl",
+      "version": "26.4.0",
+      "path": "OpenSSL/__init__.py",
+      "bytes": 497,
+      "sha256": "e3a10dad09802de19b9c8a0e78569adf1122686726a183dad7a0df769ea1322a",
+      "lines": 32,
+      "kind": "text_unread",
+      "status": "unread",
+      "readRanges": []
+    },
+    {
+      "dependency": "pyopenssl",
+      "version": "26.4.0",
+      "path": "pyopenssl-26.4.0.dist-info/INSTALLER",
+      "bytes": 4,
+      "sha256": "ceebae7b8927a3227e5303cf5e0f1f7b34bb542ad7250ac03fbcde36ec2f1508",
+      "lines": 2,
+      "kind": "text_unread",
+      "status": "unread",
+      "readRanges": []
+    },
+    {
+      "dependency": "pyopenssl",
+      "version": "26.4.0",
+      "path": "pyopenssl-26.4.0.dist-info/licenses/LICENSE",
+      "bytes": 11358,
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "lines": 203,
+      "kind": "text_unread",
+      "status": "unread",
+      "readRanges": []
+    },
+    {
+      "dependency": "pyopenssl",
+      "version": "26.4.0",
+      "path": "pyopenssl-26.4.0.dist-info/METADATA",
+      "bytes": 22241,
+      "sha256": "caa9a9adf6c7307dc4ba4ec8379e9c2c9c194873ec562ef609d6b49fb64e3113",
+      "lines": 606,
+      "kind": "text_unread",
+      "status": "unread",
+      "readRanges": []
+    },
+    {
+      "dependency": "pyopenssl",
+      "version": "26.4.0",
+      "path": "pyopenssl-26.4.0.dist-info/RECORD",
+      "bytes": 1418,
+      "sha256": "e15b44909cda31d270f5bd4600f302028e008d206a05987b9a9b835d23a8fb03",
+      "lines": 22,
+      "kind": "text_unread",
+      "status": "unread",
+      "readRanges": []
+    },
+    {
+      "dependency": "pyopenssl",
+      "version": "26.4.0",
+      "path": "pyopenssl-26.4.0.dist-info/top_level.txt",
+      "bytes": 8,
+      "sha256": "34dc56a92f2128d261d9c5176b545938c5fad9525fc9df14468d53b189d1fcc5",
+      "lines": 2,
+      "kind": "text_unread",
+      "status": "unread",
+      "readRanges": []
+    },
+    {
+      "dependency": "pyopenssl",
+      "version": "26.4.0",
+      "path": "pyopenssl-26.4.0.dist-info/WHEEL",
+      "bytes": 91,
+      "sha256": "2b6eb4118ce7cd7b09601406aa623c553c4476265836f0d9c16f5c061f7efcc0",
+      "lines": 6,
+      "kind": "text_unread",
+      "status": "unread",
+      "readRanges": []
+    }
+  ],
+  "limitations": [
+    "Only named direct proxy dependencies and their installed package/metadata files, excluding local bytecode caches",
+    "Inventory/hash is not semantic review",
+    "Native binaries need source/build provenance; no imports or execution",
+    "Further exact transitive dependencies remain caller-driven work"
+  ]
+}

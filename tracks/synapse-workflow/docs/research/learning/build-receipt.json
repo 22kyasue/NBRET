@@ -1,0 +1,1014 @@
+{
+  "generated": "2026-10-18T07:40:46.261Z",
+  "topics": 8,
+  "documents": 251,
+  "htmlBytes": 5598917,
+  "htmlSha256": "2a014c93a875a063136169c90c8d96056b1763ba9a5b960df1fc98a7f2017f03",
+  "scope": "A dated Markdown snapshot. Topic synthesis is editorial; document hashes establish byte identity, not semantic correctness.",
+  "documentsManifest": [
+    {
+      "path": "2026-10-16-rea-and-security-workflows.md",
+      "sha256": "c506b6ba3d55ed52d3ca173c2d3f4e2e29f2b8652cbfb0d5d3d9e43a15163bb2"
+    },
+    {
+      "path": "assessment-evidence/agent-recovery-continuation.md",
+      "sha256": "dc1572d6bea3296f5ed95e55530f4bc469899cbf0356c0d3a415c428fbd67ad6"
+    },
+    {
+      "path": "assessment-evidence/authzen-evidence-boundaries.md",
+      "sha256": "20c87a9a04228fe1a087c27b56bdf32a23c0e4ad6d21111211b00762257a908a"
+    },
+    {
+      "path": "assessment-evidence/cel-async-boundaries.md",
+      "sha256": "0cbeab911eebfdf13982c00edda854db79115c1c13fa8307b30a26b5b006da72"
+    },
+    {
+      "path": "assessment-evidence/cel-authoring-evidence.md",
+      "sha256": "9ffc8f59be09957941b53ef4e4a8de19cceeb4e6014b5fb8764fba6f0de41077"
+    },
+    {
+      "path": "assessment-evidence/cel-generated-parser-boundaries.md",
+      "sha256": "e4563aaf9f638f71956486c5823a1006a5ed9a4ca86326e91c0892add197716c"
+    },
+    {
+      "path": "assessment-evidence/cel-numeric-contracts.md",
+      "sha256": "809be4096b5ad38059e15dae403174ff68ee5bcab6a1b5a68ccae89911784e0b"
+    },
+    {
+      "path": "assessment-evidence/cel-optimizer-boundaries.md",
+      "sha256": "c89dfb844b60984a8005008875322f6e45c0674d243e63a12561f016be3a21b4"
+    },
+    {
+      "path": "assessment-evidence/cel-planning-provenance.md",
+      "sha256": "6deb23d6838a9302fb730afc4a518f8b6accdaee2a36a3371226c91050e0503e"
+    },
+    {
+      "path": "assessment-evidence/cel-protobuf-boundaries.md",
+      "sha256": "09b3a69fbd1bfecc2cc070b9b757e571d628dcd965d3ea66ca3b7e63dccf2f64"
+    },
+    {
+      "path": "assessment-evidence/cel-provider-boundaries.md",
+      "sha256": "19e00473bf150745e968a930c64fa21e4c1dc6930f58e5e779b161d166232288"
+    },
+    {
+      "path": "assessment-evidence/cel-time-and-format.md",
+      "sha256": "492943d59ef37fb97dd5e149707084a46dce85671bb2a9bd70809805951b9661"
+    },
+    {
+      "path": "assessment-evidence/cel-value-outcomes.md",
+      "sha256": "e4eebf0c8cf8f229da6687e93873b6cff2c592b22a997c47d45510981af2afc7"
+    },
+    {
+      "path": "assessment-evidence/conc-pool-boundaries.md",
+      "sha256": "9299f9c4bd33af26417298e933490087fc893a1179cd61459ab5868ef35d51f5"
+    },
+    {
+      "path": "assessment-evidence/continuation-exhaustion.md",
+      "sha256": "1d7603abe57b301de26a055924177f85ef11b4c827aca1c86cc73f7515c054f4"
+    },
+    {
+      "path": "assessment-evidence/coverage-ledger.md",
+      "sha256": "2ea374332eb9c865c5c587d50d9368d8e30e536cb565fabcc36840df361cfed0"
+    },
+    {
+      "path": "assessment-evidence/coverage.md",
+      "sha256": "355e9d5a6429f9051af58a1bfde9849590c1add6aed3daff7258437277b1834d"
+    },
+    {
+      "path": "assessment-evidence/deep-agentdojo.md",
+      "sha256": "5166d7cc06c208fdc098b237ab36d22119595470fcff7fd445fb0fe6e5d0fd5a"
+    },
+    {
+      "path": "assessment-evidence/deep-atomic.md",
+      "sha256": "c899a8cc390ac0b3876449338666b316bfd16ee30cc7d2bf1fed431fa3f2e9f4"
+    },
+    {
+      "path": "assessment-evidence/deep-deepdiff.md",
+      "sha256": "fef09c4a2e8e74449326add0c66d6e1924a33c8770b5936deba4d72646bd0030"
+    },
+    {
+      "path": "assessment-evidence/deep-garak.md",
+      "sha256": "aa113eadf50c1411f3ee3c84098dc68bca1c1e594075c18d31218812e363fe49"
+    },
+    {
+      "path": "assessment-evidence/deep-lab-plan.md",
+      "sha256": "0e4a0b302d5f0bed315697089882a499d1284a80c971e27b9dd62998862ec6ba"
+    },
+    {
+      "path": "assessment-evidence/deep-monitor.md",
+      "sha256": "c2dbddc0dba1f0b0a10ebd0b5093d9416d87d3f674484d013089a59d71d20373"
+    },
+    {
+      "path": "assessment-evidence/deep-openfga.md",
+      "sha256": "208b9f93bc908450417bf41af86b48a128ce9015d50cf33c1d5aa5677e24a33e"
+    },
+    {
+      "path": "assessment-evidence/deep-pentestgpt.md",
+      "sha256": "9b521e542c838956ad140140f357960ad8a296984e00bfb60020859298a42749"
+    },
+    {
+      "path": "assessment-evidence/executable-claims.md",
+      "sha256": "b90b77d7479be1cfbe3614025fd377f1526b6b475b0800fc284e5b7ca9eb02da"
+    },
+    {
+      "path": "assessment-evidence/framework.md",
+      "sha256": "c416b2d717501bb9dbf23b15851eff1ce99fa3c0f26cdffebb4f6174cf2785c6"
+    },
+    {
+      "path": "assessment-evidence/garak-report-fixture-evidence.md",
+      "sha256": "ccef120bc7063d9b89370a4f9b2bb1687ca1d89823dd18a593e095fd042a50a0"
+    },
+    {
+      "path": "assessment-evidence/grpc-logging-evidence.md",
+      "sha256": "35132f8a2f6daa9226fd970f8285b84f2561539fc3139ea804ea9d00d2a2aeec"
+    },
+    {
+      "path": "assessment-evidence/grpc-validation-boundaries.md",
+      "sha256": "32ca32ba5eecf628a8355d784e267acf797c3853f632583dfd9e5c57d6c71d29"
+    },
+    {
+      "path": "assessment-evidence/implementations.md",
+      "sha256": "a9a94f71372a297f65662c95a85044e678b219e35b0891edf8669d4fd080e23d"
+    },
+    {
+      "path": "assessment-evidence/incidents.md",
+      "sha256": "6438f30021c0299065a4628f01ec1a23ff8e14cb39f54e3c3460caacd262c135"
+    },
+    {
+      "path": "assessment-evidence/infrastructure-and-memory.md",
+      "sha256": "276e2e0dd82790851ac0a7ccdf5e521f2d0f96481c71a063cd726bf5bb8626cf"
+    },
+    {
+      "path": "assessment-evidence/jwt-request-boundaries.md",
+      "sha256": "e14182866ef89698e8990555d067f968855d8a592bebdff61d2d081decc4001e"
+    },
+    {
+      "path": "assessment-evidence/monitor-web-continuation.md",
+      "sha256": "0a3f0df80a912c4c64a8c642f57de943431f44ef73ce2c15b966e6d18c766c46"
+    },
+    {
+      "path": "assessment-evidence/openfga-request-contract.md",
+      "sha256": "bf20682680a5c7faa256233883851433d57344b297087366870a3c8a72826ea0"
+    },
+    {
+      "path": "assessment-evidence/overview.md",
+      "sha256": "be47cbe8f570d6df37c675c8e09b1a84df61944db72c9ebb7297467e110c5595"
+    },
+    {
+      "path": "assessment-evidence/pgx-binding-boundaries.md",
+      "sha256": "7d5d9494c3a098cf41eef9fc8b91e89226203da6ebaf2541d73b7009ce809a9e"
+    },
+    {
+      "path": "assessment-evidence/README.md",
+      "sha256": "ced39ff03a673d8adc1dec3c61d8f9bccc6bdc4a7a68824d9594eb2835a60852"
+    },
+    {
+      "path": "assessment-evidence/sample-deliverable.md",
+      "sha256": "dcc9de760e26977315cde265cbeebed9a4f88bd85f3bb11ee2daf7f0cea64c5a"
+    },
+    {
+      "path": "assessment-evidence/sdk-boundaries-continuation.md",
+      "sha256": "2305f4f3d0ec12eeabd6ca0f026bbe88f8c4e69cc71b7666d04287caf9ac9770"
+    },
+    {
+      "path": "assessment-evidence/sources.md",
+      "sha256": "72e6c66bbea2d9c32eb0e24afc3a65fe35a0e577f8d44eecefc9bc9c93e0a9dc"
+    },
+    {
+      "path": "assessment-evidence/synthesis.md",
+      "sha256": "e517945348c7398bf7cca86af6661d8ec878b009ffc4caefd8b10d54e09af942"
+    },
+    {
+      "path": "assessment-evidence/ui-archive-boundaries.md",
+      "sha256": "c100b7f578c3a5392a7cb84166f4253a765eb096e6eba182de5c5e10f467c8ea"
+    },
+    {
+      "path": "bots-swarms/accessibility-evaluation.md",
+      "sha256": "dfb9b2a474e638887334b605bb48ddcd782cf1735f893b506152fabe063792a5"
+    },
+    {
+      "path": "bots-swarms/adapter-boundary-lab-plan.md",
+      "sha256": "96b37ba0049be76a3b73861d63d0b11a78321b5277ddad24a32839aa40badeb9"
+    },
+    {
+      "path": "bots-swarms/cancellation-lab-plan.md",
+      "sha256": "f0a75075f650e5ca80b4a8b11a267b31d90615fdf1839eb4cf06fafbab1d02f2"
+    },
+    {
+      "path": "bots-swarms/catalog.md",
+      "sha256": "2d6765f71f17ead3be3589227cda6c7722f99737817e9b4b359738e87faf4f5c"
+    },
+    {
+      "path": "bots-swarms/continuation-checkpoint.md",
+      "sha256": "009229d5991e43e51efa3bdf9634ebe596d1be5b7e7ce82c5be4b1f858c40856"
+    },
+    {
+      "path": "bots-swarms/continuation.md",
+      "sha256": "da99488028a58541003dd6e1f30d8ea862e19d02fb1ad88047912b461235384b"
+    },
+    {
+      "path": "bots-swarms/cookie-policy-lab-plan.md",
+      "sha256": "759775089b4189b482fd2f777e26b78509493a6f6264a36cb00f90dcb2c6f9dd"
+    },
+    {
+      "path": "bots-swarms/cookie-policy-review.md",
+      "sha256": "0c999b2fac4223a67959d38ac5d0df99511177eb32eb40f4aaeda58f53309a62"
+    },
+    {
+      "path": "bots-swarms/coverage.md",
+      "sha256": "7539e431aba97ee3d65d4658e5838fa0b3ebc1138bb1cd7c1f5b0d4df5b15ff0"
+    },
+    {
+      "path": "bots-swarms/defense.md",
+      "sha256": "366486d8f520b0a2530d2408147c714addef3c85f45ad581a91692f8f0d983c6"
+    },
+    {
+      "path": "bots-swarms/fifo-lab-plan.md",
+      "sha256": "59c44bd426f6ae03af8383bb1bc7195d3b62ad0711a79fa4a7f7cede73574cd0"
+    },
+    {
+      "path": "bots-swarms/findings.md",
+      "sha256": "951d0c0d81e0ace67c1ac9881a70e7b4cceed853ac4d98bf278e8f1907164711"
+    },
+    {
+      "path": "bots-swarms/identity-lab-plan.md",
+      "sha256": "36e499868416d65181f871a3225b030a9adef5b2a2d90856ed9932c58b92b596"
+    },
+    {
+      "path": "bots-swarms/incident-review.md",
+      "sha256": "f28eae1ef7eb3d0dd7796e777d89893273f337b006421b58bb3016b7d5038fbd"
+    },
+    {
+      "path": "bots-swarms/lab-plan.md",
+      "sha256": "1761fb8e0b7fe353ad3a1fd33ad682f912c4682dc9cbb4ad84589d3d075d5262"
+    },
+    {
+      "path": "bots-swarms/limiter-composition-lab-plan.md",
+      "sha256": "71aed9ea3a7ec5cf9090e913525477a7931ece30881cea1a39d495a4c882876e"
+    },
+    {
+      "path": "bots-swarms/model.md",
+      "sha256": "0be5a5e352a043d5c92debbc21cd5822cb2632d7f2e837aec7fe4153e6b1d246"
+    },
+    {
+      "path": "bots-swarms/mongo-retry-lab-plan.md",
+      "sha256": "66bf08c9ff88b7bb71f1ac92a1082f3727c926669e6d3fc040b49b6200e366f0"
+    },
+    {
+      "path": "bots-swarms/parallel-lab-plan.md",
+      "sha256": "623c00284f6eb8c3eed7bfbbd7c87082b7cf837de71279b888acb814fe4f0c8d"
+    },
+    {
+      "path": "bots-swarms/prisma-contract-lab-plan.md",
+      "sha256": "f59c1b08325d78f94830b4cfc116711bf15df68eaf3fa110cd1a03d4077dba23"
+    },
+    {
+      "path": "bots-swarms/queue-clean-contract-plan.md",
+      "sha256": "abd2b817f042509856ac74556a5e0c4a6a95254432885f0c0158ec69a88ed11c"
+    },
+    {
+      "path": "bots-swarms/reader-map.md",
+      "sha256": "e62559d50b08b7b4cf1da494b485e10e6b722676da5abc28ff7609ed6fae715b"
+    },
+    {
+      "path": "bots-swarms/README.md",
+      "sha256": "ec9fc0c076294d1044df1c73e4cd8e895ff647b6b23284324231fd1bb93dd338"
+    },
+    {
+      "path": "bots-swarms/redis-adapter-lab-plan.md",
+      "sha256": "fa8f86ff08355482eab5adcd1e6638ddedda2dce392663badfd1c9d8249bcc3d"
+    },
+    {
+      "path": "bots-swarms/safety-audit.md",
+      "sha256": "af0321a7ae133424a002cea166bb9122391673da90138008b7f8268e0084ecd1"
+    },
+    {
+      "path": "bots-swarms/scope-closure.md",
+      "sha256": "151b7af286cd2b61daef0575696a066c225dd73e3230eef1b78752f1a983adce"
+    },
+    {
+      "path": "bots-swarms/source-notes.md",
+      "sha256": "d0bd0fd83f04ca6c4c56d666bb3f1f22fad8c6190fe88d15eca9fe1fc5f5466a"
+    },
+    {
+      "path": "bots-swarms/watchdog-lab-plan.md",
+      "sha256": "a3be7fc069fbb9aebe9cfe632dc02206f8a864ac9ad12422c27d20fb2c19ba89"
+    },
+    {
+      "path": "cybersecurity-firms/ai-evidence-matrix.md",
+      "sha256": "455afec8846b364e9705451dd417a637e2e5f692ca311d83c74f96412d18a308"
+    },
+    {
+      "path": "cybersecurity-firms/bt-falcon-service-schedule.md",
+      "sha256": "7167d953a2acbe24cb31603952263bb82be6e360d0fdef9c125eed94f8f4b804"
+    },
+    {
+      "path": "cybersecurity-firms/buyer-evidence-queue.md",
+      "sha256": "6e86aaf415e139cbc303e6f100ed32d0622f017185911352360607c8a91d747d"
+    },
+    {
+      "path": "cybersecurity-firms/charlotte-agentworks-contract.md",
+      "sha256": "5182577d22adc0a7214c291bd2bfe2c0875a302f41fa9dd47daa85522b39ae4b"
+    },
+    {
+      "path": "cybersecurity-firms/cisco-mdr-service-description.md",
+      "sha256": "132e4489776cd8b4b2f3f994f86431b3d1c3e680e87060441fb03e44feb105be"
+    },
+    {
+      "path": "cybersecurity-firms/cisco-splunk.md",
+      "sha256": "f820c99a4972e441613ac61510410f0817f56271a747b861a7a505854b72b446"
+    },
+    {
+      "path": "cybersecurity-firms/cisco-xdr-premier-contract.md",
+      "sha256": "f9639fd514bc7617e6ad37541f9b287e58032b4bcd483f8284d539b2ca0b8e54"
+    },
+    {
+      "path": "cybersecurity-firms/continuation.md",
+      "sha256": "78fb815493d10cedf44c907868843b2fbfce289f26610e9d314f23418c03922f"
+    },
+    {
+      "path": "cybersecurity-firms/coverage-audit.md",
+      "sha256": "353819ec9959992250b4e2283ed57b26a0fe2a2183b16e43946815788259017c"
+    },
+    {
+      "path": "cybersecurity-firms/crowdstrike-final-rca.md",
+      "sha256": "86eb43f7859192aa099ebd12da2905e46c751f77f678f269b8a6c8210e605786"
+    },
+    {
+      "path": "cybersecurity-firms/crowdstrike.md",
+      "sha256": "8314da8cda546bc4d488627be1c9439544c6ba3ed4b6780f9d65b4e8e04c040c"
+    },
+    {
+      "path": "cybersecurity-firms/defender-action-contract.md",
+      "sha256": "e2f8d5b3ac56098fd9f90f849e00ee87441117d8b7ad1d6ab565ff2f17f81c33"
+    },
+    {
+      "path": "cybersecurity-firms/defender-automation-boundaries.md",
+      "sha256": "ec83ea26e02b906e0989bed7eb8385d9c5b7224b27bdccf2594a04eedb0422d2"
+    },
+    {
+      "path": "cybersecurity-firms/falcon-auth-source.md",
+      "sha256": "b31c41aaaaf69433e1b438e590ba9d3f1b54315a6712bb81f882e65237bc1784"
+    },
+    {
+      "path": "cybersecurity-firms/falcon-buyer-health-check.md",
+      "sha256": "4569e2a386d9b5245c9c33f80df1d50102cd5b7074519618dde3f93288bf1ef6"
+    },
+    {
+      "path": "cybersecurity-firms/falcon-deployment-maintenance.md",
+      "sha256": "8a1500094435104d58703c0db5099226797e939e8e5a727c6089ef6b13ec648c"
+    },
+    {
+      "path": "cybersecurity-firms/falcon-host-action-source.md",
+      "sha256": "cd31e6984ac391ca627094a9cae9fe433a6a16fd7b5dcadb6106ed7d5d0ee4b9"
+    },
+    {
+      "path": "cybersecurity-firms/falcon-public-terms-boundary.md",
+      "sha256": "0afaf8378ca72a0fbb1aef5442e3f6579d7d9258120e3fb348c08a3b7ece8586"
+    },
+    {
+      "path": "cybersecurity-firms/financial-anchors.md",
+      "sha256": "e9409aa7a2c9411e86fd3e8230d1a52412f232606758f652d33b32799e73d504"
+    },
+    {
+      "path": "cybersecurity-firms/fortianalyzer-ai-privacy.md",
+      "sha256": "175a25681c40fa073fa1c3902c2afe31dbd85b52151b5c07653d56565352010c"
+    },
+    {
+      "path": "cybersecurity-firms/fortianalyzer-transparency.md",
+      "sha256": "5d2e301c4c9af6f63d7d28bec6ff101119992aecde9cbe55f1df4baa2117bb5d"
+    },
+    {
+      "path": "cybersecurity-firms/fortinet-annual-economics.md",
+      "sha256": "ed8b9c794dd0938d1c1263a4bb2656406dad18e3bf363f796d52ff8fbd726d36"
+    },
+    {
+      "path": "cybersecurity-firms/fortinet-sentinel-source.md",
+      "sha256": "2122f50853cac429d75685993441928e362d3345ce2e69e63423b2efc1ea0c76"
+    },
+    {
+      "path": "cybersecurity-firms/fortinet.md",
+      "sha256": "92f94d45ad6f9f7af9f36e5f0eb8319b7bb540d166e556ea6c7dbad729481c00"
+    },
+    {
+      "path": "cybersecurity-firms/gmo-flatt-security.md",
+      "sha256": "1fba206feb2a235519d406ee02ae5c91278055e8df2530fadc1756bb2145100d"
+    },
+    {
+      "path": "cybersecurity-firms/gmo-ierae.md",
+      "sha256": "642b8ac1b93eec53b20255e3a607b53835dc9f62740158085a7fe7198a2eb344"
+    },
+    {
+      "path": "cybersecurity-firms/google-architecture-boundary.md",
+      "sha256": "391949ad7e2d034de487972c05bfe2e32673ee4ad9e337cb54d1db4184fb3344"
+    },
+    {
+      "path": "cybersecurity-firms/google-cloud-security.md",
+      "sha256": "720b6d601655cfa7f276c059b076c9edfe419aeb6cdfa651e13c0d2e99b884ea"
+    },
+    {
+      "path": "cybersecurity-firms/google-gemini-client-source.md",
+      "sha256": "6efc0d719dd1292e20bbf191c9ed274beb9b3d97cd0733734e32fb5516f262d7"
+    },
+    {
+      "path": "cybersecurity-firms/google-investigations-source.md",
+      "sha256": "3e460999d0383c84d37f8050e7732d6d6e1300d38aaa23ac080ece6b6e6196fe"
+    },
+    {
+      "path": "cybersecurity-firms/google-japan-delivery-evidence.md",
+      "sha256": "e89a5ccbb3e52f25e87fc8524b2850043721a209905e2fb1e8c02ada062847db"
+    },
+    {
+      "path": "cybersecurity-firms/google-natural-language-search-source.md",
+      "sha256": "c41bc9782f770d325d703bcf9fc894fec8801b82b6a06870b70ecdda9945e331"
+    },
+    {
+      "path": "cybersecurity-firms/google-rule-lifecycle-source.md",
+      "sha256": "8032029ec5c9fd5e81330a0357f36e201ef80896586b54e142c22822f297da2b"
+    },
+    {
+      "path": "cybersecurity-firms/history-timelines.md",
+      "sha256": "ca1eb149ac7cba5b53a9e92473976dd1282d48aa4085d2f891c0bc2059873a86"
+    },
+    {
+      "path": "cybersecurity-firms/ierae-soc-brochure.md",
+      "sha256": "515594661260e0fd8e5603a3c073cc94e9a51251b3ef4a77f8e223d53614dea6"
+    },
+    {
+      "path": "cybersecurity-firms/lac-latest-standalone-accounts.md",
+      "sha256": "99a69a4c13c6d15ec18ea37cafb5a52026915bd7201150af273f8f1358ea4ceb"
+    },
+    {
+      "path": "cybersecurity-firms/lac-ownership-accounting.md",
+      "sha256": "b595be0e670a0b1c6cc3a7fb04f521c944347fdf7db69489181a43a6bbfa54c8"
+    },
+    {
+      "path": "cybersecurity-firms/lac-xpdr-operating-boundary.md",
+      "sha256": "305a5e256c1cfe7bbf770abcd97509845c21b80d1b79c5ab10c7335e4f622056"
+    },
+    {
+      "path": "cybersecurity-firms/lac.md",
+      "sha256": "c6c4bf40319dcbdf13a6a9895e9a531c7107679e591057e6362a4642e58d0ecf"
+    },
+    {
+      "path": "cybersecurity-firms/managed-fortigate-service.md",
+      "sha256": "287390ed3f16b9349ae2bbfd3b7d0d442a7eeeebae649b0c98e3f4fd0e289f25"
+    },
+    {
+      "path": "cybersecurity-firms/mandiant-3cx-assessment.md",
+      "sha256": "3323a315f73f9768a43c1fd800798ec10b63646443710ed3005bab0b825a5722"
+    },
+    {
+      "path": "cybersecurity-firms/mandiant-processing-incident.md",
+      "sha256": "6cb58f8072f2b16fb7d69ec3b41e57ff36f2ef5b82235e03a7ef6896d49d2c7c"
+    },
+    {
+      "path": "cybersecurity-firms/microsoft-dtda-evaluation.md",
+      "sha256": "81dbd6bb5b643bb2b593779188d3c67f4a419a8bc9cb6d72e0d1ec8ae5cee294"
+    },
+    {
+      "path": "cybersecurity-firms/microsoft-phishing-agent.md",
+      "sha256": "9fca0d57eb39346080cb8d44994b93f5a256e4bea962a22446eacbeebb42be9c"
+    },
+    {
+      "path": "cybersecurity-firms/microsoft-phishing-trial.md",
+      "sha256": "cd9d1333ff1d43711140fabe4c87062f156e42e5afdc34549252edb815bc2999"
+    },
+    {
+      "path": "cybersecurity-firms/microsoft.md",
+      "sha256": "0743fa6a2eae6407947a51989c88ac242b9e3b55af32b3dfbbeed5d72b7818df"
+    },
+    {
+      "path": "cybersecurity-firms/nri-agenticblue-controls.md",
+      "sha256": "b5f6217551214ea3eb0ff19bd587970125498e847a44031064f546b28f9933f8"
+    },
+    {
+      "path": "cybersecurity-firms/nri-secure.md",
+      "sha256": "612561a9dd1ab7c42d5774a97927b676a08b42d11e516b073510734380d8a28a"
+    },
+    {
+      "path": "cybersecurity-firms/palo-alto-networks.md",
+      "sha256": "a7794943ac4848e11681412e70c26a44d0745590818913e844f8516597db4b50"
+    },
+    {
+      "path": "cybersecurity-firms/pan-agentix-controls.md",
+      "sha256": "4c0ca76b2363e0f5bbd37a3fea56e5fa2b2682a718187e360bf4a3648ce3682d"
+    },
+    {
+      "path": "cybersecurity-firms/pan-deployment-buyer-policy.md",
+      "sha256": "7a7e5af38ad19ebc54b3fc1b3734fd0fe9af0ed21e07b9aecf72dee7975064f6"
+    },
+    {
+      "path": "cybersecurity-firms/pan-isolation-source.md",
+      "sha256": "afca60d1fe7fcb93b5026593dbef9c44fc082f8f5dd634a9de15f035243e8769"
+    },
+    {
+      "path": "cybersecurity-firms/pricing-capacity-boundaries.md",
+      "sha256": "f2ce10e9cd62a14f8b329b1c57fdbec3bf0c88fc6c360ec21606e8b81c13ac27"
+    },
+    {
+      "path": "cybersecurity-firms/reader-handoff.md",
+      "sha256": "1c47f4efd61efefeced967deee9aef0d06aa07be7d22845c6e32bc954f9912bd"
+    },
+    {
+      "path": "cybersecurity-firms/README.md",
+      "sha256": "dbec4ef932b68b58ffb28dabebc45755c17715b248c124d787d6c931d3b77f30"
+    },
+    {
+      "path": "cybersecurity-firms/scope-audit.md",
+      "sha256": "cdd0b62569e37dffe203393eac0de6a57ee7236af197eafe8211c75289d9cf09"
+    },
+    {
+      "path": "cybersecurity-firms/security-copilot-provisioning.md",
+      "sha256": "d74c692faee8039a304bb657b7bda21afb6e38f4a12a6bf4864192014f2ee9d9"
+    },
+    {
+      "path": "cybersecurity-firms/selection.md",
+      "sha256": "00fa94f896880ab6e64cc4a1e86fadfa1246381dde60af85d0d39fd0308cb7ac"
+    },
+    {
+      "path": "cybersecurity-firms/sentinel-playbooks-source.md",
+      "sha256": "297675f5239dd4087a5d0cc2ce7a3b70eff961c3a3dbfa74e37c53206d4f23b0"
+    },
+    {
+      "path": "cybersecurity-firms/service-artifact-boundaries.md",
+      "sha256": "5134c889843297b0c79d53746848f9d0952c3e613f3cad50240c3117b3dfaa34"
+    },
+    {
+      "path": "cybersecurity-firms/service-process-comparison.md",
+      "sha256": "57e2c0c8275da3f834f74494f2c16a42a6e949fd095ff2f6bd9c54afa0be98af"
+    },
+    {
+      "path": "cybersecurity-firms/splunk-guided-response.md",
+      "sha256": "2b6874862ae337c3c2532ec1f2edbf1fa491de9f81646e828e737e561924fb46"
+    },
+    {
+      "path": "cybersecurity-firms/splunk-lsass-source.md",
+      "sha256": "26c4d6e47dcaeb8274f95cc4ee664004858fef5fb542d99319a56acdce471ba1"
+    },
+    {
+      "path": "cybersecurity-firms/splunk-triage-controls.md",
+      "sha256": "381babc89b616d32195f5f8a70f4de15af795afbf01ccceb91246bf005f8475f"
+    },
+    {
+      "path": "cybersecurity-firms/takumi-authority-boundary.md",
+      "sha256": "89033180c6cba8d34330588673b5d878bd8912a3895b46172560ffd6cd537202"
+    },
+    {
+      "path": "cybersecurity-firms/takumi-blackbox-benchmark.md",
+      "sha256": "9089d3c7528f3768ce920414fbd0350e607d436fac90201ac38ed9c0f114ed91"
+    },
+    {
+      "path": "cybersecurity-firms/takumi-domestic-inference-announcement.md",
+      "sha256": "f5e5a98609b74e33ea370375514dc393acf7956c2a91b8bae11ce6095f01e571"
+    },
+    {
+      "path": "cybersecurity-firms/takumi-github-scope-boundary.md",
+      "sha256": "40fdae97d82dfafedf7bab923331e8c727803fa4baaed788f3fdc0d5c8fb0579"
+    },
+    {
+      "path": "cybersecurity-firms/trend-annual-economics.md",
+      "sha256": "122553a434870f80c6f2e6f10c40541d5e968b49b25b617ecec00d29b37fba0b"
+    },
+    {
+      "path": "cybersecurity-firms/trend-mcp-source.md",
+      "sha256": "b7c54610588cacee5a14f707008aeb69d211c96974b299087dc04c1d87b49dac"
+    },
+    {
+      "path": "cybersecurity-firms/trend-mdr-access-boundary.md",
+      "sha256": "409be6a9fc21688632ed252130f39f8c2c60bed1351c258087ee5962709e82e9"
+    },
+    {
+      "path": "cybersecurity-firms/trend-mdr-approval.md",
+      "sha256": "99636a4834f08e1d5d933135ac1373f463e1ba312ed25fb6afd1b5537984e5f5"
+    },
+    {
+      "path": "cybersecurity-firms/trend-micro.md",
+      "sha256": "863b43b84270b824c2cad3c0c8c5c4eee78a27c7e7c931fef3173a8787a619fd"
+    },
+    {
+      "path": "cybersecurity-firms/trend-response-task-boundary.md",
+      "sha256": "6096f3093e6875d0b2e5c5f7f3859bcfd3be6c68031dc9603132db10b3a9c52f"
+    },
+    {
+      "path": "security-landscape/companies.md",
+      "sha256": "943359c60fd9598c22aa12589c8eb4b3f81a95d2258c14962529c915f7f6d151"
+    },
+    {
+      "path": "security-landscape/coverage.md",
+      "sha256": "6559e523aac2007cf51d534aaa3ec2b553cfe62ec918b4e774467008b68ffae7"
+    },
+    {
+      "path": "security-landscape/deep-review/capture-finalization-lab-plan.md",
+      "sha256": "cc3fc928fbabe55eaa9b627802b46409e8103b25ad37c44099e36f3b9ab25f39"
+    },
+    {
+      "path": "security-landscape/deep-review/nbret-capture.md",
+      "sha256": "6f4088c1f609e24f9249608a14fe5804f8b110b76617f642ebb0c62232b557de"
+    },
+    {
+      "path": "security-landscape/deep-review/nbret-checks-identity.md",
+      "sha256": "3eb8f0046e1eca99e104b94c849f54ab793b6a4cf0935b812c5fde083cf32c02"
+    },
+    {
+      "path": "security-landscape/deep-review/nbret-discovery.md",
+      "sha256": "c225d0255754854be01bd1ad362a906022f2227df44b9afbb8233eae72e311ed"
+    },
+    {
+      "path": "security-landscape/deep-review/nbret-scanner.md",
+      "sha256": "cf7fa5e9874e6a59f817d4f0d579ab4146c0462d32f2ebcd6ead8b5e14ecddc1"
+    },
+    {
+      "path": "security-landscape/deep-review/nbret-test-evidence.md",
+      "sha256": "cbcf18443b824503f6ac09632e21d54b80f47829df8e907388fb6e8691d90af7"
+    },
+    {
+      "path": "security-landscape/deep-review/nuclei-auth-lab-plan.md",
+      "sha256": "ea6031ef2870a04aee4d998ec0376196dd5531713908f197d8f4fa26ee6f763d"
+    },
+    {
+      "path": "security-landscape/deep-review/nuclei-auth.md",
+      "sha256": "6cb4fa71ca658821b9777cd9e5193c9cab092c5115b085183c57a78ed3a6791b"
+    },
+    {
+      "path": "security-landscape/deep-review/nuclei-composition-lab-plan.md",
+      "sha256": "cfad0a71801c4c5ff346e92353444f7393f35bca8079aa96bf76f7c267351adb"
+    },
+    {
+      "path": "security-landscape/deep-review/nuclei-dialer-cache-lab.md",
+      "sha256": "725646ef39a84d8e05f1eaf646bc2ab019e76c1d2539d3a866315d866bd5d79d"
+    },
+    {
+      "path": "security-landscape/deep-review/nuclei-dialwrap-lab.md",
+      "sha256": "00beadbbb3bcbba031d887928be505de68406e7e9fc3cc21eb2548165aa92b10"
+    },
+    {
+      "path": "security-landscape/deep-review/nuclei-execution.md",
+      "sha256": "f2f74da5dce297669327953a5005dfb9ca3cb4765aa1e5a9e38350e6a148b91c"
+    },
+    {
+      "path": "security-landscape/deep-review/nuclei-http-cache-budget-lab.md",
+      "sha256": "c4fc68f89cd14d29dcc8e065e94073742bbc9ea1c4bb630fdb321c3af5850122"
+    },
+    {
+      "path": "security-landscape/deep-review/nuclei-http-path.md",
+      "sha256": "957f5e8406c40f5aa82436f28a3f38f76b75bb37aa1db12a708a8a079ed91c76"
+    },
+    {
+      "path": "security-landscape/deep-review/nuclei-input-identity.md",
+      "sha256": "c9f3309f8bc422914c871b4930688deb25d82572c3e30332b321345e4036b191"
+    },
+    {
+      "path": "security-landscape/deep-review/nuclei-matcher-lab-plan.md",
+      "sha256": "d45bbf886c3c2a01c2105a6b76e0de504d1c8fab1c87fb9385cfc018b83b5637"
+    },
+    {
+      "path": "security-landscape/deep-review/nuclei-matchers.md",
+      "sha256": "578cfde2bcbc327551a2ba233da7213789bebe6b1db3db661f126ecc6e814f0b"
+    },
+    {
+      "path": "security-landscape/deep-review/nuclei-native-network.md",
+      "sha256": "eff112327871a4cca962ef748c2a2422d000e747bc68fee5222dc60848f965d9"
+    },
+    {
+      "path": "security-landscape/deep-review/nuclei-network-policy-lab.md",
+      "sha256": "7cf4ece501c8e652a113ca8d3f32c3ca8c2d2b545d760ac8261984deebdc04b6"
+    },
+    {
+      "path": "security-landscape/deep-review/nuclei-normalization-lab.md",
+      "sha256": "92baf9737c05ede53bef4a733f29ba88b5a3160bed108280f1066c06ec69c7f9"
+    },
+    {
+      "path": "security-landscape/deep-review/nuclei-output-lab.md",
+      "sha256": "c6e0256360414072a3f05c1188db7dab919b2c4e352c08dba5ad032bf5662bde"
+    },
+    {
+      "path": "security-landscape/deep-review/nuclei-output.md",
+      "sha256": "0c5daef4764db4e1e749fb47c66d68f2fde4005a6935d272ea105589b1900c47"
+    },
+    {
+      "path": "security-landscape/deep-review/nuclei-project-cache-lab-plan.md",
+      "sha256": "379bfe24a2de4f5e36a323ec1f93ef2cf807dba11d6f397e6f355b0a8383204a"
+    },
+    {
+      "path": "security-landscape/deep-review/nuclei-render-lab-plan.md",
+      "sha256": "882a8ccd9d7625c71e9e5235b3881a3e344a63e7756892cb3afe8c765f7fd3a5"
+    },
+    {
+      "path": "security-landscape/deep-review/nuclei-template-path.md",
+      "sha256": "8139a21e4fc7ae7ce102fb2e63b153a6dd27a9f792f8a0dac9422f5aab015279"
+    },
+    {
+      "path": "security-landscape/deep-review/nuclei-upload-buffer-lab.md",
+      "sha256": "a488912d1eee570fbe81bdb9c6410964412af6a83e123e54d310561ced8d9e29"
+    },
+    {
+      "path": "security-landscape/deep-review/nuclei-waf-component-lab.md",
+      "sha256": "5b499c1bbbbb89a36e84a8ea6615665c22879092e5f88a8a9e887a98af53dcab"
+    },
+    {
+      "path": "security-landscape/deep-review/priorities.md",
+      "sha256": "31859b4b36e0cd281a81650d57d05360134ce14a6e8858a7b5357e1ee5979f6d"
+    },
+    {
+      "path": "security-landscape/deep-review/README.md",
+      "sha256": "0f456eeb056892755f989a35f8f067fd4b2b8e454eff845f5063445a304cb930"
+    },
+    {
+      "path": "security-landscape/deep-review/real-zap-lab-plan.md",
+      "sha256": "05892c750f378600a85ea4067ec91db84a1ea5941fc52fce6d34735d17a30df0"
+    },
+    {
+      "path": "security-landscape/deep-review/report-assurance-proposal.md",
+      "sha256": "0c6133a0e945888dc75126f08cdfc2a786efd656454f44c399cc5edcc503ce12"
+    },
+    {
+      "path": "security-landscape/deep-review/report-interpretation.md",
+      "sha256": "0980b2bcb2d27124bbcf401d0e22fd6a114a321b41227a551d007974ceeacfc6"
+    },
+    {
+      "path": "security-landscape/deep-review/report-state-lab-plan.md",
+      "sha256": "fbb4dcf09230c4ce9277fe7857ce695069abb818b75458507ddb646c7733c754"
+    },
+    {
+      "path": "security-landscape/deep-review/reporting-boundaries-comparison.md",
+      "sha256": "a9fa4ad5297929d9ae9d98fa9ba7cc245f85e335e7cae4a16ecf1ad182f1284f"
+    },
+    {
+      "path": "security-landscape/deep-review/scanner-adapter-lab-plan.md",
+      "sha256": "bf9e38c6a49a7eda247dac9cb1165f266554a65c7cd18039796d356fd8c73bd3"
+    },
+    {
+      "path": "security-landscape/deep-review/structure-identity-lab-plan.md",
+      "sha256": "ca55d1a3dc598d0364a670e89833fbf32914f0176fd692c2d9d59ce112c8a5cd"
+    },
+    {
+      "path": "security-landscape/deep-review/terminal-state-lab-plan.md",
+      "sha256": "d6a31f972f968d31a96a8ee4c9ca93356efdd36296e4856407ad1ebb88c89dd4"
+    },
+    {
+      "path": "security-landscape/deep-review/zap-alert-object-lab-plan.md",
+      "sha256": "9858ff785a907bfba717efba493f476cf5195b8257beac312b75a717db6fa893"
+    },
+    {
+      "path": "security-landscape/deep-review/zap-alert-persistence.md",
+      "sha256": "9fd5dbc2095e07af8f9dac03d88b90bdd5438cb26e82f272a138f912d5f7b1ed"
+    },
+    {
+      "path": "security-landscape/deep-review/zap-alert-set-lab.md",
+      "sha256": "1975280d97e87625d05fea1559f5b64f3b3cad492bc9d1b7b2b5b2ca1ebb157c"
+    },
+    {
+      "path": "security-landscape/deep-review/zap-context.md",
+      "sha256": "a9317239206900f3090b40762acbdfeccae8a6f14e1f9da60913985121d9e7d9"
+    },
+    {
+      "path": "security-landscape/deep-review/zap-control-path.md",
+      "sha256": "f0d3e050583c0b31205a7a17aebb40cc614066c9c4a63e4b8b2af36b0e1b0c6c"
+    },
+    {
+      "path": "security-landscape/deep-review/zap-directory-rule.md",
+      "sha256": "01dea71dc3766769b22b8ef2b2ca9b50b878c797b833129da0998ebf13a53490"
+    },
+    {
+      "path": "security-landscape/deep-review/zap-history-lab.md",
+      "sha256": "f6277df5b3aae3839c198cd376a94cfd4d6b3c7a15d80f451a3043547eee96ab"
+    },
+    {
+      "path": "security-landscape/deep-review/zap-history.md",
+      "sha256": "3c961d73a438cb584dca66d202e29bce25ba2e86a6445f7f0bd1c33e2288472b"
+    },
+    {
+      "path": "security-landscape/deep-review/zap-network-tests.md",
+      "sha256": "25543dd770597aeecff0a0d152e98c73f3723821fa6dbddbdf635f94e9549b0f"
+    },
+    {
+      "path": "security-landscape/deep-review/zap-network.md",
+      "sha256": "23489defc314bf1d12d06e62bf40c509a0db5beb38db074fd7a9cfc23b699423"
+    },
+    {
+      "path": "security-landscape/deep-review/zap-report-filter-lab.md",
+      "sha256": "04a46624c6f7ce6184a0cd6c86b0451e8e3e5b3e04ac56652507203b7901063d"
+    },
+    {
+      "path": "security-landscape/deep-review/zap-reports.md",
+      "sha256": "b89a72d527ca6734f77695991a6c686e6f5a4fe6175e9c15beeffed1c1a98b9e"
+    },
+    {
+      "path": "security-landscape/deep-review/zap-sarif-lab.md",
+      "sha256": "646727d81b5bf5fee4fc1ead8c9c0ed8c6e8720db4a0f0a573f17330d333bba5"
+    },
+    {
+      "path": "security-landscape/deep-review/zap-structure-lab.md",
+      "sha256": "ba6cfccec3ce521504109fdb9ea45ea8a0a057a3b435120b4ee9c61d9f97e2bc"
+    },
+    {
+      "path": "security-landscape/deep-review/zap-structure-name-lab.md",
+      "sha256": "817f897176acf0844fe0944ff247b86c4ce26809ec34883bd273b76aa1459dc8"
+    },
+    {
+      "path": "security-landscape/deep-review/zap-tag-projection-lab.md",
+      "sha256": "76c1715976123f3b5b3e4d89cb9232fdc4b47b35a9a3cad2e86c06bc947478c9"
+    },
+    {
+      "path": "security-landscape/discipline-map.md",
+      "sha256": "383770bd4bc8d167f4de33d7947332b435fd2ef2b7da4a7b1460f1731fbac917"
+    },
+    {
+      "path": "security-landscape/implementation-reviews.md",
+      "sha256": "15d30964a6fb21c8f3822f1cfa042456e1e0572d67a696cbdd407e5a5bba669b"
+    },
+    {
+      "path": "security-landscape/inventory.md",
+      "sha256": "932ff9c1a305b88690bb76d7885396ec1098cbd5693a42d787058599da9406ca"
+    },
+    {
+      "path": "security-landscape/lab-followup-plan.md",
+      "sha256": "7270b08a9955d4fe5ef515f1713bb228bd43d4b1e2fd3d11b0cf63ed1ef97b4e"
+    },
+    {
+      "path": "security-landscape/lab-plan.md",
+      "sha256": "9e20385ada2cce6cfdd3329d3dd0891c38dcaa1b4a0aa0b99064b9f74d8c8413"
+    },
+    {
+      "path": "security-landscape/lab-results.md",
+      "sha256": "90e88178d78da06156f6680bdd0a4d4406fe5e220dd811773711bc0a2126a1e6"
+    },
+    {
+      "path": "security-landscape/learning-reader-map.md",
+      "sha256": "aad2829161fe2005443575aca04151ec2e29f5550979e23a101b31d3c2e1e894"
+    },
+    {
+      "path": "security-landscape/README.md",
+      "sha256": "9c332a4ffc5faefe64ed6c4701ce6d62e32c9c3854e398d3ba82fb6b237a6bc8"
+    },
+    {
+      "path": "security-landscape/standards.md",
+      "sha256": "43ae566fc32f0837d7fcfe4eafe9abded148f8b3e5ca640d91726c33fdbe5a76"
+    },
+    {
+      "path": "security-landscape/synthesis.md",
+      "sha256": "7219f1ef7010cb8ba50f0d0452dab1a160f2ae292843569cb6dc3ef271d4d6b0"
+    },
+    {
+      "path": "security-landscape/technical-library.md",
+      "sha256": "638010416aa5d92f586b058f63cd4905aa93b8d34756b2fc29ce648217d15546"
+    },
+    {
+      "path": "toolchain/catalog.md",
+      "sha256": "ff4a329443cf67fbf9d826c15206245ae2f1cdc719fefbb53b4828fb96bcd183"
+    },
+    {
+      "path": "toolchain/cloud-helper-plan.md",
+      "sha256": "84c65fe9b2fcf6718ac566ca6d1138d82971773cd943f3690807358a36640139"
+    },
+    {
+      "path": "toolchain/cloud-posture.md",
+      "sha256": "eda1fe38c50f545ab9cc26f4caf312574a4608df2339a86947fdeb5bea17f5e2"
+    },
+    {
+      "path": "toolchain/connectivity.md",
+      "sha256": "7f4e37fe7c79f9a2c5a31955d80880dab94099ccaeac96498a042561a04e4d04"
+    },
+    {
+      "path": "toolchain/continuation.md",
+      "sha256": "1b134a00e6ef5ef9f17acd603ddf3e507147e7009f3b7430e254e67d52426e9a"
+    },
+    {
+      "path": "toolchain/discovery-packets.md",
+      "sha256": "53713d58f72a254c83fa07ad0ac023789a0a968f101c4d8f9a678a2e2780a58d"
+    },
+    {
+      "path": "toolchain/discovery-targets.md",
+      "sha256": "67d2532f658353a54c6eb031f1a62af75c28c3979d41fe9f0c5658cd026da69f"
+    },
+    {
+      "path": "toolchain/discovery-timing.md",
+      "sha256": "fd0288c44087f0e9183edde520fb8cb43720fbbde3a08fd6f6a4c6590446a454"
+    },
+    {
+      "path": "toolchain/dns-flow.md",
+      "sha256": "79eaaa43d3ff4f4d20d044b6c77d68d03934f46e25777395ac7af3c8cb58490b"
+    },
+    {
+      "path": "toolchain/findings.md",
+      "sha256": "43e1b8026242ee8665aa61d4a6b46fde25ae9c7a58b5dd4b6222c98deebc2404"
+    },
+    {
+      "path": "toolchain/go-material-review.md",
+      "sha256": "d85eaad987bc7e9f608c06e62f644508b480a9882e61972daf40ae2e33c09efc"
+    },
+    {
+      "path": "toolchain/har-roundtrip-plan.md",
+      "sha256": "c453c263cb8903496fd4d1afa41d4c0b7cafe713e6da452192fbb36e16baceeb"
+    },
+    {
+      "path": "toolchain/hpack-table-plan.md",
+      "sha256": "6f4557be7f087f787231cdc74dc903068a8324d737abb6f51bc465c73417c848"
+    },
+    {
+      "path": "toolchain/identity-acl.md",
+      "sha256": "0628c90b40f526537f295113baa97ba57964336c894edf56727d5cc351e580a2"
+    },
+    {
+      "path": "toolchain/identity-analysis.md",
+      "sha256": "5ed6824ca5673ff57aad1c8ee9b1e73fd63ce7c33ad8ec15835d3bfba71cd78d"
+    },
+    {
+      "path": "toolchain/identity-flow.md",
+      "sha256": "e0cef0890cbfce59941db725209d936b896e5ec0921294987b808dd64da7385c"
+    },
+    {
+      "path": "toolchain/identity-ldap.md",
+      "sha256": "dbf8a7ef18633c2c6f81957d7a876b780ffb5602478006d2bdd4cf509cba5247"
+    },
+    {
+      "path": "toolchain/impacket-rpc.md",
+      "sha256": "605b1238f5fb8d72c6fb77c6e4e82add44454c82230e7b921457b90a9a21d5b5"
+    },
+    {
+      "path": "toolchain/lab-plan.md",
+      "sha256": "f0ef0e8c39d9d69e72515fc91352b911366212d1b1ca1550f48704c7166f9af8"
+    },
+    {
+      "path": "toolchain/map.md",
+      "sha256": "32b28494daf2273789ec44115de52319f76866bba44f31570d80e80cc10e176b"
+    },
+    {
+      "path": "toolchain/netutil-flow.md",
+      "sha256": "f1a4733889cbf0b27aaa01548dff2c2f615930c30915cc3a18d9048584cdd3b6"
+    },
+    {
+      "path": "toolchain/nsock-flow.md",
+      "sha256": "5849fa463bd698632d015e2ffb8ae5f4064cadc47e26abf4dbf75f7c6dd047be"
+    },
+    {
+      "path": "toolchain/nsock-proxies.md",
+      "sha256": "3898fe75dff6621dea437c6b698648bfd4922c838645fdff8c5858be3bdb3b59"
+    },
+    {
+      "path": "toolchain/packet-dependencies.md",
+      "sha256": "1f94fab40781a44d9bcd3be59e326fe9e24e5dfd03749d09d4649fe3705db277"
+    },
+    {
+      "path": "toolchain/packet-filter-vm.md",
+      "sha256": "96be3e803503611d3120947344d92d26a1c064f529ef9cda1993adce02c57ea6"
+    },
+    {
+      "path": "toolchain/pcap-format.md",
+      "sha256": "82e099f9713b32117c0dbbc90866c16c72e6f6ca8de377f472d82e4d7ed08336"
+    },
+    {
+      "path": "toolchain/pg-builder-plan.md",
+      "sha256": "52f7ae72e6a02ac43d9544d7cf735ffcf8d660d02fa08be79bf5732591e6aa95"
+    },
+    {
+      "path": "toolchain/proxy-flow.md",
+      "sha256": "cfde175e02e4bdb92602fbc114742b953961528630bdeb37caa87ce016b8fd6e"
+    },
+    {
+      "path": "toolchain/proxy-http2.md",
+      "sha256": "84d05100913e0e42d054c5c38b0081e522e122d1cb1496e32269d7512afbe532"
+    },
+    {
+      "path": "toolchain/proxy-tls.md",
+      "sha256": "5123ad812096b4d6b30cad7f8155a4f41312e48c435d27e69080aa6366f151bf"
+    },
+    {
+      "path": "toolchain/read-first.md",
+      "sha256": "e5b5eff88bbb9c5c74de24d0ea7bd7a9de49087e0aa5482559f0a8974fb3750e"
+    },
+    {
+      "path": "toolchain/reader-guide.md",
+      "sha256": "931b1c59e111335612cb62d3c3686d3b7c3bd325dff5971fff8001f288806104"
+    },
+    {
+      "path": "toolchain/README.md",
+      "sha256": "335ae13c7b6679404fb74f3744120256fbdc8958bf89b253f62125b049e2288d"
+    },
+    {
+      "path": "toolchain/reporting-retest.md",
+      "sha256": "4a334c4d8894b1ca330fa61112b17cb6fa61649f8396c9d6ab724226abb1c806"
+    },
+    {
+      "path": "toolchain/source-notes.md",
+      "sha256": "7fa817714f52ad1b04c26aa13211d5d51b7e33e0f2508200113cb0dee3750c8b"
+    },
+    {
+      "path": "toolchain/target-scan-flow.md",
+      "sha256": "4b5290f06148e5ce4de999d4200728b86c3c5a3e46224ebad574e3dc5f03f821"
+    },
+    {
+      "path": "toolchain/traversal-boundaries-plan.md",
+      "sha256": "c57a92eb9e89f96a14f21e3a38e76acd41ade22a6f8fb25a7cbbb15efeeb3e0d"
+    },
+    {
+      "path": "toolchain/traversal-lab-plan.md",
+      "sha256": "829fb1aa17f6e3b7baf2f06a8026037421f963746ef11c19f76169859c2a360b"
+    },
+    {
+      "path": "toolchain/validation-framework.md",
+      "sha256": "2f206bb93eafad2cd6ea2663c9f020782db9c786443fc326dcebd32c1da98286"
+    }
+  ]
+}

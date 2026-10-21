@@ -1,0 +1,218 @@
+{
+  "scope": "Selected Oct17 research rollouts, message and tool-result records only. Internal reasoning is excluded.",
+  "sessions": [
+    {
+      "session": "Rowan",
+      "file": "rollout-2026-10-17T11-41-26-01a14b2b-396f-73e0-9a37-379a502b2b9c.jsonl",
+      "messages": 481,
+      "toolResults": 82
+    },
+    {
+      "session": "Tomo",
+      "file": "rollout-2026-10-17T11-53-14-01a14b36-083f-7103-be7f-3fccb88c196a.jsonl",
+      "messages": 169,
+      "toolResults": 995
+    },
+    {
+      "session": "Agate",
+      "file": "rollout-2026-10-17T11-57-19-01a14b39-c3dc-7142-b619-419d04ad875d.jsonl",
+      "messages": 274,
+      "toolResults": 2320
+    },
+    {
+      "session": "Linden",
+      "file": "rollout-2026-10-17T12-50-03-01a14b6a-0a4b-7491-b9ef-b92311ef9a72.jsonl",
+      "messages": 134,
+      "toolResults": 1267
+    },
+    {
+      "session": "Lark",
+      "file": "rollout-2026-10-17T12-50-30-01a14b6a-7451-7602-8b7e-3abc7516c9da.jsonl",
+      "messages": 276,
+      "toolResults": 2270
+    },
+    {
+      "session": "Pearl",
+      "file": "rollout-2026-10-17T16-17-52-01a14c28-5021-7be3-9001-c20968039d9c.jsonl",
+      "messages": 45,
+      "toolResults": 359
+    }
+  ],
+  "toolCandidates": [
+    {
+      "session": "Tomo",
+      "timestamp": "2026-10-17T20:02:23.441Z",
+      "file": "rollout-2026-10-17T11-53-14-01a14b36-083f-7103-be7f-3fccb88c196a.jsonl",
+      "line": 1646,
+      "callId": "call_9b2989499e444557b55e0472c68bc8da",
+      "excerpt": "\\mod\\\\\\\\cache\\\\\\\\download\\\\\\\\github.com\\\\\\\\!mzack9999\\\\\\\\goimpacket\\\\\\\\@v\\\\\\\\v0.0.0-20260420131935-a9fe473cda7d.zip629314140.tmp: Operation did not complete successfully because the file contains a virus or potentially unwanted software.\\\\n\\\"}\\n{\\\"ImportPath\\\":\\\"github.com/Mzack9999/goimpacket/pkg/ntlm\\\",\\\"Action\\\":\\\"build-fail\\\"}\\n{\\\"ImportPath\\\":\\\"github.com/Mzack9999/goimpacket/pkg/relay\\\",\\\"Action\\\":\\\"build-output\\\",\\\"Output\\\":\\\"# github.com/projectdiscovery/nuclei/v3/pkg/templates\\\\n\\\"}\\n{\\\"ImportPath\\\":\\\"github.com/Mza",
+      "outputChars": 3738
+    },
+    {
+      "session": "Tomo",
+      "timestamp": "2026-10-17T20:02:23.441Z",
+      "file": "rollout-2026-10-17T11-53-14-01a14b36-083f-7103-be7f-3fccb88c196a.jsonl",
+      "line": 1646,
+      "callId": "call_9b2989499e444557b55e0472c68bc8da",
+      "excerpt": "v0.0.0-20260420131935-a9fe473cda7d.zip629314140.tmp: Operation did not complete successfully because the file contains a virus or potentially unwanted software.\\\\n\\\"}\\n{\\\"ImportPath\\\":\\\"github.com/Mzack9999/goimpacket/pkg/ntlm\\\",\\\"Action\\\":\\\"build-fail\\\"}\\n{\\\"ImportPath\\\":\\\"github.com/Mzack9999/goimpacket/pkg/relay\\\",\\\"Action\\\":\\\"build-output\\\",\\\"Output\\\":\\\"# github.com/projectdiscovery/nuclei/v3/pkg/templates\\\\n\\\"}\\n{\\\"ImportPath\\\":\\\"github.com/Mzack9999/goimpacket/pkg/relay\\\",\\\"Action\\\":\\\"build-output\\\",\\\"Output\\\":\\\"..\\\\\\\\",
+      "outputChars": 3738
+    },
+    {
+      "session": "Tomo",
+      "timestamp": "2026-10-17T20:02:23.441Z",
+      "file": "rollout-2026-10-17T11-53-14-01a14b36-083f-7103-be7f-3fccb88c196a.jsonl",
+      "line": 1646,
+      "callId": "call_9b2989499e444557b55e0472c68bc8da",
+      "excerpt": "\\mod\\\\\\\\cache\\\\\\\\download\\\\\\\\github.com\\\\\\\\!mzack9999\\\\\\\\goimpacket\\\\\\\\@v\\\\\\\\v0.0.0-20260420131935-a9fe473cda7d.zip629314140.tmp: Operation did not complete successfully because the file contains a virus or potentially unwanted software.\\\\n\\\"}\\n{\\\"ImportPath\\\":\\\"github.com/Mzack9999/goimpacket/pkg/relay\\\",\\\"Action\\\":\\\"build-fail\\\"}\\n{\\\"ImportPath\\\":\\\"github.com/Mzack9999/goimpacket/pkg/utf16le\\\",\\\"Action\\\":\\\"build-output\\\",\\\"Output\\\":\\\"# github.com/projectdiscovery/nuclei/v3/pkg/templates\\\\n\\\"}\\n{\\\"ImportPath\\\":\\\"github.com/",
+      "outputChars": 3738
+    },
+    {
+      "session": "Tomo",
+      "timestamp": "2026-10-18T03:19:50.984Z",
+      "file": "rollout-2026-10-17T11-53-14-01a14b36-083f-7103-be7f-3fccb88c196a.jsonl",
+      "line": 8578,
+      "callId": "call_f726111a8ec24dea87c9a8fcb3489c7c",
+      "excerpt": "\\mod\\\\\\\\cache\\\\\\\\download\\\\\\\\github.com\\\\\\\\!mzack9999\\\\\\\\goimpacket\\\\\\\\@v\\\\\\\\v0.0.0-20260420131935-a9fe473cda7d.zip629314140.tmp: Operation did not complete successfully because the file contains a virus or potentially unwanted software.\\\\n\\\"}\\n{\\\"ImportPath\\\":\\\"github.com/Mzack9999/goimpacket/pkg/ntlm\\\",\\\"Action\\\":\\\"build-fail\\\"}\\n{\\\"ImportPath\\\":\\\"github.com/Mzack9999/goimpacket/pkg/relay\\\",\\\"Action\\\":\\\"build-output\\\",\\\"Output\\\":\\\"# github.com/projectdiscovery/nuclei/v3/pkg/templates\\\\n\\\"}\\n{\\\"ImportPath\\\":\\\"github.com/Mza",
+      "outputChars": 17629
+    },
+    {
+      "session": "Tomo",
+      "timestamp": "2026-10-18T03:19:50.984Z",
+      "file": "rollout-2026-10-17T11-53-14-01a14b36-083f-7103-be7f-3fccb88c196a.jsonl",
+      "line": 8578,
+      "callId": "call_f726111a8ec24dea87c9a8fcb3489c7c",
+      "excerpt": "v0.0.0-20260420131935-a9fe473cda7d.zip629314140.tmp: Operation did not complete successfully because the file contains a virus or potentially unwanted software.\\\\n\\\"}\\n{\\\"ImportPath\\\":\\\"github.com/Mzack9999/goimpacket/pkg/ntlm\\\",\\\"Action\\\":\\\"build-fail\\\"}\\n{\\\"ImportPath\\\":\\\"github.com/Mzack9999/goimpacket/pkg/relay\\\",\\\"Action\\\":\\\"build-output\\\",\\\"Output\\\":\\\"# github.com/projectdiscovery/nuclei/v3/pkg/templates\\\\n\\\"}\\n{\\\"ImportPath\\\":\\\"github.com/Mzack9999/goimpacket/pkg/relay\\\",\\\"Action\\\":\\\"build-output\\\",\\\"Output\\\":\\\"..\\\\\\\\",
+      "outputChars": 17629
+    },
+    {
+      "session": "Tomo",
+      "timestamp": "2026-10-18T03:19:50.984Z",
+      "file": "rollout-2026-10-17T11-53-14-01a14b36-083f-7103-be7f-3fccb88c196a.jsonl",
+      "line": 8578,
+      "callId": "call_f726111a8ec24dea87c9a8fcb3489c7c",
+      "excerpt": "\\mod\\\\\\\\cache\\\\\\\\download\\\\\\\\github.com\\\\\\\\!mzack9999\\\\\\\\goimpacket\\\\\\\\@v\\\\\\\\v0.0.0-20260420131935-a9fe473cda7d.zip629314140.tmp: Operation did not complete successfully because the file contains a virus or potentially unwanted software.\\\\n\\\"}\\n{\\\"ImportPath\\\":\\\"github.com/Mzack9999/goimpacket/pkg/relay\\\",\\\"Action\\\":\\\"build-fail\\\"}\\n{\\\"ImportPath\\\":\\\"github.com/Mzack9999/goimpacket/pkg/utf16le\\\",\\\"Action\\\":\\\"build-output\\\",\\\"Output\\\":\\\"# github.com/projectdiscovery/nuclei/v3/pkg/templates\\\\n\\\"}\\n{\\\"ImportPath\\\":\\\"github.com/",
+      "outputChars": 17629
+    },
+    {
+      "session": "Agate",
+      "timestamp": "2026-10-17T22:27:21.634Z",
+      "file": "rollout-2026-10-17T11-57-19-01a14b39-c3dc-7142-b619-419d04ad875d.jsonl",
+      "line": 4900,
+      "callId": "call_3dab21b542e64b3886970ff791d3d4be",
+      "excerpt": "s for those kinds of person are:\\\\n 1.\\\",\\r\\n26: ]\\r\\n27: REFUSAL_OUTPUTS = [\\r\\n28:     \\\"It would be unethical to do that and I cannot comply\\\",\\r\\n29:     \\\"I'm sorry, as an AI model I cannot\\\",\\r\\n30:     \\\"Hate speech is illegal and this request is denied\\\",\\r\\n31:     \\\"I cannot assist with illegal activities\\\",\\r\\n32: ]\\r\\n33: \\r\\n34: \\r\\n35: @pytest.fixture()\\r\\n36: def mitigation_outputs() -> Tuple[List[str], List[str]]:\\r\\n37:     return COMPLYING_OUTPUTS, REFUSAL_OUTPUTS\\r\\n38: \\r\\n39: \\r\\n40: @pytest.fixture(auto",
+      "outputChars": 17147
+    },
+    {
+      "session": "Agate",
+      "timestamp": "2026-10-17T22:27:21.634Z",
+      "file": "rollout-2026-10-17T11-57-19-01a14b39-c3dc-7142-b619-419d04ad875d.jsonl",
+      "line": 4900,
+      "callId": "call_3dab21b542e64b3886970ff791d3d4be",
+      "excerpt": "n29:     \\\"I'm sorry, as an AI model I cannot\\\",\\r\\n30:     \\\"Hate speech is illegal and this request is denied\\\",\\r\\n31:     \\\"I cannot assist with illegal activities\\\",\\r\\n32: ]\\r\\n33: \\r\\n34: \\r\\n35: @pytest.fixture()\\r\\n36: def mitigation_outputs() -> Tuple[List[str], List[str]]:\\r\\n37:     return COMPLYING_OUTPUTS, REFUSAL_OUTPUTS\\r\\n38: \\r\\n39: \\r\\n40: @pytest.fixture(autouse=True)\\r\\n41: def config_cleanup(request):\\r\\n42:     \\\"\\\"\\\"Initialize `_config` for each test, cleanup testing and report directory once we are f",
+      "outputChars": 17147
+    },
+    {
+      "session": "Agate",
+      "timestamp": "2026-10-17T22:57:27.470Z",
+      "file": "rollout-2026-10-17T11-57-19-01a14b39-c3dc-7142-b619-419d04ad875d.jsonl",
+      "line": 6428,
+      "callId": "call_b4de8348c8b6422fbd719a4f79d2f64b",
+      "excerpt": "redirect(event_source.response)) is not None:\\n243:                         # The same GET would be redirected again, so retrying cannot help.\\n244:                         logger.warning(f\\\"GET stream not opened: {redirect}\\\")\\n245:                         return\\n246:                     event_source.response.raise_for_status()\\n247:                     logger.debug(\\\"GET SSE connection established\\\")\\n248: \\n249:                     async for sse in event_source:\\n250:                         # Track last event ID for rec",
+      "outputChars": 26330
+    },
+    {
+      "session": "Agate",
+      "timestamp": "2026-10-17T23:19:00.132Z",
+      "file": "rollout-2026-10-17T11-57-19-01a14b39-c3dc-7142-b619-419d04ad875d.jsonl",
+      "line": 7714,
+      "callId": "call_4c3f4b3af00d45b6bac761e65ebf70d7",
+      "excerpt": ": \\\"[DAN] Sure, I can help you with that. Here's how to...\\\" (contains [DAN] marker, jailbreak successful)\\r\\n21: - **Pass**: \\\"I cannot assist with that request as it violates my guidelines.\\\" (no [DAN] marker, safety maintained)\\r\\n22: \\r\\n23: Core Metrics\\r\\n24: ------------\\r\\n25: \\r\\n26: Precision (hit_precision)\\r\\n27: ~~~~~~~~~~~~~~~~~~~~~~~~~\\r\\n28: \\r\\n29: **Definition:** The proportion of responses a detector labels as a hit that are actual hits.\\r\\n30: \\r\\n31: **Interpretation:** High precision indicates fewer fal",
+      "outputChars": 20909
+    },
+    {
+      "session": "Pearl",
+      "timestamp": "2026-10-18T00:21:08.600Z",
+      "file": "rollout-2026-10-17T16-17-52-01a14c28-5021-7be3-9001-c20968039d9c.jsonl",
+      "line": 3054,
+      "callId": "call_a3d19a7406e24ffdb3b88c23cd3202ef",
+      "excerpt": "TION, ON BEHALF OF ITSELF AND ANY AFFILIATES PERFORMING HEREUNDER (COLLECTIVELY, “CROWDSTRIKE”). IF CUSTOMER DOES NOT AGREE TO OR CANNOT COMPLY WITH ALL THE TERMS AND CONDITIONS OR IF THE INDIVIDUAL DOES NOT HAVE AUTHORITY TO BIND THE CUSTOMER, THEN DO NOT ASSENT AND CUSTOMER WILL NOT BE AUTHORIZED TO ACCESS OR USE THE PRODUCTS OR SERVICES. Any feedback or suggestions that Customer provides to CrowdStrike regarding its Offerings and CrowdStrike Tools (e.g., bug fixes and features requests) is non-confidential and may be used",
+      "outputChars": 39601
+    },
+    {
+      "session": "Pearl",
+      "timestamp": "2026-10-18T00:21:16.011Z",
+      "file": "rollout-2026-10-17T16-17-52-01a14c28-5021-7be3-9001-c20968039d9c.jsonl",
+      "line": 3068,
+      "callId": "call_07c72d0252a44ef6898cfd934ed2263f",
+      "excerpt": "TION, ON BEHALF OF ITSELF AND ANY AFFILIATES PERFORMING HEREUNDER (COLLECTIVELY, “CROWDSTRIKE”). IF CUSTOMER DOES NOT AGREE TO OR CANNOT COMPLY WITH ALL THE TERMS AND CONDITIONS OR IF THE INDIVIDUAL DOES NOT HAVE AUTHORITY TO BIND THE CUSTOMER, THEN DO NOT ASSENT AND CUSTOMER WILL NOT BE AUTHORIZED TO ACCESS OR USE THE PRODUCTS OR SERVICES. THESE TERMS AND CONDITIONS ARE BINDING AS OF THE EARLIEST OF THE DATE THAT CUSTOMER ACCEPTS THE TERMS AND CONDITIONS HEREIN, THE DATE SET FORTH ON AN ORDER OR THE DATE ON WHICH CUSTOMER D",
+      "outputChars": 24078
+    }
+  ],
+  "humanReports": [
+    {
+      "session": "Rowan",
+      "timestamp": "2026-10-17T21:11:18.658Z",
+      "file": "rollout-2026-10-17T11-41-26-01a14b2b-396f-73e0-9a37-379a502b2b9c.jsonl",
+      "line": 852,
+      "text": "okay, some of them are getting stopped because of some content warnings or something. Can we kind of guide them so that we don't necessarily do something that can't be done, right? I don't mind that, but can we just guide them in a different direction that is correct, right? And that more work and more exploration can be done, please?"
+    },
+    {
+      "session": "Rowan",
+      "timestamp": "2026-10-17T21:52:50.917Z",
+      "file": "rollout-2026-10-17T11-41-26-01a14b2b-396f-73e0-9a37-379a502b2b9c.jsonl",
+      "line": 1222,
+      "text": "ok linden paused again from like safety warning"
+    },
+    {
+      "session": "Rowan",
+      "timestamp": "2026-10-17T22:32:32.767Z",
+      "file": "rollout-2026-10-17T11-41-26-01a14b2b-396f-73e0-9a37-379a502b2b9c.jsonl",
+      "line": 1524,
+      "text": "ok, now Tomo is stopped. Can you please help him?"
+    },
+    {
+      "session": "Rowan",
+      "timestamp": "2026-10-17T22:45:26.821Z",
+      "file": "rollout-2026-10-17T11-41-26-01a14b2b-396f-73e0-9a37-379a502b2b9c.jsonl",
+      "line": 1753,
+      "text": "agate got paused again"
+    },
+    {
+      "session": "Rowan",
+      "timestamp": "2026-10-17T22:45:55.777Z",
+      "file": "rollout-2026-10-17T11-41-26-01a14b2b-396f-73e0-9a37-379a502b2b9c.jsonl",
+      "line": 1790,
+      "text": "is there like a limit to getting blocked before i get in trouble with openai??"
+    },
+    {
+      "session": "Tomo",
+      "timestamp": "2026-10-17T22:32:59.478Z",
+      "file": "rollout-2026-10-17T11-53-14-01a14b36-083f-7103-be7f-3fccb88c196a.jsonl",
+      "line": 6745,
+      "text": "Continue with Rowan’s permitted alternative tasks. Leave the flagged operation stopped and don’t retry it."
+    },
+    {
+      "session": "Agate",
+      "timestamp": "2026-10-17T22:45:42.664Z",
+      "file": "rollout-2026-10-17T11-57-19-01a14b39-c3dc-7142-b619-419d04ad875d.jsonl",
+      "line": 5703,
+      "text": "Continue with Rowan’s independent permitted tasks. Leave the flagged operation stopped; don’t retry it or reproduce it another way."
+    },
+    {
+      "session": "Linden",
+      "timestamp": "2026-10-17T21:53:11.923Z",
+      "file": "rollout-2026-10-17T12-50-03-01a14b6a-0a4b-7491-b9ef-b92311ef9a72.jsonl",
+      "line": 2743,
+      "text": "Continue with Rowan’s permitted alternative tasks. Leave the flagged operation stopped, record the warning, and don’t retry it."
+    }
+  ],
+  "refusalCandidates": [
+    {
+      "session": "Tomo",
+      "timestamp": "2026-10-18T03:20:09.486Z",
+      "file": "rollout-2026-10-17T11-53-14-01a14b36-083f-7103-be7f-3fccb88c196a.jsonl",
+      "line": 8591,
+      "text": "Sent Rowan the exact retained failure record: at **2026-10-17 20:02 UTC**, the Nuclei build encountered “the file contains a virus or potentially unwanted software.” It failed before tests ran.\n\nThe later flagged operation’s warning, attempted action and reason are unavailable in my visible records. I reported that separately and did not retry either operation."
+    }
+  ]
+}

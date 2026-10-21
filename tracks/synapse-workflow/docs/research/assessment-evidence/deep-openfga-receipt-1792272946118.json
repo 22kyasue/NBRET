@@ -1,0 +1,78 @@
+{
+  "at": "2026-10-17T21:36:02.454Z",
+  "scope": "actual SQLite adapter ReadChanges with inert synthetic database/sql driver; no SQLite engine, network or server",
+  "out": "C:\\Users\\kotar\\.codex\\research\\assessment-evidence-receipts\\openfga-1792272946117",
+  "command": {
+    "exe": "C:\\Users\\kotar\\githubprojects\\NBRET\\.tools\\security-research-go\\sdk\\go\\bin\\go.exe",
+    "args": [
+      "test",
+      "-p",
+      "2",
+      "-overlay",
+      "C:\\Users\\kotar\\.codex\\research\\assessment-evidence-receipts\\openfga-1792272946117\\overlay.json",
+      "./pkg/storage/sqlite",
+      "-run",
+      "^TestEvidence",
+      "-count=1",
+      "-json"
+    ],
+    "cwd": "C:/Users/kotar/.codex/research/openfga-20261017"
+  },
+  "toolchain": "go version go1.27.2 windows/amd64",
+  "environment": {
+    "GOTOOLCHAIN": "local",
+    "CGO_ENABLED": "0",
+    "GOPATH": "C:\\Users\\kotar\\githubprojects\\NBRET\\.tools\\security-research-go\\module-cache",
+    "GOCACHE": "C:/Users/kotar/.codex/research/assessment-evidence-receipts/openfga-1792267376264/build-cache",
+    "GOPROXY": "https://proxy.golang.org",
+    "GOSUMDB": "sum.golang.org"
+  },
+  "code": 0,
+  "signal": null,
+  "elapsedMs": 16373,
+  "sourceSha256": {
+    "go.mod": "6c5e972de64e7e06f544873a77ddf84de5d86100d1ae96be3555c04b62c10be8",
+    "go.sum": "c08837e3f91fe661b0ae2c0e3c561d4f39141b15f40433d7e6d924568b19aa03",
+    "pkg/storage/sqlite/sqlite.go": "e5837c5942fbcdc3856d036c32f5c82be917cfd60329aee97bbe8c21026b7cd2",
+    "pkg/storage/sqlite/tuple_iterator.go": "8f0422e27da1f68f442e42ff57ee9f4bd65724017332d76ec7a941b28a331dbf",
+    "pkg/storage/sqlcommon/sqlcommon.go": "f1275093c3c6612308d35e22219bdbf863a6005cb46418d0357df098f85e8366"
+  },
+  "fixtureSha256": "a0a65475ff1287780cd242274051d7334e9c6804223ffdcf2f1830aba9e7263f",
+  "fixturePath": "C:\\Users\\kotar\\githubprojects\\NBRET\\docs\\research\\assessment-evidence\\deep-openfga-changelog-lab_test.go",
+  "runnerSha256": "9f82759e40b6ae0145bbe9fd7ee6035937fda57ff099147308f9fbf1f481a297",
+  "overlaySha256": "dd0d60ac6b4f9a5c90262f7b303306af88fed716df9e50aaafaf95b556b58387",
+  "stdoutSha256": "5ec4dd0eb97c0469564453ffd4c0ac816e447761ae490dc196de56d7bc2e6361",
+  "stderrSha256": "466533c2b34a64e0e1da87c7858df93da23dfa213db89c2687766559758cae9c",
+  "tests": [
+    {
+      "Time": "2026-10-17T14:36:02.3674341-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/pkg/storage/sqlite",
+      "Test": "TestEvidenceChangelogTerminalErrors/query-error",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T14:36:02.3674341-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/pkg/storage/sqlite",
+      "Test": "TestEvidenceChangelogTerminalErrors/empty",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T14:36:02.3674341-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/pkg/storage/sqlite",
+      "Test": "TestEvidenceChangelogTerminalErrors/prefix",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T14:36:02.3674341-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/pkg/storage/sqlite",
+      "Test": "TestEvidenceChangelogTerminalErrors",
+      "Elapsed": 0
+    }
+  ],
+  "intervention": "researcher-authored synthetic driver with query/terminal-error controls; production adapter unchanged",
+  "cost": "no provider calls; unmetered local CPU/build dependency download, no monetary estimate"
+}

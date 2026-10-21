@@ -1,0 +1,102 @@
+{
+  "title": "Security, understood",
+  "subtitle": "A connected field guide to the research, built for learning and discussion.",
+  "topics": [
+    {
+      "id": "01", "slug": "firms", "group": "The landscape", "title": "What security firms actually do", "question": "What am I buying when I buy cybersecurity?",
+      "idea": "A product supplies capabilities. A managed service supplies people and operations around some capabilities. An assessment investigates a defined question. A provider may offer all three, under different contracts.",
+      "explain": ["Start with the responsibility split: who collects telemetry, who investigates, who decides, and who can act? A dashboard, a recommendation, an action request, and a confirmed endpoint change are different deliverables.", "For every company, connect its product names to an operational flow. The provider studies reconstruct documented inputs, analyst handoffs, approvals and action states. Undisclosed internal processes remain unknown."],
+      "nodes": [{"name":"Customer systems","detail":"Devices, identities and applications"},{"name":"Security product","detail":"Collect, detect and expose controls"},{"name":"Provider team","detail":"Investigate and escalate"},{"name":"Decision / approval","detail":"Customer or delegated authority"},{"name":"Action + verification","detail":"Contain, repair and check effect"}],
+      "diagramNote": "A teaching model of responsibilities, not a universal workflow or verified customer engagement.",
+      "contrast": {"a":"Service capability","b":"Observed outcome","left":"The provider documents a host-isolation action.","right":"The correct host actually became isolated, with the relevant network effects verified."},
+      "recall": "What questions would you ask before assuming a managed provider can automatically contain an incident?",
+      "answer": "Ask what actions are in scope, who authorizes them, which permissions are granted, what completion means, how effect is verified, and who handles rollback and recovery.",
+      "ask": "Walk me through topic 01 using one global provider and one Japanese provider. Explain the customer/provider boundary and separate documented mechanisms from inferred process.",
+      "sources": ["cybersecurity-firms/service-process-comparison.md","cybersecurity-firms/ai-evidence-matrix.md","cybersecurity-firms/selection.md","cybersecurity-firms/defender-action-contract.md"]
+    },
+    {
+      "id":"02", "slug":"assessments", "group":"The landscape", "title":"What an assessment is trying to establish", "question":"How do a scan, a pentest and a red-team exercise differ?",
+      "idea":"Choose the question before the tool. Finding suspicious conditions, validating a weakness, and assessing an organization’s ability to detect and respond are different objectives.",
+      "explain":["Scanners collect observations and apply checks. A penetration test adds scoped investigation and validation. Red teaming and adversary emulation study paths and defensive outcomes under agreed objectives. These categories overlap, but their deliverables do not become interchangeable.","An assessment needs scope, identities, intended properties, evidence and stated limits. A clean-looking report cannot establish what was inaccessible, skipped or never tested."],
+      "nodes":[{"name":"Question + scope","detail":"What should we establish?"},{"name":"Access + assumptions","detail":"Which roles, assets and vantage?"},{"name":"Test / investigate","detail":"Choose appropriate methods"},{"name":"Validate evidence","detail":"Rule out alternative explanations"},{"name":"Report + retest","detail":"State limits; check the repair"}],
+      "diagramNote":"The shared assessment lifecycle. Specific disciplines emphasize different questions and methods.",
+      "contrast":{"a":"Alert","b":"Validated finding","left":"A tool matched a condition.","right":"A scoped claim is supported by evidence, preconditions, a meaningful comparison and explicit limitations."},
+      "recall":"Why can two reports with the same number of findings provide very different assurance?",
+      "answer":"Their scope, access, test selection, validation quality, missed coverage and evidence can differ. Finding count is not a measure of thoroughness.",
+      "ask":"Explain topic 02 with the same fictional organization assessed by a scanner, a pentester and a red team. What changes in the objective and evidence?",
+      "sources":["security-landscape/discipline-map.md","security-landscape/standards.md","assessment-evidence/framework.md","assessment-evidence/incidents.md"]
+    },
+    {
+      "id":"03", "slug":"tools", "group":"The mechanisms", "title":"Follow the evidence through the toolchain", "question":"Why do practitioners use so many different tools?",
+      "idea":"Each tool makes one part of the environment observable or testable. Moving between tools changes the evidence representation, assumptions and possible losses.",
+      "explain":["Discovery tools describe reachability and responses from a particular vantage. Intercepting proxies expose application requests and responses. Packet tools decode captured traffic. Identity collectors build a model of relationships. Reporting tools consolidate observations and lifecycle state.","The handoff matters: a capture can omit traffic; a decoder can generate metadata; a graph can contain stale or incomplete relationships; an export can omit bodies. Always ask what was observed, transformed, inferred or excluded."],
+      "nodes":[{"name":"Reachability","detail":"Nmap / protocol observations"},{"name":"Application exchange","detail":"Burp / mitmproxy / clients"},{"name":"Packets + identities","detail":"Capture and collected relationships"},{"name":"Interpretation","detail":"Decode, model and query"},{"name":"Report / retest","detail":"Keep context and provenance"}],
+      "diagramNote":"A learning route across evidence types; practitioners need not run these tools in this order.",
+      "contrast":{"a":"Captured bytes","b":"Displayed field","left":"The retained input contains a particular sequence of bytes.","right":"A parser interpreted it, sometimes using defaults, context or generated metadata."},
+      "recall":"What could be lost when a proxy capture is exported and imported again?",
+      "answer":"Body or error state, connection details, encoding and provenance may change. Consult the exact format and the retained round-trip observations rather than assuming identity.",
+      "ask":"Teach topic 03 by following one request through a proxy, a packet view and a final report. At each handoff ask me what the evidence can still establish.",
+      "sources":["toolchain/read-first.md","toolchain/proxy-flow.md","toolchain/packet-dependencies.md","toolchain/identity-analysis.md","toolchain/reporting-retest.md"]
+    },
+    {
+      "id":"04", "slug":"connectivity", "group":"The mechanisms", "title":"Separate the network path from identity", "question":"What do VPNs, proxies and tunnels actually change?",
+      "idea":"A network address is a route-related observation, not a person, account or permission. Encryption, endpoint authentication and authorization answer separate questions.",
+      "explain":["An access VPN connects approved devices or users into a network. A mesh overlay adds identity and path management around private connectivity. An HTTP or SOCKS proxy carries selected application traffic. An SSH tunnel forwards a particular flow. DNS and other traffic may take separate paths.","To understand a setup, identify what is encrypted, where it terminates, who can observe it, which destinations are reachable and which subsystem enforces scope. A VPN does not supply permission to test a destination."],
+      "nodes":[{"name":"Application","detail":"Request and account identity"},{"name":"Selected path","detail":"Direct, proxy, tunnel or VPN"},{"name":"Egress + DNS","detail":"Subsystem-specific routing"},{"name":"Destination","detail":"Authenticates and authorizes"}],
+      "diagramNote":"A conceptual path. Actual DNS, transport and application flows can split and need separate tracing.",
+      "contrast":{"a":"Encryption","b":"Authorization","left":"Protects data on a defined connection.","right":"Determines whether this principal may perform this operation."},
+      "recall":"Why is rotating an address a weak basis for distinguishing legitimate users from bots?",
+      "answer":"Many users can share an address and one participant can use multiple addresses. Account/session identity and authorized behavior need separate controls; IP-only policies can create false positives.",
+      "ask":"Explain topic 04 by comparing a company VPN, an HTTP proxy and a mesh overlay. Draw the trust boundaries and tell me which traffic each covers.",
+      "sources":["toolchain/connectivity.md","toolchain/dns-flow.md","toolchain/nsock-flow.md","bots-swarms/model.md"]
+    },
+    {
+      "id":"05", "slug":"swarms", "group":"The mechanisms", "title":"How a fleet stays coordinated", "question":"What makes a swarm more than a collection of bots?",
+      "idea":"Coordination depends on ownership, shared state and failure handling. Queues and leases distribute work; retries, deduplication and cancellation determine what happens when reality diverges from the plan.",
+      "explain":["A controller admits work; a broker records and assigns it; workers claim leases and report outcomes. Heartbeats and renewal are observations of activity, not proof that effects are correct. An expired lease can allow another worker while the first is still acting.","Stopping intake, sending cancellation, terminating a task, releasing its lease and verifying that no work remains are different events. Account, session, device, worker and IP must also remain distinct for attribution and policy."],
+      "nodes":[{"name":"Controller","detail":"Admit jobs and set policy"},{"name":"Queue / broker","detail":"Persist, assign and retry"},{"name":"Worker lease","detail":"Temporary ownership"},{"name":"Task effects","detail":"External work may already occur"},{"name":"Outcome + evidence","detail":"State, receipt and reconciliation"}],
+      "diagramNote":"An ordinary authorized worker-fleet model. It is not a design for compromised-device botnets.",
+      "contrast":{"a":"Cancel requested","b":"Work is quiescent","left":"A control signal was sent or recorded.","right":"The relevant work has settled and no continuing effects remain within the verified boundary."},
+      "recall":"How can a retry duplicate an effect even when the queue has only one current owner?",
+      "answer":"The first worker may have performed an effect before losing its lease or acknowledgment. Ownership metadata cannot undo that effect; idempotency and reconciliation must address it.",
+      "ask":"Use topic 05 to walk me through a job whose worker loses contact after performing an effect. Ask me to predict what retry and cancellation do before explaining the answer.",
+      "sources":["bots-swarms/model.md","bots-swarms/continuation-checkpoint.md","bots-swarms/defense.md","bots-swarms/findings.md","bots-swarms/continuation.md"]
+    },
+    {
+      "id":"06", "slug":"evidence", "group":"Judgment", "title":"What would make this claim believable?", "question":"What is the difference between a result and proof?",
+      "idea":"A useful security claim has an intended property, a tested context, an oracle, retained evidence and limits. A tool’s success label is only one input.",
+      "explain":["An oracle is the rule used to judge success. If a benchmark checks the wrong recipient, an alert count is mistaken for test completion, or a mock supplies the behavior it later asserts, a passing result can answer the wrong question.","Keep observations, source-established behavior, synthetic runtime results, hypotheses and corrected findings separate. Finite tests demonstrate selected outcomes; they cannot prove the absence of every vulnerability."],
+      "nodes":[{"name":"Intended property","detail":"What must be true?"},{"name":"Context + test","detail":"Role, version, scope and state"},{"name":"Oracle","detail":"How do we judge the result?"},{"name":"Evidence","detail":"Source, observations and controls"},{"name":"Bounded claim","detail":"State uncertainty and counterevidence"}],
+      "diagramNote":"The claim-to-evidence chain is a learning framework, not a security certification.",
+      "contrast":{"a":"Completed","b":"Established","left":"A process reached a terminal bookkeeping state.","right":"The intended property was checked with adequate evidence under the stated conditions."},
+      "recall":"A report says PASS. What five things do you need to know before trusting it?",
+      "answer":"What property was checked, what ran and with which access, what oracle was used, what evidence and controls were retained, and what was skipped or remains unknown.",
+      "ask":"Quiz me on topic 06 with a suspicious success label. Help me identify the oracle, evidence unit, missing controls and strongest justified claim.",
+      "sources":["assessment-evidence/framework.md","assessment-evidence/executable-claims.md","security-landscape/deep-review/report-interpretation.md","assessment-evidence/deep-agentdojo.md","assessment-evidence/deep-garak.md"]
+    },
+    {
+      "id":"07", "slug":"agents", "group":"Judgment", "title":"Where AI enters the security workflow", "question":"What changes when a model can plan and use tools?",
+      "idea":"Separate generating suggestions from selecting tools, executing actions and verifying effects. Every added capability changes the control and evidence requirements.",
+      "explain":["Statistical detection, generative summarization and action-taking agents are different mechanisms. Trace the inputs, model output, permitted tools, approval step, actual action, retained evidence and recovery path. Instructions in a prompt are not the same as code-enforced permissions.","An agent can quote a tool result without proving the effect, treat a preview as complete output, or resume from a journal without establishing exactly-once external execution. Evaluate each boundary rather than treating the word agent as a capability guarantee."],
+      "nodes":[{"name":"Input + context","detail":"Trusted and untrusted material"},{"name":"Model / planner","detail":"Suggest or select next work"},{"name":"Tool boundary","detail":"Permissions and approvals"},{"name":"Action + observation","detail":"Real effect versus returned text"},{"name":"Independent check","detail":"Evidence, recovery and limits"}],
+      "diagramNote":"A conceptual agent workflow; the linked studies identify which boundaries were actually inspected or tested.",
+      "contrast":{"a":"Grounded text","b":"Verified effect","left":"An output quotes or refers to an observation.","right":"An appropriate independent check establishes the intended state change."},
+      "recall":"Why does replaying a persisted journal not automatically establish exactly-once execution?",
+      "answer":"An effect can occur before its receipt is persisted, or a journal can record an intention without a completed effect. Recovery requires reconciliation with external state.",
+      "ask":"Explain topic 07 using a security assistant that can isolate a host. Identify suggestion, permission, action request, completion and verified effect without assuming any are equivalent.",
+      "sources":["assessment-evidence/deep-pentestgpt.md","assessment-evidence/sdk-boundaries-continuation.md","assessment-evidence/agent-recovery-continuation.md","cybersecurity-firms/ai-evidence-matrix.md","cybersecurity-firms/defender-action-contract.md"]
+    },
+    {
+      "id":"08", "slug":"defense", "group":"Judgment", "title":"Close the loop: detection, response and repair", "question":"How do we know the work improved security?",
+      "idea":"An action, an observable event, a detection, a response and a verified repair are separate milestones. A strong assessment connects them rather than stopping at a report.",
+      "explain":["Defender validation asks whether telemetry existed, an alert fired, an analyst understood it, containment worked and recovery was possible. A technique label or successful command cannot establish the whole chain.","Retesting needs matching identity, environment and scope. A finding disappearing from an import might reflect filters, collection failure or changed matching—not a repaired property. Preserve an executable claim when practical, and record when its evidence becomes stale."],
+      "nodes":[{"name":"Bounded activity","detail":"Authorized test or incident"},{"name":"Telemetry","detail":"Was it observable?"},{"name":"Detection + triage","detail":"Was it noticed and understood?"},{"name":"Response / repair","detail":"Contain and change the cause"},{"name":"Revalidation","detail":"Same property, fresh evidence"}],
+      "diagramNote":"Each stage needs its own evidence; this route does not imply a tested end-to-end defensive exercise.",
+      "contrast":{"a":"Closed finding","b":"Verified repair","left":"A workflow changed the finding’s state.","right":"A relevant retest established the intended property in the repaired environment."},
+      "recall":"What evidence would distinguish a fixed vulnerability from a scanner that simply failed to collect the relevant data?",
+      "answer":"Demonstrate successful collection and the same intended property under matching roles and scope, with before/after controls and explicit error/coverage status.",
+      "ask":"Connect topics 02, 06 and 08 using one synthetic incident. Walk me through assessment, detection, response and a trustworthy retest, then ask me to explain the weak link.",
+      "sources":["assessment-evidence/deep-atomic.md","assessment-evidence/incidents.md","assessment-evidence/executable-claims.md","toolchain/reporting-retest.md","cybersecurity-firms/service-process-comparison.md"]
+    }
+  ]
+}

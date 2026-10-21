@@ -1,0 +1,534 @@
+[
+  {
+    "project": "NBRET",
+    "path": "src/scope.mjs",
+    "commit": null,
+    "workingTree": true,
+    "sha256": "4a949e59c99b150a019eab8dd3aac5415948dfac6a95f68ca9888bce708b4cac",
+    "lines": 22,
+    "readDate": "2026-10-17",
+    "coverage": "complete file; bounded rereads where earlier output truncated",
+    "readRanges": [
+      [
+        1,
+        22
+      ]
+    ],
+    "original": "C:\\Users\\kotar\\githubprojects\\NBRET\\src\\scope.mjs",
+    "immutableCopy": "C:\\Users\\kotar\\githubprojects\\NBRET\\runs\\security-research-20261017\\source-files\\NBRET--src--scope.mjs",
+    "validation": "Focused lab/tests where documented; reading alone is not runtime proof"
+  },
+  {
+    "project": "NBRET",
+    "path": "src/http.mjs",
+    "commit": null,
+    "workingTree": true,
+    "sha256": "be2d47f1ad59ce3237bdd4e2e567556b39b3532def402312209ebdfe138690fb",
+    "lines": 57,
+    "readDate": "2026-10-17",
+    "coverage": "complete file; bounded rereads where earlier output truncated",
+    "readRanges": [
+      [
+        1,
+        57
+      ]
+    ],
+    "original": "C:\\Users\\kotar\\githubprojects\\NBRET\\src\\http.mjs",
+    "immutableCopy": "C:\\Users\\kotar\\githubprojects\\NBRET\\runs\\security-research-20261017\\source-files\\NBRET--src--http.mjs",
+    "validation": "Focused lab/tests where documented; reading alone is not runtime proof"
+  },
+  {
+    "project": "NBRET",
+    "path": "src/probe.mjs",
+    "commit": null,
+    "workingTree": true,
+    "sha256": "62c6ba4d3eb5789aa803068f7723eed50bc2d7ea4d2c71652c6bb192bae51873",
+    "lines": 112,
+    "readDate": "2026-10-17",
+    "coverage": "complete file; bounded rereads where earlier output truncated",
+    "readRanges": [
+      [
+        1,
+        112
+      ]
+    ],
+    "original": "C:\\Users\\kotar\\githubprojects\\NBRET\\src\\probe.mjs",
+    "immutableCopy": "C:\\Users\\kotar\\githubprojects\\NBRET\\runs\\security-research-20261017\\source-files\\NBRET--src--probe.mjs",
+    "validation": "Focused lab/tests where documented; reading alone is not runtime proof"
+  },
+  {
+    "project": "NBRET",
+    "path": "src/assertions.mjs",
+    "commit": null,
+    "workingTree": true,
+    "sha256": "677b156f97735ce16019cb1315f02374506236d2d157ab8b81f7f5771fcd6774",
+    "lines": 75,
+    "readDate": "2026-10-17",
+    "coverage": "complete file; bounded rereads where earlier output truncated",
+    "readRanges": [
+      [
+        1,
+        75
+      ]
+    ],
+    "original": "C:\\Users\\kotar\\githubprojects\\NBRET\\src\\assertions.mjs",
+    "immutableCopy": "C:\\Users\\kotar\\githubprojects\\NBRET\\runs\\security-research-20261017\\source-files\\NBRET--src--assertions.mjs",
+    "validation": "Focused lab/tests where documented; reading alone is not runtime proof"
+  },
+  {
+    "project": "NBRET",
+    "path": "src/checks.mjs",
+    "commit": null,
+    "workingTree": true,
+    "sha256": "301dca7083116a9f1d06aeb7861bac6f3f3f83fcf232b5566eb3bf186ec69682",
+    "lines": 109,
+    "readDate": "2026-10-17",
+    "coverage": "complete file; bounded rereads where earlier output truncated",
+    "readRanges": [
+      [
+        1,
+        109
+      ]
+    ],
+    "original": "C:\\Users\\kotar\\githubprojects\\NBRET\\src\\checks.mjs",
+    "immutableCopy": "C:\\Users\\kotar\\githubprojects\\NBRET\\runs\\security-research-20261017\\source-files\\NBRET--src--checks.mjs",
+    "validation": "Focused lab/tests where documented; reading alone is not runtime proof"
+  },
+  {
+    "project": "NBRET",
+    "path": "test/scope.test.mjs",
+    "commit": null,
+    "workingTree": true,
+    "sha256": "6ae3ef12a600e5d17ce4e64ad33b21ebd7433b7eac63db58af7de5e0ebc2ce59",
+    "lines": 18,
+    "readDate": "2026-10-17",
+    "coverage": "complete file; bounded rereads where earlier output truncated",
+    "readRanges": [
+      [
+        1,
+        18
+      ]
+    ],
+    "original": "C:\\Users\\kotar\\githubprojects\\NBRET\\test\\scope.test.mjs",
+    "immutableCopy": "C:\\Users\\kotar\\githubprojects\\NBRET\\runs\\security-research-20261017\\source-files\\NBRET--test--scope.test.mjs",
+    "validation": "Focused lab/tests where documented; reading alone is not runtime proof"
+  },
+  {
+    "project": "NBRET",
+    "path": "test/testing.test.mjs",
+    "commit": null,
+    "workingTree": true,
+    "sha256": "9d15fb0844b3d326e7d840cbb39123680a7f1b6938eca4f62c33443388b0de66",
+    "lines": 184,
+    "readDate": "2026-10-17",
+    "coverage": "complete file; bounded rereads where earlier output truncated",
+    "readRanges": [
+      [
+        1,
+        184
+      ]
+    ],
+    "original": "C:\\Users\\kotar\\githubprojects\\NBRET\\test\\testing.test.mjs",
+    "immutableCopy": "C:\\Users\\kotar\\githubprojects\\NBRET\\runs\\security-research-20261017\\source-files\\NBRET--test--testing.test.mjs",
+    "validation": "Focused lab/tests where documented; reading alone is not runtime proof"
+  },
+  {
+    "project": "NBRET",
+    "path": "src/capture.mjs",
+    "commit": null,
+    "workingTree": true,
+    "sha256": "53c9b1be8ee9a44c2d7bf95c59ec78d3b6073239c480f580f29158a2860c0dc5",
+    "lines": 249,
+    "readDate": "2026-10-17",
+    "coverage": "partial contiguous ranges",
+    "readRanges": [
+      [
+        1,
+        100
+      ]
+    ],
+    "original": "C:\\Users\\kotar\\githubprojects\\NBRET\\src\\capture.mjs",
+    "immutableCopy": "C:\\Users\\kotar\\githubprojects\\NBRET\\runs\\security-research-20261017\\source-files\\NBRET--src--capture.mjs",
+    "validation": "Focused lab/tests where documented; reading alone is not runtime proof"
+  },
+  {
+    "project": "garak",
+    "path": "garak/harnesses/base.py",
+    "commit": "cc1215c5c301a69f115b0b2b7ef8e4172ae2e7fc",
+    "workingTree": false,
+    "sha256": "7eae991a48913189af1fac470c6bf2b80658d0f5f61c1513d91d0341aef20a71",
+    "lines": 302,
+    "readDate": "2026-10-17",
+    "coverage": "complete file; bounded rereads where earlier output truncated",
+    "readRanges": [
+      [
+        1,
+        302
+      ]
+    ],
+    "original": "C:\\Users\\kotar\\.codex\\research\\garak\\garak\\harnesses\\base.py",
+    "immutableCopy": "C:\\Users\\kotar\\githubprojects\\NBRET\\runs\\security-research-20261017\\source-files\\garak--garak--harnesses--base.py",
+    "validation": "Source-only; upstream tests not executed"
+  },
+  {
+    "project": "garak",
+    "path": "garak/evaluators/base.py",
+    "commit": "cc1215c5c301a69f115b0b2b7ef8e4172ae2e7fc",
+    "workingTree": false,
+    "sha256": "d1df7dddc95a70970bb2b994d7ab5e404462b59934b99935e9047d34f57e815c",
+    "lines": 544,
+    "readDate": "2026-10-17",
+    "coverage": "complete file; bounded rereads where earlier output truncated",
+    "readRanges": [
+      [
+        1,
+        544
+      ]
+    ],
+    "original": "C:\\Users\\kotar\\.codex\\research\\garak\\garak\\evaluators\\base.py",
+    "immutableCopy": "C:\\Users\\kotar\\githubprojects\\NBRET\\runs\\security-research-20261017\\source-files\\garak--garak--evaluators--base.py",
+    "validation": "Source-only; upstream tests not executed"
+  },
+  {
+    "project": "garak",
+    "path": "garak/generators/test.py",
+    "commit": "cc1215c5c301a69f115b0b2b7ef8e4172ae2e7fc",
+    "workingTree": false,
+    "sha256": "f15214680d2cee6276a69a391175e201f6185cabd546395272c6286bc50a52a1",
+    "lines": 208,
+    "readDate": "2026-10-17",
+    "coverage": "complete file; bounded rereads where earlier output truncated",
+    "readRanges": [
+      [
+        1,
+        208
+      ]
+    ],
+    "original": "C:\\Users\\kotar\\.codex\\research\\garak\\garak\\generators\\test.py",
+    "immutableCopy": "C:\\Users\\kotar\\githubprojects\\NBRET\\runs\\security-research-20261017\\source-files\\garak--garak--generators--test.py",
+    "validation": "Source-only; upstream tests not executed"
+  },
+  {
+    "project": "garak",
+    "path": "garak/probes/test.py",
+    "commit": "cc1215c5c301a69f115b0b2b7ef8e4172ae2e7fc",
+    "workingTree": false,
+    "sha256": "056cba5a8dfc1d98e248653b3eeb3d6ec29198731dfaf27c0b791be6957f041c",
+    "lines": 50,
+    "readDate": "2026-10-17",
+    "coverage": "complete file; bounded rereads where earlier output truncated",
+    "readRanges": [
+      [
+        1,
+        50
+      ]
+    ],
+    "original": "C:\\Users\\kotar\\.codex\\research\\garak\\garak\\probes\\test.py",
+    "immutableCopy": "C:\\Users\\kotar\\githubprojects\\NBRET\\runs\\security-research-20261017\\source-files\\garak--garak--probes--test.py",
+    "validation": "Source-only; upstream tests not executed"
+  },
+  {
+    "project": "garak",
+    "path": "garak/detectors/always.py",
+    "commit": "cc1215c5c301a69f115b0b2b7ef8e4172ae2e7fc",
+    "workingTree": false,
+    "sha256": "afc8fa2b3fb1b40274f4606b484365e42c7d54d5e7237aed98c6886d41ea49af",
+    "lines": 55,
+    "readDate": "2026-10-17",
+    "coverage": "complete file; bounded rereads where earlier output truncated",
+    "readRanges": [
+      [
+        1,
+        55
+      ]
+    ],
+    "original": "C:\\Users\\kotar\\.codex\\research\\garak\\garak\\detectors\\always.py",
+    "immutableCopy": "C:\\Users\\kotar\\githubprojects\\NBRET\\runs\\security-research-20261017\\source-files\\garak--garak--detectors--always.py",
+    "validation": "Source-only; upstream tests not executed"
+  },
+  {
+    "project": "garak",
+    "path": "tests/harnesses/test_harness_intent_plugin_cache.py",
+    "commit": "cc1215c5c301a69f115b0b2b7ef8e4172ae2e7fc",
+    "workingTree": false,
+    "sha256": "7e681d98b35d89e6b73089f583c0c15e3da76073562c2bba037516c3521cc918",
+    "lines": 146,
+    "readDate": "2026-10-17",
+    "coverage": "complete file; bounded rereads where earlier output truncated",
+    "readRanges": [
+      [
+        1,
+        146
+      ]
+    ],
+    "original": "C:\\Users\\kotar\\.codex\\research\\garak\\tests\\harnesses\\test_harness_intent_plugin_cache.py",
+    "immutableCopy": "C:\\Users\\kotar\\githubprojects\\NBRET\\runs\\security-research-20261017\\source-files\\garak--tests--harnesses--test_harness_intent_plugin_cache.py",
+    "validation": "Source-only; upstream tests not executed"
+  },
+  {
+    "project": "garak",
+    "path": "tests/evaluators/test_base.py",
+    "commit": "cc1215c5c301a69f115b0b2b7ef8e4172ae2e7fc",
+    "workingTree": false,
+    "sha256": "158810e8254d2ff9b0659ff235298b9b8303d222371595096c8c3cfd2d6b8fa8",
+    "lines": 185,
+    "readDate": "2026-10-17",
+    "coverage": "complete file; bounded rereads where earlier output truncated",
+    "readRanges": [
+      [
+        1,
+        185
+      ]
+    ],
+    "original": "C:\\Users\\kotar\\.codex\\research\\garak\\tests\\evaluators\\test_base.py",
+    "immutableCopy": "C:\\Users\\kotar\\githubprojects\\NBRET\\runs\\security-research-20261017\\source-files\\garak--tests--evaluators--test_base.py",
+    "validation": "Source-only; upstream tests not executed"
+  },
+  {
+    "project": "garak",
+    "path": "garak/probes/base.py",
+    "commit": "cc1215c5c301a69f115b0b2b7ef8e4172ae2e7fc",
+    "workingTree": false,
+    "sha256": "5dc711b2cab53fdad7a7d8edd33c66cba94c7919b1ccf79bacd568ad8356f82c",
+    "lines": 969,
+    "readDate": "2026-10-17",
+    "coverage": "partial contiguous ranges",
+    "readRanges": [
+      [
+        301,
+        502
+      ]
+    ],
+    "original": "C:\\Users\\kotar\\.codex\\research\\garak\\garak\\probes\\base.py",
+    "immutableCopy": "C:\\Users\\kotar\\githubprojects\\NBRET\\runs\\security-research-20261017\\source-files\\garak--garak--probes--base.py",
+    "validation": "Source-only; upstream tests not executed"
+  },
+  {
+    "project": "garak",
+    "path": "garak/generators/base.py",
+    "commit": "cc1215c5c301a69f115b0b2b7ef8e4172ae2e7fc",
+    "workingTree": false,
+    "sha256": "4a077ea08972780f24328eb120a86e1f2252a7edc4182db2f6ea6417b458b7ce",
+    "lines": 258,
+    "readDate": "2026-10-17",
+    "coverage": "partial contiguous ranges",
+    "readRanges": [
+      [
+        121,
+        258
+      ]
+    ],
+    "original": "C:\\Users\\kotar\\.codex\\research\\garak\\garak\\generators\\base.py",
+    "immutableCopy": "C:\\Users\\kotar\\githubprojects\\NBRET\\runs\\security-research-20261017\\source-files\\garak--garak--generators--base.py",
+    "validation": "Source-only; upstream tests not executed"
+  },
+  {
+    "project": "PentestGPT",
+    "path": "README.md",
+    "commit": "e8b1bb77d1ac00329675cec3b060aba971ec1ac8",
+    "workingTree": false,
+    "sha256": "83a9184f68c25797e4e5c54939e3fb10c04592c1d689a346eeae687d166c7722",
+    "lines": 290,
+    "readDate": "2026-10-17",
+    "coverage": "complete file; bounded rereads where earlier output truncated",
+    "readRanges": [
+      [
+        1,
+        290
+      ]
+    ],
+    "original": "C:\\Users\\kotar\\.codex\\research\\pentestgpt-20261017\\README.md",
+    "immutableCopy": "C:\\Users\\kotar\\githubprojects\\NBRET\\runs\\security-research-20261017\\source-files\\PentestGPT--README.md",
+    "validation": "Source-only; upstream tests not executed"
+  },
+  {
+    "project": "PentestGPT",
+    "path": "pyproject.toml",
+    "commit": "e8b1bb77d1ac00329675cec3b060aba971ec1ac8",
+    "workingTree": false,
+    "sha256": "6a153e637e32e627e9bce4c5ca8c3aeced613aeb367bd193c03498b77e905d0d",
+    "lines": 151,
+    "readDate": "2026-10-17",
+    "coverage": "complete file; bounded rereads where earlier output truncated",
+    "readRanges": [
+      [
+        1,
+        151
+      ]
+    ],
+    "original": "C:\\Users\\kotar\\.codex\\research\\pentestgpt-20261017\\pyproject.toml",
+    "immutableCopy": "C:\\Users\\kotar\\githubprojects\\NBRET\\runs\\security-research-20261017\\source-files\\PentestGPT--pyproject.toml",
+    "validation": "Source-only; upstream tests not executed"
+  },
+  {
+    "project": "PentestGPT",
+    "path": "LICENSE.md",
+    "commit": "e8b1bb77d1ac00329675cec3b060aba971ec1ac8",
+    "workingTree": false,
+    "sha256": "ec04c21b7ac5a83b3504c2b96662fa65b4a3b6b0812871818c8ec55bbd6e60b8",
+    "lines": 22,
+    "readDate": "2026-10-17",
+    "coverage": "complete file; bounded rereads where earlier output truncated",
+    "readRanges": [
+      [
+        1,
+        22
+      ]
+    ],
+    "original": "C:\\Users\\kotar\\.codex\\research\\pentestgpt-20261017\\LICENSE.md",
+    "immutableCopy": "C:\\Users\\kotar\\githubprojects\\NBRET\\runs\\security-research-20261017\\source-files\\PentestGPT--LICENSE.md",
+    "validation": "Source-only; upstream tests not executed"
+  },
+  {
+    "project": "PentestGPT",
+    "path": "pentestgpt_agent/pyproject.toml",
+    "commit": "e8b1bb77d1ac00329675cec3b060aba971ec1ac8",
+    "workingTree": false,
+    "sha256": "42e416baa5b3d12b4b095beaecfb237baf995905e5cd0ac5a6bf3ab8a2f2c244",
+    "lines": 62,
+    "readDate": "2026-10-17",
+    "coverage": "complete file; bounded rereads where earlier output truncated",
+    "readRanges": [
+      [
+        1,
+        62
+      ]
+    ],
+    "original": "C:\\Users\\kotar\\.codex\\research\\pentestgpt-20261017\\pentestgpt_agent\\pyproject.toml",
+    "immutableCopy": "C:\\Users\\kotar\\githubprojects\\NBRET\\runs\\security-research-20261017\\source-files\\PentestGPT--pentestgpt_agent--pyproject.toml",
+    "validation": "Source-only; upstream tests not executed"
+  },
+  {
+    "project": "PentestGPT",
+    "path": "pentestgpt_agent/src/pentestgpt_agent/agents.py",
+    "commit": "e8b1bb77d1ac00329675cec3b060aba971ec1ac8",
+    "workingTree": false,
+    "sha256": "45916f160f6691d66bf4e2e568eac29686098701b79a60214f9ea79aa73944c7",
+    "lines": 641,
+    "readDate": "2026-10-17",
+    "coverage": "complete file; bounded rereads where earlier output truncated",
+    "readRanges": [
+      [
+        1,
+        641
+      ]
+    ],
+    "original": "C:\\Users\\kotar\\.codex\\research\\pentestgpt-20261017\\pentestgpt_agent\\src\\pentestgpt_agent\\agents.py",
+    "immutableCopy": "C:\\Users\\kotar\\githubprojects\\NBRET\\runs\\security-research-20261017\\source-files\\PentestGPT--pentestgpt_agent--src--pentestgpt_agent--agents.py",
+    "validation": "Source-only; upstream tests not executed"
+  },
+  {
+    "project": "PentestGPT",
+    "path": "pentestgpt_agent/src/pentestgpt_agent/execution.py",
+    "commit": "e8b1bb77d1ac00329675cec3b060aba971ec1ac8",
+    "workingTree": false,
+    "sha256": "6b4bb5d2152a22ad2b43352f603b969ce550efa4be9e34028a8528b30860d379",
+    "lines": 392,
+    "readDate": "2026-10-17",
+    "coverage": "complete file; bounded rereads where earlier output truncated",
+    "readRanges": [
+      [
+        1,
+        392
+      ]
+    ],
+    "original": "C:\\Users\\kotar\\.codex\\research\\pentestgpt-20261017\\pentestgpt_agent\\src\\pentestgpt_agent\\execution.py",
+    "immutableCopy": "C:\\Users\\kotar\\githubprojects\\NBRET\\runs\\security-research-20261017\\source-files\\PentestGPT--pentestgpt_agent--src--pentestgpt_agent--execution.py",
+    "validation": "Source-only; upstream tests not executed"
+  },
+  {
+    "project": "PentestGPT",
+    "path": "pentestgpt_agent/src/pentestgpt_agent/loop.py",
+    "commit": "e8b1bb77d1ac00329675cec3b060aba971ec1ac8",
+    "workingTree": false,
+    "sha256": "09d94e2c8efc8d82f85bd79e43aef46778a9edd81e36b5890b1963559014d76e",
+    "lines": 315,
+    "readDate": "2026-10-17",
+    "coverage": "complete file; bounded rereads where earlier output truncated",
+    "readRanges": [
+      [
+        1,
+        315
+      ]
+    ],
+    "original": "C:\\Users\\kotar\\.codex\\research\\pentestgpt-20261017\\pentestgpt_agent\\src\\pentestgpt_agent\\loop.py",
+    "immutableCopy": "C:\\Users\\kotar\\githubprojects\\NBRET\\runs\\security-research-20261017\\source-files\\PentestGPT--pentestgpt_agent--src--pentestgpt_agent--loop.py",
+    "validation": "Source-only; upstream tests not executed"
+  },
+  {
+    "project": "PentestGPT",
+    "path": "pentestgpt_agent/src/pentestgpt_agent/trial.py",
+    "commit": "e8b1bb77d1ac00329675cec3b060aba971ec1ac8",
+    "workingTree": false,
+    "sha256": "e35840c7e57f4386ff09948a3a5ec0adc28f60b6d2d03bdc360fd43907804854",
+    "lines": 367,
+    "readDate": "2026-10-17",
+    "coverage": "partial contiguous ranges",
+    "readRanges": [
+      [
+        1,
+        120
+      ]
+    ],
+    "original": "C:\\Users\\kotar\\.codex\\research\\pentestgpt-20261017\\pentestgpt_agent\\src\\pentestgpt_agent\\trial.py",
+    "immutableCopy": "C:\\Users\\kotar\\githubprojects\\NBRET\\runs\\security-research-20261017\\source-files\\PentestGPT--pentestgpt_agent--src--pentestgpt_agent--trial.py",
+    "validation": "Source-only; upstream tests not executed"
+  },
+  {
+    "project": "PentestGPT",
+    "path": "pentestgpt_agent/src/pentestgpt_agent/trace.py",
+    "commit": "e8b1bb77d1ac00329675cec3b060aba971ec1ac8",
+    "workingTree": false,
+    "sha256": "5b005cad44cceeb9862a0db16f426bd6fd05ee35d658f195d176cae2ee5def80",
+    "lines": 437,
+    "readDate": "2026-10-17",
+    "coverage": "partial contiguous ranges",
+    "readRanges": [
+      [
+        321,
+        437
+      ]
+    ],
+    "original": "C:\\Users\\kotar\\.codex\\research\\pentestgpt-20261017\\pentestgpt_agent\\src\\pentestgpt_agent\\trace.py",
+    "immutableCopy": "C:\\Users\\kotar\\githubprojects\\NBRET\\runs\\security-research-20261017\\source-files\\PentestGPT--pentestgpt_agent--src--pentestgpt_agent--trace.py",
+    "validation": "Source-only; upstream tests not executed"
+  },
+  {
+    "project": "PentestGPT",
+    "path": "pentestgpt_agent/src/pentestgpt_agent/plan.py",
+    "commit": "e8b1bb77d1ac00329675cec3b060aba971ec1ac8",
+    "workingTree": false,
+    "sha256": "cf0faacb06529efe632b7047404f6e46d62860339a10bc981e835308c64e8b32",
+    "lines": 345,
+    "readDate": "2026-10-17",
+    "coverage": "partial contiguous ranges",
+    "readRanges": [
+      [
+        151,
+        220
+      ]
+    ],
+    "original": "C:\\Users\\kotar\\.codex\\research\\pentestgpt-20261017\\pentestgpt_agent\\src\\pentestgpt_agent\\plan.py",
+    "immutableCopy": "C:\\Users\\kotar\\githubprojects\\NBRET\\runs\\security-research-20261017\\source-files\\PentestGPT--pentestgpt_agent--src--pentestgpt_agent--plan.py",
+    "validation": "Source-only; upstream tests not executed"
+  },
+  {
+    "project": "PentestGPT",
+    "path": "pentestgpt_agent/tests/test_execution.py",
+    "commit": "e8b1bb77d1ac00329675cec3b060aba971ec1ac8",
+    "workingTree": false,
+    "sha256": "8c287d6122687c4d28e9ab6d53e8aabe0311f89982004a3feef3eb758c95d272",
+    "lines": 1014,
+    "readDate": "2026-10-17",
+    "coverage": "partial contiguous ranges",
+    "readRanges": [
+      [
+        1,
+        220
+      ]
+    ],
+    "original": "C:\\Users\\kotar\\.codex\\research\\pentestgpt-20261017\\pentestgpt_agent\\tests\\test_execution.py",
+    "immutableCopy": "C:\\Users\\kotar\\githubprojects\\NBRET\\runs\\security-research-20261017\\source-files\\PentestGPT--pentestgpt_agent--tests--test_execution.py",
+    "validation": "Source-only; upstream tests not executed"
+  }
+]

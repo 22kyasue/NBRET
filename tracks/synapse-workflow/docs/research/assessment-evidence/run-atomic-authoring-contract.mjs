@@ -1,0 +1,10 @@
+import fs from 'node:fs';
+import crypto from 'node:crypto';
+import {spawnSync} from 'node:child_process';
+const base='docs/research/assessment-evidence/';
+const fixture=base+'atomic-authoring-contract.ps1';
+const files=[fixture,'C:/Users/kotar/.codex/research/invoke-atomic-20261017/Private/AtomicClassSchema.ps1','C:/Users/kotar/.codex/research/invoke-atomic-20261017/Public/New-Atomic.ps1','C:/Users/kotar/.codex/research/invoke-atomic-20261017/Public/Invoke-KickoffAtomicRunner.ps1'];
+const sha=p=>crypto.createHash('sha256').update(fs.readFileSync(p)).digest('hex');
+const r=spawnSync('powershell.exe',['-NoProfile','-NonInteractive','-File',fixture],{windowsHide:true,encoding:'utf8',timeout:30000});
+const receipt={date:new Date().toISOString(),criteria:'Invalid numeric default retained; valid numeric default receives same type-label warning; old timestamp not selected by extracted rotation predicate; future timestamp selected.',command:['powershell.exe','-NoProfile','-NonInteractive','-File',fixture],sourceSha256:Object.fromEntries(files.map(p=>[p,sha(p)])),status:r.status,stdout:r.stdout,stderr:r.stderr,error:r.error?.message,humanIntervention:'None during execution',cost:'Local CPU only; no paid API or network',limits:'No executor, installer, service, scheduled task or deletion executed.'};
+const out=base+'atomic-authoring-contract-receipt-'+Date.now()+'.json';fs.writeFileSync(out,JSON.stringify(receipt,null,2));console.log(JSON.stringify({out,...receipt}));process.exitCode=r.status??1;

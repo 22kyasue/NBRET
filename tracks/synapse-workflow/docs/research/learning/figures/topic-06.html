@@ -1,0 +1,198 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>When should you believe a result? — illustrated walkthrough</title><style>
+    :root{color-scheme:light;--paper:#f5f5f5;--panel:#fff;--ink:#2d3142;--muted:#4f5d75;--accent:#b94c21;--tint:#f8ede6;--line:#dcdde1;--motion-fast:160ms;--motion-step:480ms;--motion-hold:1200ms;--motion-ease:cubic-bezier(.23,1,.32,1)}*{box-sizing:border-box}body{margin:0;background:var(--panel);color:var(--ink);font:15px/1.6 'Segoe UI',Arial,sans-serif}main{padding:24px}ol{list-style:none;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:24px;margin:0;padding:0}li{position:relative;min-width:0}li:not(:last-child):after{content:'→';position:absolute;right:-20px;top:44px;color:var(--muted);font-size:23px}.picture{position:relative;border:1px solid var(--line);border-radius:8px;background:var(--paper);padding:12px;transition:background var(--motion-fast) ease,border-color var(--motion-fast) ease}.picture svg{display:block;width:100%;height:auto;max-height:124px;transition:opacity var(--motion-step) var(--motion-ease),transform var(--motion-step) var(--motion-ease)}.step{position:absolute;left:8px;top:6px;font-size:11px;color:var(--muted)}h3{font-size:16px;line-height:1.35;margin:16px 0 8px}p{font-size:14px;color:var(--muted);margin:0}figcaption{font-size:12px;color:var(--muted);margin-top:22px;border-top:1px solid var(--line);padding-top:16px}.motion-ready[data-frame="step"] li:not(.is-visible) svg,.motion-ready[data-frame="start"] li svg{opacity:.4;transform:translateY(4px)}.is-current .picture{background:var(--tint);border-color:var(--accent)}[data-motion-controls]{display:flex;flex-wrap:wrap;gap:8px;margin:24px 0 8px;align-items:center}button{min-height:44px;min-width:44px;border:1px solid var(--line);background:white;border-radius:6px;color:var(--ink);padding:8px 12px;font:13px 'Segoe UI',Arial,sans-serif;cursor:pointer}button:disabled{opacity:.4;cursor:default}button:focus-visible{outline:2px solid var(--accent);outline-offset:3px}button[data-motion-action="play"]{background:var(--ink);border-color:var(--ink);color:white}button[aria-pressed="true"]{border-color:var(--accent)}.keyboard-help{width:100%;font-size:11px;color:var(--muted)}[data-motion-status-visible]{font-size:12px;margin-left:auto}.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}[hidden]{display:none!important}@media(max-width:600px){main{padding:18px}ol{grid-template-columns:1fr;gap:24px}li{display:grid;grid-template-columns:80px minmax(0,1fr);gap:0 16px}.picture{grid-row:span 2;align-self:start;padding:8px}.picture svg{width:64px;height:64px}h3{margin:0 0 6px;font-size:16px}p{font-size:14px}li:not(:last-child):after{right:auto;left:32px;top:auto;bottom:-24px;content:'↓';font-size:18px}.step{top:1px;left:5px;font-size:10px}[data-motion-controls]{position:static}.keyboard-help{display:none}}@media(prefers-reduced-motion:reduce){*,*:before,*:after{transition-duration:.001ms!important;animation-duration:.001ms!important}.picture svg{opacity:1!important;transform:none!important}[data-motion-controls]{display:none!important}}@media print{[data-motion-controls]{display:none!important}.picture svg{opacity:1!important;transform:none!important}}
+    </style></head><body><main data-motion-root data-motion-mode="step" data-step-count="5" data-step-current="5" data-frame="static" data-static-frame="complete"><ol aria-label="What does a green PASS actually tell us?"><li data-motion-item data-step="1" aria-label="State the rule"><div class="picture"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" class="" aria-hidden="true" focusable="false"><g fill="none" stroke="var(--ink)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 48h88v64H20z" fill="var(--panel)"/><path d="M12 48l12-28h80l12 28z" fill="var(--tint)"/><path d="M12 48q10 16 20 0q10 16 20 0q12 16 24 0q10 16 20 0q10 16 20 0M48 112V76h28v36M28 76h12v16H28M88 76h12v16H88"/><path d="M36 20v28m28-28v28m28-28v28"/></g></svg><span class="step">1</span></div><h3>State the rule</h3><p>Alice must not be able to read Bob&#39;s order.</p></li><li data-motion-item data-step="2" aria-label="Use the right account"><div class="picture"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" class="" aria-hidden="true" focusable="false"><g fill="none" stroke="var(--ink)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="48" cy="40" r="16" fill="var(--panel)"/><path d="M16 100V84c0-20 64-20 64 0v16z" fill="var(--tint)"/><circle cx="92" cy="48" r="12" fill="var(--panel)"/><path d="M88 76c24-4 28 8 28 24H92M40 88h16"/></g></svg><span class="step">2</span></div><h3>Use the right account</h3><p>Make the request while signed in as Alice.</p></li><li data-motion-item data-step="3" aria-label="Inspect the reply"><div class="picture"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" class="" aria-hidden="true" focusable="false"><g fill="none" stroke="var(--ink)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="12" y="32" width="104" height="68" rx="6" fill="var(--panel)"/><path d="M12 44l52 32 52-32"/><path d="M20 16h32m-24 96h40m12 0h16" stroke="var(--accent)"/></g></svg><span class="step">3</span></div><h3>Inspect the reply</h3><p>Read the returned data, including any private details.</p></li><li data-motion-item data-step="4" aria-label="Check the rule"><div class="picture"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" class="" aria-hidden="true" focusable="false"><g fill="none" stroke="var(--ink)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="56" cy="52" r="32" fill="var(--panel)"/><path d="M80 76l32 32" stroke-width="8"/><path d="M40 44h32M40 56h24" stroke="var(--accent)"/></g></svg><span class="step">4</span></div><h3>Check the rule</h3><p>Did Bob&#39;s order reach Alice? That decides this test&#39;s result.</p></li><li data-motion-item data-step="5" aria-label="Keep the limits"><div class="picture"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" class="" aria-hidden="true" focusable="false"><g fill="none" stroke="var(--ink)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M64 12l40 16v32c0 28-24 48-40 56-16-8-40-28-40-56V28z" fill="var(--tint)"/><path d="M44 64l16 16 28-32" stroke="var(--accent)" stroke-width="4"/></g></svg><span class="step">5</span></div><h3>Keep the limits</h3><p>Record what was tested. Other pages, accounts and cases may still be untested.</p></li></ol><div data-motion-controls role="group" aria-label="Walkthrough playback"><button type="button" data-motion-action="prev">Previous</button><button type="button" data-motion-action="play" aria-pressed="false">Play steps</button><button type="button" data-motion-action="pause" aria-pressed="true">Pause</button><button type="button" data-motion-action="next">Next</button><button type="button" data-motion-action="replay">Replay</button><span data-motion-status-visible aria-hidden="true">Step <span data-motion-step-label>5</span> of 5</span><span class="keyboard-help">Use Previous / Next to go at your own pace. Arrow keys also step through.</span></div><p class="sr-only" data-motion-status role="status" aria-live="polite" aria-atomic="true"></p><figcaption>This is a teaching example of choosing a meaningful check. Passing this one test would not prove the whole shop is safe.</figcaption></main><script data-diagram-controls>
+    (() => {
+      const params = new URLSearchParams(location.search);
+      const staticOverride = params.get('motion') === 'static' || document.documentElement.dataset.motion === 'static';
+      const requestedStep = params.get('step');
+      const reduce = matchMedia('(prefers-reduced-motion: reduce)');
+      document.fonts.ready.then(() => { document.documentElement.dataset.fontsReady = 'true'; });
+
+      document.querySelectorAll('[data-motion-root]').forEach((root) => {
+        const count = Number(root.dataset.stepCount);
+        const hold = parseFloat(getComputedStyle(root).getPropertyValue('--motion-hold')) || 720;
+        const parsedStep = requestedStep !== null && /^\d+$/.test(requestedStep) ? Number(requestedStep) : null;
+        const exactStep = params.get('motion') === 'step' && Number.isSafeInteger(parsedStep) && parsedStep >= 0 && parsedStep <= count ? parsedStep : null;
+        const items = [...root.querySelectorAll('[data-motion-item]')];
+        const labels = Array.from({ length: count + 1 }, (_, index) => index === 0
+          ? 'Ready'
+          : items.filter((item) => !item.hasAttribute('data-motion-decorative') && Number(item.dataset.step) === index)
+              .map((item) => item.getAttribute('aria-label')).join('; '));
+        const controls = root.querySelector('[data-motion-controls]');
+        const status = root.querySelector('[data-motion-status]');
+        const visibleStep = root.querySelector('[data-motion-step-label]');
+        let step = count;
+        let timer = 0;
+        let playing = false;
+        let stepBeforeReduce = 0;
+        let resumeAfterReduce = root.dataset.motionMode === 'reveal';
+
+        const buttons = (action) => controls.querySelector(`[data-motion-action="${action}"]`);
+        const clearClock = () => { window.clearTimeout(timer); timer = 0; };
+        const announce = () => { status.textContent = `Step ${step} of ${count}: ${labels[step] || 'Complete'}`; };
+        const setControlsAvailable = (available) => {
+          controls.hidden = !available;
+          controls.setAttribute('aria-hidden', String(!available));
+          controls.dataset.playbackDisabled = String(!available);
+          controls.querySelectorAll('button').forEach((control) => { control.disabled = !available; });
+        };
+
+        function render(next, userInitiated = false) {
+          step = Math.max(0, Math.min(count, next));
+          root.dataset.stepCurrent = String(step);
+          root.dataset.frame = step === count ? 'end' : step === 0 ? 'start' : 'step';
+          items.forEach((item) => {
+            const itemStep = Number(item.dataset.step);
+            item.classList.toggle('is-visible', itemStep <= step);
+            item.classList.toggle('is-current', itemStep === step);
+          });
+          if (visibleStep) visibleStep.textContent = String(step);
+          const unavailable = controls.dataset.playbackDisabled === 'true';
+          buttons('prev').disabled = unavailable || step === 0;
+          buttons('next').disabled = unavailable || step === count;
+          if (userInitiated) announce();
+        }
+
+        function pause(userInitiated = false) {
+          clearClock();
+          playing = false;
+          root.classList.remove('is-playing');
+          buttons('play').setAttribute('aria-pressed', 'false');
+          buttons('pause').setAttribute('aria-pressed', 'true');
+          if (userInitiated) status.textContent = `Paused at step ${step} of ${count}`;
+        }
+
+        function finish() {
+          pause(false);
+          root.dataset.frame = 'end';
+          status.textContent = `Complete · step ${count} of ${count}`;
+        }
+
+        function tick() {
+          if (!playing) return;
+          if (step >= count) { finish(); return; }
+          render(step + 1, false);
+          if (step >= count) { finish(); return; }
+          timer = window.setTimeout(tick, hold);
+        }
+
+        function play(fromStart = false, userInitiated = false) {
+          clearClock();
+          if (fromStart || step >= count) render(0, userInitiated);
+          playing = true;
+          root.classList.add('is-playing');
+          buttons('play').setAttribute('aria-pressed', 'true');
+          buttons('pause').setAttribute('aria-pressed', 'false');
+          timer = window.setTimeout(tick, hold);
+        }
+
+        controls.addEventListener('click', (event) => {
+          const button = event.target.closest('[data-motion-action]');
+          if (!button) return;
+          const action = button.dataset.motionAction;
+          if (action === 'play') play(false, true);
+          if (action === 'pause') pause(true);
+          if (action === 'replay') play(true, true);
+          if (action === 'prev') { pause(false); render(step - 1, true); }
+          if (action === 'next') { pause(false); render(step + 1, true); }
+        });
+
+        root.addEventListener('keydown', (event) => {
+          if (event.target.matches('input, textarea, select, a[href]')) return;
+          const keys = { ArrowLeft: step - 1, ArrowRight: step + 1, Home: 0, End: count };
+          if (event.code === 'Space' && !event.target.closest('button')) {
+            event.preventDefault();
+            playing ? pause(true) : play(false, true);
+            return;
+          }
+          if (!event.ctrlKey && !event.metaKey && !event.altKey && event.key.toLowerCase() === 'r') {
+            event.preventDefault();
+            play(true, true);
+            return;
+          }
+          if (!(event.key in keys)) return;
+          event.preventDefault();
+          pause(false);
+          render(keys[event.key], true);
+        });
+
+        document.addEventListener('visibilitychange', () => {
+          if (document.visibilityState === 'hidden' && playing) pause(false);
+        });
+        reduce.addEventListener('change', (event) => {
+          if (event.matches && root.dataset.motionState !== 'reduced') {
+            stepBeforeReduce = step;
+            resumeAfterReduce = playing;
+          }
+          pause(false);
+          if (event.matches) {
+            setControlsAvailable(false);
+            render(count, false);
+            root.dataset.frame = 'static';
+            root.dataset.motionState = 'reduced';
+            status.textContent = 'Reduced motion · complete static frame · playback controls unavailable';
+          } else if (staticOverride || root.dataset.motionMode === 'none') {
+            setControlsAvailable(false);
+            render(count, false);
+            root.dataset.frame = 'static';
+            root.dataset.motionState = 'static';
+            status.textContent = 'Static frame · complete diagram · playback controls unavailable';
+          } else {
+            delete root.dataset.motionState;
+            if (exactStep !== null) {
+              setControlsAvailable(false);
+              render(exactStep, false);
+              root.dataset.frame = 'step';
+              root.dataset.motionState = 'test';
+              status.textContent = `Test frame · step ${step} of ${count} · playback controls unavailable`;
+            } else {
+              setControlsAvailable(true);
+              render(stepBeforeReduce, false);
+              status.textContent = `Ready · step ${step} of ${count}`;
+              if (resumeAfterReduce && root.dataset.motionMode === 'reveal') {
+                play(false, false);
+              }
+            }
+            resumeAfterReduce = false;
+          }
+        });
+
+        if (staticOverride) {
+          document.documentElement.dataset.motion = 'static';
+          pause(false);
+          setControlsAvailable(false);
+          render(count, false);
+          root.dataset.frame = 'static';
+          root.dataset.motionState = 'static';
+          status.textContent = 'Static frame · complete diagram · playback controls unavailable';
+        } else if (reduce.matches || root.dataset.motionMode === 'none') {
+          pause(false);
+          setControlsAvailable(false);
+          render(count, false);
+          root.dataset.frame = 'static';
+          root.dataset.motionState = reduce.matches ? 'reduced' : 'static';
+          status.textContent = reduce.matches
+            ? 'Reduced motion · complete static frame · playback controls unavailable'
+            : 'Static frame · complete diagram · playback controls unavailable';
+        } else if (exactStep !== null) {
+          document.documentElement.dataset.motion = 'step';
+          pause(false);
+          setControlsAvailable(false);
+          render(exactStep, false);
+          root.dataset.frame = 'step';
+          root.dataset.motionState = 'test';
+          status.textContent = `Test frame · step ${step} of ${count} · playback controls unavailable`;
+        } else if (root.dataset.motionMode === 'reveal') {
+          setControlsAvailable(true);
+          render(0, false);
+          play(false, false);
+        } else {
+          pause(false);
+          setControlsAvailable(true);
+          render(0, false);
+          status.textContent = `Ready · step 0 of ${count}`;
+        }
+        root.classList.add('motion-ready');
+      });
+    })();
+  </script><script>new ResizeObserver(()=>parent.postMessage({type:'nbret-figure-size',id:'06',height:document.querySelector('main').getBoundingClientRect().height},'*')).observe(document.body);</script></body></html>

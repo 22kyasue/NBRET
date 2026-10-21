@@ -1,0 +1,14 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import {pathToFileURL} from 'node:url';
+const own=path.resolve('docs/research/assessment-evidence');
+let source=fs.readFileSync(path.join(own,'run-claude-cleanup-lab.mjs'),'utf8');
+source=source.replaceAll('claude-cleanup','claude-mirror');
+source=source.replace("path.join(own,'test_claude_cleanup_contract.py')","path.join(root,'tests/test_transcript_mirror.py')");
+source=source.replace("'-p','pytest_asyncio.plugin',",'');
+source=source.replace("sourceSha256:hash(path.join(root,'src/claude_agent_sdk/client.py'))","sourceSha256:Object.fromEntries(['src/claude_agent_sdk/_internal/query.py','src/claude_agent_sdk/_internal/transcript_mirror_batcher.py','src/claude_agent_sdk/_internal/session_store.py','src/claude_agent_sdk/_internal/session_resume.py'].map(p=>[p,hash(path.join(root,p))]))");
+source=source.replace(/criteria:'[^']*'/,"criteria:'Unchanged complete upstream mirror tests; synthetic frames, mocked subprocess transport and reference stores only'");
+source=source.replace(/intervention:'[^']*'/,"intervention:'upstream fixtures replace subprocess transport and initialization; no CLI or remote store'");
+const generated=path.join(own,'run-claude-mirror-generated.mjs');
+fs.writeFileSync(generated,source,{flag:'wx'});
+await import(pathToFileURL(generated).href);

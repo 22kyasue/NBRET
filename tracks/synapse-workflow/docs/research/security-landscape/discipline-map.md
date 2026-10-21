@@ -1,0 +1,43 @@
+# Discipline map and glossary
+
+An **ethical hacker** is an authorized practitioner, not a single service category. A **finding** is a reviewed claim about a weakness and its consequences. An **alert** is a tool signal. An **exploitability claim** needs evidence that specified preconditions lead to an unauthorized capability or impact. An **assessment** is bounded by assets, identities, techniques, time, access and exclusions.
+
+The map below is an analytical synthesis, grounded in [NIST SP 800-115](https://csrc.nist.gov/pubs/sp/800/115/final), [CREST's guide](https://www.crest-approved.org/wp-content/uploads/2023/04/A-Guide-to-Penetration-Testing-2022.pdf), [PTES](http://www.pentest-standard.org/index.php/Main_Page) and the provider workflows in [companies](companies.md). It is a practical distinction, not a claim that vendor labels are standardized.
+
+| Work | Objective / usual scope | Access / who does what | Deliverable / limitation / buyer |
+| --- | --- | --- | --- |
+| Vulnerability scanning | Identify known weaknesses/configuration signals on selected assets | Network reachability; credentials improve inspection; engines execute signatures/plugins; operator tunes scan | Alert inventory with evidence/severity; signatures and access constrain coverage; IT/security operations and consultants |
+| Vulnerability management | Repeatedly inventory, prioritize, assign, fix and track exposures | Asset ownership, scanner imports, inventory and ticket integrations; humans decide risk/ownership | Backlog, SLAs, exceptions, trend/retest status; deduplication is not independent validation; VM/AppSec leadership |
+| Penetration testing | Find and validate weaknesses within an agreed system boundary and time box | Black/gray/white-box access, accounts and often docs/source; experts combine tools and contextual tests | Technical findings, reproduction, impact, recommendations, scope and gaps; absence of findings is bounded assurance; AppSec/CISO, engineering, procurement |
+| Red teaming | Test whether an adversary can achieve a business objective and how defenders respond | Explicit rules for initial position, social/physical scope, persistence, escalation and stop conditions; specialist operators | Attack narrative, achieved objectives and defense gaps; may deliberately sacrifice breadth; mature CISO/SOC/risk teams |
+| Adversary emulation | Reproduce selected adversary behaviors under stated assumptions | Threat intelligence, technique plans, lab or authorized operational access | Executed behavior and telemetry evidence; resemblance to ATT&CK does not reproduce every adversary capability; detection/CTI teams |
+| Purple teaming | Jointly improve prevention, visibility, alerting and response | Red and blue team coordination, endpoint/network/SIEM access | Before/after control evidence and detection changes; collaboration is a working method, not necessarily a separate team; SOC/detection engineering |
+| Detection validation | Test specific detection hypotheses and response expectations | Known test identity, timestamps, sensor configuration and alert/query access | Execution → telemetry → alert → triage → response evidence; a command completing proves none of the later states; SOC/MSSP owners |
+| Breach and attack simulation | Repeated, selected control/attack-behavior exercises | Installed components or execution hosts, network paths and sensor integration, depending on product | Control performance and repeatable scenarios; behavior library/placement may omit novel chains; security engineering/CISO |
+| External attack surface management | Discover/attribute internet-facing assets and monitor changes | Domains/seeds, ownership proof and sometimes active probing | Asset graph, changes/exposure signals; discovery is not authorization to test newly related assets; exposure-management teams |
+| Continuous pentesting | Repeat testing as systems change; frequency alone says little about depth | Stable scope, trigger, identity/session lifecycle and maintenance ownership | New findings, verified fixes, regressions and uncovered-change gaps; an annual test subscription is not continuous execution; AppSec/product security |
+| Pentesting as a service (PTaaS) | Deliver scoped testing through a platform, usually with human experts | Customer brief, account preparation, staffed engagement and collaboration | Findings platform, reports, ticketing and retests; a delivery/business model rather than a unique test method; security and compliance buyers |
+
+## Assessment surfaces
+
+These surfaces cross the service categories above. A cloud pentest may be a bounded consulting engagement, a continuous product run, or one step in an adversary exercise.
+
+| Surface | Practitioner's questions | Necessary access / deliverables | Typical limits and buyer |
+| --- | --- | --- | --- |
+| Application | Are session, authorization and business workflows safe across roles and states? | Accounts per role/tenant, data fixtures, source or architecture if available; requests, root cause and regression cases | Crawlers miss stateful logic; AppSec and engineering |
+| API | Can identities access only intended objects/functions and fields? Are schemas, limits and lifecycle safe? | OpenAPI/GraphQL docs, representative calls, tenant/role tokens with synthetic data; object/action matrix and proof | An endpoint list alone omits permissions and state; API/product security |
+| Cloud | Can permissions, workload configuration, storage and cross-account trust form harmful paths? | Approved cloud accounts/roles, inventory, logs and architecture; paths plus least-privilege fixes | Read-only configuration review differs from executing a cloud path; cloud/platform security |
+| Identity | Can credentials, federation, service accounts, consent and privilege delegation cross trust boundaries? | Test identities, directory/IdP configuration and logs; privilege-path and lifecycle findings | Graph reachability is a hypothesis until conditions are checked; IAM/identity security |
+| Internal network | Can a specified foothold reach sensitive systems through segmentation/auth weaknesses? | Explicit network ranges, vantage points, endpoint restrictions and emergency contacts | Starting location radically changes results; infrastructure security |
+| Hardware/embedded | Are boot/update/debug interfaces, firmware and physical assumptions secure? | Owned devices, schematics/builds, bench access; firmware/source and physical evidence | Destructive tests require explicit scope; hardware expertise/equipment and sampling constrain claims; product/embedded teams |
+| AI application security | Can model inputs, retrieved data, tools and identity boundaries cause unauthorized outcomes? | Synthetic documents, tool traces, model/provider/config versions and app permissions | Refusal text, toxicity detection and actual tool/data isolation are different properties; AI/product security |
+
+## AI as target versus AI as tester
+
+**AI being tested:** model behavior, agent tools, RAG retrieval boundaries, cross-tenant data, training/artifact provenance, inference stack and conventional application controls. A model generating unsafe text and an application executing an unauthorized operation require different oracles and remediation.
+
+**AI doing testing:** a model may suggest cases, summarize output, select tools, write payloads, or operate an entire environment. Ask separately which decisions the model owns and which code/OS/network controls enforce scope. [PentestGPT's source review](implementation-reviews.md) illustrates broad model tool access alongside stricter result-state validation. [garak](implementation-reviews.md) evaluates model outputs through detectors; it is not automatically an autonomous network pentester.
+
+## Operational glossary
+
+**Scope** defines allowed assets and operations; **rules of engagement (RoE)** additionally define timing, contacts, exclusions, handling and stopping. **Black box** begins with little internal information; **gray box** supplies selected knowledge/accounts; **white box** includes substantial internals/source. More access can improve depth within limited time; it does not make the result complete. **Assumed breach** starts from an agreed foothold rather than proving initial access. **Retest** rechecks a reported issue under recorded conditions. **Regression** checks that a known property continues to hold after change. **False positive** claims a condition that is absent under the stated oracle; **false negative** misses one that is present. Both require known truth or independent adjudication, not just the tool's own verdict.

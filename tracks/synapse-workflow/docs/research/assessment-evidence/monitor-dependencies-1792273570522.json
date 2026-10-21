@@ -1,0 +1,17 @@
+{
+  "at": "2026-10-17T21:46:13.853Z",
+  "command": [
+    "C:/Users/kotar/.codex/research/assessment-evidence-venv/Scripts/python.exe",
+    "-m",
+    "pip",
+    "install",
+    "starlette>=0.47,<2",
+    "httpx>=0.28,<1"
+  ],
+  "exitCode": 0,
+  "stdout": "Collecting starlette<2,>=0.47\r\n  Downloading starlette-1.8.0-py3-none-any.whl.metadata (6.6 kB)\r\nCollecting httpx<1,>=0.28\r\n  Downloading httpx-0.28.1-py3-none-any.whl.metadata (7.1 kB)\r\nCollecting anyio<5,>=4.0.0 (from starlette<2,>=0.47)\r\n  Downloading anyio-4.15.1-py3-none-any.whl.metadata (4.7 kB)\r\nCollecting certifi (from httpx<1,>=0.28)\r\n  Using cached certifi-2026.7.22-py3-none-any.whl.metadata (2.5 kB)\r\nCollecting httpcore==1.* (from httpx<1,>=0.28)\r\n  Downloading httpcore-1.0.9-py3-none-any.whl.metadata (21 kB)\r\nCollecting idna (from httpx<1,>=0.28)\r\n  Downloading idna-3.20-py3-none-any.whl.metadata (7.2 kB)\r\nRequirement already satisfied: typing_extensions>=4.16.0 in C:\\Users\\kotar\\.codex\\research\\assessment-evidence-venv\\Lib\\site-packages (from anyio<5,>=4.0.0->starlette<2,>=0.47) (4.16.0)\r\nCollecting h11>=0.16 (from httpcore==1.*->httpx<1,>=0.28)\r\n  Using cached h11-0.16.0-py3-none-any.whl.metadata (8.3 kB)\r\nDownloading starlette-1.8.0-py3-none-any.whl (79 kB)\r\nDownloading httpx-0.28.1-py3-none-any.whl (73 kB)\r\nDownloading anyio-4.15.1-py3-none-any.whl (132 kB)\r\nDownloading httpcore-1.0.9-py3-none-any.whl (78 kB)\r\nUsing cached h11-0.16.0-py3-none-any.whl (37 kB)\r\nDownloading idna-3.20-py3-none-any.whl (69 kB)\r\nUsing cached certifi-2026.7.22-py3-none-any.whl (136 kB)\r\nInstalling collected packages: idna, h11, certifi, httpcore, anyio, starlette, httpx\r\n\r\nSuccessfully installed anyio-4.15.1 certifi-2026.7.22 h11-0.16.0 httpcore-1.0.9 httpx-0.28.1 idna-3.20 starlette-1.8.0\r\n",
+  "stderr": "",
+  "versions": "{\"httpx\": \"0.28.1\", \"starlette\": \"1.8.0\", \"anyio\": \"4.15.1\", \"uvicorn\": null}\r\n",
+  "scope": "existing isolated research venv only; no global install, provider extras, listener or target calls",
+  "runnerSha256": "5367ae356a3cfd67ebc2760cc24a1671e763af01bb543f9004da7340e536e992"
+}

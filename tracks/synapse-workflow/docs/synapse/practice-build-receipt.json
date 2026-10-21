@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "kind": "nbret-guided-practice-build-receipt",
+  "recordedAt": "2026-10-18T23:27:22.194Z",
+  "node": "v24.21.0",
+  "command": "npm run synapse:test",
+  "results": {
+    "passed": 44,
+    "failed": 0,
+    "skipped": 0,
+    "durationMs": 1515.4918
+  },
+  "review": {
+    "app": "Elm implementation and ordinary workflow tests; Bryn source/integration review",
+    "runner": "Skye implementation; Bryn independently authored integration/failure tests"
+  },
+  "visibleQA": [
+    "Elm verified Alice submission then Carol approval; inspected dark/light and390px app UI; temporary app and tab closed.",
+    "Skye inspected dashboard390px dark/light and desktop, corrected narrow statistics spacing, and verified real browser rerun after same-origin referrer-policy correction."
+  ],
+  "actualOneShotReport": "runs/practice-404544d2-e3a6-49d2-82af-7e000e2cd87f/REPORT.html",
+  "limits": [
+    "Guided predefined functional checks, no autonomous investigation or vulnerability discovery.",
+    "Same evaluator recomputes artifacts; this is not independent effect adjudication.",
+    "No blind effectiveness, expert baseline, repair retest or client-readiness claim."
+  ],
+  "sha256": {
+    "src/practice/app.mjs": "2fd6947f2aaad2fec1e23db7ad1d3679efd3e54fc655a8b5b7e861f761e96f56",
+    "src/practice/cli.mjs": "ea7c600e5c9eaf4eac48fd93cffe3bc23da360ef574edd92f814b5f97f9abd32",
+    "src/practice/rehearsal.mjs": "54626ddec03121ac1cfaf34b6b090ac085b54a7e0a8ae00aa671f7ec02e7ec66",
+    "src/practice/rehearsal-cli.mjs": "47369273257465d4f0405ae24cee499e2ab65284fe950fe4a0db1bb76093f042",
+    "src/practice/demo.mjs": "0fe8795bb7a9861ee9a80b89aa0df85b11a4cc09734229a6908959b555ab7fd3",
+    "test/investigation-cli.test.mjs": "e5945a01bd146d5b6de999c7827b78b9de8b2a7667de5b906354663110638cb2",
+    "test/investigation-journal.test.mjs": "dbda27ec7cd8d90f095e25ce24bb7727d06ad2fcfa636bba3af757d04beadaa0",
+    "test/investigation-records.test.mjs": "fd683f76f5909398d79f298364a8cb6e8845b4c22187df78119de380d19538aa",
+    "test/investigation-import.test.mjs": "47af83737b703d83296c61bb8e5e801d61854c9411a2b4ec909a86bb453b4556",
+    "test/scope.test.mjs": "6ae3ef12a600e5d17ce4e64ad33b21ebd7433b7eac63db58af7de5e0ebc2ce59",
+    "test/practice-app.test.mjs": "22bc130c5600f9688031776afa0fe27c4f36de40aaf090ef743b7d494c02aba6",
+    "test/practice-rehearsal.test.mjs": "07e719d845763246403f6bf3bd247dfc1fdd315b71634047074e5ee005a96752"
+  }
+}

@@ -1,0 +1,7 @@
+# HAR representation round-trip plan
+
+Recorded before execution, 2026-10-17. Independent permitted work: ordinary serialization/evidence correctness, not a continuation of the stopped cloud experiment. Use the existing pinned mitmproxy Python environment and inert HTTPFlow objects. No listener, browser, TLS interception, target request, credentials or process/network configuration.
+
+Predefined observations: GET body is absent after HAR round trip because export only includes postData for POST/PUT/PATCH; an explicit HTTPS port8443 remains in the request URL but imported server connection metadata defaults443; an exported no-response error becomes status0 response without restoring Flow.error; compressed response representation becomes decoded content; a literal synthetic header marker remains in HAR, establishing no automatic redaction in this selected exporter. Preserve a plain POST body round trip as a control. All names use reserved example.test and metadata-only addresses. Block Python connect/connect_ex/create_connection/getaddrinfo and count attempted calls. Do not exercise malformed framing or request smuggling.
+
+Record exact Python/package/source hashes, plan/fixture hashes, case outputs, subprocess status, network trap count and cleanup. Fresh receipt path, no overwrite. Twenty-second subprocess timeout. No server/target contact is possible by design. These observations concern the selected HAR adapter, not browser exporters, full replay, all extension ordering or a lossless packet archive.

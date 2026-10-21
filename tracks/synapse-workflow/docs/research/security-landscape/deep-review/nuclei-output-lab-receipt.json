@@ -1,0 +1,47 @@
+{
+  "at": "2026-10-17T20:43:50.590Z",
+  "out": "C:\\Users\\kotar\\githubprojects\\NBRET\\runs\\nuclei-output-composition-1792269829472",
+  "scope": "Unchanged two source files in standalone module; reduced interfaces/events/synthetic sinks and standard-library JSON shim. Not full output package or target execution.",
+  "exit": 0,
+  "elapsedMs": 1113.1212,
+  "command": {
+    "executable": "C:\\Users\\kotar\\githubprojects\\NBRET\\.tools\\security-research-go\\sdk\\go\\bin\\go.exe",
+    "args": [
+      "test",
+      "-mod=mod",
+      "-count=1",
+      "-json",
+      "."
+    ],
+    "cwd": "C:\\Users\\kotar\\githubprojects\\NBRET\\runs\\nuclei-output-composition-1792269829472"
+  },
+  "moduleNetwork": {
+    "GOPROXY": "off",
+    "GOSUMDB": "off"
+  },
+  "tests": [
+    {
+      "test": "TestOmitFirstMutatesSecondSink",
+      "action": "pass"
+    },
+    {
+      "test": "TestReversedOrderControl",
+      "action": "pass"
+    },
+    {
+      "test": "TestFirstErrorStopsLaterSink",
+      "action": "pass"
+    },
+    {
+      "test": "TestFirstPositiveCount",
+      "action": "pass"
+    }
+  ],
+  "sourceSha256": {
+    "pkg/output/multi_writer.go": "b701e3b530adcf586e75c1edc9ceebd7ddd8a2d8fc9e8d90e7755769b6cddbf8",
+    "pkg/output/format_json.go": "551af01c0ff43881234c385d0beef1673e529fddc2f4995e417923252f5ef01b"
+  },
+  "fixtureSha256": "7e6b31de9d1f87e07e8ae83cb46f0528be098f83646a8e80bef4ba24d59477a9",
+  "logSha256": "3520c74ecea83292969c46e3ce39137aaee1afd8a6a53a8e570ed471700ba775",
+  "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

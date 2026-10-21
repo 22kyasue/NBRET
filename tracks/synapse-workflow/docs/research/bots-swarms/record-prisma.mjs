@@ -1,0 +1,18 @@
+import fs from 'node:fs';
+import {createHash} from 'node:crypto';
+import {execFileSync} from 'node:child_process';
+const base='docs/research/bots-swarms/';
+const ranges=[['rate-limiter-flexible','lib/RateLimiterPrisma.js',1,128],['rate-limiter-flexible','test/RateLimiterPrisma/Postgres/RateLimiterPrismaPostgres.test.js',1,447]];
+for(const r of ranges)execFileSync(process.execPath,[base+'source.mjs','mark',...r.map(String)],{windowsHide:true,stdio:'pipe'});
+const p=base+'continuation-record.mjs';
+fs.writeFileSync(p,fs.readFileSync(p,'utf8').replace('];\nfor(const r of ranges)',ranges.map(r=>' '+JSON.stringify(r)+',').join('\n')+'\n];\nfor(const r of ranges)'));
+const sq=JSON.parse(fs.readFileSync(base+'supporting-queue.json','utf8'));
+const pin=JSON.parse(fs.readFileSync(base+'snapshots.json','utf8')).find(x=>x.name==='rate-limiter-flexible');
+const file='test/RateLimiterPrisma/Postgres/schema.prisma',bytes=fs.readFileSync(pin.root+'/'+file),lines=bytes.toString().split('\n').length;
+if(sq.entries.some(e=>e.repo===pin.name&&e.path===file))throw Error('Already inventoried');
+sq.entries.push({repo:pin.name,path:file,commit:pin.commit,sha256:createHash('sha256').update(bytes).digest('hex'),bytes:bytes.length,lines,priority:2,status:'complete',readRanges:[[1,lines]],recordedAt:new Date().toISOString(),note:'Exact schema dependency omitted by original extension inventory; full file read before append.'});
+fs.writeFileSync(base+'supporting-queue.json',JSON.stringify(sq,null,2));
+const q=JSON.parse(fs.readFileSync(base+'queue.json','utf8')),counts=['complete','partial','unread'].map(s=>q.filter(e=>e.status===s).length);
+const c=base+'coverage.md';
+fs.writeFileSync(c,fs.readFileSync(c,'utf8').replace(/records\d+ complete,\d+ partial and\d+ unread/,`records${counts[0]} complete,${counts[1]} partial and${counts[2]} unread`).replace(/Supporting queue:\d+separate config\/docs\/declaration\/data files;\d+complete,\d+partial,\d+unread/,'Supporting queue:542separate config/docs/declaration/data files;6complete,0partial,536unread'));
+console.log({main:counts,schemaLines:lines});

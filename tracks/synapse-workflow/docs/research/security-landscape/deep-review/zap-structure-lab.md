@@ -1,0 +1,7 @@
+# Isolated structural state lab
+
+Planned before execution,2026-10-17. Success criteria: a structural leaf must return its stored parent, report zero children, and agree with iterator/isLeaf. Controls: direct table read and count must reflect synthetic hierarchy. Use installed ZAP2.17.0 classes and new in-memory HSQLDB only; inject Database interface to supply the table. Never call regex ancestor traversal because source suggests self-parenting can loop. No live scanner or customer impact inferred. Record all failures and two corrected identical runs if feasible.
+
+## Results
+
+Three isolated executions exit0; first receipt had a copied source-hash label corrected before two repeats. Raw receipts preserved. Corrected runs1792274706584/1792274708241 took1065/993ms; seven observed checks each, identical fixture/output hashes. Stored parent and direct zero-child count controls pass. StructuralTableNode.getParent returns a node with the same structureId; getChildNodeCount returns2 siblings despite child iterator being empty; isLeaf returnsfalse. **Product consistency success criteria fail.** Counterexample assertions passing is not a scanner assurance pass. Ancestor regex deliberately not called; no hang produced. Actual low-memory activation, scan traversal/report consequences and duplicate-summary insertion remain source questions. No network, disk database, real credentials or production changes. [Combined receipts](zap-structure-lab-receipt.json); reproduction: `node scripts/research-zap-structure-lab.mjs`.

@@ -1,0 +1,15 @@
+{
+  "at": "2026-10-17T21:50:43.995Z",
+  "command": [
+    "C:/Users/kotar/.codex/research/assessment-evidence-venv/Scripts/python.exe",
+    "-m",
+    "pip",
+    "install",
+    "pydantic>=2.12"
+  ],
+  "exitCode": 0,
+  "stdout": "Requirement already satisfied: pydantic>=2.12 in C:\\Users\\kotar\\.codex\\research\\assessment-evidence-venv\\Lib\\site-packages (2.14.1)\r\nRequirement already satisfied: annotated-types>=0.6.0 in C:\\Users\\kotar\\.codex\\research\\assessment-evidence-venv\\Lib\\site-packages (from pydantic>=2.12) (0.8.0)\r\nRequirement already satisfied: pydantic-core==2.50.1 in C:\\Users\\kotar\\.codex\\research\\assessment-evidence-venv\\Lib\\site-packages (from pydantic>=2.12) (2.50.1)\r\nRequirement already satisfied: typing-extensions>=4.16.0 in C:\\Users\\kotar\\.codex\\research\\assessment-evidence-venv\\Lib\\site-packages (from pydantic>=2.12) (4.16.0)\r\nRequirement already satisfied: typing-inspection>=0.4.4 in C:\\Users\\kotar\\.codex\\research\\assessment-evidence-venv\\Lib\\site-packages (from pydantic>=2.12) (0.4.4)\r\n",
+  "stderr": "",
+  "freeze": "annotated-types==0.8.0\r\nanyio==4.15.1\r\ncertifi==2026.7.22\r\ncolorama==0.4.6\r\ndocstring_parser==0.18.0\r\nh11==0.16.0\r\nhttpcore==1.0.9\r\nhttpx==0.28.1\r\nidna==3.20\r\niniconfig==2.3.1\r\npackaging==26.3\r\npluggy==1.7.0\r\npydantic==2.14.1\r\npydantic_core==2.50.1\r\nPygments==2.21.0\r\npytest==9.1.1\r\npytest-asyncio==1.4.0\r\nPyYAML==6.0.3\r\nstarlette==1.8.0\r\ntyping-inspection==0.4.4\r\ntyping_extensions==4.16.0\r\n",
+  "scope": "existing isolated research venv; model dependency only, no SDK/CLI installation or invocation"
+}

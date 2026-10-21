@@ -1,0 +1,28 @@
+{
+  "at": "2026-10-17T21:07:22.086Z",
+  "out": "C:\\Users\\kotar\\githubprojects\\NBRET\\runs\\zap-tag-projection-research-1792271241186",
+  "scope": "Installed history-tag table/record projection with owned memory DB; no full history session, real DB, network, alerts or report.",
+  "command": {
+    "executable": "C:/Users/kotar/AppData/Local/Programs/BurpSuite/jre/bin/java.exe",
+    "args": [
+      "-Djava.awt.headless=true",
+      "--class-path",
+      "C:\\Users\\kotar\\githubprojects\\NBRET\\.tools\\ZAP_2.17.0\\zap-2.17.0.jar;C:\\Users\\kotar\\githubprojects\\NBRET\\.tools\\ZAP_2.17.0\\lib\\*",
+      "C:\\Users\\kotar\\githubprojects\\NBRET\\runs\\zap-tag-projection-research-1792271241186\\TagProjectionResearch.java"
+    ],
+    "cwd": "C:\\Users\\kotar\\githubprojects\\NBRET\\runs\\zap-tag-projection-research-1792271241186"
+  },
+  "exit": 0,
+  "elapsedMs": 898.4697,
+  "passes": [
+    "PASS tag_and_history_ids_distinct_control",
+    "PASS insert_read_retains_history_id",
+    "PASS list_projects_tag_id_as_history_id",
+    "PASS underlying_db_history_id_unchanged",
+    "PASS known_text_consumer_still_correct_control"
+  ],
+  "jarSha256": "015dda4709b5ef79736086bb41e8e2a4e95b04cf6625f14d6bcc02b197c99c0c",
+  "fixtureSha256": "d4a36985b820de2e997992c86ba8f71053857805c80efa98021b602ea1c6e230",
+  "stdoutSha256": "f0e7363d700bb56e1b25e0fb28be188538478d03397afa9232c1dd3cb1d6f573",
+  "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

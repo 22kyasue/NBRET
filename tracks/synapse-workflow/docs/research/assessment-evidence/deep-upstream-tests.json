@@ -1,0 +1,18 @@
+{
+  "command": [
+    "C:/Users/kotar/.codex/research/assessment-evidence-venv/Scripts/python.exe",
+    "-m",
+    "pytest",
+    "-q",
+    "-p",
+    "no:cacheprovider",
+    "tests/test_memory.py"
+  ],
+  "cwd": "C:/Users/kotar/.codex/research/pentestgpt-20261017/pentestgpt_agent",
+  "pythonpath": "C:/Users/kotar/.codex/research/pentestgpt-20261017/pentestgpt_agent/src;C:/Users/kotar/.codex/research/unified-agent-acff8ee",
+  "exitCode": 0,
+  "stdout": "........                                                                 [100%]\r\n8 passed in 0.67s\r\n",
+  "stderr": "",
+  "packages": "colorama==0.4.6\r\niniconfig==2.3.1\r\npackaging==26.3\r\npluggy==1.7.0\r\nPygments==2.21.0\r\npytest==9.1.1\r\npytest-asyncio==1.4.0\r\nPyYAML==6.0.3\r\n",
+  "scope": "Only memory tests; no provider/live tests; local source-path imports, not installed dependency provenance test"
+}

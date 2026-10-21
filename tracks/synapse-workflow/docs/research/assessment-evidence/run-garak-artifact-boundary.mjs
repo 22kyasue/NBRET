@@ -1,0 +1,13 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import {pathToFileURL} from 'node:url';
+const own=path.resolve('docs/research/assessment-evidence');
+let source=fs.readFileSync(path.join(own,'run-claude-cleanup-lab.mjs'),'utf8');
+source=source.replaceAll('claude-cleanup','garak-artifact-boundary');
+source=source.replace('test_claude_cleanup_contract.py','test_garak_artifact_boundary.py');
+source=source.replace("sourceSha256:hash(path.join(root,'src/claude_agent_sdk/client.py'))","sourceSha256:Object.fromEntries(['C:/Users/kotar/.codex/research/garak/garak/command.py','C:/Users/kotar/.codex/research/garak/garak/analyze/report_digest.py'].map(p=>[p,hash(p)]))");
+source=source.replace(/criteria:'[^']*'/,"criteria:'actual start_run persists nested synthetic api_key; actual build_html retains script-ending delimiter in inert synthetic template'");
+source=source.replace(/intervention:'[^']*'/,"intervention:'complete function ASTs; fake garak config and owned temporary files; no real credential, plugin, model, browser, JavaScript execution or network'");
+const generated=path.join(own,'run-garak-artifact-boundary-generated.mjs');
+fs.writeFileSync(generated,source,{flag:'wx'});
+await import(pathToFileURL(generated).href);

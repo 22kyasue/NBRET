@@ -1,0 +1,1 @@
+require('http').createServer((q,s)=>{s.setHeader('Content-Type','text/html; charset=utf-8');s.end(require('fs').readFileSync("C:\\Users\\kotar\\githubprojects\\NBRET\\artifacts\\synapse-ui\\index.html"))}).listen(65189,'127.0.0.1')

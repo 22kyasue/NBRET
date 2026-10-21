@@ -1,0 +1,31 @@
+{
+  "at": "2026-10-17T22:24:32.647Z",
+  "command": [
+    "C:/Users/kotar/.codex/research/assessment-evidence-venv/Scripts/python.exe",
+    "-m",
+    "pytest",
+    "-q",
+    "-p",
+    "no:cacheprovider",
+    "-p",
+    "pytest_asyncio.plugin",
+    "--basetemp",
+    "C:\\Users\\kotar\\.codex\\research\\assessment-evidence-receipts\\garak-digest-contract-v2-1792275872140\\pytest-temp",
+    "C:\\Users\\kotar\\githubprojects\\NBRET\\docs\\research\\assessment-evidence\\test_garak_digest_contract_v2.py"
+  ],
+  "out": "C:\\Users\\kotar\\.codex\\research\\assessment-evidence-receipts\\garak-digest-contract-v2-1792275872140",
+  "exitCode": 0,
+  "stdout": "...                                                                      [100%]\r\n3 passed in 0.05s\r\n",
+  "stderr": "",
+  "elapsedMs": 507,
+  "sourceSha256": {
+    "C:/Users/kotar/.codex/research/garak/garak/analyze/report_digest.py": "4c132b26f66c66572bb85045846cd32cb9791c35c51fca58bffb611b0b060fee"
+  },
+  "fixtureSha256": "0924faf033843023a701914649dbbe469cd13d33892553bbeb8cee2a031c5653",
+  "runnerSha256": "90d5de9a4f6dc961f901425c0c671ad3d14494732d03017b592f4f30605fd9cf",
+  "packages": "annotated-types==0.8.0\r\nanyio==4.15.1\r\nattrs==26.1.0\r\ncertifi==2026.7.22\r\ncffi==2.1.1\r\nclick==8.5.0\r\ncolorama==0.4.6\r\ncryptography==50.0.2\r\ndocstring_parser==0.18.0\r\nh11==0.16.0\r\nhttpcore==1.0.9\r\nhttpcore2==2.13.1\r\nhttpx==0.28.1\r\nhttpx2==2.13.1\r\nidna==3.20\r\niniconfig==2.3.1\r\njsonschema==4.26.0\r\njsonschema-specifications==2025.9.1\r\nmcp==2.3.0\r\nmcp-types==2.3.0\r\nopentelemetry-api==1.45.1\r\npackaging==26.3\r\npluggy==1.7.0\r\npycparser==3.11\r\npydantic==2.14.1\r\npydantic_core==2.50.1\r\nPygments==2.21.0\r\nPyJWT==2.15.1\r\npytest==9.1.1\r\npytest-asyncio==1.4.0\r\npython-multipart==0.0.32\r\npywin32==312\r\nPyYAML==6.0.3\r\nreferencing==0.37.0\r\nrpds-py==2026.9.1\r\nsniffio==1.3.1\r\nsse-starlette==3.5.0\r\nstarlette==1.8.0\r\ntruststore==0.10.5\r\ntyping-inspection==0.4.4\r\ntyping_extensions==4.16.0\r\nuvicorn==0.54.0\r\n",
+  "criteria": "empty selection display fallback; same class name collision in shared taxonomy group; distinct class control",
+  "intervention": "actual complete function ASTs with SQLite memory and synthetic plugin metadata only; no garak imports, report rendering, provider, real payload or network",
+  "limits": "No process, real credential, materialization or filesystem deletion; not evidence of an actual orphan or retained secret",
+  "cost": "local CPU/storage only"
+}

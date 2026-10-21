@@ -1,0 +1,205 @@
+[
+  {
+    "name": "rea",
+    "commit": "54c71313aeb2cbdf21626af9557673a6f6397180",
+    "origin": "https://github.com/morluto/rea.git",
+    "tracked_files": 4179,
+    "local_path": "C:/Users/kotar/.codex/research/rea",
+    "lastCommit": "2026-10-17T14:13:25+08:00 fix(kuna): attribute inventory failures to callers",
+    "licenseFiles": [
+      {
+        "path": "LICENSE",
+        "sha256": "798f9e4d18e49b30bf2f12696c8ced73dc4e1413da375a333d01281543a1ea8b",
+        "opening": "MIT License\n\nCopyright (c) 2026 morluto\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell"
+      }
+    ],
+    "accessDate": "2026-10-17",
+    "maintenanceMeaning": "Latest commit in saved snapshot; not an upstream freshness or quality guarantee."
+  },
+  {
+    "name": "ghidra",
+    "commit": "9a723ce99952771b8368329503aa589ae233e916",
+    "origin": "https://github.com/NationalSecurityAgency/ghidra.git",
+    "tracked_files": 20621,
+    "local_path": "C:/Users/kotar/.codex/research/ghidra",
+    "lastCommit": "2026-10-16T12:51:31-04:00 GP-0: Updating CONTRIBUTING.md",
+    "licenseFiles": [
+      {
+        "path": "LICENSE",
+        "sha256": "1eb85fc97224598dad1852b5d6483bbcf0aa8608790dcc657a5a2a761ae9c8c6",
+        "opening": "                                 Apache License\r\n                           Version 2.0, January 2004\r\n                        http://www.apache.org/licenses/\r\n\r\n   TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION\r\n\r\n   1. Definitions.\r\n\r"
+      }
+    ],
+    "accessDate": "2026-10-17",
+    "maintenanceMeaning": "Latest commit in saved snapshot; not an upstream freshness or quality guarantee."
+  },
+  {
+    "name": "frida",
+    "commit": "2ff8f72375c8d3d5e53bb3ad250ba240964a4a39",
+    "origin": "https://github.com/frida/frida.git",
+    "tracked_files": 43,
+    "local_path": "C:/Users/kotar/.codex/research/frida",
+    "lastCommit": "2026-10-16T15:37:57+02:00 submodules: Bump outdated",
+    "licenseFiles": [
+      {
+        "path": "COPYING",
+        "sha256": "803b8b5aa4151030221b3c3f71a645da6241938421e49901444a79e5cca75fa8",
+        "opening": "              wxWindows Library Licence, Version 3.1\r\n              ======================================\r\n\r\nCopyright (c) 1998-2005 Julian Smart, Robert Roebling et al\r\n\r\nEveryone is permitted to copy and distribute verbatim copies\r\nof this licence document, but changing it is not allowed.\r\n\r"
+      }
+    ],
+    "accessDate": "2026-10-17",
+    "maintenanceMeaning": "Latest commit in saved snapshot; not an upstream freshness or quality guarantee."
+  },
+  {
+    "name": "semgrep",
+    "commit": "51602ad27f09ef9342a5620601de5ef8f572fbc6",
+    "origin": "https://github.com/semgrep/semgrep.git",
+    "tracked_files": 12349,
+    "local_path": "C:/Users/kotar/.codex/research/semgrep",
+    "lastCommit": "2026-10-14T14:27:46-04:00 feat(sca): Report unpinned requirements.txt dependencies instead of skipping them (semgrep/semgrep-proprietary#7082)",
+    "licenseFiles": [
+      {
+        "path": "LICENSE",
+        "sha256": "7ffe1954587c77dfba1cf8eb9b2ea743671fa6e63f9e7a2f258119d42e14eefe",
+        "opening": "                  GNU LESSER GENERAL PUBLIC LICENSE\r\n                       Version 2.1, February 1999\r\n\r\n Copyright (C) 1991, 1999 Free Software Foundation, Inc.\r\n 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA\r\n Everyone is permitted to copy and distribute verbatim copies\r\n of this license document, but changing it is not allowed.\r\n\r"
+      }
+    ],
+    "accessDate": "2026-10-17",
+    "maintenanceMeaning": "Latest commit in saved snapshot; not an upstream freshness or quality guarantee."
+  },
+  {
+    "name": "nuclei",
+    "commit": "a151a1d54fad0d5ef71f01662b0bb3955a98c7c5",
+    "origin": "https://github.com/projectdiscovery/nuclei.git",
+    "tracked_files": 1412,
+    "local_path": "C:/Users/kotar/.codex/research/nuclei",
+    "lastCommit": "2026-10-14T16:06:57+03:00 Merge pull request #7793 from projectdiscovery/feat/7783-host-backoff",
+    "licenseFiles": [
+      {
+        "path": "LICENSE.md",
+        "sha256": "6fdddca72c072cc3e62729c9506639750a98ea3200f3053b57c351b3ca2ba148",
+        "opening": "MIT License\r\n\r\nCopyright (c) 2025 ProjectDiscovery, Inc.\r\n\r\nPermission is hereby granted, free of charge, to any person obtaining a copy\r\nof this software and associated documentation files (the \"Software\"), to deal\r\nin the Software without restriction, including without limitation the rights\r\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\r"
+      }
+    ],
+    "accessDate": "2026-10-17",
+    "maintenanceMeaning": "Latest commit in saved snapshot; not an upstream freshness or quality guarantee."
+  },
+  {
+    "name": "caldera",
+    "commit": "cb8d6a8160e0f4990af323a7c071d5e8482b42c7",
+    "origin": "https://github.com/apache/caldera.git",
+    "tracked_files": 406,
+    "local_path": "C:/Users/kotar/.codex/research/caldera",
+    "lastCommit": "2026-08-26T20:46:57-04:00 Change notification emails in .asf.yaml (#3414)",
+    "licenseFiles": [
+      {
+        "path": "LICENSE",
+        "sha256": "2514772e5475f208616174f81b67168179a7c51bdcb9570a96a9dc5962b83116",
+        "opening": "                                 Apache License\r\n                           Version 2.0, January 2004\r\n                        http://www.apache.org/licenses/\r\n\r\n   TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION\r\n\r\n   1. Definitions.\r\n\r"
+      }
+    ],
+    "accessDate": "2026-10-17",
+    "maintenanceMeaning": "Latest commit in saved snapshot; not an upstream freshness or quality guarantee."
+  },
+  {
+    "name": "atomic-red-team",
+    "commit": "388942adbd9641f4dfdcf079d7efe9a75ec0ac43",
+    "origin": "https://github.com/redcanaryco/atomic-red-team.git",
+    "tracked_files": 1376,
+    "local_path": "C:/Users/kotar/.codex/research/atomic-red-team",
+    "lastCommit": "2026-09-05T12:26:57-04:00 Bump typer from 0.27.1 to 0.27.2 (#3423)",
+    "licenseFiles": [
+      {
+        "path": "LICENSE.txt",
+        "sha256": "bffed48fba3714da8eb4b4c540a179a73f90ce91f3b623ba6148d2869bb0a9e4",
+        "opening": "\r\nThe MIT License\r\n\r\nCopyright (c) 2018 Red Canary, Inc.\r\n\r\nPermission is hereby granted, free of charge, to any person obtaining a copy\r\nof this software and associated documentation files (the \"Software\"), to deal\r\nin the Software without restriction, including without limitation the rights\r"
+      }
+    ],
+    "accessDate": "2026-10-17",
+    "maintenanceMeaning": "Latest commit in saved snapshot; not an upstream freshness or quality guarantee."
+  },
+  {
+    "name": "garak",
+    "commit": "cc1215c5c301a69f115b0b2b7ef8e4172ae2e7fc",
+    "origin": "https://github.com/NVIDIA/garak.git",
+    "tracked_files": 877,
+    "local_path": "C:/Users/kotar/.codex/research/garak",
+    "lastCommit": "2026-10-16T15:01:56-05:00 postrel version bump",
+    "licenseFiles": [
+      {
+        "path": "LICENSE",
+        "sha256": "b2c6b7794a4b137b5e5e4fe9efb9771f35b6f466d0ea6704bedc649a0cd0f7f0",
+        "opening": "\r\n                                 Apache License\r\n                           Version 2.0, January 2004\r\n                        http://www.apache.org/licenses/\r\n\r\n   TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION\r\n\r\n   1. Definitions.\r"
+      }
+    ],
+    "accessDate": "2026-10-17",
+    "maintenanceMeaning": "Latest commit in saved snapshot; not an upstream freshness or quality guarantee."
+  },
+  {
+    "name": "promptfoo",
+    "commit": "79011700b4cb544ddd9267565571a1d42d3a3051",
+    "origin": "https://github.com/promptfoo/promptfoo.git",
+    "tracked_files": 5948,
+    "local_path": "C:/Users/kotar/.codex/research/promptfoo",
+    "lastCommit": "2026-10-17T06:23:27+09:00 chore(deps): update dependency @anthropic-ai/claude-agent-sdk to v0.3.292 (#11819)",
+    "licenseFiles": [
+      {
+        "path": "LICENSE",
+        "sha256": "31777a96a6539ed54b89601c1a739e5312a8deab23ff9401c986f5c80a912056",
+        "opening": "Copyright (c) Promptfoo 2025\r\n\r\nPermission is hereby granted, free of charge, to any person obtaining a copy\r\nof this software and associated documentation files (the \"Software\"), to deal\r\nin the Software without restriction, including without limitation the rights\r\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\r\ncopies of the Software, and to permit persons to whom the Software is\r\nfurnished to do so, subject to the following conditions:\r"
+      }
+    ],
+    "accessDate": "2026-10-17",
+    "maintenanceMeaning": "Latest commit in saved snapshot; not an upstream freshness or quality guarantee."
+  },
+  {
+    "name": "temporal",
+    "commit": "48a1e5ff025e55b3d4d0f44247423d4c279ff636",
+    "origin": "https://github.com/temporalio/temporal.git",
+    "tracked_files": 4018,
+    "local_path": "C:/Users/kotar/.codex/research/temporal",
+    "lastCommit": "2026-10-16T21:23:24-07:00 Remove migration archetype name translation (#12599)",
+    "licenseFiles": [
+      {
+        "path": "LICENSE",
+        "sha256": "3ad6b6104329f8d8a55e57f567708a0b0e06148011c9f7ae5efe9982fd588d37",
+        "opening": "The MIT License\r\n\r\nCopyright (c) 2025 Temporal Technologies Inc.  All rights reserved.\r\n\r\nCopyright (c) 2020 Uber Technologies, Inc.\r\n\r\nPermission is hereby granted, free of charge, to any person obtaining a copy\r\nof this software and associated documentation files (the \"Software\"), to deal\r"
+      }
+    ],
+    "accessDate": "2026-10-17",
+    "maintenanceMeaning": "Latest commit in saved snapshot; not an upstream freshness or quality guarantee."
+  },
+  {
+    "name": "langgraph",
+    "commit": "41c9c22fdc83d68a2859d0c9a2b627c8615a792f",
+    "origin": "https://github.com/langchain-ai/langgraph.git",
+    "tracked_files": 693,
+    "local_path": "C:/Users/kotar/.codex/research/langgraph",
+    "lastCommit": "2026-10-16T18:02:08-04:00 release(langgraph): 1.2.16 (#9334)",
+    "licenseFiles": [
+      {
+        "path": "LICENSE",
+        "sha256": "ab08cf7f0b8d47e474d2e66e0212f18f6c70f5097f404de8a35c665012c9b199",
+        "opening": "MIT License\r\n\r\nCopyright (c) 2024 LangChain, Inc.\r\n\r\nPermission is hereby granted, free of charge, to any person obtaining a copy\r\nof this software and associated documentation files (the \"Software\"), to deal\r\nin the Software without restriction, including without limitation the rights\r\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\r"
+      }
+    ],
+    "accessDate": "2026-10-17",
+    "maintenanceMeaning": "Latest commit in saved snapshot; not an upstream freshness or quality guarantee."
+  },
+  {
+    "name": "pentestgpt",
+    "origin": "https://github.com/GreyDGL/PentestGPT.git",
+    "local_path": "C:/Users/kotar/.codex/research/pentestgpt-20261017",
+    "commit": "e8b1bb77d1ac00329675cec3b060aba971ec1ac8",
+    "lastCommit": "2026-07-14T20:58:30+08:00 docs: mark XBOW as reference-only (#497)",
+    "licenseFiles": [
+      {
+        "path": "LICENSE.md",
+        "sha256": "ec04c21b7ac5a83b3504c2b96662fa65b4a3b6b0812871818c8ec55bbd6e60b8",
+        "opening": "MIT License\r\n\r\nCopyright (c) 2023 Grey_D\r\n\r\nPermission is hereby granted, free of charge, to any person obtaining a copy\r\nof this software and associated documentation files (the \"Software\"), to deal\r\nin the Software without restriction, including without limitation the rights\r\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\r"
+      }
+    ],
+    "accessDate": "2026-10-17",
+    "maintenanceMeaning": "Latest commit in saved snapshot; not an upstream freshness or quality guarantee."
+  }
+]

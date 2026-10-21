@@ -1,0 +1,37 @@
+{
+  "at": "2026-10-17T20:02:08.516Z",
+  "out": "C:\\Users\\kotar\\githubprojects\\NBRET\\runs\\nuclei-composition-research-1792267301095",
+  "scope": "Production parser/guard/operator/matcher with synthetic inputs and stub model only; no protocol execution",
+  "command": {
+    "executable": "C:\\Users\\kotar\\githubprojects\\NBRET\\.tools\\security-research-go\\sdk\\go\\bin\\go.exe",
+    "args": [
+      "test",
+      "-overlay",
+      "C:\\Users\\kotar\\githubprojects\\NBRET\\runs\\nuclei-composition-research-1792267301095\\overlay.json",
+      "./pkg/templates",
+      "-run",
+      "^(TestCache|TestCloneTemplate|TestSoleLLM|TestResearch)",
+      "-count=1",
+      "-json"
+    ],
+    "cwd": "C:/Users/kotar/.codex/research/nuclei"
+  },
+  "exit": 1,
+  "signal": null,
+  "elapsedMs": 27419.655,
+  "sourceSha256": {
+    "pkg/templates/templates.go": "9887f37df3570bcc78cf34bfe5c59c634173b805856b12cef2461b4d604bd586",
+    "pkg/templates/llm_validate.go": "7ce93f7a4447a3c6377854b23d3d05e03c612d2c6a0fb84c4803b437a479dd35",
+    "pkg/templates/llm_validate_test.go": "b22e6ebbb3be7b9ffbbd6e9d6ede35ce00b83c6d65924cad6868a1d2c26d35ab",
+    "pkg/templates/cache_test.go": "537ad5f851d303b3bfb080d7221cb100a8a243cfcee366ae933c24bff22ae20d",
+    "pkg/templates/clone_test.go": "7c7174ba67bda109d58d94ae8029ab75fb74258294b96e7167ea3f688b40672e",
+    "pkg/operators/operators.go": "14110851bcb6e35b9e118de8f3f113f08da1b1c9acc51f7ffebd34e03dd0213c",
+    "pkg/operators/matchers/match.go": "2b2858a96c3f013f016a21debeb7fdd23f475f42082076bf9bc1cfa640223b00",
+    "go.mod": "d960ba91e597d8500c1d7bc68b6daaf07631fa795ee0972eb5dad2bfa49697c5",
+    "go.sum": "df80e4e570143a2abebf4174236e9ccc114292d0a2f3f6102848a4610cd396c1"
+  },
+  "overlaySha256": "66938b7d3dfb77fb86a01020b5545b1ad702d3c3c9bf4e05f52f688693b45df6",
+  "logSha256": "d0958d6d5f2b219ff447f9da6ba9240e2c1d140c93b4b25aa5c41a7ed7158137",
+  "tests": [],
+  "researchOutput": []
+}

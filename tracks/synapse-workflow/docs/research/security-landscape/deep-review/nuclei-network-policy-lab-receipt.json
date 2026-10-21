@@ -1,0 +1,40 @@
+{
+  "at": "2026-10-17T20:52:42.563Z",
+  "out": "C:\\Users\\kotar\\githubprojects\\NBRET\\runs\\network-policy-research-1792270362427",
+  "scope": "Byte-identical copied NetworkPolicy root package with upstream tests plus overlay string-only cases; no DNS/socket/engine/model/real credentials.",
+  "command": {
+    "executable": "C:\\Users\\kotar\\githubprojects\\NBRET\\.tools\\security-research-go\\sdk\\go\\bin\\go.exe",
+    "args": [
+      "test",
+      "-overlay",
+      "C:\\Users\\kotar\\githubprojects\\NBRET\\runs\\network-policy-research-1792270362427\\overlay.json",
+      ".",
+      "-run",
+      "^Test",
+      "-count=1",
+      "-json"
+    ],
+    "cwd": "C:\\Users\\kotar\\githubprojects\\NBRET\\runs\\network-policy-research-1792270362427\\module"
+  },
+  "moduleNetwork": {
+    "GOPROXY": "off",
+    "GOSUMDB": "off"
+  },
+  "exit": 1,
+  "elapsedMs": 130.50480000000002,
+  "tests": [],
+  "sourceSha256": {
+    "networkpolicy.go": "d365a2c79811cd323a1e29af770a1284d4ae851908f29e28acfea777644d85aa",
+    "networkpolicy_test.go": "44cbe706defd4766955a1e5be7ee919408a63d7b0b9fe7603d8c286f0559f134",
+    "cidr.go": "bed1c8616013702bce45e58f390c6f65f731ca5c311541b815b43dc69e4bdb50",
+    "scheme.go": "ecc4ce7df85fb0a7578071f7e21e008da9f136ad1c7e5d9a1624c1aeeac481ce",
+    "host.go": "cb991a58de28c8bbd88d4110d6996c49923bc3ef82c45ac4c292ff7db82ba0e2",
+    "ip.go": "c99e6373fec5d355d43a97050f85bdadcba41cf9f680d6d4f66ab3926d8facba",
+    "port.go": "b7cc93c0bf6e16a882d3b93062f3c74ddb6121d1682da2f2a3c87886cd86ebe3",
+    "go.mod": "32202a617c1fa4cfa8d976903c30504ac78af407bc375c1790587ced5f5b76a3",
+    "go.sum": "7db19448ec6b96a317bfd131accad076ccd0739abfa9d78ed4f211ffd43e6dcf"
+  },
+  "fixtureSha256": "b78eac8fd5191ceab95fbd7b7ab52e57f12bec6c206aa4a865d0a93632093896",
+  "logSha256": "4a7b6a5dbda2bd8ce38d3d2e51c57b4648f8a9bf6571d9812ba6a9963e3025c3",
+  "stderrSha256": "355364861d59cd8ee715ce40a9290d3c1eda4d00b34a82d347aab6d8516795fc"
+}

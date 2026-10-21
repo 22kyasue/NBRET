@@ -1,0 +1,61 @@
+{
+  "startedAt": "2026-10-17T21:08:58.199Z",
+  "finishedAt": "2026-10-17T21:08:59.335Z",
+  "sourcePin": "d0640cfb421e2b9f4fc249de733c3d6e52f1a57f",
+  "sourceSha256": "eb2e607bdbbba8b5325d55673024dd5e1e744864d113797565e52c5afcbadafb",
+  "methodRange": [
+    739,
+    771
+  ],
+  "methodSha256": "71e81979edcd586a6d065fb6577ad97fd85bc11516dffaed75e44493541fe9df",
+  "fieldsRange": [
+    720,
+    725
+  ],
+  "fixturePath": "C:\\Users\\kotar\\githubprojects\\NBRET\\.tools\\toolchain\\pg-builder-fixture\\builder_test.go",
+  "fixtureSha256": "e2ba5d1c54a7d16bcc500c72a2dbacbdd09a08460aa5966d27892ce42bc6e4c7",
+  "go": "go version go1.27.2 windows/amd64",
+  "cwd": "C:\\Users\\kotar\\githubprojects\\NBRET\\.tools\\toolchain\\BloodHound",
+  "args": [
+    "test",
+    "-p=2",
+    "-count=1",
+    "-timeout=15s",
+    "-json",
+    "C:\\Users\\kotar\\githubprojects\\NBRET\\.tools\\toolchain\\pg-builder-fixture\\builder_test.go",
+    "-run",
+    "^TestBuilderObservations$"
+  ],
+  "environmentOverrides": {
+    "GOTOOLCHAIN": "local",
+    "GOWORK": "off",
+    "GOFLAGS": "-mod=readonly",
+    "GOPROXY": "off",
+    "GOSUMDB": "off",
+    "GOMAXPROCS": "2",
+    "GOPATH": "C:\\Users\\kotar\\githubprojects\\NBRET\\.tools\\toolchain\\go\\path",
+    "GOCACHE": "C:\\Users\\kotar\\githubprojects\\NBRET\\.tools\\toolchain\\go\\cache",
+    "GOMODCACHE": "C:\\Users\\kotar\\githubprojects\\NBRET\\.tools\\toolchain\\go\\modules"
+  },
+  "goModSha256": "acc95448c2e68118020ce5b7d98e89b3c6af38430969fd63f70d98b9f634364c",
+  "goSumSha256": "0eb760d56fed383d4e003b5c81e591f3feaa736f9f7a2e9c8888c3047f42c42c",
+  "passed": [
+    "TestBuilderObservations/endpoint_key_alias",
+    "TestBuilderObservations/zero_id_wrong_property_bag",
+    "TestBuilderObservations/nonzero_id_index_panic",
+    "TestBuilderObservations/first_zero_id_control",
+    "TestBuilderObservations"
+  ],
+  "oraclePassed": true,
+  "code": 0,
+  "stdout": "{\"Time\":\"2026-10-17T14:08:58.819552-07:00\",\"Action\":\"start\",\"Package\":\"command-line-arguments\"}\n{\"Time\":\"2026-10-17T14:08:59.3193512-07:00\",\"Action\":\"run\",\"Package\":\"command-line-arguments\",\"Test\":\"TestBuilderObservations\"}\n{\"Time\":\"2026-10-17T14:08:59.3193512-07:00\",\"Action\":\"output\",\"Package\":\"command-line-arguments\",\"Test\":\"TestBuilderObservations\",\"Output\":\"=== RUN   TestBuilderObservations\\n\",\"OutputType\":\"frame\"}\n{\"Time\":\"2026-10-17T14:08:59.3193512-07:00\",\"Action\":\"run\",\"Package\":\"command-line-arguments\",\"Test\":\"TestBuilderObservations/endpoint_key_alias\"}\n{\"Time\":\"2026-10-17T14:08:59.3193512-07:00\",\"Action\":\"output\",\"Package\":\"command-line-arguments\",\"Test\":\"TestBuilderObservations/endpoint_key_alias\",\"Output\":\"=== RUN   TestBuilderObservations/endpoint_key_alias\\n\",\"OutputType\":\"frame\"}\n{\"Time\":\"2026-10-17T14:08:59.3193512-07:00\",\"Action\":\"output\",\"Package\":\"command-line-arguments\",\"Test\":\"TestBuilderObservations/endpoint_key_alias\",\"Output\":\"    builder_test.go:51: distinct endpoint pairs collapse into one row\\n\"}\n{\"Time\":\"2026-10-17T14:08:59.3193512-07:00\",\"Action\":\"output\",\"Package\":\"command-line-arguments\",\"Test\":\"TestBuilderObservations/endpoint_key_alias\",\"Output\":\"--- PASS: TestBuilderObservations/endpoint_key_alias (0.00s)\\n\",\"OutputType\":\"frame\"}\n{\"Time\":\"2026-10-17T14:08:59.3193512-07:00\",\"Action\":\"pass\",\"Package\":\"command-line-arguments\",\"Test\":\"TestBuilderObservations/endpoint_key_alias\",\"Elapsed\":0}\n{\"Time\":\"2026-10-17T14:08:59.3193512-07:00\",\"Action\":\"run\",\"Package\":\"command-line-arguments\",\"Test\":\"TestBuilderObservations/zero_id_wrong_property_bag\"}\n{\"Time\":\"2026-10-17T14:08:59.3193512-07:00\",\"Action\":\"output\",\"Package\":\"command-line-arguments\",\"Test\":\"TestBuilderObservations/zero_id_wrong_property_bag\",\"Output\":\"=== RUN   TestBuilderObservations/zero_id_wrong_property_bag\\n\",\"OutputType\":\"frame\"}\n{\"Time\":\"2026-10-17T14:08:59.3193512-07:00\",\"Action\":\"output\",\"Package\":\"command-line-arguments\",\"Test\":\"TestBuilderObservations/zero_id_wrong_property_bag\",\"Output\":\"    builder_test.go:52: duplicate second edge marker merged into first bag\\n\"}\n{\"Time\":\"2026-10-17T14:08:59.3193512-07:00\",\"Action\":\"output\",\"Package\":\"command-line-arguments\",\"Test\":\"TestBuilderObservations/zero_id_wrong_property_bag\",\"Output\":\"--- PASS: TestBuilderObservations/zero_id_wrong_property_bag (0.00s)\\n\",\"OutputType\":\"frame\"}\n{\"Time\":\"2026-10-17T14:08:59.3193512-07:00\",\"Action\":\"pass\",\"Package\":\"command-line-arguments\",\"Test\":\"TestBuilderObservations/zero_id_wrong_property_bag\",\"Elapsed\":0}\n{\"Time\":\"2026-10-17T14:08:59.3193512-07:00\",\"Action\":\"run\",\"Package\":\"command-line-arguments\",\"Test\":\"TestBuilderObservations/nonzero_id_index_panic\"}\n{\"Time\":\"2026-10-17T14:08:59.3193512-07:00\",\"Action\":\"output\",\"Package\":\"command-line-arguments\",\"Test\":\"TestBuilderObservations/nonzero_id_index_panic\",\"Output\":\"=== RUN   TestBuilderObservations/nonzero_id_index_panic\\n\",\"OutputType\":\"frame\"}\n{\"Time\":\"2026-10-17T14:08:59.3193512-07:00\",\"Action\":\"output\",\"Package\":\"command-line-arguments\",\"Test\":\"TestBuilderObservations/nonzero_id_index_panic\",\"Output\":\"    builder_test.go:53: recovered: runtime error: index out of range [99] with length 1\\n\"}\n{\"Time\":\"2026-10-17T14:08:59.3193512-07:00\",\"Action\":\"output\",\"Package\":\"command-line-arguments\",\"Test\":\"TestBuilderObservations/nonzero_id_index_panic\",\"Output\":\"--- PASS: TestBuilderObservations/nonzero_id_index_panic (0.00s)\\n\",\"OutputType\":\"frame\"}\n{\"Time\":\"2026-10-17T14:08:59.3193512-07:00\",\"Action\":\"pass\",\"Package\":\"command-line-arguments\",\"Test\":\"TestBuilderObservations/nonzero_id_index_panic\",\"Elapsed\":0}\n{\"Time\":\"2026-10-17T14:08:59.3193512-07:00\",\"Action\":\"run\",\"Package\":\"command-line-arguments\",\"Test\":\"TestBuilderObservations/first_zero_id_control\"}\n{\"Time\":\"2026-10-17T14:08:59.3193512-07:00\",\"Action\":\"output\",\"Package\":\"command-line-arguments\",\"Test\":\"TestBuilderObservations/first_zero_id_control\",\"Output\":\"=== RUN   TestBuilderObservations/first_zero_id_control\\n\",\"OutputType\":\"frame\"}\n{\"Time\":\"2026-10-17T14:08:59.3193512-07:00\",\"Action\":\"output\",\"Package\":\"command-line-arguments\",\"Test\":\"TestBuilderObservations/first_zero_id_control\",\"Output\":\"--- PASS: TestBuilderObservations/first_zero_id_control (0.00s)\\n\",\"OutputType\":\"frame\"}\n{\"Time\":\"2026-10-17T14:08:59.3193512-07:00\",\"Action\":\"pass\",\"Package\":\"command-line-arguments\",\"Test\":\"TestBuilderObservations/first_zero_id_control\",\"Elapsed\":0}\n{\"Time\":\"2026-10-17T14:08:59.3193512-07:00\",\"Action\":\"output\",\"Package\":\"command-line-arguments\",\"Test\":\"TestBuilderObservations\",\"Output\":\"--- PASS: TestBuilderObservations (0.00s)\\n\",\"OutputType\":\"frame\"}\n{\"Time\":\"2026-10-17T14:08:59.3193512-07:00\",\"Action\":\"pass\",\"Package\":\"command-line-arguments\",\"Test\":\"TestBuilderObservations\",\"Elapsed\":0}\n{\"Time\":\"2026-10-17T14:08:59.3193512-07:00\",\"Action\":\"output\",\"Package\":\"command-line-arguments\",\"Output\":\"PASS\\n\",\"OutputType\":\"frame\"}\n{\"Time\":\"2026-10-17T14:08:59.3203511-07:00\",\"Action\":\"output\",\"Package\":\"command-line-arguments\",\"Output\":\"ok  \\tcommand-line-arguments\\t0.501s\\n\"}\n{\"Time\":\"2026-10-17T14:08:59.3203511-07:00\",\"Action\":\"pass\",\"Package\":\"command-line-arguments\",\"Elapsed\":0.501}\n",
+  "stderr": "",
+  "stdoutSha256": "07212e8b5aa1f8d4a9d5bcec6a00b0af367e32e90352f0dcb2f52419ca820443",
+  "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "cleanup": "In-memory subprocess exited; no database, listener or global configuration created.",
+  "limitations": [
+    "Exact Add method with stand-in mapper and row accumulator, actual pinned graph types",
+    "Not whole pg package or SQL execution",
+    "Not an application reachability or customer impact result"
+  ]
+}

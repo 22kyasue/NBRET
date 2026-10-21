@@ -1,0 +1,36 @@
+{
+  "startedAt": "2026-10-17T19:56:31.365Z",
+  "finishedAt": "2026-10-17T19:56:35.274Z",
+  "source": {
+    "name": "mitmproxy",
+    "url": "https://github.com/mitmproxy/mitmproxy.git",
+    "root": "C:\\Users\\kotar\\githubprojects\\NBRET\\.tools\\toolchain\\mitmproxy",
+    "commit": "77355977e5ea540b51ed029a40ed1dc2f1c2ba7b",
+    "commitDate": "2026-10-13T20:07:55+02:00",
+    "dirty": "",
+    "retrievedAt": "2026-10-17T19:51:25.930Z",
+    "basis": "Shallow upstream default-branch snapshot; not a release or a claim of latest installed software"
+  },
+  "python": "Python 3.14.7",
+  "executable": "C:\\Users\\kotar\\githubprojects\\NBRET\\.tools\\toolchain\\venv\\Scripts\\python.exe",
+  "args": [
+    "C:\\Users\\kotar\\githubprojects\\NBRET\\docs\\research\\toolchain\\proxy-offline-lab.py"
+  ],
+  "environment": {
+    "PYTEST_DISABLE_PLUGIN_AUTOLOAD": "1"
+  },
+  "scriptSha256": "03668b7abafd2a0600a3e9a42827845c6afce4f57a3a6f7ad18164f9ce7cc715",
+  "code": 4,
+  "killed": false,
+  "stdout": "",
+  "stderr": "ERROR: usage: proxy-offline-lab.py [options] [file_or_dir] [file_or_dir] [...]\r\nproxy-offline-lab.py: error: unrecognized arguments: --timeout=15\r\n  inifile: C:\\Users\\kotar\\githubprojects\\NBRET\\.tools\\toolchain\\mitmproxy\\pyproject.toml\r\n  rootdir: C:\\Users\\kotar\\githubprojects\\NBRET\\.tools\\toolchain\\mitmproxy\r\n\r\n",
+  "error": "Command failed: C:\\Users\\kotar\\githubprojects\\NBRET\\.tools\\toolchain\\venv\\Scripts\\python.exe C:\\Users\\kotar\\githubprojects\\NBRET\\docs\\research\\toolchain\\proxy-offline-lab.py\nERROR: usage: proxy-offline-lab.py [options] [file_or_dir] [file_or_dir] [...]\r\nproxy-offline-lab.py: error: unrecognized arguments: --timeout=15\r\n  inifile: C:\\Users\\kotar\\githubprojects\\NBRET\\.tools\\toolchain\\mitmproxy\\pyproject.toml\r\n  rootdir: C:\\Users\\kotar\\githubprojects\\NBRET\\.tools\\toolchain\\mitmproxy\r\n\r\n",
+  "limitations": [
+    "Sans-I/O commands and fabricated connection replies; no real upstream sockets or TLS handshake",
+    "Python socket connect/connect_ex/create_connection/getaddrinfo guarded; native socket paths are not globally sandboxed",
+    "Upstream test/conftest.py briefly binds and closes ::1 ephemeral port to check IPv6 support; no listening service",
+    "No CA, driver, proxy, VPN, route or DNS configuration changed",
+    "No finding about real targets or absence of vulnerabilities"
+  ],
+  "cleanup": "Subprocess exited; source and venv retained in ignored .tools/toolchain; no running proxy was started"
+}

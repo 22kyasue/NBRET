@@ -1,0 +1,15 @@
+{
+  "at": "2026-10-17T23:39:22.677Z",
+  "package": "deepdiff",
+  "version": "8.6.1",
+  "source": "https://pypi.org/pypi/deepdiff/8.6.1/json",
+  "distribution": "https://files.pythonhosted.org/packages/19/76/36c9aab3d5c19a94091f7c6c6e784efca50d87b124bf026c36e94719f33c/deepdiff-8.6.1.tar.gz",
+  "archive": "C:\\Users\\kotar\\.codex\\research\\assessment-evidence-sdk-sources\\deepdiff-8.6.1\\deepdiff-8.6.1.tar.gz",
+  "destination": "C:\\Users\\kotar\\.codex\\research\\assessment-evidence-sdk-sources\\deepdiff-8.6.1\\source",
+  "sha256": "ec56d7a769ca80891b5200ec7bd41eec300ced91ebcc7797b41eb2b3f3ff643a",
+  "bytes": 634054,
+  "metadataSha256": "959fce787a77e1dae90c824957c7e84e1f83a0142edd03f2038c84b83a2ddbd5",
+  "upstreamGitCommit": null,
+  "licenseClaim": "MIT classifier; complete distributed license still to read",
+  "behavior": "Public source acquisition/extraction only; no package import, install, model, server or test execution"
+}

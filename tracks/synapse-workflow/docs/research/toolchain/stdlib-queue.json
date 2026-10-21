@@ -1,0 +1,541 @@
+{
+  "at": "2026-10-18T04:13:06.947Z",
+  "root": "C:\\Users\\kotar\\githubprojects\\NBRET\\.tools\\security-research-go\\sdk\\go",
+  "basis": "Selected already-present Go SDK material HTTP dependency files; no execution. Existing adjacent SDK archive receipt supplies provenance, not binary/source equivalence.",
+  "receipt": ".tools/security-research-go/receipt.json",
+  "entries": [
+    {
+      "path": "VERSION",
+      "sha256": "b8491590f9ef7072d890b6a47475283d420379df6b0b34df9ea58b45731b280d",
+      "bytes": 35,
+      "lines": 3,
+      "readRanges": [
+        [
+          1,
+          3
+        ]
+      ],
+      "status": "complete",
+      "recordedAt": "2026-10-18T04:13:49.488Z"
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "911f8f5782931320f5b8d1160a76365b83aea6447ee6c04fa6d5591467db9dad",
+      "bytes": 1453,
+      "lines": 28,
+      "readRanges": [
+        [
+          1,
+          28
+        ]
+      ],
+      "status": "complete",
+      "recordedAt": "2026-10-18T04:13:50.093Z"
+    },
+    {
+      "path": "src/net/http/client.go",
+      "sha256": "ced3428a85206de8de79c10de38d34951e0b9823c0ccb68ff51329d048a1f7b9",
+      "bytes": 36093,
+      "lines": 1071,
+      "readRanges": [
+        [
+          1,
+          1071
+        ]
+      ],
+      "status": "complete",
+      "recordedAt": "2026-10-18T04:13:25.442Z"
+    },
+    {
+      "path": "src/net/http/request.go",
+      "sha256": "c3257079994b4e4f74f01cef72508919983ba31f91fcf599d348e9d52cec1540",
+      "bytes": 51543,
+      "lines": 1610,
+      "readRanges": [
+        [
+          1,
+          1610
+        ]
+      ],
+      "status": "complete",
+      "recordedAt": "2026-10-18T04:15:35.780Z"
+    },
+    {
+      "path": "src/net/http/transfer.go",
+      "sha256": "e572e08b03e23722c57079b2c691c86c59b4eb4b46d22d276c00c0acf8eab335",
+      "bytes": 33305,
+      "lines": 1184,
+      "readRanges": [
+        [
+          1,
+          1184
+        ]
+      ],
+      "status": "complete",
+      "recordedAt": "2026-10-18T04:14:50.155Z"
+    },
+    {
+      "path": "src/net/http/transport.go",
+      "sha256": "c9146e77adc22d4b74ba77384ec7be7fc27c3af21ff20485f642b4d611b381a4",
+      "bytes": 107642,
+      "lines": 3489,
+      "readRanges": [
+        [
+          1,
+          3489
+        ]
+      ],
+      "status": "complete",
+      "recordedAt": "2026-10-18T04:17:11.328Z"
+    },
+    {
+      "path": "src/net/http/httputil/dump.go",
+      "sha256": "6e735a669ee4168fb6d27b68bcbe684af88f714e87973c71614e18484e31dd2b",
+      "bytes": 9538,
+      "lines": 337,
+      "readRanges": [
+        [
+          1,
+          337
+        ]
+      ],
+      "status": "complete",
+      "recordedAt": "2026-10-18T04:14:11.368Z"
+    },
+    {
+      "path": "src/net/http/client_test.go",
+      "sha256": "536039291ff42e4d8e031af00ced031e577c032709bef56455c2e9351db4c60f",
+      "bytes": 70838,
+      "lines": 2334,
+      "readRanges": [
+        [
+          1,
+          2334
+        ]
+      ],
+      "status": "complete",
+      "inventoriedAt": "2026-10-18T04:17:36.399Z",
+      "recordedAt": "2026-10-18T04:19:23.814Z"
+    },
+    {
+      "path": "src/net/http/transfer_test.go",
+      "sha256": "7400e55c2af5ddfc23684689f7a13bf77d22bec82db04c136914b69822459308",
+      "bytes": 9352,
+      "lines": 374,
+      "readRanges": [
+        [
+          1,
+          374
+        ]
+      ],
+      "status": "complete",
+      "inventoriedAt": "2026-10-18T04:17:36.974Z",
+      "recordedAt": "2026-10-18T04:18:12.762Z"
+    },
+    {
+      "path": "src/net/http/request_test.go",
+      "sha256": "110a0228c12e7631de5481d9f9fd4050a9dbf0ac7d634ea645eef726b326151a",
+      "bytes": 44983,
+      "lines": 1667,
+      "readRanges": [
+        [
+          1,
+          1667
+        ]
+      ],
+      "status": "complete",
+      "inventoriedAt": "2026-10-18T04:17:37.539Z",
+      "recordedAt": "2026-10-18T04:20:12.692Z"
+    },
+    {
+      "path": "src/net/http/transport_test.go",
+      "sha256": "d71bd29e1ae3cd3fbe7a819f8e9e0e9a9137042aa623b64f900381cf27c88a58",
+      "bytes": 224547,
+      "lines": 8107,
+      "readRanges": [
+        [
+          1,
+          8107
+        ]
+      ],
+      "status": "complete",
+      "inventoriedAt": "2026-10-18T04:17:38.097Z",
+      "recordedAt": "2026-10-18T04:23:44.092Z"
+    },
+    {
+      "path": "src/net/http/httputil/dump_test.go",
+      "sha256": "155fe3324691f8185d7aa35bfb11b0755001aa78f036aac8cdb5439e536deee1",
+      "bytes": 12828,
+      "lines": 533,
+      "readRanges": [
+        [
+          1,
+          533
+        ]
+      ],
+      "status": "complete",
+      "inventoriedAt": "2026-10-18T04:17:38.682Z",
+      "recordedAt": "2026-10-18T04:18:26.309Z"
+    },
+    {
+      "path": "src/vendor/golang.org/x/net/http/httpguts/httplex.go",
+      "sha256": "8cfd5819dc821d45f82fde10afff4b2e652535b0091e0559fc8ad7766051a2c2",
+      "bytes": 8933,
+      "lines": 348,
+      "readRanges": [
+        [
+          1,
+          348
+        ]
+      ],
+      "status": "complete",
+      "inventoriedAt": "2026-10-18T04:17:39.254Z",
+      "recordedAt": "2026-10-18T04:17:45.843Z"
+    },
+    {
+      "path": "src/vendor/golang.org/x/net/http/httpproxy/proxy.go",
+      "sha256": "ce887b0b89d3c008b2c6082c62cf07ad29734cdd19d7b58ce8030bd35cb0a907",
+      "bytes": 10306,
+      "lines": 374,
+      "readRanges": [
+        [
+          1,
+          374
+        ]
+      ],
+      "status": "complete",
+      "inventoriedAt": "2026-10-18T04:17:39.843Z",
+      "recordedAt": "2026-10-18T04:18:01.484Z"
+    },
+    {
+      "path": "src/net/http/internal/chunked.go",
+      "sha256": "d2a088e8d1d0ae6ff593b27011982ef9115fee593cb57cc97eb34982ff17f5e2",
+      "bytes": 8479,
+      "lines": 301,
+      "readRanges": [
+        [
+          1,
+          301
+        ]
+      ],
+      "status": "complete",
+      "inventoriedAt": "2026-10-18T04:26:15.379Z",
+      "recordedAt": "2026-10-18T04:26:34.255Z"
+    },
+    {
+      "path": "src/net/http/internal/chunked_test.go",
+      "sha256": "3cbab061f835f34ff7d5c20992845834d901c85de072171340810b936ca2ea6d",
+      "bytes": 8838,
+      "lines": 329,
+      "readRanges": [
+        [
+          1,
+          329
+        ]
+      ],
+      "status": "complete",
+      "inventoriedAt": "2026-10-18T04:26:40.056Z",
+      "recordedAt": "2026-10-18T04:26:55.196Z"
+    },
+    {
+      "path": "src/net/http/response.go",
+      "sha256": "0b32a0b4ee51e00e3410764f3b2ffe1163dccb9cad548b097f47db85893a2f44",
+      "bytes": 11596,
+      "lines": 376,
+      "readRanges": [
+        [
+          1,
+          376
+        ]
+      ],
+      "status": "complete",
+      "inventoriedAt": "2026-10-18T04:26:58.547Z",
+      "recordedAt": "2026-10-18T04:27:15.775Z"
+    },
+    {
+      "path": "src/net/http/header.go",
+      "sha256": "b4fa959c3db03d4ca67a487b3cbb25dcefecea45ca3dd10fef13cfc32fa6d80d",
+      "bytes": 7832,
+      "lines": 275,
+      "readRanges": [
+        [
+          1,
+          275
+        ]
+      ],
+      "status": "complete",
+      "inventoriedAt": "2026-10-18T04:27:27.481Z",
+      "recordedAt": "2026-10-18T04:27:45.148Z"
+    },
+    {
+      "path": "src/net/textproto/header.go",
+      "sha256": "8ff6b9ab3af4f79aead3b4a3e07aa11e124980b0ab8bf24859fcc7acd2cda7d3",
+      "bytes": 1693,
+      "lines": 57,
+      "readRanges": [
+        [
+          1,
+          57
+        ]
+      ],
+      "status": "complete",
+      "inventoriedAt": "2026-10-18T04:27:52.202Z",
+      "recordedAt": "2026-10-18T04:28:09.812Z"
+    },
+    {
+      "path": "src/net/textproto/reader.go",
+      "sha256": "98a3ebb83bb6d2df4fb1f303ead592efbdb125f00f9a2b961c1496c66e49ae0e",
+      "bytes": 23061,
+      "lines": 858,
+      "readRanges": [
+        [
+          1,
+          858
+        ]
+      ],
+      "status": "complete",
+      "inventoriedAt": "2026-10-18T04:28:10.398Z",
+      "recordedAt": "2026-10-18T04:28:43.500Z"
+    },
+    {
+      "path": "src/net/http/clientserver_test.go",
+      "sha256": "259275b9405e2435fca8fbd893aec40b37689029333e53b795399dbd0fe44b61",
+      "bytes": 55298,
+      "lines": 2041,
+      "readRanges": [
+        [
+          1,
+          2041
+        ]
+      ],
+      "status": "complete",
+      "inventoriedAt": "2026-10-18T04:28:47.940Z",
+      "recordedAt": "2026-10-18T04:30:04.128Z"
+    },
+    {
+      "path": "src/net/http/header_test.go",
+      "sha256": "01b518ad40e1550c9cb0240e316c86268fa1a7f5f8b65db05d3538397af55170",
+      "bytes": 6196,
+      "lines": 273,
+      "readRanges": [
+        [
+          1,
+          273
+        ]
+      ],
+      "status": "complete",
+      "inventoriedAt": "2026-10-18T04:30:31.270Z",
+      "recordedAt": "2026-10-18T04:30:43.395Z"
+    },
+    {
+      "path": "src/net/http/response_test.go",
+      "sha256": "5be1c77e9703f721f28daa4a404f9a6a7825542952b9eb102fd47c745246fa05",
+      "bytes": 27064,
+      "lines": 1139,
+      "readRanges": [
+        [
+          1,
+          1139
+        ]
+      ],
+      "status": "complete",
+      "inventoriedAt": "2026-10-18T04:30:43.985Z",
+      "recordedAt": "2026-10-18T04:31:40.257Z"
+    },
+    {
+      "path": "src/net/textproto/reader_test.go",
+      "sha256": "526d0ce42709b324dc0dbfdf1c07fcddbe32f78c2c06fa7f83f4a766fef78abd",
+      "bytes": 15988,
+      "lines": 567,
+      "readRanges": [
+        [
+          1,
+          567
+        ]
+      ],
+      "status": "complete",
+      "inventoriedAt": "2026-10-18T04:31:46.347Z",
+      "recordedAt": "2026-10-18T04:32:10.240Z"
+    },
+    {
+      "path": "src/net/http/main_test.go",
+      "sha256": "de030a7acd9fb1d319173fc2602c3faac3d2909c713045c5714421a5b3b06f1b",
+      "bytes": 5060,
+      "lines": 176,
+      "readRanges": [
+        [
+          1,
+          176
+        ]
+      ],
+      "status": "complete",
+      "inventoriedAt": "2026-10-18T04:32:21.694Z",
+      "recordedAt": "2026-10-18T04:32:42.184Z"
+    },
+    {
+      "path": "src/net/http/netconn_test.go",
+      "sha256": "5c6fdbb7cb168ff2556e49a19602531db1788cf054e88f373abb3889632f2184",
+      "bytes": 10653,
+      "lines": 441,
+      "readRanges": [
+        [
+          1,
+          441
+        ]
+      ],
+      "status": "complete",
+      "inventoriedAt": "2026-10-18T04:32:42.759Z",
+      "recordedAt": "2026-10-18T04:33:02.389Z"
+    },
+    {
+      "path": "src/net/http/httptest/server.go",
+      "sha256": "833a779748e4c7bdd898c8c2a5eca568112907f959d421c7a50b76d209c39621",
+      "bytes": 19835,
+      "lines": 662,
+      "readRanges": [
+        [
+          1,
+          662
+        ]
+      ],
+      "status": "complete",
+      "inventoriedAt": "2026-10-18T04:33:16.427Z",
+      "recordedAt": "2026-10-18T04:33:47.615Z"
+    },
+    {
+      "path": "src/internal/nettest/listener.go",
+      "sha256": "15119143098fc0d1fb7a1f03924aec2f2cd0963c63ae917a59202fc72b24e34b",
+      "bytes": 3577,
+      "lines": 149,
+      "readRanges": [
+        [
+          1,
+          149
+        ]
+      ],
+      "status": "complete",
+      "inventoriedAt": "2026-10-18T04:33:58.468Z",
+      "recordedAt": "2026-10-18T04:34:04.624Z"
+    },
+    {
+      "path": "src/internal/nettest/queue.go",
+      "sha256": "c2d1c6e8b692e7fdbbd7918843ed21bd05f7ffed9609f6714b3573373b239009",
+      "bytes": 633,
+      "lines": 34,
+      "readRanges": [
+        [
+          1,
+          34
+        ]
+      ],
+      "status": "complete",
+      "inventoriedAt": "2026-10-18T04:34:05.184Z",
+      "recordedAt": "2026-10-18T04:34:20.981Z"
+    },
+    {
+      "path": "src/internal/nettest/conn.go",
+      "sha256": "56a0dd3c0c0808de3ea017bdee2ce8b80f15e46568dc7d22bca916e0231a6472",
+      "bytes": 10061,
+      "lines": 438,
+      "readRanges": [
+        [
+          1,
+          438
+        ]
+      ],
+      "status": "complete",
+      "inventoriedAt": "2026-10-18T04:34:29.298Z",
+      "recordedAt": "2026-10-18T04:34:42.504Z"
+    },
+    {
+      "path": "src/internal/nettest/listener_test.go",
+      "sha256": "6b1860a1ec11ecda89cafa353bb88e606f8427d11bb0e7596105b5705baa8da5",
+      "bytes": 5502,
+      "lines": 213,
+      "readRanges": [
+        [
+          1,
+          213
+        ]
+      ],
+      "status": "complete",
+      "inventoriedAt": "2026-10-18T04:34:43.096Z",
+      "recordedAt": "2026-10-18T04:34:54.076Z"
+    },
+    {
+      "path": "src/internal/gate/gate.go",
+      "sha256": "be5d278fe407e7e9414c7d21ded92833eb34555f7c0a9b68d72d8522404b18b5",
+      "bytes": 1753,
+      "lines": 77,
+      "readRanges": [
+        [
+          1,
+          77
+        ]
+      ],
+      "status": "complete",
+      "inventoriedAt": "2026-10-18T04:34:58.054Z",
+      "recordedAt": "2026-10-18T04:35:02.726Z"
+    },
+    {
+      "path": "src/internal/gate/gate_test.go",
+      "sha256": "a2fe91f57d62f0f2066c97a6787d661bcb862b9fd052895809448961c93d0a56",
+      "bytes": 2095,
+      "lines": 85,
+      "readRanges": [
+        [
+          1,
+          85
+        ]
+      ],
+      "status": "complete",
+      "inventoriedAt": "2026-10-18T04:35:03.300Z",
+      "recordedAt": "2026-10-18T04:35:14.016Z"
+    },
+    {
+      "path": "src/internal/nettest/conn_test.go",
+      "sha256": "02c79d41de573c874e7f94fb324f4434514f519538c3a830e67a2eba3bfd7996",
+      "bytes": 11837,
+      "lines": 452,
+      "readRanges": [
+        [
+          1,
+          452
+        ]
+      ],
+      "status": "complete",
+      "inventoriedAt": "2026-10-18T04:35:18.483Z",
+      "recordedAt": "2026-10-18T04:35:36.791Z"
+    },
+    {
+      "path": "src/internal/nettest/nettest_test.go",
+      "sha256": "66770b32d1bf3f3aa4ae4ce7a0e066402dc5553de085f1c7c6dc29da7e7052c8",
+      "bytes": 3879,
+      "lines": 135,
+      "readRanges": [
+        [
+          1,
+          135
+        ]
+      ],
+      "status": "complete",
+      "inventoriedAt": "2026-10-18T04:35:37.367Z",
+      "recordedAt": "2026-10-18T04:35:46.555Z"
+    },
+    {
+      "path": "src/net/http/httptest/server_test.go",
+      "sha256": "6e584b13c0e41185e53fdbd36b8a2a4a9eda8f1009809c6f040e52c4893f5692",
+      "bytes": 11546,
+      "lines": 441,
+      "readRanges": [
+        [
+          1,
+          441
+        ]
+      ],
+      "status": "complete",
+      "inventoriedAt": "2026-10-18T04:35:47.140Z",
+      "recordedAt": "2026-10-18T04:36:08.257Z"
+    }
+  ]
+}

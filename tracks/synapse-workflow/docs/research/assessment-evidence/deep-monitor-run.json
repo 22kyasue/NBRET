@@ -1,0 +1,13 @@
+{
+  "command": {
+    "executable": "C:/Users/kotar/.codex/research/assessment-evidence-venv/Scripts/python.exe",
+    "args": [
+      "docs/research/assessment-evidence/deep-monitor-lab.py",
+      "docs/research/assessment-evidence/deep-monitor-receipt.json"
+    ]
+  },
+  "elapsedMs": 5287,
+  "status": 1,
+  "stdout": "",
+  "stderr": "Traceback (most recent call last):\r\n  File \"C:\\Users\\kotar\\githubprojects\\NBRET\\docs\\research\\assessment-evidence\\deep-monitor-lab.py\", line 53, in <module>\r\n    code=child.wait(timeout=5)\r\n  File \"C:\\Python314\\Lib\\subprocess.py\", line 1279, in wait\r\n    return self._wait(timeout=timeout)\r\n           ~~~~~~~~~~^^^^^^^^^^^^^^^^^\r\n  File \"C:\\Python314\\Lib\\subprocess.py\", line 1608, in _wait\r\n    raise TimeoutExpired(self.args, timeout)\r\nsubprocess.TimeoutExpired: Command '['C:\\\\Users\\\\kotar\\\\.codex\\\\research\\\\assessment-evidence-venv\\\\Scripts\\\\python.exe', '-u', '-c', 'import time; print(\"READY\",flush=True); time.sleep(30)']' timed out after 5 seconds\r\n"
+}

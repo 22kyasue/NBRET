@@ -1,0 +1,5 @@
+# Cooperative cancellation oracle
+
+Predeclared local experiment: execute only AST-selected `as_async_generator` and `_parallel_asyncio` functions from the recorded Scrapy pin, after verifying queue hashes. Supply standard-library asyncio and an inert logger; do not import Scrapy or install packages. No sockets, external accounts, processes or persistent worker state.
+
+Oracles: synchronous and asynchronous input complete; observed concurrency stays at two; ordinary item failure is logged and other items finish; cancellation reaches all three started cooperative children and awaits their `finally` cleanup; iterator failure cancels its started child and propagates an ExceptionGroup. A synthetic list effect made before cancellation remains, demonstrating cancellation does not roll it back. All waits have a two-second bound. Save an exclusive receipt with Python version, source hashes, checks and pending-task count after cleanup. This tests selected functions with the installed Python runtime, not Twisted, full Scrapy shutdown or noncooperative code.

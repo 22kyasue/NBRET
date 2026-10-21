@@ -1,0 +1,21 @@
+{
+  "recordedAt": "2026-10-17T22:28:54.172Z",
+  "entries": [
+    {
+      "path": "hpack-table-oracle.mjs",
+      "bytes": 4785,
+      "sha256": "5feefd465eca6e75356f1656b9b2165121d8ca32df00f3bad384d5cd0026e5f5"
+    },
+    {
+      "path": "hpack-table-plan.md",
+      "bytes": 1671,
+      "sha256": "6f4557be7f087f787231cdc74dc903068a8324d737abb6f51bc465c73417c848"
+    },
+    {
+      "path": "hpack-table-receipt.json",
+      "bytes": 1009,
+      "sha256": "9220e86629f9ef6033500d2d46b5087f37e75723f669f80eb1eda26f26c57271"
+    }
+  ],
+  "scope": "Local static oracle artifacts, recorded after execution; no signing or build attestation claim"
+}

@@ -1,0 +1,11 @@
+import fs from 'node:fs';
+import crypto from 'node:crypto';
+import {spawnSync} from 'node:child_process';
+const exe='C:/Users/kotar/.codex/research/assessment-evidence-venv/Scripts/python.exe';
+const args=['-m','pip','install','starlette>=0.47,<2','httpx>=0.28,<1'];
+const at=Date.now();
+const r=spawnSync(exe,args,{windowsHide:true,encoding:'utf8',timeout:120000,maxBuffer:4000000});
+const check=spawnSync(exe,['docs/research/assessment-evidence/check-monitor-deps.py'],{windowsHide:true,encoding:'utf8'});
+const receipt={at:new Date().toISOString(),command:[exe,...args],exitCode:r.status,stdout:r.stdout,stderr:r.stderr,error:r.error?.message,versions:check.stdout,scope:'existing isolated research venv only; no global install, provider extras, listener or target calls',runnerSha256:crypto.createHash('sha256').update(fs.readFileSync(new URL(import.meta.url))).digest('hex')};
+fs.writeFileSync(`docs/research/assessment-evidence/monitor-dependencies-${at}.json`,JSON.stringify(receipt,null,2)+'\n');
+console.log(JSON.stringify({exitCode:r.status,versions:check.stdout,error:r.error?.message}));

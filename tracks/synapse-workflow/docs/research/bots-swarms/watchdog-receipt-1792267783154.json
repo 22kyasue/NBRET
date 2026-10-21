@@ -1,0 +1,105 @@
+{
+  "at": "2026-10-17T20:09:43.153Z",
+  "runtime": "v24.21.0",
+  "command": "node docs/research/bots-swarms/watchdog-lab.mjs",
+  "pin": {
+    "name": "bullmq",
+    "upstream": "taskforcesh/bullmq",
+    "root": "C:\\Users\\kotar\\githubprojects\\NBRET\\.tools\\bots-swarms\\bullmq",
+    "commit": "a5e710bf4d1bf689fe40a372b3f0ddbbaaab33cc",
+    "date": "2026-10-16T23:27:34-07:00",
+    "dirty": "",
+    "retrievedAt": "2026-10-17T19:52:44.825Z",
+    "basis": "Upstream shallow snapshot; no release or runtime verification implied"
+  },
+  "sourceSha256": "ce70974e6abd3b560a30e7adcb590a50a217012adc619ab944a213dd1a145a59",
+  "fragments": {
+    "isClientLive": "1195c89bf3b21c8b895bdb65c6549f714809cb581cb81a0726b355b9977282dc",
+    "resetBlockedConnection": "50806eb27d37f00215ac0f14c26e53c4d3afc391299382348cc86ae21bedeb35",
+    "waitForJob": "0ec6f87822bf25480202fdea899920e5c6c078e8a1f8a1002029feae530c779e"
+  },
+  "transformedSha256": "985da51d70ef04be0402c3c6e5e389a022c5be9caf5b092256520080efadf0db",
+  "scriptSha256": "56208b60b298e371e57941bc68d2376ad95f2bab84ebbd4df2716d4a4691fb3f",
+  "substitutions": "Extracted unchanged complete function bodies; wrapper class; deterministic timers and synthetic connection; isRedisCluster=false (ready branch used)",
+  "results": [
+    {
+      "name": "successful result",
+      "actual": {
+        "member": "job",
+        "score": 123
+      },
+      "expected": {
+        "member": "job",
+        "score": 123
+      }
+    },
+    {
+      "name": "success clears watchdog",
+      "actual": 1,
+      "expected": 1
+    },
+    {
+      "name": "success no reset",
+      "actual": [],
+      "expected": []
+    },
+    {
+      "name": "configured watchdog delay",
+      "actual": 3000,
+      "expected": 3000
+    },
+    {
+      "name": "reset calls",
+      "actual": [
+        [
+          "disconnect",
+          true
+        ],
+        [
+          "reconnect"
+        ]
+      ],
+      "expected": [
+        [
+          "disconnect",
+          true
+        ],
+        [
+          "reconnect"
+        ]
+      ]
+    },
+    {
+      "name": "watchdog alone does not return while reset pending",
+      "actual": false,
+      "expected": false
+    },
+    {
+      "name": "reset release returns timeout",
+      "actual": null,
+      "expected": null
+    },
+    {
+      "name": "reset watchdog cleared",
+      "actual": 1,
+      "expected": 1
+    },
+    {
+      "name": "late rejection did not interrupt continuation",
+      "actual": true,
+      "expected": true
+    },
+    {
+      "name": "closing timeout return",
+      "actual": null,
+      "expected": null
+    },
+    {
+      "name": "closing skips reset",
+      "actual": [],
+      "expected": []
+    }
+  ],
+  "cleanup": "All controlled promises settled; timers synthetic only; no broker/network/process/service",
+  "limits": "Extracted actual method ordering, not real Redis/ioredis transport behavior"
+}

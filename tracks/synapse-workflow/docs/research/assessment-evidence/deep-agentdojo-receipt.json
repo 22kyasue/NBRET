@@ -1,0 +1,25 @@
+{
+  "python": "3.14.7 (tags/v3.14.7:823f032, Aug  5 2026, 10:51:32) [MSC v.1944 64 bit (AMD64)]",
+  "scope": "Actual functions runtime module plus AST-extracted scorer/orchestration methods; synthetic tools, errors and logger; no model/providers",
+  "nestedEffectBeforeOuterValidation": 1,
+  "outerError": "ValidationError: 1 validation error for Input schema for `outer`\nn\n  Input should be a valid string [type=string_type, input_value=1, input_type=int]\n    For further information visit https://errors.pydantic.dev/2.14/v/string_type",
+  "exampleIntendedTracePass": true,
+  "exampleWrongZeroTracePass": true,
+  "wrongOutputRejected": true,
+  "currentBlockMessageCanaryDetected": false,
+  "serverErrorUtility": [
+    false
+  ],
+  "serverErrorSecurity": [
+    true
+  ],
+  "modelCalls": 0,
+  "networkCalls": 0,
+  "scriptSha256": "fff0fa7d7c8c201e8ecd4f119e95b4ba841dfd53b75e510f878642765829f468",
+  "sources": {
+    "src/agentdojo/functions_runtime.py": "dce2bdf4b1c04b77ebd82f9ee165c283cda492045615a9e510e6d5c9423e9248",
+    "src/agentdojo/task_suite/task_suite.py": "5a989815b0d66d87a0f1b802b1753c6a37d181d02b3dbc5933a330f2eb85fef1",
+    "src/agentdojo/benchmark.py": "d238a9e8db56d1cfbf49b0b0b0f6c213a2dd456ada2631e7da22758b39826c63",
+    "examples/counter_benchmark/suites/counter/user_tasks.py": "fbc4393c8cf86fcad432542670da8afdf11660d7c8221a395cbb181097068a13"
+  }
+}

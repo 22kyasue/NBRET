@@ -1,0 +1,14 @@
+{
+  "command": [
+    "powershell.exe",
+    "-NoProfile",
+    "-NonInteractive",
+    "-File",
+    "docs/research/assessment-evidence/deep-atomic-lab.ps1",
+    "-OutputDirectory",
+    "C:/Users/kotar/.codex/research/assessment-evidence-receipts/deep-atomic-20261017"
+  ],
+  "exitCode": 1,
+  "stdout": "",
+  "stderr": "Invoke-AtomicTest : Attempted to divide by zero.\r\nAt C:\\Users\\kotar\\githubprojects\\NBRET\\docs\\research\\assessment-evidence\\deep-atomic-lab.ps1:30 char:1\r\n+ Invoke-AtomicTest T0000 -PathToAtomicsFolder $atomics -NoExecutionLog ...\r\n+ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\r\n    + CategoryInfo          : NotSpecified: (:) [Invoke-AtomicTest], RuntimeException\r\n    + FullyQualifiedErrorId : RuntimeException,Invoke-AtomicTest\r\n \r\n"
+}

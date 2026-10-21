@@ -1,0 +1,4 @@
+# Preserve imported evidence/source bytes, including original line endings.
+tracks/synapse-workflow/** -text
+references/artex/** -text
+docs/consolidation/preservation-receipt-2026-10-20.json -text

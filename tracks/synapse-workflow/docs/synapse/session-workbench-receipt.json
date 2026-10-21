@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "kind": "synapse-session-workbench-build",
+  "recordedAt": "2026-10-18T23:59:50.622Z",
+  "node": "v24.21.0",
+  "command": "npm run synapse:test",
+  "results": {
+    "passed": 80,
+    "failed": 0,
+    "skipped": 0,
+    "durationMs": 2348.9188
+  },
+  "acceptanceRun": {
+    "directory": "runs/workbench-acceptance-6c613df3-a61d-4179-b9a3-bc45bb24571a",
+    "selectedActions": 50,
+    "completeObservations": 50,
+    "incompleteObservations": 0,
+    "actualHttpRequests": 54,
+    "ownerRequests": 1,
+    "targetClosed": true
+  },
+  "reviews": {
+    "purpose": "Aiko final acceptance in docs/synapse/adaptive-loop-purpose-review-aiko.md",
+    "target": "Elm implementation and adversarial/timeout tests; Skye source/integration review",
+    "selector": "Bryn implementation and divergent/deterministic trajectory tests; Skye source/integration review",
+    "orchestrator": "Skye implementation; Elm independent integration and race regression tests"
+  },
+  "fixes": [
+    "Rejected semantic proposals retain safe audit reasons without raw rejected values.",
+    "Reports include actual normalized observations and full declared review history.",
+    "Stop remains available during a pending manual UI action.",
+    "Nonce and session generation are rechecked after asynchronous request-body reception; crossed-reset command regression failed before fix.",
+    "Continuation is bound to its original session and generation; a delayed old loop cannot act on a replacement target or clear its status.",
+    "New session preserves old journal, rotates nonce and serializes target replacement."
+  ],
+  "limits": [
+    "Observation-driven deterministic rules plus an external session-authored proposal interface; no model runs inside this harness.",
+    "Review labels and same-app observations do not establish independent effect or authenticated role separation.",
+    "No discovery effectiveness, expert baseline, blind evaluation, live-client scope, monetary loss or full repair/retest claim.",
+    "Diminishing-useful-returns measurement remains deferred; stopping uses bounded frontier, budgets and owner stop."
+  ],
+  "sha256": {
+    "src/practice/session-target.mjs": "1c268248e263e276d190573270ee5912845b67c2579ffd8b1176f77120094256",
+    "src/practice/next-step.mjs": "b156513ae15573d846f29af0f7c699f8990a13e8f40646ba89e94c093c74cca4",
+    "src/practice/workbench.mjs": "15bd75dd6f5ecff84eb9e1e91e13768d8336adb3f1553794da944f21999aca86",
+    "src/practice/workbench-server.mjs": "d5926e617b19d19de2b28d0bf2f534b22357fe3a4a9e3eb82f9008382ec714a6",
+    "src/practice/workbench-ui.js": "81e03b16ef58074c46be7caf7520f7ef8b74c5a098b87c93da9122b05e8882fb",
+    "src/practice/workbench.html": "5599de9f101b6fdca078eb957160eb47d1d8e90ac066cdc047254286b21c6a76",
+    "src/practice/workbench.css": "135abcf7e888fbb843cbc43996edb4e612bc414911b292e21f58fcfbf841409c",
+    "test/investigation-cli.test.mjs": "e5945a01bd146d5b6de999c7827b78b9de8b2a7667de5b906354663110638cb2",
+    "test/investigation-journal.test.mjs": "dbda27ec7cd8d90f095e25ce24bb7727d06ad2fcfa636bba3af757d04beadaa0",
+    "test/investigation-records.test.mjs": "fd683f76f5909398d79f298364a8cb6e8845b4c22187df78119de380d19538aa",
+    "test/investigation-import.test.mjs": "47af83737b703d83296c61bb8e5e801d61854c9411a2b4ec909a86bb453b4556",
+    "test/scope.test.mjs": "6ae3ef12a600e5d17ce4e64ad33b21ebd7433b7eac63db58af7de5e0ebc2ce59",
+    "test/practice-app.test.mjs": "22bc130c5600f9688031776afa0fe27c4f36de40aaf090ef743b7d494c02aba6",
+    "test/practice-rehearsal.test.mjs": "07e719d845763246403f6bf3bd247dfc1fdd315b71634047074e5ee005a96752",
+    "test/practice-investigation.test.mjs": "6679be92239c368bc106ee1883448572604dd6b6d02539130e870c43be4dc52c",
+    "test/practice-next-step.test.mjs": "2b9be267431880558a040f8977e9056cb8c14cee21a04cc7ac672ab255d695cc",
+    "test/practice-session-target.test.mjs": "5298cb0d7f37f1cf638b0acd24a85c8d380c59b92a40acfd0ea1235fcfaa9949",
+    "test/practice-workbench.test.mjs": "11a759ea33ec41f85de0b436d71ee618606ebfb0b434dad1ab8f2b88d4faaba3",
+    "test/practice-workbench-stop.test.mjs": "ae1183cb6c28444093838f1458ef3bb535c6a36b60f2367257995871cdb57bf3"
+  }
+}

@@ -1,0 +1,14 @@
+import fs from 'node:fs';
+import path from 'node:path';
+const own=path.resolve('docs/research/assessment-evidence');
+const file=path.join(own,'sdk-reading-queue.json');
+const q=JSON.parse(fs.readFileSync(file));
+const attach=(paths,evidence)=>{for(const p of paths){const f=q.claude.files.find(f=>f.path===p);if(!f)throw Error(p);f.runtimeEvidence=[...new Set([...(f.runtimeEvidence||[]),evidence])];}};
+attach(['src/claude_agent_sdk/client.py'],'claude-cleanup-receipt-1792274592407.json: three inert cleanup control-flow cases, no native process or auth materialization');
+attach(['tests/test_transcript_mirror.py','src/claude_agent_sdk/_internal/transcript_mirror_batcher.py','src/claude_agent_sdk/_internal/query.py'],'claude-mirror-receipt-1792274689528.json: 42 upstream synthetic/mock tests pass; not every implementation branch exercised');
+attach(['src/claude_agent_sdk/_internal/session_import.py','src/claude_agent_sdk/_internal/session_store.py'],'session-import-failure-receipt-1792274774748.json: two actual component cases with owned JSONL and reference store; initial fixture failure retained separately');
+const suite=fs.readdirSync(own).filter(n=>/^claude-contract-suite-receipt-\d+\.json$/.test(n));
+if(suite.length!==1)throw Error('Expected one suite receipt');
+attach(['tests/test_message_parser.py','tests/test_subprocess_buffering.py','tests/test_session_store_conformance.py','tests/test_session_summary.py'],suite[0]+': 119 unchanged tests pass across four complete reviewed files; in-memory/mock behavior only');
+fs.writeFileSync(file,JSON.stringify(q,null,2)+'\n');
+console.log(suite[0]);

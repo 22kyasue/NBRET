@@ -1,0 +1,50 @@
+{
+  "at": "2026-10-17T21:45:17.286Z",
+  "command": [
+    "C:/Users/kotar/.codex/research/assessment-evidence-venv/Scripts/python.exe",
+    "-m",
+    "pytest",
+    "-q",
+    "-p",
+    "no:cacheprovider",
+    "-p",
+    "pytest_asyncio.plugin",
+    "--basetemp",
+    "C:\\Users\\kotar\\.codex\\research\\assessment-evidence-receipts\\agent-recovery-1792273515619\\pytest-temp",
+    "tests/test_plan.py"
+  ],
+  "cwd": "C:/Users/kotar/.codex/research/pentestgpt-20261017/pentestgpt_agent",
+  "environment": {
+    "PYTHONPATH": "C:\\Users\\kotar\\.codex\\research\\pentestgpt-20261017\\pentestgpt_agent\\src;C:/Users/kotar/.codex/research/unified-agent-acff8ee",
+    "PYTEST_DISABLE_PLUGIN_AUTOLOAD": "1",
+    "PYTHONDONTWRITEBYTECODE": "1"
+  },
+  "exitCode": 0,
+  "signal": null,
+  "elapsedMs": 1667,
+  "out": "C:\\Users\\kotar\\.codex\\research\\assessment-evidence-receipts\\agent-recovery-1792273515619",
+  "stdout": "........................                                                 [100%]\r\n24 passed in 0.88s\r\n",
+  "stderr": "",
+  "packages": "annotated-types==0.8.0\r\ncolorama==0.4.6\r\ndocstring_parser==0.18.0\r\niniconfig==2.3.1\r\npackaging==26.3\r\npluggy==1.7.0\r\npydantic==2.14.1\r\npydantic_core==2.50.1\r\nPygments==2.21.0\r\npytest==9.1.1\r\npytest-asyncio==1.4.0\r\nPyYAML==6.0.3\r\ntyping-inspection==0.4.4\r\ntyping_extensions==4.16.0\r\n",
+  "criteria": "unchanged plan tests pass; constructed decisions and temporary SQLite state only",
+  "scope": "plan scope/reference/provenance and finish-state contracts; no actual HTTP/command/provider invocation",
+  "sourceSha256": {
+    "src/pentestgpt_agent/trace.py": "5b005cad44cceeb9862a0db16f426bd6fd05ee35d658f195d176cae2ee5def80",
+    "src/pentestgpt_agent/execution.py": "6b4bb5d2152a22ad2b43352f603b969ce550efa4be9e34028a8528b30860d379",
+    "src/pentestgpt_agent/agents.py": "45916f160f6691d66bf4e2e568eac29686098701b79a60214f9ea79aa73944c7",
+    "tests/test_plan.py": "790ebaf08983027ee18da6259e32f5f458136cfef1c8c11d280a25f3a2e554dd",
+    "src/pentestgpt_agent/plan.py": "cf0faacb06529efe632b7047404f6e46d62860339a10bc981e835308c64e8b32",
+    "src/pentestgpt_agent/memory.py": "158b134a29f50b8769c277f4414167dd869ca4296f8f5ccf62645bfa181d451e",
+    "pyproject.toml": "42e416baa5b3d12b4b095beaecfb237baf995905e5cd0ac5a6bf3ab8a2f2c244"
+  },
+  "runnerSha256": "d649601d2809ba1fed13da39100edbb4259b4e0c8aba708b8089a1709fe0181f",
+  "stdoutSha256": "cb19ec0580ffaa9493eab84985210f8af204d8369914c533ce2ecd62976c53b7",
+  "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "intervention": "researcher selected test files, isolated temp root and source-path imports; production/upstream tests unchanged",
+  "cost": "local CPU/storage, no provider calls; no monetary estimate",
+  "limits": [
+    "source-path imports rather than a fully locked installed environment",
+    "scripted events do not prove underlying tools ran or observations are true",
+    "finite cases do not prove universal crash consistency or redaction"
+  ]
+}

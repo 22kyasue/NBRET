@@ -1,0 +1,76 @@
+{
+  "generated": "2026-10-18T03:26:31.020Z",
+  "eventCards": 5,
+  "remoteEntries": 11,
+  "originalPolicyNotice": "Not recovered in examined user-visible records; absence is not proof no UI notice occurred",
+  "endpointLogHashVerified": "d0958d6d5f2b219ff447f9da6ba9240e2c1d140c93b4b25aa5c41a7ed7158137",
+  "referencesChecked": 16,
+  "transcripts": [
+    {
+      "session": "Rowan",
+      "file": "rollout-2026-10-17T11-41-26-01a14b2b-396f-73e0-9a37-379a502b2b9c.jsonl",
+      "bytes": 5897270,
+      "lines": 2898,
+      "sha256": "7990698c8f5314a321eac6aa2515beb26b7b1b0ade9ca2713da080e000c29edf",
+      "note": "Read-only snapshot; active session may append later. Internal reasoning is not exported."
+    },
+    {
+      "session": "Tomo",
+      "file": "rollout-2026-10-17T11-53-14-01a14b36-083f-7103-be7f-3fccb88c196a.jsonl",
+      "bytes": 31822148,
+      "lines": 8632,
+      "sha256": "6d4888eef8cc2211017d87c6e90865a8c5cbb48bdb38f7d7b99f79aab6eb3306",
+      "note": "Read-only snapshot; active session may append later. Internal reasoning is not exported."
+    },
+    {
+      "session": "Agate",
+      "file": "rollout-2026-10-17T11-57-19-01a14b39-c3dc-7142-b619-419d04ad875d.jsonl",
+      "bytes": 96987415,
+      "lines": 21643,
+      "sha256": "3133a85dd8c3ce6949115467b41d8834882b45dd613d80091943f261af4fb333",
+      "note": "Read-only snapshot; active session may append later. Internal reasoning is not exported."
+    },
+    {
+      "session": "Linden",
+      "file": "rollout-2026-10-17T12-50-03-01a14b6a-0a4b-7491-b9ef-b92311ef9a72.jsonl",
+      "bytes": 39913012,
+      "lines": 10471,
+      "sha256": "3c5318a45595385ee3d042429a22902bd15fc9717e257dc5c648a2a57d5ec71b",
+      "note": "Read-only snapshot; active session may append later. Internal reasoning is not exported."
+    },
+    {
+      "session": "Lark",
+      "file": "rollout-2026-10-17T12-50-30-01a14b6a-7451-7602-8b7e-3abc7516c9da.jsonl",
+      "bytes": 69731207,
+      "lines": 18628,
+      "sha256": "da34ae744a28f24ebc642cdfc72dbe394bee41b881c049049daf75f8014fc27f",
+      "note": "Read-only snapshot; active session may append later. Internal reasoning is not exported."
+    },
+    {
+      "session": "Pearl",
+      "file": "rollout-2026-10-17T16-17-52-01a14c28-5021-7be3-9001-c20968039d9c.jsonl",
+      "bytes": 33040430,
+      "lines": 3688,
+      "sha256": "1f5d83f716d4129265d0fecdd532c72037d1a45fd936885a7e6da7d6ca75ca39",
+      "note": "Read-only snapshot; active session may append later. Internal reasoning is not exported."
+    }
+  ],
+  "outputSha256": "844b51fba7d23f597bcabdadc43d12abecb0584d25696d43058809a913c6f2c8",
+  "browserChecks": {
+    "desktop": true,
+    "mobileWidth": 390,
+    "filters": {
+      "all": 5,
+      "reported": 4,
+      "endpoint": 1
+    },
+    "timeZones": {
+      "utc": "20:02:08",
+      "losAngeles": "13:02:08"
+    },
+    "references": 16,
+    "remoteEntries": 11,
+    "brokenEvidenceAnchors": 0,
+    "pageOverflow": false
+  }
+}

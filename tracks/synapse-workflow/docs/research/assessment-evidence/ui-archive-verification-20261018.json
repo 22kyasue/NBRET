@@ -1,0 +1,13 @@
+{
+  "at": "2026-10-18T02:58:39.097Z",
+  "archive": "C:/Users/kotar/.codex/research/garak/garak-report/src/assets/kui-foundations-react-external-0.504.1.tgz",
+  "sha256": "e66593e0142d8abd40bad08588d7d59527d2e69f12eaef46db3cb1e2b431971a",
+  "checkedMembers": 28,
+  "pass": true,
+  "method": "Node SHA256; tar stdout extraction; complete range union validation",
+  "limits": [
+    "No package installation, import, callback or test execution",
+    "Not source-to-binary equivalence or proof of security conclusions",
+    "Unread archive members and external dependencies remain"
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "at": "2026-10-17T20:32:27.578367+00:00",
+  "python": "3.14.7 (tags/v3.14.7:823f032, Aug  5 2026, 10:51:32) [MSC v.1944 64 bit (AMD64)]",
+  "pin": "bffc8844c1c9a3666e37a2ada4ee05f62e1446b0",
+  "sourcesSha256": {
+    "prowler/providers/aws/services/iam/lib/policy.py": "a589d9d90e80287b1491ac8cb7d98ebffd2bad9ae27a897cb2e3d023436f8cc3",
+    "prowler/providers/aws/services/iam/iam_aws_attached_policy_no_administrative_privileges/iam_aws_attached_policy_no_administrative_privileges.py": "6c95489ad921cc7700a5e0086017e72e4828f06c4d3e7d6b23d617558f0dceb0"
+  },
+  "fixtureSha256": "15cf8b138b4b460c333490c38ff04c062f0ecf1a8aaeca5da90a298daf56688e",
+  "observations": [
+    {
+      "case": "allow",
+      "actual": true,
+      "expected": true,
+      "pass": true
+    },
+    {
+      "case": "allow_and_deny",
+      "actual": true,
+      "expected": true,
+      "pass": true
+    },
+    {
+      "case": "conditional_allow",
+      "actual": true,
+      "expected": true,
+      "pass": true
+    },
+    {
+      "case": "specific_action",
+      "actual": false,
+      "expected": false,
+      "pass": true
+    },
+    {
+      "case": "empty",
+      "actual": null,
+      "expected": null,
+      "pass": true
+    },
+    {
+      "case": "missing",
+      "actual": null,
+      "expected": null,
+      "pass": true
+    },
+    {
+      "case": "missing_document_check_body",
+      "count": 1,
+      "status": "PASS",
+      "pass": true
+    }
+  ],
+  "oraclePassed": true,
+  "boundary": "Exact unchanged AST function/class bodies; report/provider stand-ins; not normal package import, SDK collection, actual report model or final scan output",
+  "cleanup": "No service, credential discovery, cloud/network call or global state change; child exits; source and receipt retained"
+}

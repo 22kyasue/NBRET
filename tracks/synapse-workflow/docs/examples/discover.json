@@ -1,0 +1,9 @@
+{
+  "seedUrl": "https://hbsp.harvard.edu/signin",
+  "origins": ["https://hbsp.harvard.edu"],
+  "explore": true,
+  "maxVisits": 3,
+  "maxRounds": 2,
+  "maxCandidates": 500,
+  "acquireSources": true
+}

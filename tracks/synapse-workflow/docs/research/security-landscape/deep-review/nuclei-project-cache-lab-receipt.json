@@ -1,0 +1,37 @@
+{
+  "at": "2026-10-17T20:09:41.153Z",
+  "out": "C:\\Users\\kotar\\githubprojects\\NBRET\\runs\\nuclei-project-cache-research-1792267779438",
+  "scope": "Synthetic project-cache component only; no HTTP engine or target/model calls",
+  "command": {
+    "executable": "C:\\Users\\kotar\\githubprojects\\NBRET\\.tools\\security-research-go\\sdk\\go\\bin\\go.exe",
+    "args": [
+      "test",
+      "-overlay",
+      "C:\\Users\\kotar\\githubprojects\\NBRET\\runs\\nuclei-project-cache-research-1792267779438\\overlay.json",
+      "./pkg/projectfile",
+      "-run",
+      "^TestResearch",
+      "-count=1",
+      "-json"
+    ],
+    "cwd": "C:/Users/kotar/.codex/research/nuclei"
+  },
+  "exit": 0,
+  "elapsedMs": 1712.6967,
+  "sourceSha256": {
+    "pkg/projectfile/project.go": "8773998aecea89ebec4b53a8480fd90cf1dbf03dcba9dd3f971cfcb0701170cb",
+    "pkg/projectfile/httputil.go": "0eef0bc5f972caaa6b37ef7c72dd7d0667a0348599a1d67ce174377fa52cde96",
+    "go.mod": "d960ba91e597d8500c1d7bc68b6daaf07631fa795ee0972eb5dad2bfa49697c5",
+    "go.sum": "df80e4e570143a2abebf4174236e9ccc114292d0a2f3f6102848a4610cd396c1"
+  },
+  "overlaySha256": "b53f1e36a6fa57662e15f5da328c90373cd444f0809e40b9b09e8dcc60a17f32",
+  "logSha256": "b1accc51ddfddfa1e1e6ff8cf745c34d2d0f6c947a9f831618a962156c687118",
+  "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "tests": [
+    {
+      "test": "TestResearchPreAuthCacheReuse",
+      "action": "pass"
+    }
+  ],
+  "output": "=== RUN   TestResearchPreAuthCacheReuse\n    research_cache_test.go:10: identical pre-auth bytes replay stored tenant-A response; no principal argument exists\n--- PASS: TestResearchPreAuthCacheReuse (0.01s)\nPASS\nok  \tgithub.com/projectdiscovery/nuclei/v3/pkg/projectfile\t0.876s\n"
+}

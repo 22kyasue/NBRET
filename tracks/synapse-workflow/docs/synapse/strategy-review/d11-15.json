@@ -1,0 +1,228 @@
+[
+  {
+    "no": "11",
+    "title_en": "Credibility bootstrap with no public track record",
+    "proposal_en": "Run trust-building in parallel (option C): in month 1 publish methodology, contract/disclaimer terms and a sample report from a demo environment, show individual qualifications, buy IT professional liability insurance and add an external reviewer step; at the same time take 2-3 paid, discounted pilots (at most one free pilot, conditional on a public anonymized case). Apply for IPA Information Security Service Standard registration in month 3 (about JPY 40k review plus JPY 270k/year), and start ISMS (JPY 1-3M first year) only when public-sector or large-enterprise deals appear.",
+    "verdict": "partly-supported",
+    "verdict_reason": "The research backs evidence-first credibility (inspectable reports, published terms, independent review, paid pilots as distinct evidence) but says nothing about IPA registration, ISMS, Japanese qualifications or insurance, and warns that demo-environment samples and anonymized cases are weak evidence unless their limits are explicit.",
+    "supports": [
+      {"id": "commercial.what-customers-buy", "why": "Buyers pay for an accountable engagement, credible evidence, fix decisions and retest rather than detection counts, which matches leading with methodology, a sample deliverable and retest instead of CTF-style credentials.", "strength": "synthesis"},
+      {"id": "commercial.evaluation-and-buyer-evidence-protocol", "why": "States that a prototype result is technical feasibility while a paid pilot is different evidence, supporting paid rather than free pilots as the credibility and demand signal.", "strength": "synthesis"},
+      {"id": "commercial.trail-of-bits-engagement-artifact", "why": "A real public report naming people, effort, access, pinned target, milestones and explicit exclusions is a concrete model for the sample report Synapse wants to publish.", "strength": "public-doc"},
+      {"id": "service-delivery.public-pages-are-not-signed-terms", "why": "Competitors' public pages omit clocks, exclusions and authority, so publishing Synapse's actual scope, clock and exclusion terms is a real differentiator, not just transparency for its own sake.", "strength": "public-doc"},
+      {"id": "commercial.hackerone-staffed-pentest-effort-terms", "why": "An established provider builds a lead validation and QA step before delivery, supporting the proposed third-party review step as normal practice.", "strength": "public-doc"},
+      {"id": "service-delivery.small-service-exercise-template", "why": "Defines a reviewer role separate from the tester and requires recording when the same person creates and reviews an assumption, which is what a 'third-party reviewed' label should rest on.", "strength": "synthesis"}
+    ],
+    "cautions": [
+      {"id": "commercial.vendor-outcome-evidence-weak", "why": "Vendor case studies are selected testimony without baselines or denominators, so Synapse's anonymized pilot cases will persuade less than expected and must not be presented as outcome statistics."},
+      {"id": "service-delivery.synapse-mapping-gaps", "why": "No client replica, loss model or end-to-end Synapse engagement has been observed, so a demo-environment sample report must not imply replica fidelity or a validated workflow."},
+      {"id": "service-delivery.engagement-checklist", "why": "Public disclosure of engagement results needs customer approval and stored documentation should be deleted after completion and retest, so case-study consent and retention terms must be in the pilot contract."},
+      {"id": "evidence-handling.zap-sarif-keeps-secrets", "why": "Tool exports keep cookies, keys, queries and bodies after built-in masking, so any published sample or anonymized case needs field-by-field redaction, not tool defaults."},
+      {"id": "ai-evaluation.takumi-benchmark-threshold-dependent", "why": "Even the competitor's own benchmark result depends on metric and threshold, so Synapse should not answer GMO's '300 organizations' with detection-rate numbers of its own."},
+      {"id": "hazard.external-strategy-path", "why": "The strategy files are unapproved proposals, so the roadmap's costs and staffing must not be presented to anyone as decided Synapse offerings."}
+    ],
+    "unproven": [
+      "The research has no evidence that IPA service-standard registration, ISMS or Privacy Mark changes Japanese mid-market buyers' decisions, or on their real timelines and requirements.",
+      "No evidence covers whether IT professional liability insurance covers attack-reproduction work or how buyers weigh it.",
+      "No evidence that personal qualifications (Registered Information Security Specialist, OSCP) build buyer trust for a post-intrusion impact service.",
+      "That 2-3 paid pilots can be found in the first 1-3 months is untested; no buyer interviews or outreach have been done.",
+      "That the isolated demo environment exists and can produce a meaningful sample report is not verified; the resilience implementation on another PC was not inspected."
+    ],
+    "methods": [
+      {"name": "Synthetic sample engagement", "what": "Build the public sample report from the research's proposed synthetic POC (two organizations, roles, one approval workflow, vulnerable, deceptive-denial, narrow-fix and strong-fix variants) so it shows a real chain, a structural fix and a retest without client data.", "evidence_id": "service-delivery.synapse-mapping-gaps"},
+      {"name": "Report modeled on a public artifact", "what": "Structure the sample and real reports like the Trail of Bits artifact: people, effort, access, environment version, milestones, covered flows and named exclusions.", "evidence_id": "commercial.trail-of-bits-engagement-artifact"},
+      {"name": "Published engagement terms", "what": "Publish the engagement checklist (permission, omissions, independent reproduction, access revocation, cleanup, retention/deletion) and the actual SLA clock definitions as the transparency page.", "evidence_id": "service-delivery.engagement-checklist"},
+      {"name": "Reviewer independence record", "what": "Log tester and reviewer per finding in a claim record so the 'externally reviewed' statement is backed by who reviewed what.", "evidence_id": "standards.claim-record-fields"},
+      {"name": "Redaction pass before publication", "what": "Apply field-level redaction (cookies, tokens, keys, query/body secrets, hostnames) to any anonymized case or sample before release, treating raw exports as sensitive.", "evidence_id": "evidence-handling.zap-sarif-keeps-secrets"}
+    ],
+    "open_questions": [
+      "Who on the team actually holds which qualifications, and is the company incorporated with enough officers for certifications?",
+      "Does the isolated demo environment exist today in a state that can produce a sample report, and how much of it may be shown publicly?",
+      "What discount, success criteria and case-publication consent will pilots accept, and will Kotaro allow one free pilot?",
+      "Which IPA service-standard requirements (qualified staff, track record, quality management) can Synapse meet now?",
+      "Who is the external reviewer and under what confidentiality and subcontracting terms?"
+    ],
+    "proposal_changes": [
+      "Label the demo-environment sample report as a synthetic exercise and list what it does not establish (no client replica, no measured business loss).",
+      "Present anonymized pilot cases as illustrations with stated scope and exclusions, not as proof of effectiveness.",
+      "Add explicit disclosure-consent, redaction and evidence-deletion clauses to the pilot contract template.",
+      "Run the synthetic POC with a manual baseline before the first paid pilot, so the pilot measures a known workflow rather than discovering it."
+    ]
+  },
+  {
+    "no": "12",
+    "title_en": "Team and capacity",
+    "proposal_en": "Option B: two core people (assumed) plus 1-2 contracted assessors and an external reviewer, no hiring in year one; 2 engagements a month standard, 3 maximum. One engagement is assumed at 30 person-days (22 internal, 8 outsourced) over 6-8 calendar weeks, with contractor cost of JPY 50-80k per person-day; reaching 2 per month requires templating internal effort down to 16 person-days. Small-team revenue ceiling is put at about JPY 50M a year.",
+    "verdict": "partly-supported",
+    "verdict_reason": "The role split (core owns analysis and final report, separate reviewer, contractors on defined work) matches documented provider practice, but every capacity number is an assumption: the research found no measured breakdown of assessment hours.",
+    "supports": [
+      {"id": "commercial.hackerone-staffed-pentest-effort-terms", "why": "A staffed provider sizes effort per engagement, uses a lead who validates and QA-checks contractor submissions, and screens testers, matching core-owns-quality with contracted testers.", "strength": "public-doc"},
+      {"id": "commercial.trail-of-bits-engagement-artifact", "why": "Two consultants and 3.5 engineer-weeks for a white-box assessment is a dated comparator in the same order as the 30 person-day assumption.", "strength": "public-doc"},
+      {"id": "service-delivery.labor-and-operating-definitions", "why": "Labor should be estimated across scoping, access, investigation, reporting and retest, including access troubleshooting and communication, which the proposal's phase table does.", "strength": "synthesis"},
+      {"id": "service-delivery.small-service-exercise-template", "why": "Separates scope owner, tester, reviewer, engineer and retester roles and requires recording when one person plays several, which fits a two-person core with an external reviewer.", "strength": "synthesis"},
+      {"id": "commercial.what-customers-buy", "why": "No evidence that AI removes expert labor, which supports planning capacity around people rather than assuming automation multiplies throughput.", "strength": "synthesis"}
+    ],
+    "cautions": [
+      {"id": "commercial.no-measured-assessment-hours", "why": "No representative measured hours exist, and automation can add setup, false-positive review and maintenance, so the 30-day and 16-day-after-templating figures are guesses until measured."},
+      {"id": "service-delivery.mandiant-assessment-effort-and-roles", "why": "A deep source-plus-live assessment took 97 working days across ten consultants, showing how far effort can exceed the 30 person-day assumption once scope includes several systems."},
+      {"id": "service-delivery.engagement-checklist", "why": "Contracted testers bring screening, identity checks, confidentiality, official channels and post-engagement deletion obligations that add management effort not in the phase table."},
+      {"id": "safety.dev-environment-not-client-isolation", "why": "Assessor environments need per-engagement volumes, pinned tooling and information barriers, which is extra setup effort per engagement and per contractor."},
+      {"id": "commercial.tool-licences-not-plain", "why": "Core tools carry non-standard or proprietary licences, so giving contractors a shared toolkit needs licence review and possibly per-seat cost."},
+      {"id": "ai-evaluation.ms-phishing-trial-automation-bias", "why": "Reviewers shown AI pre-judgments missed more planted errors, so if AI drafts findings to save core time, the review step needs extra checks rather than less time."}
+    ],
+    "unproven": [
+      "The 30 person-day engagement, its phase split and the 6-8 week calendar duration are not measured anywhere in the research.",
+      "That templating can cut internal effort from 22 to 16 person-days per engagement is unmeasured.",
+      "Contractor day rates, availability and quality in Japan are outside the research.",
+      "The 35-40% non-billable overhead and the JPY 50M revenue ceiling are assumptions with no research basis.",
+      "Whether proprietary methods can be withheld from contractors while still delegating useful work is untested."
+    ],
+    "methods": [
+      {"name": "Per-phase time log in the pilot", "what": "Record hours per phase (scoping, access, environment build, testing, analysis, reporting, review, retest) and separate human setup and review from machine runtime, then replace the assumed table with measured figures.", "evidence_id": "commercial.no-measured-assessment-hours"},
+      {"name": "Manual-baseline comparison", "what": "Run the synthetic POC both with Synapse's tooling and a careful manual process at equal scope to see whether templating or automation actually reduces verified-outcome hours.", "evidence_id": "commercial.evaluation-and-buyer-evidence-protocol"},
+      {"name": "Lead validation gate", "what": "Contractor output enters as candidate findings that a core lead reproduces and promotes with impact, so quality stays with the core.", "evidence_id": "commercial.cobalt-workflow-and-retest-windows"},
+      {"name": "Per-engagement isolated workspace", "what": "Give each engagement and contractor a separate workspace with pinned tools and no shared history, so client data and methods do not leak across engagements.", "evidence_id": "safety.dev-environment-not-client-isolation"},
+      {"name": "Per-customer capability table", "what": "If AI is used in delivery, define per client which data, tools, actions, destinations and budgets it may use, so contractors and AI run under the same written mandate.", "evidence_id": "service-delivery.labor-and-operating-definitions"}
+    ],
+    "open_questions": [
+      "Who besides Kotaro can build environments and run tests now, and how many hours a week can each person give?",
+      "Which parts of the method can be handed to contractors without disclosing core techniques?",
+      "Does the measured pilot effort support 2 engagements a month, or is 1 the realistic standard?",
+      "What hiring trigger (e.g. three months at full capacity) should be set?",
+      "Will clients accept disclosed subcontracting, and under what confidentiality terms?"
+    ],
+    "proposal_changes": [
+      "Mark the 30 person-day table as a planning hypothesis to be replaced with pilot measurements, and do not quote prices off it to clients.",
+      "Add effort for contractor onboarding, screening, per-engagement environment setup and evidence deletion to the phase table.",
+      "State the reviewer as independent of the tester for each finding, and record when it is not.",
+      "Set the standard at 1 engagement a month until measured effort shows 2 is feasible."
+    ]
+  },
+  {
+    "no": "13",
+    "title_en": "Naming and brand",
+    "proposal_en": "Use company name plus a descriptive service name: 'Synapse 侵害耐性検証' / 'Synapse Breach Resilience Verification', ending in 'verification' to stay clear of IPA's 'diagnosis' category and GMO's 'test'. Delay a coined brand and trademark until market response is seen; check J-PlatPat class 42 for 'Synapse' and keep the current domain.",
+    "verdict": "partly-supported",
+    "verdict_reason": "The research supports naming an offer by what is tested and delivered, but it does not cover Japanese terminology, trademarks or IPA categories, and it warns that 'verification' and 'resilience' can overstate what a bounded assessment establishes.",
+    "supports": [
+      {"id": "service-delivery.discipline-distinctions", "why": "Advises labelling offers by what is tested and delivered rather than marketing terms, which favours a descriptive name over a coined one.", "strength": "synthesis"},
+      {"id": "commercial.what-customers-buy", "why": "Buyers purchase accountable consequence analysis, fix decisions and retest, which a name stressing post-breach impact communicates better than one stressing intrusion.", "strength": "synthesis"},
+      {"id": "service-delivery.four-purchase-types-and-lifecycle-states", "why": "Assessment/consulting is a distinct purchase from product or managed service, supporting a name that clearly signals a bounded consulting engagement rather than a tool.", "strength": "synthesis"}
+    ],
+    "cautions": [
+      {"id": "service-delivery.discipline-distinctions", "why": "Absence of findings is bounded assurance, so 'Verification' must not be read as verifying that the client is resilient; the name needs a scope qualifier."},
+      {"id": "defensive-response.response-state-machine", "why": "Resilience in the research means execution, telemetry, alert, response and recovery each verified separately; if the standard engagement does not test detection or recovery, 'Resilience' overclaims."},
+      {"id": "standards.recall-unknowable-measures", "why": "Open-world coverage cannot be measured, so any tagline implying complete verification of breach paths cannot be substantiated."},
+      {"id": "service-delivery.synapse-mapping-gaps", "why": "Replica fidelity is unproven, so a name or subtitle should not suggest the isolated environment is the client's system."}
+    ],
+    "unproven": [
+      "How Japanese executives read '侵害耐性', '検証', 'テスト' or '診断' is not covered by the research.",
+      "Trademark availability of 'Synapse' in class 42 and the effect of IPA category names on procurement are outside the research.",
+      "Whether a descriptive name sells better than a coined brand is untested with buyers."
+    ],
+    "methods": [
+      {"name": "Name-to-deliverable check", "what": "Test each candidate name against the deliverable list (what was tested, what was demonstrated, what was retested, what was excluded) and drop words the deliverable cannot back.", "evidence_id": "service-delivery.discipline-distinctions"},
+      {"name": "Buyer wording interviews", "what": "Ask a few target buyers, with consent, what they expect from each candidate name and whether they read it as a guarantee, before committing materials.", "evidence_id": "commercial.evaluation-and-buyer-evidence-protocol"}
+    ],
+    "open_questions": [
+      "Does the standard engagement test detection and recovery; if not, should 'Resilience' be replaced by 'Impact' or similar?",
+      "Is 'Synapse' registered as the company name and is it clear in J-PlatPat class 42 (42P02)?",
+      "Will the English name be used soon enough to matter now?"
+    ],
+    "proposal_changes": [
+      "Consider an English name that names the deliverable rather than an outcome, such as 'Synapse Breach Impact Assessment', or keep 'Resilience Verification' only with a fixed subtitle such as 'in an isolated replica, within agreed scope'.",
+      "Add the scope qualifier (isolated replica, agreed scope, point in time) wherever the name appears, consistent with decision 14's wording rules."
+    ]
+  },
+  {
+    "no": "14",
+    "title_en": "Assurance, retest and SLA",
+    "proposal_en": "Include one retest in the standard price, within 90 days of the final report and limited to items reported for improvement, using the same method; out-of-window or new scope costs about 30% of base. Guarantee process, not results: urgent first contact within 1 business day of reaching critical information or a business-stopping path, final report within 10 business days of testing, debrief within 2 weeks; no refunds or outcome-linked pricing. Continuous contracts (quarterly light check plus annual full assessment, about 1.5-2x a single engagement per year) start in FY2027.",
+    "verdict": "supported",
+    "verdict_reason": "Included time-boxed retest, no outcome guarantee and process-level commitments all match documented provider practice and the research's retest findings; only the continuous-contract design and the specific clock values are untested.",
+    "supports": [
+      {"id": "commercial.hackerone-staffed-pentest-effort-terms", "why": "A staffed provider documents report delivery in 3-5 business days and a 30-90 day retest window, so a 90-day single retest and 10-business-day report are within market norms.", "strength": "public-doc"},
+      {"id": "commercial.cobalt-workflow-and-retest-windows", "why": "Another provider advertises defined retest windows and says checklists do not define completeness, supporting a fixed window and a no-completeness disclaimer.", "strength": "public-doc"},
+      {"id": "service-delivery.discipline-distinctions", "why": "Absence of findings is bounded assurance, which supports the 'not found within this scope, period and method' wording instead of 'safe'.", "strength": "synthesis"},
+      {"id": "service-delivery.instance-vs-class-repair", "why": "A fixture showed a direct-path fix passed while a related state sequence still failed, supporting a retest that is defined and scoped, and showing what it must include.", "strength": "component-lab"},
+      {"id": "service-delivery.public-pages-are-not-signed-terms", "why": "Competitors' public pages lack clocks, exclusions and authority, so publishing Synapse's actual SLA terms is both accurate and differentiating.", "strength": "public-doc"},
+      {"id": "standards.recall-unknowable-measures", "why": "Coverage of an unknown vulnerability set cannot be measured, which supports refusing result guarantees and refunds.", "strength": "synthesis"},
+      {"id": "service-delivery.mandiant-assessment-effort-and-roles", "why": "Assessor tests and reassesses while the client remediates, matching the proposed split where Synapse retests but does not own the fix.", "strength": "public-doc"}
+    ],
+    "cautions": [
+      {"id": "reporting.defectdojo-closure-not-fix", "why": "A finding can disappear because of filters, failed authentication, narrower scope or parser changes, so 'same method' is not enough; the retest must match identity and scope."},
+      {"id": "authorization.revocation-retest-consistency", "why": "A cached allow survived revocation until a stronger consistency mode was used, so retest timing and consistency mode must be recorded or the result may be false either way."},
+      {"id": "reporting.takumi-not-vulnerable-means-not-reproduced", "why": "A negative retest can mean missing roles or data rather than a fix, so retest negatives should be reported as not reproduced under recorded conditions."},
+      {"id": "service-delivery.sla-clocks-measure-engagement-not-containment", "why": "SLA minute figures are meaningless without defined start and stop events, so the 1-business-day urgent notice needs an explicit start (Synapse's confirmed finding) and stop (contact with the named person)."},
+      {"id": "reporting.nbret-failed-scan-no-gaps", "why": "NBRET's own report showed no gaps after a failed scan, so the retest report must surface failed or skipped steps before declaring an item resolved."},
+      {"id": "service-delivery.synapse-mapping-gaps", "why": "If the retest runs in the isolated replica, it only shows the fix in the replica; the client's change must be reflected in a recorded replica version."}
+    ],
+    "unproven": [
+      "Whether Synapse can staff a 1-business-day urgent notice and a 10-business-day report is unmeasured.",
+      "Whether the 30%-of-base price for out-of-window retests and the 1.5-2x annual contract price cover cost is unknown.",
+      "Whether quarterly checks deliver value beyond repeated testing is untested; the research's change-aware continuity idea is only a hypothesis.",
+      "Japanese legal limits on disclaimers (Premiums and Representations Act, unfair competition) are outside the research."
+    ],
+    "methods": [
+      {"name": "Matched retest protocol", "what": "Retest with the same identities, scope, environment version and consistency mode, run the original path, nearby state sequences and a legitimate-operation control so neither symptom patches nor deny-all fixes pass.", "evidence_id": "service-delivery.instance-vs-class-repair"},
+      {"name": "Claim record with revalidation trigger", "what": "Keep each finding as a versioned claim with status (observed, independently verified, remediation-verified, stale) and a change-based revalidation trigger, which also defines what a quarterly check re-runs.", "evidence_id": "standards.claim-record-fields"},
+      {"name": "Defined SLA clocks", "what": "Write each commitment as start event, stop event and holds (e.g. client unreachable), following how MDR providers define clocks, and publish them.", "evidence_id": "service-delivery.sla-clocks-measure-engagement-not-containment"},
+      {"name": "Tracker as bookkeeping only", "what": "Use DefectDojo or similar to track finding state but close an item only on a matched retest receipt, keeping raw output beside the tracker.", "evidence_id": "reporting.defectdojo-closure-not-fix"}
+    ],
+    "open_questions": [
+      "What events start and stop the urgent-notice clock, and who is the client's named contact?",
+      "How will the client's fix be brought into the isolated replica for retest, and who attests the replica matches?",
+      "Does the 90-day window pause while the client is waiting on Synapse or a third party?",
+      "What exactly does a quarterly light check execute, and what change triggers re-testing?"
+    ],
+    "proposal_changes": [
+      "Define the included retest as a matched retest: same identities, scope and recorded environment version, plus nearby sequences and a legitimate-operation control.",
+      "Word retest negatives as 'not reproduced under the recorded conditions' rather than 'fixed'.",
+      "Add start, stop and hold definitions to every SLA commitment.",
+      "Base the quarterly check on change-triggered revalidation of recorded claims rather than a fixed repeat of the original test, and state that an annual subscription is not continuous testing."
+    ]
+  },
+  {
+    "no": "15",
+    "title_en": "Timing and roadmap",
+    "proposal_en": "Staged launch (option D) narrowed: by year-end 2026 only open intake and measure one pilot (single-shot assessment plus one retest), launch the paid standard offer in late January to February 2027 to catch fiscal-year budgets, and start continuous contracts from April 2027. A weekly plan runs from decisions in late October to a pilot from early December with debrief in the last week of December, independent of whether GMO extends its JPY 980k year-end price.",
+    "verdict": "partly-supported",
+    "verdict_reason": "Measuring one real engagement before fixing price, staffing and templates is exactly what the research says is missing, but the schedule is too short to include the retest and has no synthetic POC or manual baseline first; market timing claims are outside the research.",
+    "supports": [
+      {"id": "service-delivery.synapse-mapping-gaps", "why": "No end-to-end Synapse engagement has been observed, so making 'measure one pilot' the year-end goal targets the research's main gap.", "strength": "synthesis"},
+      {"id": "commercial.evaluation-and-buyer-evidence-protocol", "why": "A paid pilot is separate evidence from a technical prototype, supporting a staged plan that measures a real engagement before standardizing.", "strength": "synthesis"},
+      {"id": "commercial.no-measured-assessment-hours", "why": "Without measured hours, price and staffing should wait for pilot data, supporting delaying the paid standard offer until after the pilot.", "strength": "public-doc"},
+      {"id": "commercial.observed-public-prices", "why": "Cobalt also runs a promotional autonomous test price ending December 31, 2026, so year-end promotional pricing is market-wide and not a reason to rush against GMO alone.", "strength": "public-doc"}
+    ],
+    "cautions": [
+      {"id": "service-delivery.instance-vs-class-repair", "why": "A pilot without a retest cannot show the structural-fix-and-retest core, yet the plan ends the pilot at a December debrief and sets January prices before any retest."},
+      {"id": "commercial.vendor-outcome-evidence-weak", "why": "One pilot is a single selected case and cannot validate price or demand; treat it as a cost measurement, not market proof."},
+      {"id": "corr.providers.takumi-domestic-inference", "why": "Takumi's domestic-inference option is only announced for 2026-11-02, so the competitor's data-handling position may change inside this window and Synapse should state its own AI processing location rather than assume an advantage."},
+      {"id": "service-delivery.rea-integration-order", "why": "Tool adoption should start from a known-answer fixture and existing checks, so the W47 'dry run' should be a known-answer synthetic exercise rather than a first build of new tooling."},
+      {"id": "hazard.external-strategy-path", "why": "The roadmap rests on unapproved proposals for decisions 01-14, so its dates are conditional on those decisions."}
+    ],
+    "unproven": [
+      "The Japanese budget cycle timing and the value of launching alongside GMO's promotion are outside the research.",
+      "That a pilot client can be found by late November is untested.",
+      "That the isolated environment can reproduce one client system set by December is not verified.",
+      "That legal review takes 3-4 weeks is an assumption."
+    ],
+    "methods": [
+      {"name": "Synthetic POC before pilot", "what": "Run the research's synthetic POC (hidden variants, one consequential chain, structural fix, retest, manual baseline) in November as the dry run, so the pilot tests a known workflow.", "evidence_id": "service-delivery.synapse-mapping-gaps"},
+      {"name": "Pilot measurement sheet", "what": "Record setup, testing, review, reporting and retest hours plus calendar time and client wait time, so January pricing uses measured inputs.", "evidence_id": "commercial.no-measured-assessment-hours"},
+      {"name": "Known-answer dry run", "what": "Use a fixture with known vulnerable and repaired variants to check that Synapse's tools and report templates detect, report and retest correctly before client work.", "evidence_id": "service-delivery.rea-integration-order"}
+    ],
+    "open_questions": [
+      "Is there a pilot candidate reachable by late November, and paid or free?",
+      "Can the isolated environment support one pilot by December, and who confirms it?",
+      "Should the January price be labelled provisional until the pilot retest is done?",
+      "Will Kotaro approve the synthetic POC as the November dry run?"
+    ],
+    "proposal_changes": [
+      "Extend the pilot plan to include its retest (likely February) and label the January standard price provisional until that retest is measured.",
+      "Replace the W47 internal dry run with the synthetic POC run against hidden variants with a manual baseline.",
+      "Add an explicit check of decision 12's 6-8 week calendar duration against the 3-week December pilot slot, and resolve the conflict.",
+      "Drop the GMO year-end price as a timing driver in internal planning, as the plan's own reasoning already implies."
+    ]
+  }
+]

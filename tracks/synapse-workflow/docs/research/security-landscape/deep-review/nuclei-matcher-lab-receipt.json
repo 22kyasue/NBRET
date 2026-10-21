@@ -1,0 +1,173 @@
+{
+  "at": "2026-10-17T20:00:02.751Z",
+  "out": "C:\\Users\\kotar\\githubprojects\\NBRET\\runs\\nuclei-matcher-research-1792267157071",
+  "scope": "Production matcher methods with stub clients; no provider/target testing",
+  "command": {
+    "executable": "C:\\Users\\kotar\\githubprojects\\NBRET\\.tools\\security-research-go\\sdk\\go\\bin\\go.exe",
+    "args": [
+      "test",
+      "-overlay",
+      "C:\\Users\\kotar\\githubprojects\\NBRET\\runs\\nuclei-matcher-research-1792267157071\\overlay.json",
+      "./pkg/operators/matchers",
+      "-run",
+      "^(TestMatchLLM|TestValidateLLM|TestLLMAudit|TestResearch)",
+      "-count=1",
+      "-json"
+    ],
+    "cwd": "C:/Users/kotar/.codex/research/nuclei"
+  },
+  "environment": {
+    "GOTOOLCHAIN": "local",
+    "CGO_ENABLED": "0",
+    "GOPATH": "C:\\Users\\kotar\\githubprojects\\NBRET\\.tools\\security-research-go\\module-cache",
+    "GOCACHE": "C:\\Users\\kotar\\githubprojects\\NBRET\\.tools\\security-research-go\\cache",
+    "GOPROXY": "https://proxy.golang.org",
+    "GOSUMDB": "sum.golang.org"
+  },
+  "exit": 0,
+  "signal": null,
+  "elapsedMs": 45677.672399999996,
+  "sourceSha256": {
+    "pkg/operators/matchers/match_llm.go": "d6af3c1cc814deebc4f1263b5136a6b44f1497b2cb7fbe63afc54edae83475f2",
+    "pkg/operators/matchers/match_llm_test.go": "645c8e4a5e2f69b79c6e2e90c8f38005f98bc6f71e9cab03bacf337142cadfad",
+    "pkg/operators/matchers/validate.go": "2ebb75aecd30b2a46d1e0acd160d73f720674b1802291c11ce950cfcc5f5fdb1",
+    "pkg/operators/matchers/llm_audit.go": "08a60b85592d70ffc521a515cb5e9bfbcf65be03a7b72989fef0633606a351c9",
+    "go.mod": "d960ba91e597d8500c1d7bc68b6daaf07631fa795ee0972eb5dad2bfa49697c5",
+    "go.sum": "df80e4e570143a2abebf4174236e9ccc114292d0a2f3f6102848a4610cd396c1"
+  },
+  "overlaySha256": "5d81d408e50a481072df49abd802616bff4bffa1a35894e0c208fbd7d7fd284d",
+  "logSha256": "d6ee56ddf032dbb54084eeb1da3d641bb2867c492acad18f29200fb5fca19d92",
+  "stderrSha256": "25a8bff572d3df2d23f20852114425b41fa9c9ea2e775ebfc61f7f1aceec2782",
+  "tests": [
+    {
+      "test": "TestMatchLLMFiresOnExpectedVerdictAboveConfidence",
+      "action": "pass",
+      "elapsed": 0
+    },
+    {
+      "test": "TestMatchLLMDoesNotFireBelowConfidence",
+      "action": "pass",
+      "elapsed": 0
+    },
+    {
+      "test": "TestMatchLLMDoesNotFireOnWrongVerdict",
+      "action": "pass",
+      "elapsed": 0
+    },
+    {
+      "test": "TestMatchLLMCustomExpectAndOptions",
+      "action": "pass",
+      "elapsed": 0
+    },
+    {
+      "test": "TestMatchLLMFailClosed",
+      "action": "pass",
+      "elapsed": 0
+    },
+    {
+      "test": "TestMatchLLMDefaultsExpectToYes",
+      "action": "pass",
+      "elapsed": 0
+    },
+    {
+      "test": "TestMatchLLMTruncatesInput",
+      "action": "pass",
+      "elapsed": 0
+    },
+    {
+      "test": "TestMatchLLMRejectsVerdictWithoutConfidence",
+      "action": "pass",
+      "elapsed": 0
+    },
+    {
+      "test": "TestMatchLLMRejectsConfidenceOutsideContract",
+      "action": "pass",
+      "elapsed": 0
+    },
+    {
+      "test": "TestMatchLLMFailsClosedWithoutClient",
+      "action": "pass",
+      "elapsed": 0
+    },
+    {
+      "test": "TestValidateLLMRejectsNegative",
+      "action": "pass",
+      "elapsed": 0
+    },
+    {
+      "test": "TestValidateLLMRejectsConfidenceOutOfRange",
+      "action": "pass",
+      "elapsed": 0
+    },
+    {
+      "test": "TestValidateLLMAcceptsBounds",
+      "action": "pass",
+      "elapsed": 0
+    },
+    {
+      "test": "TestMatchLLMWithAuditRecordsVerdict",
+      "action": "pass",
+      "elapsed": 0
+    },
+    {
+      "test": "TestMatchLLMWithAuditRecordsRejectedVerdict",
+      "action": "pass",
+      "elapsed": 0
+    },
+    {
+      "test": "TestMatchLLMWithAuditReportsNothingOnFailure",
+      "action": "pass",
+      "elapsed": 0
+    },
+    {
+      "test": "TestLLMAuditHashIsStableAndOpaque",
+      "action": "pass",
+      "elapsed": 0
+    },
+    {
+      "test": "TestMatchLLMInterpolatesPromptValues",
+      "action": "pass",
+      "elapsed": 0
+    },
+    {
+      "test": "TestMatchLLMKeepsUnknownPlaceholdersLiteral",
+      "action": "pass",
+      "elapsed": 0
+    },
+    {
+      "test": "TestMatchLLMComparesInputs",
+      "action": "pass",
+      "elapsed": 0
+    },
+    {
+      "test": "TestMatchLLMFramesEachInputSeparately",
+      "action": "pass",
+      "elapsed": 0
+    },
+    {
+      "test": "TestMatchLLMWithoutInputsUsesPart",
+      "action": "pass",
+      "elapsed": 0
+    },
+    {
+      "test": "TestResearchEvidenceNeedNotOccurInCorpus",
+      "action": "pass",
+      "elapsed": 0
+    },
+    {
+      "test": "TestResearchExpectOutsideOptionsCanMatch",
+      "action": "pass",
+      "elapsed": 0
+    },
+    {
+      "test": "TestResearchWrongVerdictRetainsInvalidConfidenceAudit",
+      "action": "pass",
+      "elapsed": 0
+    },
+    {
+      "test": "TestValidateLLMInputs",
+      "action": "pass",
+      "elapsed": 0
+    }
+  ]
+}

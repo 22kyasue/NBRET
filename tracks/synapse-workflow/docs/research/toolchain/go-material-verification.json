@@ -1,0 +1,95 @@
+{
+  "at": "2026-10-18T07:29:34.172Z",
+  "basis": "Checks pinned inventory bytes/ranges, not semantic correctness or binary equivalence",
+  "summary": [
+    {
+      "name": "xxhash",
+      "version": "v2.3.0",
+      "files": 21,
+      "complete": 21,
+      "partial": 0,
+      "linesRead": 1466
+    },
+    {
+      "name": "jsonschema",
+      "version": "v6.0.3",
+      "files": 89,
+      "complete": 89,
+      "partial": 0,
+      "linesRead": 10677
+    },
+    {
+      "name": "text",
+      "version": "v0.43.0",
+      "files": 487,
+      "complete": 22,
+      "partial": 0,
+      "linesRead": 6416
+    },
+    {
+      "name": "s3manager",
+      "version": "v1.22.22",
+      "files": 47,
+      "complete": 47,
+      "partial": 0,
+      "linesRead": 10115
+    },
+    {
+      "name": "s3",
+      "version": "v1.102.2",
+      "files": 283,
+      "complete": 106,
+      "partial": 0,
+      "linesRead": 120448
+    },
+    {
+      "name": "smithy",
+      "version": "v1.26.0",
+      "files": 249,
+      "complete": 249,
+      "partial": 0,
+      "linesRead": 30837
+    },
+    {
+      "name": "checksum",
+      "version": "v1.9.18",
+      "files": 19,
+      "complete": 19,
+      "partial": 0,
+      "linesRead": 5781
+    },
+    {
+      "name": "sdkcore",
+      "version": "v1.41.9",
+      "files": 215,
+      "complete": 215,
+      "partial": 0,
+      "linesRead": 49765
+    },
+    {
+      "name": "eventstream",
+      "version": "v1.7.11",
+      "files": 39,
+      "complete": 30,
+      "partial": 0,
+      "linesRead": 2716
+    },
+    {
+      "name": "s3shared",
+      "version": "v1.19.25",
+      "files": 27,
+      "complete": 27,
+      "partial": 0,
+      "linesRead": 2695
+    },
+    {
+      "name": "v4a",
+      "version": "v1.4.26",
+      "files": 28,
+      "complete": 28,
+      "partial": 0,
+      "linesRead": 3550
+    }
+  ],
+  "errors": []
+}

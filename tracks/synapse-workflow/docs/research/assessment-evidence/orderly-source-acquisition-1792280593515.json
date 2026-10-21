@@ -1,0 +1,15 @@
+{
+  "at": "2026-10-17T23:43:13.514Z",
+  "package": "orderly-set",
+  "version": "5.5.0",
+  "source": "https://pypi.org/pypi/orderly-set/5.5.0/json",
+  "distribution": "https://files.pythonhosted.org/packages/4a/88/39c83c35d5e97cc203e9e77a4f93bf87ec89cf6a22ac4818fdcc65d66584/orderly_set-5.5.0.tar.gz",
+  "archive": "C:\\Users\\kotar\\.codex\\research\\assessment-evidence-sdk-sources\\orderly-set-5.5.0\\orderly_set-5.5.0.tar.gz",
+  "destination": "C:\\Users\\kotar\\.codex\\research\\assessment-evidence-sdk-sources\\orderly-set-5.5.0\\source",
+  "sha256": "e87185c8e4d8afa64e7f8160ee2c542a475b738bc891dc3f58102e654125e6ce",
+  "bytes": 27414,
+  "metadataSha256": "26bdc2f11567ed8f17b5d9e9cc3ff8fa37045f710b528b70d7af349903ea2652",
+  "upstreamGitCommit": null,
+  "licenseClaim": "MIT classifier; complete distributed license still to read",
+  "behavior": "Public source acquisition/extraction only; no package import, install, model, server or test execution"
+}

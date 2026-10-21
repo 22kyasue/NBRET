@@ -1,0 +1,95 @@
+{
+  "at": "2026-10-17T20:22:30.902Z",
+  "node": "v24.21.0",
+  "scope": "Actual pinned JavaScript adapter with synthetic client results and inert compatible fallback; no Redis/Lua/runtime atomicity assertion",
+  "source": ".tools/bots-swarms/rate-limiter-flexible/lib/RateLimiterRedis.js",
+  "sourceSha256": "ae86fbd0790eaad585da09684a23c5d8ad8beedafc36f391d7cf79db9d9adf5b",
+  "scriptSha256": "7beca6595fc7aded084fdeb8ca77eb58b0d0154aabfcbb6623122a0b3b8d6848",
+  "checks": [
+    {
+      "name": "recognized closed client rejects",
+      "actual": "Redis connection is not ready",
+      "expected": "Redis connection is not ready",
+      "pass": true
+    },
+    {
+      "name": "closed client command count",
+      "actual": 0,
+      "expected": 0,
+      "pass": true
+    },
+    {
+      "name": "default option calls supplied closed client",
+      "actual": 1,
+      "expected": 1,
+      "pass": true
+    },
+    {
+      "name": "unknown readiness shape reaches supplied client",
+      "actual": 1,
+      "expected": 1,
+      "pass": true
+    },
+    {
+      "name": "boolean false readiness rejects",
+      "actual": "Redis connection is not ready",
+      "expected": "Redis connection is not ready",
+      "pass": true
+    },
+    {
+      "name": "over budget is quota result",
+      "actual": true,
+      "expected": true,
+      "pass": true
+    },
+    {
+      "name": "quota rejection does not consume fallback",
+      "actual": 0,
+      "expected": 0,
+      "pass": true
+    },
+    {
+      "name": "storage Error consumes fallback",
+      "actual": 1,
+      "expected": 1,
+      "pass": true
+    },
+    {
+      "name": "fallback count",
+      "actual": 1,
+      "expected": 1,
+      "pass": true
+    },
+    {
+      "name": "two independent synthetic fallback budgets allow four",
+      "actual": 4,
+      "expected": 4,
+      "pass": true
+    },
+    {
+      "name": "synthetic success remaining quota",
+      "actual": 1,
+      "expected": 1,
+      "pass": true
+    },
+    {
+      "name": "prefix reaches command",
+      "actual": "synthetic-tenant:user",
+      "expected": "synthetic-tenant:user",
+      "pass": true
+    },
+    {
+      "name": "registered script includes increment and expiry",
+      "actual": true,
+      "expected": true,
+      "pass": true
+    },
+    {
+      "name": "decimal rejected before command",
+      "actual": 1,
+      "expected": 1,
+      "pass": true
+    }
+  ],
+  "cleanup": "No sockets, timers, child processes or external services created"
+}

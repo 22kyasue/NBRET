@@ -1,0 +1,237 @@
+{
+  "schemaVersion": 1,
+  "claim": {
+    "id": "TOBIRA-02-unproven-live-consequence",
+    "statement": "Unresolved lead: an attacker can induce production script failure and retrieve a password-bearing victim URL. This record intentionally exposes missing evidence; it is not a demonstrated finding.",
+    "context": {
+      "environment": "live",
+      "instance": "https://tobirastudio.com",
+      "build": "bc66421705bc9c6c5d86796f1e078a381cd1566f",
+      "principal": "unknown",
+      "tenant": null,
+      "role": "unknown",
+      "object": "signin-primary-form"
+    }
+  },
+  "evidence": [
+    {
+      "id": "live-004",
+      "context": {
+        "environment": "live",
+        "instance": "https://tobirastudio.com",
+        "build": "bc66421705bc9c6c5d86796f1e078a381cd1566f",
+        "principal": "anonymous",
+        "tenant": null,
+        "role": "public",
+        "object": "signin-primary-form"
+      },
+      "provenance": {
+        "producer": "retained assessment collector; locally reviewed by Ibis",
+        "collectedAt": "2026-10-19T05:32:39.527Z",
+        "artifact": "runs/tobira-live-public-20261018/live-004.body",
+        "sha256": "160effbb57d92cd7747b867fc4dd1d8d06432b39813d0d00801bab36dc7fa583",
+        "representation": "captured-html",
+        "limitations": [
+          "Anonymous response only. The release label is recorded, not independently authenticated. No victim or attacker identity established."
+        ]
+      },
+      "completeness": "complete",
+      "freshness": "unknown"
+    },
+    {
+      "id": "live-014",
+      "context": {
+        "environment": "live",
+        "instance": "https://tobirastudio.com",
+        "build": "bc66421705bc9c6c5d86796f1e078a381cd1566f",
+        "principal": "anonymous",
+        "tenant": null,
+        "role": "public",
+        "object": "signin-primary-form"
+      },
+      "provenance": {
+        "producer": "retained assessment collector; locally reviewed by Ibis",
+        "collectedAt": "2026-10-19T05:33:36.511Z",
+        "artifact": "runs/tobira-live-public-20261018/live-014.body",
+        "sha256": "be595b1ff4bf039a9b40d537a72bbaa06ce18011a5226a23ade1e617418d2a41",
+        "representation": "captured-javascript",
+        "limitations": [
+          "Delivered module contains submission interception, contrary to ordinary-flow leakage. Source content is not a complete runtime trace."
+        ]
+      },
+      "completeness": "complete",
+      "freshness": "unknown"
+    },
+    {
+      "id": "local-form-fallback",
+      "context": {
+        "environment": "captured-local",
+        "instance": "loopback exact-HTML reproduction",
+        "build": "bc66421705bc9c6c5d86796f1e078a381cd1566f",
+        "principal": "unknown",
+        "tenant": null,
+        "role": "unknown",
+        "object": "signin-primary-form"
+      },
+      "provenance": {
+        "producer": "retained assessment collector; locally reviewed by Ibis",
+        "collectedAt": "2026-10-19T05:44:18.917Z",
+        "artifact": "runs/tobira-live-public-20261018/local-form-fallback.json",
+        "sha256": "c4300c563ea21232fae081df230f825deeda00869372b3bf321e5acc66f7d176",
+        "representation": "normalized-browser-receipt",
+        "limitations": [
+          "Scripts deliberately blocked locally. Synthetic values only. No production script failure, attacker control or victim URL retrieval demonstrated. Build label refers to captured source; local CSP is deliberately different."
+        ]
+      },
+      "completeness": "complete",
+      "freshness": "unknown"
+    }
+  ],
+  "requirements": [
+    {
+      "id": "actor-access",
+      "kind": "identity",
+      "statement": "Establish the actor and actual access relevant to the claimed production consequence.",
+      "expected": {
+        "environment": "live",
+        "instance": "https://tobirastudio.com",
+        "build": "bc66421705bc9c6c5d86796f1e078a381cd1566f",
+        "principal": "unknown",
+        "tenant": null,
+        "role": "unknown",
+        "object": "signin-primary-form"
+      },
+      "references": []
+    },
+    {
+      "id": "normal-control",
+      "kind": "control",
+      "statement": "Retain normal delivered script interception as counterevidence to ordinary-flow leakage.",
+      "expected": {
+        "environment": "live",
+        "instance": "https://tobirastudio.com",
+        "build": "bc66421705bc9c6c5d86796f1e078a381cd1566f",
+        "principal": "anonymous",
+        "tenant": null,
+        "role": "public",
+        "object": "signin-primary-form"
+      },
+      "references": [
+        {
+          "evidenceId": "live-014",
+          "relation": "contradicts"
+        }
+      ]
+    },
+    {
+      "id": "selected-attempt",
+      "kind": "attempt",
+      "statement": "Retain local synthetic form submission without converting it into a live victim attempt.",
+      "expected": {
+        "environment": "live",
+        "instance": "https://tobirastudio.com",
+        "build": "bc66421705bc9c6c5d86796f1e078a381cd1566f",
+        "principal": "unknown",
+        "tenant": null,
+        "role": "unknown",
+        "object": "signin-primary-form"
+      },
+      "references": [
+        {
+          "evidenceId": "local-form-fallback",
+          "relation": "supports"
+        }
+      ]
+    },
+    {
+      "id": "final-consequence",
+      "kind": "effect",
+      "statement": "Observe the claimed production password-bearing URL reach the unauthorized actor.",
+      "expected": {
+        "environment": "live",
+        "instance": "https://tobirastudio.com",
+        "build": "bc66421705bc9c6c5d86796f1e078a381cd1566f",
+        "principal": "unknown",
+        "tenant": null,
+        "role": "unknown",
+        "object": "signin-primary-form"
+      },
+      "references": []
+    },
+    {
+      "id": "form-exposed",
+      "kind": "prerequisite",
+      "statement": "Production markup exposes the selected credential form.",
+      "expected": {
+        "environment": "live",
+        "instance": "https://tobirastudio.com",
+        "build": "bc66421705bc9c6c5d86796f1e078a381cd1566f",
+        "principal": "anonymous",
+        "tenant": null,
+        "role": "public",
+        "object": "signin-primary-form"
+      },
+      "references": [
+        {
+          "evidenceId": "live-004",
+          "relation": "supports"
+        }
+      ]
+    },
+    {
+      "id": "attacker-script-failure",
+      "kind": "prerequisite",
+      "statement": "Demonstrate actor-controlled production script failure; local imposed CSP does not establish this.",
+      "expected": {
+        "environment": "live",
+        "instance": "https://tobirastudio.com",
+        "build": "bc66421705bc9c6c5d86796f1e078a381cd1566f",
+        "principal": "unknown",
+        "tenant": null,
+        "role": "unknown",
+        "object": "signin-primary-form"
+      },
+      "references": []
+    },
+    {
+      "id": "victim-submission",
+      "kind": "prerequisite",
+      "statement": "Establish a controlled victim submission under the actual claimed production conditions.",
+      "expected": {
+        "environment": "live",
+        "instance": "https://tobirastudio.com",
+        "build": "bc66421705bc9c6c5d86796f1e078a381cd1566f",
+        "principal": "unknown",
+        "tenant": null,
+        "role": "unknown",
+        "object": "signin-primary-form"
+      },
+      "references": []
+    },
+    {
+      "id": "url-retrieval",
+      "kind": "prerequisite",
+      "statement": "Establish the unauthorized actor can retrieve the resulting URL.",
+      "expected": {
+        "environment": "live",
+        "instance": "https://tobirastudio.com",
+        "build": "bc66421705bc9c6c5d86796f1e078a381cd1566f",
+        "principal": "unknown",
+        "tenant": null,
+        "role": "unknown",
+        "object": "signin-primary-form"
+      },
+      "references": []
+    }
+  ],
+  "effect": {
+    "execution": "unperformed",
+    "oracle": "No suitable production-effect oracle evidence retained for this claim.",
+    "limitations": [
+      "Local dummy values in a loopback GET were observed; production credential leakage and account compromise were not.",
+      "Live collection/account reruns remain excluded by the existing instruction.",
+      "This record references retained evidence, with current deployment freshness unknown."
+    ]
+  },
+  "oneStepAway": null
+}

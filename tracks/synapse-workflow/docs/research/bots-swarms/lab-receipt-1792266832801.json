@@ -1,0 +1,188 @@
+{
+  "at": "2026-10-17T19:53:52.801Z",
+  "runtime": "v24.21.0",
+  "platform": "win32",
+  "command": "node docs/research/bots-swarms/lab.mjs",
+  "scriptSha256": "d388eada53f3e3cf3cf7570a046a3c2d3c15c34773fcb508b9d8b766f1614aa3",
+  "pin": {
+    "name": "rate-limiter-flexible",
+    "upstream": "animir/node-rate-limiter-flexible",
+    "root": "C:\\Users\\kotar\\githubprojects\\NBRET\\.tools\\bots-swarms\\rate-limiter-flexible",
+    "commit": "d19a457455338b73172d47d004f402bd0b748152",
+    "date": "2026-10-17T10:22:50+02:00",
+    "dirty": "",
+    "retrievedAt": "2026-10-17T19:52:46.273Z",
+    "basis": "Upstream shallow snapshot; no release or runtime verification implied"
+  },
+  "hashes": [
+    {
+      "file": "lib/RateLimiterMemory.js",
+      "sha256": "42dbc58032c0a08a51c78a249ca06555ea3893a9585c996284f753bbee47224b"
+    },
+    {
+      "file": "lib/RateLimiterAbstract.js",
+      "sha256": "f659ed1fa6065e8cbf554621997bb2192870b7efd091e80e9a006229e0d629a8"
+    },
+    {
+      "file": "lib/RateLimiterRes.js",
+      "sha256": "26237351781d300c123b207009c5a84fe78c6e1e9a89bc5579e1c02f97452349"
+    },
+    {
+      "file": "lib/component/MemoryStorage/MemoryStorage.js",
+      "sha256": "b041414d6d4cfd786333e046db15fa2c59cb827e6e67789eacf2b0cd6b70f5dc"
+    },
+    {
+      "file": "lib/component/MemoryStorage/Record.js",
+      "sha256": "0c8b2595f3a5d55825ac69fbe3819f45b699a4601c0d2b2d1ab0c8365ce120be"
+    }
+  ],
+  "results": [
+    {
+      "name": "shared address / address policy",
+      "actual": {
+        "allowed": 2,
+        "denied": 2
+      },
+      "expected": {
+        "allowed": 2,
+        "denied": 2
+      }
+    },
+    {
+      "name": "shared address / principal policy",
+      "actual": {
+        "allowed": 4,
+        "denied": 0
+      },
+      "expected": {
+        "allowed": 4,
+        "denied": 0
+      }
+    },
+    {
+      "name": "changing labels / address policy",
+      "actual": {
+        "allowed": 4,
+        "denied": 0
+      },
+      "expected": {
+        "allowed": 4,
+        "denied": 0
+      }
+    },
+    {
+      "name": "changing labels / principal policy",
+      "actual": {
+        "allowed": 2,
+        "denied": 2
+      },
+      "expected": {
+        "allowed": 2,
+        "denied": 2
+      }
+    },
+    {
+      "name": "independent limiter scope",
+      "actual": 4,
+      "expected": 4
+    },
+    {
+      "name": "missing identity",
+      "actual": 401,
+      "expected": 401
+    },
+    {
+      "name": "cross tenant denied",
+      "actual": 403,
+      "expected": 403
+    },
+    {
+      "name": "first permitted request",
+      "actual": {
+        "status": 200,
+        "body": "{\"tenant\":\"A\",\"owner\":\"A\"}"
+      },
+      "expected": {
+        "status": 200,
+        "body": "{\"tenant\":\"A\",\"owner\":\"A\"}"
+      }
+    },
+    {
+      "name": "second permitted request",
+      "actual": 200,
+      "expected": 200
+    },
+    {
+      "name": "quota exhausted",
+      "actual": 429,
+      "expected": 429
+    },
+    {
+      "name": "revocation",
+      "actual": 401,
+      "expected": 401
+    },
+    {
+      "name": "heartbeat current lease",
+      "actual": true,
+      "expected": true
+    },
+    {
+      "name": "heartbeat extends ownership",
+      "actual": null,
+      "expected": null
+    },
+    {
+      "name": "expired lease reassigned",
+      "actual": 2,
+      "expected": 2
+    },
+    {
+      "name": "stale lease commit",
+      "actual": false,
+      "expected": false
+    },
+    {
+      "name": "current commit",
+      "actual": true,
+      "expected": true
+    },
+    {
+      "name": "duplicate commit",
+      "actual": true,
+      "expected": true
+    },
+    {
+      "name": "idempotent side effects",
+      "actual": 1,
+      "expected": 1
+    },
+    {
+      "name": "cancel blocks commit",
+      "actual": false,
+      "expected": false
+    },
+    {
+      "name": "cancel blocks heartbeat",
+      "actual": false,
+      "expected": false
+    },
+    {
+      "name": "cancel blocks acquisition",
+      "actual": null,
+      "expected": null
+    },
+    {
+      "name": "attempt budget",
+      "actual": null,
+      "expected": null
+    },
+    {
+      "name": "server cleanup",
+      "actual": true,
+      "expected": true
+    }
+  ],
+  "cleanup": true,
+  "limits": "Synthetic fixtures; scheduler is a toy model; no population accuracy, browser isolation, distributed datastore or BullMQ runtime claim."
+}

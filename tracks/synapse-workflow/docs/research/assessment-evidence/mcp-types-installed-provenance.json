@@ -1,0 +1,69 @@
+{
+  "at": "2026-10-17T22:49:29.838Z",
+  "name": "mcp-types",
+  "version": "2.3.0",
+  "base": "C:/Users/kotar/.codex/research/assessment-evidence-venv/Lib/site-packages",
+  "root": "C:\\Users\\kotar\\.codex\\research\\assessment-evidence-venv\\Lib\\site-packages\\mcp_types",
+  "metadata": "C:\\Users\\kotar\\.codex\\research\\assessment-evidence-venv\\Lib\\site-packages\\mcp_types-2.3.0.dist-info",
+  "license": "MIT, installed METADATA and licenses/LICENSE",
+  "upstream": "https://github.com/modelcontextprotocol/python-sdk",
+  "basis": "Actual isolated-venv installed source and dist-info hashes; no Git commit inferred from package version.",
+  "files": {
+    "mcp_types/jsonrpc.py": {
+      "sha256": "c2d1bc1d07c5ebc7597919e4f65611c3887d50410f115b4a49d7918f68ffbf89",
+      "bytes": 4485
+    },
+    "mcp_types/methods.py": {
+      "sha256": "eaa0bf7b113edd7ed091a0a7928156b1aa5023d63c5c491a4add1fc62468a10d",
+      "bytes": 36220
+    },
+    "mcp_types/py.typed": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "mcp_types/version.py": {
+      "sha256": "e244c0bb0dda774b50af4a2f1a2145be6511794fdfd63e6a6c7afe60ee62e51e",
+      "bytes": 2785
+    },
+    "mcp_types/_types.py": {
+      "sha256": "0d07007bf5052c5fe123d6f12addae8fdcd4eabfd2b3a2fd639c3a47675b7d98",
+      "bytes": 79979
+    },
+    "mcp_types/_v2025_11_25/__init__.py": {
+      "sha256": "88ed170d690fcb575bce4ba684dc74bdfe73968fff4f55a15429f8ca5069a5a7",
+      "bytes": 99956
+    },
+    "mcp_types/_v2026_07_28/__init__.py": {
+      "sha256": "4f8286444b1108c62705fe72bc426e3e7fe6ea275b6d137914650f2601785a93",
+      "bytes": 116817
+    },
+    "mcp_types/_wire_base.py": {
+      "sha256": "5dccb64385fc5083cb2bcca72bbf746b41ef2395d591f4784eea9d54385533b6",
+      "bytes": 315
+    },
+    "mcp_types/__init__.py": {
+      "sha256": "791de752e5f95ca93c380499561ccb3b6b787627bd34e62a3e9f32176258392f",
+      "bytes": 11548
+    },
+    "mcp_types-2.3.0.dist-info/INSTALLER": {
+      "sha256": "ceebae7b8927a3227e5303cf5e0f1f7b34bb542ad7250ac03fbcde36ec2f1508",
+      "bytes": 4
+    },
+    "mcp_types-2.3.0.dist-info/licenses/LICENSE": {
+      "sha256": "5e13dbbc1d120fc2a03cecde7c91424ae2d7de11b63d58ded2f4431e261ee50d",
+      "bytes": 1071
+    },
+    "mcp_types-2.3.0.dist-info/METADATA": {
+      "sha256": "eb973e8b7f53d52ab1df9d1f18854ffa84f074f6052e310089e2655961c48ca9",
+      "bytes": 1914
+    },
+    "mcp_types-2.3.0.dist-info/RECORD": {
+      "sha256": "5967d7e026e63f480c7963306622701e234209b7f2ba619f75baf3c0b4b68f49",
+      "bytes": 1561
+    },
+    "mcp_types-2.3.0.dist-info/WHEEL": {
+      "sha256": "41c708c5adba6e097513ab8ccb9f1d7865a2fb469e22491a9e01dcc64da459fc",
+      "bytes": 87
+    }
+  }
+}

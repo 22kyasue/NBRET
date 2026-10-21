@@ -1,0 +1,936 @@
+{
+  "author": "independent question writer",
+  "createdAt": "2026-10-18",
+  "rules": "written without access to the reconciliation register",
+  "questions": [
+    {
+      "id": "q01",
+      "category": "commercial-standards-providers",
+      "question": "What does GMO Flatt charge for its Takumi AI assessment subscription, and what happens when we run out of the included usage?",
+      "gold": [
+        {
+          "path": "docs/research/cybersecurity-firms/gmo-flatt-security.md",
+          "lines": [
+            9,
+            9
+          ]
+        }
+      ],
+      "answer": "The captured page lists a ¥70,000/month (tax-exclusive) base with 250 monthly credits and optional extra credits at ¥280 each, dated to the capture and not a quote."
+    },
+    {
+      "id": "q02",
+      "category": "commercial-standards-providers",
+      "question": "How is Microsoft Security Copilot billed, and do E5 customers get any capacity included?",
+      "gold": [
+        {
+          "path": "docs/research/cybersecurity-firms/pricing-capacity-boundaries.md",
+          "lines": [
+            7,
+            9
+          ]
+        }
+      ],
+      "answer": "Provisioned SCUs are reserved hourly and billed monthly (USD example $4 per provisioned SCU-hour, $6 per overage SCU), and the E5/E7 inclusion gives 400 SCUs/month per 1,000 paid licenses capped at 10,000, a non-rollover shared bucket."
+    },
+    {
+      "id": "q03",
+      "category": "commercial-standards-providers",
+      "question": "Which version of the OWASP verification standard should our reports cite, and how should we reference individual requirements?",
+      "gold": [
+        {
+          "path": "docs/research/security-landscape/standards.md",
+          "lines": [
+            8,
+            8
+          ]
+        },
+        {
+          "path": "docs/research/security-landscape/standards.md",
+          "lines": [
+            16,
+            16
+          ]
+        }
+      ],
+      "answer": "ASVS stable 5.0.0, citing requirements with version-qualified identifiers because numbering changes between versions."
+    },
+    {
+      "id": "q04",
+      "category": "commercial-standards-providers",
+      "question": "Is the penetration testing execution standard actively maintained, or is there a newer release we should follow?",
+      "gold": [
+        {
+          "path": "docs/research/security-landscape/standards.md",
+          "lines": [
+            11,
+            11
+          ]
+        }
+      ],
+      "answer": "PTES calls itself v1.0, was last edited August 16, 2014 and only says v2 is planned, so there is no evidence v2 has been released."
+    },
+    {
+      "id": "q05",
+      "category": "commercial-standards-providers",
+      "question": "A competitor says a pentest is mandatory for SOC 2 and makes you HIPAA compliant. Can we repeat that in our sales material?",
+      "gold": [
+        {
+          "path": "docs/research/security-landscape/standards.md",
+          "lines": [
+            24,
+            24
+          ]
+        }
+      ],
+      "answer": "No; the research treats such vendor claims as not adopted legal conclusions and says contractual expectations, audit evidence and statutory obligations must be separated."
+    },
+    {
+      "id": "q06",
+      "category": "commercial-standards-providers",
+      "question": "LACのxPDRサービスは24時間対応とありますが、インシデントへの回答も夜間・休日に受けられるのですか？",
+      "gold": [
+        {
+          "path": "docs/research/cybersecurity-firms/lac-xpdr-operating-boundary.md",
+          "lines": [
+            9,
+            9
+          ]
+        }
+      ],
+      "answer": "No: the 24-hour inquiry window does not make incident answers continuous; a footnote limits those answers to weekday daytime, while monitoring and emergency tuning are continuous."
+    },
+    {
+      "id": "q07",
+      "category": "commercial-standards-providers",
+      "question": "With Palo Alto's Unit 42 managed response, can their analysts isolate one of our machines without asking us first?",
+      "gold": [
+        {
+          "path": "docs/research/cybersecurity-firms/palo-alto-networks.md",
+          "lines": [
+            15,
+            25
+          ]
+        },
+        {
+          "path": "docs/research/cybersecurity-firms/service-process-comparison.md",
+          "lines": [
+            21,
+            21
+          ]
+        }
+      ],
+      "answer": "It depends on the configured per-action permission: Yes preauthorizes isolation, Inform waits for approval from the escalation contact, and No forbids it."
+    },
+    {
+      "id": "q08",
+      "category": "commercial-standards-providers",
+      "question": "How long does a HackerOne-style pentest engagement take and when do we get the report and retest?",
+      "gold": [
+        {
+          "path": "docs/research/security-landscape/companies.md",
+          "lines": [
+            33,
+            33
+          ]
+        }
+      ],
+      "answer": "The documentation describes two calendar weeks of testing, 40 hours per tester, report delivery in 3-5 business days and 30-90-day retesting by tier, with no public numeric price established."
+    },
+    {
+      "id": "q09",
+      "category": "commercial-standards-providers",
+      "question": "roughly what does a nessus pro license run these days?",
+      "gold": [
+        {
+          "path": "docs/research/security-landscape/companies.md",
+          "lines": [
+            87,
+            87
+          ]
+        }
+      ],
+      "answer": "The page displayed USD $4,790 per year (plus $400 advanced support and $275 training), which is a license purchase, not a staffed pentest."
+    },
+    {
+      "id": "q10",
+      "category": "commercial-standards-providers",
+      "question": "What are the monthly tiers for GMO Ierae's managed WAF operation service, and do we need our own WAF already?",
+      "gold": [
+        {
+          "path": "docs/research/cybersecurity-firms/gmo-ierae.md",
+          "lines": [
+            32,
+            34
+          ]
+        }
+      ],
+      "answer": "WAF Aide operates an existing AWS WAF or Cloudflare WAF, with monthly bases of ¥42,000 Entry, ¥89,000 Classic and ¥99,000 Standard; volumes, overages and setup costs vary."
+    },
+    {
+      "id": "q11",
+      "category": "ai-evaluation-agents",
+      "question": "How did Takumi compare to AWS's security agent in that vendor benchmark, and who really won?",
+      "gold": [
+        {
+          "path": "docs/research/cybersecurity-firms/takumi-blackbox-benchmark.md",
+          "lines": [
+            5,
+            9
+          ]
+        }
+      ],
+      "answer": "Recall was 68% Takumi vs 20% AWS but high-confidence precision was 80% vs 100% (Takumi 63.9% with all reports), on one vendor-built app with unequal time budgets, so the winner depends on the metric."
+    },
+    {
+      "id": "q12",
+      "category": "ai-evaluation-agents",
+      "question": "Microsoft says its phishing agent makes analysts 6.5 times more productive. Is that a measured production speedup?",
+      "gold": [
+        {
+          "path": "docs/research/cybersecurity-firms/microsoft-phishing-trial.md",
+          "lines": [
+            7,
+            7
+          ]
+        }
+      ],
+      "answer": "No; the 6.53x combines measured behavior with a modeled protocol that removes agent-labeled benign mail, about 83% of the gain comes from queue filtering, and the pessimistic counterfactual is 3.07x."
+    },
+    {
+      "id": "q13",
+      "category": "ai-evaluation-agents",
+      "question": "Did analysts using the AI explanations in Microsoft's phishing study get 77 points more accurate, and were they safer when the AI was wrong?",
+      "gold": [
+        {
+          "path": "docs/research/cybersecurity-firms/microsoft-phishing-trial.md",
+          "lines": [
+            5,
+            9
+          ]
+        }
+      ],
+      "answer": "The 77% is an F1 improvement, not 77 percentage points of accuracy; with synthetic wrong verdicts, recall change was not significant and analysts shown AI judgments missed more synthetic false negatives."
+    },
+    {
+      "id": "q14",
+      "category": "ai-evaluation-agents",
+      "question": "crowdstrike claims charlotte is like 98% accurate and saves 40 hrs a week - how solid is that?",
+      "gold": [
+        {
+          "path": "docs/research/cybersecurity-firms/crowdstrike.md",
+          "lines": [
+            21,
+            23
+          ]
+        }
+      ],
+      "answer": "The over-98% is agreement with Falcon Complete human triage decisions, not ground-truth accuracy, and the 40 hours/week multiplies alert counts by an estimated five-minute baseline rather than an observed time study."
+    },
+    {
+      "id": "q15",
+      "category": "ai-evaluation-agents",
+      "question": "In the AgentDojo prompt-injection benchmark results, does a high 'security' score mean the agent defended well?",
+      "gold": [
+        {
+          "path": "docs/research/assessment-evidence/deep-agentdojo.md",
+          "lines": [
+            9,
+            9
+          ]
+        }
+      ],
+      "answer": "No; the security field returns true when the injection goal succeeds, and no-injection runs set it true as a sentinel, so it must not be averaged or inverted blindly."
+    },
+    {
+      "id": "q16",
+      "category": "ai-evaluation-agents",
+      "question": "If the model provider throws context-length or server errors during an AgentDojo run, how are those counted?",
+      "gold": [
+        {
+          "path": "docs/research/assessment-evidence/deep-agentdojo.md",
+          "lines": [
+            28,
+            28
+          ]
+        }
+      ],
+      "answer": "Selected context and server errors are mapped to (False, True), i.e. counted as security=true, which is not evidence the attacker goal executed; errors should be kept as a separate category."
+    },
+    {
+      "id": "q17",
+      "category": "ai-evaluation-agents",
+      "question": "Can we show clients the example failures garak prints in its qualitative review as a representative sample of how the model fails?",
+      "gold": [
+        {
+          "path": "docs/research/assessment-evidence/garak-report-fixture-evidence.md",
+          "lines": [
+            27,
+            27
+          ]
+        }
+      ],
+      "answer": "No; it takes the first ten passing/failing examples and only shuffles that excerpt, so it is not a random sample and cannot represent coverage or an unbiased failure rate."
+    },
+    {
+      "id": "q18",
+      "category": "ai-evaluation-agents",
+      "question": "When PentestGPT drives the Codex backend, is the per-episode turn limit actually enforced?",
+      "gold": [
+        {
+          "path": "docs/research/assessment-evidence/deep-pentestgpt.md",
+          "lines": [
+            29,
+            29
+          ]
+        },
+        {
+          "path": "docs/research/assessment-evidence/deep-pentestgpt.md",
+          "lines": [
+            64,
+            64
+          ]
+        }
+      ],
+      "answer": "No; the UnifiedAgent wrapper does not forward max_turns to the Codex backend (identical kwargs for 2 and 99), so only PentestGPT's outer decision count is bounded."
+    },
+    {
+      "id": "q19",
+      "category": "ai-evaluation-agents",
+      "question": "PentestGPT's audit reports all checks passed for a capture-the-flag run. Does that prove the agent really got into the target?",
+      "gold": [
+        {
+          "path": "docs/research/assessment-evidence/deep-pentestgpt.md",
+          "lines": [
+            56,
+            58
+          ]
+        }
+      ],
+      "answer": "No; the final oracle only checks whether the expected flag is a case-insensitive substring of observation text, so echoed text can satisfy it, and supervisor tool-use counts are not part of the pass decision."
+    },
+    {
+      "id": "q20",
+      "category": "ai-evaluation-agents",
+      "question": "What did Microsoft's research on AI-generated detections for missing attack steps actually measure, and can we quote its latency and cost as service terms?",
+      "gold": [
+        {
+          "path": "docs/research/cybersecurity-firms/microsoft-dtda-evaluation.md",
+          "lines": [
+            5,
+            11
+          ]
+        }
+      ],
+      "answer": "It generates detections (not containment) with 80.1% precision on 1,088 customer-graded alerts; the 28-minute median latency is not a containment SLA and the $2.04 median token cost is not customer pricing."
+    },
+    {
+      "id": "q21",
+      "category": "authorization-testing",
+      "question": "For a tenant-isolation test, is it enough to check that the other tenant's request gets a 403?",
+      "gold": [
+        {
+          "path": "docs/research/security-landscape/lab-results.md",
+          "lines": [
+            13,
+            21
+          ]
+        }
+      ],
+      "answer": "No; a deceptive 403 that still returns the foreign invoice passes a status-only check, so the strong check requires 403 and absence of the object, plus an own-tenant positive control."
+    },
+    {
+      "id": "q22",
+      "category": "authorization-testing",
+      "question": "We removed a user's access in OpenFGA but they could still get in for a few seconds. Is that a bug we should report?",
+      "gold": [
+        {
+          "path": "docs/research/assessment-evidence/deep-openfga.md",
+          "lines": [
+            31,
+            39
+          ]
+        }
+      ],
+      "answer": "Not by itself: the cache (10 seconds/10,000 entries by default) and asynchronous changelog invalidation are an eventual-consistency trade-off, bypassed only at higher consistency; the question is whether the app's revocation promise matches the chosen consistency mode."
+    },
+    {
+      "id": "q23",
+      "category": "authorization-testing",
+      "question": "If the 'list objects this user can access' call returns five records with HTTP 200, can we conclude the user can't see anything else?",
+      "gold": [
+        {
+          "path": "docs/research/assessment-evidence/openfga-request-contract.md",
+          "lines": [
+            283,
+            287
+          ]
+        }
+      ],
+      "answer": "No; ListObjects returns up to a result cap or deadline, suppresses cancellation/deadline errors and has no truncated flag, so an unreturned object is not proven unauthorized without an independent expected set."
+    },
+    {
+      "id": "q24",
+      "category": "authorization-testing",
+      "question": "We stored our expected permission assertions in OpenFGA and the write returned 204. Does that mean the assertions pass?",
+      "gold": [
+        {
+          "path": "docs/research/assessment-evidence/openfga-request-contract.md",
+          "lines": [
+            271,
+            271
+          ]
+        }
+      ],
+      "answer": "No; WriteAssertions validates and stores them without running Check or comparing Allowed, so a 204 is a receipt for an admitted test specification, not a passing security test."
+    },
+    {
+      "id": "q25",
+      "category": "authorization-testing",
+      "question": "If the caller authenticates successfully to the authorization server, does that mean they're only allowed to query their own store?",
+      "gold": [
+        {
+          "path": "docs/research/assessment-evidence/openfga-request-contract.md",
+          "lines": [
+            211,
+            215
+          ]
+        }
+      ],
+      "answer": "No; API authorization is a separate feature-flagged gate defaulting to a Noop authorizer, and the app must separately bind its end user to the queried user, so evidence needs both the API caller and the relationship user."
+    },
+    {
+      "id": "q26",
+      "category": "authorization-testing",
+      "question": "In a batch of authorization checks, if one item comes back as 'deny', can I treat that as a real policy denial?",
+      "gold": [
+        {
+          "path": "docs/research/assessment-evidence/authzen-evidence-boundaries.md",
+          "lines": [
+            19,
+            19
+          ]
+        },
+        {
+          "path": "docs/research/assessment-evidence/authzen-evidence-boundaries.md",
+          "lines": [
+            25,
+            25
+          ]
+        }
+      ],
+      "answer": "Not necessarily; missing/item errors are represented as decision=false with error context, and short-circuit modes evaluate only a prefix, so a successful batch RPC does not prove every item was evaluated."
+    },
+    {
+      "id": "q27",
+      "category": "authorization-testing",
+      "question": "The sample gRPC gateway has an endpoint that always returns 401. Can we use it to show that credential checking works?",
+      "gold": [
+        {
+          "path": "docs/research/assessment-evidence/authzen-evidence-boundaries.md",
+          "lines": [
+            990,
+            992
+          ]
+        }
+      ],
+      "answer": "No; the sample callee unconditionally returns Unauthenticated and malformed input can fail earlier, so a 401 there demonstrates a denial/status path, not credential verification or role enforcement."
+    },
+    {
+      "id": "q28",
+      "category": "authorization-testing",
+      "question": "Can we safely assume all GET endpoints are read-only and include them in a production test without approval?",
+      "gold": [
+        {
+          "path": "docs/research/assessment-evidence/authzen-evidence-boundaries.md",
+          "lines": [
+            900,
+            904
+          ]
+        }
+      ],
+      "answer": "No; the reviewed GET-labelled sample operation replaces map state, and its response reader cannot see the mutation, so scope should follow operation semantics and effect limits, not the HTTP verb."
+    },
+    {
+      "id": "q29",
+      "category": "authorization-testing",
+      "question": "Does OpenFGA's OIDC login check reject tokens that have no issued-at time or that are very old?",
+      "gold": [
+        {
+          "path": "docs/research/assessment-evidence/openfga-request-contract.md",
+          "lines": [
+            227,
+            227
+          ]
+        }
+      ],
+      "answer": "No; expiration and audience are required, but issued-at is checked only when present, with no maximum token age or revocation proof."
+    },
+    {
+      "id": "q30",
+      "category": "authorization-testing",
+      "question": "Can NBRET re-check a saved response offline as a different tenant to confirm the cross-tenant fix?",
+      "gold": [
+        {
+          "path": "docs/research/security-landscape/lab-results.md",
+          "lines": [
+            29,
+            33
+          ]
+        }
+      ],
+      "answer": "Not reliably; offline reassessment selects saved evidence ignoring the tenant headers (checks.mjs:82-83), so a tenant-A response reused under tenant-B headers fails, an evidence-selection problem rather than a live exploit."
+    },
+    {
+      "id": "q31",
+      "category": "scanners",
+      "question": "If I stop a ZAP active scan midway, what progress does the API report and will NBRET mark it complete?",
+      "gold": [
+        {
+          "path": "docs/research/security-landscape/deep-review/zap-control-path.md",
+          "lines": [
+            74,
+            76
+          ]
+        },
+        {
+          "path": "docs/research/security-landscape/deep-review/nbret-scanner.md",
+          "lines": [
+            49,
+            49
+          ]
+        }
+      ],
+      "answer": "A stopped scan reports status 100 (FINISHED), and NBRET's numeric-only loop treats it as completed without distinguishing interruption."
+    },
+    {
+      "id": "q32",
+      "category": "scanners",
+      "question": "ok so zap says the scan's done - could stuff still be hitting the target after that?",
+      "gold": [
+        {
+          "path": "docs/research/security-landscape/deep-review/zap-control-path.md",
+          "lines": [
+            108,
+            108
+          ]
+        },
+        {
+          "path": "docs/research/security-landscape/deep-review/zap-control-path.md",
+          "lines": [
+            47,
+            47
+          ]
+        }
+      ],
+      "answer": "Yes; the real-daemon stop receipt showed status 100 and adapter 'completed' while an in-flight response was still pending, with an alert arriving later, since Scanner.stop() signals hosts without waiting."
+    },
+    {
+      "id": "q33",
+      "category": "scanners",
+      "question": "We excluded /private in the ZAP context. Will findings for /private still show up in the ZAP report?",
+      "gold": [
+        {
+          "path": "docs/research/security-landscape/deep-review/zap-context.md",
+          "lines": [
+            17,
+            17
+          ]
+        },
+        {
+          "path": "docs/research/security-landscape/deep-review/zap-report-filter-lab.md",
+          "lines": [
+            11,
+            13
+          ]
+        }
+      ],
+      "answer": "Yes; the reports addon filter calls Context.isIncluded, which ignores exclusions and inScope, so an included-but-excluded URL still passes report selection even with inScope false."
+    },
+    {
+      "id": "q34",
+      "category": "scanners",
+      "question": "After clearing or replacing alerts in ZAP's alert collection, does the 'highest risk' value update correctly?",
+      "gold": [
+        {
+          "path": "docs/research/security-landscape/deep-review/zap-alert-set-lab.md",
+          "lines": [
+            11,
+            11
+          ]
+        }
+      ],
+      "answer": "No; the installed AlertSet kept returning the old high alert after clear and after same-ID replacement with a lower-risk alert, though distinct-ID ordering and removal recomputation worked."
+    },
+    {
+      "id": "q35",
+      "category": "scanners",
+      "question": "If two different test users send the same request through ZAP, could ZAP's history cache hand back the other user's saved response?",
+      "gold": [
+        {
+          "path": "docs/research/security-landscape/deep-review/zap-history-lab.md",
+          "lines": [
+            11,
+            13
+          ]
+        }
+      ],
+      "answer": "Yes at the component level; getHistoryCache selected principal A's saved row despite principal B's different Authorization/Cookie headers because the lookup omits headers, while path and body still discriminate."
+    },
+    {
+      "id": "q36",
+      "category": "scanners",
+      "question": "When NBRET scans only one path on a site, does it drop ZAP alerts for other paths on the same host?",
+      "gold": [
+        {
+          "path": "docs/research/security-landscape/deep-review/nbret-scanner.md",
+          "lines": [
+            25,
+            25
+          ]
+        },
+        {
+          "path": "docs/research/security-landscape/deep-review/nbret-scanner.md",
+          "lines": [
+            41,
+            41
+          ]
+        }
+      ],
+      "answer": "No; it filters alerts by exact origin only, so an /outside alert on the same origin is retained when the scope is /allowed, and proof/message/alert fields are dropped."
+    },
+    {
+      "id": "q37",
+      "category": "scanners",
+      "question": "Why might an NBRET scan time out even though our own active scan already finished?",
+      "gold": [
+        {
+          "path": "docs/research/security-landscape/deep-review/nbret-scanner.md",
+          "lines": [
+            24,
+            24
+          ]
+        },
+        {
+          "path": "docs/research/security-landscape/deep-review/nbret-scanner.md",
+          "lines": [
+            47,
+            47
+          ]
+        }
+      ],
+      "answer": "NBRET waits for ZAP's passive queue to reach zero, a count with no scan/context identity, so a shared nonempty queue produced a timed-out status in simulation despite no owned active scan."
+    },
+    {
+      "id": "q38",
+      "category": "scanners",
+      "question": "Is the Nuclei HTTP response cache size limit a hard cap?",
+      "gold": [
+        {
+          "path": "docs/research/security-landscape/deep-review/nuclei-output.md",
+          "lines": [
+            43,
+            43
+          ]
+        },
+        {
+          "path": "docs/research/security-landscape/deep-review/nuclei-http-cache-budget-lab.md",
+          "lines": [
+            9,
+            9
+          ]
+        }
+      ],
+      "answer": "No; the nominal 256MiB limit is sampled on the first and every 32nd write and the memory fallback never reports over budget, so the lab saw 31 admissions out of 33 checks above a 50-byte cap."
+    },
+    {
+      "id": "q39",
+      "category": "scanners",
+      "question": "When Nuclei uploads results to the ProjectDiscovery cloud, can individual findings get lost?",
+      "gold": [
+        {
+          "path": "docs/research/security-landscape/deep-review/nuclei-upload-buffer-lab.md",
+          "lines": [
+            15,
+            17
+          ]
+        }
+      ],
+      "answer": "In the local buffering lab yes: a record crossing the 4MiB threshold was counted but absent, a single oversized line produced an empty upload, and a failed flush still dropped the boundary record."
+    },
+    {
+      "id": "q40",
+      "category": "scanners",
+      "question": "If Nuclei's scripted login step fails, does the scan stop or keep going unauthenticated?",
+      "gold": [
+        {
+          "path": "docs/research/security-landscape/deep-review/nuclei-auth.md",
+          "lines": [
+            27,
+            27
+          ]
+        }
+      ],
+      "answer": "It keeps going: GetStrategies returns nil on fetch failure and ApplyAuth reports no error, so requests may continue without the intended credentials."
+    },
+    {
+      "id": "q41",
+      "category": "scanners",
+      "question": "if we tighten nuclei's network deny rules mid-run do already-open destinations get blocked?",
+      "gold": [
+        {
+          "path": "docs/research/security-landscape/deep-review/nuclei-dialer-cache-lab.md",
+          "lines": [
+            5,
+            9
+          ]
+        },
+        {
+          "path": "docs/research/toolchain/connectivity.md",
+          "lines": [
+            30,
+            32
+          ]
+        }
+      ],
+      "answer": "Not necessarily; the cached Fastdialer wrapper kept the earlier IP set and skipped the validation callback after synthetic policy revocation, while a fresh dialer denied correctly."
+    },
+    {
+      "id": "q42",
+      "category": "scanners",
+      "question": "In ZAP's attack mode, if we narrow the scope after pages were queued, are those queued pages rechecked before scanning?",
+      "gold": [
+        {
+          "path": "docs/research/security-landscape/deep-review/zap-network.md",
+          "lines": [
+            174,
+            174
+          ]
+        }
+      ],
+      "answer": "Not at the worker: scope is checked when nodes are enqueued and the worker does not recheck before starting, with Target defaults inScopeOnly=false, so revalidation is an open source-level question."
+    },
+    {
+      "id": "q43",
+      "category": "reporting-evidence-redaction",
+      "question": "A ZAP automation job shows COMPLETED. Does that mean it ran without errors?",
+      "gold": [
+        {
+          "path": "docs/research/security-landscape/deep-review/report-interpretation.md",
+          "lines": [
+            16,
+            16
+          ]
+        }
+      ],
+      "answer": "No; runJob exceptions are caught into progress.error and the job is still marked COMPLETED, so errors/warnings must be checked separately."
+    },
+    {
+      "id": "q44",
+      "category": "reporting-evidence-redaction",
+      "question": "The ZAP summary marks a rule as PASS. Can we tell the client that vulnerability isn't present?",
+      "gold": [
+        {
+          "path": "docs/research/security-landscape/deep-review/report-interpretation.md",
+          "lines": [
+            19,
+            19
+          ]
+        }
+      ],
+      "answer": "No; PASS only means no alert was counted for that rule ID, not that applicable input existed, execution was complete or the vulnerability is absent."
+    },
+    {
+      "id": "q45",
+      "category": "reporting-evidence-redaction",
+      "question": "Which parts of Nuclei's output have credentials scrubbed before they're written out?",
+      "gold": [
+        {
+          "path": "docs/research/security-landscape/deep-review/nuclei-output.md",
+          "lines": [
+            11,
+            13
+          ]
+        }
+      ],
+      "answer": "Only Request, Response, CURLCommand and Matched are redacted (Authorization, Proxy-Authorization, Cookie, Set-Cookie, X-Api-Key plus configured keys); Host/URL/extracted/metadata/LLM fields and trace/error records are not."
+    },
+    {
+      "id": "q46",
+      "category": "reporting-evidence-redaction",
+      "question": "If we export ZAP findings as SARIF, are cookies and API keys masked like the Authorization header?",
+      "gold": [
+        {
+          "path": "docs/research/security-landscape/deep-review/zap-reports.md",
+          "lines": [
+            75,
+            75
+          ]
+        },
+        {
+          "path": "docs/research/security-landscape/deep-review/zap-sarif-lab.md",
+          "lines": [
+            3,
+            7
+          ]
+        }
+      ],
+      "answer": "No; the SARIF hider masks only Authorization, and the installed-builder lab confirmed Cookie, custom API key, query, bodies and attack values were preserved."
+    },
+    {
+      "id": "q47",
+      "category": "reporting-evidence-redaction",
+      "question": "Does NBRET's capture redaction reliably remove secrets from everything it saves?",
+      "gold": [
+        {
+          "path": "docs/research/security-landscape/deep-review/nbret-capture.md",
+          "lines": [
+            7,
+            7
+          ]
+        }
+      ],
+      "answer": "No; it recursively redacts secret-named keys and sanitizes URL credentials/query/hash, which is heuristic key redaction, so secrets under neutral keys, labels or paths can remain."
+    },
+    {
+      "id": "q48",
+      "category": "reporting-evidence-redaction",
+      "question": "If the scanner phase fails, will NBRET's report make that obvious to the reader?",
+      "gold": [
+        {
+          "path": "docs/research/security-landscape/deep-review/nbret-scanner.md",
+          "lines": [
+            54,
+            54
+          ]
+        }
+      ],
+      "answer": "No; the lab showed analysis JSON kept scanner.status=failed while emitting coverage=no-recorded-gaps, and neither rendered report included SCAN_FAILED."
+    },
+    {
+      "id": "q49",
+      "category": "reporting-evidence-redaction",
+      "question": "When we import Nmap results into DefectDojo, will the finding count match the number of open host/port/protocol combinations?",
+      "gold": [
+        {
+          "path": "docs/research/toolchain/reporting-retest.md",
+          "lines": [
+            13,
+            14
+          ]
+        }
+      ],
+      "answer": "No; only state=open ports are imported and the open-port dedupe key is nmap:port without protocol or host, so findings at the same port number merge."
+    },
+    {
+      "id": "q50",
+      "category": "reporting-evidence-redaction",
+      "question": "Does the agent run monitor strip secrets from what it stores, and can someone else read another run's events?",
+      "gold": [
+        {
+          "path": "docs/research/assessment-evidence/deep-monitor.md",
+          "lines": [
+            13,
+            15
+          ]
+        },
+        {
+          "path": "docs/research/assessment-evidence/deep-monitor.md",
+          "lines": [
+            24,
+            24
+          ]
+        }
+      ],
+      "answer": "It omits reasoning/raw data but retained a synthetic command secret and prompt; JSON-safe is not redaction, and the API has no per-user authorization, so a run ID is not access control."
+    },
+    {
+      "id": "q51",
+      "category": "cloud-network-ad-proxy",
+      "question": "Prowler's 'no admin privileges' check passed. Does that mean the policy can't grant admin once Deny statements and conditions are considered?",
+      "gold": [
+        {
+          "path": "docs/research/toolchain/cloud-posture.md",
+          "lines": [
+            18,
+            18
+          ]
+        },
+        {
+          "path": "docs/research/toolchain/cloud-posture.md",
+          "lines": [
+            56,
+            56
+          ]
+        }
+      ],
+      "answer": "No; check_admin_access looks for wildcard allowed actions but does not apply collected denies or inspect Condition, so it is a heuristic, not effective-permission evaluation."
+    },
+    {
+      "id": "q52",
+      "category": "cloud-network-ad-proxy",
+      "question": "If Prowler gets access denied while fetching a policy document, could the check still show PASS?",
+      "gold": [
+        {
+          "path": "docs/research/toolchain/cloud-posture.md",
+          "lines": [
+            12,
+            12
+          ]
+        },
+        {
+          "path": "docs/research/toolchain/cloud-posture.md",
+          "lines": [
+            43,
+            43
+          ]
+        }
+      ],
+      "answer": "Yes; the report starts as PASS and changes to FAIL only when a present document matches, so a missing document after a fetch error can yield PASS while the error stays only in logs."
+    },
+    {
+      "id": "q53",
+      "category": "cloud-network-ad-proxy",
+      "question": "Is it safe to just import a Prowler check module in a test harness without touching the cloud account?",
+      "gold": [
+        {
+          "path": "docs/research/toolchain/cloud-posture.md",
+          "lines": [
+            11,
+            11
+          ]
+        },
+        {
+          "path": "docs/research/toolchain/cloud-posture.md",
+          "lines": [
+            16,
+            16
+          ]
+        }
+      ],
+      "answer": "No; the IAM client is constructed from the global provider at import time, and the collector can even call GenerateCredentialReport, creating an account-side artifact."
+    },
+    {
+      "id": "q54",
+      "category": "cloud-network-ad-proxy",
+      "question": "Can Nmap route its scans through a SOCKS5 proxy with a username and password?",
+      "gold": [
+        {
+          "path": "docs/research/toolchain/nsock-proxies.md",
+          "lines": [
+            8,
+            9
+          ]
+        },
+        {
+          "path": "docs/research/toolchain/nsock-proxies.md",
+          "lines": [
+            23,
+            23
+          ]
+        }
+      ],
+      "answer": "Not via nsock at this pin: only HTTP CONNECT and SOCKS4 backends are registered, userinfo with @ is rejected despite the user:pass comment, and SOCKS4 uses an empty user ID."
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "date": "2026-10-17T22:20:40.932Z",
+  "criteria": "Invalid numeric default retained; valid numeric default receives same type-label warning; old timestamp not selected by extracted rotation predicate; future timestamp selected.",
+  "command": [
+    "powershell.exe",
+    "-NoProfile",
+    "-NonInteractive",
+    "-File",
+    "docs/research/assessment-evidence/atomic-authoring-contract.ps1"
+  ],
+  "sourceSha256": {
+    "docs/research/assessment-evidence/atomic-authoring-contract.ps1": "653b4e8deb2dd3120dfe294eeffe6fa813d181fedba6c2c8b0c7c82d71860be9",
+    "C:/Users/kotar/.codex/research/invoke-atomic-20261017/Private/AtomicClassSchema.ps1": "15db7e5f181552e4a0609d029cf5effeabbeef90ff6ccefddfd1bf587294c265",
+    "C:/Users/kotar/.codex/research/invoke-atomic-20261017/Public/New-Atomic.ps1": "1fa100878556fd65af1d65ab61a957eb69ed0e583b5a6fbb050c6e5e97a410a1",
+    "C:/Users/kotar/.codex/research/invoke-atomic-20261017/Public/Invoke-KickoffAtomicRunner.ps1": "46451cb3dd23017095507eedc040b16826fcf0a297691694faf9c29e2cecde47"
+  },
+  "status": 0,
+  "stdout": "{\r\n    \"checks\":  4,\r\n    \"invalid_default\":  \"not-an-integer\",\r\n    \"valid_default\":  \"7\",\r\n    \"warning_invalid\":  [\r\n                            \"The specified Int is not properly formatted: Integer\"\r\n                        ],\r\n    \"warning_valid\":  [\r\n                          \"The specified Int is not properly formatted: Integer\"\r\n                      ],\r\n    \"rotation_predicate_old_selected\":  false,\r\n    \"rotation_predicate_future_selected\":  true,\r\n    \"limits\":  \"Authoring declarations and extracted date predicate only; no scheduled task, service, deletion, module import, test command, network or detector.\"\r\n}\r\n",
+  "stderr": "",
+  "humanIntervention": "None during execution",
+  "cost": "Local CPU only; no paid API or network",
+  "limits": "No executor, installer, service, scheduled task or deletion executed."
+}

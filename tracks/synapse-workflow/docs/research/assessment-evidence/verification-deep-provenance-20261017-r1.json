@@ -1,0 +1,19 @@
+{
+  "at": "2026-10-17T20:19:00.300Z",
+  "command": "node docs/research/assessment-evidence/verify-deep.mjs",
+  "node": "v24.21.0",
+  "exitCode": 0,
+  "checks": [
+    "pinned checkout commits and cataloged license-file hashes",
+    "all inventoried source hashes, complete-read range unions and runtime receipt links",
+    "six retained successful fixture/source hash sets",
+    "successful Go source/overlay-fixture/log hashes and zero exit statuses",
+    "positive/negative evidence boundaries remain represented"
+  ],
+  "limitations": [
+    "Provenance consistency only; does not rerun experiments or prove prose/security conclusions",
+    "Failed historical scripts may differ from current corrected fixture; failure logs are retained, not counted as passes",
+    "Dependency module downloads and full SDK/locked environments are not independently audited",
+    "No universal coverage or customer-environment claim"
+  ]
+}

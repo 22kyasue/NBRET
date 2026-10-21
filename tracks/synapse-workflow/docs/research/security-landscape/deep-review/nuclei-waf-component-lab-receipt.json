@@ -1,0 +1,752 @@
+{
+  "at": "2026-10-17T21:42:54.287Z",
+  "runs": [
+    {
+      "at": "2026-10-17T21:42:30.373Z",
+      "out": "C:\\Users\\kotar\\githubprojects\\NBRET\\runs\\nuclei-waf-component-1792273349126",
+      "commit": "a151a1d54fad0d5ef71f01662b0bb3955a98c7c5",
+      "scope": "Unchanged standard-library WAF telemetry component and upstream deterministic tests/fuzz seeds only",
+      "sources": [
+        {
+          "path": "pkg/output/stats/waf/waf.go",
+          "sha256": "7cf6af112d5604851c904b3fdc673f09947b80d0e9fe46b9e4cd45fa323592ab",
+          "bytes": 10581
+        },
+        {
+          "path": "pkg/output/stats/waf/literal_matcher.go",
+          "sha256": "60b1ce897281d9aba04659d7998df3be67f439ade32352192f720917bbcc397d",
+          "bytes": 4173
+        },
+        {
+          "path": "pkg/output/stats/waf/waf_test.go",
+          "sha256": "295535ef44ce6058d438ae98b39d11a504fe1f17a075cd74328ae76a87b36bf1",
+          "bytes": 11100
+        },
+        {
+          "path": "pkg/output/stats/waf/regexes.json",
+          "sha256": "852a6b96d0049bdc5dccaa4f1ad9daec09c895153a4e2c498a74287fea35df6a",
+          "bytes": 60730
+        }
+      ],
+      "exit": 0,
+      "elapsedMs": 1243.7662,
+      "command": {
+        "executable": "C:\\Users\\kotar\\githubprojects\\NBRET\\.tools\\security-research-go\\sdk\\go\\bin\\go.exe",
+        "args": [
+          "test",
+          "-count=1",
+          "-json",
+          "."
+        ],
+        "cwd": "C:\\Users\\kotar\\githubprojects\\NBRET\\runs\\nuclei-waf-component-1792273349126"
+      },
+      "version": "go version go1.27.2 windows/amd64",
+      "moduleNetwork": {
+        "GOPROXY": "off",
+        "GOSUMDB": "off"
+      },
+      "tests": [
+        {
+          "test": "TestWAFDetection/Cloudflare_WAF",
+          "action": "pass"
+        },
+        {
+          "test": "TestWAFDetection/ModSecurity_WAF",
+          "action": "pass"
+        },
+        {
+          "test": "TestWAFDetection/No_WAF",
+          "action": "pass"
+        },
+        {
+          "test": "TestWAFDetection/Wordfence_WAF",
+          "action": "pass"
+        },
+        {
+          "test": "TestWAFDetection/Sucuri_WAF",
+          "action": "pass"
+        },
+        {
+          "test": "TestWAFDetection",
+          "action": "pass"
+        },
+        {
+          "test": "TestWAFDetectionNilPointerSafety/nil_detector",
+          "action": "pass"
+        },
+        {
+          "test": "TestWAFDetectionNilPointerSafety/nil_regexCache",
+          "action": "pass"
+        },
+        {
+          "test": "TestWAFDetectionNilPointerSafety/regexCache_with_nil_regex",
+          "action": "pass"
+        },
+        {
+          "test": "TestWAFDetectionNilPointerSafety/empty_regexCache",
+          "action": "pass"
+        },
+        {
+          "test": "TestWAFDetectionNilPointerSafety",
+          "action": "pass"
+        },
+        {
+          "test": "TestBuildLiteralPrefilter/literal",
+          "action": "pass"
+        },
+        {
+          "test": "TestBuildLiteralPrefilter/alternation_admits_every_branch",
+          "action": "pass"
+        },
+        {
+          "test": "TestBuildLiteralPrefilter/required_concatenated_child_survives_optional_prefix",
+          "action": "pass"
+        },
+        {
+          "test": "TestBuildLiteralPrefilter/concatenation_requires_every_available_literal",
+          "action": "pass"
+        },
+        {
+          "test": "TestBuildLiteralPrefilter/required_repetition",
+          "action": "pass"
+        },
+        {
+          "test": "TestBuildLiteralPrefilter/optional-only_expression_falls_back",
+          "action": "pass"
+        },
+        {
+          "test": "TestBuildLiteralPrefilter/case-folded_literal",
+          "action": "pass"
+        },
+        {
+          "test": "TestBuildLiteralPrefilter/case-fold_uses_unicode_simple_fold_semantics",
+          "action": "pass"
+        },
+        {
+          "test": "TestBuildLiteralPrefilter/replacement_rune_falls_back_for_invalid_UTF-8_parity",
+          "action": "pass"
+        },
+        {
+          "test": "TestBuildLiteralPrefilter",
+          "action": "pass"
+        },
+        {
+          "test": "TestLiteralPrefilterNeverRejectsProductionRegexMatches",
+          "action": "pass"
+        },
+        {
+          "test": "TestLiteralMatcherFindsOverlappingAndSuffixPatterns",
+          "action": "pass"
+        },
+        {
+          "test": "TestLiteralMatcherHandlesArbitraryUTF8Bytes",
+          "action": "pass"
+        },
+        {
+          "test": "TestASCIIFoldedMatcherMatchesCanonicalFold",
+          "action": "pass"
+        },
+        {
+          "test": "TestASCIIFoldedMatcherPreservesUnicodeSimpleFold",
+          "action": "pass"
+        },
+        {
+          "test": "TestUnicodeFoldedMatcherMatchesCanonicalFold",
+          "action": "pass"
+        },
+        {
+          "test": "TestDetectWAFReportsPrefilterWork",
+          "action": "pass"
+        },
+        {
+          "test": "FuzzLiteralPrefilterSoundness/seed#0",
+          "action": "pass"
+        },
+        {
+          "test": "FuzzLiteralPrefilterSoundness/seed#1",
+          "action": "pass"
+        },
+        {
+          "test": "FuzzLiteralPrefilterSoundness/seed#2",
+          "action": "pass"
+        },
+        {
+          "test": "FuzzLiteralPrefilterSoundness/seed#3",
+          "action": "pass"
+        },
+        {
+          "test": "FuzzLiteralPrefilterSoundness/seed#4",
+          "action": "pass"
+        },
+        {
+          "test": "FuzzLiteralPrefilterSoundness/seed#5",
+          "action": "pass"
+        },
+        {
+          "test": "FuzzLiteralPrefilterSoundness/seed#6",
+          "action": "pass"
+        },
+        {
+          "test": "FuzzLiteralPrefilterSoundness/seed#7",
+          "action": "pass"
+        },
+        {
+          "test": "FuzzLiteralPrefilterSoundness/seed#8",
+          "action": "pass"
+        },
+        {
+          "test": "FuzzLiteralPrefilterSoundness/seed#9",
+          "action": "pass"
+        },
+        {
+          "test": "FuzzLiteralPrefilterSoundness/seed#10",
+          "action": "pass"
+        },
+        {
+          "test": "FuzzLiteralPrefilterSoundness/seed#11",
+          "action": "pass"
+        },
+        {
+          "test": "FuzzLiteralPrefilterSoundness/seed#12",
+          "action": "pass"
+        },
+        {
+          "test": "FuzzLiteralPrefilterSoundness/seed#13",
+          "action": "pass"
+        },
+        {
+          "test": "FuzzLiteralPrefilterSoundness/seed#14",
+          "action": "pass"
+        },
+        {
+          "test": "FuzzLiteralPrefilterSoundness/seed#15",
+          "action": "pass"
+        },
+        {
+          "test": "FuzzLiteralPrefilterSoundness/seed#16",
+          "action": "pass"
+        },
+        {
+          "test": "FuzzLiteralPrefilterSoundness/seed#17",
+          "action": "pass"
+        },
+        {
+          "test": "FuzzLiteralPrefilterSoundness/seed#18",
+          "action": "pass"
+        },
+        {
+          "test": "FuzzLiteralPrefilterSoundness/seed#19",
+          "action": "pass"
+        },
+        {
+          "test": "FuzzLiteralPrefilterSoundness/seed#20",
+          "action": "pass"
+        },
+        {
+          "test": "FuzzLiteralPrefilterSoundness/seed#21",
+          "action": "pass"
+        },
+        {
+          "test": "FuzzLiteralPrefilterSoundness/seed#22",
+          "action": "pass"
+        },
+        {
+          "test": "FuzzLiteralPrefilterSoundness/seed#23",
+          "action": "pass"
+        },
+        {
+          "test": "FuzzLiteralPrefilterSoundness/seed#24",
+          "action": "pass"
+        },
+        {
+          "test": "FuzzLiteralPrefilterSoundness/seed#25",
+          "action": "pass"
+        },
+        {
+          "test": "FuzzLiteralPrefilterSoundness/seed#26",
+          "action": "pass"
+        },
+        {
+          "test": "FuzzLiteralPrefilterSoundness/seed#27",
+          "action": "pass"
+        },
+        {
+          "test": "FuzzLiteralPrefilterSoundness/seed#28",
+          "action": "pass"
+        },
+        {
+          "test": "FuzzLiteralPrefilterSoundness/seed#29",
+          "action": "pass"
+        },
+        {
+          "test": "FuzzLiteralPrefilterSoundness/seed#30",
+          "action": "pass"
+        },
+        {
+          "test": "FuzzLiteralPrefilterSoundness/seed#31",
+          "action": "pass"
+        },
+        {
+          "test": "FuzzLiteralPrefilterSoundness/seed#32",
+          "action": "pass"
+        },
+        {
+          "test": "FuzzLiteralPrefilterSoundness/seed#33",
+          "action": "pass"
+        },
+        {
+          "test": "FuzzLiteralPrefilterSoundness/seed#34",
+          "action": "pass"
+        },
+        {
+          "test": "FuzzLiteralPrefilterSoundness/seed#35",
+          "action": "pass"
+        },
+        {
+          "test": "FuzzLiteralPrefilterSoundness/seed#36",
+          "action": "pass"
+        },
+        {
+          "test": "FuzzLiteralPrefilterSoundness/seed#37",
+          "action": "pass"
+        },
+        {
+          "test": "FuzzLiteralPrefilterSoundness/seed#38",
+          "action": "pass"
+        },
+        {
+          "test": "FuzzLiteralPrefilterSoundness/seed#39",
+          "action": "pass"
+        },
+        {
+          "test": "FuzzLiteralPrefilterSoundness/seed#40",
+          "action": "pass"
+        },
+        {
+          "test": "FuzzLiteralPrefilterSoundness/seed#41",
+          "action": "pass"
+        },
+        {
+          "test": "FuzzLiteralPrefilterSoundness/seed#42",
+          "action": "pass"
+        },
+        {
+          "test": "FuzzLiteralPrefilterSoundness/seed#43",
+          "action": "pass"
+        },
+        {
+          "test": "FuzzLiteralPrefilterSoundness/seed#44",
+          "action": "pass"
+        },
+        {
+          "test": "FuzzLiteralPrefilterSoundness/seed#45",
+          "action": "pass"
+        },
+        {
+          "test": "FuzzLiteralPrefilterSoundness/seed#46",
+          "action": "pass"
+        },
+        {
+          "test": "FuzzLiteralPrefilterSoundness/seed#47",
+          "action": "pass"
+        },
+        {
+          "test": "FuzzLiteralPrefilterSoundness",
+          "action": "pass"
+        },
+        {
+          "test": "FuzzLiteralMatcherSoundness/seed#0",
+          "action": "pass"
+        },
+        {
+          "test": "FuzzLiteralMatcherSoundness/seed#1",
+          "action": "pass"
+        },
+        {
+          "test": "FuzzLiteralMatcherSoundness/seed#2",
+          "action": "pass"
+        },
+        {
+          "test": "FuzzLiteralMatcherSoundness",
+          "action": "pass"
+        }
+      ],
+      "stdoutSha256": "f96982c6cc3be66f82f7a5f152119542d1f921876f8e2ae735cc8c4129184dfa",
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "at": "2026-10-17T21:42:32.152Z",
+      "out": "C:\\Users\\kotar\\githubprojects\\NBRET\\runs\\nuclei-waf-component-1792273350952",
+      "commit": "a151a1d54fad0d5ef71f01662b0bb3955a98c7c5",
+      "scope": "Unchanged standard-library WAF telemetry component and upstream deterministic tests/fuzz seeds only",
+      "sources": [
+        {
+          "path": "pkg/output/stats/waf/waf.go",
+          "sha256": "7cf6af112d5604851c904b3fdc673f09947b80d0e9fe46b9e4cd45fa323592ab",
+          "bytes": 10581
+        },
+        {
+          "path": "pkg/output/stats/waf/literal_matcher.go",
+          "sha256": "60b1ce897281d9aba04659d7998df3be67f439ade32352192f720917bbcc397d",
+          "bytes": 4173
+        },
+        {
+          "path": "pkg/output/stats/waf/waf_test.go",
+          "sha256": "295535ef44ce6058d438ae98b39d11a504fe1f17a075cd74328ae76a87b36bf1",
+          "bytes": 11100
+        },
+        {
+          "path": "pkg/output/stats/waf/regexes.json",
+          "sha256": "852a6b96d0049bdc5dccaa4f1ad9daec09c895153a4e2c498a74287fea35df6a",
+          "bytes": 60730
+        }
+      ],
+      "exit": 0,
+      "elapsedMs": 1196.6881,
+      "command": {
+        "executable": "C:\\Users\\kotar\\githubprojects\\NBRET\\.tools\\security-research-go\\sdk\\go\\bin\\go.exe",
+        "args": [
+          "test",
+          "-count=1",
+          "-json",
+          "."
+        ],
+        "cwd": "C:\\Users\\kotar\\githubprojects\\NBRET\\runs\\nuclei-waf-component-1792273350952"
+      },
+      "version": "go version go1.27.2 windows/amd64",
+      "moduleNetwork": {
+        "GOPROXY": "off",
+        "GOSUMDB": "off"
+      },
+      "tests": [
+        {
+          "test": "TestWAFDetection/Cloudflare_WAF",
+          "action": "pass"
+        },
+        {
+          "test": "TestWAFDetection/ModSecurity_WAF",
+          "action": "pass"
+        },
+        {
+          "test": "TestWAFDetection/No_WAF",
+          "action": "pass"
+        },
+        {
+          "test": "TestWAFDetection/Wordfence_WAF",
+          "action": "pass"
+        },
+        {
+          "test": "TestWAFDetection/Sucuri_WAF",
+          "action": "pass"
+        },
+        {
+          "test": "TestWAFDetection",
+          "action": "pass"
+        },
+        {
+          "test": "TestWAFDetectionNilPointerSafety/nil_detector",
+          "action": "pass"
+        },
+        {
+          "test": "TestWAFDetectionNilPointerSafety/nil_regexCache",
+          "action": "pass"
+        },
+        {
+          "test": "TestWAFDetectionNilPointerSafety/regexCache_with_nil_regex",
+          "action": "pass"
+        },
+        {
+          "test": "TestWAFDetectionNilPointerSafety/empty_regexCache",
+          "action": "pass"
+        },
+        {
+          "test": "TestWAFDetectionNilPointerSafety",
+          "action": "pass"
+        },
+        {
+          "test": "TestBuildLiteralPrefilter/literal",
+          "action": "pass"
+        },
+        {
+          "test": "TestBuildLiteralPrefilter/alternation_admits_every_branch",
+          "action": "pass"
+        },
+        {
+          "test": "TestBuildLiteralPrefilter/required_concatenated_child_survives_optional_prefix",
+          "action": "pass"
+        },
+        {
+          "test": "TestBuildLiteralPrefilter/concatenation_requires_every_available_literal",
+          "action": "pass"
+        },
+        {
+          "test": "TestBuildLiteralPrefilter/required_repetition",
+          "action": "pass"
+        },
+        {
+          "test": "TestBuildLiteralPrefilter/optional-only_expression_falls_back",
+          "action": "pass"
+        },
+        {
+          "test": "TestBuildLiteralPrefilter/case-folded_literal",
+          "action": "pass"
+        },
+        {
+          "test": "TestBuildLiteralPrefilter/case-fold_uses_unicode_simple_fold_semantics",
+          "action": "pass"
+        },
+        {
+          "test": "TestBuildLiteralPrefilter/replacement_rune_falls_back_for_invalid_UTF-8_parity",
+          "action": "pass"
+        },
+        {
+          "test": "TestBuildLiteralPrefilter",
+          "action": "pass"
+        },
+        {
+          "test": "TestLiteralPrefilterNeverRejectsProductionRegexMatches",
+          "action": "pass"
+        },
+        {
+          "test": "TestLiteralMatcherFindsOverlappingAndSuffixPatterns",
+          "action": "pass"
+        },
+        {
+          "test": "TestLiteralMatcherHandlesArbitraryUTF8Bytes",
+          "action": "pass"
+        },
+        {
+          "test": "TestASCIIFoldedMatcherMatchesCanonicalFold",
+          "action": "pass"
+        },
+        {
+          "test": "TestASCIIFoldedMatcherPreservesUnicodeSimpleFold",
+          "action": "pass"
+        },
+        {
+          "test": "TestUnicodeFoldedMatcherMatchesCanonicalFold",
+          "action": "pass"
+        },
+        {
+          "test": "TestDetectWAFReportsPrefilterWork",
+          "action": "pass"
+        },
+        {
+          "test": "FuzzLiteralPrefilterSoundness/seed#0",
+          "action": "pass"
+        },
+        {
+          "test": "FuzzLiteralPrefilterSoundness/seed#1",
+          "action": "pass"
+        },
+        {
+          "test": "FuzzLiteralPrefilterSoundness/seed#2",
+          "action": "pass"
+        },
+        {
+          "test": "FuzzLiteralPrefilterSoundness/seed#3",
+          "action": "pass"
+        },
+        {
+          "test": "FuzzLiteralPrefilterSoundness/seed#4",
+          "action": "pass"
+        },
+        {
+          "test": "FuzzLiteralPrefilterSoundness/seed#5",
+          "action": "pass"
+        },
+        {
+          "test": "FuzzLiteralPrefilterSoundness/seed#6",
+          "action": "pass"
+        },
+        {
+          "test": "FuzzLiteralPrefilterSoundness/seed#7",
+          "action": "pass"
+        },
+        {
+          "test": "FuzzLiteralPrefilterSoundness/seed#8",
+          "action": "pass"
+        },
+        {
+          "test": "FuzzLiteralPrefilterSoundness/seed#9",
+          "action": "pass"
+        },
+        {
+          "test": "FuzzLiteralPrefilterSoundness/seed#10",
+          "action": "pass"
+        },
+        {
+          "test": "FuzzLiteralPrefilterSoundness/seed#11",
+          "action": "pass"
+        },
+        {
+          "test": "FuzzLiteralPrefilterSoundness/seed#12",
+          "action": "pass"
+        },
+        {
+          "test": "FuzzLiteralPrefilterSoundness/seed#13",
+          "action": "pass"
+        },
+        {
+          "test": "FuzzLiteralPrefilterSoundness/seed#14",
+          "action": "pass"
+        },
+        {
+          "test": "FuzzLiteralPrefilterSoundness/seed#15",
+          "action": "pass"
+        },
+        {
+          "test": "FuzzLiteralPrefilterSoundness/seed#16",
+          "action": "pass"
+        },
+        {
+          "test": "FuzzLiteralPrefilterSoundness/seed#17",
+          "action": "pass"
+        },
+        {
+          "test": "FuzzLiteralPrefilterSoundness/seed#18",
+          "action": "pass"
+        },
+        {
+          "test": "FuzzLiteralPrefilterSoundness/seed#19",
+          "action": "pass"
+        },
+        {
+          "test": "FuzzLiteralPrefilterSoundness/seed#20",
+          "action": "pass"
+        },
+        {
+          "test": "FuzzLiteralPrefilterSoundness/seed#21",
+          "action": "pass"
+        },
+        {
+          "test": "FuzzLiteralPrefilterSoundness/seed#22",
+          "action": "pass"
+        },
+        {
+          "test": "FuzzLiteralPrefilterSoundness/seed#23",
+          "action": "pass"
+        },
+        {
+          "test": "FuzzLiteralPrefilterSoundness/seed#24",
+          "action": "pass"
+        },
+        {
+          "test": "FuzzLiteralPrefilterSoundness/seed#25",
+          "action": "pass"
+        },
+        {
+          "test": "FuzzLiteralPrefilterSoundness/seed#26",
+          "action": "pass"
+        },
+        {
+          "test": "FuzzLiteralPrefilterSoundness/seed#27",
+          "action": "pass"
+        },
+        {
+          "test": "FuzzLiteralPrefilterSoundness/seed#28",
+          "action": "pass"
+        },
+        {
+          "test": "FuzzLiteralPrefilterSoundness/seed#29",
+          "action": "pass"
+        },
+        {
+          "test": "FuzzLiteralPrefilterSoundness/seed#30",
+          "action": "pass"
+        },
+        {
+          "test": "FuzzLiteralPrefilterSoundness/seed#31",
+          "action": "pass"
+        },
+        {
+          "test": "FuzzLiteralPrefilterSoundness/seed#32",
+          "action": "pass"
+        },
+        {
+          "test": "FuzzLiteralPrefilterSoundness/seed#33",
+          "action": "pass"
+        },
+        {
+          "test": "FuzzLiteralPrefilterSoundness/seed#34",
+          "action": "pass"
+        },
+        {
+          "test": "FuzzLiteralPrefilterSoundness/seed#35",
+          "action": "pass"
+        },
+        {
+          "test": "FuzzLiteralPrefilterSoundness/seed#36",
+          "action": "pass"
+        },
+        {
+          "test": "FuzzLiteralPrefilterSoundness/seed#37",
+          "action": "pass"
+        },
+        {
+          "test": "FuzzLiteralPrefilterSoundness/seed#38",
+          "action": "pass"
+        },
+        {
+          "test": "FuzzLiteralPrefilterSoundness/seed#39",
+          "action": "pass"
+        },
+        {
+          "test": "FuzzLiteralPrefilterSoundness/seed#40",
+          "action": "pass"
+        },
+        {
+          "test": "FuzzLiteralPrefilterSoundness/seed#41",
+          "action": "pass"
+        },
+        {
+          "test": "FuzzLiteralPrefilterSoundness/seed#42",
+          "action": "pass"
+        },
+        {
+          "test": "FuzzLiteralPrefilterSoundness/seed#43",
+          "action": "pass"
+        },
+        {
+          "test": "FuzzLiteralPrefilterSoundness/seed#44",
+          "action": "pass"
+        },
+        {
+          "test": "FuzzLiteralPrefilterSoundness/seed#45",
+          "action": "pass"
+        },
+        {
+          "test": "FuzzLiteralPrefilterSoundness/seed#46",
+          "action": "pass"
+        },
+        {
+          "test": "FuzzLiteralPrefilterSoundness/seed#47",
+          "action": "pass"
+        },
+        {
+          "test": "FuzzLiteralPrefilterSoundness",
+          "action": "pass"
+        },
+        {
+          "test": "FuzzLiteralMatcherSoundness/seed#0",
+          "action": "pass"
+        },
+        {
+          "test": "FuzzLiteralMatcherSoundness/seed#1",
+          "action": "pass"
+        },
+        {
+          "test": "FuzzLiteralMatcherSoundness/seed#2",
+          "action": "pass"
+        },
+        {
+          "test": "FuzzLiteralMatcherSoundness",
+          "action": "pass"
+        }
+      ],
+      "stdoutSha256": "a8ff803e4fb89a4e2be688581d4b92b7661adc5f057e61996ad64a75c9422338",
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "semanticRepeatConsistent": true
+}

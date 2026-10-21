@@ -1,0 +1,32 @@
+{
+  "at": "2026-10-17T22:15:34.053Z",
+  "command": [
+    "C:/Users/kotar/.codex/research/assessment-evidence-venv/Scripts/python.exe",
+    "-m",
+    "pytest",
+    "-q",
+    "-p",
+    "no:cacheprovider",
+    "-p",
+    "pytest_asyncio.plugin",
+    "--basetemp",
+    "C:\\Users\\kotar\\.codex\\research\\assessment-evidence-receipts\\garak-encoding-oracle-1792275333580\\pytest-temp",
+    "C:\\Users\\kotar\\githubprojects\\NBRET\\docs\\research\\assessment-evidence\\test_garak_encoding_oracle_contract.py"
+  ],
+  "out": "C:\\Users\\kotar\\.codex\\research\\assessment-evidence-receipts\\garak-encoding-oracle-1792275333580",
+  "exitCode": 0,
+  "stdout": "..                                                                       [100%]\r\n2 passed in 0.04s\r\n",
+  "stderr": "",
+  "elapsedMs": 474,
+  "sourceSha256": {
+    "C:/Users/kotar/.codex/research/garak/tests/probes/test_probes_encoding.py": "c808564bd04e14063831a16984ab3c6429254d9a5a2706e4089c640be878bf82",
+    "C:/Users/kotar/.codex/research/garak/garak/resources/matching.py": "2d0c3a11db5ed4cc0712f2c61589fdfb0b5ab8fd24c9b419bcd59e20f3f58be8"
+  },
+  "fixtureSha256": "9054f014c888fe28bac691073961ef85a681c9992d6bc93282c6339c1af653ca",
+  "runnerSha256": "627f4aa236db3995a535c9959c0b71c617008c2c028b517dab125e94f30e2a7c",
+  "packages": "annotated-types==0.8.0\r\nanyio==4.15.1\r\nattrs==26.1.0\r\ncertifi==2026.7.22\r\ncffi==2.1.1\r\nclick==8.5.0\r\ncolorama==0.4.6\r\ncryptography==50.0.2\r\ndocstring_parser==0.18.0\r\nh11==0.16.0\r\nhttpcore==1.0.9\r\nhttpcore2==2.13.1\r\nhttpx==0.28.1\r\nhttpx2==2.13.1\r\nidna==3.20\r\niniconfig==2.3.1\r\njsonschema==4.26.0\r\njsonschema-specifications==2025.9.1\r\nmcp==2.3.0\r\nmcp-types==2.3.0\r\nopentelemetry-api==1.45.1\r\npackaging==26.3\r\npluggy==1.7.0\r\npycparser==3.11\r\npydantic==2.14.1\r\npydantic_core==2.50.1\r\nPygments==2.21.0\r\nPyJWT==2.15.1\r\npytest==9.1.1\r\npytest-asyncio==1.4.0\r\npython-multipart==0.0.32\r\npywin32==312\r\nPyYAML==6.0.3\r\nreferencing==0.37.0\r\nrpds-py==2026.9.1\r\nsniffio==1.3.1\r\nsse-starlette==3.5.0\r\nstarlette==1.8.0\r\ntruststore==0.10.5\r\ntyping-inspection==0.4.4\r\ntyping_extensions==4.16.0\r\nuvicorn==0.54.0\r\n",
+  "criteria": "actual decorator list comprehension has zero cases for nonempty exclusion list; actual ngram function scores unordered fragments1 and exact short target0",
+  "intervention": "AST-selected actual expression/function only, benign strings and synthetic probe names; no garak plugins, encoders, payloads or providers",
+  "limits": "No process, real credential, materialization or filesystem deletion; not evidence of an actual orphan or retained secret",
+  "cost": "local CPU/storage only"
+}

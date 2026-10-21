@@ -1,0 +1,98 @@
+{
+  "at": "2026-10-18T04:04:36.098Z",
+  "basis": "Complete byte hex inspection only; no decoder, CRC computation, imports, tests or execution. Main queue binary status remains excluded from text line credit.",
+  "module": "github.com/aws/aws-sdk-go-v2/aws/protocol/eventstream",
+  "version": "v1.7.11",
+  "entries": [
+    {
+      "path": "testdata/encoded/negative/corrupted_headers",
+      "bytes": 61,
+      "sha256": "ebc0f905975472fe6a3e1858e3be6ea6ed21a26eafab1e9639d1a514b7e84d4a",
+      "inspectedByteRange": [
+        1,
+        61
+      ],
+      "hex": "0000003d0000002007fd83960c636f6e74656e742d747970650700106170706c69636174696f6e2f6a736f6e7b61666f6f273a27626172277d8d9c08b1"
+    },
+    {
+      "path": "testdata/encoded/negative/corrupted_header_len",
+      "bytes": 61,
+      "sha256": "138ea682f2708aa2565f09552ca9a8e25c7d93d13ff2018f692fe4c73ed3c6c4",
+      "inspectedByteRange": [
+        1,
+        61
+      ],
+      "hex": "0000003d0000002107fd83960c636f6e74656e742d747970650700106170706c69636174696f6e2f6a736f6e7b27666f6f273a27626172277d8d9c08b1"
+    },
+    {
+      "path": "testdata/encoded/negative/corrupted_length",
+      "bytes": 61,
+      "sha256": "1d9393afc641522bd5d7f74e376e00befb1be5c5b2fbec20220fab2311b420a5",
+      "inspectedByteRange": [
+        1,
+        61
+      ],
+      "hex": "0000003e0000002007fd83960c636f6e74656e742d747970650700106170706c69636174696f6e2f6a736f6e7b27666f6f273a27626172277d8d9c08b1"
+    },
+    {
+      "path": "testdata/encoded/negative/corrupted_payload",
+      "bytes": 29,
+      "sha256": "6462f01668c21b89af64dfd6975a818d9fd7be70602acb2cd71d10470ba78808",
+      "inspectedByteRange": [
+        1,
+        29
+      ],
+      "hex": "0000001d00000000fd528c5a5b27666f6f273a27626172277dc3653936"
+    },
+    {
+      "path": "testdata/encoded/positive/all_headers",
+      "bytes": 204,
+      "sha256": "113091d7857ed073b88ac9c3186a6e137cce278822ac4a1a81f00994cd7cf1c4",
+      "inspectedByteRange": [
+        1,
+        204
+      ],
+      "hex": "000000cc000000af0fae64ca0a6576656e742d74797065040000a00c0c636f6e74656e742d747970650700106170706c69636174696f6e2f6a736f6e0a626f6f6c2066616c73650109626f6f6c207472756500046279746502cf08627974652062756606001449276d2061206c6974746c6520746561706f74210974696d657374616d70080000000000845fed05696e74313603002a05696e7436340500000000028757b20475756964090102030405060708090a0b0c0d0e0f107b27666f6f273a27626172277daba5f10c"
+    },
+    {
+      "path": "testdata/encoded/positive/empty_message",
+      "bytes": 16,
+      "sha256": "2eb41f6defd4b8479fab0211da45a2f08f23ffe4f6b938b985fc580d578a8c1c",
+      "inspectedByteRange": [
+        1,
+        16
+      ],
+      "hex": "000000100000000005c248eb7d98c8ff"
+    },
+    {
+      "path": "testdata/encoded/positive/int32_header",
+      "bytes": 45,
+      "sha256": "2c25316b1e203f3ea542e1a90ae74047d01bee76838b2f9aa8fe32d1fb6de48f",
+      "inspectedByteRange": [
+        1,
+        45
+      ],
+      "hex": "0000002d0000001041c424b80a6576656e742d74797065040000a00c7b27666f6f273a27626172277d36f480a0"
+    },
+    {
+      "path": "testdata/encoded/positive/payload_no_headers",
+      "bytes": 29,
+      "sha256": "49e0beab3d6cc9cf352d8b2a464536a1e214c0f2f4c9fe587f3af0d74759149c",
+      "inspectedByteRange": [
+        1,
+        29
+      ],
+      "hex": "0000001d00000000fd528c5a7b27666f6f273a27626172277dc3653936"
+    },
+    {
+      "path": "testdata/encoded/positive/payload_one_str_header",
+      "bytes": 61,
+      "sha256": "636480b8af343eea34d9915605a7e4d44ad96d85bc65f28c91292959a42a345a",
+      "inspectedByteRange": [
+        1,
+        61
+      ],
+      "hex": "0000003d0000002007fd83960c636f6e74656e742d747970650700106170706c69636174696f6e2f6a736f6e7b27666f6f273a27626172277d8d9c08b1"
+    }
+  ]
+}

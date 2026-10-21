@@ -1,0 +1,151 @@
+{
+  "startedAt": "2026-10-17T20:04:13.326Z",
+  "finishedAt": "2026-10-17T20:04:16.875Z",
+  "executable": "C:\\Users\\kotar\\githubprojects\\NBRET\\.tools\\toolchain\\venv\\Scripts\\python.exe",
+  "args": [
+    "C:\\Users\\kotar\\githubprojects\\NBRET\\docs\\research\\toolchain\\proxy-loopback-lab.py"
+  ],
+  "code": 0,
+  "stdout": "{\r\n  \"oraclesPassed\": true,\r\n  \"originPort\": 51392,\r\n  \"proxyPort\": 51393,\r\n  \"originHits\": [\r\n    \"GET /normal HTTP/1.1\\r\\nHost: 127.0.0.1:51392\\r\\nConnection: close\\r\\nX-Fixture: extension-request\\r\\n\\r\\n\",\r\n    \"GET /raise HTTP/1.1\\r\\nHost: 127.0.0.1:51392\\r\\nConnection: close\\r\\nX-Fixture: extension-request\\r\\n\\r\\n\"\r\n  ],\r\n  \"clientResults\": {\r\n    \"/normal\": \"HTTP/1.1 200 OK\\r\\nContent-Length: 31\\r\\nConnection: close\\r\\n\\r\\nowned-origin|extension-response\",\r\n    \"/synthetic\": \"HTTP/1.1 202 Accepted\\r\\ncontent-length: 34\\r\\n\\r\\naddon-synthetic|extension-response\",\r\n    \"/raise\": \"HTTP/1.1 200 OK\\r\\nContent-Length: 31\\r\\nConnection: close\\r\\n\\r\\nowned-origin|extension-response\",\r\n    \"/kill\": \"\"\r\n  },\r\n  \"hooks\": [\r\n    [\r\n      \"request\",\r\n      \"/normal\"\r\n    ],\r\n    [\r\n      \"response\",\r\n      \"/normal\"\r\n    ],\r\n    [\r\n      \"request\",\r\n      \"/synthetic\"\r\n    ],\r\n    [\r\n      \"response\",\r\n      \"/synthetic\"\r\n    ],\r\n    [\r\n      \"request\",\r\n      \"/raise\"\r\n    ],\r\n    [\r\n      \"response\",\r\n      \"/raise\"\r\n    ],\r\n    [\r\n      \"request\",\r\n      \"/kill\"\r\n    ],\r\n    [\r\n      \"error\",\r\n      \"/kill\",\r\n      \"Connection killed.\"\r\n    ]\r\n  ],\r\n  \"saved\": [\r\n    {\r\n      \"path\": \"/normal\",\r\n      \"requestHeader\": \"extension-request\",\r\n      \"status\": 200,\r\n      \"body\": \"owned-origin|extension-response\",\r\n      \"error\": null\r\n    },\r\n    {\r\n      \"path\": \"/synthetic\",\r\n      \"requestHeader\": \"extension-request\",\r\n      \"status\": 202,\r\n      \"body\": \"addon-synthetic|extension-response\",\r\n      \"error\": null\r\n    },\r\n    {\r\n      \"path\": \"/raise\",\r\n      \"requestHeader\": \"extension-request\",\r\n      \"status\": 200,\r\n      \"body\": \"owned-origin|extension-response\",\r\n      \"error\": null\r\n    },\r\n    {\r\n      \"path\": \"/kill\",\r\n      \"requestHeader\": \"extension-request\",\r\n      \"status\": null,\r\n      \"body\": null,\r\n      \"error\": \"Connection killed.\"\r\n    }\r\n  ],\r\n  \"flowSha256\": \"b3a546fe9b1d39d38e3f1997b1bf62d7c643f902ab5fa508fd637f98402e2913\",\r\n  \"cleanup\": {\r\n    \"originPortClosed\": true,\r\n    \"proxyPortClosed\": true\r\n  },\r\n  \"addonOrder\": [\r\n    \"Core\",\r\n    \"Browser\",\r\n    \"Block\",\r\n    \"StripDnsHttpsRecords\",\r\n    \"BlockList\",\r\n    \"AntiCache\",\r\n    \"AntiComp\",\r\n    \"ClientPlayback\",\r\n    \"CommandHistory\",\r\n    \"Comment\",\r\n    \"Cut\",\r\n    \"DisableH2C\",\r\n    \"Export\",\r\n    \"Onboarding\",\r\n    \"ProxyAuth\",\r\n    \"Proxyserver\",\r\n    \"ScriptLoader\",\r\n    \"DnsResolver\",\r\n    \"NextLayer\",\r\n    \"ServerPlayback\",\r\n    \"MapRemote\",\r\n    \"MapLocal\",\r\n    \"ModifyBody\",\r\n    \"ModifyHeaders\",\r\n    \"StickyAuth\",\r\n    \"StickyCookie\",\r\n    \"SaveHar\",\r\n    \"TlsConfig\",\r\n    \"UpstreamAuth\",\r\n    \"UpdateAltSvc\",\r\n    \"KeepServing\",\r\n    \"ReadFileStdin\",\r\n    \"ErrorCheck\",\r\n    \"Fixture\",\r\n    \"Save\"\r\n  ]\r\n}\r\n",
+  "stderr": "",
+  "limitations": [
+    "Real IPv4 loopback HTTP/1 only; no TLS or HTTP2/3",
+    "Python connect/DNS guards and fixture hook restrict destinations; no OS-level native egress sandbox",
+    "New isolated confdir under ignored .tools; no trust-store/OS proxy changes"
+  ],
+  "source": {
+    "name": "mitmproxy",
+    "url": "https://github.com/mitmproxy/mitmproxy.git",
+    "root": "C:\\Users\\kotar\\githubprojects\\NBRET\\.tools\\toolchain\\mitmproxy",
+    "commit": "77355977e5ea540b51ed029a40ed1dc2f1c2ba7b",
+    "commitDate": "2026-10-13T20:07:55+02:00",
+    "dirty": "",
+    "retrievedAt": "2026-10-17T19:51:25.930Z",
+    "basis": "Shallow upstream default-branch snapshot; not a release or a claim of latest installed software"
+  },
+  "python": "Python 3.14.7",
+  "fixtureSha256": "a2e37c2ef9670ffd2b2fedb1da8844c49b54cd73adf4736ec9cb12319919fe08",
+  "packages": "proxy-lab-packages.txt",
+  "parsedResult": {
+    "oraclesPassed": true,
+    "originPort": 51392,
+    "proxyPort": 51393,
+    "originHits": [
+      "GET /normal HTTP/1.1\r\nHost: 127.0.0.1:51392\r\nConnection: close\r\nX-Fixture: extension-request\r\n\r\n",
+      "GET /raise HTTP/1.1\r\nHost: 127.0.0.1:51392\r\nConnection: close\r\nX-Fixture: extension-request\r\n\r\n"
+    ],
+    "clientResults": {
+      "/normal": "HTTP/1.1 200 OK\r\nContent-Length: 31\r\nConnection: close\r\n\r\nowned-origin|extension-response",
+      "/synthetic": "HTTP/1.1 202 Accepted\r\ncontent-length: 34\r\n\r\naddon-synthetic|extension-response",
+      "/raise": "HTTP/1.1 200 OK\r\nContent-Length: 31\r\nConnection: close\r\n\r\nowned-origin|extension-response",
+      "/kill": ""
+    },
+    "hooks": [
+      [
+        "request",
+        "/normal"
+      ],
+      [
+        "response",
+        "/normal"
+      ],
+      [
+        "request",
+        "/synthetic"
+      ],
+      [
+        "response",
+        "/synthetic"
+      ],
+      [
+        "request",
+        "/raise"
+      ],
+      [
+        "response",
+        "/raise"
+      ],
+      [
+        "request",
+        "/kill"
+      ],
+      [
+        "error",
+        "/kill",
+        "Connection killed."
+      ]
+    ],
+    "saved": [
+      {
+        "path": "/normal",
+        "requestHeader": "extension-request",
+        "status": 200,
+        "body": "owned-origin|extension-response",
+        "error": null
+      },
+      {
+        "path": "/synthetic",
+        "requestHeader": "extension-request",
+        "status": 202,
+        "body": "addon-synthetic|extension-response",
+        "error": null
+      },
+      {
+        "path": "/raise",
+        "requestHeader": "extension-request",
+        "status": 200,
+        "body": "owned-origin|extension-response",
+        "error": null
+      },
+      {
+        "path": "/kill",
+        "requestHeader": "extension-request",
+        "status": null,
+        "body": null,
+        "error": "Connection killed."
+      }
+    ],
+    "flowSha256": "b3a546fe9b1d39d38e3f1997b1bf62d7c643f902ab5fa508fd637f98402e2913",
+    "cleanup": {
+      "originPortClosed": true,
+      "proxyPortClosed": true
+    },
+    "addonOrder": [
+      "Core",
+      "Browser",
+      "Block",
+      "StripDnsHttpsRecords",
+      "BlockList",
+      "AntiCache",
+      "AntiComp",
+      "ClientPlayback",
+      "CommandHistory",
+      "Comment",
+      "Cut",
+      "DisableH2C",
+      "Export",
+      "Onboarding",
+      "ProxyAuth",
+      "Proxyserver",
+      "ScriptLoader",
+      "DnsResolver",
+      "NextLayer",
+      "ServerPlayback",
+      "MapRemote",
+      "MapLocal",
+      "ModifyBody",
+      "ModifyHeaders",
+      "StickyAuth",
+      "StickyCookie",
+      "SaveHar",
+      "TlsConfig",
+      "UpstreamAuth",
+      "UpdateAltSvc",
+      "KeepServing",
+      "ReadFileStdin",
+      "ErrorCheck",
+      "Fixture",
+      "Save"
+    ]
+  }
+}

@@ -1,0 +1,32 @@
+# Validation framework: check, execution, outcome and cleanup
+
+Metasploit Framework default-branch snapshot `b22ce1fbae63e8caeb3a773366a6d3336bd66fb8`, retained catalog resolution dated 2026-10-17. This is not a release/binary-version claim and not Metasploit Pro source. Four orchestration/test files fully read below. No framework, exploit module, payload, handler/listener, session or network request was executed. Root license manifest is separately inventoried; the prior first80 lines establish base BSD terms plus other component notices, not a blanket license for every file.
+
+A validation framework packages module selection, configuration, protocol/payload dependencies, execution lifecycle and reporting. It can help an authorized assessor repeat a hypothesis under an approved fixture, but some modules/checks modify state or affect availability. The module's exact source, target assumptions, options, cleanup and known synthetic oracle must be reviewed before any execution. A generic check name or framework validation method does not supply scope authorization or harmlessness. Inputs include module/version/configuration/target identity and sometimes payload/handler; outputs include check status, logs, errors, jobs and sessions. These are different outcomes requiring separate receipts and external effect/detection oracles.
+
+## Automatic check mixin
+
+`lib/msf/core/exploit/remote/auto_check.rb` 1–94 complete. 6–17 requires prepend and registers AutoCheck default true, ForceExploit default false. 19–29 wraps run/exploit; 33–43 executes check unless disabled. 45–76 allows Vulnerable/**Appears** to report a vulnerability and continue, and **Detected** to warn and continue. This distinction matters: framework continuation does not mean all those statuses establish exploitability. 77–89 maps Safe/Unsupported/other outcomes to failures, with an explicit override path. These controls are operator convenience/state policy, not a non-bypassable security boundary. Actual check implementation and interpretation are module-specific and remain unreviewed here; no override instructions or target operation are needed to understand the boundary.
+
+`spec/lib/msf/core/exploit/remote/auto_check_spec.rb` 1–257 complete. 3–36 supplies override/no-override shared expectations; 38–178 tests disabled/enabled behavior, Vulnerable/Appears reporting and Safe/Unsupported/Unknown rejection/override. 181–239 builds mock subclasses with no-op original run/exploit/report methods and synthetic addresses; 241–255 checks include versus prepend and both wrapped methods. These are **read tests, not executed results**. Detected continuation is source-established in the implementation; do not imply it was covered by this selected spec or ran in our labs.
+
+## Simplified check versus execution wrapper
+
+`lib/msf/base/simple/exploit.rb` 1–258 complete. 57–154 clones the module, imports options, initializes UI, validates target/payload/module options, shares datastore, creates the driver and records job/run IDs. Validating options proves configuration admissibility under that module, not ethical authorization or that target effects are safe. 155–169 catches errors into module state/logs and can return a driver session or nil; preserve error state, not merely truthiness of the returned object.
+
+192–225 check_simple normalizes options, rejects no-check modules, validates state and starts a check job or calls directly. 236–252 runs setup → check → completed callback, catches failures and invokes cleanup in ensure. Completed callback occurs **before cleanup**; it is not an acknowledgement that cleanup succeeded or every remote side effect was reversed. Cleanup itself is module code and can fail. The job cancellation/runner implementation remains a dependency; no blanket background-job cleanup guarantee is inferred.
+
+## Driver lifecycle
+
+`lib/msf/core/exploit_driver.rb` 1–305 complete:
+
+* 18–57 initializes driver defaults/mutex, selects target index and checks payload compatibility. 69–114 validates target/payload/options and selected cleanup compatibility: if cleanup is required, it checks session/handler capabilities unless the module permits bypass. Capability to clean up is a prerequisite, **not a verified postcondition**.
+* 125–195 validates, initializes run/session identity, clones for background/passive runs, generates payload and starts the job, or runs inline with cleanup in ensure (subject to keep-handler behavior). Payload generation/handler/module code was not read by implication and never invoked. Passive runs can intentionally have different waiting/lifetime semantics.
+* 225–249 setup and module-run event precede exploit method; exceptions call failure handling/listener. 251–279 can start bind handlers, wait for a session, report completed when a session exists or report no-session failure when no prior failure is set. A session is framework communication state, not a universal proof of the intended application/security effect, complete target compromise, or defender detection. Conversely no session does not prove no side effect occurred.
+* 289–299 stops handler under mutex, emits on_module_complete, then calls module cleanup under mutex. Event completion precedes module cleanup. There is no independent ensure within this method to guarantee module cleanup if stopping the handler or the event callback raises. This is a source-level exceptional-cleanup question, not a reproduced residue or exploit finding.
+
+## Evidence and containment
+
+Keep distinct: check code/message → driver admission → module invocation → target-side seeded property → session/job status → cleanup postconditions → defender observation. Record run UUID, exact module/dependency bytes, configuration, identity/scope, input/output/log/error state and fixture reset. An outer container/VM policy should deny external egress and unwanted processes/files even if module code bypasses a convenience check; never depend on a module's cleanup promise as the containment mechanism.
+
+Future controlled oracle can use no-op mock module/payload/job listener only: exact callback order, Detected versus Appears statuses, check failure/cleanup failure, cancellation and handler-stop exception. It must assert no payload/listener/network creation, preserve failed hypotheses and inspect SDK/runtime dependencies before execution. No current runtime result or real-target procedure is supplied.

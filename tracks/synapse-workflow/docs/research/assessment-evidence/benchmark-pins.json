@@ -1,0 +1,28 @@
+{
+  "date": "2026-10-17",
+  "note": "Pinned README bytes matched moving main at verification on 2026-10-17. Partial-reading scope remains partial; license text fetched for inspection.",
+  "repositories": [
+    {
+      "repository": "https://github.com/ethz-spylab/agentdojo",
+      "commit": "089ed468cf3ed0322acc66b0211f26d9d90dbf60",
+      "license": "MIT",
+      "licensePath": "LICENSE",
+      "read": "README complete only",
+      "path": "README.md",
+      "sha256": "d8c6460ecce9bbf59ed300fbc74b4440188f74cd147a7611836270be49e7660e",
+      "pinnedMatchesMainAtVerification": true,
+      "licenseSha256": "4285a071f2d382338e52b4fb0a186d952984a34d43a33d8872e1a1d8cb43401e"
+    },
+    {
+      "repository": "https://github.com/meta-llama/PurpleLlama",
+      "commit": "d934ea285d124d81c10f7e15a06a1e1f74eff2c3",
+      "license": "NOASSERTION",
+      "licensePath": "LICENSE",
+      "read": "CybersecurityBenchmarks/README.md partial only; first 16000 chars",
+      "path": "CybersecurityBenchmarks/README.md",
+      "sha256": "f148967d1b4dd581b518bebe4d00359cc693eadc1d0d2efb7b709b110ce7fdc4",
+      "pinnedMatchesMainAtVerification": true,
+      "licenseSha256": "8cc15535a8a34b41888f644b339a1a9eb428af793a4f5e24df58a3e5b1487d74"
+    }
+  ]
+}

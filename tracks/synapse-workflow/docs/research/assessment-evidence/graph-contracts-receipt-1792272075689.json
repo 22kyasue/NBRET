@@ -1,0 +1,483 @@
+{
+  "at": "2026-10-17T21:21:18.897Z",
+  "scope": "unchanged upstream graph/userset memoization and condition conversion tests; synthetic data; no server or network target",
+  "criteria": "selected tests pass their upstream assertions; no correctness claim beyond tested inputs; helper concurrency test does not exercise full concurrent graph traversal",
+  "command": {
+    "exe": "C:\\Users\\kotar\\githubprojects\\NBRET\\.tools\\security-research-go\\sdk\\go\\bin\\go.exe",
+    "args": [
+      "test",
+      "-p",
+      "2",
+      "github.com/openfga/language/pkg/go/graph",
+      "./internal/condition/types",
+      "-run",
+      "^(TestConcurrentUsersetWeights|TestUsersetWeightDirect|TestUsersetWeightRecursivePath|TestUsersetWeightTupleCyclePath|TestUsersetWeightDependsOnRecursive|TestPrimitives|TestDecodeParameterType|TestIPaddressCELBinaryBinding)$",
+      "-count=1",
+      "-json"
+    ],
+    "cwd": "C:/Users/kotar/.codex/research/openfga-20261017"
+  },
+  "toolchain": "go version go1.27.2 windows/amd64",
+  "environment": {
+    "GOTOOLCHAIN": "local",
+    "CGO_ENABLED": "0",
+    "GOPATH": "C:\\Users\\kotar\\githubprojects\\NBRET\\.tools\\security-research-go\\module-cache",
+    "GOCACHE": "C:/Users/kotar/.codex/research/assessment-evidence-receipts/openfga-1792267376264/build-cache"
+  },
+  "exitCode": 0,
+  "signal": null,
+  "elapsedMs": 3245,
+  "out": "C:\\Users\\kotar\\.codex\\research\\assessment-evidence-receipts\\graph-contracts-1792272075688",
+  "tests": [
+    {
+      "Time": "2026-10-17T14:21:18.8210517-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/language/pkg/go/graph",
+      "Test": "TestConcurrentUsersetWeights/ConcurrentNodeWrites",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T14:21:18.8215503-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/language/pkg/go/graph",
+      "Test": "TestConcurrentUsersetWeights/ConcurrentEdgeWrites",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T14:21:18.8225506-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/language/pkg/go/graph",
+      "Test": "TestConcurrentUsersetWeights/ConcurrentSameKeyWrites",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T14:21:18.823051-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/language/pkg/go/graph",
+      "Test": "TestConcurrentUsersetWeights/ParallelNodeAndEdgeWrites",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T14:21:18.8235507-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/language/pkg/go/graph",
+      "Test": "TestConcurrentUsersetWeights/InterleavedNodeReadWriteConcurrency",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T14:21:18.8240508-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/language/pkg/go/graph",
+      "Test": "TestConcurrentUsersetWeights/InterleavedEdgeReadWriteConcurrency",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T14:21:18.8240508-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/language/pkg/go/graph",
+      "Test": "TestConcurrentUsersetWeights",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T14:21:18.8265507-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/language/pkg/go/graph",
+      "Test": "TestUsersetWeightDirect",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T14:21:18.8265507-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/language/pkg/go/graph",
+      "Test": "TestUsersetWeightDependsOnRecursive",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T14:21:18.8265507-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/language/pkg/go/graph",
+      "Test": "TestUsersetWeightTupleCyclePath",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T14:21:18.8265507-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/language/pkg/go/graph",
+      "Test": "TestUsersetWeightRecursivePath",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T14:21:18.853882-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/condition/types",
+      "Test": "TestDecodeParameterType/unknown_type",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T14:21:18.853882-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/condition/types",
+      "Test": "TestDecodeParameterType/valid_string_type",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T14:21:18.853882-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/condition/types",
+      "Test": "TestDecodeParameterType/valid_map_with_generic",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T14:21:18.853882-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/condition/types",
+      "Test": "TestDecodeParameterType/map_missing_generic_type",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T14:21:18.853882-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/condition/types",
+      "Test": "TestDecodeParameterType/map_too_many_generic_types",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T14:21:18.853882-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/condition/types",
+      "Test": "TestDecodeParameterType/list_missing_generic_type",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T14:21:18.853882-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/condition/types",
+      "Test": "TestDecodeParameterType/string_with_unexpected_generic",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T14:21:18.853882-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/condition/types",
+      "Test": "TestDecodeParameterType",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T14:21:18.853882-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/condition/types",
+      "Test": "TestIPaddressCELBinaryBinding/ip_in_cidr",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T14:21:18.853882-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/condition/types",
+      "Test": "TestIPaddressCELBinaryBinding/ip_not_in_cidr",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T14:21:18.853882-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/condition/types",
+      "Test": "TestIPaddressCELBinaryBinding/ipv4_mapped_in_cidr",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T14:21:18.853882-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/condition/types",
+      "Test": "TestIPaddressCELBinaryBinding/ipv4_mapped_not_in_cidr",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T14:21:18.853882-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/condition/types",
+      "Test": "TestIPaddressCELBinaryBinding/ipv4_mapped_in_mapped_cidr",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T14:21:18.853882-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/condition/types",
+      "Test": "TestIPaddressCELBinaryBinding/ip_in_mapped_cidr",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T14:21:18.853882-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/condition/types",
+      "Test": "TestIPaddressCELBinaryBinding/ip_not_in_mapped_cidr",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T14:21:18.853882-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/condition/types",
+      "Test": "TestIPaddressCELBinaryBinding/missing_cidr",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T14:21:18.853882-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/condition/types",
+      "Test": "TestIPaddressCELBinaryBinding/malformed_cidr",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T14:21:18.8543797-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/condition/types",
+      "Test": "TestIPaddressCELBinaryBinding/missing_ip",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T14:21:18.8543797-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/condition/types",
+      "Test": "TestIPaddressCELBinaryBinding",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T14:21:18.8543797-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/condition/types",
+      "Test": "TestPrimitives/valid_any",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T14:21:18.8543797-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/condition/types",
+      "Test": "TestPrimitives/valid_bool",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T14:21:18.8543797-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/condition/types",
+      "Test": "TestPrimitives/valid_int",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T14:21:18.8543797-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/condition/types",
+      "Test": "TestPrimitives/invalid_int_to_string",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T14:21:18.8543797-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/condition/types",
+      "Test": "TestPrimitives/valid_uint",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T14:21:18.8543797-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/condition/types",
+      "Test": "TestPrimitives/valid_double",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T14:21:18.8543797-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/condition/types",
+      "Test": "TestPrimitives/valid_double_to_uint",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T14:21:18.8543797-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/condition/types",
+      "Test": "TestPrimitives/valid_double_to_int",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T14:21:18.8543797-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/condition/types",
+      "Test": "TestPrimitives/invalid_double_to_uint",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T14:21:18.8543797-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/condition/types",
+      "Test": "TestPrimitives/invalid_negative_double_to_uint",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T14:21:18.8543797-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/condition/types",
+      "Test": "TestPrimitives/invalid_double_to_int",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T14:21:18.8543797-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/condition/types",
+      "Test": "TestPrimitives/valid_string",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T14:21:18.8543797-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/condition/types",
+      "Test": "TestPrimitives/valid_string_to_int",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T14:21:18.8543797-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/condition/types",
+      "Test": "TestPrimitives/invalid_string_to_bool",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T14:21:18.8543797-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/condition/types",
+      "Test": "TestPrimitives/invalid_string_to_double",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T14:21:18.8543797-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/condition/types",
+      "Test": "TestPrimitives/valid_duration",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T14:21:18.8543797-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/condition/types",
+      "Test": "TestPrimitives/invalid_duration",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T14:21:18.8543797-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/condition/types",
+      "Test": "TestPrimitives/valid_timestamp",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T14:21:18.8543797-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/condition/types",
+      "Test": "TestPrimitives/invalid_timestamp",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T14:21:18.8543797-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/condition/types",
+      "Test": "TestPrimitives/valid_ipaddress",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T14:21:18.8543797-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/condition/types",
+      "Test": "TestPrimitives/invalid_ipaddress",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T14:21:18.8543797-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/condition/types",
+      "Test": "TestPrimitives/valid_map_string",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T14:21:18.8543797-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/condition/types",
+      "Test": "TestPrimitives/invalid_map",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T14:21:18.8543797-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/condition/types",
+      "Test": "TestPrimitives/invalid_map_string",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T14:21:18.8543797-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/condition/types",
+      "Test": "TestPrimitives/valid_list_string",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T14:21:18.8543797-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/condition/types",
+      "Test": "TestPrimitives/invalid_list",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T14:21:18.8543797-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/condition/types",
+      "Test": "TestPrimitives/invalid_list_string",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T14:21:18.8543797-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/condition/types",
+      "Test": "TestPrimitives",
+      "Elapsed": 0
+    }
+  ],
+  "sourceSha256": {
+    "graph/graph.go": "f8cebae8cf5d21114b25d2ad7f885ccdd09378d903daf10453d92653d9cae856",
+    "graph/graph_builder.go": "970c5774d030dabfc74e615891d9f0d3137d9b085afb548fde7a2f5f666b4bea",
+    "graph/graph_builder_test.go": "5c8aeb33835b01f1100d67dc6b12c78f86a580d339f7ac7f93ee70f99bb5fe26",
+    "graph/graph_edge.go": "96413e3afa2926011b6349830c2fcba03a6f98ac8b788237dfa0f5e52b929e57",
+    "graph/graph_edge_test.go": "93df7253cb254edf80c4077e5369b5ad4b6a2afb32431dd748bc3a017528d375",
+    "graph/graph_node.go": "00cc0e1beb4558f4639fa181708d291d967605be2f4c7c4e90b9582229073b6c",
+    "graph/graph_test.go": "f11ec3efaee0f2c921ee8615a216e2a3e82f0b04e5af1a72fec773290fd9463c",
+    "graph/weighted_graph.go": "88de6b325929e68361a4b007f8579eaf7288be46478f29c0419116d9efa3408b",
+    "graph/weighted_graph_builder.go": "8d76f0898999687c0a0405d796b7aaef0e41f5ccfdf760f76880d56504e01e97",
+    "graph/weighted_graph_builder_test.go": "80b568f490bf7e9e010f922676169ecd4634e4cbf6c576775d2f4eb7e029a44b",
+    "graph/weighted_graph_concurrent_test.go": "64c0143fbba3fa68b073650d6c9b5ca1b68c643bd14df210fee30a13bf0f7d6b",
+    "graph/weighted_graph_edge.go": "4b4f328e7862f0ed52e25517d69a6338fa5eadbcc7612893cc27f46a6078e084",
+    "graph/weighted_graph_node.go": "a9d84d6bc471d02d9b32b28109baff7854bce39baa97489909bf25913c4a2640",
+    "graph/weighted_graph_test.go": "23df7ebe6655aaad816740432c31a5b4428447c1bbb19cde699f4469c55a667b",
+    "graph/weighted_graph_userset_test.go": "d44baa556e49eb6ab077656e8abca4ee3f7e251a06bfce4e337f9f648d9bf997"
+  },
+  "conditionSourceSha256": {
+    "converters.go": "795105dc9163c92bc99e825f00c5f3554a8ace198090ffc2bed98b700e69c18a",
+    "encoding.go": "adaa1f3b8fc012335d80fac4442f856ea82bc2d8a525ce97ef64dc21327222a9",
+    "encoding_test.go": "3cec9c3e6d2da7b62bdf0bdedf3ee920168fe5d0b7c56a0e49473f9b8731f614",
+    "generic.go": "cb1379fe13932df23ab24bc48c5bd0dd44d10835523c50f650f534fcbbd519fe",
+    "ipaddress.go": "50d525c921a90c4a6a7fc3c13a5e4b5b4227f5826c95d2acf75517c084990847",
+    "ipaddress_test.go": "2e87aa3804edc546d34630821d71e1ae903107081608f3608d0f698ab4acdd8d",
+    "primitives.go": "8424e88655bba776f7ce238da1b46a2843b01a304ff76793b6eec96c13acf24f",
+    "types.go": "f90f6f4a36b9b1027c87457b34e7f223d270198d1961862b699e303fb6fc15ad",
+    "types_test.go": "d7cb18da2ff85cb1666eed4843efd78cb50b278a24cdbf53bf89cd8bb9af3dab"
+  },
+  "dependencyOrigin": {
+    "Version": "v0.3.2",
+    "Time": "2026-10-01T11:04:02Z",
+    "Origin": {
+      "VCS": "git",
+      "URL": "https://github.com/openfga/language",
+      "Subdir": "pkg/go",
+      "Hash": "f558baace40cebd4548ab50b6d50ce65a940babb",
+      "Ref": "refs/tags/pkg/go/v0.3.2"
+    }
+  },
+  "runnerSha256": "665362689ce13f696cd9fe066d7da30eb1e5947821410ae4bed479f647702e10",
+  "stdoutSha256": "443dfb60cd789785d93b1dc835060b20df7b9608c2706a0e6c560abc5eaaaf1c",
+  "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "intervention": "researcher selected test names and local build environment; production/test source unchanged",
+  "cost": "local CPU only; any build dependency downloads retained in stderr; no provider usage"
+}

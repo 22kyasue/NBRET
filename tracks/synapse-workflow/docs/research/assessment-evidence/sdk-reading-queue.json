@@ -1,0 +1,8047 @@
+{
+  "codex": {
+    "name": "openai-codex",
+    "version": "0.1.0b3",
+    "root": "C:\\Users\\kotar\\.codex\\research\\assessment-evidence-sdk-sources\\openai-codex-0.1.0b3-source\\openai_codex-0.1.0b3",
+    "provenance": "sdk-source-download-receipt.json; declared lower-bound version, not an installed provider runtime",
+    "files": [
+      {
+        "path": "examples/README.md",
+        "sha256": "edaec29c84e0166b6ad345cf7336e1da76a90b3365bfe8a58b29082b0468cb60",
+        "lines": 91,
+        "ranges": [
+          [
+            1,
+            91
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "PKG-INFO",
+        "sha256": "63c5032d3706a2e1b64751adaeb7a398e78827ba510114bfd36f7869f89ae029",
+        "lines": 97,
+        "ranges": [
+          [
+            1,
+            97
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "pyproject.toml",
+        "sha256": "7c902b087acf93b3c370947d4feb339a3cfc260c82da914a787b298d9a2c91b6",
+        "lines": 87,
+        "ranges": [
+          [
+            1,
+            87
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "README.md",
+        "sha256": "6c71ad7261ce9234f35b594a853e9de811c39054906b08936078c7c6ef58385f",
+        "lines": 74,
+        "ranges": [
+          [
+            1,
+            74
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "src/openai_codex/api.py",
+        "sha256": "d4218d1504aec251c98e0268ebd755d968f19afba034366e87c51ec1e1873483",
+        "lines": 807,
+        "ranges": [
+          [
+            1,
+            150
+          ],
+          [
+            151,
+            300
+          ],
+          [
+            301,
+            450
+          ],
+          [
+            451,
+            600
+          ],
+          [
+            601,
+            750
+          ],
+          [
+            751,
+            807
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "src/openai_codex/async_client.py",
+        "sha256": "53a8e61300144c50a1c4f2c0496e55f4284c4d6c6f3bd68e4a7282f649a5a704",
+        "lines": 285,
+        "ranges": [
+          [
+            1,
+            150
+          ],
+          [
+            151,
+            285
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "src/openai_codex/client.py",
+        "sha256": "0eb2ea75eda7269db871df39c68eb3302ca3111135760cc53fbd2ddeb863b6d8",
+        "lines": 694,
+        "ranges": [
+          [
+            1,
+            150
+          ],
+          [
+            151,
+            300
+          ],
+          [
+            301,
+            450
+          ],
+          [
+            451,
+            600
+          ],
+          [
+            601,
+            694
+          ],
+          [
+            1,
+            160
+          ],
+          [
+            241,
+            320
+          ],
+          [
+            541,
+            630
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "src/openai_codex/errors.py",
+        "sha256": "104b435d7e9f293c3327ad59fc7985363503fb4d919cadbb73f943d12a75a615",
+        "lines": 121,
+        "ranges": [
+          [
+            1,
+            121
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "src/openai_codex/generated/notification_registry.py",
+        "sha256": "b5fa0818fc58dfb4ff0e3e5d8868e6921b1806ef31ea00a5ee06aed85f5b51db",
+        "lines": 179,
+        "ranges": [
+          [
+            1,
+            150
+          ],
+          [
+            151,
+            179
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "src/openai_codex/generated/v2_all.py",
+        "sha256": "87de512c5d2e167b3ba0cdc5670959ae0b4d3763ed2a38fb5d69386900d0b29f",
+        "lines": 8619,
+        "ranges": [
+          [
+            7665,
+            7740
+          ],
+          [
+            4415,
+            4445
+          ],
+          [
+            1,
+            160
+          ],
+          [
+            161,
+            320
+          ],
+          [
+            321,
+            480
+          ],
+          [
+            481,
+            640
+          ],
+          [
+            641,
+            800
+          ],
+          [
+            801,
+            960
+          ],
+          [
+            961,
+            1120
+          ],
+          [
+            1121,
+            1280
+          ],
+          [
+            1281,
+            1440
+          ],
+          [
+            1441,
+            1600
+          ],
+          [
+            1601,
+            1760
+          ],
+          [
+            1761,
+            1920
+          ],
+          [
+            1921,
+            2080
+          ],
+          [
+            2081,
+            2240
+          ],
+          [
+            2241,
+            2400
+          ],
+          [
+            2401,
+            2560
+          ],
+          [
+            2561,
+            2720
+          ],
+          [
+            2721,
+            2880
+          ],
+          [
+            2881,
+            3040
+          ],
+          [
+            3041,
+            3200
+          ],
+          [
+            3201,
+            3360
+          ],
+          [
+            3361,
+            3520
+          ],
+          [
+            3521,
+            3680
+          ],
+          [
+            3681,
+            3840
+          ],
+          [
+            3841,
+            4000
+          ],
+          [
+            4001,
+            4160
+          ],
+          [
+            4161,
+            4320
+          ],
+          [
+            4321,
+            4480
+          ],
+          [
+            4481,
+            4640
+          ],
+          [
+            4641,
+            4800
+          ],
+          [
+            4801,
+            4960
+          ],
+          [
+            4961,
+            5120
+          ],
+          [
+            5121,
+            5280
+          ],
+          [
+            5281,
+            5440
+          ],
+          [
+            5441,
+            5600
+          ],
+          [
+            5601,
+            5760
+          ],
+          [
+            5761,
+            5920
+          ],
+          [
+            5921,
+            6080
+          ],
+          [
+            6081,
+            6240
+          ],
+          [
+            6241,
+            6400
+          ],
+          [
+            6401,
+            6560
+          ],
+          [
+            6561,
+            6720
+          ],
+          [
+            6721,
+            6880
+          ],
+          [
+            6881,
+            7040
+          ],
+          [
+            7041,
+            7200
+          ],
+          [
+            7201,
+            7360
+          ],
+          [
+            7361,
+            7520
+          ],
+          [
+            7521,
+            7680
+          ],
+          [
+            7681,
+            7840
+          ],
+          [
+            7841,
+            8000
+          ],
+          [
+            8001,
+            8160
+          ],
+          [
+            8161,
+            8320
+          ],
+          [
+            8321,
+            8480
+          ],
+          [
+            8481,
+            8619
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "src/openai_codex/generated/__init__.py",
+        "sha256": "0fa172a905073649a4c73e2559c8f3c81816da814ebb692ee812d67ae0dcc599",
+        "lines": 1,
+        "ranges": [
+          [
+            1,
+            1
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "src/openai_codex/models.py",
+        "sha256": "15c3ba93c2f1c641238a904f423dda93d14e5193d38e78ade5f867c7aceec375",
+        "lines": 99,
+        "ranges": [
+          [
+            1,
+            99
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "src/openai_codex/py.typed",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "lines": 1,
+        "ranges": [
+          [
+            1,
+            1
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "src/openai_codex/retry.py",
+        "sha256": "0d0d048748a675ea29a2df497ae416d79887d5a69d03453fb7ca7387c4c8af47",
+        "lines": 41,
+        "ranges": [
+          [
+            1,
+            41
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "src/openai_codex/types.py",
+        "sha256": "31a95f0a42e1e4f655663db0473927d102664547f534713ec2040cdb913c8afc",
+        "lines": 81,
+        "ranges": [
+          [
+            1,
+            81
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "src/openai_codex/_approval_mode.py",
+        "sha256": "9cd7dbf7f20529b97adb9291832ed01645befff58d9642670f1fb8b774bd1b62",
+        "lines": 51,
+        "ranges": [
+          [
+            1,
+            51
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "src/openai_codex/_initialize_metadata.py",
+        "sha256": "9ab05330ae46e2c2fc1e6279efeca98789a759f43b19601e887e4772d0f4f6da",
+        "lines": 54,
+        "ranges": [
+          [
+            1,
+            54
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "src/openai_codex/_inputs.py",
+        "sha256": "f51287594cc7ebdcdeed50b51f4beb7eaeb028239d7c6b6ad7f5eecbe354082a",
+        "lines": 73,
+        "ranges": [
+          [
+            1,
+            73
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "src/openai_codex/_login.py",
+        "sha256": "0acc5d5e801afbb9b1b73ce2867412031dbb099fb4747713fdaec41b3c02e91b",
+        "lines": 172,
+        "ranges": [
+          [
+            1,
+            150
+          ],
+          [
+            151,
+            172
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "src/openai_codex/_message_router.py",
+        "sha256": "71928c0073ad0fb0a44928257ce867158821a6c635d2da35433d902f35787f37",
+        "lines": 222,
+        "ranges": [
+          [
+            1,
+            150
+          ],
+          [
+            151,
+            222
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "src/openai_codex/_run.py",
+        "sha256": "ca0e0c0d9a2c3ae8606cc5986c93bae100c47583df6c4e5643dc5cc582428263",
+        "lines": 135,
+        "ranges": [
+          [
+            1,
+            135
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "src/openai_codex/_sandbox.py",
+        "sha256": "01ab6cabc1642941ba958b287c34a5475066c934b67e4fd194d78b4bb2eb27b2",
+        "lines": 78,
+        "ranges": [
+          [
+            1,
+            78
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "src/openai_codex/_version.py",
+        "sha256": "678f4945d9906b0150a3d84cfc217e06824b9a963e7d248bd4b0d0fb51210658",
+        "lines": 36,
+        "ranges": [
+          [
+            1,
+            36
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "src/openai_codex/__init__.py",
+        "sha256": "e91d9b841794668101e58742d216f776f8e10bd94fe9a649d3f593ec5938bbe5",
+        "lines": 93,
+        "ranges": [
+          [
+            1,
+            93
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      }
+    ]
+  },
+  "claude": {
+    "name": "claude-agent-sdk",
+    "version": "0.2.90",
+    "root": "C:\\Users\\kotar\\.codex\\research\\assessment-evidence-sdk-sources\\claude-agent-sdk-0.2.90-source\\claude_agent_sdk-0.2.90",
+    "provenance": "sdk-source-download-receipt.json; declared lower-bound version, not an installed provider runtime",
+    "files": [
+      {
+        "path": ".gitignore",
+        "sha256": "c4fecede2f98e9f60d792698344eed71824df8b4d0e4c5dcd064e67fcfb2c28c",
+        "lines": 56,
+        "ranges": [
+          [
+            1,
+            56
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "examples/agents.py",
+        "sha256": "e6f026be8c386f86eee740d23ae27e86851d872de09b27c1fce14ccff685668e",
+        "lines": 124,
+        "ranges": [
+          [
+            1,
+            124
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "examples/filesystem_agents.py",
+        "sha256": "397d54b1ec275fad06df3cee718bbb1b74698b819907fa46abce1c61bfc3f135",
+        "lines": 107,
+        "ranges": [
+          [
+            1,
+            107
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "examples/hooks.py",
+        "sha256": "de7d454a698d4f1e59e01ff13bfb18625e16091e3a639066e35ee5bbd7caa5d5",
+        "lines": 350,
+        "ranges": [
+          [
+            1,
+            160
+          ],
+          [
+            161,
+            300
+          ],
+          [
+            301,
+            350
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "examples/include_partial_messages.py",
+        "sha256": "ab6e61f0a6abd5e580f5b1bf0bb30daf06c807bb0b46b8cde76700bbc78aa8f7",
+        "lines": 62,
+        "ranges": [
+          [
+            1,
+            62
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "examples/max_budget_usd.py",
+        "sha256": "824d53ad0226ba4eab27358829dc8eeee24d7e0f7f4eb693a59cee201851a438",
+        "lines": 95,
+        "ranges": [
+          [
+            1,
+            95
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "examples/mcp_calculator.py",
+        "sha256": "444df6810e8fcbb1a092601737723f7ebf6ea4de4ff5f1e6b94576ed864c4968",
+        "lines": 193,
+        "ranges": [
+          [
+            1,
+            140
+          ],
+          [
+            141,
+            193
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "examples/plugins/demo-plugin/.claude-plugin/plugin.json",
+        "sha256": "6044aefcc9a111a45e3f9a038bd7c3bfdafd6ceffbe7c0f77302963a7e53064b",
+        "lines": 8,
+        "ranges": [
+          [
+            1,
+            8
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "examples/plugins/demo-plugin/commands/greet.md",
+        "sha256": "ce061514033b7cf158c74d6708c186a5bf53077b1532cd7e35b384660ee79235",
+        "lines": 5,
+        "ranges": [
+          [
+            1,
+            5
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "examples/plugin_example.py",
+        "sha256": "fc7fcbe59d2b80baf27f7c54f0cd380157fc65fe891b4ead67aa73ea0eee39a3",
+        "lines": 71,
+        "ranges": [
+          [
+            1,
+            71
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "examples/quick_start.py",
+        "sha256": "50671f3d23e583322815b35392740d71b33d5d8d81fb9b5646a5f8263160b973",
+        "lines": 76,
+        "ranges": [
+          [
+            1,
+            76
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "examples/session_stores/postgres_session_store.py",
+        "sha256": "5329e0f0530a3271c99f72fcae446f438e857685e97198a537d8532f30d7109d",
+        "lines": 256,
+        "ranges": [
+          [
+            1,
+            150
+          ],
+          [
+            151,
+            256
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "examples/session_stores/README.md",
+        "sha256": "2436a75c9ab1eb7ab57c11239e3aa3128aa5bcb54d4c4859795b9614fffe7304",
+        "lines": 412,
+        "ranges": [
+          [
+            1,
+            150
+          ],
+          [
+            151,
+            300
+          ],
+          [
+            301,
+            412
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "examples/session_stores/redis_session_store.py",
+        "sha256": "27a696dd6d8f25eb0c8f684a7d274fd421912fd65d15e4b32a9aeee96065eb5c",
+        "lines": 178,
+        "ranges": [
+          [
+            1,
+            150
+          ],
+          [
+            151,
+            178
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "examples/session_stores/s3_session_store.py",
+        "sha256": "d21a843773be8cfd8baad768c4b34e5f3b3bb65fb676f882aab61705244cfeab",
+        "lines": 412,
+        "ranges": [
+          [
+            1,
+            150
+          ],
+          [
+            151,
+            300
+          ],
+          [
+            301,
+            412
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "examples/session_stores/__init__.py",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "lines": 1,
+        "ranges": [
+          [
+            1,
+            1
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "examples/setting_sources.py",
+        "sha256": "c984b5f56db821f798cd45f296e258881673dd3b089bc9dbc95b603619fdbbae",
+        "lines": 204,
+        "ranges": [
+          [
+            1,
+            150
+          ],
+          [
+            151,
+            204
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "examples/stderr_callback_example.py",
+        "sha256": "a19160d751979868a92cce36010762b91f88af5ce30867131ec95127482a017e",
+        "lines": 43,
+        "ranges": [
+          [
+            1,
+            43
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "examples/streaming_mode.py",
+        "sha256": "bcccab9624548cca2512092b1e47fe90ae1594e70ab5b2ca6c4f5baf44191caa",
+        "lines": 519,
+        "ranges": [
+          [
+            1,
+            150
+          ],
+          [
+            151,
+            300
+          ],
+          [
+            301,
+            450
+          ],
+          [
+            451,
+            519
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "examples/streaming_mode_ipython.py",
+        "sha256": "b967da68b74e544fc143108268271ac5a8cd98f24b4c3f31271098383e10db60",
+        "lines": 229,
+        "ranges": [
+          [
+            1,
+            150
+          ],
+          [
+            151,
+            229
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "examples/streaming_mode_trio.py",
+        "sha256": "44597d5405cc8499d41130e5cae5bf4d9c74cfd0b9847716e33dc1104f4a3c50",
+        "lines": 80,
+        "ranges": [
+          [
+            1,
+            80
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "examples/system_prompt.py",
+        "sha256": "5e4aadeb8002b409f8955284328267cae2858db0997d98dcab695a0fa055ba45",
+        "lines": 87,
+        "ranges": [
+          [
+            1,
+            87
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "examples/tools_option.py",
+        "sha256": "1dd54f0062bc6c844e5f93eb9827e4279cf9c3a0a39432b7629ab7c63b397029",
+        "lines": 111,
+        "ranges": [
+          [
+            1,
+            111
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "examples/tool_permission_callback.py",
+        "sha256": "33355dd11bd6cce4860220d897b79da1993f280634684ffb870eb4cf0fc1d1dd",
+        "lines": 158,
+        "ranges": [
+          [
+            1,
+            158
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "LICENSE",
+        "sha256": "cebdde8a8fb9ee59e5eaaed19578bf8085aa7047562259c31f38f225c26f6812",
+        "lines": 21,
+        "ranges": [
+          [
+            1,
+            21
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "PKG-INFO",
+        "sha256": "17e136ec3ee011243a6c7145930b5743cd0f8b07c5cb0a35a21ccb2a0cecc455",
+        "lines": 401,
+        "ranges": [
+          [
+            1,
+            150
+          ],
+          [
+            151,
+            300
+          ],
+          [
+            301,
+            401
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "pyproject.toml",
+        "sha256": "a2606a1f5bdff55c09dd61537aa219cd92c16ced39b35ca038273e6f31eafcd7",
+        "lines": 130,
+        "ranges": [
+          [
+            1,
+            130
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "README.md",
+        "sha256": "480cfe5d72ed7afd2952e5bed111d51f2b0be1c568e7dce19c4a72e9287e96b8",
+        "lines": 359,
+        "ranges": [
+          [
+            1,
+            150
+          ],
+          [
+            151,
+            300
+          ],
+          [
+            301,
+            359
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "src/claude_agent_sdk/client.py",
+        "sha256": "e67f4db7f38347632c2a6c1443423f99dd87f2a51cafcde499a0c9253a6508e6",
+        "lines": 627,
+        "ranges": [
+          [
+            1,
+            150
+          ],
+          [
+            151,
+            300
+          ],
+          [
+            301,
+            450
+          ],
+          [
+            451,
+            600
+          ],
+          [
+            601,
+            627
+          ],
+          [
+            95,
+            240
+          ],
+          [
+            560,
+            627
+          ],
+          [
+            238,
+            310
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed",
+        "runtimeEvidence": [
+          "claude-cleanup-receipt-1792274592407.json: three inert cleanup control-flow cases, no native process or auth materialization"
+        ]
+      },
+      {
+        "path": "src/claude_agent_sdk/py.typed",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "lines": 1,
+        "ranges": [
+          [
+            1,
+            1
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "src/claude_agent_sdk/query.py",
+        "sha256": "50c3b1eb3539fd828d7ada4b7c37fa8e23f7520007f7578b16de8b47e7758553",
+        "lines": 126,
+        "ranges": [
+          [
+            1,
+            126
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "src/claude_agent_sdk/testing/session_store_conformance.py",
+        "sha256": "43548f8dcb30563f24ee9e019f1a039a0e8d024cf51af23e21bb5e518beb3edc",
+        "lines": 327,
+        "ranges": [
+          [
+            1,
+            150
+          ],
+          [
+            151,
+            300
+          ],
+          [
+            301,
+            327
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "src/claude_agent_sdk/testing/__init__.py",
+        "sha256": "b84e3f7817f12d18d6c2686c65e4ba79b187fc6f2e2e8ef834a8dc6250096dcd",
+        "lines": 9,
+        "ranges": [
+          [
+            1,
+            9
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "src/claude_agent_sdk/types.py",
+        "sha256": "a8287287098718b705b4fdf5dd858ce172a013b9e2da0daf9d23131ac78f54c1",
+        "lines": 2043,
+        "ranges": [
+          [
+            1,
+            150
+          ],
+          [
+            151,
+            300
+          ],
+          [
+            301,
+            450
+          ],
+          [
+            451,
+            600
+          ],
+          [
+            601,
+            750
+          ],
+          [
+            751,
+            900
+          ],
+          [
+            901,
+            1050
+          ],
+          [
+            1051,
+            1200
+          ],
+          [
+            1201,
+            1350
+          ],
+          [
+            1351,
+            1500
+          ],
+          [
+            1501,
+            1650
+          ],
+          [
+            1651,
+            1800
+          ],
+          [
+            1801,
+            1950
+          ],
+          [
+            1951,
+            2043
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "src/claude_agent_sdk/_bundled/.gitignore",
+        "sha256": "c1490336e1d0abde90e90589b0b1459095ed0f722ecd87ee38165a07d6d1edff",
+        "lines": 3,
+        "ranges": [
+          [
+            1,
+            3
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "src/claude_agent_sdk/_cli_version.py",
+        "sha256": "8769cee6685c906a5b524876850a510fa3b1151422dfc11ef16ddeca3445a4c1",
+        "lines": 3,
+        "ranges": [
+          [
+            1,
+            3
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "src/claude_agent_sdk/_errors.py",
+        "sha256": "9d274934d7accef5c6d4f7e75dddac42954d391a8c72df8c7cf6a23375de24be",
+        "lines": 56,
+        "ranges": [
+          [
+            1,
+            56
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "src/claude_agent_sdk/_internal/client.py",
+        "sha256": "0c24afba3fd414e3d5a6a5f653b693b9bc124c27738e602fe2cedde6b76acc4b",
+        "lines": 230,
+        "ranges": [
+          [
+            1,
+            150
+          ],
+          [
+            151,
+            230
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "src/claude_agent_sdk/_internal/message_parser.py",
+        "sha256": "d67a393015b9ed7813a855eb132b8613940b519078fa1239daeac2f52df1ea37",
+        "lines": 318,
+        "ranges": [
+          [
+            1,
+            150
+          ],
+          [
+            151,
+            300
+          ],
+          [
+            301,
+            318
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "src/claude_agent_sdk/_internal/query.py",
+        "sha256": "a4cd9f3bb0492d29c3344b98235d44497d0525f2dd23e46f312f69d5a8c5f788",
+        "lines": 899,
+        "ranges": [
+          [
+            1,
+            150
+          ],
+          [
+            151,
+            300
+          ],
+          [
+            301,
+            450
+          ],
+          [
+            451,
+            600
+          ],
+          [
+            601,
+            750
+          ],
+          [
+            751,
+            899
+          ],
+          [
+            370,
+            515
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed",
+        "runtimeEvidence": [
+          "claude-mirror-receipt-1792274689528.json: 42 upstream synthetic/mock tests pass; not every implementation branch exercised"
+        ]
+      },
+      {
+        "path": "src/claude_agent_sdk/_internal/sessions.py",
+        "sha256": "08ed2a506ec91aac99ce6b43cae19bc4eb64eccf2305819cbca6173a734f8123",
+        "lines": 1925,
+        "ranges": [
+          [
+            1,
+            150
+          ],
+          [
+            151,
+            300
+          ],
+          [
+            301,
+            450
+          ],
+          [
+            451,
+            600
+          ],
+          [
+            601,
+            750
+          ],
+          [
+            751,
+            900
+          ],
+          [
+            901,
+            1050
+          ],
+          [
+            1051,
+            1200
+          ],
+          [
+            1201,
+            1350
+          ],
+          [
+            1351,
+            1500
+          ],
+          [
+            1501,
+            1650
+          ],
+          [
+            1651,
+            1800
+          ],
+          [
+            1801,
+            1925
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "src/claude_agent_sdk/_internal/session_import.py",
+        "sha256": "3fd96faa54bad211c765e84090e7e3adb580b6f550ba3f3346f8c6c914b2d60e",
+        "lines": 163,
+        "ranges": [
+          [
+            1,
+            150
+          ],
+          [
+            151,
+            163
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed",
+        "runtimeEvidence": [
+          "session-import-failure-receipt-1792274774748.json: two actual component cases with owned JSONL and reference store; initial fixture failure retained separately"
+        ]
+      },
+      {
+        "path": "src/claude_agent_sdk/_internal/session_mutations.py",
+        "sha256": "16653fb5dbb6e9963e05ef1522e43ba4b8e28fd0b037e4749dde865ca9e4e675",
+        "lines": 962,
+        "ranges": [
+          [
+            1,
+            150
+          ],
+          [
+            151,
+            300
+          ],
+          [
+            301,
+            450
+          ],
+          [
+            451,
+            600
+          ],
+          [
+            601,
+            750
+          ],
+          [
+            751,
+            900
+          ],
+          [
+            901,
+            962
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "src/claude_agent_sdk/_internal/session_resume.py",
+        "sha256": "3955f616d6c92655e8a2366fb5166ceaaab65893559c33753fc3eb2effc25932",
+        "lines": 536,
+        "ranges": [
+          [
+            1,
+            150
+          ],
+          [
+            151,
+            300
+          ],
+          [
+            301,
+            450
+          ],
+          [
+            451,
+            536
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "src/claude_agent_sdk/_internal/session_store.py",
+        "sha256": "7c65f885209a5abc5c9d07d0a2fb5be3189fdd0c9207782f7b5ed46ddd1931a1",
+        "lines": 194,
+        "ranges": [
+          [
+            1,
+            150
+          ],
+          [
+            151,
+            194
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed",
+        "runtimeEvidence": [
+          "session-import-failure-receipt-1792274774748.json: two actual component cases with owned JSONL and reference store; initial fixture failure retained separately"
+        ]
+      },
+      {
+        "path": "src/claude_agent_sdk/_internal/session_store_validation.py",
+        "sha256": "191b169b65e9116b6ffdcc215dfc2644db2ab9c3854b88b23206ee4f27580ba4",
+        "lines": 45,
+        "ranges": [
+          [
+            1,
+            45
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "src/claude_agent_sdk/_internal/session_summary.py",
+        "sha256": "358027a03882b497c48c331332aff5a119ce113005dd0a3abfae93259aba18a9",
+        "lines": 232,
+        "ranges": [
+          [
+            1,
+            150
+          ],
+          [
+            151,
+            232
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "src/claude_agent_sdk/_internal/transcript_mirror_batcher.py",
+        "sha256": "41692fcd5a90ed6f0ab5dae4646149543d6ddd743bf9ee3dc8cd912304905ba8",
+        "lines": 219,
+        "ranges": [
+          [
+            1,
+            150
+          ],
+          [
+            151,
+            219
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed",
+        "runtimeEvidence": [
+          "claude-mirror-receipt-1792274689528.json: 42 upstream synthetic/mock tests pass; not every implementation branch exercised"
+        ]
+      },
+      {
+        "path": "src/claude_agent_sdk/_internal/transport/subprocess_cli.py",
+        "sha256": "08da90c17d934a245e1190e2092bbe9b767c1eeb6cda006cef69f4db7cb2d55a",
+        "lines": 762,
+        "ranges": [
+          [
+            1,
+            150
+          ],
+          [
+            151,
+            300
+          ],
+          [
+            301,
+            450
+          ],
+          [
+            451,
+            600
+          ],
+          [
+            601,
+            750
+          ],
+          [
+            751,
+            762
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "src/claude_agent_sdk/_internal/transport/__init__.py",
+        "sha256": "b2ff08cb56fd6263e55eee17b1d37df20248972acbb70abc3ca432178aa740b9",
+        "lines": 68,
+        "ranges": [
+          [
+            1,
+            68
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "src/claude_agent_sdk/_internal/_task_compat.py",
+        "sha256": "3c94fd0e74266d26ef19e296f4127f2792dc3cef533dd4d21ce3019eb84215db",
+        "lines": 176,
+        "ranges": [
+          [
+            1,
+            150
+          ],
+          [
+            151,
+            176
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "src/claude_agent_sdk/_internal/__init__.py",
+        "sha256": "cc37608eaa7c488f664e7c196cfd817bec382d696fe1ade403e4d2da2ef98ec3",
+        "lines": 1,
+        "ranges": [
+          [
+            1,
+            1
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "src/claude_agent_sdk/_version.py",
+        "sha256": "f2846e7432fff825d544b8bb78504a52d660cddc1c62a690cea600f491654fe0",
+        "lines": 3,
+        "ranges": [
+          [
+            1,
+            3
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "src/claude_agent_sdk/__init__.py",
+        "sha256": "0bdf0af19d97862d12abac7af0e9afa036e56373b69c042e53f2e568721c65dd",
+        "lines": 663,
+        "ranges": [
+          [
+            1,
+            150
+          ],
+          [
+            151,
+            300
+          ],
+          [
+            301,
+            450
+          ],
+          [
+            451,
+            600
+          ],
+          [
+            601,
+            663
+          ],
+          [
+            450,
+            525
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "tests/conftest.py",
+        "sha256": "c2b779021b92c167e73ba5ebc776db310e385556c065e011861a0d6a1ee51500",
+        "lines": 4,
+        "ranges": [
+          [
+            1,
+            4
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "tests/test_build_wheel.py",
+        "sha256": "5062b735a1b4e6f9a634d3c6093cf6418687fbfad70405c4bdddc40c1bce9f8e",
+        "lines": 60,
+        "ranges": [
+          [
+            1,
+            60
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "tests/test_changelog.py",
+        "sha256": "d1d31bad8c33d676b255a232a30c300e8a3f3ef7d27f120fcfbc848caa1e1cc2",
+        "lines": 85,
+        "ranges": [
+          [
+            1,
+            85
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "tests/test_client.py",
+        "sha256": "3956ea21551d892aabfd06e5070e1f4c19a5d42fb5233848975f0e5a56b65fc3",
+        "lines": 366,
+        "ranges": [
+          [
+            1,
+            150
+          ],
+          [
+            151,
+            300
+          ],
+          [
+            301,
+            366
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "tests/test_errors.py",
+        "sha256": "f1de3121767e0d59acd1ed272e06240b8faee5e447f8c66235ed043b3effd01a",
+        "lines": 52,
+        "ranges": [
+          [
+            1,
+            52
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "tests/test_example_postgres_session_store.py",
+        "sha256": "e877db554080dd3c12ff9f5b93521ac38b820a03d6a509fe4237f57a070e53a4",
+        "lines": 248,
+        "ranges": [
+          [
+            1,
+            150
+          ],
+          [
+            151,
+            248
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "tests/test_example_redis_session_store.py",
+        "sha256": "a188c03d5603fd7041f94ebaa40a6af6a4b2275642f534907ff42c58e0867931",
+        "lines": 344,
+        "ranges": [
+          [
+            1,
+            150
+          ],
+          [
+            151,
+            300
+          ],
+          [
+            301,
+            344
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "tests/test_example_redis_session_store_live.py",
+        "sha256": "e25b4016ebf1c7b8a0673bf55858d9c431755d3968ac166fedebd05d9c5f8907",
+        "lines": 172,
+        "ranges": [
+          [
+            1,
+            160
+          ],
+          [
+            161,
+            172
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "tests/test_example_s3_session_store.py",
+        "sha256": "d7d9023037643ca73e76e9fda70a13e15d2ad8f19efa5c1f54a598bc4e45d0a2",
+        "lines": 602,
+        "ranges": [
+          [
+            1,
+            150
+          ],
+          [
+            151,
+            300
+          ],
+          [
+            301,
+            450
+          ],
+          [
+            451,
+            600
+          ],
+          [
+            601,
+            602
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "tests/test_example_s3_session_store_live.py",
+        "sha256": "9ec4232dc58de21f304520ed2bbdcf43dcf549c89f49b9c3463c88a378300498",
+        "lines": 215,
+        "ranges": [
+          [
+            1,
+            160
+          ],
+          [
+            161,
+            215
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "tests/test_integration.py",
+        "sha256": "4003c22b6fb96b0ff9a67583693da78f574cbd86a59a5cb405e0f0e6b59fa51f",
+        "lines": 308,
+        "ranges": [
+          [
+            1,
+            150
+          ],
+          [
+            151,
+            308
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "tests/test_mcp_large_output.py",
+        "sha256": "1c1da70b584fb7b92501dd395b603a506eff94b626d3a497fb02ad2741ae4d1e",
+        "lines": 335,
+        "ranges": [
+          [
+            1,
+            150
+          ],
+          [
+            151,
+            300
+          ],
+          [
+            301,
+            335
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "tests/test_message_parser.py",
+        "sha256": "6c40b052875b7bdb60a1520b2522be5ad484d1b3e9202f9600caab6e2b8b434c",
+        "lines": 1077,
+        "ranges": [
+          [
+            1,
+            150
+          ],
+          [
+            151,
+            300
+          ],
+          [
+            301,
+            450
+          ],
+          [
+            451,
+            600
+          ],
+          [
+            601,
+            750
+          ],
+          [
+            751,
+            900
+          ],
+          [
+            901,
+            1050
+          ],
+          [
+            1051,
+            1077
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed",
+        "runtimeEvidence": [
+          "claude-contract-suite-receipt-1792274891704.json: 119 unchanged tests pass across four complete reviewed files; in-memory/mock behavior only"
+        ]
+      },
+      {
+        "path": "tests/test_query.py",
+        "sha256": "0ca78fb86024f3684f376beb3d3a83379d4000c5e42d7610713cae38e5540402",
+        "lines": 1256,
+        "ranges": [
+          [
+            1,
+            150
+          ],
+          [
+            151,
+            300
+          ],
+          [
+            301,
+            450
+          ],
+          [
+            451,
+            600
+          ],
+          [
+            601,
+            750
+          ],
+          [
+            751,
+            900
+          ],
+          [
+            901,
+            1050
+          ],
+          [
+            1051,
+            1200
+          ],
+          [
+            1201,
+            1256
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "tests/test_rate_limit_event_repro.py",
+        "sha256": "807292ccdce3474230203064a40cce046ee55d22d1462f25ffe7a8c1d467e85f",
+        "lines": 108,
+        "ranges": [
+          [
+            1,
+            108
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "tests/test_sdk_mcp_integration.py",
+        "sha256": "4e882b7de663cc9e7ffffa35dc9f5013f10435c8f45e05da5171166e30801bb1",
+        "lines": 1093,
+        "ranges": [
+          [
+            1,
+            150
+          ],
+          [
+            151,
+            300
+          ],
+          [
+            301,
+            450
+          ],
+          [
+            451,
+            600
+          ],
+          [
+            601,
+            750
+          ],
+          [
+            751,
+            900
+          ],
+          [
+            901,
+            1050
+          ],
+          [
+            1051,
+            1093
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "tests/test_sessions.py",
+        "sha256": "a5bc4e024e21ed90331e96ec92dab3d86e9cab9b537c55e9ede7c1c19b0bc558",
+        "lines": 1874,
+        "ranges": [
+          [
+            1,
+            160
+          ],
+          [
+            161,
+            320
+          ],
+          [
+            321,
+            480
+          ],
+          [
+            481,
+            640
+          ],
+          [
+            641,
+            800
+          ],
+          [
+            801,
+            960
+          ],
+          [
+            961,
+            1120
+          ],
+          [
+            1121,
+            1280
+          ],
+          [
+            1281,
+            1440
+          ],
+          [
+            1441,
+            1600
+          ],
+          [
+            1601,
+            1760
+          ],
+          [
+            1761,
+            1874
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "tests/test_session_helpers_store.py",
+        "sha256": "163d867bd890f7349d85afc6ccae6fca55639c735cb548442b36b1a798d7c49f",
+        "lines": 809,
+        "ranges": [
+          [
+            1,
+            150
+          ],
+          [
+            151,
+            300
+          ],
+          [
+            301,
+            450
+          ],
+          [
+            451,
+            600
+          ],
+          [
+            601,
+            750
+          ],
+          [
+            751,
+            809
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "tests/test_session_import.py",
+        "sha256": "9d4843bfcfdbd38fe4d9435f19eb2a0da05046184b2b3a74c200d0ce234849ab",
+        "lines": 317,
+        "ranges": [
+          [
+            1,
+            150
+          ],
+          [
+            151,
+            300
+          ],
+          [
+            301,
+            317
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "tests/test_session_mutations.py",
+        "sha256": "6f0bb7750b6b02768c6c4476cca8e1d6c9d8898d789f54094741531c69a0a33c",
+        "lines": 817,
+        "ranges": [
+          [
+            1,
+            150
+          ],
+          [
+            151,
+            300
+          ],
+          [
+            301,
+            450
+          ],
+          [
+            451,
+            600
+          ],
+          [
+            601,
+            750
+          ],
+          [
+            751,
+            817
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "tests/test_session_resume.py",
+        "sha256": "e738d5b54e481e42e686c7417a1bbd922acea128ea9fc0a2d63cfa6d24818503",
+        "lines": 1318,
+        "ranges": [
+          [
+            1,
+            150
+          ],
+          [
+            151,
+            300
+          ],
+          [
+            301,
+            450
+          ],
+          [
+            451,
+            600
+          ],
+          [
+            601,
+            750
+          ],
+          [
+            751,
+            900
+          ],
+          [
+            901,
+            1050
+          ],
+          [
+            1051,
+            1200
+          ],
+          [
+            1201,
+            1318
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "tests/test_session_store_anyio.py",
+        "sha256": "08615df3c87eff3007d17aa183185f136145bfec8014f3edbd45d28fce3144f8",
+        "lines": 238,
+        "ranges": [
+          [
+            1,
+            150
+          ],
+          [
+            151,
+            238
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "tests/test_session_store_conformance.py",
+        "sha256": "5b62705d9b119856db5019b613f3fd6cb3ad4292ad80e9c3cc99abfba51f7d10",
+        "lines": 270,
+        "ranges": [
+          [
+            1,
+            150
+          ],
+          [
+            151,
+            270
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed",
+        "runtimeEvidence": [
+          "claude-contract-suite-receipt-1792274891704.json: 119 unchanged tests pass across four complete reviewed files; in-memory/mock behavior only"
+        ]
+      },
+      {
+        "path": "tests/test_session_summary.py",
+        "sha256": "187292461a12d8e1bc4fc2881987d1464bfdceb9f36f69624e69c78e8b0b1940",
+        "lines": 884,
+        "ranges": [
+          [
+            1,
+            150
+          ],
+          [
+            151,
+            300
+          ],
+          [
+            301,
+            450
+          ],
+          [
+            451,
+            600
+          ],
+          [
+            601,
+            750
+          ],
+          [
+            751,
+            884
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed",
+        "runtimeEvidence": [
+          "claude-contract-suite-receipt-1792274891704.json: 119 unchanged tests pass across four complete reviewed files; in-memory/mock behavior only"
+        ]
+      },
+      {
+        "path": "tests/test_streaming_client.py",
+        "sha256": "5b660517b661e218a6be20ca8f3a1fddb20cbcf33e1e08ea9344a069dfc7c359",
+        "lines": 1314,
+        "ranges": [
+          [
+            1,
+            150
+          ],
+          [
+            151,
+            300
+          ],
+          [
+            301,
+            450
+          ],
+          [
+            451,
+            600
+          ],
+          [
+            601,
+            750
+          ],
+          [
+            751,
+            900
+          ],
+          [
+            901,
+            1050
+          ],
+          [
+            1051,
+            1200
+          ],
+          [
+            1201,
+            1314
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "tests/test_subprocess_buffering.py",
+        "sha256": "8c42302cb7b610e8fc2327171d7b26e45a397c3ac221f7a92400f2eb05a267d9",
+        "lines": 385,
+        "ranges": [
+          [
+            1,
+            150
+          ],
+          [
+            151,
+            300
+          ],
+          [
+            301,
+            385
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed",
+        "runtimeEvidence": [
+          "claude-contract-suite-receipt-1792274891704.json: 119 unchanged tests pass across four complete reviewed files; in-memory/mock behavior only"
+        ]
+      },
+      {
+        "path": "tests/test_task_compat.py",
+        "sha256": "b9967c5ece29b93e9e6f3ac29ac14b927c518891c363fa8a35a5817a09039c37",
+        "lines": 214,
+        "ranges": [
+          [
+            1,
+            150
+          ],
+          [
+            151,
+            214
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "tests/test_tool_callbacks.py",
+        "sha256": "6187b8371066c029bc8a1765eeb2410f0c66a5b0661671115508948cd60cc324",
+        "lines": 951,
+        "ranges": [
+          [
+            1,
+            150
+          ],
+          [
+            151,
+            300
+          ],
+          [
+            301,
+            450
+          ],
+          [
+            451,
+            600
+          ],
+          [
+            601,
+            750
+          ],
+          [
+            751,
+            900
+          ],
+          [
+            901,
+            951
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "tests/test_transcript_mirror.py",
+        "sha256": "04c9fc9faad8e9c133e27c0568d9f8e016f2a77f15d9f6160ac5e043fb972297",
+        "lines": 957,
+        "ranges": [
+          [
+            1,
+            150
+          ],
+          [
+            151,
+            300
+          ],
+          [
+            301,
+            450
+          ],
+          [
+            451,
+            600
+          ],
+          [
+            601,
+            750
+          ],
+          [
+            751,
+            900
+          ],
+          [
+            901,
+            957
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed",
+        "runtimeEvidence": [
+          "claude-mirror-receipt-1792274689528.json: 42 upstream synthetic/mock tests pass; not every implementation branch exercised"
+        ]
+      },
+      {
+        "path": "tests/test_transport.py",
+        "sha256": "54f4834f76944a47d3826adae9a5fa95c669fb25bc1f7f75a2df0d7734252baa",
+        "lines": 2135,
+        "ranges": [
+          [
+            1,
+            150
+          ],
+          [
+            151,
+            300
+          ],
+          [
+            301,
+            450
+          ],
+          [
+            451,
+            600
+          ],
+          [
+            601,
+            750
+          ],
+          [
+            751,
+            900
+          ],
+          [
+            901,
+            1050
+          ],
+          [
+            1051,
+            1200
+          ],
+          [
+            1201,
+            1350
+          ],
+          [
+            1351,
+            1500
+          ],
+          [
+            1501,
+            1650
+          ],
+          [
+            1651,
+            1800
+          ],
+          [
+            1801,
+            1950
+          ],
+          [
+            1951,
+            2100
+          ],
+          [
+            2101,
+            2135
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "tests/test_types.py",
+        "sha256": "5be0c3d9fa590109a7666586a18d4bf9a0f7d92f908c11068e4d06337b971742",
+        "lines": 700,
+        "ranges": [
+          [
+            1,
+            150
+          ],
+          [
+            151,
+            300
+          ],
+          [
+            301,
+            450
+          ],
+          [
+            451,
+            600
+          ],
+          [
+            601,
+            700
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      }
+    ]
+  },
+  "mcp": {
+    "name": "mcp",
+    "version": "2.3.0",
+    "root": "C:/Users/kotar/.codex/research/assessment-evidence-venv/Lib/site-packages/mcp",
+    "provenance": "claude-source-dependencies.json; actual isolated-venv resolved wheel, installed METADATA/RECORD provenance to follow",
+    "files": [
+      {
+        "path": "cli/claude.py",
+        "sha256": "f5e1ff218fa1971ab83a53b248f2ec6bb4ee293c0c339f1f58a5d5490509406e",
+        "lines": 170,
+        "ranges": [
+          [
+            1,
+            160
+          ],
+          [
+            161,
+            170
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "cli/cli.py",
+        "sha256": "a6ad3bc5887e35b724644e5846c0b326bf046ebe8317903418892e4b0e25022a",
+        "lines": 486,
+        "ranges": [
+          [
+            1,
+            160
+          ],
+          [
+            161,
+            320
+          ],
+          [
+            321,
+            480
+          ],
+          [
+            481,
+            486
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "cli/__init__.py",
+        "sha256": "08829f6055796c012db058af989918ecd1e286a2a57e9fa46d7de5466e834aa1",
+        "lines": 6,
+        "ranges": [
+          [
+            1,
+            6
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "client/auth/exceptions.py",
+        "sha256": "b940c75ff3f44b747fb6dee8012f002d0ad480e895d8381cd1040075a681716f",
+        "lines": 10,
+        "ranges": [
+          [
+            1,
+            10
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "client/auth/extensions/client_credentials.py",
+        "sha256": "ddc38f0d0f9881118070bb10cfee4973b2ee66974ee4fb2f8e6635e9de98a011",
+        "lines": 416,
+        "ranges": [
+          [
+            1,
+            160
+          ],
+          [
+            161,
+            320
+          ],
+          [
+            321,
+            416
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "client/auth/extensions/identity_assertion.py",
+        "sha256": "0e98b631d8a243d5372ea79cdf621c22db849a8b1bf03bc380ed528602a2c00c",
+        "lines": 216,
+        "ranges": [
+          [
+            1,
+            160
+          ],
+          [
+            161,
+            216
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "client/auth/extensions/__init__.py",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "lines": 1,
+        "ranges": [
+          [
+            1,
+            1
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "client/auth/oauth2.py",
+        "sha256": "df8701d8d1eb952003b0c2aef2aad4d6a6213d8e3f2699da00f929537eb6a645",
+        "lines": 793,
+        "ranges": [
+          [
+            1,
+            160
+          ],
+          [
+            161,
+            320
+          ],
+          [
+            321,
+            480
+          ],
+          [
+            481,
+            640
+          ],
+          [
+            641,
+            793
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "client/auth/utils.py",
+        "sha256": "e41cc477b2a597e3f7268ad74ca3b6eb3f500c1def3e74d4b6997f0603507d5d",
+        "lines": 442,
+        "ranges": [
+          [
+            1,
+            160
+          ],
+          [
+            161,
+            320
+          ],
+          [
+            321,
+            442
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "client/auth/__init__.py",
+        "sha256": "f6994306dc6b55e38e5f3b638efe497dbb03870a7e62d4d02f6902c3bfb487dc",
+        "lines": 22,
+        "ranges": [
+          [
+            1,
+            22
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "client/caching.py",
+        "sha256": "2c8ff3bd7aaea93f6099a1f91b58243d61e321f770f2a0131a0987a0f59cd6a8",
+        "lines": 387,
+        "ranges": [
+          [
+            1,
+            150
+          ],
+          [
+            151,
+            300
+          ],
+          [
+            301,
+            387
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "client/client.py",
+        "sha256": "36c91f9dcfff52dcf2a4736db6d570f874d7958806f68331ff2bae3b29639031",
+        "lines": 985,
+        "ranges": [
+          [
+            1,
+            150
+          ],
+          [
+            151,
+            300
+          ],
+          [
+            301,
+            450
+          ],
+          [
+            451,
+            600
+          ],
+          [
+            601,
+            750
+          ],
+          [
+            751,
+            900
+          ],
+          [
+            901,
+            985
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "client/context.py",
+        "sha256": "902e003851dd72b005d770ee7724d29de91cc6139aeeb69b424a5ac176e12107",
+        "lines": 5,
+        "ranges": [
+          [
+            1,
+            5
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "client/extension.py",
+        "sha256": "61f53533b318acc452b26249eedc3a06b37107de8c146fb7f0592258705a759b",
+        "lines": 196,
+        "ranges": [
+          [
+            1,
+            150
+          ],
+          [
+            151,
+            196
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "client/session.py",
+        "sha256": "17895bd7fc0b98fd78f1ec48be89a3f27dca483f587cb32a4298ad9a6ba347eb",
+        "lines": 1506,
+        "ranges": [
+          [
+            1,
+            150
+          ],
+          [
+            151,
+            300
+          ],
+          [
+            301,
+            450
+          ],
+          [
+            451,
+            600
+          ],
+          [
+            601,
+            750
+          ],
+          [
+            751,
+            900
+          ],
+          [
+            901,
+            1050
+          ],
+          [
+            1051,
+            1200
+          ],
+          [
+            1201,
+            1350
+          ],
+          [
+            1351,
+            1506
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "client/session_group.py",
+        "sha256": "1038cf7a62e6c24a69576307122e9408d5438f12b48f269dfe6b0b772fcc8861",
+        "lines": 453,
+        "ranges": [
+          [
+            1,
+            160
+          ],
+          [
+            161,
+            320
+          ],
+          [
+            321,
+            453
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "client/sse.py",
+        "sha256": "1d00b57282c7aaa94918f8e84a93bb08b241806bd172ca54723808588e92b581",
+        "lines": 171,
+        "ranges": [
+          [
+            1,
+            160
+          ],
+          [
+            161,
+            171
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "client/stdio.py",
+        "sha256": "c4a9de7119f35366037dbf8d51ab5cb6438e15e120730f65f32cdacdeea9328a",
+        "lines": 355,
+        "ranges": [
+          [
+            1,
+            150
+          ],
+          [
+            151,
+            300
+          ],
+          [
+            301,
+            355
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "client/streamable_http.py",
+        "sha256": "60633eecc51ff986de1b71f8a3a23e8c7b2d4bd1cd06d1d49557522e6d74a843",
+        "lines": 793,
+        "ranges": [
+          [
+            1,
+            160
+          ],
+          [
+            161,
+            320
+          ],
+          [
+            321,
+            480
+          ],
+          [
+            481,
+            640
+          ],
+          [
+            641,
+            793
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "client/subscriptions.py",
+        "sha256": "e42f4c52a6d8eb413c9c0ae026639a16036795a0c4c1fc77b0408448de56af96",
+        "lines": 282,
+        "ranges": [
+          [
+            1,
+            140
+          ],
+          [
+            141,
+            282
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "client/_input_required.py",
+        "sha256": "b15a46719d2d62e2df7f43d558bfc42326b82d0e583b3a5cda8ed1f276d8823b",
+        "lines": 127,
+        "ranges": [
+          [
+            1,
+            127
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "client/_memory.py",
+        "sha256": "9d89e04f2f9a0e1f7b02f4e484c0c9a21015564f1276f6a4238272f90865bd43",
+        "lines": 109,
+        "ranges": [
+          [
+            1,
+            109
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "client/_probe.py",
+        "sha256": "dc5f25886fcff0ab3e59a4302d58378974ae629f0beed77a3bdad25351622192",
+        "lines": 114,
+        "ranges": [
+          [
+            1,
+            114
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "client/_transport.py",
+        "sha256": "1323c505e7e6fc6804bb8f7548a1740e5d4d023f6e2a89a35c14c67524e39d48",
+        "lines": 21,
+        "ranges": [
+          [
+            1,
+            21
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "client/__init__.py",
+        "sha256": "f1631552bc74d9e42e2815d4ead0f57846c69f14409ea4d68417861df0487c39",
+        "lines": 44,
+        "ranges": [
+          [
+            1,
+            44
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "client/__main__.py",
+        "sha256": "e2c8aecb6e3876932ab153ed786dde038fc4634f8f0a14b7403b5e1d75988bb6",
+        "lines": 81,
+        "ranges": [
+          [
+            1,
+            81
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "os/posix/utilities.py",
+        "sha256": "ca2dfa41f56775928c66cf87d5a286f0a4bb8ac40bdc4e58ffb87de6b90c7d57",
+        "lines": 63,
+        "ranges": [
+          [
+            1,
+            63
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "os/posix/__init__.py",
+        "sha256": "97fda3f23861830ebdb3ff9e1f87420e4e10631365c4a188a5a382bdc6efd509",
+        "lines": 1,
+        "ranges": [
+          [
+            1,
+            1
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "os/win32/utilities.py",
+        "sha256": "98e87c776a14cf326e63f8da007119156d3ad643ae7fbf27e9b6e6ef1dc534bf",
+        "lines": 292,
+        "ranges": [
+          [
+            1,
+            150
+          ],
+          [
+            151,
+            292
+          ],
+          [
+            1,
+            160
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "os/win32/__init__.py",
+        "sha256": "ef1c88eca5a96610d2de898610172edf6d3443e0e322c4bb73e6bebeb9f6f18e",
+        "lines": 1,
+        "ranges": [
+          [
+            1,
+            1
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "os/__init__.py",
+        "sha256": "baa68621f085e08d083de4ac10464c37066e0c5f7553458a0086c370accf44ba",
+        "lines": 1,
+        "ranges": [
+          [
+            1,
+            1
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "py.typed",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "lines": 1,
+        "ranges": [
+          [
+            1,
+            1
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "server/apps.py",
+        "sha256": "b2b92c3041050478edcab6764bdabbba94358e1122ba3e1f3fd866f6004f3aca",
+        "lines": 241,
+        "ranges": [
+          [
+            1,
+            160
+          ],
+          [
+            161,
+            241
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "server/auth/errors.py",
+        "sha256": "f188e57a324f97ea8c8d9adb2530f330f04e00e2139f40dad290b94169fd41d1",
+        "lines": 5,
+        "ranges": [
+          [
+            1,
+            5
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "server/auth/handlers/authorize.py",
+        "sha256": "239e879a66ad7287279d0f8304a53a48de784782dceeb454b3abd72f187223f9",
+        "lines": 221,
+        "ranges": [
+          [
+            1,
+            160
+          ],
+          [
+            161,
+            221
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "server/auth/handlers/metadata.py",
+        "sha256": "9963e4aecd437c6f90cead67654d87cf0c52c24f0afef5def99a440d9d24fd00",
+        "lines": 29,
+        "ranges": [
+          [
+            1,
+            29
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "server/auth/handlers/register.py",
+        "sha256": "01f0c686d350a5ed422e6cb71b66643deafca348f98c2e2f897f85a588bcda98",
+        "lines": 154,
+        "ranges": [
+          [
+            1,
+            154
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "server/auth/handlers/revoke.py",
+        "sha256": "eb3f535b5fbda09d3c1a544dde9acca24cd05723dd2e12da4050bf9dd418094e",
+        "lines": 87,
+        "ranges": [
+          [
+            1,
+            87
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "server/auth/handlers/token.py",
+        "sha256": "e687ba9560901995faa20dfb99520204b3541c200833135193277c8944a12ca6",
+        "lines": 275,
+        "ranges": [
+          [
+            1,
+            160
+          ],
+          [
+            161,
+            275
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "server/auth/handlers/__init__.py",
+        "sha256": "2ae56e00764bba916e501a78e9ae3c877015f59e90a7bfc83e5c5e806896fb1b",
+        "lines": 1,
+        "ranges": [
+          [
+            1,
+            1
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "server/auth/json_response.py",
+        "sha256": "10cbf7a801fadaf46ec3c5c11dd154de4629d12f0977a0e34467f073b25cf575",
+        "lines": 10,
+        "ranges": [
+          [
+            1,
+            10
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "server/auth/middleware/auth_context.py",
+        "sha256": "1f075f488c042af4df58d9f58ed2d341b0184c8e494f77cf6c5e4c671fe4d97d",
+        "lines": 46,
+        "ranges": [
+          [
+            1,
+            46
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "server/auth/middleware/bearer_auth.py",
+        "sha256": "3f8b18f98c7d779144f6c7ae88eb697af9d57d9bebec7939e868fbce7c28bb35",
+        "lines": 165,
+        "ranges": [
+          [
+            1,
+            150
+          ],
+          [
+            151,
+            165
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "server/auth/middleware/client_auth.py",
+        "sha256": "cffb0953c3df9f7c27c0a35cdb8ce3baf3cdaf867d5254f553bc3bbf287924bc",
+        "lines": 119,
+        "ranges": [
+          [
+            1,
+            119
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "server/auth/middleware/__init__.py",
+        "sha256": "873127ce3491eb5381641ac3c4bf0e9b72cb113db4b5e2b51d2fa9aa7a90115c",
+        "lines": 1,
+        "ranges": [
+          [
+            1,
+            1
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "server/auth/provider.py",
+        "sha256": "92555c74a320a8ca4165c79841208c4cc19f4d6e1ec1c2c4fa8a9e4f90bccd02",
+        "lines": 380,
+        "ranges": [
+          [
+            1,
+            140
+          ],
+          [
+            141,
+            280
+          ],
+          [
+            281,
+            380
+          ],
+          [
+            1,
+            160
+          ],
+          [
+            161,
+            320
+          ],
+          [
+            321,
+            380
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "server/auth/routes.py",
+        "sha256": "f0d0bb5d076b0384d59623970af9150c78d519808438eb081fef7e9773043df7",
+        "lines": 261,
+        "ranges": [
+          [
+            1,
+            160
+          ],
+          [
+            161,
+            261
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "server/auth/settings.py",
+        "sha256": "3a0e075ed2414749f14fd19a5bf2c6849db49a34de483c243249725406de43ae",
+        "lines": 70,
+        "ranges": [
+          [
+            1,
+            70
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "server/auth/__init__.py",
+        "sha256": "fc9848dd853a60feb8d35b58af42ff162eab26152eb094f27bec59774ff10aa4",
+        "lines": 1,
+        "ranges": [
+          [
+            1,
+            1
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "server/caching.py",
+        "sha256": "0182ef97d3d73603e6567b27530a7cba36c24bb332d7162e5c32d36fb2d4cf79",
+        "lines": 85,
+        "ranges": [
+          [
+            1,
+            85
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "server/connection.py",
+        "sha256": "4df4299703fc1443cd6fb5301f24256567249849c786f5801a0a85b9486f2da4",
+        "lines": 493,
+        "ranges": [
+          [
+            1,
+            150
+          ],
+          [
+            151,
+            300
+          ],
+          [
+            301,
+            450
+          ],
+          [
+            451,
+            493
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "server/context.py",
+        "sha256": "796c7c8b479e77877ba906f51dd07ccb6e3157a5809789238fb5fc7fdbfedace",
+        "lines": 194,
+        "ranges": [
+          [
+            1,
+            150
+          ],
+          [
+            151,
+            194
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "server/elicitation.py",
+        "sha256": "bba56eeeb8853a03e887f4453d09adba69528f933118d08be859ff1ec65c7a11",
+        "lines": 191,
+        "ranges": [
+          [
+            1,
+            160
+          ],
+          [
+            161,
+            191
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "server/extension.py",
+        "sha256": "c5c4fb32aa380b3114c3610a80922db9a4e1ab186de8a7b88c0ce7c89e755394",
+        "lines": 185,
+        "ranges": [
+          [
+            1,
+            160
+          ],
+          [
+            161,
+            185
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "server/fastmcp.py",
+        "sha256": "22c06aed18fb2ae51bbe79c7310a45ab54742342d9b9f2c87735b0e355838b09",
+        "lines": 16,
+        "ranges": [
+          [
+            1,
+            16
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "server/lowlevel/helper_types.py",
+        "sha256": "2d50b437a24c3f29d5b387cc2527c19aa2888a01cd2ec44d841bdb534eab83a0",
+        "lines": 11,
+        "ranges": [
+          [
+            1,
+            11
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "server/lowlevel/server.py",
+        "sha256": "9436877f4fb6c9696ae96ee9f2483a701b084062d15b7d72fe8737dd772e8e2a",
+        "lines": 852,
+        "ranges": [
+          [
+            1,
+            150
+          ],
+          [
+            151,
+            300
+          ],
+          [
+            301,
+            450
+          ],
+          [
+            451,
+            600
+          ],
+          [
+            601,
+            750
+          ],
+          [
+            751,
+            852
+          ],
+          [
+            301,
+            450
+          ],
+          [
+            451,
+            600
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "server/lowlevel/__init__.py",
+        "sha256": "cd4306169c9af4c5722e3341a28ee590c1a33d40cb703b043216c27e8bb10934",
+        "lines": 3,
+        "ranges": [
+          [
+            1,
+            3
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "server/mcpserver/context.py",
+        "sha256": "546e7616543a525dd287722851dba92ede6158e14dfa1ba703adb5857e0e956d",
+        "lines": 391,
+        "ranges": [
+          [
+            1,
+            160
+          ],
+          [
+            161,
+            320
+          ],
+          [
+            321,
+            391
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "server/mcpserver/exceptions.py",
+        "sha256": "14564c0dedfe79dbbe1a5b74dfdc736533ded962a2c7e6c50471706abd860b1d",
+        "lines": 76,
+        "ranges": [
+          [
+            1,
+            76
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "server/mcpserver/prompts/base.py",
+        "sha256": "e28a59bfb0f20ddf0f249973c8cc72bde9e59e01dae7bff6699766d2df8b31b6",
+        "lines": 213,
+        "ranges": [
+          [
+            1,
+            160
+          ],
+          [
+            161,
+            213
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "server/mcpserver/prompts/manager.py",
+        "sha256": "8f77c099008041d6c42fdf00ec8a35b80ab09383dc751f6ba7efc02e1f800da1",
+        "lines": 67,
+        "ranges": [
+          [
+            1,
+            67
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "server/mcpserver/prompts/__init__.py",
+        "sha256": "e01b0cc68628969a3183be319249330852fcbef7642d52797083cdb35343d49a",
+        "lines": 4,
+        "ranges": [
+          [
+            1,
+            4
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "server/mcpserver/resolve.py",
+        "sha256": "401a60e79333f4443aa63a635779d7dd2b6d802db6e7d39d4245f3caae1996d6",
+        "lines": 846,
+        "ranges": [
+          [
+            1,
+            160
+          ],
+          [
+            161,
+            320
+          ],
+          [
+            321,
+            480
+          ],
+          [
+            481,
+            640
+          ],
+          [
+            641,
+            800
+          ],
+          [
+            801,
+            846
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "server/mcpserver/resources/base.py",
+        "sha256": "624106db8a446dbb186014f01065f8a97781464a5085291cfe8e985ed635c3ed",
+        "lines": 43,
+        "ranges": [
+          [
+            1,
+            43
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "server/mcpserver/resources/resource_manager.py",
+        "sha256": "315bb0daf72237d34b1e5343fdebe88de0fd70269b671a80ae422b4e3c7e4fd5",
+        "lines": 137,
+        "ranges": [
+          [
+            1,
+            137
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "server/mcpserver/resources/templates.py",
+        "sha256": "4d0d702c63ae31185f7798fcc912536271cb2fca2c3e818a1fe7d2aee43ce03e",
+        "lines": 248,
+        "ranges": [
+          [
+            1,
+            160
+          ],
+          [
+            161,
+            248
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "server/mcpserver/resources/types.py",
+        "sha256": "5ee0e24475ce1cf280c322014f65e5e23c247a7b7b0a2f76b9487a2e66c745d1",
+        "lines": 230,
+        "ranges": [
+          [
+            1,
+            160
+          ],
+          [
+            161,
+            230
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "server/mcpserver/resources/__init__.py",
+        "sha256": "14b1901dc3a3bccfbb00d9744e8ebc49752e7a8bc819ec17a73a545a963384a8",
+        "lines": 26,
+        "ranges": [
+          [
+            1,
+            26
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "server/mcpserver/server.py",
+        "sha256": "fa61ae394dc4809c683f2878c3fc172da43c1387a3408835f89137ea34d57d4d",
+        "lines": 1418,
+        "ranges": [
+          [
+            1,
+            160
+          ],
+          [
+            161,
+            320
+          ],
+          [
+            321,
+            480
+          ],
+          [
+            481,
+            640
+          ],
+          [
+            641,
+            800
+          ],
+          [
+            801,
+            960
+          ],
+          [
+            961,
+            1120
+          ],
+          [
+            1121,
+            1280
+          ],
+          [
+            1281,
+            1418
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "server/mcpserver/tools/base.py",
+        "sha256": "df4074d47d76ff65cad4df903fa2543cb95ca1dd27f3501b9c2a4c0e55045a99",
+        "lines": 213,
+        "ranges": [
+          [
+            1,
+            160
+          ],
+          [
+            161,
+            213
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "server/mcpserver/tools/tool_manager.py",
+        "sha256": "a5e1017ff4a9cce3c93ad379d578e571c3187c9250a295750cb2e18717903838",
+        "lines": 87,
+        "ranges": [
+          [
+            1,
+            87
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "server/mcpserver/tools/__init__.py",
+        "sha256": "65ba318723090e5f3b4af8e8bfc630358c0d662e793fd5619a94e30592deb279",
+        "lines": 4,
+        "ranges": [
+          [
+            1,
+            4
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "server/mcpserver/utilities/context_injection.py",
+        "sha256": "e290e7f87ad2771cd03382d44daea0015f716c12c0e0a924c73c11268f1aafad",
+        "lines": 68,
+        "ranges": [
+          [
+            1,
+            68
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "server/mcpserver/utilities/func_metadata.py",
+        "sha256": "83c857d42880f520f9ee34b2e180c3838e296b1240fb413c6212a087fbcbef54",
+        "lines": 655,
+        "ranges": [
+          [
+            1,
+            160
+          ],
+          [
+            161,
+            320
+          ],
+          [
+            321,
+            480
+          ],
+          [
+            481,
+            640
+          ],
+          [
+            641,
+            655
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "server/mcpserver/utilities/logging.py",
+        "sha256": "a70be3d3f63d120f5a9b752d7c45502d48352e4d3b230aaeff6a432bb42da21f",
+        "lines": 39,
+        "ranges": [
+          [
+            1,
+            39
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "server/mcpserver/utilities/types.py",
+        "sha256": "8ab1dd04d46c0644c39e95a64a907969b91442ee09fb5ac0baf0c1425ae12cff",
+        "lines": 101,
+        "ranges": [
+          [
+            1,
+            101
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "server/mcpserver/utilities/__init__.py",
+        "sha256": "454df7bd27d6331d3e5833794a8c22d8cf61e2d7214260e2cc64cbf7e9063ddf",
+        "lines": 1,
+        "ranges": [
+          [
+            1,
+            1
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "server/mcpserver/__init__.py",
+        "sha256": "4479ca6d7527a9719329c5678e16a471999181650cd09646381cdd58a4beb67c",
+        "lines": 61,
+        "ranges": [
+          [
+            1,
+            61
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "server/models.py",
+        "sha256": "98e0d37fef2eedf0b355a85087b3d9676c6f71c3a6672e197510eb152bc1e4cf",
+        "lines": 17,
+        "ranges": [
+          [
+            1,
+            17
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "server/request_state.py",
+        "sha256": "0dabe65f9d113b85e17e38dac1cb6c543dab6e0d8adcf45c931b212ea4dec429",
+        "lines": 454,
+        "ranges": [
+          [
+            1,
+            160
+          ],
+          [
+            161,
+            320
+          ],
+          [
+            321,
+            454
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "server/runner.py",
+        "sha256": "be55cb42cbca261c2997bb4f54e2ac892fbb5c35935409ef951ac9f73b527b29",
+        "lines": 872,
+        "ranges": [
+          [
+            1,
+            150
+          ],
+          [
+            151,
+            300
+          ],
+          [
+            301,
+            450
+          ],
+          [
+            451,
+            600
+          ],
+          [
+            601,
+            750
+          ],
+          [
+            751,
+            872
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "server/session.py",
+        "sha256": "6132ca68285d0f2a20d19f0e346b11fb866f2cf4850a09b0efd44df974520726",
+        "lines": 489,
+        "ranges": [
+          [
+            1,
+            150
+          ],
+          [
+            151,
+            300
+          ],
+          [
+            301,
+            450
+          ],
+          [
+            451,
+            489
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "server/sse.py",
+        "sha256": "e12cfb0adba6b70221de04c53f18e5723d19f7ea4c490f7ba96453b3ae444184",
+        "lines": 287,
+        "ranges": [
+          [
+            1,
+            160
+          ],
+          [
+            161,
+            287
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "server/stdio.py",
+        "sha256": "2a3e73aee57056a05def81cbad210458437de97b4da0c9993325b19636bca9ec",
+        "lines": 217,
+        "ranges": [
+          [
+            1,
+            160
+          ],
+          [
+            161,
+            217
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "server/streamable_http.py",
+        "sha256": "7d7c146f26de348e86afee74aa74ea3f9273b1450ef91a2cedac0dfea9eb0eac",
+        "lines": 1135,
+        "ranges": [
+          [
+            1,
+            160
+          ],
+          [
+            161,
+            320
+          ],
+          [
+            321,
+            480
+          ],
+          [
+            481,
+            640
+          ],
+          [
+            641,
+            800
+          ],
+          [
+            801,
+            960
+          ],
+          [
+            961,
+            1120
+          ],
+          [
+            1121,
+            1135
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "server/streamable_http_manager.py",
+        "sha256": "7820bb1566550ffe7b6955b7f5474c774aa9ddefc9fe4fdd15f352a7e8563170",
+        "lines": 427,
+        "ranges": [
+          [
+            1,
+            150
+          ],
+          [
+            151,
+            300
+          ],
+          [
+            301,
+            427
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "server/subscriptions.py",
+        "sha256": "b0583069a8954ab34ea9fbd49817722e4a304f1f05ea878b0b5ca869b6bf53f3",
+        "lines": 254,
+        "ranges": [
+          [
+            1,
+            140
+          ],
+          [
+            141,
+            254
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "server/transport_security.py",
+        "sha256": "0ef1be70594071ed248bf0438de405cb27fe9b07c234213da9103caaeb917a7c",
+        "lines": 183,
+        "ranges": [
+          [
+            1,
+            160
+          ],
+          [
+            161,
+            183
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "server/validation.py",
+        "sha256": "a53b70cf540ad795026773d2cc54c6852aa26327d09622d2430b9af244313140",
+        "lines": 93,
+        "ranges": [
+          [
+            1,
+            93
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "server/_otel.py",
+        "sha256": "93bd634a50f553bb908f1d305879035bd5bec2a52f75d64871ee6c342ac98e6b",
+        "lines": 72,
+        "ranges": [
+          [
+            1,
+            72
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "server/_streamable_http_modern.py",
+        "sha256": "952f99a1b5c0d351b73321729892856e71f49546e7c6fefe7a34366f7e0643d6",
+        "lines": 526,
+        "ranges": [
+          [
+            1,
+            150
+          ],
+          [
+            151,
+            300
+          ],
+          [
+            301,
+            450
+          ],
+          [
+            451,
+            526
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "server/__init__.py",
+        "sha256": "8d5c6e0c6017f9cc5ee242f3dab83c5afcec5117a5e0d78413d83a7c8e9eaac6",
+        "lines": 7,
+        "ranges": [
+          [
+            1,
+            7
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "server/__main__.py",
+        "sha256": "4539cf1547883b7c4f02411f64151e9d0d2f9c1718e7d4cf4ef80e7db7ad54c4",
+        "lines": 24,
+        "ranges": [
+          [
+            1,
+            24
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "shared/auth.py",
+        "sha256": "899afdfa4f368e89d6672141431b6a32f839f9e38a7f0b3a6e6654cda25200e2",
+        "lines": 258,
+        "ranges": [
+          [
+            1,
+            160
+          ],
+          [
+            161,
+            258
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "shared/auth_utils.py",
+        "sha256": "697d65d52de90e513ff6bd05bf6e48efa86e269d70a81db989444e6f6e71bae7",
+        "lines": 80,
+        "ranges": [
+          [
+            1,
+            80
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "shared/context.py",
+        "sha256": "af8c9b53361f92df41cce529cc1c0360f66d25fd1f4c43925316534b0140fdf4",
+        "lines": 85,
+        "ranges": [
+          [
+            1,
+            85
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "shared/direct_dispatcher.py",
+        "sha256": "9e714ff3604f09443459bab646e11f6d2d116e78a5a3c05112798035c341bd4f",
+        "lines": 337,
+        "ranges": [
+          [
+            1,
+            150
+          ],
+          [
+            151,
+            300
+          ],
+          [
+            301,
+            337
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "shared/dispatcher.py",
+        "sha256": "3a61966dcb0aeed24211e2d7e51b0937adf63125eb2f3e51fc6d0f66909aa6b2",
+        "lines": 283,
+        "ranges": [
+          [
+            1,
+            140
+          ],
+          [
+            141,
+            283
+          ]
+        ],
+        "status": "complete",
+        "runtime": "selected normal component behavior executed; remaining behavior source-only",
+        "runtimeEvidence": [
+          {
+            "receipt": "mcp-context-contract-receipt-1792277240420.json",
+            "scope": "Three normal string-context, stream-close and request-ID helper checks only; no dispatcher integration or isolation proof."
+          }
+        ]
+      },
+      {
+        "path": "shared/exceptions.py",
+        "sha256": "3f78550758342eca46c8c17cf4a8659d4a5f3e1e074b032e940fc07e0f8b5fae",
+        "lines": 119,
+        "ranges": [
+          [
+            1,
+            119
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "shared/extension.py",
+        "sha256": "f17caff86474641d7a1935fb9a756a663f554e5ea77c5440b76a35804d97ffc0",
+        "lines": 28,
+        "ranges": [
+          [
+            1,
+            28
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "shared/inbound.py",
+        "sha256": "eb09c0a06368f01553c54045ecf0b9ca0931717e1ec837a54433913836f91829",
+        "lines": 595,
+        "ranges": [
+          [
+            1,
+            150
+          ],
+          [
+            151,
+            300
+          ],
+          [
+            301,
+            450
+          ],
+          [
+            451,
+            595
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "shared/jsonrpc_dispatcher.py",
+        "sha256": "bb2b8a71f2d8b4916d6e3805b523d1a4d1c0a54f6a2ff48c337e3bed0b17e48d",
+        "lines": 856,
+        "ranges": [
+          [
+            1,
+            160
+          ],
+          [
+            161,
+            320
+          ],
+          [
+            321,
+            480
+          ],
+          [
+            481,
+            640
+          ],
+          [
+            641,
+            800
+          ],
+          [
+            801,
+            856
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "shared/memory.py",
+        "sha256": "53e2faf2285e7a0c5da280befa6c48804c17a25965c557524895963a9d7da8fe",
+        "lines": 33,
+        "ranges": [
+          [
+            1,
+            33
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "shared/message.py",
+        "sha256": "52878c123cda977d88d519842e7d33023e64ed3465b977479be256fe206d1c29",
+        "lines": 63,
+        "ranges": [
+          [
+            1,
+            63
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "shared/metadata_utils.py",
+        "sha256": "34ec33f467ff3ea55c35283a44ed23bb30349b7a272979e876c5ee2939f1bdd0",
+        "lines": 46,
+        "ranges": [
+          [
+            1,
+            46
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "shared/path_security.py",
+        "sha256": "e9045fa4bddc28e102a50bbbf527fe62995358630b8131a427ea0b2cf2647ca1",
+        "lines": 176,
+        "ranges": [
+          [
+            1,
+            160
+          ],
+          [
+            161,
+            176
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "shared/peer.py",
+        "sha256": "17a2f875ceba83340a0e76fdb8874c491c5f75aefdeac6d928af446eace1f9ab",
+        "lines": 240,
+        "ranges": [
+          [
+            1,
+            120
+          ],
+          [
+            121,
+            240
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "shared/subscriptions.py",
+        "sha256": "98c4b0745654a66a42c9d1ee2a0c2e1dbffc555a57ce7e152b0aadbc6e587b95",
+        "lines": 111,
+        "ranges": [
+          [
+            1,
+            111
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "shared/tool_name_validation.py",
+        "sha256": "d8c4050d58040f904c4324b4fcbdb86acd577fe9093646c4c5e1e2367be9b60f",
+        "lines": 129,
+        "ranges": [
+          [
+            1,
+            129
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "shared/transport_context.py",
+        "sha256": "5b6320e3094b0f66fdef39d601c5ecf720679748f08665c2c5e1d3c5fb029318",
+        "lines": 45,
+        "ranges": [
+          [
+            1,
+            45
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "shared/uri_template.py",
+        "sha256": "6f782bbc186a69fe101d3d6ea1dc443a0f5a50dc8e28e780cb7f85f07617b445",
+        "lines": 1116,
+        "ranges": [
+          [
+            1,
+            160
+          ],
+          [
+            161,
+            320
+          ],
+          [
+            321,
+            480
+          ],
+          [
+            481,
+            640
+          ],
+          [
+            641,
+            800
+          ],
+          [
+            801,
+            960
+          ],
+          [
+            961,
+            1116
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "shared/_callable_inspection.py",
+        "sha256": "f0e0d11fd065b3b9bf9603ea4b472898a02cc1644b1872db4975cee6a6809296",
+        "lines": 33,
+        "ranges": [
+          [
+            1,
+            33
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "shared/_compat.py",
+        "sha256": "6f3407d5caeb5be54d5ffa9e02891eae82e3e05ddbaa87115d14fd536ef54122",
+        "lines": 19,
+        "ranges": [
+          [
+            1,
+            19
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "shared/_context_streams.py",
+        "sha256": "e0e98561d6b12a0b4376e0fb0e72195d7f5941c15da3e36a1d881fb954e27a30",
+        "lines": 119,
+        "ranges": [
+          [
+            1,
+            119
+          ]
+        ],
+        "status": "complete",
+        "runtime": "selected normal component behavior executed; remaining behavior source-only",
+        "runtimeEvidence": [
+          {
+            "receipt": "mcp-context-contract-receipt-1792277240420.json",
+            "scope": "Three normal string-context, stream-close and request-ID helper checks only; no dispatcher integration or isolation proof."
+          }
+        ]
+      },
+      {
+        "path": "shared/_httpx_utils.py",
+        "sha256": "f758208d93eb85d6061650d3257f2fc072fae1d04f871257e9cc4464d33b3e1c",
+        "lines": 222,
+        "ranges": [
+          [
+            1,
+            160
+          ],
+          [
+            161,
+            222
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "shared/_otel.py",
+        "sha256": "d4f32454e734d05be5ab1993802c3fe210ef6aa5a564586d72819f194d153921",
+        "lines": 60,
+        "ranges": [
+          [
+            1,
+            60
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "shared/_request_clock.py",
+        "sha256": "eab41ca247a1b6be89cd39016d19b4ddbb48afc1cbb6f376e31c1de2da2c2d7e",
+        "lines": 81,
+        "ranges": [
+          [
+            1,
+            81
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "shared/_stream_protocols.py",
+        "sha256": "f05aa65d1f4d378ad5adebc75a71192f47070def07e2295e66224e59f24614b7",
+        "lines": 49,
+        "ranges": [
+          [
+            1,
+            49
+          ]
+        ],
+        "status": "complete",
+        "runtime": "selected normal component behavior executed; remaining behavior source-only",
+        "runtimeEvidence": [
+          {
+            "receipt": "mcp-context-contract-receipt-1792277240420.json",
+            "scope": "Three normal string-context, stream-close and request-ID helper checks only; no dispatcher integration or isolation proof."
+          }
+        ]
+      },
+      {
+        "path": "shared/__init__.py",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "lines": 1,
+        "ranges": [
+          [
+            1,
+            1
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "types/jsonrpc.py",
+        "sha256": "a02940c9f57a5534aabbbc7ec5e906753e0267175e5540ce27f9e8cf5d2e202d",
+        "lines": 13,
+        "ranges": [
+          [
+            1,
+            13
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "types/methods.py",
+        "sha256": "4e28a5bef52a2735a1447fa78333321448751628bc74983e7ff8c85a7fe00355",
+        "lines": 13,
+        "ranges": [
+          [
+            1,
+            13
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "types/version.py",
+        "sha256": "cac402af8adfc867955ea67ee0a6822db76b2301b514f695cba9815ce81b5d4c",
+        "lines": 13,
+        "ranges": [
+          [
+            1,
+            13
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "types/__init__.py",
+        "sha256": "a2f5693dd537221cc2d6ecc5e2a6955134472a383f307cb7fe1072d3d0211676",
+        "lines": 31,
+        "ranges": [
+          [
+            1,
+            31
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "__init__.py",
+        "sha256": "c989b67127034c5979af20fa4a298f9dbd03b13c522a1954bc8d59aefb084f9a",
+        "lines": 145,
+        "ranges": [
+          [
+            1,
+            145
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      }
+    ]
+  },
+  "mcp_types": {
+    "name": "mcp-types",
+    "version": "2.3.0",
+    "root": "C:/Users/kotar/.codex/research/assessment-evidence-venv/Lib/site-packages/mcp_types",
+    "provenance": "mcp-types-installed-provenance.json; actual isolated-venv resolved dependency, no Git commit inferred",
+    "files": [
+      {
+        "path": "jsonrpc.py",
+        "sha256": "c2d1bc1d07c5ebc7597919e4f65611c3887d50410f115b4a49d7918f68ffbf89",
+        "lines": 148,
+        "ranges": [
+          [
+            1,
+            148
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "methods.py",
+        "sha256": "eaa0bf7b113edd7ed091a0a7928156b1aa5023d63c5c491a4add1fc62468a10d",
+        "lines": 746,
+        "ranges": [
+          [
+            1,
+            150
+          ],
+          [
+            151,
+            300
+          ],
+          [
+            301,
+            450
+          ],
+          [
+            451,
+            600
+          ],
+          [
+            601,
+            746
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "py.typed",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "lines": 1,
+        "ranges": [
+          [
+            1,
+            1
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "version.py",
+        "sha256": "e244c0bb0dda774b50af4a2f1a2145be6511794fdfd63e6a6c7afe60ee62e51e",
+        "lines": 74,
+        "ranges": [
+          [
+            1,
+            74
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "_types.py",
+        "sha256": "0d07007bf5052c5fe123d6f12addae8fdcd4eabfd2b3a2fd639c3a47675b7d98",
+        "lines": 2198,
+        "ranges": [
+          [
+            1,
+            150
+          ],
+          [
+            151,
+            300
+          ],
+          [
+            301,
+            450
+          ],
+          [
+            451,
+            600
+          ],
+          [
+            601,
+            750
+          ],
+          [
+            751,
+            900
+          ],
+          [
+            901,
+            1050
+          ],
+          [
+            1051,
+            1200
+          ],
+          [
+            1201,
+            1350
+          ],
+          [
+            1351,
+            1500
+          ],
+          [
+            1501,
+            1650
+          ],
+          [
+            1651,
+            1800
+          ],
+          [
+            1801,
+            1950
+          ],
+          [
+            1951,
+            2100
+          ],
+          [
+            2101,
+            2198
+          ],
+          [
+            2040,
+            2198
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "_v2025_11_25/__init__.py",
+        "sha256": "88ed170d690fcb575bce4ba684dc74bdfe73968fff4f55a15429f8ca5069a5a7",
+        "lines": 3391,
+        "ranges": [
+          [
+            1,
+            160
+          ],
+          [
+            161,
+            320
+          ],
+          [
+            321,
+            480
+          ],
+          [
+            481,
+            640
+          ],
+          [
+            641,
+            800
+          ],
+          [
+            801,
+            960
+          ],
+          [
+            961,
+            1120
+          ],
+          [
+            1121,
+            1280
+          ],
+          [
+            1281,
+            1440
+          ],
+          [
+            1441,
+            1600
+          ],
+          [
+            1601,
+            1760
+          ],
+          [
+            1761,
+            1920
+          ],
+          [
+            1921,
+            2080
+          ],
+          [
+            2081,
+            2240
+          ],
+          [
+            2241,
+            2400
+          ],
+          [
+            2401,
+            2560
+          ],
+          [
+            2561,
+            2720
+          ],
+          [
+            2721,
+            2880
+          ],
+          [
+            2881,
+            3040
+          ],
+          [
+            3041,
+            3200
+          ],
+          [
+            3201,
+            3360
+          ],
+          [
+            3361,
+            3391
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "_v2026_07_28/__init__.py",
+        "sha256": "4f8286444b1108c62705fe72bc426e3e7fe6ea275b6d137914650f2601785a93",
+        "lines": 3617,
+        "ranges": [
+          [
+            1,
+            160
+          ],
+          [
+            161,
+            320
+          ],
+          [
+            321,
+            480
+          ],
+          [
+            481,
+            640
+          ],
+          [
+            641,
+            800
+          ],
+          [
+            801,
+            960
+          ],
+          [
+            961,
+            1120
+          ],
+          [
+            1121,
+            1280
+          ],
+          [
+            1281,
+            1440
+          ],
+          [
+            1441,
+            1600
+          ],
+          [
+            1601,
+            1760
+          ],
+          [
+            1761,
+            1920
+          ],
+          [
+            1921,
+            2080
+          ],
+          [
+            2081,
+            2240
+          ],
+          [
+            2241,
+            2400
+          ],
+          [
+            2401,
+            2560
+          ],
+          [
+            2561,
+            2720
+          ],
+          [
+            2721,
+            2880
+          ],
+          [
+            2881,
+            3040
+          ],
+          [
+            3041,
+            3200
+          ],
+          [
+            3201,
+            3360
+          ],
+          [
+            3361,
+            3520
+          ],
+          [
+            3521,
+            3617
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "_wire_base.py",
+        "sha256": "5dccb64385fc5083cb2bcca72bbf746b41ef2395d591f4784eea9d54385533b6",
+        "lines": 9,
+        "ranges": [
+          [
+            1,
+            9
+          ],
+          [
+            1,
+            9
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "__init__.py",
+        "sha256": "791de752e5f95ca93c380499561ccb3b6b787627bd34e62a3e9f32176258392f",
+        "lines": 453,
+        "ranges": [
+          [
+            1,
+            150
+          ],
+          [
+            151,
+            300
+          ],
+          [
+            301,
+            453
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      }
+    ]
+  },
+  "deepdiff": {
+    "name": "deepdiff",
+    "version": "8.6.1",
+    "root": "C:/Users/kotar/.codex/research/assessment-evidence-sdk-sources/deepdiff-8.6.1/source/deepdiff-8.6.1",
+    "provenance": "deepdiff-source-acquisition-1792280362677.json; exact AgentDojo locked sdist, hash verified, no package import/install",
+    "files": [
+      {
+        "path": ".bumpversion.cfg",
+        "sha256": "2a8c13076e83e8c458b72774d3b3957ee6fd014532dea06c588b22d151453857",
+        "lines": 17,
+        "ranges": [
+          [
+            1,
+            17
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": ".coveragerc",
+        "sha256": "f6fd49f927df30ded987f0466a0029ff30c9130ced1e1ae350cf7bfb28071d94",
+        "lines": 5,
+        "ranges": [
+          [
+            1,
+            5
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": ".direnvrc.example",
+        "sha256": "2cab018fd953afbaa856530511d099b9dddd3e9d2252b35861261b4c30a84d54",
+        "lines": 11,
+        "ranges": [
+          [
+            1,
+            11
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": ".envrc.example",
+        "sha256": "597bff276cfc6294167711aec0e69c458a34a691c3eec1e2f40e5702d0026a1a",
+        "lines": 1,
+        "ranges": [
+          [
+            1,
+            1
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": ".github/FUNDING.yml",
+        "sha256": "8578c98ffdb07be277342eb7d97468942cb79f92fa1908a201de410e8d42f88a",
+        "lines": 2,
+        "ranges": [
+          [
+            1,
+            2
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": ".github/ISSUE_TEMPLATE/bug_report.md",
+        "sha256": "50c977136961e91eb7f45380eefbe867323f0221f49e03d914649c6a87062da3",
+        "lines": 28,
+        "ranges": [
+          [
+            1,
+            28
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": ".github/ISSUE_TEMPLATE/feature_request.md",
+        "sha256": "1f48c52f209a971b8e7eae4120144d28fcf8ee38a7778a7b4d8cf1ab356617d2",
+        "lines": 20,
+        "ranges": [
+          [
+            1,
+            20
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": ".github/workflows/main.yaml",
+        "sha256": "fdbe98f3cdd6cc1f2e05bb91f17f2607cbb41a13346008f30b96b864825f2b96",
+        "lines": 58,
+        "ranges": [
+          [
+            1,
+            58
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": ".gitignore",
+        "sha256": "e29935fad07872f7677e185026e733df5bf8e9a9baf729276cd1c69f60c5b198",
+        "lines": 77,
+        "ranges": [
+          [
+            1,
+            77
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "AUTHORS.md",
+        "sha256": "492d2a736fd1b4c9e448ac0f1460b4c726453d8045328c07efb4ef0a4c67a170",
+        "lines": 78,
+        "ranges": [
+          [
+            1,
+            78
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "CHANGELOG.md",
+        "sha256": "d00d4de98a9232f0fec01aaa479fdff50c3d0593e4e6e8c58ddb3c06375069e2",
+        "lines": 222,
+        "ranges": [
+          [
+            1,
+            160
+          ],
+          [
+            161,
+            222
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "CITATION.cff",
+        "sha256": "a506523690d5f2f81a7baaec3a3288a269769d72730bdc6a672c6f205937e641",
+        "lines": 10,
+        "ranges": [
+          [
+            1,
+            10
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "CLAUDE.md",
+        "sha256": "047de1c6f47d2151cf30c722d422a6f1ee3f0ad11cb54d8f606c92e1cbea1306",
+        "lines": 108,
+        "ranges": [
+          [
+            1,
+            108
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "conftest.py",
+        "sha256": "39c3cfb98b4b234b9c23b1467cbad2769d8031610c1fe3709f61f07b5b3371b8",
+        "lines": 110,
+        "ranges": [
+          [
+            1,
+            110
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "deepdiff/anyset.py",
+        "sha256": "ccdb134a4b4c401bc2515343d724e6f5a5ba9669dad58cca6c0acb7d8633263a",
+        "lines": 65,
+        "ranges": [
+          [
+            1,
+            65
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "deepdiff/base.py",
+        "sha256": "ff62f317e8b2be7695036be0b97054bcfda222220a40988b7127852812da037c",
+        "lines": 60,
+        "ranges": [
+          [
+            1,
+            60
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "deepdiff/colored_view.py",
+        "sha256": "114a89ab8c5b4768c5f089b575dfeb9744599190ce1eaf1ededab3e5ad2e200d",
+        "lines": 139,
+        "ranges": [
+          [
+            1,
+            139
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "deepdiff/commands.py",
+        "sha256": "c9d3d329214d8677edd0e73f8df061c904d0475c510edbea7bf76e9d62d092a9",
+        "lines": 238,
+        "ranges": [
+          [
+            1,
+            160
+          ],
+          [
+            161,
+            238
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "deepdiff/deephash.py",
+        "sha256": "4fb4e3d2410526ec2833f392d9925b5c2b32e4460897d6aaea87627723cf94ab",
+        "lines": 677,
+        "ranges": [
+          [
+            1,
+            160
+          ],
+          [
+            161,
+            320
+          ],
+          [
+            321,
+            480
+          ],
+          [
+            481,
+            640
+          ],
+          [
+            641,
+            677
+          ],
+          [
+            320,
+            442
+          ],
+          [
+            96,
+            165
+          ],
+          [
+            554,
+            635
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "deepdiff/delta.py",
+        "sha256": "6b9074d7a543fa161eee5f704a12fadb3d36d0f1ef0a098cc889a5f1709c9f1a",
+        "lines": 1247,
+        "ranges": [
+          [
+            1,
+            160
+          ],
+          [
+            161,
+            320
+          ],
+          [
+            321,
+            480
+          ],
+          [
+            481,
+            640
+          ],
+          [
+            641,
+            800
+          ],
+          [
+            801,
+            960
+          ],
+          [
+            961,
+            1120
+          ],
+          [
+            1121,
+            1247
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "deepdiff/diff.py",
+        "sha256": "4e7c54f120a7b05f14c31404e49354d4c4f16acb00e46afbf95380e4f46d32e4",
+        "lines": 1985,
+        "ranges": [
+          [
+            1,
+            160
+          ],
+          [
+            161,
+            320
+          ],
+          [
+            321,
+            480
+          ],
+          [
+            481,
+            640
+          ],
+          [
+            641,
+            800
+          ],
+          [
+            801,
+            960
+          ],
+          [
+            961,
+            1120
+          ],
+          [
+            1121,
+            1280
+          ],
+          [
+            1281,
+            1440
+          ],
+          [
+            1441,
+            1600
+          ],
+          [
+            1601,
+            1760
+          ],
+          [
+            1761,
+            1920
+          ],
+          [
+            1921,
+            1985
+          ],
+          [
+            420,
+            522
+          ],
+          [
+            320,
+            402
+          ],
+          [
+            1590,
+            1675
+          ],
+          [
+            1680,
+            1745
+          ],
+          [
+            1270,
+            1360
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "deepdiff/distance.py",
+        "sha256": "6f66805d5fad20f0872ff6cce0d21c8fbfa981e7981e9c611292731267147179",
+        "lines": 342,
+        "ranges": [
+          [
+            1,
+            160
+          ],
+          [
+            161,
+            320
+          ],
+          [
+            321,
+            342
+          ],
+          [
+            1,
+            110
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "deepdiff/helper.py",
+        "sha256": "9024774f3878cbf4cbc4a0a23408ae77966881c38e135d23973960932d142b4c",
+        "lines": 852,
+        "ranges": [
+          [
+            1,
+            160
+          ],
+          [
+            161,
+            320
+          ],
+          [
+            321,
+            480
+          ],
+          [
+            481,
+            640
+          ],
+          [
+            641,
+            800
+          ],
+          [
+            801,
+            852
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "deepdiff/lfucache.py",
+        "sha256": "2c2d830906d26db4262015f4c2c227e73843fd497824aae34f77c34a961dda00",
+        "lines": 217,
+        "ranges": [
+          [
+            1,
+            160
+          ],
+          [
+            161,
+            217
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "deepdiff/model.py",
+        "sha256": "fc7e6b242441966641bc7272396082218ee3558df1934e357d0c40febb757d6f",
+        "lines": 995,
+        "ranges": [
+          [
+            1,
+            160
+          ],
+          [
+            161,
+            320
+          ],
+          [
+            321,
+            480
+          ],
+          [
+            481,
+            640
+          ],
+          [
+            641,
+            800
+          ],
+          [
+            801,
+            960
+          ],
+          [
+            961,
+            995
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "deepdiff/operator.py",
+        "sha256": "6d3a2b508eeb9b216c531102c5cd3213448d608f6f0657538d2ad222828ea811",
+        "lines": 71,
+        "ranges": [
+          [
+            1,
+            71
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "deepdiff/path.py",
+        "sha256": "6199266a7703e8923655640407f79dc24a937022dfd5ca7106e95e793bdc036b",
+        "lines": 323,
+        "ranges": [
+          [
+            1,
+            160
+          ],
+          [
+            161,
+            320
+          ],
+          [
+            321,
+            323
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "deepdiff/py.typed",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "lines": 1,
+        "ranges": [
+          [
+            1,
+            1
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "deepdiff/search.py",
+        "sha256": "3c22f6422745fd621909bc9bccfad0f490947adf448ed9220bc8a7230f22acb6",
+        "lines": 370,
+        "ranges": [
+          [
+            1,
+            160
+          ],
+          [
+            161,
+            320
+          ],
+          [
+            321,
+            370
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "deepdiff/serialization.py",
+        "sha256": "378bee0cf7090f406989105df6a688bf714657f31f26234dbf246d0e366c9c6f",
+        "lines": 783,
+        "ranges": [
+          [
+            1,
+            160
+          ],
+          [
+            161,
+            320
+          ],
+          [
+            321,
+            480
+          ],
+          [
+            481,
+            640
+          ],
+          [
+            641,
+            783
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "deepdiff/summarize.py",
+        "sha256": "96ca0c89e08fc5fad841060c60aa1f4f6a4a22b055b0dcebc1e54f18d8d545d7",
+        "lines": 144,
+        "ranges": [
+          [
+            1,
+            144
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "deepdiff/__init__.py",
+        "sha256": "1bafeabdaa9ed2d422bba6cfddbb3cbc84751199b58c65995c7dbd97930fca46",
+        "lines": 14,
+        "ranges": [
+          [
+            1,
+            14
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "docs/authors.rst",
+        "sha256": "3a4cb862f20dcac8628f01bef969c62293a55f2f572286f27b54478a60064f0b",
+        "lines": 166,
+        "ranges": [
+          [
+            1,
+            160
+          ],
+          [
+            161,
+            166
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "docs/basics.rst",
+        "sha256": "8d69b4a918988ee75757d0c7006c57940db5c0337189cf8a30acb7ab728b7a3e",
+        "lines": 323,
+        "ranges": [
+          [
+            1,
+            160
+          ],
+          [
+            161,
+            320
+          ],
+          [
+            321,
+            323
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "docs/buildme.py",
+        "sha256": "af19fd081874c4941bffe43f3c84374a48cb3fd0b5ae8a75c8575544dba50d25",
+        "lines": 38,
+        "ranges": [
+          [
+            1,
+            38
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "docs/changelog.rst",
+        "sha256": "0ad2f5ade9cb6fe737822c96f9a730b2cf5c9791d0b19b2693aff54800e805f2",
+        "lines": 322,
+        "ranges": [
+          [
+            1,
+            160
+          ],
+          [
+            161,
+            320
+          ],
+          [
+            321,
+            322
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "docs/colored_view.rst",
+        "sha256": "09efc041aa148dfb45a21c306f0bb46ca73c2e5057a35995640788db89e18435",
+        "lines": 101,
+        "ranges": [
+          [
+            1,
+            101
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "docs/commandline.rst",
+        "sha256": "ed2967ab55edd1c6cb0ced3178bbd89fa49948a295d96b56f19c2198779a413d",
+        "lines": 320,
+        "ranges": [
+          [
+            1,
+            160
+          ],
+          [
+            161,
+            320
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "docs/conf.py",
+        "sha256": "29c59a0e90a77437a5806e57cfe6f38554505930457b8f4f67d3d233ced4cc59",
+        "lines": 325,
+        "ranges": [
+          [
+            1,
+            160
+          ],
+          [
+            161,
+            320
+          ],
+          [
+            321,
+            325
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "docs/custom.rst",
+        "sha256": "08675a44349ec7afb41765929d356ee6ab28ea19b2f6eb9d0b44ae1d027f29c6",
+        "lines": 440,
+        "ranges": [
+          [
+            1,
+            160
+          ],
+          [
+            161,
+            320
+          ],
+          [
+            321,
+            440
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "docs/deephash.rst",
+        "sha256": "02211b54c20091b1c20b429e4b4f3b0ff8915d33eef93da79e403593becf9709",
+        "lines": 14,
+        "ranges": [
+          [
+            1,
+            14
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "docs/deephash_doc.rst",
+        "sha256": "1b0c1b6165d2b805d39eb1dddc8096515e7fa4476ce5f879e34a2d8ed7be7b7e",
+        "lines": 381,
+        "ranges": [
+          [
+            1,
+            160
+          ],
+          [
+            161,
+            320
+          ],
+          [
+            321,
+            381
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "docs/deep_distance.rst",
+        "sha256": "dca9f576466d244e40a236474c8e5ae68e3114fa6e14dda436b00c5e68b50a13",
+        "lines": 119,
+        "ranges": [
+          [
+            1,
+            119
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "docs/delta.rst",
+        "sha256": "d7603b7cdae1c346e81547b9d591d58065dad1416eb62e6b25cb9ccc3fe4eb1e",
+        "lines": 567,
+        "ranges": [
+          [
+            1,
+            160
+          ],
+          [
+            161,
+            320
+          ],
+          [
+            321,
+            480
+          ],
+          [
+            481,
+            567
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "docs/diff.rst",
+        "sha256": "d4061f19d846174823d6425a895ae35b841e4f7bee2844ace8dd6de90162a2d5",
+        "lines": 30,
+        "ranges": [
+          [
+            1,
+            30
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "docs/diff_doc.rst",
+        "sha256": "5583e0714516f06b742b44d6e37079d3437df8e1f5dae61937b23c2e8c9ca1b7",
+        "lines": 233,
+        "ranges": [
+          [
+            1,
+            160
+          ],
+          [
+            161,
+            233
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "docs/dsearch.rst",
+        "sha256": "3d989119a643dd2147c593419940d1f292b2019a99d18a2087f2f80ff2566627",
+        "lines": 19,
+        "ranges": [
+          [
+            1,
+            19
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "docs/exclude_paths.rst",
+        "sha256": "925ba275940b2116cea40145a97133a3708d67765aa647689a7f4ee93fe7dc37",
+        "lines": 87,
+        "ranges": [
+          [
+            1,
+            87
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "docs/extract.rst",
+        "sha256": "c8f28bf9038579b4807540f809db5220b8471979da21c7040cb009ee70082ce9",
+        "lines": 13,
+        "ranges": [
+          [
+            1,
+            13
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "docs/faq.rst",
+        "sha256": "3da5fc376efa21476625a2ab27af3ad2868493d6cbc441b07de2376248d6c1f8",
+        "lines": 187,
+        "ranges": [
+          [
+            1,
+            160
+          ],
+          [
+            161,
+            187
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "docs/ignore_order.rst",
+        "sha256": "695645579fbd6f3cbe6854c5d7581e6afc8b4278aeb4ca4a0dc703fdd18e33e8",
+        "lines": 318,
+        "ranges": [
+          [
+            1,
+            160
+          ],
+          [
+            161,
+            318
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "docs/ignore_types_or_values.rst",
+        "sha256": "0f7e8cad25d0dec54daf6f9bd1f2d4397f70cab58f575a354b7058fcf3a67cfb",
+        "lines": 430,
+        "ranges": [
+          [
+            1,
+            160
+          ],
+          [
+            161,
+            320
+          ],
+          [
+            321,
+            430
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "docs/index.rst",
+        "sha256": "6244f9c1f6ccf15fad342ecd0a3dc003e8a9f07e82f3947399fa18a34470eb2a",
+        "lines": 182,
+        "ranges": [
+          [
+            1,
+            160
+          ],
+          [
+            161,
+            182
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "docs/make.bat",
+        "sha256": "f55b8e592be639b71c631a6c6f0b085e3d544279d861262980e469afb98fe25a",
+        "lines": 263,
+        "ranges": [
+          [
+            1,
+            140
+          ],
+          [
+            141,
+            263
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "docs/Makefile",
+        "sha256": "385ac5b5363da53b6153807011208e1398aa5f16d2c012dfb25647923320882e",
+        "lines": 196,
+        "ranges": [
+          [
+            1,
+            150
+          ],
+          [
+            151,
+            196
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "docs/numbers.rst",
+        "sha256": "7919e7e682903464613a9151e500ad534608ade5988b76988cbbd6fe215b989d",
+        "lines": 186,
+        "ranges": [
+          [
+            1,
+            160
+          ],
+          [
+            161,
+            186
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "docs/optimizations.rst",
+        "sha256": "a1e76f812c48ec5e5229c8af24a9d36338ae2cf850c587a776d1d4db870a0a13",
+        "lines": 288,
+        "ranges": [
+          [
+            1,
+            160
+          ],
+          [
+            161,
+            288
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "docs/other.rst",
+        "sha256": "c8c552639d8bb25adc7a51251b31a1031d6a03828f806ccc3692827b021d5618",
+        "lines": 55,
+        "ranges": [
+          [
+            1,
+            55
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "docs/search_doc.rst",
+        "sha256": "9805b7f77582050db82a75c6c83a9c61fc1df4c5db7219db2f12b4a1cf3912a2",
+        "lines": 71,
+        "ranges": [
+          [
+            1,
+            71
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "docs/serialization.rst",
+        "sha256": "987368b55a8a21d281e37f1a3f9f0522b4e4bb1e4d9d9bf6d716bc26b316ac2b",
+        "lines": 303,
+        "ranges": [
+          [
+            1,
+            160
+          ],
+          [
+            161,
+            303
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "docs/stats.rst",
+        "sha256": "88a0f71e03ae38b229476c6423c174269e5800c2dff7c34a6ffcf272849db4a8",
+        "lines": 78,
+        "ranges": [
+          [
+            1,
+            78
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "docs/support.rst",
+        "sha256": "e0b6943d0b016b70d9e848d4d0a46cf8320b4eed7ca0da1f4edb5accca991f2c",
+        "lines": 25,
+        "ranges": [
+          [
+            1,
+            25
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "docs/troubleshoot.rst",
+        "sha256": "5ffeae61a6e77d281d63a936b43c38c58a707cb0f9f97a39d34469c3aff497e6",
+        "lines": 29,
+        "ranges": [
+          [
+            1,
+            29
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "docs/view.rst",
+        "sha256": "b73eba6afdf4b3a5ff0cc78d8039109d6702394d78bbe17eb8763c082e64a860",
+        "lines": 362,
+        "ranges": [
+          [
+            1,
+            160
+          ],
+          [
+            161,
+            320
+          ],
+          [
+            321,
+            362
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "docs/_static/benchmark_array_no_numpy__3.8__ignore_order=True__cache_size=0__cache_tuning_sample_size=0__cutoff_intersection_for_pairs=1.png",
+        "sha256": "5a8af4a18691b3359cebab1de7de0d213b735d809704ea422831dac6ccd054a8",
+        "lines": null,
+        "ranges": [],
+        "status": "binary-unreviewed",
+        "runtime": "not executed",
+        "legacyDecodedNewlineCount": 158,
+        "kind": "binary"
+      },
+      {
+        "path": "docs/_static/benchmark_array_no_numpy__3.8__ignore_order=True__cache_size=10000__cache_tuning_sample_size=0__cutoff_intersection_for_pairs=1.png",
+        "sha256": "e3f68089ef9f694457f9131352cf277836715d80942baf6a480845d89795caf4",
+        "lines": null,
+        "ranges": [],
+        "status": "binary-unreviewed",
+        "runtime": "not executed",
+        "legacyDecodedNewlineCount": 112,
+        "kind": "binary"
+      },
+      {
+        "path": "docs/_static/benchmark_big_jsons__3.8__ignore_order=True__cache_size=0__cache_tuning_sample_size=0__max_diffs=300000__max_passes=40000__cutoff_intersection_for_pairs=1.png",
+        "sha256": "8b519ad3fecc5ffc0fcf6730e8d853f7ef40af56af87e3770951aaca87b151e6",
+        "lines": null,
+        "ranges": [],
+        "status": "binary-unreviewed",
+        "runtime": "not executed",
+        "legacyDecodedNewlineCount": 78,
+        "kind": "binary"
+      },
+      {
+        "path": "docs/_static/benchmark_big_jsons__pypy3.6__ignore_order=True__cache_size=0__cache_tuning_sample_size=0__max_diffs=300000__max_passes=40000__cutoff_intersection_for_pairs=1.png",
+        "sha256": "bbcca8b4c7a07da364c66554470bd9412f631b4b505ac78f3e96777f48e3f6dd",
+        "lines": null,
+        "ranges": [],
+        "status": "binary-unreviewed",
+        "runtime": "not executed",
+        "legacyDecodedNewlineCount": 86,
+        "kind": "binary"
+      },
+      {
+        "path": "docs/_static/benchmark_deeply_nested_a__3.8__ignore_order=True__cache_size=0__cache_tuning_sample_size=0__cutoff_intersection_for_pairs=1.png",
+        "sha256": "cee2c84416b9998ff7d3fa712b5b3a0b947ac577063a2c7e5bc0c199125ec3a5",
+        "lines": null,
+        "ranges": [],
+        "status": "binary-unreviewed",
+        "runtime": "not executed",
+        "legacyDecodedNewlineCount": 102,
+        "kind": "binary"
+      },
+      {
+        "path": "docs/_static/benchmark_deeply_nested_a__3.8__ignore_order=True__cache_size=5000__cache_tuning_sample_size=0__cutoff_intersection_for_pairs=1.png",
+        "sha256": "fc87008833f0f56e5920116a7c531254ccec02622b960e1de299e51e1d03629d",
+        "lines": null,
+        "ranges": [],
+        "status": "binary-unreviewed",
+        "runtime": "not executed",
+        "legacyDecodedNewlineCount": 42,
+        "kind": "binary"
+      },
+      {
+        "path": "docs/_static/benchmark_deeply_nested_a__3.8__ignore_order=True__cache_size=500__cache_tuning_sample_size=0__cutoff_intersection_for_pairs=1.png",
+        "sha256": "57da0aa09eb0f9e3341e3893152c1d9030885ac9d60970f84904fdb074e08d9a",
+        "lines": null,
+        "ranges": [],
+        "status": "binary-unreviewed",
+        "runtime": "not executed",
+        "legacyDecodedNewlineCount": 37,
+        "kind": "binary"
+      },
+      {
+        "path": "docs/_static/benchmark_deeply_nested_a__3.8__ignore_order=True__cache_size=500__cache_tuning_sample_size=500__cutoff_intersection_for_pairs=1.png",
+        "sha256": "484ce34c82ccb6c0d78ce4553a2a37db827c2030da2be75665893ff1dc37ebbe",
+        "lines": null,
+        "ranges": [],
+        "status": "binary-unreviewed",
+        "runtime": "not executed",
+        "legacyDecodedNewlineCount": 58,
+        "kind": "binary"
+      },
+      {
+        "path": "docs/_static/benchmark_numpy_array__3.8__ignore_order=True__cache_size=0__cache_tuning_sample_size=0__cutoff_intersection_for_pairs=1.png",
+        "sha256": "91e9189f8c30af2d31f67882678807ef6470d75b7881c00f0b9b03a0b18fca98",
+        "lines": null,
+        "ranges": [],
+        "status": "binary-unreviewed",
+        "runtime": "not executed",
+        "legacyDecodedNewlineCount": 99,
+        "kind": "binary"
+      },
+      {
+        "path": "docs/_static/custom.css",
+        "sha256": "f3558475dc2fbe88bf5c3ff83adc779e0d2bca40235299a5b99ff7ceab6406a3",
+        "lines": 16,
+        "ranges": [
+          [
+            1,
+            16
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "docs/_static/favicon.ico",
+        "sha256": "502d2d6e8607c7762961daf026adc4f00bc8f64967329a875ec3523b8e14084a",
+        "lines": null,
+        "ranges": [],
+        "status": "binary-unreviewed",
+        "runtime": "not executed",
+        "legacyDecodedNewlineCount": 14,
+        "kind": "binary"
+      },
+      {
+        "path": "docs/_static/logo.svg",
+        "sha256": "b95d3ef17af4c624ad47e22880db1731ab7774dc5966a8fd2d520a07f590778d",
+        "lines": 9,
+        "ranges": [],
+        "status": "unread",
+        "runtime": "not executed"
+      },
+      {
+        "path": "docs/_static/logo_long_B1_black.svg",
+        "sha256": "139658c34913f81097dd13aed6cb665d9006ff44fcb7b19bb48990c1efeece8d",
+        "lines": 42,
+        "ranges": [],
+        "status": "unread",
+        "runtime": "not executed"
+      },
+      {
+        "path": "docs/_templates/about.html",
+        "sha256": "56e2c893f1be7ac5845318e1c4f2d53b35aa0ff6015f0896e95d17ea77973ac9",
+        "lines": 57,
+        "ranges": [
+          [
+            1,
+            57
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "docs/_templates/basic/layout.html",
+        "sha256": "b4ff5c7aebdf4956ccebedf06b739c4a69171cb5887e2237bfa171c1d6f2c7bc",
+        "lines": 220,
+        "ranges": [
+          [
+            1,
+            140
+          ],
+          [
+            141,
+            220
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "docs/_templates/navigation.html",
+        "sha256": "b6a5c4e083bd788838dbfa3e82bc28d9a822869e1c05df26dab170be22567a89",
+        "lines": 10,
+        "ranges": [
+          [
+            1,
+            10
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "LICENSE",
+        "sha256": "64e51909f73ac2891c05075c027018fc8d9f9f882c605f35461bef7df82feeea",
+        "lines": 23,
+        "ranges": [
+          [
+            1,
+            23
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "MANIFEST.in",
+        "sha256": "0c91e403fdbd0482a77a05ebdd3c8c0a3e7dc29b265684a51b246d9046ad32ab",
+        "lines": 20,
+        "ranges": [
+          [
+            1,
+            20
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "mypy.ini",
+        "sha256": "339ecf7b72c8377c44819494d06c56bfb4c8c78fff39571ac40863cf6d8a192f",
+        "lines": 2,
+        "ranges": [
+          [
+            1,
+            2
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "noxfile.py",
+        "sha256": "d191a3ac5848861cf631884cb72f6146373a103ab706f88fb419e047a6d550cf",
+        "lines": 49,
+        "ranges": [
+          [
+            1,
+            49
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "PKG-INFO",
+        "sha256": "1b6dd67a390b0496e35f5acc3438d529e5fed1db1ce9e24dd96f9a0ba792a63a",
+        "lines": 198,
+        "ranges": [
+          [
+            1,
+            160
+          ],
+          [
+            161,
+            198
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "pyproject.toml",
+        "sha256": "09299a462764338940f151015d4e4ae5140cdb3879411d8d5c8f672f8f899047",
+        "lines": 102,
+        "ranges": [
+          [
+            1,
+            102
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "pyrightconfig.json.example",
+        "sha256": "3f33e83fa6bbd05acf4765998ff969b6c84739bf1cc80ee5862377997b0656c1",
+        "lines": 4,
+        "ranges": [
+          [
+            1,
+            4
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "README.md",
+        "sha256": "ecc8bce81b8c600d3dfe88862ab6912f91055af7484f5d8ff3f96a59faf14250",
+        "lines": 136,
+        "ranges": [
+          [
+            1,
+            136
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "tests/fixtures/another.yaml",
+        "sha256": "4cc437ee30429dbc41d08a3ea3c0df87162a95f9440a21830ceebd6d6334bdc3",
+        "lines": 13,
+        "ranges": [
+          [
+            1,
+            13
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "tests/fixtures/compare_func_result1.json",
+        "sha256": "964b6af0c36b1fece8711d2eea961d2cd064cc4e1f1d83730319bcf3884c54fc",
+        "lines": 59,
+        "ranges": [
+          [
+            1,
+            59
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "tests/fixtures/compare_func_t1.json",
+        "sha256": "641db9fd125c575fea2d295292f29a607e3d41e67e661f9f1d015e6d5305ce75",
+        "lines": 50,
+        "ranges": [
+          [
+            1,
+            50
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "tests/fixtures/compare_func_t2.json",
+        "sha256": "9b699ca7efd4fddd28ffca62634d0920cce293709a500641e91a7fca7050d0c9",
+        "lines": 49,
+        "ranges": [
+          [
+            1,
+            49
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "tests/fixtures/compounds.json",
+        "sha256": "64bf93193e2a70da6935801554c1b22050533cc8c1aff8a4293f46ae9c2cc427",
+        "lines": 14784,
+        "ranges": [],
+        "status": "unread",
+        "runtime": "not executed"
+      },
+      {
+        "path": "tests/fixtures/c_t1.csv",
+        "sha256": "6ace0ec91354a2e3809e8c0a30c868031b6175e0e8b7369c43fe2a959223da76",
+        "lines": 4,
+        "ranges": [
+          [
+            1,
+            4
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "tests/fixtures/c_t2.csv",
+        "sha256": "e6f62aa47cc94c3ca58b92ea0d52643d34db5d8bd763223db3b2c47e211df65e",
+        "lines": 4,
+        "ranges": [
+          [
+            1,
+            4
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "tests/fixtures/d_t1.yaml",
+        "sha256": "d20c0f6969f2abf9b509314cddaeb133b9dff085a88ecf9d0161316613272406",
+        "lines": 3,
+        "ranges": [
+          [
+            1,
+            3
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "tests/fixtures/d_t2.yaml",
+        "sha256": "83e28a6914902652763b56276db883633976726a38ad794e952fb9780da32272",
+        "lines": 3,
+        "ranges": [
+          [
+            1,
+            3
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "tests/fixtures/invalid_yaml.yaml",
+        "sha256": "a1987a93ac281ae0cdb4a3ea1aa0d6a8891531a5effa05cf6f8f9b1212951f97",
+        "lines": 1,
+        "ranges": [
+          [
+            1,
+            1
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "tests/fixtures/nested_a_result.json",
+        "sha256": "e5adcf007d8f91d60db73af63d3e8d2d1d4706095b97172714a0a156b400b839",
+        "lines": 235,
+        "ranges": [
+          [
+            1,
+            160
+          ],
+          [
+            161,
+            235
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "tests/fixtures/nested_a_t1.json",
+        "sha256": "d83279e6e8cb4a6573d0617cec236a9b10371f62c287cbcd326385fdb19adc6b",
+        "lines": 44,
+        "ranges": [
+          [
+            1,
+            44
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "tests/fixtures/nested_a_t2.json",
+        "sha256": "6badddf75422a13906f81c031686b683be0d078a3efff455f6d9702c6c7791eb",
+        "lines": 46,
+        "ranges": [
+          [
+            1,
+            46
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "tests/fixtures/nested_b_result.json",
+        "sha256": "1f920930bce16c9a713c6500753599d383e045349fe87e13e383eb2d9b67dfd6",
+        "lines": 19,
+        "ranges": [
+          [
+            1,
+            19
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "tests/fixtures/nested_b_t1.json",
+        "sha256": "e9e99fcc598fbc10279ab15091cce91463842500c4fe856c3297a39eae58c9bd",
+        "lines": 10,
+        "ranges": [
+          [
+            1,
+            10
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "tests/fixtures/nested_b_t2.json",
+        "sha256": "dae5cd7ad138156f87323acbe3686055f4fb67a12b02302d589ba7d8a9ebc039",
+        "lines": 10,
+        "ranges": [
+          [
+            1,
+            10
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "tests/fixtures/patch1.pickle",
+        "sha256": "7c6a5fbbddd10ca4d41fb246075805eef6e20877bcfc7d4b2690cc02c2f55c9f",
+        "lines": null,
+        "ranges": [],
+        "status": "binary-unreviewed",
+        "runtime": "not executed",
+        "legacyDecodedNewlineCount": 1,
+        "kind": "binary"
+      },
+      {
+        "path": "tests/fixtures/t1.csv",
+        "sha256": "43003f213115f59fdc42bbea3844ea6248136736ddd17fc745bf038fca4bddd1",
+        "lines": 4,
+        "ranges": [
+          [
+            1,
+            4
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "tests/fixtures/t1.json",
+        "sha256": "a85f81c3507a75b62444710c7fd64127e9cf9946b0e2b66ccc9cda45ce32730a",
+        "lines": 4,
+        "ranges": [
+          [
+            1,
+            4
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "tests/fixtures/t1.pickle",
+        "sha256": "adcb17e0ab46c0056e906ecc9f4c6f2506a894435e8de8a1210ef00dd109fe29",
+        "lines": null,
+        "ranges": [],
+        "status": "binary-unreviewed",
+        "runtime": "not executed",
+        "legacyDecodedNewlineCount": 1,
+        "kind": "binary"
+      },
+      {
+        "path": "tests/fixtures/t1.toml",
+        "sha256": "60a56e5102bf29486b8b8a49ca69a1b328392b1cd2f9b6da638216584d42570d",
+        "lines": 33,
+        "ranges": [
+          [
+            1,
+            33
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "tests/fixtures/t1.yaml",
+        "sha256": "d20c0f6969f2abf9b509314cddaeb133b9dff085a88ecf9d0161316613272406",
+        "lines": 3,
+        "ranges": [
+          [
+            1,
+            3
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "tests/fixtures/t1_corrupt.json",
+        "sha256": "a4de689be1c633b3710ddf4625e96db9c160e69f1b2296e242534377ec0e4a25",
+        "lines": 4,
+        "ranges": [
+          [
+            1,
+            4
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "tests/fixtures/t2.csv",
+        "sha256": "993d211e040310282356d62412f528c36bc7b4bd3b13bc3c1ae004948cb447c5",
+        "lines": 4,
+        "ranges": [
+          [
+            1,
+            4
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "tests/fixtures/t2.json",
+        "sha256": "7bb47ba7941d205953d8758a7696314ca6d1460dfbcb640e5e43fb4d565e6d09",
+        "lines": 5,
+        "ranges": [
+          [
+            1,
+            5
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "tests/fixtures/t2.pickle",
+        "sha256": "43fce21ceeb38b94de440a436ddee3be3ce67b03ddbdb40cabe494e4104ed360",
+        "lines": null,
+        "ranges": [],
+        "status": "binary-unreviewed",
+        "runtime": "not executed",
+        "legacyDecodedNewlineCount": 1,
+        "kind": "binary"
+      },
+      {
+        "path": "tests/fixtures/t2.toml",
+        "sha256": "cd58e61d21ed890c1da1b9237d5e6ba4f78d68fedbbb7acaad460f16eceaa7c4",
+        "lines": 33,
+        "ranges": [
+          [
+            1,
+            33
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "tests/fixtures/t2.yaml",
+        "sha256": "9e4748cb59cd0f14decb18485974751c0e9feff0e4973c0d21ac64e99be32c2d",
+        "lines": 3,
+        "ranges": [
+          [
+            1,
+            3
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "tests/fixtures/t2_json.csv",
+        "sha256": "62f79e1561148ada660b2f115ebf0f7328895e6863c94317843de084ecea6d88",
+        "lines": 2,
+        "ranges": [
+          [
+            1,
+            2
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "tests/test_anyset.py",
+        "sha256": "b45776f9f40f02eacb5f78c1d89e773dcda2a18cadf8a8d712b3563ecd00acb7",
+        "lines": 39,
+        "ranges": [
+          [
+            1,
+            39
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "tests/test_cache.py",
+        "sha256": "3883ff3a3a8f1c36e2dc260304fa6df25d892d33d4625018c5fd40b0465ff41d",
+        "lines": 169,
+        "ranges": [
+          [
+            1,
+            160
+          ],
+          [
+            161,
+            169
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "tests/test_colored_view.py",
+        "sha256": "8baf4fce2d6ec3a7442149c40c784657b8acd0e179075f30fd6e38609c456e35",
+        "lines": 427,
+        "ranges": [
+          [
+            1,
+            160
+          ],
+          [
+            161,
+            320
+          ],
+          [
+            321,
+            427
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "tests/test_command.py",
+        "sha256": "b0c053584182435097ddf1ef5632cb61d783f9ef183629c9238824daf94e0395",
+        "lines": 118,
+        "ranges": [
+          [
+            1,
+            118
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "tests/test_delta.py",
+        "sha256": "dd711c1e014884e025e8bfafedb9883da252e5a3b09ebd4e6989588a52db20fd",
+        "lines": 2934,
+        "ranges": [
+          [
+            1,
+            160
+          ],
+          [
+            161,
+            320
+          ],
+          [
+            321,
+            480
+          ],
+          [
+            481,
+            640
+          ],
+          [
+            641,
+            800
+          ],
+          [
+            801,
+            960
+          ],
+          [
+            961,
+            1120
+          ],
+          [
+            1121,
+            1280
+          ],
+          [
+            1281,
+            1440
+          ],
+          [
+            1441,
+            1600
+          ],
+          [
+            1601,
+            1760
+          ],
+          [
+            1761,
+            1920
+          ],
+          [
+            1921,
+            2080
+          ],
+          [
+            2081,
+            2240
+          ],
+          [
+            2241,
+            2400
+          ],
+          [
+            2401,
+            2560
+          ],
+          [
+            2561,
+            2720
+          ],
+          [
+            2721,
+            2880
+          ],
+          [
+            2881,
+            2934
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "tests/test_diff_datetime.py",
+        "sha256": "bb194d7ee90f6ae7c2df3f7c0f88ccde9f23caeda47576ff416aea3215900352",
+        "lines": 125,
+        "ranges": [
+          [
+            1,
+            125
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "tests/test_diff_include_paths.py",
+        "sha256": "0689a72ff9d560a57bc9c679c36facad2bd1a09a196c3411923bfdc7e20ecb85",
+        "lines": 282,
+        "ranges": [
+          [
+            1,
+            160
+          ],
+          [
+            161,
+            282
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "tests/test_diff_math.py",
+        "sha256": "6ec2ba1b404323ab5d9d4c80fa8fa48d3ca8864af289ca65f9d01969022b4722",
+        "lines": 126,
+        "ranges": [
+          [
+            1,
+            126
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "tests/test_diff_numpy.py",
+        "sha256": "e1c7a3893df5e9b89958f586801133cae4ad37a98ae3c8ba5bbdc61a297d0cec",
+        "lines": 176,
+        "ranges": [
+          [
+            1,
+            160
+          ],
+          [
+            161,
+            176
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "tests/test_diff_other.py",
+        "sha256": "53aaf8d73b5f6800003b36fb8bf1283b1609de3df2cd7df32bcdfacfa94d108b",
+        "lines": 209,
+        "ranges": [
+          [
+            1,
+            160
+          ],
+          [
+            161,
+            209
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "tests/test_diff_text.py",
+        "sha256": "7b367bf9f264fd27c31febfc6b9d62668659e916b575281ac16ffee253d39696",
+        "lines": 2274,
+        "ranges": [
+          [
+            1,
+            160
+          ],
+          [
+            161,
+            320
+          ],
+          [
+            321,
+            480
+          ],
+          [
+            481,
+            640
+          ],
+          [
+            641,
+            800
+          ],
+          [
+            801,
+            960
+          ],
+          [
+            961,
+            1120
+          ],
+          [
+            1121,
+            1280
+          ],
+          [
+            1281,
+            1440
+          ],
+          [
+            1441,
+            1600
+          ],
+          [
+            1601,
+            1760
+          ],
+          [
+            1761,
+            1920
+          ],
+          [
+            1921,
+            2080
+          ],
+          [
+            2081,
+            2240
+          ],
+          [
+            2241,
+            2274
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "tests/test_diff_tree.py",
+        "sha256": "32b6b08a7719b6850861a67a23ec2e4f8c9b63c96038bc8d1e5ca0488a527df7",
+        "lines": 194,
+        "ranges": [
+          [
+            1,
+            160
+          ],
+          [
+            161,
+            194
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "tests/test_distance.py",
+        "sha256": "a71cbeac0cb42ce5ed39092dfd1b07ee49244024a5db19c5ec0061547634db7f",
+        "lines": 231,
+        "ranges": [
+          [
+            1,
+            160
+          ],
+          [
+            161,
+            231
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "tests/test_hash.py",
+        "sha256": "5d5155bed5769750b68ec6acbd2250af010e3b371ce8e31e25440459f92a7197",
+        "lines": 1075,
+        "ranges": [
+          [
+            1,
+            160
+          ],
+          [
+            161,
+            320
+          ],
+          [
+            321,
+            480
+          ],
+          [
+            481,
+            640
+          ],
+          [
+            641,
+            800
+          ],
+          [
+            801,
+            960
+          ],
+          [
+            961,
+            1075
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "tests/test_helper.py",
+        "sha256": "a1589c916910d016a96a770ad306d550be573e1f0398100782b9c98b4851c5ec",
+        "lines": 303,
+        "ranges": [
+          [
+            1,
+            160
+          ],
+          [
+            161,
+            303
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "tests/test_ignore_order.py",
+        "sha256": "bd81eb0ff770153b8c450812bfe1aeba9dab2a8b5eb98966c38f69ee60706858",
+        "lines": 1398,
+        "ranges": [
+          [
+            1,
+            160
+          ],
+          [
+            161,
+            320
+          ],
+          [
+            321,
+            480
+          ],
+          [
+            481,
+            640
+          ],
+          [
+            641,
+            800
+          ],
+          [
+            801,
+            960
+          ],
+          [
+            961,
+            1120
+          ],
+          [
+            1121,
+            1280
+          ],
+          [
+            1281,
+            1398
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "tests/test_ignore_uuid_types.py",
+        "sha256": "f432270d7713315baa0ecef0147f16f5213ab7fa3e95cb10c893de81e6c0fcf8",
+        "lines": 150,
+        "ranges": [
+          [
+            1,
+            150
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "tests/test_lfucache.py",
+        "sha256": "8ea1cc9468dbab693ae2048068d209ae18e3eb9d0bf9fbe091ef8b48a4ad88e3",
+        "lines": 50,
+        "ranges": [
+          [
+            1,
+            50
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "tests/test_memoryview.py",
+        "sha256": "65e59558c8cee90fdd3b097d47171541ad58330980b433eb0cb3e3a216f9753b",
+        "lines": 154,
+        "ranges": [
+          [
+            1,
+            154
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "tests/test_model.py",
+        "sha256": "46bc4203443b9545006e46792f3dd21f86a58174f2b46fc250f29abda204ae21",
+        "lines": 299,
+        "ranges": [
+          [
+            1,
+            160
+          ],
+          [
+            161,
+            299
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "tests/test_operators.py",
+        "sha256": "266a0872c7559fe754d3af71ceaefecbc00ea90ad7583d0a81f604a3ff3a83c6",
+        "lines": 428,
+        "ranges": [
+          [
+            1,
+            160
+          ],
+          [
+            161,
+            320
+          ],
+          [
+            321,
+            428
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "tests/test_path.py",
+        "sha256": "7e73b7b833ae8ac1b4097fc20ea6373dc46f797369fbf3bae06b6b24231568d8",
+        "lines": 76,
+        "ranges": [
+          [
+            1,
+            76
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "tests/test_search.py",
+        "sha256": "d877e2c198b3b8fc1def4fc4e4b9c2f02cdd4c02dc25c060e05a8c3a5dc78928",
+        "lines": 522,
+        "ranges": [
+          [
+            1,
+            160
+          ],
+          [
+            161,
+            320
+          ],
+          [
+            321,
+            480
+          ],
+          [
+            481,
+            522
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "tests/test_security.py",
+        "sha256": "993fade2444006c6e8b29da0f0a27a1a0e75b029def7fa665fa0bc1dbd755544",
+        "lines": 133,
+        "ranges": [
+          [
+            1,
+            133
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "tests/test_serialization.py",
+        "sha256": "b40def6f2c183f1636cd106830235949aeb0ca81be7bbb985e49338d60d9a7d8",
+        "lines": 569,
+        "ranges": [
+          [
+            1,
+            160
+          ],
+          [
+            161,
+            320
+          ],
+          [
+            321,
+            480
+          ],
+          [
+            481,
+            569
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "tests/test_summarize.py",
+        "sha256": "9cda65c26950c163a6980916e4f8468c162c5479fff49745c88ca3930c2b910c",
+        "lines": 146,
+        "ranges": [
+          [
+            1,
+            146
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "tests/__init__.py",
+        "sha256": "5ea191c3981b3fb5093461e686dbe8f4be92dcc04b991877c8f42e9344bee8ae",
+        "lines": 77,
+        "ranges": [
+          [
+            1,
+            77
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "uv.lock",
+        "sha256": "de0d6aef79fda4f30878fe52d6362ee7c8ce980be43f8a3de4b26d7e76d55b30",
+        "lines": 1635,
+        "ranges": [
+          [
+            1,
+            100
+          ]
+        ],
+        "status": "partial",
+        "runtime": "not executed"
+      }
+    ]
+  },
+  "orderly": {
+    "name": "orderly-set",
+    "version": "5.5.0",
+    "root": "C:/Users/kotar/.codex/research/assessment-evidence-sdk-sources/orderly-set-5.5.0/source/orderly_set-5.5.0",
+    "provenance": "orderly-source-acquisition-1792280593514.json; exact AgentDojo locked sdist, hash verified, no package import/install",
+    "files": [
+      {
+        "path": ".bumpversion.cfg",
+        "sha256": "3c3de3a1a06a1d290a470afd28b5c875151886a3fb574131567d3774583840ee",
+        "lines": 11,
+        "ranges": [
+          [
+            1,
+            11
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": ".codecov.yml",
+        "sha256": "cc07894947b34b4faf2035aff12c122ee25661645dc5f7d5f29d106c9d6670a8",
+        "lines": 3,
+        "ranges": [
+          [
+            1,
+            3
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": ".coveragerc",
+        "sha256": "da1f245a66233d7c6a85b8763094f5bb90e252a43bbc2d6d1608d4502484cc87",
+        "lines": 3,
+        "ranges": [
+          [
+            1,
+            3
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": ".flake8",
+        "sha256": "eda03f3b4590bf808a342f504995cb21e869a04c304787550c059f1c1580445f",
+        "lines": 2,
+        "ranges": [
+          [
+            1,
+            2
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": ".github/FUNDING.yml",
+        "sha256": "8578c98ffdb07be277342eb7d97468942cb79f92fa1908a201de410e8d42f88a",
+        "lines": 2,
+        "ranges": [
+          [
+            1,
+            2
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": ".github/ISSUE_TEMPLATE/bug_report.md",
+        "sha256": "26bdfa5da5a864ce47f24ac89476cd25aa19cfbf0b3729e4af1d04d7960eb5cc",
+        "lines": 26,
+        "ranges": [
+          [
+            1,
+            26
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": ".github/ISSUE_TEMPLATE/feature_request.md",
+        "sha256": "1f48c52f209a971b8e7eae4120144d28fcf8ee38a7778a7b4d8cf1ab356617d2",
+        "lines": 20,
+        "ranges": [
+          [
+            1,
+            20
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": ".github/workflows/main.yaml",
+        "sha256": "3587ba3d041aa910018ae59605f678825fbdb6797f58afdbd1370c3bba006111",
+        "lines": 55,
+        "ranges": [
+          [
+            1,
+            55
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": ".gitignore",
+        "sha256": "8a99457733f6e27e4cfadd2f4faf8036ca33849d2a35d0fac5b452addddfc59d",
+        "lines": 17,
+        "ranges": [
+          [
+            1,
+            17
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": ".mailmap",
+        "sha256": "e7c642d1001a312a2c563c6decce09a4fbb8fac2de5c17c1f11583712c12ec7a",
+        "lines": 9,
+        "ranges": [
+          [
+            1,
+            9
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": ".pre-commit-config.yaml",
+        "sha256": "807890aec3db86cc5abddf3ee7d2570e69a8a163f03bbf41a020b34358a4086d",
+        "lines": 15,
+        "ranges": [
+          [
+            1,
+            15
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "AUTHORS.md",
+        "sha256": "6098b537a73746b83f2f97bbcf59a6536086660a6b29f81e4fb12ec26b92caf4",
+        "lines": 11,
+        "ranges": [
+          [
+            1,
+            11
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "benchmarks/ordered_set_benchmark.py",
+        "sha256": "f108d1429f3f8dc4ba21160eff160cfb3812e4fdd486d7b1ca7220998b5fea07",
+        "lines": 128,
+        "ranges": [
+          [
+            1,
+            128
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "CHANGELOG.md",
+        "sha256": "d7b44161879aaf9f4ccc41d5c6f3189241c45bbce38cdb6f7c02bc882dd4c93d",
+        "lines": 89,
+        "ranges": [
+          [
+            1,
+            89
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "CLAUDE.md",
+        "sha256": "90656c4b4d3962f88ec6038681218227f22c2da2c3d842595fdd20d2849b55af",
+        "lines": 91,
+        "ranges": [
+          [
+            1,
+            91
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "MANIFEST.in",
+        "sha256": "1db5c9e656d4986ed7c99aa23859814fb7c9a1e7bcb203ff96a583ea89c9835f",
+        "lines": 2,
+        "ranges": [
+          [
+            1,
+            2
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "MIT-LICENSE",
+        "sha256": "148a76af346877c70ca60b826ec4175d6d907cb90d781c7b16d854d1c5c1a30c",
+        "lines": 19,
+        "ranges": [
+          [
+            1,
+            19
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "orderly_set/py.typed",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "lines": 1,
+        "ranges": [
+          [
+            1,
+            1
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "orderly_set/sets.py",
+        "sha256": "37e6ca65d97283af17cbb42bd3c3c3be8d44397da080aac40127e198ad7de721",
+        "lines": 1338,
+        "ranges": [
+          [
+            1,
+            160
+          ],
+          [
+            161,
+            320
+          ],
+          [
+            321,
+            480
+          ],
+          [
+            481,
+            640
+          ],
+          [
+            641,
+            800
+          ],
+          [
+            801,
+            960
+          ],
+          [
+            961,
+            1120
+          ],
+          [
+            1121,
+            1280
+          ],
+          [
+            1281,
+            1338
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "orderly_set/__init__.py",
+        "sha256": "ebe333a56ef89efc0d12f1934ed84edf4385da41f41bcefd2d49f89fa5f28b46",
+        "lines": 12,
+        "ranges": [
+          [
+            1,
+            12
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "PKG-INFO",
+        "sha256": "87b74bf17b6396725bf314cc67568085c52caf32e4292bcecd8cfe585408c3eb",
+        "lines": 219,
+        "ranges": [
+          [
+            1,
+            160
+          ],
+          [
+            161,
+            219
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "pyproject.toml",
+        "sha256": "60cbe3119da0d0b4921e597bc944115454155a30a9a741490a94fe906f562171",
+        "lines": 57,
+        "ranges": [
+          [
+            1,
+            57
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "pytest.ini",
+        "sha256": "0ffcd965c66decc501515c5a775d7fc5ef65ea4900f45f54eff6539ac5f489db",
+        "lines": 2,
+        "ranges": [
+          [
+            1,
+            2
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "README.md",
+        "sha256": "0c7f49c3f7abdbfd6af72e4b66091888dd25775a0b7c738d829cc1a6ae1036f9",
+        "lines": 181,
+        "ranges": [
+          [
+            1,
+            160
+          ],
+          [
+            161,
+            181
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "tests/pytest_util.py",
+        "sha256": "898d2f1e1016673721f997fcc4944e513ed2c64ec9cff2c565a0ebdce31fadbc",
+        "lines": 42,
+        "ranges": [
+          [
+            1,
+            42
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "tests/test_ordered_set_1.py",
+        "sha256": "8c4311cbe544c9f8643c65fc743865d5aff55cf0ab547cdffa8dd5123e7af742",
+        "lines": 563,
+        "ranges": [
+          [
+            1,
+            160
+          ],
+          [
+            161,
+            320
+          ],
+          [
+            321,
+            480
+          ],
+          [
+            481,
+            563
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "tests/test_ordered_set_2.py",
+        "sha256": "3e83bae53217b99f8f5dc36accb4de6cac9c892b3d455ebbc05b1e3525e8d5aa",
+        "lines": 632,
+        "ranges": [
+          [
+            1,
+            160
+          ],
+          [
+            161,
+            320
+          ],
+          [
+            321,
+            480
+          ],
+          [
+            481,
+            632
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "tests/test_ordered_set_3.py",
+        "sha256": "5f51d5d34f12a3454c9433e1301c8cc4bb7bbba382be44ecfc2124593e93772e",
+        "lines": 121,
+        "ranges": [
+          [
+            1,
+            121
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "tests/test_set_with_max_size.py",
+        "sha256": "47237ef4b3a3e8ee5a74f8bd8aec6b3ec1b4282e6822f44a649be8a131a5563e",
+        "lines": 69,
+        "ranges": [
+          [
+            1,
+            69
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "tests/__init__.py",
+        "sha256": "7fb37aea4810e8a516c6d38a526250892e1a9b6167f28115bcf6748a261895c2",
+        "lines": 18,
+        "ranges": [
+          [
+            1,
+            18
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      },
+      {
+        "path": "tox.ini",
+        "sha256": "199720a7b20dfb419d3b911bbde1b3fed34d0361af55af2681ce7de357fbd561",
+        "lines": 6,
+        "ranges": [
+          [
+            1,
+            6
+          ]
+        ],
+        "status": "complete",
+        "runtime": "not executed"
+      }
+    ]
+  }
+}

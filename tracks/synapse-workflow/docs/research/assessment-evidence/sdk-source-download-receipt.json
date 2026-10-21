@@ -1,0 +1,22 @@
+[
+  {
+    "name": "openai-codex",
+    "version": "0.1.0b3",
+    "url": "https://files.pythonhosted.org/packages/ae/1c/1e5e8b83ea72164d32b1f4e67fc703c8b83591f498a7aaf96f39d352b453/openai_codex-0.1.0b3.tar.gz",
+    "path": "C:\\Users\\kotar\\.codex\\research\\assessment-evidence-sdk-sources\\openai_codex-0.1.0b3.tar.gz",
+    "sha256": "b76b7afe97953ac65648e9b8ca116b5ff273de91086549bd7ec88037cdc16cab",
+    "bytes": 58995,
+    "at": "2026-10-17T21:48:47.139Z",
+    "scope": "source distribution only, no install/build/setup/CLI invocation"
+  },
+  {
+    "name": "claude-agent-sdk",
+    "version": "0.2.90",
+    "url": "https://files.pythonhosted.org/packages/0c/d6/0d215ffd601fae784344f098658846cc2555ed22f1c86afbb13764cc3c6a/claude_agent_sdk-0.2.90.tar.gz",
+    "path": "C:\\Users\\kotar\\.codex\\research\\assessment-evidence-sdk-sources\\claude_agent_sdk-0.2.90.tar.gz",
+    "sha256": "00bebd2e6132ea448eb09343e0065cd4344dbd0a433d92e9155abd561108517b",
+    "bytes": 253307,
+    "at": "2026-10-17T21:48:47.242Z",
+    "scope": "source distribution only, no install/build/setup/CLI invocation"
+  }
+]

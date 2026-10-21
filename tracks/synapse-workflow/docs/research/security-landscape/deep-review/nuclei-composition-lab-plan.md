@@ -1,0 +1,5 @@
+# Template composition and ordering oracle
+
+Predeclared2026-10-17. Run only cache/clone/sole-LLM configuration unit tests and three research overlay tests against the pinned source. No provider, protocol execution or third-party target. Public dependency downloads are build preparation. Use production template JSON decoder, validation, Operators.Execute and matcher methods; model reply is a stub.
+
+Hypotheses: (1) critical request with default OR, failed deterministic word and positive stub LLM passes sole-LLM guard and matches; (2) repeated decoding identical multiprotocol JSON exhibits more than one protocol queue order because finalizeFromJSON iterates map; (3) negative DSL predicate turns an evaluation false/error into true. Assertions establish these controlled compositions, not attacker exploitability or model success. Inspect supporting upstream test files before execution. Save overlay, command/environment, full events, exit/duration, source hashes; record failed build/inconclusive outcomes honestly.

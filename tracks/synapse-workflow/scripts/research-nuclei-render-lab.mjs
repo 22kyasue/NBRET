@@ -1,0 +1,17 @@
+import {readFileSync,writeFileSync,mkdirSync,openSync,closeSync} from 'node:fs';
+import {resolve,join} from 'node:path';
+import {spawnSync} from 'node:child_process';
+import {createHash} from 'node:crypto';
+const suite=process.argv[2]||'render';
+if(!['render','auth'].includes(suite))throw new Error('Known research suite required');
+const sourceFiles=suite==='render'?['pkg/protocols/common/render/render.go','pkg/protocols/common/render/render_test.go','pkg/protocols/common/expressions/expressions.go','pkg/protocols/common/expressions/variables.go']:['pkg/authprovider/authx/dynamic.go','pkg/authprovider/authx/dynamic_test.go','pkg/authprovider/authx/cookie_context.go','pkg/authprovider/authx/cookie_context_test.go','pkg/authprovider/authx/strategy.go','pkg/authprovider/authx/file.go'];
+const root='C:/Users/kotar/.codex/research/nuclei',out=resolve(`runs/nuclei-${suite}-research-${Date.now()}`);mkdirSync(out);
+const sdk=resolve('.tools/security-research-go/sdk/go/bin/go.exe');
+const args=['test',suite==='render'?'./pkg/protocols/common/render':'./pkg/authprovider/authx','-run',suite==='render'?'^TestRender':'^(TestDynamic|TestFetchWithout|TestSetLazy|TestGetStrategies|TestGetDomain|TestApplyValues|TestCookieAuth|TestHeaderAuthCookie)','-count=1','-json'];
+const env={...process.env,GOTOOLCHAIN:'local',CGO_ENABLED:'0',GOPATH:resolve('.tools/security-research-go/module-cache'),GOCACHE:resolve('.tools/security-research-go/cache'),GOPROXY:'off',GOSUMDB:'off'};
+const log=join(out,'test.jsonl'),err=join(out,'stderr.txt'),fd=openSync(log,'w'),efd=openSync(err,'w'),started=performance.now();
+const r=spawnSync(sdk,args,{cwd:root,env,windowsHide:true,stdio:['ignore',fd,efd],timeout:600000});closeSync(fd);closeSync(efd);
+const hash=b=>createHash('sha256').update(b).digest('hex');
+const events=readFileSync(log,'utf8').split('\n').filter(Boolean).map(s=>{try{return JSON.parse(s)}catch{return{raw:s}}});
+const receipt={at:new Date().toISOString(),out,suite,scope:'Read upstream component tests with stub callbacks/helpers/URL source, no target/model/OOB or real credentials; module network disabled',command:{executable:sdk,args,cwd:root},moduleNetwork:{GOPROXY:env.GOPROXY,GOSUMDB:env.GOSUMDB},exit:r.status,error:r.error?.message,elapsedMs:performance.now()-started,tests:events.filter(e=>e.Test&&['pass','fail','skip'].includes(e.Action)).map(e=>({test:e.Test,action:e.Action})),sourceSha256:Object.fromEntries([...sourceFiles,'go.mod','go.sum'].map(p=>[p,hash(readFileSync(join(root,p)))])),logSha256:hash(readFileSync(log)),stderrSha256:hash(readFileSync(err))};
+writeFileSync(join(out,'receipt.json'),JSON.stringify(receipt,null,2));writeFileSync(`docs/research/security-landscape/deep-review/nuclei-${suite}-lab-receipt.json`,JSON.stringify(receipt,null,2));console.log(JSON.stringify({out,exit:receipt.exit,elapsedMs:receipt.elapsedMs,topLevelTests:receipt.tests.filter(t=>!t.test.includes('/')).length,passEvents:receipt.tests.filter(t=>t.action==='pass').length,failEvents:receipt.tests.filter(t=>t.action==='fail'),stderrTail:readFileSync(err,'utf8').slice(-1000)}));

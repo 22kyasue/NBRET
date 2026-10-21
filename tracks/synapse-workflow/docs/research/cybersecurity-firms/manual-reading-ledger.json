@@ -1,0 +1,491 @@
+{
+  "generated": "2026-10-18T00:14:43.776Z",
+  "scope": "Captures 025–037 only; earlier captures and research/PDF receipts remain in continuation.md and ignored receipt files.",
+  "entries": [
+    {
+      "url": "https://shisho.dev/docs/g/getting-started/integrate-apps/github/",
+      "receipt": "runs/cybersecurity-firms-20261017/capture-025.json",
+      "accessed": "2026-10-17",
+      "state": "complete-main-text",
+      "scope": "Complete substantive extracted main text, excluding navigation and linked pages",
+      "sha256": "8cb8bd29c3e216547ae55819adb49d928715669b0cb8d942963926e077d716bf",
+      "visual": "No visual inspection credited",
+      "execution": "None"
+    },
+    {
+      "url": "https://shisho.dev/docs/t/assessment/features/assessment-authentication/",
+      "receipt": "runs/cybersecurity-firms-20261017/capture-025.json",
+      "accessed": "2026-10-17",
+      "state": "complete-main-text",
+      "scope": "Complete substantive extracted main text, excluding navigation and linked pages",
+      "sha256": "5669db7cc387611b3a9e3c6679bd0253578c6369245bc760694a30dd0e357942",
+      "visual": "No visual inspection credited",
+      "execution": "None"
+    },
+    {
+      "url": "https://developer.crowdstrike.com/falcon-sensor/ansible/roles/falcon-configure/",
+      "receipt": "runs/cybersecurity-firms-20261017/capture-026.json",
+      "accessed": "2026-10-17",
+      "state": "complete-main-text",
+      "scope": "Complete substantive extracted main text, excluding navigation and linked pages",
+      "sha256": "b5f261b1f322a6e8930ae020d72511dbc8c2855932829954230ab89a635184c2",
+      "visual": "No visual inspection credited",
+      "execution": "None"
+    },
+    {
+      "url": "https://developer.crowdstrike.com/falcon-sensor/ansible/modules/sensor-update-policy/",
+      "receipt": "runs/cybersecurity-firms-20261017/capture-026.json",
+      "accessed": "2026-10-17",
+      "state": "complete-main-text",
+      "scope": "Complete substantive extracted main text, excluding navigation and linked pages",
+      "sha256": "f62c7c20edcee9140501dc6c99cb271203dbee957affe42e69b4447f57b3bccb",
+      "visual": "No visual inspection credited",
+      "execution": "None"
+    },
+    {
+      "url": "https://shisho.dev/docs/ja/t/assessment/features/assessment-authentication/",
+      "receipt": "runs/cybersecurity-firms-20261017/capture-027.json",
+      "accessed": "2026-10-17",
+      "state": "complete-main-text",
+      "scope": "Complete substantive extracted main text, excluding navigation and linked pages",
+      "sha256": "d9fbd542f6e62da75d33f611371f892652fcd8b26c824d2cf0b7f95cc98d9240",
+      "visual": "No visual inspection credited",
+      "execution": "None"
+    },
+    {
+      "url": "https://shisho.dev/docs/ja/g/getting-started/integrate-apps/github/",
+      "receipt": "runs/cybersecurity-firms-20261017/capture-027.json",
+      "accessed": "2026-10-17",
+      "state": "complete-main-text",
+      "scope": "Complete substantive extracted main text, excluding navigation and linked pages",
+      "sha256": "e7755d8b768dda0c0ec925f3e8725dfd4ec819f96473bce835a0361bff04f95a",
+      "visual": "No visual inspection credited",
+      "execution": "None"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/defender-endpoint/automation-levels",
+      "receipt": "runs/cybersecurity-firms-20261017/capture-028.json",
+      "accessed": "2026-10-17",
+      "state": "complete-main-text",
+      "scope": "Complete substantive extracted main text, excluding navigation and linked pages",
+      "sha256": "68f763e8b6bc639777f80cdac4d726d7204cf48882e6324d213fc142260f7936",
+      "visual": "No visual inspection credited",
+      "execution": "None"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/defender-endpoint/manage-auto-investigation",
+      "receipt": "runs/cybersecurity-firms-20261017/capture-028.json",
+      "accessed": "2026-10-17",
+      "state": "complete-main-text",
+      "scope": "Complete substantive extracted main text, excluding navigation and linked pages",
+      "sha256": "4e860234f2f7aa225332ad39f4488f19af64c33ddcb7c645d0722c9150945f12",
+      "visual": "No visual inspection credited",
+      "execution": "None"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/defender-endpoint/manage-automation-folder-exclusions",
+      "receipt": "runs/cybersecurity-firms-20261017/capture-028.json",
+      "accessed": "2026-10-17",
+      "state": "complete-main-text",
+      "scope": "Complete substantive extracted main text, excluding navigation and linked pages",
+      "sha256": "c8c8dde83b77ad123389081f37c3a6b746906b90e8afe97651ebf82025e9b68e",
+      "visual": "No visual inspection credited",
+      "execution": "None"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/copilot/security/security-copilot-inclusion",
+      "receipt": "runs/cybersecurity-firms-20261017/capture-029.json",
+      "accessed": "2026-10-17",
+      "state": "complete-main-text",
+      "scope": "Complete substantive extracted main text, excluding navigation and linked pages",
+      "sha256": "d505db421150bfc790e0d4c068c9fd5a9b626c002f5b8b2433a2dac025241b39",
+      "visual": "No visual inspection credited",
+      "execution": "None"
+    },
+    {
+      "url": "https://www.microsoft.com/en-us/security/pricing/microsoft-security-copilot/",
+      "receipt": "runs/cybersecurity-firms-20261017/capture-029.json",
+      "accessed": "2026-10-17",
+      "state": "complete-main-text",
+      "scope": "Complete substantive extracted main text, excluding navigation and linked pages",
+      "sha256": "1db17b4fe82b9513f39618172641de15d96ef3ef6b6ab44edd5d294083fbfd6e",
+      "visual": "No visual inspection credited",
+      "execution": "None"
+    },
+    {
+      "url": "https://cloud.google.com/products/security-operations/pricing",
+      "receipt": "runs/cybersecurity-firms-20261017/capture-029.json",
+      "accessed": "2026-10-17",
+      "state": "complete-main-text",
+      "scope": "Complete substantive extracted main text, excluding navigation and linked pages",
+      "sha256": "e791764132c6c2147508e8ad196c2343a5492ab9adcd650978a464bf66ebb9c0",
+      "visual": "No visual inspection credited",
+      "execution": "None"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/copilot/security/auto-provisioning-security-copilot",
+      "receipt": "runs/cybersecurity-firms-20261017/capture-030.json",
+      "accessed": "2026-10-17",
+      "state": "complete-main-text",
+      "scope": "Complete substantive extracted main text, excluding navigation and linked pages",
+      "sha256": "ed2ea5bd868d6002aaf5f4f5da3a502a1403a71beea6af7d2a1c63171e3152dc",
+      "visual": "No visual inspection credited",
+      "execution": "None"
+    },
+    {
+      "url": "https://www.lac.co.jp/news/2025/07/17_press_01.html",
+      "receipt": "runs/cybersecurity-firms-20261017/capture-031.json",
+      "accessed": "2026-10-17",
+      "state": "complete-main-text",
+      "scope": "Complete substantive extracted main text, excluding navigation and linked pages",
+      "sha256": "cead6fc4abd0db04bc54331c21187a97e2bb3e0a5020eed7fd08a3a9d740e7be",
+      "visual": "No visual inspection credited",
+      "execution": "None"
+    },
+    {
+      "url": "https://developer.crowdstrike.com/falcon-mcp/modules/agentworks/",
+      "receipt": "runs/cybersecurity-firms-20261017/capture-032.json",
+      "accessed": "2026-10-17",
+      "state": "complete-main-text",
+      "scope": "Complete substantive extracted main text, excluding navigation and linked pages",
+      "sha256": "5cbfd830350f03697ba0849d1debd9a51df34e3a2786bc39f287c6606a1145e8",
+      "visual": "No visual inspection credited",
+      "execution": "None"
+    },
+    {
+      "url": "https://www.crowdstrike.com/en-us/legal/crowdstrike-licensing/",
+      "receipt": "runs/cybersecurity-firms-20261017/capture-032.json",
+      "accessed": "2026-10-17",
+      "state": "partial-main-text",
+      "scope": "Charlotte AI licensing subsection; other selected content is not credited as a full page read",
+      "sha256": "14ea3dd6bced0771dfa33f1bf38673eb81f5227e9fcefdcde62e2804579e2023",
+      "visual": "No visual inspection credited",
+      "execution": "None"
+    },
+    {
+      "url": "https://news.microsoft.com/source/2017/06/08/microsoft-signs-agreement-to-acquire-hexadite/",
+      "receipt": "runs/cybersecurity-firms-20261017/capture-033.json",
+      "accessed": "2026-10-17",
+      "state": "retrieval-rejected",
+      "scope": "Restriction page only; no substantive content reading or retry",
+      "sha256": "9670e85682bbda48ffe1e320865192a960654300e544870a84045dd740cd532c",
+      "visual": "No visual inspection credited",
+      "execution": "None"
+    },
+    {
+      "url": "https://blogs.microsoft.com/blog/2015/09/08/microsoft-acquires-adallom-to-advance-identity-and-security-in-the-cloud/",
+      "receipt": "runs/cybersecurity-firms-20261017/capture-033.json",
+      "accessed": "2026-10-17",
+      "state": "retrieval-rejected",
+      "scope": "Restriction page only; no substantive content reading or retry",
+      "sha256": "19b56ab2c9183e9d15005aaeb847794a72ca8de7fd174bf4d713a6b5f9e172fa",
+      "visual": "No visual inspection credited",
+      "execution": "None"
+    },
+    {
+      "url": "https://www.x.company/blog/posts/graduation-day-introducing-chronicle/",
+      "receipt": "runs/cybersecurity-firms-20261017/capture-033.json",
+      "accessed": "2026-10-17",
+      "state": "complete-main-text",
+      "scope": "Complete substantive extracted main text, excluding navigation and linked pages",
+      "sha256": "6d0a139f412d6967b8175f87d0da6f6b0b548b0a5b1f25ccbca7b7df365d9602",
+      "visual": "No visual inspection credited",
+      "execution": "None"
+    },
+    {
+      "url": "https://docs.trendmicro.com/en-us/documentation/article/trend-vision-one-isolate-endpoint-task",
+      "receipt": "runs/cybersecurity-firms-20261017/capture-034.json",
+      "accessed": "2026-10-17",
+      "state": "complete-main-text",
+      "scope": "Complete substantive extracted main text, including visible update metadata; linked articles separately credited only when read",
+      "visual": "No visual inspection credited",
+      "execution": "None"
+    },
+    {
+      "url": "https://success.trendmicro.com/en-US/solution/KA-0013234",
+      "receipt": "runs/cybersecurity-firms-20261017/capture-034.json",
+      "accessed": "2026-10-17",
+      "state": "complete-main-text",
+      "scope": "Complete substantive extracted main text, including visible update metadata; linked articles separately credited only when read",
+      "visual": "No visual inspection credited",
+      "execution": "None"
+    },
+    {
+      "url": "https://success.trendmicro.com/solution/KA-0019907",
+      "receipt": "runs/cybersecurity-firms-20261017/capture-034.json",
+      "accessed": "2026-10-17",
+      "state": "complete-main-text",
+      "scope": "Complete substantive extracted main text, including visible update metadata; linked articles separately credited only when read",
+      "visual": "No visual inspection credited",
+      "execution": "None"
+    },
+    {
+      "url": "https://success.trendmicro.com/en-US/solution/KA-0019492",
+      "receipt": "runs/cybersecurity-firms-20261017/capture-035.json",
+      "accessed": "2026-10-17",
+      "state": "complete-main-text",
+      "scope": "Complete substantive extracted main text, including visible update metadata; linked articles separately credited only when read",
+      "visual": "No visual inspection credited",
+      "execution": "None"
+    },
+    {
+      "url": "https://success.trendmicro.com/en-US/solution/KA-0020113",
+      "receipt": "runs/cybersecurity-firms-20261017/capture-035.json",
+      "accessed": "2026-10-17",
+      "state": "complete-main-text",
+      "scope": "Complete substantive extracted main text, including visible update metadata; linked articles separately credited only when read",
+      "visual": "No visual inspection credited",
+      "execution": "None"
+    },
+    {
+      "url": "https://success.trendmicro.com/en-US/solution/KA-0019494",
+      "receipt": "runs/cybersecurity-firms-20261017/capture-035.json",
+      "accessed": "2026-10-17",
+      "state": "complete-main-text",
+      "scope": "Complete substantive extracted main text, including visible update metadata; linked articles separately credited only when read",
+      "visual": "No visual inspection credited",
+      "execution": "None"
+    },
+    {
+      "url": "https://help.sfasu.edu/TDClient/2027/Portal/KB/ArticleDet?ID=170040",
+      "receipt": "runs/cybersecurity-firms-20261017/capture-036.json",
+      "accessed": "2026-10-17",
+      "state": "complete-main-text",
+      "scope": "Complete substantive extracted main text; linked pages and images not credited by association",
+      "visual": "No visual inspection credited",
+      "execution": "None"
+    },
+    {
+      "url": "https://docs-cortex.paloaltonetworks.com/r/Cortex-XDR/9.1/Cortex-XDR-Agent-Administrator-Guide/Configure-Cortex-XDR-Agent-for-Mac",
+      "receipt": "runs/cybersecurity-firms-20261017/capture-036.json",
+      "accessed": "2026-10-17",
+      "state": "complete-main-text",
+      "scope": "Complete substantive extracted main text; linked pages and images not credited by association",
+      "visual": "No visual inspection credited",
+      "execution": "None"
+    },
+    {
+      "url": "https://cortex-docs.paloaltonetworks.com/cortex-xdr-agent/9.1/cortex-xdr-agent-for-macos/install-the-cortex-xdr-agent-for-mac/install-the-cortex-xdr-agent-manually",
+      "receipt": "runs/cybersecurity-firms-20261017/capture-037.json",
+      "accessed": "2026-10-17",
+      "state": "complete-main-text",
+      "scope": "Complete substantive extracted main text; linked pages and images not credited by association",
+      "visual": "No visual inspection credited",
+      "execution": "None"
+    },
+    {
+      "url": "https://www.lac.co.jp/corporate/info/public_notice.html",
+      "receipt": "runs/cybersecurity-firms-20261017/manual-capture-038.json",
+      "accessed": "2026-10-17",
+      "state": "complete-main-text",
+      "scope": "Complete main text and notice links",
+      "visual": "No visual inspection credited",
+      "execution": "None"
+    },
+    {
+      "url": "https://www.lac.co.jp/corporate/pdf/notice_19.pdf",
+      "receipt": null,
+      "accessed": "2026-10-17",
+      "state": "complete-main-text",
+      "scope": "All eight extracted pages; web refs turn72view0 and turn73view0",
+      "visual": "No visual inspection credited",
+      "execution": "None"
+    },
+    {
+      "url": "https://www.nri-secure.co.jp/service/mss/secureprotecht",
+      "receipt": "runs/cybersecurity-firms-20261017/capture-039.json",
+      "accessed": "2026-10-17",
+      "state": "complete-main-text",
+      "scope": "Complete substantive main text including service FAQ",
+      "visual": "No visual inspection credited",
+      "execution": "None"
+    },
+    {
+      "url": "https://www.nri-secure.co.jp/blog/agentic-soc",
+      "receipt": "runs/cybersecurity-firms-20261017/capture-039.json",
+      "accessed": "2026-10-17",
+      "state": "complete-main-text",
+      "scope": "Complete article main text; linked research not read by association",
+      "visual": "No visual inspection credited",
+      "execution": "None"
+    },
+    {
+      "url": "https://developer.cisco.com/docs/cisco-xdr/automation-api-guide/",
+      "receipt": "runs/cybersecurity-firms-20261017/capture-039.json",
+      "accessed": "2026-10-17",
+      "state": "complete-main-text",
+      "scope": "Complete overview and inert sample; no credentials or API calls",
+      "visual": "No visual inspection credited",
+      "execution": "None"
+    },
+    {
+      "url": "https://www.cisco.com/c/dam/en_us/about/doing_business/legal/service_descriptions/docs/Cisco-XDR-Premier-Services.pdf",
+      "receipt": "runs/cybersecurity-firms-20261017/cisco-premier-reading-receipt.json",
+      "accessed": "2026-10-17",
+      "state": "complete-main-text",
+      "scope": "All thirteen extracted pages",
+      "visual": "No visual inspection credited",
+      "execution": "None"
+    },
+    {
+      "url": "https://www.crowdstrike.com/en-us/legal/terms-conditions/",
+      "receipt": "runs/cybersecurity-firms-20261017/capture-040.json",
+      "accessed": "2026-10-17",
+      "state": "complete-main-text",
+      "scope": "Master terms sections 1–14 and Exhibits A–C read in contiguous text slices; linked DPA not read",
+      "visual": "No visual inspection credited",
+      "execution": "None"
+    },
+    {
+      "url": "https://assets.crowdstrike.com/is/content/crowdstrikeinc/crowdstrike-global-data-protection-agreementpdf",
+      "receipt": "runs/cybersecurity-firms-20261017/capture-041.json",
+      "accessed": "2026-10-17",
+      "state": "retrieval-unavailable",
+      "scope": "DPA landing read; linked PDF returned inaccessible via tool; no clauses credited; no retry"
+    },
+    {
+      "url": "https://www.lac.co.jp/operation/jsocxpdr.html",
+      "receipt": "runs/cybersecurity-firms-20261017/capture-042.json",
+      "accessed": "2026-10-17",
+      "state": "complete-main-text",
+      "scope": "Complete substantive main text; linked documents and image-only flow not credited",
+      "visual": "No visual inspection credited",
+      "execution": "None"
+    },
+    {
+      "url": "https://www.lac.co.jp/news/2026/04/21_press_01.html",
+      "receipt": "runs/cybersecurity-firms-20261017/capture-042.json",
+      "accessed": "2026-10-17",
+      "state": "complete-main-text",
+      "scope": "Complete substantive main text; linked documents and image-only flow not credited",
+      "visual": "No visual inspection credited",
+      "execution": "None"
+    },
+    {
+      "url": "https://www.lac.co.jp/operation/jsocxpdr_advanced.html",
+      "receipt": "runs/cybersecurity-firms-20261017/capture-043.json",
+      "accessed": "2026-10-17",
+      "state": "complete-main-text",
+      "scope": "Complete substantive main text; linked documents and image-only flow not credited",
+      "visual": "No visual inspection credited",
+      "execution": "None"
+    },
+    {
+      "url": "https://oit.duke.edu/help/articles/kb0035319/",
+      "receipt": "runs/cybersecurity-firms-20261017/capture-045.json",
+      "accessed": "2026-10-17",
+      "state": "complete-main-text",
+      "scope": "All substantive troubleshooting and appendix text, including validity metadata; linked internal downloads not accessed",
+      "visual": "No visual inspection credited",
+      "execution": "None"
+    },
+    {
+      "url": "https://status.cloud.google.com/security/incidents/cSxDAnszXHrxJNsSrT1u",
+      "receipt": "runs/cybersecurity-firms-20261017/capture-046.json",
+      "accessed": "2026-10-17",
+      "state": "complete-main-text",
+      "scope": "Complete substantive main text; linked pages not read by association",
+      "visual": "No visual inspection credited",
+      "execution": "None"
+    },
+    {
+      "url": "https://blog.google/intl/ja-jp/company-news/technology/cybersecurity-initiative/",
+      "receipt": "runs/cybersecurity-firms-20261017/capture-046.json",
+      "accessed": "2026-10-17",
+      "state": "complete-main-text",
+      "scope": "Complete substantive main text; linked pages not read by association",
+      "visual": "No visual inspection credited",
+      "execution": "None"
+    },
+    {
+      "url": "https://shisho.dev/docs/t/runner/architecture/integration/",
+      "receipt": "runs/cybersecurity-firms-20261017/capture-047.json",
+      "accessed": "2026-10-17",
+      "state": "complete-main-text",
+      "scope": "Complete main text; diagram not visually inspected; linked guides separately credited",
+      "visual": "No visual inspection credited",
+      "execution": "None"
+    },
+    {
+      "url": "https://shisho.dev/docs/ja/t/assessment/features/integrations/github/",
+      "receipt": "runs/cybersecurity-firms-20261017/capture-047.json",
+      "accessed": "2026-10-17",
+      "state": "complete-main-text",
+      "scope": "Complete main text; diagram not visually inspected; linked guides separately credited",
+      "visual": "No visual inspection credited",
+      "execution": "None"
+    },
+    {
+      "url": "https://help.splunk.com/en/splunk-enterprise-security-8/administer/8.6/ai-assistant-in-security-and-agentic-capabilities/setting-up-the-triage-agent-in-splunk-enterprise-security",
+      "receipt": "runs/cybersecurity-firms-20261017/capture-048.json",
+      "accessed": "2026-10-17",
+      "state": "complete-main-text",
+      "scope": "Complete overview main text; resourceId redirected to canonical 8.6 URL",
+      "visual": "No visual inspection credited",
+      "execution": "None"
+    },
+    {
+      "url": "https://help.splunk.com/en/splunk-enterprise-security-8/administer/8.6/ai-assistant-in-security-and-agentic-capabilities/setting-up-the-triage-agent-in-splunk-enterprise-security/turn-on-or-turn-off-the-triage-agent",
+      "receipt": "runs/cybersecurity-firms-20261017/capture-049.json",
+      "accessed": "2026-10-17",
+      "state": "complete-main-text",
+      "scope": "Complete activation main text",
+      "visual": "No visual inspection credited",
+      "execution": "None"
+    },
+    {
+      "url": "https://help.splunk.com/en/splunk-enterprise-security-8/administer/8.6/ai-assistant-in-security-and-agentic-capabilities/setting-up-the-triage-agent-in-splunk-enterprise-security/identify-the-detections-that-the-triage-agent-can-use-to-analyze-findings",
+      "receipt": "runs/cybersecurity-firms-20261017/capture-049.json",
+      "accessed": "2026-10-17",
+      "state": "complete-main-text",
+      "scope": "Complete detection selection main text",
+      "visual": "No visual inspection credited",
+      "execution": "None"
+    },
+    {
+      "url": "https://help.splunk.com/en/splunk-enterprise-security-8/administer/8.6/ai-assistant-in-security-and-agentic-capabilities/setting-up-the-triage-agent-in-splunk-enterprise-security/analyze-the-findings-using-the-triage-agent",
+      "receipt": "runs/cybersecurity-firms-20261017/capture-049.json",
+      "accessed": "2026-10-17",
+      "state": "complete-main-text",
+      "scope": "Complete analysis main text",
+      "visual": "No visual inspection credited",
+      "execution": "None"
+    },
+    {
+      "url": "https://help.splunk.com/en/splunk-enterprise-security-8/administer/8.6/ai-assistant-in-security-and-agentic-capabilities/setting-up-the-triage-agent-in-splunk-enterprise-security/specify-soar-connectors-to-enrich-findings-using-the-triage-agent",
+      "receipt": "runs/cybersecurity-firms-20261017/capture-050.json",
+      "accessed": "2026-10-17",
+      "state": "complete-main-text",
+      "scope": "Complete connector/action selection main text",
+      "visual": "No visual inspection credited",
+      "execution": "None"
+    },
+    {
+      "url": "https://www.splunk.com/en_us/legal/licensed-capacity.html",
+      "receipt": "runs/cybersecurity-firms-20261017/capture-048.json",
+      "accessed": "2026-10-17",
+      "state": "partial-main-text",
+      "scope": "ES editions table and visible September 2026 update label only",
+      "visual": "No visual inspection credited",
+      "execution": "None"
+    },
+    {
+      "url": "https://help.splunk.com/en/splunk-enterprise-security-8/administer/8.6/ai-assistant-in-security-and-agentic-capabilities/opt-in-or-out-of-ai-training-and-fine-tuning-in-splunk-enterprise-security",
+      "receipt": "runs/cybersecurity-firms-20261017/capture-051.json",
+      "accessed": "2026-10-17",
+      "state": "complete-main-text",
+      "scope": "All substantive training-setting text; no linked policy read by association",
+      "visual": "No visual inspection credited",
+      "execution": "None"
+    },
+    {
+      "url": "https://help.splunk.com/en/splunk-enterprise-security-8/administer/8.6/ai-assistant-in-security-and-agentic-capabilities/choose-which-models-the-ai-assistant-uses-in-splunk-enterprise-security",
+      "receipt": "runs/cybersecurity-firms-20261017/capture-052.json",
+      "accessed": "2026-10-17",
+      "state": "complete-main-text",
+      "scope": "All substantive general assistant model-choice text; no linked policy read by association",
+      "visual": "No visual inspection credited",
+      "execution": "None"
+    }
+  ]
+}

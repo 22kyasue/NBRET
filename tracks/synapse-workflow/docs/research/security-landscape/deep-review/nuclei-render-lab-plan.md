@@ -1,0 +1,3 @@
+# Rendering trust boundary — declared before execution
+
+2026-10-17. Run read-complete upstream TestRender* in pkg/protocols/common/render at pinned a151a1d54fad0d5ef71f01662b0bb3955a98c7c5. Stub URL allocator and helper functions only, no target/model/OOB calls. Use already downloaded modules with GOPROXY=off and GOSUMDB=off; missing dependencies should fail without retrying blocked archive. Success means supplied runtime markers/helper-looking text remain data, source helper/markers evaluate, errors propagate and map data overlays do not allocate URLs. This is component-level DSL data isolation, not model prompt-injection resistance or full request-chain safety.

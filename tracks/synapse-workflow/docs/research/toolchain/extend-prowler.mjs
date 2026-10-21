@@ -1,0 +1,11 @@
+import fs from 'node:fs/promises';
+import path from 'node:path';
+import {createHash} from 'node:crypto';
+const home=path.resolve('docs/research/toolchain'),root=path.resolve('.tools/toolchain/prowler'),hash=b=>createHash('sha256').update(b).digest('hex');
+const pins=JSON.parse(await fs.readFile(path.join(home,'snapshots.json'))),q=JSON.parse(await fs.readFile(path.join(home,'queue.json'))),row=JSON.parse(await fs.readFile(path.join(home,'catalog.json'))).find(x=>x.project==='prowler-cloud/prowler'),provenance=JSON.parse(await fs.readFile(path.join(root,'tree-provenance.json')));
+if(pins.some(x=>x.name==='prowler'))throw Error('Already inventoried.');
+const files=['LICENSE','pyproject.toml','prowler/__main__.py','prowler/lib/check/check.py','prowler/lib/check/models.py','prowler/providers/aws/aws_provider.py','prowler/providers/aws/services/iam/iam_client.py','prowler/providers/aws/services/iam/iam_service.py','prowler/providers/aws/services/iam/iam_aws_attached_policy_no_administrative_privileges/iam_aws_attached_policy_no_administrative_privileges.py','prowler/providers/aws/services/iam/iam_aws_attached_policy_no_administrative_privileges/iam_aws_attached_policy_no_administrative_privileges.metadata.json','tests/lib/check/check_test.py'];
+const commit=row.catalogPin.commit,artifacts=[];
+for(const file of files){const url='https://raw.githubusercontent.com/'+row.project+'/'+commit+'/'+file,r=await fetch(url);if(!r.ok)throw Error(file+' '+r.status);const b=Buffer.from(await r.arrayBuffer()),sha256=hash(b),target=path.join(root,file);await fs.mkdir(path.dirname(target),{recursive:true});await fs.writeFile(target,b,{flag:'wx'});artifacts.push({file,url,sha256});q.push({repo:'prowler',path:file,commit,sha256,lines:b.toString('utf8').split('\n').length,status:'unread',readRanges:[]});}
+pins.push({name:'prowler',url:'https://github.com/'+row.project,root,commit,ref:row.catalogPin.ref,retrievedAt:new Date().toISOString(),basis:'Selected source artifacts at retained release pin; tree metadata is not full downloaded/read source; no SDK credential discovery or provider execution',treeReceipt:provenance,artifacts});
+await fs.writeFile(path.join(home,'snapshots.json'),JSON.stringify(pins,null,2));await fs.writeFile(path.join(home,'queue.json'),JSON.stringify(q,null,2));console.log(q.filter(x=>x.repo==='prowler').map(x=>[x.path,x.lines]));

@@ -1,0 +1,28 @@
+{
+  "at": "2026-10-17T22:00:13.557Z",
+  "version": "2.3.0",
+  "root": "C:/Users/kotar/.codex/research/assessment-evidence-venv/Lib/site-packages/mcp-2.3.0.dist-info",
+  "meaning": "installed wheel metadata and RECORD, not full source review",
+  "files": {
+    "METADATA": {
+      "sha256": "a94577513a4fa0cb639c279c1ad6f4d49650872d45f2f4ab9bb2d9c2a505d457",
+      "bytes": 6632
+    },
+    "RECORD": {
+      "sha256": "de0d97a7d361d6cae2a5f42fcbd05f7e17d05743acedc9b6950bff5197da94d4",
+      "bytes": 18482
+    },
+    "WHEEL": {
+      "sha256": "41c708c5adba6e097513ab8ccb9f1d7865a2fb469e22491a9e01dcc64da459fc",
+      "bytes": 87
+    },
+    "INSTALLER": {
+      "sha256": "ceebae7b8927a3227e5303cf5e0f1f7b34bb542ad7250ac03fbcde36ec2f1508",
+      "bytes": 4
+    },
+    "licenses/LICENSE": {
+      "sha256": "5e13dbbc1d120fc2a03cecde7c91424ae2d7de11b63d58ded2f4431e261ee50d",
+      "bytes": 1071
+    }
+  }
+}

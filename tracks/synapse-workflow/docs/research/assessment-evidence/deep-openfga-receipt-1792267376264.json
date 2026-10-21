@@ -1,0 +1,48 @@
+{
+  "at": "2026-10-17T20:03:36.860Z",
+  "scope": "actual cache resolver; synthetic cache/delegate; no server, target or model",
+  "out": "C:\\Users\\kotar\\.codex\\research\\assessment-evidence-receipts\\openfga-1792267376262",
+  "command": {
+    "exe": "C:\\Users\\kotar\\githubprojects\\NBRET\\.tools\\security-research-go\\sdk\\go\\bin\\go.exe",
+    "args": [
+      "test",
+      "-p",
+      "2",
+      "-overlay",
+      "C:\\Users\\kotar\\.codex\\research\\assessment-evidence-receipts\\openfga-1792267376262\\overlay.json",
+      "./internal/graph",
+      "-run",
+      "^TestResearch",
+      "-count=1",
+      "-json"
+    ],
+    "cwd": "C:/Users/kotar/.codex/research/openfga-20261017"
+  },
+  "toolchain": "go version go1.27.2 windows/amd64",
+  "environment": {
+    "GOTOOLCHAIN": "local",
+    "CGO_ENABLED": "0",
+    "GOPATH": "C:\\Users\\kotar\\githubprojects\\NBRET\\.tools\\security-research-go\\module-cache",
+    "GOCACHE": "C:\\Users\\kotar\\.codex\\research\\assessment-evidence-receipts\\openfga-1792267376262\\build-cache",
+    "GOPROXY": "https://proxy.golang.org",
+    "GOSUMDB": "sum.golang.org"
+  },
+  "code": 1,
+  "signal": null,
+  "elapsedMs": 40633,
+  "sourceSha256": {
+    "go.mod": "6c5e972de64e7e06f544873a77ddf84de5d86100d1ae96be3555c04b62c10be8",
+    "go.sum": "c08837e3f91fe661b0ae2c0e3c561d4f39141b15f40433d7e6d924568b19aa03",
+    "internal/graph/cached_resolver.go": "cc6bc3c9c9a314802d16b9364b67f775fc568863f34fa5c8d0ac000c546fd9e9",
+    "internal/graph/resolve_check_request.go": "9f030420c596c4f0603d3d6d43ee76a64e2f23be6b3686f81657954fce8f0248",
+    "internal/graph/resolve_check_response.go": "2dbe84841ab691704041bc8b6fad01119c8729303b5617c58d6ed3ae02cfb3fc",
+    "pkg/storage/cache.go": "169d22ee6050a13085abe2db7a1bf05be79e5adf9d42e055a950dd81110b8233"
+  },
+  "fixtureSha256": "62766720492981cf78d86a2efbedc991b65a53dddf05645128c40a7e3f49c655",
+  "overlaySha256": "23c5c66bdbf823698f4018b5ce234c6477ae52be2f110d0204daf132790adf37",
+  "stdoutSha256": "065b747e1deb7f2b17e1e7165fb02f4833ca1df5da233c2070bed0900aaaabc2",
+  "stderrSha256": "5cd4104f60530717882eabf040fc81f8826f5a9f1951c8b78f758d12f5295361",
+  "tests": [],
+  "intervention": "fixture and map cache/delegate authored by researcher; production resolver unchanged",
+  "cost": "no provider calls; unmetered local CPU/build dependency download, no monetary estimate"
+}

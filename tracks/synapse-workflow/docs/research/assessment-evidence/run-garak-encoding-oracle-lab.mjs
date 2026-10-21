@@ -1,0 +1,13 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import {pathToFileURL} from 'node:url';
+const own=path.resolve('docs/research/assessment-evidence');
+let source=fs.readFileSync(path.join(own,'run-claude-cleanup-lab.mjs'),'utf8');
+source=source.replaceAll('claude-cleanup','garak-encoding-oracle');
+source=source.replace('test_claude_cleanup_contract.py','test_garak_encoding_oracle_contract.py');
+source=source.replace("sourceSha256:hash(path.join(root,'src/claude_agent_sdk/client.py'))","sourceSha256:Object.fromEntries(['C:/Users/kotar/.codex/research/garak/tests/probes/test_probes_encoding.py','C:/Users/kotar/.codex/research/garak/garak/resources/matching.py'].map(p=>[p,hash(p)]))");
+source=source.replace(/criteria:'[^']*'/,"criteria:'actual decorator list comprehension has zero cases for nonempty exclusion list; actual ngram function scores unordered fragments1 and exact short target0'");
+source=source.replace(/intervention:'[^']*'/,"intervention:'AST-selected actual expression/function only, benign strings and synthetic probe names; no garak plugins, encoders, payloads or providers'");
+const generated=path.join(own,'run-garak-encoding-oracle-generated.mjs');
+fs.writeFileSync(generated,source,{flag:'wx'});
+await import(pathToFileURL(generated).href);

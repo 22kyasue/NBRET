@@ -1,0 +1,18 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import crypto from 'node:crypto';
+import {spawnSync} from 'node:child_process';
+const own=path.resolve('docs/research/assessment-evidence');
+const root='C:/Users/kotar/.codex/research/assessment-evidence-venv/Lib/site-packages/mcp';
+const exe='C:/Users/kotar/.codex/research/assessment-evidence-venv/Scripts/python.exe';
+const fixture=path.join(own,'test_mcp_context_contract.py');
+const args=['-m','pytest','-q','-p','no:cacheprovider',fixture];
+const env={...process.env,PYTEST_DISABLE_PLUGIN_AUTOLOAD:'1',PYTHONDONTWRITEBYTECODE:'1'};
+const at=Date.now();
+const r=spawnSync(exe,args,{windowsHide:true,env,encoding:'utf8',timeout:30000,maxBuffer:2000000});
+const hash=p=>crypto.createHash('sha256').update(fs.readFileSync(p)).digest('hex');
+const freeze=spawnSync(exe,['-m','pip','freeze'],{windowsHide:true,encoding:'utf8'});
+const receipt={at:new Date().toISOString(),command:[exe,...args],exitCode:r.status,stdout:r.stdout,stderr:r.stderr,elapsedMs:Date.now()-at,sourceSha256:Object.fromEntries(['shared/_context_streams.py','shared/_stream_protocols.py','shared/dispatcher.py'].map(p=>[p,hash(path.join(root,p))])),fixtureSha256:hash(fixture),runnerSha256:hash(new URL(import.meta.url)),packages:freeze.stdout,criteria:'Per-message marker snapshots remain distinct; receiver context unchanged until explicit Context.run; normal last-sender close ends iteration; documented request-id normalization holds.',intervention:'Researcher-authored benign local strings and context variables only; actual installed MCP implementation unchanged.',scope:'normal in-process stream lifecycle and request-id helpers; no injected failure, panic, crash, credentials, native agent, HTTP, tools or target',limits:['does not establish dispatcher integration, authentication or tenant isolation','context snapshots are not deep copies of mutable values','installed MCP 2.3.0 is not necessarily an assessment deployment'],cost:'local CPU/storage only; no provider or paid calls'};
+const file=path.join(own,`mcp-context-contract-receipt-${at}.json`);
+fs.writeFileSync(file,JSON.stringify(receipt,null,2)+'\n',{flag:'wx'});
+console.log(JSON.stringify({file,exitCode:r.status,stdout:r.stdout,stderr:r.stderr}));

@@ -1,0 +1,34 @@
+{
+  "purpose": "Diagram data for Rowan's reader; rendering remains Rowan-owned.",
+  "date": "2026-10-17",
+  "canonicalGuide": "reader-guide.md",
+  "flows": [
+    {
+      "id": "dns-paths",
+      "title": "A DNS result can take different paths",
+      "article": "dns-flow.md",
+      "evidence": "source-only",
+      "nodes": ["Request", "Hosts/PTR cache", "Custom resolver", "UDP port 53", "ID/type/class/name matching", "System resolver fallback", "Reported association"],
+      "edges": [["Request", "Hosts/PTR cache"], ["Request", "Custom resolver"], ["Custom resolver", "UDP port 53"], ["UDP port 53", "ID/type/class/name matching"], ["ID/type/class/name matching", "Reported association"], ["ID/type/class/name matching", "System resolver fallback"], ["System resolver fallback", "Reported association"], ["Hosts/PTR cache", "Reported association"]],
+      "annotations": [{"node": "UDP port 53", "text": "Nsock TCP proxy predicate does not carry this UDP path", "evidence": "source-only"}, {"node": "Hosts/PTR cache", "text": "Stored association is not a fresh wire observation", "evidence": "source-only"}, {"node": "System resolver fallback", "text": "Actual customer routes, DNS policy and egress are unknown", "evidence": "unknown"}]
+    },
+    {
+      "id": "nsock-evidence-lifetime",
+      "title": "An asynchronous operation and its evidence lifetime",
+      "article": "nsock-flow.md",
+      "evidence": "source-only",
+      "nodes": ["API request", "Event/payload buffer", "Already-done immediate callback", "Selected OS engine", "Result/status", "Callback consumes or copies bytes", "Buffer free", "Event recycle"],
+      "edges": [["API request", "Event/payload buffer"], ["Event/payload buffer", "Already-done immediate callback"], ["Event/payload buffer", "Selected OS engine"], ["Selected OS engine", "Result/status"], ["Result/status", "Callback consumes or copies bytes"], ["Already-done immediate callback", "Callback consumes or copies bytes"], ["Callback consumes or copies bytes", "Buffer free"], ["Buffer free", "Event recycle"]],
+      "annotations": [{"node": "Result/status", "text": "Read SUCCESS can contain partial data after timeout; write SUCCESS is not application acknowledgement", "evidence": "source-only"}, {"node": "Selected OS engine", "text": "select, poll, epoll, kqueue and IOCP differ; default Windows preference narrows IOCP candidate reachability", "evidence": "source-only"}, {"node": "Selected OS engine", "text": "No native execution or shipped-binary equivalence established", "evidence": "unknown"}]
+    },
+    {
+      "id": "packet-provenance",
+      "title": "Captured bytes become interpreted and exported evidence",
+      "article": "pcap-format.md",
+      "evidence": "source-only",
+      "nodes": ["Capture/pcapng input", "Block/length/interface parsing", "Captured length and wire length", "Dissection and display projection", "Dumper/options conversion", "Exported artifact"],
+      "edges": [["Capture/pcapng input", "Block/length/interface parsing"], ["Block/length/interface parsing", "Captured length and wire length"], ["Captured length and wire length", "Dissection and display projection"], ["Captured length and wire length", "Dumper/options conversion"], ["Dumper/options conversion", "Exported artifact"]],
+      "annotations": [{"node": "Dissection and display projection", "text": "Canonical VM/dispatch detail: packet-filter-vm.md; omitted dissectors are not read-credit complete", "evidence": "unknown"}, {"node": "Dumper/options conversion", "text": "Metadata, name origin, embedded secrets and timestamp precision need explicit handling", "evidence": "source-only"}, {"node": "Capture/pcapng input", "text": "No live capture performed in this continuation", "evidence": "source-only"}]
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "reviewedAt": "2026-10-18",
+  "reader": "Pine",
+  "file": "docs/research/synapse/research-to-service.md",
+  "coverage": "Complete document text read separately after original corpus snapshot; not added retroactively to original 264-file reading credit",
+  "use": "Decision-oriented route from Synapse service stages into the original research",
+  "reusableMethods": [
+    "Source understanding followed by independent runtime validation",
+    "Prerequisite paths with identity, environment and freshness evidence",
+    "Business invariants tested through state sequences and legitimate controls",
+    "Separate execution, telemetry, detection, response and restored state",
+    "Findings bound to repeatable evidence and fresh retest conditions",
+    "Bounded AI investigation with an independent effect oracle"
+  ],
+  "limits": [
+    "Transferred strategy files are proposals; canonical founder direction and private original conversation were absent",
+    "No demonstrated general client-system replica builder",
+    "No calibrated business-loss estimate",
+    "No observed integrated Synapse client engagement",
+    "Existing historical source observations must not be assumed unchanged in later toolkit versions",
+    "Proposed POC is not a selected architecture or instruction to execute"
+  ],
+  "action": "Linked from USE-RESEARCH.md; original mapping and source studies preserved"
+}

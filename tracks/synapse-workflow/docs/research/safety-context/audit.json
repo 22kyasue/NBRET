@@ -1,0 +1,110 @@
+{
+  "title": "Why did the research stop?",
+  "subtitle": "An evidence-based reconstruction of reported Codex pauses and other blocks during the NBRET research.",
+  "scope": "Six local research-session rollout files opened on 2026-10-17 (Rowan, Tomo, Agate, Linden, Lark and Pearl), selected user-visible messages/tool results, retained research receipts, peer confirmations and current official OpenAI documentation. A narrow read-only WARN/ERROR search in local diagnostic logs for these exact six thread IDs returned no matches for the named safety terms; it is not full product telemetry. This is not a complete account-enforcement audit.",
+  "finding": "The strongest recovered error is a Windows endpoint/file-security block during Tomo’s dependency build. The later named pauses have user reports and visible stop/resume instructions, but no recovered original OpenAI warning, rejected tool-call ID or exact policy reason. Nearby work provides context, not a proven trigger.",
+  "limits": [
+    "Report timestamps are when Kotaro reported a pause, not the unknown instant a safety system acted.",
+    "A successful tool-result status can wrap a failed command. Conversely, a missing rejection item does not prove no warning appeared in the UI.",
+    "No account-warning email, safety case ID or account-status data was supplied or inspected. No claim is made about account standing.",
+    "The audit examined user-visible messages and tool results. Internal reasoning, credentials and unrelated sessions are excluded.",
+    "No blocked action was reproduced, retried or routed through another tool for this audit.",
+    "Earlier Connect/Tailscale research notes mention restrictions, but their original sessions were not re-audited here; they are not silently counted as additional verified events."
+  ],
+  "events": [
+    {
+      "id":"E01","time":"2026-10-17T20:02:08.516Z","timeKind":"Retained command receipt","actor":"Tomo","category":"endpoint","label":"Exact endpoint error","title":"Windows blocked a downloaded build dependency",
+      "summary":"A selected Nuclei templates-package test build could not open a downloaded dependency archive. The command exited before any tests executed.",
+      "context":"The intended lab reviewed parser, cache, clone and model-guard behavior with synthetic inputs and a stub model. Compiling the templates package pulled in an indirect goimpacket dependency through interactsh’s NTLM-related imports. That build dependency was broader than the narrow behavior the lab intended to exercise.",
+      "observed":"Operation did not complete successfully because the file contains a virus or potentially unwanted software.",
+      "why":"The displayed reason is a Windows file/endpoint-security rejection when opening the module-cache archive. The precise security product, signature, detection name and whether the file was actually malicious are not established by this error.",
+      "notEstablished":"This is not a recovered OpenAI content refusal or account warning. A security tool’s dependency being blocked does not prove the whole repository is malware, and it does not establish that the requested tests ran.",
+      "after":"No security controls were disabled and the archive was not retried. The failed receipt and empty test list were retained. Independent cached components and source review continued.",
+      "evidence":["R01","R02"],
+      "boundary":"Downloading/building code introduces the operating system’s security checks, even when the intended test is local and benign."
+    },
+    {
+      "id":"E02","time":"2026-10-17T21:11:18.658Z","timeKind":"Human report","actor":"Multiple sessions; not individually identified in this report","category":"reported","label":"Warning reported; cause unknown","title":"First general report of content warnings",
+      "summary":"Kotaro reported that some research sessions were stopping because of content warnings, and asked for permissible alternative work.",
+      "context":"At 21:11:56Z, Kotaro specifically asked whether Agate and Linden needed another prompt. This identifies sessions of concern but does not supply the original warnings or establish separate enforcement events.",
+      "observed":"“some of them are getting stopped because of some content warnings or something”",
+      "why":"Unknown. The reviewed user-visible records contain the report and subsequent guidance, not an original rejection message or an attributed policy rule.",
+      "notEstablished":"Do not infer that a particular repository, keyword, source read or test was forbidden. Do not count repeated discussion of the same report as additional blocks.",
+      "after":"Rowan instructed all sessions to leave rejected operations stopped, preserve the narrow boundary, and continue independent architecture, defensive, correctness and evidence work. Both Agate and Linden subsequently reported no visible current warning in their context.",
+      "evidence":["R03","R04"],
+      "boundary":"A user-visible pause report is evidence of what the user observed, not sufficient evidence of the hidden enforcement reason."
+    },
+    {
+      "id":"E03","time":"2026-10-17T21:52:50.917Z","timeKind":"Human report","actor":"Linden","category":"reported","label":"Warning reported; cause unknown","title":"Linden paused; the pending cloud-report experiment was set aside",
+      "summary":"Kotaro reported a safety-warning pause. Linden then left a proposed Prowler denied-collection/report experiment unperformed and moved to ordinary HAR export/import correctness.",
+      "context":"The last visible commentary before the lull discussed how denied cloud-policy collection could reach check/report models, proposing an inert client stand-in with no cloud connection. The last recovered tool result at 21:18:24Z followed a read of a local helper script. There is a gap before the 21:52:50Z report.",
+      "observed":"“ok linden paused again from like safety warning”",
+      "why":"Unknown. Linden and the retained ledger explicitly state that the original warning text and rejected call are not visible. The pending Prowler proposal was conservatively stopped; its association with the warning is not proof it caused it.",
+      "notEstablished":"Neither the last script read nor the proposed cloud-report test is established as the rejected operation. No cloud access, denied-policy runtime action or completed safety rejection is reconstructed from this gap.",
+      "after":"At 21:53:11Z Kotaro directed permitted continuation. Linden switched to inert HAR metadata round trips, then passive packet/source review. The cloud experiment remained stopped, without alternate routing.",
+      "evidence":["R05","R06","R07","R08"],
+      "boundary":"Preserve a pending action as unperformed when the warning cannot be matched to an exact call. Resume a genuinely independent task."
+    },
+    {
+      "id":"E04","time":"2026-10-17T22:32:32.767Z","timeKind":"Human report","actor":"Tomo","category":"reported","label":"Stop reported; cause unknown","title":"Tomo stopped and moved to report interpretation",
+      "summary":"Kotaro reported that Tomo was stopped and asked for help. The exact warning and flagged operation remain unrecovered.",
+      "context":"Earlier work had validated low-memory structural naming/lookup behavior in an in-memory setting. The last recovered pre-report tool results were ordinary HostProcessUnitTest source reads, ending at 22:09:46Z. That is background context, not a causal attribution.",
+      "observed":"“ok, now Tomo is stopped. Can you please help him?”",
+      "why":"Unknown. This particular user message does not quote a safety warning; the surrounding conversation treats it as a flagged-operation pause, but no original refusal or classification is visible.",
+      "notEstablished":"Do not claim a local ZAP lab, source-file read, or particular flaw triggered OpenAI enforcement. The earlier Windows dependency error is a separate event, E01.",
+      "after":"At 22:32:59Z Kotaro explicitly directed permitted continuation and no retry. Tomo moved to report serialization, configuration, redaction/provenance and ordinary status UI source review, with no new runtime reproduction in that continuation.",
+      "evidence":["R09","R10","R11","R12"],
+      "boundary":"Separate the stopped-session report from a different, earlier error whose exact cause is known."
+    },
+    {
+      "id":"E05","time":"2026-10-17T22:45:26.821Z","timeKind":"Human report","actor":"Agate","category":"reported","label":"Pause reported; cause unknown","title":"Agate paused; a planned recovery reproduction was suspended",
+      "summary":"Kotaro reported another pause. Agate suspended a pending real-resolver recovery/channel-close reproduction and switched to independent SDK protocol and serialization work.",
+      "context":"The preceding visible work reviewed OpenFGA cancellation/recovery paths and an exact concurrency dependency. Selected unchanged fast-path/provider tests had passed offline. The final recovered tool output at 22:42:49Z printed a local runner and iterator source; it contains no recovered rejection text.",
+      "observed":"“agate got paused again”",
+      "why":"Unknown. The planned recovery experiment is a suspended candidate, not an identified rejected call. Agate confirmed its fixture was not written or executed and explicitly rejected inferring it caused the warning.",
+      "notEstablished":"The reviewed records do not establish an authorization bypass, harmful runtime experiment, model refusal category, auto-review decision or account sanction.",
+      "after":"At 22:45:42Z Kotaro directed independent permitted tasks without retry or equivalent reproduction. Agate continued protocol/schema, serialization/version compatibility and ordinary in-process context work. The pending recovery reproduction remained stopped.",
+      "evidence":["R13","R14","R15","R16"],
+      "boundary":"A nearby failure-recovery investigation can be described precisely without declaring that it crossed a policy boundary."
+    }
+  ],
+  "references":[
+    {"id":"R01","kind":"Saved receipt","path":"docs/research/security-landscape/deep-review/nuclei-composition-lab-receipt.json","note":"Command timestamp, exit 1, scope and tests=[]; failure before tests."},
+    {"id":"R02","kind":"Original command log","path":"runs/nuclei-composition-research-1792267301095/test.jsonl","note":"Exact Windows security error names the downloaded goimpacket temporary archive. No detection product/signature recorded."},
+    {"id":"R03","kind":"User message","session":"Rowan","line":852,"time":"2026-10-17T21:11:18.658Z","excerpt":"okay, some of them are getting stopped because of some content warnings or something. Can we kind of guide them so that we don't necessarily do something that can't be done, right? I don't mind that, but can we just guide them in a different direction that is correct, right? And that more work and more exploration can be done, please?"},
+    {"id":"R04","kind":"User message","session":"Rowan","line":884,"time":"2026-10-17T21:11:56.194Z","excerpt":"so I think we need to prompt Agate and Linden again, or do I need to do it?"},
+    {"id":"R05","kind":"User message","session":"Rowan","line":1222,"time":"2026-10-17T21:52:50.917Z","excerpt":"ok linden paused again from like safety warning"},
+    {"id":"R06","kind":"Visible commentary","session":"Linden","line":2713,"time":"2026-10-17T21:18:07.130Z","excerpt":"Prowler’s IAM collector often logs collection failures and leaves empty or default fields. Some methods distinguish “not found” from “access denied”; others leave similar data shapes after either failure. I’m checking how denied policy-version collection reaches the selected check and its report models, using an inert client stand-in with no cloud connection."},
+    {"id":"R07","kind":"User resume instruction","session":"Linden","line":2743,"time":"2026-10-17T21:53:11.923Z","excerpt":"Continue with Rowan’s permitted alternative tasks. Leave the flagged operation stopped, record the warning, and don’t retry it."},
+    {"id":"R08","kind":"Durable peer record","path":"docs/research/toolchain/continuation.md","note":"User-reported warning boundary; no original warning/action ID visible; cloud proposal remains stopped. Dated continuation is not the rejection timestamp."},
+    {"id":"R09","kind":"User message","session":"Rowan","line":1524,"time":"2026-10-17T22:32:32.767Z","excerpt":"ok, now Tomo is stopped. Can you please help him?"},
+    {"id":"R10","kind":"Tool-result context","session":"Tomo","line":6738,"time":"2026-10-17T22:09:46.270Z","note":"Last recovered pre-report output is a source-read result, not a recovered rejection."},
+    {"id":"R11","kind":"User resume instruction","session":"Tomo","line":6745,"time":"2026-10-17T22:32:59.478Z","excerpt":"Continue with Rowan’s permitted alternative tasks. Leave the flagged operation stopped and don’t retry it."},
+    {"id":"R12","kind":"Durable peer record","path":"docs/research/security-landscape/deep-review/priorities.md","note":"22:35Z permitted-alternative checkpoint: warning/action/reason unavailable; source-only report work. This is not the unknown rejection time."},
+    {"id":"R13","kind":"User message","session":"Rowan","line":1753,"time":"2026-10-17T22:45:26.821Z","excerpt":"agate got paused again"},
+    {"id":"R14","kind":"Visible commentary","session":"Agate","line":5677,"time":"2026-10-17T22:42:36.588Z","excerpt":"The selected unchanged OpenFGA fast-path and provider tests passed offline, with no source overlay and no stderr. That confirms the tested behavior; it does not settle the conditional recovery concern."},
+    {"id":"R15","kind":"User resume instruction","session":"Agate","line":5703,"time":"2026-10-17T22:45:42.664Z","excerpt":"Continue with Rowan’s independent permitted tasks. Leave the flagged operation stopped; don’t retry it or reproduce it another way."},
+    {"id":"R16","kind":"Durable peer record","path":"docs/research/assessment-evidence/continuation-exhaustion.md","note":"Suspended recovery/channel-close reproduction; no fixture written/run and no proven association with warning."}
+  ],
+  "sessions":{
+    "Rowan":"rollout-2026-10-17T11-41-26-01a14b2b-396f-73e0-9a37-379a502b2b9c.jsonl",
+    "Tomo":"rollout-2026-10-17T11-53-14-01a14b36-083f-7103-be7f-3fccb88c196a.jsonl",
+    "Agate":"rollout-2026-10-17T11-57-19-01a14b39-c3dc-7142-b619-419d04ad875d.jsonl",
+    "Linden":"rollout-2026-10-17T12-50-03-01a14b6a-0a4b-7491-b9ef-b92311ef9a72.jsonl",
+    "Lark":"rollout-2026-10-17T12-50-30-01a14b6a-7451-7602-8b7e-3abc7516c9da.jsonl",
+    "Pearl":"rollout-2026-10-17T16-17-52-01a14c28-5021-7be3-9001-c20968039d9c.jsonl"
+  },
+  "policySources":[
+    {"title":"OpenAI Usage Policies","url":"https://openai.com/policies/usage-policies/","point":"Prohibits malicious or abusive cyber activity, privacy abuse and circumventing safeguards. This general rule is not a diagnosis of these events."},
+    {"title":"Models and Trusted Access for Cyber","url":"https://learn.chatgpt.com/docs/cyber-safety","point":"Distinguishes approved defensive work and separately approved advanced workflows, controlled environments and scoped permissions. This audit does not establish anyone’s access tier."},
+    {"title":"Cybersecurity checks (API)","url":"https://developers.openai.com/api/docs/guides/safety-checks/cybersecurity","point":"Says legitimate research can occasionally be flagged, and explicitly says API safeguards differ from Codex. No cyber_policy API error was recovered here."},
+    {"title":"Why did I receive an account warning?","url":"https://help.openai.com/en/articles/10562178-why-did-i-receive-a-warning-about-my-account","point":"Describes account notices and appeal routes. A reported session pause is not proof of an account notice; account status is unavailable to this audit."}
+  ],
+  "interpretation":[
+    {"title":"What the known error explains","text":"E01 explains an actual failed operation: Windows refused to open an archive needed for compilation. The dependency graph, not the stated intent of the test, determined what files the OS encountered."},
+    {"title":"What remains unknown about the reported pauses","text":"For E02–E05, neither the last nearby source read nor a planned experiment supplies the missing warning. We can explain the work and the safe continuation, but cannot truthfully identify which content or action a safety system classified."},
+    {"title":"Why security research can be sensitive in general","text":"Reviewing mechanisms, running a test, creating a reproducer, and validating a practical attack can enable different capabilities. Authorization, action scope, side effects, data and control boundaries matter. Public OpenAI documentation distinguishes these cases; a local or educational label alone is not a universal permission. This is general explanation, not a claim about the cause of these pauses."},
+    {"title":"What our earlier updates overstated","text":"Repeated phrases such as “flagged operation” sounded more definite than the evidence. They recorded a conservative stop instruction; they did not recover an exact rejected call. The audit corrects that impression instead of converting repetition into proof."},
+    {"title":"What would close the gap","text":"The exact warning text or screenshot, its time, any case/error ID, and the exact request or tool call shown with it would allow a narrower classification. Preserve what already exists; do not recreate a blocked action just to obtain a warning."}
+  ]
+}

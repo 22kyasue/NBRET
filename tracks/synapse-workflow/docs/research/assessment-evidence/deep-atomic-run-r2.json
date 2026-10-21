@@ -1,0 +1,14 @@
+{
+  "command": [
+    "powershell.exe",
+    "-NoProfile",
+    "-NonInteractive",
+    "-File",
+    "docs/research/assessment-evidence/deep-atomic-lab.ps1",
+    "-OutputDirectory",
+    "C:/Users/kotar/.codex/research/assessment-evidence-receipts/deep-atomic-20261017-r2"
+  ],
+  "exitCode": 0,
+  "stdout": "Executing test: T0000-1 Synthetic only\nExit code: 7\nDone executing test: T0000-1 Synthetic only\nCheckPrereq's for: T0000-1 Synthetic only\nPrerequisites not met: T0000-1 Synthetic only\n\t[*] missing synthetic prerequisite\nTry installing prereq's with the -GetPrereqs switch\n{\r\n    \"powershell\":  \"5.1.26100.9711\",\r\n    \"scope\":  \"Real orchestration functions with mocked parser,target-info,command dispatcher; no Atomic command or process launched\",\r\n    \"whatIfDispatches\":  [\r\n                             \"SYNTHETIC-RUN\"\r\n                         ],\r\n    \"checkPrereqDispatches\":  [\r\n                                  \"SYNTHETIC-CHECK\"\r\n                              ],\r\n    \"cleanupDispatches\":  [\r\n                              \"SYNTHETIC-CLEANUP\"\r\n                          ],\r\n    \"cleanupReturnedNonzero\":  7,\r\n    \"cleanupStillPrintedDone\":  true,\r\n    \"cleanupText\":  \"Executing cleanup for test: \\r\\nT0000-1 Synthetic only\\r\\n\\r\\nDone executing cleanup for test: \\r\\nT0000-1 Synthetic only\\r\\n\\r\\n\",\r\n    \"modelCalls\":  0,\r\n    \"networkCalls\":  0,\r\n    \"externalEffects\":  0,\r\n    \"sources\":  {\r\n                    \"Private/Invoke-CheckPrereqs.ps1\":  \"4B61DC0B8C24F61FFF4A29FB964C9120BC35FF186DB20465DC65C5D8B456CE14\",\r\n                    \"Public/Invoke-AtomicTest.ps1\":  \"78B928FD09610F5B6698F7A58728D497822514C7A399DBD9CEE6C3A21A29BEA3\",\r\n                    \"Private/Replace-InputArgs.ps1\":  \"2EC4C4D548C785E76BD5A9A3FF9DFD03C576786E10F926C8CCFFC8B5D2D23D41\"\r\n                },\r\n    \"scriptSha256\":  \"16DE4232FFE0DE1AD48939BB40B1B9327ACA124B845F44D79DA55A830D3A1B50\"\r\n}\r\n",
+  "stderr": ""
+}

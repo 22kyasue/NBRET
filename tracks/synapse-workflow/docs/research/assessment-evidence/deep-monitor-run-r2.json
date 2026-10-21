@@ -1,0 +1,13 @@
+{
+  "command": {
+    "executable": "C:/Users/kotar/.codex/research/assessment-evidence-venv/Scripts/python.exe",
+    "args": [
+      "docs/research/assessment-evidence/deep-monitor-lab.py",
+      "docs/research/assessment-evidence/deep-monitor-receipt-r2.json"
+    ]
+  },
+  "elapsedMs": 2281,
+  "status": 0,
+  "stdout": "{\r\n  \"python\": \"3.14.7 (tags/v3.14.7:823f032, Aug  5 2026, 10:51:32) [MSC v.1944 64 bit (AMD64)]\",\r\n  \"platform\": \"win32\",\r\n  \"scope\": \"Actual in-memory SQLite monitor; AST-only web helpers; one newly spawned hidden child; no web service/SDK/real run DB\",\r\n  \"reasoningAndRawOmitted\": true,\r\n  \"commandSecretRetained\": true,\r\n  \"promptRetainedByDefault\": true,\r\n  \"otherRunReturnsNoEvents\": true,\r\n  \"recordAfterFinishRejected\": true,\r\n  \"nonloopbackRejected\": true,\r\n  \"windowsOwnerCheck\": {\r\n    \"executed\": true,\r\n    \"ownedChildPid\": 44540,\r\n    \"childExecutable\": \"C:\\\\Python314\\\\python.exe\",\r\n    \"aliveBefore\": true,\r\n    \"helperReturned\": true,\r\n    \"exitAfter\": null,\r\n    \"terminatedWithinTwoSeconds\": false\r\n  },\r\n  \"networkCalls\": 0,\r\n  \"modelCalls\": 0,\r\n  \"scriptSha256\": \"da665d481be3d10777bf7cf2f06e91af10aa77c2e1ad9f4b017d4f5d9105241d\",\r\n  \"sources\": {\r\n    \"unified_agent/monitoring.py\": \"ee597e11bedf54311bf910d38691ffedd3babf936f056d4ebcbcb5063009ee9b\",\r\n    \"unified_agent/monitor_web.py\": \"d968ca78a54b6978d91657f1c4601df74bb0eb9836e2e450ae5cccc282d1f223\",\r\n    \"unified_agent/events.py\": \"1f9518b20b7c33cb1cf52141c87029ec2b7e90df3bb13af458ba5447acfcf20c\"\r\n  }\r\n}\r\n",
+  "stderr": ""
+}

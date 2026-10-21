@@ -1,0 +1,32 @@
+{
+  "at": "2026-10-17T19:13:00.889Z",
+  "command": "node docs/research/assessment-evidence/verify.mjs",
+  "node": "v24.21.0",
+  "exitCode": 0,
+  "checks": [
+    "JSON parsing",
+    "relative Markdown links",
+    "lab source/receipt hash",
+    "six class cases passed",
+    "no external lab calls"
+  ],
+  "filesChecked": [
+    "benchmark-pins.json",
+    "coverage.md",
+    "executable-claims.md",
+    "framework.md",
+    "implementations.md",
+    "incidents.md",
+    "infrastructure-and-memory.md",
+    "lab-receipt-20261017.json",
+    "overview.md",
+    "README.md",
+    "sample-deliverable.md",
+    "sample-report-pin.json",
+    "sentinel-pin.json",
+    "source-reading.json",
+    "sources.md",
+    "synthesis.md"
+  ],
+  "limitations": "Does not validate remote URL availability, prose truth, source security or universality of the claim"
+}

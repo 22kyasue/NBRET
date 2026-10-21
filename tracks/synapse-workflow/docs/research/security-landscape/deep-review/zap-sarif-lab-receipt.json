@@ -1,0 +1,32 @@
+{
+  "at": "2026-10-17T20:36:18.838Z",
+  "out": "C:\\Users\\kotar\\githubprojects\\NBRET\\runs\\zap-sarif-research-1792269377972",
+  "scope": "Installed reports addon SarifResult builder with synthetic in-memory HTTP messages. No daemon, target requests, browser, real credentials, or generated JSON report.",
+  "command": {
+    "executable": "C:/Users/kotar/AppData/Local/Programs/BurpSuite/jre/bin/java.exe",
+    "args": [
+      "-Djava.awt.headless=true",
+      "--class-path",
+      "C:\\Users\\kotar\\githubprojects\\NBRET\\.tools\\ZAP_2.17.0\\zap-2.17.0.jar;C:\\Users\\kotar\\githubprojects\\NBRET\\.tools\\ZAP_2.17.0\\lib\\*;C:\\Users\\kotar\\githubprojects\\NBRET\\.tools\\ZAP_2.17.0\\plugin\\reports-release-0.43.0.zap",
+      "C:\\Users\\kotar\\githubprojects\\NBRET\\runs\\zap-sarif-research-1792269377972\\SarifResearch.java"
+    ],
+    "cwd": "C:\\Users\\kotar\\githubprojects\\NBRET\\runs\\zap-sarif-research-1792269377972"
+  },
+  "exit": 0,
+  "signal": null,
+  "elapsedMs": 784.3845,
+  "passes": [
+    "PASS authorization_masked_control",
+    "PASS request_cookie_preserved",
+    "PASS custom_key_preserved",
+    "PASS url_query_preserved",
+    "PASS request_body_preserved",
+    "PASS response_cookie_preserved",
+    "PASS response_body_preserved",
+    "PASS attack_preserved"
+  ],
+  "addonSha256": "af27617b76a5f89594fe25109c3f811a431dda01e3b58d814f1589b698fad8ee",
+  "fixtureSha256": "c9546b41358fcdba21747207c841837e72fe1a8cca8b58636f4a61e43b131bfe",
+  "stdoutSha256": "4731ce68f23f053c72b6b8b751c9b02007fbece8d773c8a5659aad9f8a0af894",
+  "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

@@ -1,0 +1,12 @@
+const fs=require('fs'),path=require('path'),root=__dirname;
+const previous=fs.readFileSync(path.join(root,'report.html'),'utf8');
+const css=previous.slice(previous.indexOf('<style>')+7,previous.indexOf('</style>'));
+const screen=previous.slice(previous.indexOf('function screen('),previous.indexOf('function brief('));
+const comparison=previous.slice(previous.indexOf('function comparison('),previous.indexOf('const nodeContent='));
+const script=fs.readFileSync(path.join(root,'assessment.js'),'utf8');
+const extraCss=fs.readFileSync(path.join(root,'assessment.css'),'utf8');
+const html='<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Northstar · Assessment overview</title><style>'+css+'\n'+extraCss+'</style></head><body><main id="root"></main><dialog id="dialog"></dialog><script>'+screen+comparison+script+'</script></body></html>';
+fs.writeFileSync(path.join(root,'assessment.html'),html);
+const server=fs.readFileSync(path.join(root,'server-report.cjs'),'utf8').replaceAll('65191','65192').replaceAll('report.html','assessment.html');
+fs.writeFileSync(path.join(root,'server-assessment.cjs'),server);
+console.log('Built assessment.html');

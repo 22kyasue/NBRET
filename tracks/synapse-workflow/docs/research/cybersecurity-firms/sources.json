@@ -1,0 +1,3449 @@
+{
+  "generated": "2026-10-18T03:40:28.598Z",
+  "sources": [
+    {
+      "url": "https://gmo-cybersecurity.com/company/",
+      "captures": [
+        {
+          "url": "https://gmo-cybersecurity.com/company/",
+          "accessed": "2026-10-17",
+          "captureKind": "provider extracted-text result, not raw HTML",
+          "httpStatus": "200",
+          "title": "会社情報 | 脆弱性診断（セキュリティ診断）のGMOサイバーセキュリティ byイエラエ — https://gmo-cybersecurity.com/company/ [200 text/html]",
+          "textSha256": "f68bb426f000d5ce9540117219bf4c04512a35fbd365091796102745061b8b21",
+          "characters": 6563,
+          "receipt": "runs/cybersecurity-firms-20261017/capture-001.json",
+          "reading": "consult continuation.md and canonical claim artifact; retrieval is not reading"
+        }
+      ],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/financial-anchors.md",
+        "docs/research/cybersecurity-firms/gmo-ierae.md",
+        "docs/research/cybersecurity-firms/selection.md"
+      ],
+      "acquisition": "captured text or recorded retrieval failure"
+    },
+    {
+      "url": "https://gmo-cybersecurity.com/service/",
+      "captures": [
+        {
+          "url": "https://gmo-cybersecurity.com/service/",
+          "accessed": "2026-10-17",
+          "captureKind": "provider extracted-text result, not raw HTML",
+          "httpStatus": "200",
+          "title": "サービス ・製品一覧 | 脆弱性診断（セキュリティ診断）のGMOサイバーセキュリティ byイエラエ — https://gmo-cybersecurity.com/service/ [200 text/html]",
+          "textSha256": "5cbc67c7a95a8182a5e4cbd198c2610edaf30c1024626eab11d829d1cb52b335",
+          "characters": 9028,
+          "receipt": "runs/cybersecurity-firms-20261017/capture-001.json",
+          "reading": "consult continuation.md and canonical claim artifact; retrieval is not reading"
+        }
+      ],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/gmo-ierae.md"
+      ],
+      "acquisition": "captured text or recorded retrieval failure"
+    },
+    {
+      "url": "https://ir.crowdstrike.com/news-releases/news-release-details/crowdstrike-reports-fourth-quarter-and-fiscal-year-2026-financial",
+      "captures": [
+        {
+          "url": "https://ir.crowdstrike.com/news-releases/news-release-details/crowdstrike-reports-fourth-quarter-and-fiscal-year-2026-financial",
+          "accessed": "2026-10-17",
+          "captureKind": "provider extracted-text result, not raw HTML",
+          "httpStatus": "403",
+          "title": "Access Denied — https://ir.crowdstrike.com/news-releases/news-release-details/crowdstrike-reports-fourth-quarter-and-fiscal-year-2026-financial [403 text/html]",
+          "textSha256": "bb75e951a7153d92d6fb8074ba28f57d11fad68410f104eb5fa6df5a9e7446a8",
+          "characters": 472,
+          "receipt": "runs/cybersecurity-firms-20261017/capture-001.json",
+          "reading": "consult continuation.md and canonical claim artifact; retrieval is not reading"
+        }
+      ],
+      "citedBy": [],
+      "acquisition": "captured text or recorded retrieval failure"
+    },
+    {
+      "url": "https://www.nri-secure.co.jp/company/",
+      "captures": [
+        {
+          "url": "https://www.nri-secure.co.jp/company/",
+          "accessed": "2026-10-17",
+          "captureKind": "provider extracted-text result, not raw HTML",
+          "httpStatus": "200",
+          "title": "会社情報 / 情報セキュリティのNRIセキュア — https://www.nri-secure.co.jp/company/ [200 text/html]",
+          "textSha256": "ee2f3d20f2d48ea300849f7d2df58bf39fe5c68683e53878b29f9acf2ef6b2de",
+          "characters": 5298,
+          "receipt": "runs/cybersecurity-firms-20261017/capture-001.json",
+          "reading": "consult continuation.md and canonical claim artifact; retrieval is not reading"
+        }
+      ],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/nri-secure.md"
+      ],
+      "acquisition": "captured text or recorded retrieval failure"
+    },
+    {
+      "url": "https://www.lac.co.jp/corporate/",
+      "captures": [
+        {
+          "url": "https://www.lac.co.jp/corporate/",
+          "accessed": "2026-10-17",
+          "captureKind": "provider extracted-text result, not raw HTML",
+          "httpStatus": "200",
+          "title": "会社情報 | 株式会社ラック — https://www.lac.co.jp/corporate/ [200 text/html]",
+          "textSha256": "bb36cffeac9c0fcb37782ae0c697d17f5e7d7a4d05ea21268e43322d306edc44",
+          "characters": 4329,
+          "receipt": "runs/cybersecurity-firms-20261017/capture-001.json",
+          "reading": "consult continuation.md and canonical claim artifact; retrieval is not reading"
+        }
+      ],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/financial-anchors.md",
+        "docs/research/cybersecurity-firms/selection.md"
+      ],
+      "acquisition": "captured text or recorded retrieval failure"
+    },
+    {
+      "url": "https://gmo-cybersecurity.com/service/soc/soc-plan/",
+      "captures": [
+        {
+          "url": "https://gmo-cybersecurity.com/service/soc/soc-plan/",
+          "accessed": "2026-10-17",
+          "captureKind": "provider extracted-text result, not raw HTML",
+          "httpStatus": "200",
+          "title": "SOC サイバー攻撃防御・分析| 脆弱性診断（セキュリティ診断）のGMOサイバーセキュリティ byイエラエ — https://gmo-cybersecurity.com/service/soc/soc-plan/ [200 text/html]",
+          "textSha256": "9d2454904c3b8007a02900b9f1b01eeac3a172739fb233b30d762eca457305bb",
+          "characters": 10569,
+          "receipt": "runs/cybersecurity-firms-20261017/capture-001.json",
+          "reading": "consult continuation.md and canonical claim artifact; retrieval is not reading"
+        }
+      ],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/gmo-ierae.md"
+      ],
+      "acquisition": "captured text or recorded retrieval failure"
+    },
+    {
+      "url": "https://gmo-cybersecurity.com/company/history/",
+      "captures": [
+        {
+          "url": "https://gmo-cybersecurity.com/company/history/",
+          "accessed": "2026-10-17",
+          "captureKind": "provider extracted-text result, not raw HTML",
+          "httpStatus": "200",
+          "title": "会社沿革 | 脆弱性診断（セキュリティ診断）のGMOサイバーセキュリティ byイエラエ — https://gmo-cybersecurity.com/company/history/ [200 text/html]",
+          "textSha256": "d5f860c491e1dd0dfdc5b7a87da279e8f96dcfe3a9c69ae7fd25d2cec175dece",
+          "characters": 5869,
+          "receipt": "runs/cybersecurity-firms-20261017/capture-002.json",
+          "reading": "consult continuation.md and canonical claim artifact; retrieval is not reading"
+        }
+      ],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/gmo-ierae.md",
+        "docs/research/cybersecurity-firms/history-timelines.md"
+      ],
+      "acquisition": "captured text or recorded retrieval failure"
+    },
+    {
+      "url": "https://group.gmo/security-history/",
+      "captures": [
+        {
+          "url": "https://group.gmo/security-history/",
+          "accessed": "2026-10-17",
+          "captureKind": "provider extracted-text result, not raw HTML",
+          "httpStatus": "200",
+          "title": "GMOインターネットグループセキュリティ事業の軌跡 | GMOインターネットグループ株式会社GMO-6 廣惠次郎 登壇・メディア掲載情報バナー — https://group.gmo/security-history/ [200 text/html]",
+          "textSha256": "de447f5e553fc0d9cc4db38faefb273d9eda91b1f54cddfb4dc7faf876cecc78",
+          "characters": 40088,
+          "receipt": "runs/cybersecurity-firms-20261017/capture-002.json",
+          "reading": "consult continuation.md and canonical claim artifact; retrieval is not reading"
+        }
+      ],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/selection.md"
+      ],
+      "acquisition": "captured text or recorded retrieval failure"
+    },
+    {
+      "url": "https://www.nri-secure.co.jp/company/outline",
+      "captures": [
+        {
+          "url": "https://www.nri-secure.co.jp/company/outline",
+          "accessed": "2026-10-17",
+          "captureKind": "provider extracted-text result, not raw HTML",
+          "httpStatus": "200",
+          "title": "会社概要 / 情報セキュリティのNRIセキュア — https://www.nri-secure.co.jp/company/outline [200 text/html]",
+          "textSha256": "1b52ce32cca2da9e713c0bad55644e0f672661be38d814aefcf105aa7bde1081",
+          "characters": 7602,
+          "receipt": "runs/cybersecurity-firms-20261017/capture-002.json",
+          "reading": "consult continuation.md and canonical claim artifact; retrieval is not reading"
+        }
+      ],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/financial-anchors.md",
+        "docs/research/cybersecurity-firms/nri-secure.md",
+        "docs/research/cybersecurity-firms/selection.md"
+      ],
+      "acquisition": "captured text or recorded retrieval failure"
+    },
+    {
+      "url": "https://www.lac.co.jp/corporate/info/history.html",
+      "captures": [
+        {
+          "url": "https://www.lac.co.jp/corporate/info/history.html",
+          "accessed": "2026-10-17",
+          "captureKind": "provider extracted-text result, not raw HTML",
+          "httpStatus": "200",
+          "title": "沿革 | 株式会社ラック — https://www.lac.co.jp/corporate/info/history.html [200 text/html]",
+          "textSha256": "620197bdcf3432f9a16394ee83cd59d62e91b9333ae2130789bc0f99f6fefc21",
+          "characters": 6482,
+          "receipt": "runs/cybersecurity-firms-20261017/capture-002.json",
+          "reading": "consult continuation.md and canonical claim artifact; retrieval is not reading"
+        }
+      ],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/lac.md"
+      ],
+      "acquisition": "captured text or recorded retrieval failure"
+    },
+    {
+      "url": "https://www.lac.co.jp/corporate/unit/jsoc.html",
+      "captures": [
+        {
+          "url": "https://www.lac.co.jp/corporate/unit/jsoc.html",
+          "accessed": "2026-10-17",
+          "captureKind": "provider extracted-text result, not raw HTML",
+          "httpStatus": "200",
+          "title": "JSOC®（ジェイソック） | 株式会社ラック — https://www.lac.co.jp/corporate/unit/jsoc.html [200 text/html]",
+          "textSha256": "3ca7026fb58e0f89303664b94d1edb217901cdc72246f2f1b3a7b4ca1e198217",
+          "characters": 7005,
+          "receipt": "runs/cybersecurity-firms-20261017/capture-002.json",
+          "reading": "consult continuation.md and canonical claim artifact; retrieval is not reading"
+        }
+      ],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/lac.md"
+      ],
+      "acquisition": "captured text or recorded retrieval failure"
+    },
+    {
+      "url": "https://gmo-cybersecurity.com/service/incident/forensics/",
+      "captures": [
+        {
+          "url": "https://gmo-cybersecurity.com/service/incident/forensics/",
+          "accessed": "2026-10-17",
+          "captureKind": "provider extracted-text result, not raw HTML",
+          "httpStatus": "200",
+          "title": "デジタルフォレンジック・ インシデントレスポンス支援 | セキュリティ事故対応はGMOサイバーセキュリティbyイエラエ — https://gmo-cybersecurity.com/service/incident/forensics/ [200 text/html]",
+          "textSha256": "dd78ac779cf2a9a8e317b9013fccfe536905ffb384d166659691fd04fe51a89c",
+          "characters": 9690,
+          "receipt": "runs/cybersecurity-firms-20261017/capture-002.json",
+          "reading": "consult continuation.md and canonical claim artifact; retrieval is not reading"
+        }
+      ],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/gmo-ierae.md"
+      ],
+      "acquisition": "captured text or recorded retrieval failure"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/defender-xdr/phishing-triage-agent",
+      "captures": [
+        {
+          "url": "https://learn.microsoft.com/en-us/defender-xdr/phishing-triage-agent",
+          "accessed": "2026-10-17",
+          "captureKind": "provider extracted-text result, not raw HTML",
+          "httpStatus": "200",
+          "title": "Microsoft Security Copilot Phishing Triage Agent in Microsoft Defender - Microsoft Defender XDR | Microsoft Learn — https://learn.microsoft.com/en-us/defender-xdr/phishing-triage-agent [200 text/html]",
+          "textSha256": "3e817b1233a98717088dddfcafcded9db9ce090ccdb447b7bff123f0268acd65",
+          "characters": 38017,
+          "receipt": "runs/cybersecurity-firms-20261017/capture-003.json",
+          "reading": "consult continuation.md and canonical claim artifact; retrieval is not reading"
+        }
+      ],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/microsoft-phishing-agent.md"
+      ],
+      "acquisition": "captured text or recorded retrieval failure"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/security-copilot/privacy-data-security",
+      "captures": [
+        {
+          "url": "https://learn.microsoft.com/en-us/security-copilot/privacy-data-security",
+          "accessed": "2026-10-17",
+          "captureKind": "provider extracted-text result, not raw HTML",
+          "httpStatus": "200",
+          "title": "Privacy and data security in Microsoft Security Copilot | Microsoft Learn — https://learn.microsoft.com/en-us/copilot/security/privacy-data-security [200 text/html]",
+          "textSha256": "efa5cfe12d60d63d69efbbf9f7187d192be6f57ec9ac42303cf97a5775583e4d",
+          "characters": 19639,
+          "receipt": "runs/cybersecurity-firms-20261017/capture-003.json",
+          "reading": "consult continuation.md and canonical claim artifact; retrieval is not reading"
+        }
+      ],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/microsoft-phishing-agent.md"
+      ],
+      "acquisition": "captured text or recorded retrieval failure"
+    },
+    {
+      "url": "https://www.crowdstrike.com/en-us/blog/agentic-ai-innovation-in-cybersecurity-charlotte-ai-detection-triage/",
+      "captures": [
+        {
+          "url": "https://www.crowdstrike.com/en-us/blog/agentic-ai-innovation-in-cybersecurity-charlotte-ai-detection-triage/",
+          "accessed": "2026-10-17",
+          "captureKind": "provider extracted-text result, not raw HTML",
+          "httpStatus": "200",
+          "title": "CrowdStrike Unveils Charlotte AI Detection Triage for Faster SOC Triage — https://www.crowdstrike.com/en-us/blog/agentic-ai-innovation-in-cybersecurity-charlotte-ai-detection-triage/ [200 text/html]",
+          "textSha256": "f872795fe07cc95b050efb29693a7af24c89b1b228758676e76765450aa60931",
+          "characters": 13328,
+          "receipt": "runs/cybersecurity-firms-20261017/capture-003.json",
+          "reading": "consult continuation.md and canonical claim artifact; retrieval is not reading"
+        }
+      ],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/crowdstrike.md"
+      ],
+      "acquisition": "captured text or recorded retrieval failure"
+    },
+    {
+      "url": "https://cloud.google.com/chronicle/docs/secops/triage-investigation-agent",
+      "captures": [
+        {
+          "url": "https://cloud.google.com/chronicle/docs/secops/triage-investigation-agent",
+          "accessed": "2026-10-17",
+          "captureKind": "provider extracted-text result, not raw HTML",
+          "httpStatus": "200",
+          "title": "トリアージ エージェントを使用してアラートをトリアージする | Google Security Operations | Google Cloud Documentation — https://docs.cloud.google.com/chronicle/docs/secops/triage-investigation-agent?hl=ja [200 text/html]",
+          "textSha256": "cbd7720e46daf0ab304d44300d74a555b8e5d8775d003ad4d124f22860e0de55",
+          "characters": 39908,
+          "receipt": "runs/cybersecurity-firms-20261017/capture-003.json",
+          "reading": "consult continuation.md and canonical claim artifact; retrieval is not reading"
+        }
+      ],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/google-cloud-security.md"
+      ],
+      "acquisition": "captured text or recorded retrieval failure"
+    },
+    {
+      "url": "https://www.nri-secure.co.jp/news/2026/0806",
+      "captures": [
+        {
+          "url": "https://www.nri-secure.co.jp/news/2026/0806",
+          "accessed": "2026-10-17",
+          "captureKind": "provider extracted-text result, not raw HTML",
+          "httpStatus": "200",
+          "title": "NRIセキュア、自社のSOC運用知見を組み込んだAIで、セキュリティ監視サービスを強化｜ニュース・トピックス｜NRIセキュア — https://www.nri-secure.co.jp/news/2026/0806 [200 text/html]",
+          "textSha256": "8a51a31e493559e7bdae6742bc86dbafe200ed670705b410101179a071f71e07",
+          "characters": 4693,
+          "receipt": "runs/cybersecurity-firms-20261017/capture-004.json",
+          "reading": "consult continuation.md and canonical claim artifact; retrieval is not reading"
+        }
+      ],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/nri-secure.md"
+      ],
+      "acquisition": "captured text or recorded retrieval failure"
+    },
+    {
+      "url": "https://docs.trendmicro.com/en-US/documentation/article/trend-vision-one-companion-faq-2",
+      "captures": [
+        {
+          "url": "https://docs.trendmicro.com/en-US/documentation/article/trend-vision-one-companion-faq-2",
+          "accessed": "2026-10-17",
+          "captureKind": "provider extracted-text result, not raw HTML",
+          "httpStatus": "200",
+          "title": "TrendAI Companion FAQ | TrendAI™ — https://docs.trendmicro.com/en-US/documentation/article/trend-vision-one-companion-faq-2 [200 text/html]",
+          "textSha256": "c5b3085480b670be43ce9a6492cf71a5e23d62b2bb1d3d8957f3939dc6752440",
+          "characters": 8371,
+          "receipt": "runs/cybersecurity-firms-20261017/capture-004.json",
+          "reading": "consult continuation.md and canonical claim artifact; retrieval is not reading"
+        }
+      ],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/trend-micro.md"
+      ],
+      "acquisition": "captured text or recorded retrieval failure"
+    },
+    {
+      "url": "https://www.lac.co.jp/corporate/info/",
+      "captures": [
+        {
+          "url": "https://www.lac.co.jp/corporate/info/",
+          "accessed": "2026-10-17",
+          "captureKind": "provider extracted-text result, not raw HTML",
+          "httpStatus": "200",
+          "title": "会社概要 | 株式会社ラック — https://www.lac.co.jp/corporate/info/ [200 text/html]",
+          "textSha256": "e7916074b5f21ff5b2dad4b3602a7f828e6b42d33ac150afff7940b920e63cdf",
+          "characters": 2329,
+          "receipt": "runs/cybersecurity-firms-20261017/capture-004.json",
+          "reading": "consult continuation.md and canonical claim artifact; retrieval is not reading"
+        }
+      ],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/lac.md"
+      ],
+      "acquisition": "captured text or recorded retrieval failure"
+    },
+    {
+      "url": "https://gmo-cybersecurity.com/service/soc/waf/",
+      "captures": [
+        {
+          "url": "https://gmo-cybersecurity.com/service/soc/waf/",
+          "accessed": "2026-10-17",
+          "captureKind": "provider extracted-text result, not raw HTML",
+          "httpStatus": "200",
+          "title": "WAFエイド WAFの自動運用/監視サービス | GMOサイバーセキュリティbyイエラエ株式会社 — https://gmo-cybersecurity.com/service/soc/waf/ [200 text/html]",
+          "textSha256": "69a261214fbd69231eec5a62a288c2b66b9007d51f5579e0b0bb1fce34bb8e3d",
+          "characters": 5425,
+          "receipt": "runs/cybersecurity-firms-20261017/capture-004.json",
+          "reading": "consult continuation.md and canonical claim artifact; retrieval is not reading"
+        }
+      ],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/gmo-ierae.md"
+      ],
+      "acquisition": "captured text or recorded retrieval failure"
+    },
+    {
+      "url": "https://www.paloaltonetworks.com/company/press/2026/palo-alto-networks-reports-fiscal-fourth-quarter-and-fiscal-year-2026-financial-results",
+      "captures": [
+        {
+          "url": "https://www.paloaltonetworks.com/company/press/2026/palo-alto-networks-reports-fiscal-fourth-quarter-and-fiscal-year-2026-financial-results",
+          "accessed": "2026-10-17",
+          "captureKind": "provider extracted-text result, not raw HTML",
+          "httpStatus": "200",
+          "title": "Palo Alto Networks Reports Fiscal Fourth Quarter and Fiscal Year 2026 Financial Results - Palo Alto NetworksClose search modal — https://www.paloaltonetworks.com/company/press/2026/palo-alto-networks-reports-fiscal-fourth-quarter-and-fiscal-year-2026-financial-results [200 text/html]",
+          "textSha256": "03063ff383f6a287c0d5a887d50fb5ef81bd6916ed2337a177af6d6f3097e3a4",
+          "characters": 29966,
+          "receipt": "runs/cybersecurity-firms-20261017/capture-005.json",
+          "reading": "consult continuation.md and canonical claim artifact; retrieval is not reading"
+        }
+      ],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/financial-anchors.md",
+        "docs/research/cybersecurity-firms/palo-alto-networks.md"
+      ],
+      "acquisition": "captured text or recorded retrieval failure"
+    },
+    {
+      "url": "https://investor.fortinet.com/news-releases/news-release-details/fortinet-reports-strong-fourth-quarter-and-full-year-2025",
+      "captures": [
+        {
+          "url": "https://investor.fortinet.com/news-releases/news-release-details/fortinet-reports-strong-fourth-quarter-and-full-year-2025",
+          "accessed": "2026-10-17",
+          "captureKind": "provider extracted-text result, not raw HTML",
+          "httpStatus": "403",
+          "title": "Access Denied — https://investor.fortinet.com/news-releases/news-release-details/fortinet-reports-strong-fourth-quarter-and-full-year-2025 [403 text/html]",
+          "textSha256": "dd777b1ec736b1b140566f0325a1be9e68752d4afc7df87899c672df10ed2a92",
+          "characters": 464,
+          "receipt": "runs/cybersecurity-firms-20261017/capture-005.json",
+          "reading": "consult continuation.md and canonical claim artifact; retrieval is not reading"
+        }
+      ],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/fortinet.md",
+        "docs/research/cybersecurity-firms/selection.md"
+      ],
+      "acquisition": "captured text or recorded retrieval failure"
+    },
+    {
+      "url": "https://investor.cisco.com/news/news-details/2026/CISCO-REPORTS-FOURTH-QUARTER-AND-FISCAL-YEAR-2026-EARNINGS/default.aspx",
+      "captures": [
+        {
+          "url": "https://investor.cisco.com/news/news-details/2026/CISCO-REPORTS-FOURTH-QUARTER-AND-FISCAL-YEAR-2026-EARNINGS/default.aspx",
+          "accessed": "2026-10-17",
+          "captureKind": "provider extracted-text result, not raw HTML",
+          "httpStatus": "403",
+          "title": "Just a moment... — https://investor.cisco.com/news/news-details/2026/CISCO-REPORTS-FOURTH-QUARTER-AND-FISCAL-YEAR-2026-EARNINGS/default.aspx [403 text/html]",
+          "textSha256": "2d04ac8e080a18c75a8ba0a87f96756dacc89955a87ecf587d267393d54eca12",
+          "characters": 168,
+          "receipt": "runs/cybersecurity-firms-20261017/capture-005.json",
+          "reading": "consult continuation.md and canonical claim artifact; retrieval is not reading"
+        }
+      ],
+      "citedBy": [],
+      "acquisition": "captured text or recorded retrieval failure"
+    },
+    {
+      "url": "https://newsroom.trendmicro.com/2026-02-18-Trend-Micro-Reports-Earnings-Results-for-Q4-2025-and-FY-2025",
+      "captures": [
+        {
+          "url": "https://newsroom.trendmicro.com/2026-02-18-Trend-Micro-Reports-Earnings-Results-for-Q4-2025-and-FY-2025",
+          "accessed": "2026-10-17",
+          "captureKind": "provider extracted-text result, not raw HTML",
+          "httpStatus": "200",
+          "title": "Trend Micro Reports Earnings Results for Q4 2025 and FY 2025 - Feb 18, 2026 — https://newsroom.trendmicro.com/2026-02-18-Trend-Micro-Reports-Earnings-Results-for-Q4-2025-and-FY-2025 [200 text/html]",
+          "textSha256": "1009f55e61825eb8c5e8120191f708353984717236fc42ccc415d79f40ce83e7",
+          "characters": 26634,
+          "receipt": "runs/cybersecurity-firms-20261017/capture-005.json",
+          "reading": "consult continuation.md and canonical claim artifact; retrieval is not reading"
+        }
+      ],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/selection.md",
+        "docs/research/cybersecurity-firms/trend-micro.md"
+      ],
+      "acquisition": "captured text or recorded retrieval failure"
+    },
+    {
+      "url": "https://www.nri-secure.co.jp/blog/agenticblue",
+      "captures": [
+        {
+          "url": "https://www.nri-secure.co.jp/blog/agenticblue",
+          "accessed": "2026-10-17",
+          "captureKind": "provider extracted-text result, not raw HTML",
+          "httpStatus": "200",
+          "title": "Agentic SOC でアナリストは「オーケストレーター」へ ｜ エージェントを安全・高品質に統制する基盤 “AgenticBlue”｜ブログ｜NRIセキュア — https://www.nri-secure.co.jp/blog/agenticblue [200 text/html]",
+          "textSha256": "0af51e844814238d043c3b210be11b96d4909c080b58dbc55a049d33d74e05e5",
+          "characters": 9236,
+          "receipt": "runs/cybersecurity-firms-20261017/capture-006.json",
+          "reading": "consult continuation.md and canonical claim artifact; retrieval is not reading"
+        }
+      ],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/nri-secure.md"
+      ],
+      "acquisition": "captured text or recorded retrieval failure"
+    },
+    {
+      "url": "https://www.nri-secure.co.jp/service/mss/log_monitoring",
+      "captures": [
+        {
+          "url": "https://www.nri-secure.co.jp/service/mss/log_monitoring",
+          "accessed": "2026-10-17",
+          "captureKind": "provider extracted-text result, not raw HTML",
+          "httpStatus": "200",
+          "title": "AIで一次分析・トリアージを高度化｜セキュリティログ監視サービス（NeoSOC） — https://www.nri-secure.co.jp/service/mss/log_monitoring [200 text/html]",
+          "textSha256": "c3952158f13414ebf69fd79ce00ef3637c7a7577879cc84f78cfd3a9dd376c6b",
+          "characters": 3800,
+          "receipt": "runs/cybersecurity-firms-20261017/capture-006.json",
+          "reading": "consult continuation.md and canonical claim artifact; retrieval is not reading"
+        },
+        {
+          "url": "https://www.nri-secure.co.jp/service/mss/log_monitoring",
+          "accessed": "2026-10-17",
+          "captureKind": "provider extracted-text result, not raw HTML",
+          "httpStatus": "200",
+          "title": "AIで一次分析・トリアージを高度化｜セキュリティログ監視サービス（NeoSOC） — https://www.nri-secure.co.jp/service/mss/log_monitoring [200 text/html]",
+          "textSha256": "af28c39efa8d3db7c84f786efea9dcafd35dd0f01c1f432890a6129c0aabe140",
+          "characters": 6883,
+          "receipt": "runs/cybersecurity-firms-20261017/capture-016.json",
+          "reading": "consult continuation.md and canonical claim artifact; retrieval is not reading"
+        }
+      ],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/nri-secure.md",
+        "docs/research/cybersecurity-firms/service-artifact-boundaries.md"
+      ],
+      "acquisition": "captured text or recorded retrieval failure"
+    },
+    {
+      "url": "https://www.nri-secure.co.jp/service/mss/siem_monitoring",
+      "captures": [
+        {
+          "url": "https://www.nri-secure.co.jp/service/mss/siem_monitoring",
+          "accessed": "2026-10-17",
+          "captureKind": "provider extracted-text result, not raw HTML",
+          "httpStatus": "200",
+          "title": "特定のSIEMに依存しない、AI分析で高度化｜SIEM監視サービス — https://www.nri-secure.co.jp/service/mss/siem_monitoring [200 text/html]",
+          "textSha256": "3afc8489f79de01c993b7ac0802657325e1fba47bcf158877ae15326e0e3ee77",
+          "characters": 3898,
+          "receipt": "runs/cybersecurity-firms-20261017/capture-006.json",
+          "reading": "consult continuation.md and canonical claim artifact; retrieval is not reading"
+        }
+      ],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/nri-secure.md"
+      ],
+      "acquisition": "captured text or recorded retrieval failure"
+    },
+    {
+      "url": "https://www.lac.co.jp/operation/jsoc_mss.html",
+      "captures": [
+        {
+          "url": "https://www.lac.co.jp/operation/jsoc_mss.html",
+          "accessed": "2026-10-17",
+          "captureKind": "provider extracted-text result, not raw HTML",
+          "httpStatus": "200",
+          "title": "JSOC マネージド・セキュリティ・サービス（MSS） | 株式会社ラック — https://www.lac.co.jp/operation/jsoc_mss.html [200 text/html]",
+          "textSha256": "c8c8b4a5c043a1319d953a43603e41e7480058eb7f8e8a70d10fd2a7819486d4",
+          "characters": 3618,
+          "receipt": "runs/cybersecurity-firms-20261017/capture-007.json",
+          "reading": "consult continuation.md and canonical claim artifact; retrieval is not reading"
+        }
+      ],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/lac.md"
+      ],
+      "acquisition": "captured text or recorded retrieval failure"
+    },
+    {
+      "url": "https://www.crowdstrike.com/en-us/services/falcon-complete-next-gen-mdr/",
+      "captures": [
+        {
+          "url": "https://www.crowdstrike.com/en-us/services/falcon-complete-next-gen-mdr/",
+          "accessed": "2026-10-17",
+          "captureKind": "provider extracted-text result, not raw HTML",
+          "httpStatus": "200",
+          "title": "24/7 Expert Protection | CrowdStrike Falcon® Complete — https://www.crowdstrike.com/en-us/services/falcon-complete-mdr/ [200 text/html]",
+          "textSha256": "0b499e00a771d9dc1997341abf8cb01c3ad507d85fc0a7fa512f50bfe3013884",
+          "characters": 13482,
+          "receipt": "runs/cybersecurity-firms-20261017/capture-007.json",
+          "reading": "consult continuation.md and canonical claim artifact; retrieval is not reading"
+        }
+      ],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/crowdstrike.md"
+      ],
+      "acquisition": "captured text or recorded retrieval failure"
+    },
+    {
+      "url": "https://www.crowdstrike.com/en-us/blog/falcon-content-update-preliminary-post-incident-report/",
+      "captures": [
+        {
+          "url": "https://www.crowdstrike.com/en-us/blog/falcon-content-update-preliminary-post-incident-report/",
+          "accessed": "2026-10-17",
+          "captureKind": "provider extracted-text result, not raw HTML",
+          "httpStatus": "200",
+          "title": "Falcon Content Update Preliminary Post Incident Report | CrowdStrike — https://www.crowdstrike.com/en-us/blog/falcon-content-update-preliminary-post-incident-report/ [200 text/html]",
+          "textSha256": "9f74ace70a8e3355e9792b71b158ca9e9d079a493acd9dee7b452e49afd73379",
+          "characters": 17271,
+          "receipt": "runs/cybersecurity-firms-20261017/capture-007.json",
+          "reading": "consult continuation.md and canonical claim artifact; retrieval is not reading"
+        }
+      ],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/crowdstrike.md"
+      ],
+      "acquisition": "captured text or recorded retrieval failure"
+    },
+    {
+      "url": "https://docs-cortex.paloaltonetworks.com/r/Cortex-XDR/Cortex-XDR-5.x-Documentation/Configure-actions-permissions",
+      "captures": [
+        {
+          "url": "https://docs-cortex.paloaltonetworks.com/r/Cortex-XDR/Cortex-XDR-5.x-Documentation/Configure-actions-permissions",
+          "accessed": "2026-10-17",
+          "captureKind": "provider extracted-text result, not raw HTML",
+          "httpStatus": "200",
+          "title": "Configure actions permissions | Cortex Documentation Portalarrow-up-right-and-arrow-down-left-from-center — https://cortex-docs.paloaltonetworks.com/cortex-xdr-5.x/configure-cortex-xdr/managed-services-configuration/configure-actions-permissions [200 text/html]",
+          "textSha256": "b0b7e18a4eb6ef5b517aba7dc4c62563b1fa5e177092081de9bc9e39dd4293de",
+          "characters": 4823,
+          "receipt": "runs/cybersecurity-firms-20261017/capture-008.json",
+          "reading": "consult continuation.md and canonical claim artifact; retrieval is not reading"
+        }
+      ],
+      "citedBy": [],
+      "acquisition": "captured text or recorded retrieval failure"
+    },
+    {
+      "url": "https://docs.fortinet.com/document/fortianalyzer/7.6.0/administration-guide/592522/playbook-triggers-and-tasks",
+      "captures": [
+        {
+          "url": "https://docs.fortinet.com/document/fortianalyzer/7.6.0/administration-guide/592522/playbook-triggers-and-tasks",
+          "accessed": "2026-10-17",
+          "captureKind": "provider extracted-text result, not raw HTML",
+          "httpStatus": "200",
+          "title": "Playbook triggers and tasks | FortiAnalyzer 7.6.0 | Fortinet Document Library — https://docs.fortinet.com/document/fortianalyzer/7.6.0/administration-guide/592522/playbook-triggers-and-tasks [200 text/html]",
+          "textSha256": "105d7a049a464f7ae4ab43b5654237f9b541b11eb1ffb9a548cf467326bca91e",
+          "characters": 32952,
+          "receipt": "runs/cybersecurity-firms-20261017/capture-008.json",
+          "reading": "consult continuation.md and canonical claim artifact; retrieval is not reading"
+        }
+      ],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/fortinet.md"
+      ],
+      "acquisition": "captured text or recorded retrieval failure"
+    },
+    {
+      "url": "https://help.splunk.com/en/splunk-enterprise-security-8/administer/8.6/ai-assistant-in-security-and-agentic-capabilities/ai-assistant-overview",
+      "captures": [
+        {
+          "url": "https://help.splunk.com/en/splunk-enterprise-security-8/administer/8.6/ai-assistant-in-security-and-agentic-capabilities/ai-assistant-overview",
+          "accessed": "2026-10-17",
+          "captureKind": "provider extracted-text result, not raw HTML",
+          "httpStatus": "200",
+          "title": "AI Assistant overview | Splunk Cloud Platform, Splunk Enterprise (last updated 2026-07-21T00:43:04.320Z) — https://help.splunk.com/en/splunk-enterprise-security-8/administer/8.6/ai-assistant-in-security-and-agentic-capabilities/ai-assistant-overview [200 text/html]",
+          "textSha256": "ef8ddcd7e0c1252cae532c2609df8fec733dcb5b25759a16ffe26ea92304e7af",
+          "characters": 12691,
+          "receipt": "runs/cybersecurity-firms-20261017/capture-008.json",
+          "reading": "consult continuation.md and canonical claim artifact; retrieval is not reading"
+        }
+      ],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/cisco-splunk.md"
+      ],
+      "acquisition": "captured text or recorded retrieval failure"
+    },
+    {
+      "url": "https://www.paloaltonetworks.com/cortex/agentix",
+      "captures": [
+        {
+          "url": "https://www.paloaltonetworks.com/cortex/agentix",
+          "accessed": "2026-10-17",
+          "captureKind": "provider extracted-text result, not raw HTML",
+          "httpStatus": "200",
+          "title": "Cortex AgentiX — Build, Deploy and Govern the Agentic Workforce of the Future - Palo Alto NetworksClose search modal — https://www.paloaltonetworks.com/cortex/agentix [200 text/html]",
+          "textSha256": "cbc98133df0e71827261a4e6afb7f0d3b73c60b9063fe3bccd43eeb417525656",
+          "characters": 9219,
+          "receipt": "runs/cybersecurity-firms-20261017/capture-009.json",
+          "reading": "consult continuation.md and canonical claim artifact; retrieval is not reading"
+        }
+      ],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/palo-alto-networks.md"
+      ],
+      "acquisition": "captured text or recorded retrieval failure"
+    },
+    {
+      "url": "https://www.fortinet.com/products/fortiai-assist",
+      "captures": [
+        {
+          "url": "https://www.fortinet.com/products/fortiai-assist",
+          "accessed": "2026-10-17",
+          "captureKind": "provider extracted-text result, not raw HTML",
+          "httpStatus": "200",
+          "title": "FortiAI – Orchestrate AI operations | Fortinet — https://www.fortinet.com/products/fortiai-assist [200 text/html]",
+          "textSha256": "c13dd5e6131fd18dccfd4e3078a3fdb1d40470b2c081d59346d483d593148e9b",
+          "characters": 30664,
+          "receipt": "runs/cybersecurity-firms-20261017/capture-009.json",
+          "reading": "consult continuation.md and canonical claim artifact; retrieval is not reading"
+        }
+      ],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/fortinet.md"
+      ],
+      "acquisition": "captured text or recorded retrieval failure"
+    },
+    {
+      "url": "https://www.cisco.com/c/en/us/products/security/overview.html",
+      "captures": [
+        {
+          "url": "https://www.cisco.com/c/en/us/products/security/overview.html",
+          "accessed": "2026-10-17",
+          "captureKind": "provider extracted-text result, not raw HTML",
+          "httpStatus": "403",
+          "title": "Access Denied — https://www.cisco.com/c/en/us/products/security/overview.html [403 text/html]",
+          "textSha256": "cb0ee1ddfe010e5d6a1cb49c2ac905eb28313356324fe6fa398b4f6a21212af4",
+          "characters": 340,
+          "receipt": "runs/cybersecurity-firms-20261017/capture-009.json",
+          "reading": "consult continuation.md and canonical claim artifact; retrieval is not reading"
+        }
+      ],
+      "citedBy": [],
+      "acquisition": "captured text or recorded retrieval failure"
+    },
+    {
+      "url": "https://cloud.google.com/security/products/security-operations?hl=en",
+      "captures": [
+        {
+          "url": "https://cloud.google.com/security/products/security-operations?hl=en",
+          "accessed": "2026-10-17",
+          "captureKind": "provider extracted-text result, not raw HTML",
+          "httpStatus": "200",
+          "title": "Google Security Operations | Google Cloud — https://cloud.google.com/security/products/security-operations?hl=en [200 text/html]",
+          "textSha256": "1c90fae7cdcaf310b30e3c8e03bcb9bc3b17028ff7f12703b929823739a4f293",
+          "characters": 38212,
+          "receipt": "runs/cybersecurity-firms-20261017/capture-009.json",
+          "reading": "consult continuation.md and canonical claim artifact; retrieval is not reading"
+        }
+      ],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/google-cloud-security.md"
+      ],
+      "acquisition": "captured text or recorded retrieval failure"
+    },
+    {
+      "url": "https://flatt.tech/takumi/features/assessment",
+      "captures": [
+        {
+          "url": "https://flatt.tech/takumi/features/assessment",
+          "accessed": "2026-10-17",
+          "captureKind": "provider extracted-text result, not raw HTML",
+          "httpStatus": "200",
+          "title": "AIセキュリティ診断 - Takumi byGMO | GMO Flatt Security — https://flatt.tech/takumi/features/assessment [200 text/html]",
+          "textSha256": "4c0aef4973ba8f02cabcfd064820a9b5c9d95e4b4bc7421c5fc3ed8df7339498",
+          "characters": 9101,
+          "receipt": "runs/cybersecurity-firms-20261017/capture-010.json",
+          "reading": "consult continuation.md and canonical claim artifact; retrieval is not reading"
+        }
+      ],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/gmo-flatt-security.md"
+      ],
+      "acquisition": "captured text or recorded retrieval failure"
+    },
+    {
+      "url": "https://shisho.dev/docs/c/security/",
+      "captures": [
+        {
+          "url": "https://shisho.dev/docs/c/security/",
+          "accessed": "2026-10-17",
+          "captureKind": "provider extracted-text result, not raw HTML",
+          "httpStatus": "200",
+          "title": "Vendor Security | Takumi byGMO — https://shisho.dev/docs/c/security/ [200 text/html]",
+          "textSha256": "901845d7d301886d79e8f198cc0c5aedcb33b5a9cdf27b0cdca3e1293edfb59d",
+          "characters": 7089,
+          "receipt": "runs/cybersecurity-firms-20261017/capture-010.json",
+          "reading": "consult continuation.md and canonical claim artifact; retrieval is not reading"
+        }
+      ],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/gmo-flatt-security.md"
+      ],
+      "acquisition": "captured text or recorded retrieval failure"
+    },
+    {
+      "url": "https://flatt.tech/news/flatt-security-10-yen-gmo",
+      "captures": [
+        {
+          "url": "https://flatt.tech/news/flatt-security-10-yen-gmo",
+          "accessed": "2026-10-17",
+          "captureKind": "provider extracted-text result, not raw HTML",
+          "httpStatus": "200",
+          "title": "【プレスリリース】プロダクトセキュリティスタートアップのFlatt Securityが 約10億円の資金調達を実施し、GMOインターネットグループに参画 | GMO Flatt Security 株式会社 — https://flatt.tech/news/flatt-security-10-yen-gmo [200 text/html]",
+          "textSha256": "d2e6e3ab3f595c3b9f3a75534b58b8f0d710a539d67f6869a61ce7f638ec3110",
+          "characters": 5881,
+          "receipt": "runs/cybersecurity-firms-20261017/capture-010.json",
+          "reading": "consult continuation.md and canonical claim artifact; retrieval is not reading"
+        }
+      ],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/gmo-flatt-security.md"
+      ],
+      "acquisition": "captured text or recorded retrieval failure"
+    },
+    {
+      "url": "https://www.microsoft.com/ja-jp/security",
+      "captures": [
+        {
+          "url": "https://www.microsoft.com/ja-jp/security",
+          "accessed": "2026-10-17",
+          "captureKind": "provider extracted-text result, not raw HTML",
+          "httpStatus": "200",
+          "title": "クラウド セキュリティ ソリューション | Microsoft Securityプライバシーに関する選択のオプトアウト アイコンプライバシーに関する選択のオプトアウト アイコン — https://www.microsoft.com/ja-jp/security [200 text/html]",
+          "textSha256": "ca8e9c2426a8f35580faeb652b645b29fa422ae15ed1a01cc2543bb40a80e50f",
+          "characters": 8158,
+          "receipt": "runs/cybersecurity-firms-20261017/capture-010.json",
+          "reading": "consult continuation.md and canonical claim artifact; retrieval is not reading"
+        }
+      ],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/microsoft.md"
+      ],
+      "acquisition": "captured text or recorded retrieval failure"
+    },
+    {
+      "url": "https://shisho.dev/docs/t/assessment/",
+      "captures": [
+        {
+          "url": "https://shisho.dev/docs/t/assessment/",
+          "accessed": "2026-10-17",
+          "captureKind": "provider extracted-text result, not raw HTML",
+          "httpStatus": "200",
+          "title": "Takumi Pentesting | Takumi byGMO — https://shisho.dev/docs/t/assessment/ [200 text/html]",
+          "textSha256": "2c1bde372ac36f6d9a9a2d43dd1ffaeb6a6f75b1abf7b11d1ff21851f651d061",
+          "characters": 5615,
+          "receipt": "runs/cybersecurity-firms-20261017/capture-011.json",
+          "reading": "consult continuation.md and canonical claim artifact; retrieval is not reading"
+        }
+      ],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/gmo-flatt-security.md"
+      ],
+      "acquisition": "captured text or recorded retrieval failure"
+    },
+    {
+      "url": "https://shisho.dev/docs/t/getting-started/",
+      "captures": [
+        {
+          "url": "https://shisho.dev/docs/t/getting-started/",
+          "accessed": "2026-10-17",
+          "captureKind": "provider extracted-text result, not raw HTML",
+          "httpStatus": "200",
+          "title": "Getting Started | Takumi byGMO — https://shisho.dev/docs/t/getting-started/ [200 text/html]",
+          "textSha256": "f998f69ef7ba4330a0f178e5baac860cce628a84b0d2bdbee3957a1464b51588",
+          "characters": 6326,
+          "receipt": "runs/cybersecurity-firms-20261017/capture-011.json",
+          "reading": "consult continuation.md and canonical claim artifact; retrieval is not reading"
+        }
+      ],
+      "citedBy": [],
+      "acquisition": "captured text or recorded retrieval failure"
+    },
+    {
+      "url": "https://shisho.dev/docs/t/assessment/architecture/",
+      "captures": [
+        {
+          "url": "https://shisho.dev/docs/t/assessment/architecture/",
+          "accessed": "2026-10-17",
+          "captureKind": "provider extracted-text result, not raw HTML",
+          "httpStatus": "200",
+          "title": "Architecture | Takumi byGMO — https://shisho.dev/docs/t/assessment/architecture/ [200 text/html]",
+          "textSha256": "fd75f212d00273da4aee66f7ebbed3da110743db82a769f5c03f19f395e93c1e",
+          "characters": 3783,
+          "receipt": "runs/cybersecurity-firms-20261017/capture-012.json",
+          "reading": "consult continuation.md and canonical claim artifact; retrieval is not reading"
+        }
+      ],
+      "citedBy": [],
+      "acquisition": "captured text or recorded retrieval failure"
+    },
+    {
+      "url": "https://shisho.dev/docs/t/assessment/features/graybox-assessment/",
+      "captures": [
+        {
+          "url": "https://shisho.dev/docs/t/assessment/features/graybox-assessment/",
+          "accessed": "2026-10-17",
+          "captureKind": "provider extracted-text result, not raw HTML",
+          "httpStatus": "200",
+          "title": "Graybox Assessment | Takumi byGMO — https://shisho.dev/docs/t/assessment/features/graybox-assessment/ [200 text/html]",
+          "textSha256": "8a85ec68039319e841dd1c92b31f202e5887e3c2209baae432c2fd6c420bd71b",
+          "characters": 21672,
+          "receipt": "runs/cybersecurity-firms-20261017/capture-012.json",
+          "reading": "consult continuation.md and canonical claim artifact; retrieval is not reading"
+        }
+      ],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/gmo-flatt-security.md"
+      ],
+      "acquisition": "captured text or recorded retrieval failure"
+    },
+    {
+      "url": "https://shisho.dev/docs/t/assessment/features/autofix/",
+      "captures": [
+        {
+          "url": "https://shisho.dev/docs/t/assessment/features/autofix/",
+          "accessed": "2026-10-17",
+          "captureKind": "provider extracted-text result, not raw HTML",
+          "httpStatus": "200",
+          "title": "Autofix | Takumi byGMO — https://shisho.dev/docs/t/assessment/features/autofix/ [200 text/html]",
+          "textSha256": "e7fd39044427406ebe1bc99a34a0a20ab9cff27cc01601ec206331b637b63233",
+          "characters": 10690,
+          "receipt": "runs/cybersecurity-firms-20261017/capture-012.json",
+          "reading": "consult continuation.md and canonical claim artifact; retrieval is not reading"
+        }
+      ],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/gmo-flatt-security.md"
+      ],
+      "acquisition": "captured text or recorded retrieval failure"
+    },
+    {
+      "url": "https://shisho.dev/docs/t/assessment/architecture/whitebox/",
+      "captures": [
+        {
+          "url": "https://shisho.dev/docs/t/assessment/architecture/whitebox/",
+          "accessed": "2026-10-17",
+          "captureKind": "provider extracted-text result, not raw HTML",
+          "httpStatus": "200",
+          "title": "Whitebox Assessment | Takumi byGMO — https://shisho.dev/docs/t/assessment/architecture/whitebox/ [200 text/html]",
+          "textSha256": "90633bb6f86fb8cccf5195cc9ce6e5e95db4c59d7455e4db8c3d86d97e0d8c50",
+          "characters": 13529,
+          "receipt": "runs/cybersecurity-firms-20261017/capture-013.json",
+          "reading": "consult continuation.md and canonical claim artifact; retrieval is not reading"
+        }
+      ],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/gmo-flatt-security.md"
+      ],
+      "acquisition": "captured text or recorded retrieval failure"
+    },
+    {
+      "url": "https://shisho.dev/docs/t/assessment/architecture/blackbox/",
+      "captures": [
+        {
+          "url": "https://shisho.dev/docs/t/assessment/architecture/blackbox/",
+          "accessed": "2026-10-17",
+          "captureKind": "provider extracted-text result, not raw HTML",
+          "httpStatus": "200",
+          "title": "Blackbox Assessment | Takumi byGMO — https://shisho.dev/docs/t/assessment/architecture/blackbox/ [200 text/html]",
+          "textSha256": "4c578fba38b336a7dee71cc528c9c26524f228cce2043192352a1a8a464bb3e5",
+          "characters": 17625,
+          "receipt": "runs/cybersecurity-firms-20261017/capture-013.json",
+          "reading": "consult continuation.md and canonical claim artifact; retrieval is not reading"
+        }
+      ],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/gmo-flatt-security.md"
+      ],
+      "acquisition": "captured text or recorded retrieval failure"
+    },
+    {
+      "url": "https://shisho.dev/docs/t/assessment/features/vulnverification/",
+      "captures": [
+        {
+          "url": "https://shisho.dev/docs/t/assessment/features/vulnverification/",
+          "accessed": "2026-10-17",
+          "captureKind": "provider extracted-text result, not raw HTML",
+          "httpStatus": "200",
+          "title": "Vulnerability Verification | Takumi byGMO — https://shisho.dev/docs/t/assessment/features/vulnverification/ [200 text/html]",
+          "textSha256": "2d1dc8ec82cfae884975c8b68d8778d23cda90bade8ee859f64d214058de623d",
+          "characters": 8931,
+          "receipt": "runs/cybersecurity-firms-20261017/capture-013.json",
+          "reading": "consult continuation.md and canonical claim artifact; retrieval is not reading"
+        }
+      ],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/gmo-flatt-security.md"
+      ],
+      "acquisition": "captured text or recorded retrieval failure"
+    },
+    {
+      "url": "https://arxiv.org/html/2511.13860",
+      "captures": [
+        {
+          "url": "https://arxiv.org/html/2511.13860",
+          "accessed": "2026-10-17",
+          "captureKind": "provider extracted-text result, not raw HTML",
+          "httpStatus": "200",
+          "title": "Randomized Controlled Trials for Phishing Triage Agent — https://arxiv.org/html/2511.13860 [200 text/html]",
+          "textSha256": "05b2e6ffc0f4f358d397eb973383393f34a2d1b30547be8ab7f205426ed5ae1b",
+          "characters": 33246,
+          "receipt": "runs/cybersecurity-firms-20261017/capture-014.json",
+          "reading": "consult continuation.md and canonical claim artifact; retrieval is not reading"
+        }
+      ],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/microsoft-phishing-trial.md"
+      ],
+      "acquisition": "captured text or recorded retrieval failure"
+    },
+    {
+      "url": "https://www.trendmicro.com/ja_jp/about.html",
+      "captures": [
+        {
+          "url": "https://www.trendmicro.com/ja_jp/about.html",
+          "accessed": "2026-10-17",
+          "captureKind": "provider extracted-text result, not raw HTML",
+          "httpStatus": "200",
+          "title": "会社概要 | トレンドマイクロ (JP) — https://www.trendmicro.com/ja_jp/about.html [200 text/html]",
+          "textSha256": "179fe6760d18d29092d155272297d64d985ed816d976f0731f3096727bc879c0",
+          "characters": 3689,
+          "receipt": "runs/cybersecurity-firms-20261017/capture-015.json",
+          "reading": "consult continuation.md and canonical claim artifact; retrieval is not reading"
+        }
+      ],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/financial-anchors.md",
+        "docs/research/cybersecurity-firms/trend-micro.md"
+      ],
+      "acquisition": "captured text or recorded retrieval failure"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/defender-endpoint/api/isolate-machine",
+      "captures": [
+        {
+          "url": "https://learn.microsoft.com/en-us/defender-endpoint/api/isolate-machine",
+          "accessed": "2026-10-17",
+          "captureKind": "provider extracted-text result, not raw HTML",
+          "httpStatus": "200",
+          "title": "Isolate machine API - Microsoft Defender for Endpoint | Microsoft Learn — https://learn.microsoft.com/en-us/defender-endpoint/api/isolate-machine [200 text/html]",
+          "textSha256": "8d3d003362d31016b9253bcb678f79b02c3060149b5a8c38bfcebddce16fe2b2",
+          "characters": 6239,
+          "receipt": "runs/cybersecurity-firms-20261017/capture-016.json",
+          "reading": "consult continuation.md and canonical claim artifact; retrieval is not reading"
+        }
+      ],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/defender-action-contract.md"
+      ],
+      "acquisition": "captured text or recorded retrieval failure"
+    },
+    {
+      "url": "https://www.lac.co.jp/english/service/operation/jsoc.html",
+      "captures": [
+        {
+          "url": "https://www.lac.co.jp/english/service/operation/jsoc.html",
+          "accessed": "2026-10-17",
+          "captureKind": "provider extracted-text result, not raw HTML",
+          "httpStatus": "200",
+          "title": "Japan Security Operation Center (JSOC®) | LAC Co., Ltd. — https://www.lac.co.jp/english/service/operation/jsoc.html [200 text/html]",
+          "textSha256": "fc09b9a65db9848ca696364eb7f7e07ffb1c5c951266d265e48802a8de686e7d",
+          "characters": 6145,
+          "receipt": "runs/cybersecurity-firms-20261017/capture-016.json",
+          "reading": "consult continuation.md and canonical claim artifact; retrieval is not reading"
+        }
+      ],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/service-artifact-boundaries.md"
+      ],
+      "acquisition": "captured text or recorded retrieval failure"
+    },
+    {
+      "url": "https://www.cisco.com/c/ja_jp/about/security-policy.html",
+      "captures": [
+        {
+          "url": "https://www.cisco.com/c/ja_jp/about/security-policy.html",
+          "accessed": "2026-10-17",
+          "captureKind": "provider extracted-text result, not raw HTML",
+          "httpStatus": "403",
+          "title": "Access Denied — https://www.cisco.com/c/ja_jp/about/security-policy.html [403 text/html]",
+          "textSha256": "7185112155029b8894e54bac8084cdf971ae36ba08bedefb5b591f3d4f76ebd9",
+          "characters": 330,
+          "receipt": "runs/cybersecurity-firms-20261017/capture-016.json",
+          "reading": "consult continuation.md and canonical claim artifact; retrieval is not reading"
+        }
+      ],
+      "citedBy": [],
+      "acquisition": "captured text or recorded retrieval failure"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/defender-endpoint/api/machineaction",
+      "captures": [
+        {
+          "url": "https://learn.microsoft.com/en-us/defender-endpoint/api/machineaction",
+          "accessed": "2026-10-17",
+          "captureKind": "provider extracted-text result, not raw HTML",
+          "httpStatus": "200",
+          "title": "machineAction resource type - Microsoft Defender for Endpoint | Microsoft Learn — https://learn.microsoft.com/en-us/defender-endpoint/api/machineaction [200 text/html]",
+          "textSha256": "344d7121750a5b5a2f5e0fb4b8f92cc0b4cf1a55273bc5251dfc3978b81789f5",
+          "characters": 5044,
+          "receipt": "runs/cybersecurity-firms-20261017/capture-017.json",
+          "reading": "consult continuation.md and canonical claim artifact; retrieval is not reading"
+        }
+      ],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/defender-action-contract.md"
+      ],
+      "acquisition": "captured text or recorded retrieval failure"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/defender-endpoint/api/get-machineaction-object",
+      "captures": [
+        {
+          "url": "https://learn.microsoft.com/en-us/defender-endpoint/api/get-machineaction-object",
+          "accessed": "2026-10-17",
+          "captureKind": "provider extracted-text result, not raw HTML",
+          "httpStatus": "200",
+          "title": "Get MachineAction object API - Microsoft Defender for Endpoint | Microsoft Learn — https://learn.microsoft.com/en-us/defender-endpoint/api/get-machineaction-object [200 text/html]",
+          "textSha256": "fb7d39ed6fe868ea407aef5640b74ab6daec97cf013a4e503b07cc163ec3bb5f",
+          "characters": 4800,
+          "receipt": "runs/cybersecurity-firms-20261017/capture-017.json",
+          "reading": "consult continuation.md and canonical claim artifact; retrieval is not reading"
+        }
+      ],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/defender-action-contract.md"
+      ],
+      "acquisition": "captured text or recorded retrieval failure"
+    },
+    {
+      "url": "https://gmo-cybersecurity.com/service/assessment/web-app/standard/",
+      "captures": [
+        {
+          "url": "https://gmo-cybersecurity.com/service/assessment/web-app/standard/",
+          "accessed": "2026-10-17",
+          "captureKind": "provider extracted-text result, not raw HTML",
+          "httpStatus": "403",
+          "title": "403 Forbidden — http://gmo-cybersecurity.com/service/assessment/web-app/ [403 text/html]",
+          "textSha256": "b4392f6758e503b04443efd4e2cfcc219a3f8cb7b81e1df5e82187bd164aff67",
+          "characters": 115,
+          "receipt": "runs/cybersecurity-firms-20261017/capture-018.json",
+          "reading": "consult continuation.md and canonical claim artifact; retrieval is not reading"
+        }
+      ],
+      "citedBy": [],
+      "acquisition": "captured text or recorded retrieval failure"
+    },
+    {
+      "url": "https://www.paloaltonetworks.com/blog/2019/07/trusted-partner-in-japan/?lang=ja",
+      "captures": [
+        {
+          "url": "https://www.paloaltonetworks.com/blog/2019/07/trusted-partner-in-japan/?lang=ja",
+          "accessed": "2026-10-17",
+          "captureKind": "provider extracted-text result, not raw HTML",
+          "httpStatus": "200",
+          "title": "日本企業のTrusted Partnerとして：パロアルトネットワークス、日本法人設立10周年 — https://www.paloaltonetworks.com/blog/2019/07/trusted-partner-in-japan/?lang=ja [200 text/html]",
+          "textSha256": "d79368f6196bf651012f9254038d133764a60ab654bd89ca3c5cb36c63ca877f",
+          "characters": 15780,
+          "receipt": "runs/cybersecurity-firms-20261017/capture-018.json",
+          "reading": "consult continuation.md and canonical claim artifact; retrieval is not reading"
+        }
+      ],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/history-timelines.md",
+        "docs/research/cybersecurity-firms/palo-alto-networks.md"
+      ],
+      "acquisition": "captured text or recorded retrieval failure"
+    },
+    {
+      "url": "https://newsroom.cisco.com/c/r/newsroom/en/us/a/y1992/m06/cisco-opens-japanese-subsidiary.html",
+      "captures": [
+        {
+          "url": "https://newsroom.cisco.com/c/r/newsroom/en/us/a/y1992/m06/cisco-opens-japanese-subsidiary.html",
+          "accessed": "2026-10-17",
+          "captureKind": "provider extracted-text result, not raw HTML",
+          "httpStatus": "200",
+          "title": "Cisco Opens Japanese SubsidiarySearch — https://newsroom.cisco.com/c/r/newsroom/en/us/a/y1992/m06/cisco-opens-japanese-subsidiary.html [200 text/html]",
+          "textSha256": "27cc040d77c8b16fe4ee0536e19ba3c9af845202da670ead1c61ebc18103600f",
+          "characters": 10647,
+          "receipt": "runs/cybersecurity-firms-20261017/capture-018.json",
+          "reading": "consult continuation.md and canonical claim artifact; retrieval is not reading"
+        }
+      ],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/history-timelines.md"
+      ],
+      "acquisition": "captured text or recorded retrieval failure"
+    },
+    {
+      "url": "https://news.microsoft.com/source/2005/01/06/microsoft-announces-availability-of-new-solutions-to-help-protect-customers-against-spyware-and-viruses/",
+      "captures": [
+        {
+          "url": "https://news.microsoft.com/source/2005/01/06/microsoft-announces-availability-of-new-solutions-to-help-protect-customers-against-spyware-and-viruses/",
+          "accessed": "2026-10-17",
+          "captureKind": "provider extracted-text result, not raw HTML",
+          "httpStatus": "403",
+          "title": "Just a moment... — https://news.microsoft.com/source/2005/01/06/microsoft-announces-availability-of-new-solutions-to-help-protect-customers-against-spyware-and-viruses/ [403 text/html]",
+          "textSha256": "29477cd48bb6afa548bbfc252dcf508b29a82581e0ed01e2cec9244a7910d449",
+          "characters": 196,
+          "receipt": "runs/cybersecurity-firms-20261017/capture-018.json",
+          "reading": "consult continuation.md and canonical claim artifact; retrieval is not reading"
+        }
+      ],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/history-timelines.md"
+      ],
+      "acquisition": "captured text or recorded retrieval failure"
+    },
+    {
+      "url": "https://docs-cortex.paloaltonetworks.com/r/Cortex-AgentiX/Cortex-AgentiX-Documentation/Agentic-Assistant-security",
+      "captures": [
+        {
+          "url": "https://docs-cortex.paloaltonetworks.com/r/Cortex-AgentiX/Cortex-AgentiX-Documentation/Agentic-Assistant-security",
+          "accessed": "2026-10-17",
+          "captureKind": "provider extracted-text result, not raw HTML",
+          "httpStatus": "200",
+          "title": "Agentic Assistant security | Cortex Documentation Portalarrow-up-right-and-arrow-down-left-from-center — https://cortex-docs.paloaltonetworks.com/cortex-agentix/learn-about-cortex-agentix/agentic-ai-in-cortex-agentix/agentic-assistant-security [200 text/html]",
+          "textSha256": "d49a37e9965f71e7a6aa9d97a39ac46b1b3d339ab02faedcd5a836eceeb6ed14",
+          "characters": 10331,
+          "receipt": "runs/cybersecurity-firms-20261017/capture-019.json",
+          "reading": "consult continuation.md and canonical claim artifact; retrieval is not reading"
+        }
+      ],
+      "citedBy": [],
+      "acquisition": "captured text or recorded retrieval failure"
+    },
+    {
+      "url": "https://docs.cloud.google.com/chronicle/docs/secops/secops-architecture",
+      "captures": [
+        {
+          "url": "https://docs.cloud.google.com/chronicle/docs/secops/secops-architecture",
+          "accessed": "2026-10-17",
+          "captureKind": "provider extracted-text result, not raw HTML",
+          "httpStatus": "200",
+          "title": "Google SecOps のアーキテクチャとデータフロー | Google Security Operations | Google Cloud Documentation — https://docs.cloud.google.com/chronicle/docs/secops/secops-architecture?hl=ja [200 text/html]",
+          "textSha256": "0811af73d22fdb890e60f4cac89667af9e19947cbfbd964473bfd7f2033595c0",
+          "characters": 56673,
+          "receipt": "runs/cybersecurity-firms-20261017/capture-019.json",
+          "reading": "consult continuation.md and canonical claim artifact; retrieval is not reading"
+        }
+      ],
+      "citedBy": [],
+      "acquisition": "captured text or recorded retrieval failure"
+    },
+    {
+      "url": "https://docs.cloud.google.com/chronicle/docs/secops/triage-investigation-agent?hl=en",
+      "captures": [
+        {
+          "url": "https://docs.cloud.google.com/chronicle/docs/secops/triage-investigation-agent?hl=en",
+          "accessed": "2026-10-17",
+          "captureKind": "provider extracted-text result, not raw HTML",
+          "httpStatus": "200",
+          "title": "Triage alerts with the Triage Agent | Google Security Operations | Google Cloud Documentation — https://docs.cloud.google.com/chronicle/docs/secops/triage-investigation-agent?hl=en [200 text/html]",
+          "textSha256": "695b3a9cbab0f7fd72118fedace4b21c448010cd4d14639b3b583c28c80b9182",
+          "characters": 58477,
+          "receipt": "runs/cybersecurity-firms-20261017/capture-019.json",
+          "reading": "consult continuation.md and canonical claim artifact; retrieval is not reading"
+        },
+        {
+          "url": "https://docs.cloud.google.com/chronicle/docs/secops/triage-investigation-agent?hl=en",
+          "accessed": "2026-10-17",
+          "captureKind": "provider extracted-text result, not raw HTML",
+          "httpStatus": "200",
+          "title": "Triage alerts with the Triage Agent | Google Security Operations | Google Cloud Documentation — https://docs.cloud.google.com/chronicle/docs/secops/triage-investigation-agent?hl=en [200 text/html]",
+          "textSha256": "19d2abfdeb3adfc5aafb3cf1644df0d6bbf93e464c109493aa86492b64db8654",
+          "characters": 53519,
+          "receipt": "runs/cybersecurity-firms-20261017/capture-020.json",
+          "reading": "consult continuation.md and canonical claim artifact; retrieval is not reading"
+        }
+      ],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/google-architecture-boundary.md"
+      ],
+      "acquisition": "captured text or recorded retrieval failure"
+    },
+    {
+      "url": "https://docs.cloud.google.com/chronicle/docs/secops/secops-architecture?hl=en",
+      "captures": [
+        {
+          "url": "https://docs.cloud.google.com/chronicle/docs/secops/secops-architecture?hl=en",
+          "accessed": "2026-10-17",
+          "captureKind": "provider extracted-text result, not raw HTML",
+          "httpStatus": "200",
+          "title": "Google SecOps architecture and data flows | Google Security Operations | Google Cloud Documentation — https://docs.cloud.google.com/chronicle/docs/secops/secops-architecture?hl=en [200 text/html]",
+          "textSha256": "1ddad082918146af0a9c594e7680bc22bb7b60735e7036cd3d2034ce072c5d62",
+          "characters": 58604,
+          "receipt": "runs/cybersecurity-firms-20261017/capture-020.json",
+          "reading": "consult continuation.md and canonical claim artifact; retrieval is not reading"
+        }
+      ],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/google-architecture-boundary.md"
+      ],
+      "acquisition": "captured text or recorded retrieval failure"
+    },
+    {
+      "url": "https://cortex-docs.paloaltonetworks.com/cortex-agentix/learn-about-cortex-agentix/data-retention-policy",
+      "captures": [
+        {
+          "url": "https://cortex-docs.paloaltonetworks.com/cortex-agentix/learn-about-cortex-agentix/data-retention-policy",
+          "accessed": "2026-10-17",
+          "captureKind": "provider extracted-text result, not raw HTML",
+          "httpStatus": "200",
+          "title": "Data retention policy | Cortex Documentation Portalarrow-up-right-and-arrow-down-left-from-center — https://cortex-docs.paloaltonetworks.com/cortex-agentix/learn-about-cortex-agentix/data-retention-policy [200 text/html]",
+          "textSha256": "a17173d82d2ef1490f33894b4ae631f3c1511111793139507f177d5b40a18e48",
+          "characters": 2897,
+          "receipt": "runs/cybersecurity-firms-20261017/capture-020.json",
+          "reading": "consult continuation.md and canonical claim artifact; retrieval is not reading"
+        }
+      ],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/pan-agentix-controls.md"
+      ],
+      "acquisition": "captured text or recorded retrieval failure"
+    },
+    {
+      "url": "https://help.splunk.com/en/splunk-enterprise-security-8/administer/8.6/ai-assistant-in-security-and-agentic-capabilities/run-soar-response-actions-using-the-guided-response-agent-in-splunk-enterprise-security",
+      "captures": [
+        {
+          "url": "https://help.splunk.com/en/splunk-enterprise-security-8/administer/8.6/ai-assistant-in-security-and-agentic-capabilities/run-soar-response-actions-using-the-guided-response-agent-in-splunk-enterprise-security",
+          "accessed": "2026-10-17",
+          "captureKind": "provider extracted-text result, not raw HTML",
+          "httpStatus": "200",
+          "title": "Run SOAR response actions using the Guided Response Agent in Splunk Enterprise Security | Splunk Cloud Platform, Splunk Enterprise (last updated 2026-07-31T17:51:07.774Z) — https://help.splunk.com/en/splunk-enterprise-security-8/administer/8.6/ai-assistant-in-security-and-agentic-capabilities/run-soar-response-actions-using-the-guided-response-agent-in-splunk-enterprise-security [200 text/html]",
+          "textSha256": "8c8c490201f10c6d71462ff1368c4101a31ff47eeac45d38d683b4df1cecd76a",
+          "characters": 34281,
+          "receipt": "runs/cybersecurity-firms-20261017/capture-021.json",
+          "reading": "consult continuation.md and canonical claim artifact; retrieval is not reading"
+        }
+      ],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/splunk-guided-response.md"
+      ],
+      "acquisition": "captured text or recorded retrieval failure"
+    },
+    {
+      "url": "https://docs.fortinet.com/document/fortianalyzer/7.6.0/administration-guide/13605/fortiai-data-privacy",
+      "captures": [
+        {
+          "url": "https://docs.fortinet.com/document/fortianalyzer/7.6.0/administration-guide/13605/fortiai-data-privacy",
+          "accessed": "2026-10-17",
+          "captureKind": "provider extracted-text result, not raw HTML",
+          "httpStatus": "200",
+          "title": "FortiAI data privacy | FortiAnalyzer 7.6.0 | Fortinet Document Library — https://docs.fortinet.com/document/fortianalyzer/7.6.0/administration-guide/13605/fortiai-data-privacy [200 text/html]",
+          "textSha256": "b5afb943b41af8f3892c0d9de00e2e3fe542c38a4f1426e61615715e133f7b7a",
+          "characters": 44236,
+          "receipt": "runs/cybersecurity-firms-20261017/capture-021.json",
+          "reading": "consult continuation.md and canonical claim artifact; retrieval is not reading"
+        }
+      ],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/fortianalyzer-ai-privacy.md"
+      ],
+      "acquisition": "captured text or recorded retrieval failure"
+    },
+    {
+      "url": "https://help.splunk.com/en/splunk-enterprise-security-8/administer/8.6/ai-assistant-in-security-and-agentic-capabilities/choose-which-models-the-ai-assistant-uses-in-splunk-enterprise-security",
+      "captures": [
+        {
+          "url": "https://help.splunk.com/en/splunk-enterprise-security-8/administer/8.6/ai-assistant-in-security-and-agentic-capabilities/choose-which-models-the-ai-assistant-uses-in-splunk-enterprise-security",
+          "accessed": "2026-10-17",
+          "captureKind": "provider extracted-text result, not raw HTML",
+          "httpStatus": "200",
+          "title": "Choose which models the AI Assistant uses in Splunk Enterprise Security | Splunk Cloud Platform, Splunk Enterprise (last updated 2026-07-20T23:56:12.229Z) — https://help.splunk.com/en/splunk-enterprise-security-8/administer/8.6/ai-assistant-in-security-and-agentic-capabilities/choose-which-models-the-ai-assistant-uses-in-splunk-enterprise-security [200 text/html]",
+          "textSha256": "efe3549e013211821423279569f1684c45600d5c9ed3796abab3b1b503da0241",
+          "characters": 12536,
+          "receipt": "runs/cybersecurity-firms-20261017/capture-022.json",
+          "reading": "consult continuation.md and canonical claim artifact; retrieval is not reading"
+        },
+        {
+          "url": "https://help.splunk.com/en/splunk-enterprise-security-8/administer/8.6/ai-assistant-in-security-and-agentic-capabilities/choose-which-models-the-ai-assistant-uses-in-splunk-enterprise-security",
+          "accessed": "2026-10-17",
+          "captureKind": "provider extracted-text result, not raw HTML",
+          "httpStatus": "200",
+          "title": "Choose which models the AI Assistant uses in Splunk Enterprise Security | Splunk Cloud Platform, Splunk Enterprise (last updated 2026-07-20T23:56:12.229Z) — https://help.splunk.com/en/splunk-enterprise-security-8/administer/8.6/ai-assistant-in-security-and-agentic-capabilities/choose-which-models-the-ai-assistant-uses-in-splunk-enterprise-security [200 text/html]",
+          "textSha256": "a80a7c264a3cc0da8f98032988401b5dd0ef935730ad8372afe2d71db8b44953",
+          "characters": 1462,
+          "receipt": "runs/cybersecurity-firms-20261017/capture-052.json",
+          "reading": "consult continuation.md and canonical claim artifact; retrieval is not reading"
+        }
+      ],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/splunk-guided-response.md",
+        "docs/research/cybersecurity-firms/splunk-triage-controls.md"
+      ],
+      "acquisition": "captured text or recorded retrieval failure"
+    },
+    {
+      "url": "https://help.splunk.com/en/splunk-enterprise-security-8/administer/8.6/ai-assistant-in-security-and-agentic-capabilities/opt-in-or-out-of-ai-training-and-fine-tuning-in-splunk-enterprise-security",
+      "captures": [
+        {
+          "url": "https://help.splunk.com/en/splunk-enterprise-security-8/administer/8.6/ai-assistant-in-security-and-agentic-capabilities/opt-in-or-out-of-ai-training-and-fine-tuning-in-splunk-enterprise-security",
+          "accessed": "2026-10-17",
+          "captureKind": "provider extracted-text result, not raw HTML",
+          "httpStatus": "200",
+          "title": "Opt in or out of AI training and fine-tuning in Splunk Enterprise Security | Splunk Cloud Platform, Splunk Enterprise (last updated 2026-09-29T22:23:07.861Z) — https://help.splunk.com/en/splunk-enterprise-security-8/administer/8.6/ai-assistant-in-security-and-agentic-capabilities/opt-in-or-out-of-ai-training-and-fine-tuning-in-splunk-enterprise-security [200 text/html]",
+          "textSha256": "d831393e8c7fad988e5ae28c7181d5cb4fc896ae62a5ffeb6cac65475fc70abf",
+          "characters": 12956,
+          "receipt": "runs/cybersecurity-firms-20261017/capture-022.json",
+          "reading": "consult continuation.md and canonical claim artifact; retrieval is not reading"
+        },
+        {
+          "url": "https://help.splunk.com/en/splunk-enterprise-security-8/administer/8.6/ai-assistant-in-security-and-agentic-capabilities/opt-in-or-out-of-ai-training-and-fine-tuning-in-splunk-enterprise-security",
+          "accessed": "2026-10-17",
+          "captureKind": "provider extracted-text result, not raw HTML",
+          "httpStatus": "200",
+          "title": "Opt in or out of AI training and fine-tuning in Splunk Enterprise Security | Splunk Cloud Platform, Splunk Enterprise (last updated 2026-09-29T22:23:07.861Z) — https://help.splunk.com/en/splunk-enterprise-security-8/administer/8.6/ai-assistant-in-security-and-agentic-capabilities/opt-in-or-out-of-ai-training-and-fine-tuning-in-splunk-enterprise-security [200 text/html]",
+          "textSha256": "8983cd54fcd73c169e3c8b7df7c98256133361a4d2c796c9556d35127d4289b3",
+          "characters": 1879,
+          "receipt": "runs/cybersecurity-firms-20261017/capture-051.json",
+          "reading": "consult continuation.md and canonical claim artifact; retrieval is not reading"
+        }
+      ],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/splunk-guided-response.md",
+        "docs/research/cybersecurity-firms/splunk-triage-controls.md"
+      ],
+      "acquisition": "captured text or recorded retrieval failure"
+    },
+    {
+      "url": "https://shisho.dev/docs/ja/r/202601-bb-engine-improvements/",
+      "captures": [
+        {
+          "url": "https://shisho.dev/docs/ja/r/202601-bb-engine-improvements/",
+          "accessed": "2026-10-17",
+          "captureKind": "provider extracted-text result, not raw HTML",
+          "httpStatus": "200",
+          "title": "Takumi ブラックボックス診断エンジンの改善 | Takumi byGMO — https://shisho.dev/docs/ja/r/202601-bb-engine-improvements/ [200 text/html]",
+          "textSha256": "79e8aa2ca48bc10f428fb69f88a9d8516d77973e17708ff92f18c0456ec9044d",
+          "characters": 13470,
+          "receipt": "runs/cybersecurity-firms-20261017/capture-023.json",
+          "reading": "consult continuation.md and canonical claim artifact; retrieval is not reading"
+        }
+      ],
+      "citedBy": [],
+      "acquisition": "captured text or recorded retrieval failure"
+    },
+    {
+      "url": "https://prtimes.jp/main/html/rd/p/000000078.000027502.html",
+      "captures": [
+        {
+          "url": "https://prtimes.jp/main/html/rd/p/000000078.000027502.html",
+          "accessed": "2026-10-17",
+          "captureKind": "provider extracted-text result, not raw HTML",
+          "httpStatus": "200",
+          "title": "「Takumi byGMO」、AI脆弱性診断・ペネトレーションテスト機能にて「国内推論オプション」を11月2日より正式提供開始 | GMO Flatt Security株式会社のプレスリリース — https://prtimes.jp/main/html/rd/p/000000078.000027502.html [200 text/html]",
+          "textSha256": "e8f60574e3fecd3486116c584bb15442e37ca23802b547299abe7797cc254329",
+          "characters": 10625,
+          "receipt": "runs/cybersecurity-firms-20261017/capture-023.json",
+          "reading": "consult continuation.md and canonical claim artifact; retrieval is not reading"
+        }
+      ],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/takumi-domestic-inference-announcement.md"
+      ],
+      "acquisition": "captured text or recorded retrieval failure"
+    },
+    {
+      "url": "https://shisho.dev/docs/ja/c/security/",
+      "captures": [
+        {
+          "url": "https://shisho.dev/docs/ja/c/security/",
+          "accessed": "2026-10-17",
+          "captureKind": "provider extracted-text result, not raw HTML",
+          "httpStatus": "200",
+          "title": "提供元のセキュリティ | Takumi byGMO — https://shisho.dev/docs/ja/c/security/ [200 text/html]",
+          "textSha256": "453fa312cfd843d396b95d73a222ebbe8f3c0385ac06d8bb74ebd388b6f89db8",
+          "characters": 6194,
+          "receipt": "runs/cybersecurity-firms-20261017/capture-023.json",
+          "reading": "consult continuation.md and canonical claim artifact; retrieval is not reading"
+        }
+      ],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/takumi-domestic-inference-announcement.md"
+      ],
+      "acquisition": "captured text or recorded retrieval failure"
+    },
+    {
+      "url": "https://success.trendmicro.com/en-US/solution/KA-0008963",
+      "captures": [
+        {
+          "url": "https://success.trendmicro.com/en-US/solution/KA-0008963",
+          "accessed": "2026-10-17",
+          "captureKind": "provider extracted-text result, not raw HTML",
+          "httpStatus": "200",
+          "title": "TrendAI Vision One™ Services – Managed Detection and Response (MDR): Service Descriptions — https://success.trendmicro.com/en-US/solution/KA-0008963 [200 text/html]",
+          "textSha256": "9b6b8348d85f188ead23c3453ec8df7645f3788967759e3a8b146968c28329a9",
+          "characters": 5152,
+          "receipt": "runs/cybersecurity-firms-20261017/capture-024.json",
+          "reading": "consult continuation.md and canonical claim artifact; retrieval is not reading"
+        }
+      ],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/trend-mdr-access-boundary.md"
+      ],
+      "acquisition": "captured text or recorded retrieval failure"
+    },
+    {
+      "url": "https://shisho.dev/docs/g/getting-started/integrate-apps/github/",
+      "captures": [
+        {
+          "url": "https://shisho.dev/docs/g/getting-started/integrate-apps/github/",
+          "accessed": "2026-10-17",
+          "captureKind": "provider extracted-text result, not raw HTML",
+          "httpStatus": "200",
+          "title": "GitHub | Takumi byGMO — https://shisho.dev/docs/g/getting-started/integrate-apps/github/ [200 text/html]",
+          "textSha256": "8cb8bd29c3e216547ae55819adb49d928715669b0cb8d942963926e077d716bf",
+          "characters": 4166,
+          "receipt": "runs/cybersecurity-firms-20261017/capture-025.json",
+          "reading": "consult continuation.md and canonical claim artifact; retrieval is not reading"
+        }
+      ],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/takumi-authority-boundary.md"
+      ],
+      "acquisition": "captured text or recorded retrieval failure"
+    },
+    {
+      "url": "https://shisho.dev/docs/t/assessment/features/assessment-authentication/",
+      "captures": [
+        {
+          "url": "https://shisho.dev/docs/t/assessment/features/assessment-authentication/",
+          "accessed": "2026-10-17",
+          "captureKind": "provider extracted-text result, not raw HTML",
+          "httpStatus": "200",
+          "title": "Organization Verification and Ownership Verification | Takumi byGMO — https://shisho.dev/docs/t/assessment/features/assessment-authentication/ [200 text/html]",
+          "textSha256": "5669db7cc387611b3a9e3c6679bd0253578c6369245bc760694a30dd0e357942",
+          "characters": 7074,
+          "receipt": "runs/cybersecurity-firms-20261017/capture-025.json",
+          "reading": "consult continuation.md and canonical claim artifact; retrieval is not reading"
+        }
+      ],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/takumi-authority-boundary.md"
+      ],
+      "acquisition": "captured text or recorded retrieval failure"
+    },
+    {
+      "url": "https://developer.crowdstrike.com/falcon-sensor/ansible/roles/falcon-configure/",
+      "captures": [
+        {
+          "url": "https://developer.crowdstrike.com/falcon-sensor/ansible/roles/falcon-configure/",
+          "accessed": "2026-10-17",
+          "captureKind": "provider extracted-text result, not raw HTML",
+          "httpStatus": "200",
+          "title": "falcon_configure | CrowdStrike Developer Center — https://developer.crowdstrike.com/falcon-sensor/ansible/roles/falcon-configure/ [200 text/html]",
+          "textSha256": "b5f261b1f322a6e8930ae020d72511dbc8c2855932829954230ab89a635184c2",
+          "characters": 23978,
+          "receipt": "runs/cybersecurity-firms-20261017/capture-026.json",
+          "reading": "consult continuation.md and canonical claim artifact; retrieval is not reading"
+        }
+      ],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/falcon-deployment-maintenance.md"
+      ],
+      "acquisition": "captured text or recorded retrieval failure"
+    },
+    {
+      "url": "https://developer.crowdstrike.com/falcon-sensor/ansible/modules/sensor-update-policy/",
+      "captures": [
+        {
+          "url": "https://developer.crowdstrike.com/falcon-sensor/ansible/modules/sensor-update-policy/",
+          "accessed": "2026-10-17",
+          "captureKind": "provider extracted-text result, not raw HTML",
+          "httpStatus": "200",
+          "title": "sensor_update_policy | CrowdStrike Developer Center — https://developer.crowdstrike.com/falcon-sensor/ansible/modules/sensor-update-policy/ [200 text/html]",
+          "textSha256": "f62c7c20edcee9140501dc6c99cb271203dbee957affe42e69b4447f57b3bccb",
+          "characters": 16269,
+          "receipt": "runs/cybersecurity-firms-20261017/capture-026.json",
+          "reading": "consult continuation.md and canonical claim artifact; retrieval is not reading"
+        }
+      ],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/falcon-deployment-maintenance.md"
+      ],
+      "acquisition": "captured text or recorded retrieval failure"
+    },
+    {
+      "url": "https://shisho.dev/docs/ja/t/assessment/features/assessment-authentication/",
+      "captures": [
+        {
+          "url": "https://shisho.dev/docs/ja/t/assessment/features/assessment-authentication/",
+          "accessed": "2026-10-17",
+          "captureKind": "provider extracted-text result, not raw HTML",
+          "httpStatus": "200",
+          "title": "組織認証・所有権証明 | Takumi byGMO — https://shisho.dev/docs/ja/t/assessment/features/assessment-authentication/ [200 text/html]",
+          "textSha256": "d9fbd542f6e62da75d33f611371f892652fcd8b26c824d2cf0b7f95cc98d9240",
+          "characters": 3362,
+          "receipt": "runs/cybersecurity-firms-20261017/capture-027.json",
+          "reading": "consult continuation.md and canonical claim artifact; retrieval is not reading"
+        }
+      ],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/takumi-authority-boundary.md"
+      ],
+      "acquisition": "captured text or recorded retrieval failure"
+    },
+    {
+      "url": "https://shisho.dev/docs/ja/g/getting-started/integrate-apps/github/",
+      "captures": [
+        {
+          "url": "https://shisho.dev/docs/ja/g/getting-started/integrate-apps/github/",
+          "accessed": "2026-10-17",
+          "captureKind": "provider extracted-text result, not raw HTML",
+          "httpStatus": "200",
+          "title": "GitHub | Takumi byGMO — https://shisho.dev/docs/ja/g/getting-started/integrate-apps/github/ [200 text/html]",
+          "textSha256": "e7755d8b768dda0c0ec925f3e8725dfd4ec819f96473bce835a0361bff04f95a",
+          "characters": 2435,
+          "receipt": "runs/cybersecurity-firms-20261017/capture-027.json",
+          "reading": "consult continuation.md and canonical claim artifact; retrieval is not reading"
+        }
+      ],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/takumi-authority-boundary.md"
+      ],
+      "acquisition": "captured text or recorded retrieval failure"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/defender-endpoint/automation-levels",
+      "captures": [
+        {
+          "url": "https://learn.microsoft.com/en-us/defender-endpoint/automation-levels",
+          "accessed": "2026-10-17",
+          "captureKind": "provider extracted-text result, not raw HTML",
+          "httpStatus": "200",
+          "title": "Automation levels in automated investigation and remediation - Microsoft Defender for Endpoint | Microsoft Learn — https://learn.microsoft.com/en-us/defender-endpoint/automation-levels [200 text/html]",
+          "textSha256": "68f763e8b6bc639777f80cdac4d726d7204cf48882e6324d213fc142260f7936",
+          "characters": 8182,
+          "receipt": "runs/cybersecurity-firms-20261017/capture-028.json",
+          "reading": "consult continuation.md and canonical claim artifact; retrieval is not reading"
+        }
+      ],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/defender-automation-boundaries.md"
+      ],
+      "acquisition": "captured text or recorded retrieval failure"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/defender-endpoint/manage-auto-investigation",
+      "captures": [
+        {
+          "url": "https://learn.microsoft.com/en-us/defender-endpoint/manage-auto-investigation",
+          "accessed": "2026-10-17",
+          "captureKind": "provider extracted-text result, not raw HTML",
+          "httpStatus": "200",
+          "title": "Review remediation actions following automated investigations - Microsoft Defender for Endpoint | Microsoft Learn — https://learn.microsoft.com/en-us/defender-endpoint/manage-auto-investigation [200 text/html]",
+          "textSha256": "4e860234f2f7aa225332ad39f4488f19af64c33ddcb7c645d0722c9150945f12",
+          "characters": 9809,
+          "receipt": "runs/cybersecurity-firms-20261017/capture-028.json",
+          "reading": "consult continuation.md and canonical claim artifact; retrieval is not reading"
+        }
+      ],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/defender-automation-boundaries.md"
+      ],
+      "acquisition": "captured text or recorded retrieval failure"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/defender-endpoint/manage-automation-folder-exclusions",
+      "captures": [
+        {
+          "url": "https://learn.microsoft.com/en-us/defender-endpoint/manage-automation-folder-exclusions",
+          "accessed": "2026-10-17",
+          "captureKind": "provider extracted-text result, not raw HTML",
+          "httpStatus": "200",
+          "title": "Configure automation folder exclusions - Microsoft Defender for Endpoint | Microsoft Learn — https://learn.microsoft.com/en-us/defender-endpoint/automation-folder-exclusions-configure [200 text/html]",
+          "textSha256": "c8c8dde83b77ad123389081f37c3a6b746906b90e8afe97651ebf82025e9b68e",
+          "characters": 6593,
+          "receipt": "runs/cybersecurity-firms-20261017/capture-028.json",
+          "reading": "consult continuation.md and canonical claim artifact; retrieval is not reading"
+        }
+      ],
+      "citedBy": [],
+      "acquisition": "captured text or recorded retrieval failure"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/copilot/security/security-copilot-inclusion",
+      "captures": [
+        {
+          "url": "https://learn.microsoft.com/en-us/copilot/security/security-copilot-inclusion",
+          "accessed": "2026-10-17",
+          "captureKind": "provider extracted-text result, not raw HTML",
+          "httpStatus": "200",
+          "title": "Learn about Security Copilot for Microsoft 365 E5 and E7 customers | Microsoft Learn — https://learn.microsoft.com/en-us/copilot/security/security-copilot-inclusion [200 text/html]",
+          "textSha256": "d505db421150bfc790e0d4c068c9fd5a9b626c002f5b8b2433a2dac025241b39",
+          "characters": 15991,
+          "receipt": "runs/cybersecurity-firms-20261017/capture-029.json",
+          "reading": "consult continuation.md and canonical claim artifact; retrieval is not reading"
+        }
+      ],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/pricing-capacity-boundaries.md"
+      ],
+      "acquisition": "captured text or recorded retrieval failure"
+    },
+    {
+      "url": "https://www.microsoft.com/en-us/security/pricing/microsoft-security-copilot/",
+      "captures": [
+        {
+          "url": "https://www.microsoft.com/en-us/security/pricing/microsoft-security-copilot/",
+          "accessed": "2026-10-17",
+          "captureKind": "provider extracted-text result, not raw HTML",
+          "httpStatus": "200",
+          "title": "Microsoft Security Copilot – Pricing | Microsoft SecurityYour Privacy Choices Opt-Out IconYour Privacy Choices Opt-Out Icon — https://www.microsoft.com/en-us/security/pricing/microsoft-security-copilot/ [200 text/html]",
+          "textSha256": "1db17b4fe82b9513f39618172641de15d96ef3ef6b6ab44edd5d294083fbfd6e",
+          "characters": 9323,
+          "receipt": "runs/cybersecurity-firms-20261017/capture-029.json",
+          "reading": "consult continuation.md and canonical claim artifact; retrieval is not reading"
+        }
+      ],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/pricing-capacity-boundaries.md"
+      ],
+      "acquisition": "captured text or recorded retrieval failure"
+    },
+    {
+      "url": "https://cloud.google.com/products/security-operations/pricing",
+      "captures": [
+        {
+          "url": "https://cloud.google.com/products/security-operations/pricing",
+          "accessed": "2026-10-17",
+          "captureKind": "provider extracted-text result, not raw HTML",
+          "httpStatus": "200",
+          "title": "Google Security Operations データ特典プログラム | Google Cloud — https://cloud.google.com/products/security-operations/pricing [200 text/html]",
+          "textSha256": "e791764132c6c2147508e8ad196c2343a5492ab9adcd650978a464bf66ebb9c0",
+          "characters": 26909,
+          "receipt": "runs/cybersecurity-firms-20261017/capture-029.json",
+          "reading": "consult continuation.md and canonical claim artifact; retrieval is not reading"
+        }
+      ],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/pricing-capacity-boundaries.md"
+      ],
+      "acquisition": "captured text or recorded retrieval failure"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/copilot/security/auto-provisioning-security-copilot",
+      "captures": [
+        {
+          "url": "https://learn.microsoft.com/en-us/copilot/security/auto-provisioning-security-copilot",
+          "accessed": "2026-10-17",
+          "captureKind": "provider extracted-text result, not raw HTML",
+          "httpStatus": "200",
+          "title": "Understand how Security Copilot is auto provisioned for eligible Microsoft 365 E5 and E7 customers | Microsoft Learn — https://learn.microsoft.com/en-us/copilot/security/auto-provisioning-security-copilot [200 text/html]",
+          "textSha256": "ed2ea5bd868d6002aaf5f4f5da3a502a1403a71beea6af7d2a1c63171e3152dc",
+          "characters": 7268,
+          "receipt": "runs/cybersecurity-firms-20261017/capture-030.json",
+          "reading": "consult continuation.md and canonical claim artifact; retrieval is not reading"
+        }
+      ],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/security-copilot-provisioning.md"
+      ],
+      "acquisition": "captured text or recorded retrieval failure"
+    },
+    {
+      "url": "https://www.lac.co.jp/news/2025/07/17_press_01.html",
+      "captures": [
+        {
+          "url": "https://www.lac.co.jp/news/2025/07/17_press_01.html",
+          "accessed": "2026-10-17",
+          "captureKind": "provider extracted-text result, not raw HTML",
+          "httpStatus": "200",
+          "title": "KDDIグループの株式会社ラックとKDDIデジタルセキュリティ株式会社の合併に関するお知らせ（2025年7月17日）| 株式会社ラック — https://www.lac.co.jp/news/2025/07/17_press_01.html [200 text/html]",
+          "textSha256": "cead6fc4abd0db04bc54331c21187a97e2bb3e0a5020eed7fd08a3a9d740e7be",
+          "characters": 2001,
+          "receipt": "runs/cybersecurity-firms-20261017/capture-031.json",
+          "reading": "consult continuation.md and canonical claim artifact; retrieval is not reading"
+        }
+      ],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/lac-ownership-accounting.md"
+      ],
+      "acquisition": "captured text or recorded retrieval failure"
+    },
+    {
+      "url": "https://developer.crowdstrike.com/falcon-mcp/modules/agentworks/",
+      "captures": [
+        {
+          "url": "https://developer.crowdstrike.com/falcon-mcp/modules/agentworks/",
+          "accessed": "2026-10-17",
+          "captureKind": "provider extracted-text result, not raw HTML",
+          "httpStatus": "200",
+          "title": "AgentWorks | CrowdStrike Developer Center — https://developer.crowdstrike.com/falcon-mcp/modules/agentworks/ [200 text/html]",
+          "textSha256": "5cbfd830350f03697ba0849d1debd9a51df34e3a2786bc39f287c6606a1145e8",
+          "characters": 15649,
+          "receipt": "runs/cybersecurity-firms-20261017/capture-032.json",
+          "reading": "consult continuation.md and canonical claim artifact; retrieval is not reading"
+        }
+      ],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/charlotte-agentworks-contract.md"
+      ],
+      "acquisition": "captured text or recorded retrieval failure"
+    },
+    {
+      "url": "https://www.crowdstrike.com/en-us/legal/crowdstrike-licensing/",
+      "captures": [
+        {
+          "url": "https://www.crowdstrike.com/en-us/legal/crowdstrike-licensing/",
+          "accessed": "2026-10-17",
+          "captureKind": "provider extracted-text result, not raw HTML",
+          "httpStatus": "200",
+          "title": "CrowdStrike Licensing | FAQ | CrowdStrike — https://www.crowdstrike.com/en-us/legal/crowdstrike-licensing/ [200 text/html]",
+          "textSha256": "14ea3dd6bced0771dfa33f1bf38673eb81f5227e9fcefdcde62e2804579e2023",
+          "characters": 61267,
+          "receipt": "runs/cybersecurity-firms-20261017/capture-032.json",
+          "reading": "consult continuation.md and canonical claim artifact; retrieval is not reading"
+        }
+      ],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/charlotte-agentworks-contract.md"
+      ],
+      "acquisition": "captured text or recorded retrieval failure"
+    },
+    {
+      "url": "https://news.microsoft.com/source/2017/06/08/microsoft-signs-agreement-to-acquire-hexadite/",
+      "captures": [
+        {
+          "url": "https://news.microsoft.com/source/2017/06/08/microsoft-signs-agreement-to-acquire-hexadite/",
+          "accessed": "2026-10-17",
+          "captureKind": "provider extracted-text result, not raw HTML",
+          "httpStatus": "403",
+          "title": "Just a moment... — https://news.microsoft.com/source/2017/06/08/microsoft-signs-agreement-to-acquire-hexadite/ [403 text/html]",
+          "textSha256": "9670e85682bbda48ffe1e320865192a960654300e544870a84045dd740cd532c",
+          "characters": 138,
+          "receipt": "runs/cybersecurity-firms-20261017/capture-033.json",
+          "reading": "consult continuation.md and canonical claim artifact; retrieval is not reading"
+        }
+      ],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/microsoft.md"
+      ],
+      "acquisition": "captured text or recorded retrieval failure"
+    },
+    {
+      "url": "https://blogs.microsoft.com/blog/2015/09/08/microsoft-acquires-adallom-to-advance-identity-and-security-in-the-cloud/",
+      "captures": [
+        {
+          "url": "https://blogs.microsoft.com/blog/2015/09/08/microsoft-acquires-adallom-to-advance-identity-and-security-in-the-cloud/",
+          "accessed": "2026-10-17",
+          "captureKind": "provider extracted-text result, not raw HTML",
+          "httpStatus": "403",
+          "title": "Just a moment... — https://blogs.microsoft.com/blog/2015/09/08/microsoft-acquires-adallom-to-advance-identity-and-security-in-the-cloud/ [403 text/html]",
+          "textSha256": "19b56ab2c9183e9d15005aaeb847794a72ca8de7fd174bf4d713a6b5f9e172fa",
+          "characters": 164,
+          "receipt": "runs/cybersecurity-firms-20261017/capture-033.json",
+          "reading": "consult continuation.md and canonical claim artifact; retrieval is not reading"
+        }
+      ],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/microsoft.md"
+      ],
+      "acquisition": "captured text or recorded retrieval failure"
+    },
+    {
+      "url": "https://www.x.company/blog/posts/graduation-day-introducing-chronicle/",
+      "captures": [
+        {
+          "url": "https://www.x.company/blog/posts/graduation-day-introducing-chronicle/",
+          "accessed": "2026-10-17",
+          "captureKind": "provider extracted-text result, not raw HTML",
+          "httpStatus": "200",
+          "title": "Graduation Day: Introducing Chronicle - Google X Blog — https://www.x.company/blog/posts/graduation-day-introducing-chronicle/ [200 text/html]",
+          "textSha256": "6d0a139f412d6967b8175f87d0da6f6b0b548b0a5b1f25ccbca7b7df365d9602",
+          "characters": 5505,
+          "receipt": "runs/cybersecurity-firms-20261017/capture-033.json",
+          "reading": "consult continuation.md and canonical claim artifact; retrieval is not reading"
+        }
+      ],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/google-cloud-security.md"
+      ],
+      "acquisition": "captured text or recorded retrieval failure"
+    },
+    {
+      "url": "https://docs.trendmicro.com/en-us/documentation/article/trend-vision-one-isolate-endpoint-task",
+      "captures": [
+        {
+          "url": "https://docs.trendmicro.com/en-us/documentation/article/trend-vision-one-isolate-endpoint-task",
+          "accessed": "2026-10-17",
+          "captureKind": "provider extracted-text result, not raw HTML",
+          "httpStatus": "200",
+          "title": "Isolate Endpoint task | TrendAI™ — https://docs.trendmicro.com/en-us/documentation/article/trend-vision-one-isolate-endpoint-task [200 text/html]",
+          "textSha256": "214d28a89f4bb55141174c6ba0c0371850fbbe947fa3e5454fbb0c288fa9a9d1",
+          "characters": 3943,
+          "receipt": "runs/cybersecurity-firms-20261017/capture-034.json",
+          "reading": "consult continuation.md and canonical claim artifact; retrieval is not reading"
+        }
+      ],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/trend-response-task-boundary.md"
+      ],
+      "acquisition": "captured text or recorded retrieval failure"
+    },
+    {
+      "url": "https://success.trendmicro.com/en-US/solution/KA-0013234",
+      "captures": [
+        {
+          "url": "https://success.trendmicro.com/en-US/solution/KA-0013234",
+          "accessed": "2026-10-17",
+          "captureKind": "provider extracted-text result, not raw HTML",
+          "httpStatus": "200",
+          "title": "\"Isolate Agent\" task shows as failed by Security Operations on the TrendAI Vision One™ Response Management app — https://success.trendmicro.com/en-US/solution/KA-0013234 [200 text/html]",
+          "textSha256": "0b73be97acd804fb0ced303d8919ec9b86b5f2aa6cafbf812802753b5b31d0b2",
+          "characters": 10521,
+          "receipt": "runs/cybersecurity-firms-20261017/capture-034.json",
+          "reading": "consult continuation.md and canonical claim artifact; retrieval is not reading"
+        }
+      ],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/trend-response-task-boundary.md"
+      ],
+      "acquisition": "captured text or recorded retrieval failure"
+    },
+    {
+      "url": "https://success.trendmicro.com/solution/KA-0019907",
+      "captures": [
+        {
+          "url": "https://success.trendmicro.com/solution/KA-0019907",
+          "accessed": "2026-10-17",
+          "captureKind": "provider extracted-text result, not raw HTML",
+          "httpStatus": "200",
+          "title": "TrendAI Vision One™ Services - Managed Detection and Response (MDR) Remote Response Actions — https://success.trendmicro.com/en-US/solution/KA-0019907 [200 text/html]",
+          "textSha256": "9e92e148196f91de44de5bf0f13c02cbb4ab4a5c863af52aeebefadf63666a41",
+          "characters": 15697,
+          "receipt": "runs/cybersecurity-firms-20261017/capture-034.json",
+          "reading": "consult continuation.md and canonical claim artifact; retrieval is not reading"
+        }
+      ],
+      "citedBy": [],
+      "acquisition": "captured text or recorded retrieval failure"
+    },
+    {
+      "url": "https://success.trendmicro.com/en-US/solution/KA-0019492",
+      "captures": [
+        {
+          "url": "https://success.trendmicro.com/en-US/solution/KA-0019492",
+          "accessed": "2026-10-17",
+          "captureKind": "provider extracted-text result, not raw HTML",
+          "httpStatus": "200",
+          "title": "Comparing Automatic Approval and Manual Approval for TrendAI Vision One™ Services – Managed Detection and Response (MDR) Actions — https://success.trendmicro.com/en-US/solution/KA-0019492 [200 text/html]",
+          "textSha256": "55faf6d8f128e6a625bbde0e0c04219b62feeceeeb3537e5e89c9e2395bff1a7",
+          "characters": 10941,
+          "receipt": "runs/cybersecurity-firms-20261017/capture-035.json",
+          "reading": "consult continuation.md and canonical claim artifact; retrieval is not reading"
+        }
+      ],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/trend-mdr-approval.md"
+      ],
+      "acquisition": "captured text or recorded retrieval failure"
+    },
+    {
+      "url": "https://success.trendmicro.com/en-US/solution/KA-0020113",
+      "captures": [
+        {
+          "url": "https://success.trendmicro.com/en-US/solution/KA-0020113",
+          "accessed": "2026-10-17",
+          "captureKind": "provider extracted-text result, not raw HTML",
+          "httpStatus": "200",
+          "title": "Activating the Managed Detection and Response (MDR) Service via the Managed Services App in TrendAI Vision One™ — https://success.trendmicro.com/en-US/solution/KA-0020113 [200 text/html]",
+          "textSha256": "dbcdcf1bc9a54e6d27f2362a13311777df42661a4ce524349d4a5d6a0a480c65",
+          "characters": 13526,
+          "receipt": "runs/cybersecurity-firms-20261017/capture-035.json",
+          "reading": "consult continuation.md and canonical claim artifact; retrieval is not reading"
+        }
+      ],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/trend-mdr-approval.md"
+      ],
+      "acquisition": "captured text or recorded retrieval failure"
+    },
+    {
+      "url": "https://success.trendmicro.com/en-US/solution/KA-0019494",
+      "captures": [
+        {
+          "url": "https://success.trendmicro.com/en-US/solution/KA-0019494",
+          "accessed": "2026-10-17",
+          "captureKind": "provider extracted-text result, not raw HTML",
+          "httpStatus": "200",
+          "title": "Setting up your Contact Information for TrendAI Vision One™ Services - Managed Detection and Response (MDR) — https://success.trendmicro.com/en-US/solution/KA-0019494 [200 text/html]",
+          "textSha256": "54fb9617f085fb77c004663c098a01bf46529ee10a2fa05acd5d8b010a48a338",
+          "characters": 10925,
+          "receipt": "runs/cybersecurity-firms-20261017/capture-035.json",
+          "reading": "consult continuation.md and canonical claim artifact; retrieval is not reading"
+        }
+      ],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/trend-mdr-approval.md"
+      ],
+      "acquisition": "captured text or recorded retrieval failure"
+    },
+    {
+      "url": "https://help.sfasu.edu/TDClient/2027/Portal/KB/ArticleDet?ID=170040",
+      "captures": [
+        {
+          "url": "https://help.sfasu.edu/TDClient/2027/Portal/KB/ArticleDet?ID=170040",
+          "accessed": "2026-10-17",
+          "captureKind": "provider extracted-text result, not raw HTML",
+          "httpStatus": "200",
+          "title": "Article - Endpoint Detection and Resp... — https://help.sfasu.edu/TDClient/2027/Portal/KB/Article/170040/Endpoint-Detection-and-Response-EDR-Agent-Support-Lifecycle [200 text/html]",
+          "textSha256": "673ff2466722aee57be4b1c4f0e84188bb301ecfe20e93d1e1855d16be735a81",
+          "characters": 4707,
+          "receipt": "runs/cybersecurity-firms-20261017/capture-036.json",
+          "reading": "consult continuation.md and canonical claim artifact; retrieval is not reading"
+        }
+      ],
+      "citedBy": [],
+      "acquisition": "captured text or recorded retrieval failure"
+    },
+    {
+      "url": "https://docs-cortex.paloaltonetworks.com/r/Cortex-XDR/9.1/Cortex-XDR-Agent-Administrator-Guide/Configure-Cortex-XDR-Agent-for-Mac",
+      "captures": [
+        {
+          "url": "https://docs-cortex.paloaltonetworks.com/r/Cortex-XDR/9.1/Cortex-XDR-Agent-Administrator-Guide/Configure-Cortex-XDR-Agent-for-Mac",
+          "accessed": "2026-10-17",
+          "captureKind": "provider extracted-text result, not raw HTML",
+          "httpStatus": "200",
+          "title": "Configure Cortex XDR Agent for Mac | 9.1 | Cortex Documentation Portalarrow-up-right-and-arrow-down-left-from-center — https://cortex-docs.paloaltonetworks.com/cortex-xdr-agent/9.1/cortex-xdr-agent-for-macos/configure-cortex-xdr-agent-for-mac [200 text/html]",
+          "textSha256": "37d928f57ff0d7428e806f566a76f2b1180a9e799aac0a92c39b4fafc94d4452",
+          "characters": 2462,
+          "receipt": "runs/cybersecurity-firms-20261017/capture-036.json",
+          "reading": "consult continuation.md and canonical claim artifact; retrieval is not reading"
+        }
+      ],
+      "citedBy": [],
+      "acquisition": "captured text or recorded retrieval failure"
+    },
+    {
+      "url": "https://cortex-docs.paloaltonetworks.com/cortex-xdr-agent/9.1/cortex-xdr-agent-for-macos/install-the-cortex-xdr-agent-for-mac/install-the-cortex-xdr-agent-manually",
+      "captures": [
+        {
+          "url": "https://cortex-docs.paloaltonetworks.com/cortex-xdr-agent/9.1/cortex-xdr-agent-for-macos/install-the-cortex-xdr-agent-for-mac/install-the-cortex-xdr-agent-manually",
+          "accessed": "2026-10-17",
+          "captureKind": "provider extracted-text result, not raw HTML",
+          "httpStatus": "200",
+          "title": "Install the Cortex XDR Agent Manually | 9.1 | Cortex Documentation Portalarrow-up-right-and-arrow-down-left-from-center — https://cortex-docs.paloaltonetworks.com/cortex-xdr-agent/9.1/cortex-xdr-agent-for-macos/install-the-cortex-xdr-agent-for-mac/install-the-cortex-xdr-agent-manually [200 text/html]",
+          "textSha256": "b6a187f9ea37b5bb4e5141933977fba2fc92aa84cb9fd04738d24ed973a39a1c",
+          "characters": 8568,
+          "receipt": "runs/cybersecurity-firms-20261017/capture-037.json",
+          "reading": "consult continuation.md and canonical claim artifact; retrieval is not reading"
+        }
+      ],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/pan-deployment-buyer-policy.md"
+      ],
+      "acquisition": "captured text or recorded retrieval failure"
+    },
+    {
+      "url": "https://www.nri-secure.co.jp/service/mss/secureprotecht",
+      "captures": [
+        {
+          "url": "https://www.nri-secure.co.jp/service/mss/secureprotecht",
+          "accessed": "2026-10-17",
+          "captureKind": "provider extracted-text result, not raw HTML",
+          "httpStatus": "200",
+          "title": "マネージドセキュリティサービス｜Agentic SOC・AI SOC｜SecurePROtecht — https://www.nri-secure.co.jp/service/mss/secureprotecht [200 text/html]",
+          "textSha256": "57f597f546b67e371d714afb026859e96f1232fc77d10682da622db27bbe4c16",
+          "characters": 12335,
+          "receipt": "runs/cybersecurity-firms-20261017/capture-039.json",
+          "reading": "consult continuation.md and canonical claim artifact; retrieval is not reading"
+        }
+      ],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/nri-agenticblue-controls.md"
+      ],
+      "acquisition": "captured text or recorded retrieval failure"
+    },
+    {
+      "url": "https://www.nri-secure.co.jp/blog/agentic-soc",
+      "captures": [
+        {
+          "url": "https://www.nri-secure.co.jp/blog/agentic-soc",
+          "accessed": "2026-10-17",
+          "captureKind": "provider extracted-text result, not raw HTML",
+          "httpStatus": "200",
+          "title": "Agentic SOCの精度と速度を高める2つの設計技術｜コンテキストエンジニアリングとハーネスエンジニアリング｜ブログ｜NRIセキュア — https://www.nri-secure.co.jp/blog/agentic-soc [200 text/html]",
+          "textSha256": "84ecd2125fb28c39143357338c8e7af80292629ad7aebba7972f2bcdfd3a2386",
+          "characters": 15509,
+          "receipt": "runs/cybersecurity-firms-20261017/capture-039.json",
+          "reading": "consult continuation.md and canonical claim artifact; retrieval is not reading"
+        }
+      ],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/nri-agenticblue-controls.md"
+      ],
+      "acquisition": "captured text or recorded retrieval failure"
+    },
+    {
+      "url": "https://developer.cisco.com/docs/cisco-xdr/automation-api-guide/",
+      "captures": [
+        {
+          "url": "https://developer.cisco.com/docs/cisco-xdr/automation-api-guide/",
+          "accessed": "2026-10-17",
+          "captureKind": "provider extracted-text result, not raw HTML",
+          "httpStatus": "200",
+          "title": "Overview - Cisco XDR APIs - Cisco DevNet — https://developer.cisco.com/docs/cisco-xdr/automation-api-guide/ [200 text/html]",
+          "textSha256": "ea79b0a39f77fb64bc3012e4a4d4365abbe192f38956bb25ffcb73c37f96347e",
+          "characters": 4275,
+          "receipt": "runs/cybersecurity-firms-20261017/capture-039.json",
+          "reading": "consult continuation.md and canonical claim artifact; retrieval is not reading"
+        }
+      ],
+      "citedBy": [],
+      "acquisition": "captured text or recorded retrieval failure"
+    },
+    {
+      "url": "https://www.crowdstrike.com/en-us/legal/terms-conditions/",
+      "captures": [
+        {
+          "url": "https://www.crowdstrike.com/en-us/legal/terms-conditions/",
+          "accessed": "2026-10-17",
+          "captureKind": "provider extracted-text result, not raw HTML",
+          "httpStatus": "200",
+          "title": "Terms and Conditions | CrowdStrike — https://www.crowdstrike.com/en-us/legal/terms-conditions/ [200 text/html]",
+          "textSha256": "a141d627722309ca0d325248482295b1d2296ed0381af4c3f3624769a1856d6c",
+          "characters": 83771,
+          "receipt": "runs/cybersecurity-firms-20261017/capture-040.json",
+          "reading": "consult continuation.md and canonical claim artifact; retrieval is not reading"
+        }
+      ],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/falcon-public-terms-boundary.md"
+      ],
+      "acquisition": "captured text or recorded retrieval failure"
+    },
+    {
+      "url": "https://www.crowdstrike.com/en-us/legal/data-protection-agreement/",
+      "captures": [
+        {
+          "url": "https://www.crowdstrike.com/en-us/legal/data-protection-agreement/",
+          "accessed": "2026-10-17",
+          "captureKind": "provider extracted-text result, not raw HTML",
+          "httpStatus": "200",
+          "title": "CrowdStrike Data Protection Agreement | CrowdStrike — https://www.crowdstrike.com/en-us/legal/data-protection-agreement/ [200 text/html]",
+          "textSha256": "fa1b691ef4149ef96ee51a8db46de748437524f576feef0230e32d71c2ef31b2",
+          "characters": 20972,
+          "receipt": "runs/cybersecurity-firms-20261017/capture-041.json",
+          "reading": "consult continuation.md and canonical claim artifact; retrieval is not reading"
+        }
+      ],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/falcon-public-terms-boundary.md"
+      ],
+      "acquisition": "captured text or recorded retrieval failure"
+    },
+    {
+      "url": "https://assets.crowdstrike.com/is/content/crowdstrikeinc/crowdstrike-global-data-protection-agreementpdf",
+      "captures": [
+        {
+          "url": "https://assets.crowdstrike.com/is/content/crowdstrikeinc/crowdstrike-global-data-protection-agreementpdf",
+          "accessed": "2026-10-17",
+          "captureKind": "provider extracted-text result, not raw HTML",
+          "httpStatus": null,
+          "title": "Internal Error ()",
+          "textSha256": "2e363c4a957e0602a62676bc51bf5500b33966019d2a044908bbd49303528cb3",
+          "characters": 360,
+          "receipt": "runs/cybersecurity-firms-20261017/capture-041.json",
+          "reading": "consult continuation.md and canonical claim artifact; retrieval is not reading"
+        }
+      ],
+      "citedBy": [],
+      "acquisition": "captured text or recorded retrieval failure"
+    },
+    {
+      "url": "https://www.lac.co.jp/operation/jsocxpdr.html",
+      "captures": [
+        {
+          "url": "https://www.lac.co.jp/operation/jsocxpdr.html",
+          "accessed": "2026-10-17",
+          "captureKind": "provider extracted-text result, not raw HTML",
+          "httpStatus": "200",
+          "title": "JSOC xPDR（Microsoft 365＋ゼロトラスト監視・運用） | 株式会社ラック — https://www.lac.co.jp/operation/jsocxpdr.html [200 text/html]",
+          "textSha256": "2720a59b59e1b117c2b901835c998622e5ee1ba2af363719c9b47b980fa2c711",
+          "characters": 4867,
+          "receipt": "runs/cybersecurity-firms-20261017/capture-042.json",
+          "reading": "consult continuation.md and canonical claim artifact; retrieval is not reading"
+        }
+      ],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/lac-xpdr-operating-boundary.md"
+      ],
+      "acquisition": "captured text or recorded retrieval failure"
+    },
+    {
+      "url": "https://www.lac.co.jp/news/2026/04/21_press_01.html",
+      "captures": [
+        {
+          "url": "https://www.lac.co.jp/news/2026/04/21_press_01.html",
+          "accessed": "2026-10-17",
+          "captureKind": "provider extracted-text result, not raw HTML",
+          "httpStatus": "200",
+          "title": "ラック、セキュリティ運用の高度化とコスト最適化を実現する統合SOCサービス「JSOC xPDR Advanced」を提供（2026年4月21日）| 株式会社ラック — https://www.lac.co.jp/news/2026/04/21_press_01.html [200 text/html]",
+          "textSha256": "ebbe0c2020dd2bde6f28bc8c6671bf4868bae76ecea0c713a89ab6d12952ecd4",
+          "characters": 3162,
+          "receipt": "runs/cybersecurity-firms-20261017/capture-042.json",
+          "reading": "consult continuation.md and canonical claim artifact; retrieval is not reading"
+        }
+      ],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/lac-xpdr-operating-boundary.md"
+      ],
+      "acquisition": "captured text or recorded retrieval failure"
+    },
+    {
+      "url": "https://www.lac.co.jp/operation/jsocxpdr_advanced.html",
+      "captures": [
+        {
+          "url": "https://www.lac.co.jp/operation/jsocxpdr_advanced.html",
+          "accessed": "2026-10-17",
+          "captureKind": "provider extracted-text result, not raw HTML",
+          "httpStatus": "200",
+          "title": "JSOC xPDR Advanced | 株式会社ラック — https://www.lac.co.jp/operation/jsocxpdr_advanced.html [200 text/html]",
+          "textSha256": "8822b5bbdef6f60e9f7dc3f3434335251f23ed027f6486faf5e277fa51a42cd1",
+          "characters": 4274,
+          "receipt": "runs/cybersecurity-firms-20261017/capture-043.json",
+          "reading": "consult continuation.md and canonical claim artifact; retrieval is not reading"
+        }
+      ],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/lac-xpdr-operating-boundary.md"
+      ],
+      "acquisition": "captured text or recorded retrieval failure"
+    },
+    {
+      "url": "https://ir.crowdstrike.com/node/17391/xbrl-viewer",
+      "captures": [
+        {
+          "url": "https://ir.crowdstrike.com/node/17391/xbrl-viewer",
+          "accessed": "2026-10-17",
+          "captureKind": "provider extracted-text result, not raw HTML",
+          "httpStatus": "403",
+          "title": "Access Denied — https://ir.crowdstrike.com/node/17391/xbrl-viewer [403 text/html]",
+          "textSha256": "59a6c60b1ace14134c8234788b93cbd5b4ff017dee98e3039d3c1a61c8a1fe2f",
+          "characters": 316,
+          "receipt": "runs/cybersecurity-firms-20261017/capture-044.json",
+          "reading": "consult continuation.md and canonical claim artifact; retrieval is not reading"
+        }
+      ],
+      "citedBy": [],
+      "acquisition": "captured text or recorded retrieval failure"
+    },
+    {
+      "url": "https://oit.duke.edu/help/articles/kb0035319/",
+      "captures": [
+        {
+          "url": "https://oit.duke.edu/help/articles/kb0035319/",
+          "accessed": "2026-10-17",
+          "captureKind": "provider extracted-text result, not raw HTML",
+          "httpStatus": "200",
+          "title": "Troubleshooting the CrowdStrike Falcon Sensor for Linux | Office of Information TechnologyLoading... — https://oit.duke.edu/help/articles/kb0035319/ [200 text/html]",
+          "textSha256": "ec15ffdaf6daa9c361e5daf439235d8186cd9f0ba32ac1acafb748e5352de676",
+          "characters": 10961,
+          "receipt": "runs/cybersecurity-firms-20261017/capture-045.json",
+          "reading": "consult continuation.md and canonical claim artifact; retrieval is not reading"
+        }
+      ],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/falcon-buyer-health-check.md"
+      ],
+      "acquisition": "captured text or recorded retrieval failure"
+    },
+    {
+      "url": "https://status.cloud.google.com/security/incidents/cSxDAnszXHrxJNsSrT1u",
+      "captures": [
+        {
+          "url": "https://status.cloud.google.com/security/incidents/cSxDAnszXHrxJNsSrT1u",
+          "accessed": "2026-10-17",
+          "captureKind": "provider extracted-text result, not raw HTML",
+          "httpStatus": "200",
+          "title": "Incident details | Google Security Products Status Dashboard — https://status.cloud.google.com/security/incidents/cSxDAnszXHrxJNsSrT1u [200 text/html]",
+          "textSha256": "3cd90eb56a716c38915f8ae4c4ee520751620a5c6a90e5b67edf2c053f2bd0f4",
+          "characters": 4154,
+          "receipt": "runs/cybersecurity-firms-20261017/capture-046.json",
+          "reading": "consult continuation.md and canonical claim artifact; retrieval is not reading"
+        }
+      ],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/mandiant-processing-incident.md"
+      ],
+      "acquisition": "captured text or recorded retrieval failure"
+    },
+    {
+      "url": "https://blog.google/intl/ja-jp/company-news/technology/cybersecurity-initiative/",
+      "captures": [
+        {
+          "url": "https://blog.google/intl/ja-jp/company-news/technology/cybersecurity-initiative/",
+          "accessed": "2026-10-17",
+          "captureKind": "provider extracted-text result, not raw HTML",
+          "httpStatus": "200",
+          "title": "日本のサイバーセキュリティの底上げに向けた産学官連携「Japan Cybersecurity Initiative」を設立 — https://blog.google/intl/ja-jp/company-news/technology/cybersecurity-initiative/ [200 text/html]",
+          "textSha256": "80fb2df8dfcd74991ff8dd102e194bba5f36be796436fd10c5cbfa1060119407",
+          "characters": 5761,
+          "receipt": "runs/cybersecurity-firms-20261017/capture-046.json",
+          "reading": "consult continuation.md and canonical claim artifact; retrieval is not reading"
+        }
+      ],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/google-japan-delivery-evidence.md"
+      ],
+      "acquisition": "captured text or recorded retrieval failure"
+    },
+    {
+      "url": "https://shisho.dev/docs/t/runner/architecture/integration/",
+      "captures": [
+        {
+          "url": "https://shisho.dev/docs/t/runner/architecture/integration/",
+          "accessed": "2026-10-17",
+          "captureKind": "provider extracted-text result, not raw HTML",
+          "httpStatus": "200",
+          "title": "GitHub Integration | Takumi byGMO — https://shisho.dev/docs/t/runner/architecture/integration/ [200 text/html]",
+          "textSha256": "949771dc5dcfa406f771aaa5f1f7cae3f3ec87dc73eb0776c60f29541500144e",
+          "characters": 5433,
+          "receipt": "runs/cybersecurity-firms-20261017/capture-047.json",
+          "reading": "consult continuation.md and canonical claim artifact; retrieval is not reading"
+        }
+      ],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/takumi-github-scope-boundary.md"
+      ],
+      "acquisition": "captured text or recorded retrieval failure"
+    },
+    {
+      "url": "https://shisho.dev/docs/ja/t/assessment/features/integrations/github/",
+      "captures": [
+        {
+          "url": "https://shisho.dev/docs/ja/t/assessment/features/integrations/github/",
+          "accessed": "2026-10-17",
+          "captureKind": "provider extracted-text result, not raw HTML",
+          "httpStatus": "200",
+          "title": "GitHub を連携する | Takumi byGMO — https://shisho.dev/docs/ja/t/assessment/features/integrations/github/ [200 text/html]",
+          "textSha256": "c7189ff1c99c8f3b3a9d378c2216e0b966d73eb63c0c676c68bdcac51e123ea3",
+          "characters": 5806,
+          "receipt": "runs/cybersecurity-firms-20261017/capture-047.json",
+          "reading": "consult continuation.md and canonical claim artifact; retrieval is not reading"
+        }
+      ],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/takumi-github-scope-boundary.md"
+      ],
+      "acquisition": "captured text or recorded retrieval failure"
+    },
+    {
+      "url": "https://help.splunk.com/ja-jp/splunk-enterprise-security-8/administer/8.7/ai-assistant-in-security-and-agentic-capabilities/setting-up-the-triage-agent-in-splunk-enterprise-security",
+      "captures": [
+        {
+          "url": "https://help.splunk.com/ja-jp/splunk-enterprise-security-8/administer/8.7/ai-assistant-in-security-and-agentic-capabilities/setting-up-the-triage-agent-in-splunk-enterprise-security",
+          "accessed": "2026-10-17",
+          "captureKind": "provider extracted-text result, not raw HTML",
+          "httpStatus": "404",
+          "title": "Error - Heretto Portal — https://help.splunk.com/ja-jp/splunk-enterprise-security-8/administer/8.7/ai-assistant-in-security-and-agentic-capabilities/setting-up-the-triage-agent-in-splunk-enterprise-security [404 text/html]",
+          "textSha256": "451b45143846bde7be66a5aec8d2755325df848a40499e22dc5bcbc37ccc167a",
+          "characters": 27235,
+          "receipt": "runs/cybersecurity-firms-20261017/capture-048.json",
+          "reading": "consult continuation.md and canonical claim artifact; retrieval is not reading"
+        }
+      ],
+      "citedBy": [],
+      "acquisition": "captured text or recorded retrieval failure"
+    },
+    {
+      "url": "https://help.splunk.com/?resourceId=c94e754a8-8c69-4a10-99cf-66b55e6dad55",
+      "captures": [
+        {
+          "url": "https://help.splunk.com/?resourceId=c94e754a8-8c69-4a10-99cf-66b55e6dad55",
+          "accessed": "2026-10-17",
+          "captureKind": "provider extracted-text result, not raw HTML",
+          "httpStatus": "200",
+          "title": "Setting up the Triage agent in Splunk Enterprise Security | Splunk Cloud Platform, Splunk Enterprise (last updated 2026-07-21T20:58:36.846Z) — https://help.splunk.com/en/splunk-enterprise-security-8/administer/8.6/ai-assistant-in-security-and-agentic-capabilities/setting-up-the-triage-agent-in-splunk-enterprise-security [200 text/html]",
+          "textSha256": "39a4d7d95dbdb2dcd4d214a0edb86ce3724594620614bda84373000c3eda9105",
+          "characters": 30814,
+          "receipt": "runs/cybersecurity-firms-20261017/capture-048.json",
+          "reading": "consult continuation.md and canonical claim artifact; retrieval is not reading"
+        }
+      ],
+      "citedBy": [],
+      "acquisition": "captured text or recorded retrieval failure"
+    },
+    {
+      "url": "https://www.splunk.com/en_us/legal/licensed-capacity.html",
+      "captures": [
+        {
+          "url": "https://www.splunk.com/en_us/legal/licensed-capacity.html",
+          "accessed": "2026-10-17",
+          "captureKind": "provider extracted-text result, not raw HTML",
+          "httpStatus": "200",
+          "title": "Licensed Capacity | Splunk — https://www.splunk.com/en_us/legal/licensed-capacity.html [200 text/html]",
+          "textSha256": "03fd3e5dc63bfeaf87ec499eb8f49d1901f5f91b7e800e6d08f75b9168aadc28",
+          "characters": 39127,
+          "receipt": "runs/cybersecurity-firms-20261017/capture-048.json",
+          "reading": "consult continuation.md and canonical claim artifact; retrieval is not reading"
+        }
+      ],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/splunk-triage-controls.md"
+      ],
+      "acquisition": "captured text or recorded retrieval failure"
+    },
+    {
+      "url": "https://help.splunk.com/en/splunk-enterprise-security-8/administer/8.6/ai-assistant-in-security-and-agentic-capabilities/setting-up-the-triage-agent-in-splunk-enterprise-security/turn-on-or-turn-off-the-triage-agent",
+      "captures": [
+        {
+          "url": "https://help.splunk.com/en/splunk-enterprise-security-8/administer/8.6/ai-assistant-in-security-and-agentic-capabilities/setting-up-the-triage-agent-in-splunk-enterprise-security/turn-on-or-turn-off-the-triage-agent",
+          "accessed": "2026-10-17",
+          "captureKind": "provider extracted-text result, not raw HTML",
+          "httpStatus": "200",
+          "title": "Turn on or turn off the Triage agent | Splunk Cloud Platform, Splunk Enterprise (last updated 2026-09-08T17:53:44.764Z) — https://help.splunk.com/en/splunk-enterprise-security-8/administer/8.6/ai-assistant-in-security-and-agentic-capabilities/setting-up-the-triage-agent-in-splunk-enterprise-security/turn-on-or-turn-off-the-triage-agent [200 text/html]",
+          "textSha256": "6ea2acab9a4b1f8dc8a42a4addcb79a9cea8df48a05fd9ec4e3520f03351739f",
+          "characters": 30522,
+          "receipt": "runs/cybersecurity-firms-20261017/capture-049.json",
+          "reading": "consult continuation.md and canonical claim artifact; retrieval is not reading"
+        }
+      ],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/splunk-triage-controls.md"
+      ],
+      "acquisition": "captured text or recorded retrieval failure"
+    },
+    {
+      "url": "https://help.splunk.com/en/splunk-enterprise-security-8/administer/8.6/ai-assistant-in-security-and-agentic-capabilities/setting-up-the-triage-agent-in-splunk-enterprise-security/identify-the-detections-that-the-triage-agent-can-use-to-analyze-findings",
+      "captures": [
+        {
+          "url": "https://help.splunk.com/en/splunk-enterprise-security-8/administer/8.6/ai-assistant-in-security-and-agentic-capabilities/setting-up-the-triage-agent-in-splunk-enterprise-security/identify-the-detections-that-the-triage-agent-can-use-to-analyze-findings",
+          "accessed": "2026-10-17",
+          "captureKind": "provider extracted-text result, not raw HTML",
+          "httpStatus": "200",
+          "title": "Identify the detections that the Triage agent can use to analyze findings | Splunk Cloud Platform, Splunk Enterprise (last updated 2026-07-20T23:56:35.190Z) — https://help.splunk.com/en/splunk-enterprise-security-8/administer/8.6/ai-assistant-in-security-and-agentic-capabilities/setting-up-the-triage-agent-in-splunk-enterprise-security/identify-the-detections-that-the-triage-agent-can-use-to-analyze-findings [200 text/html]",
+          "textSha256": "a638b2ff6b36c23d7daa1048d7b1f30511f45ff22b0423477b274cd7c7b2966e",
+          "characters": 30683,
+          "receipt": "runs/cybersecurity-firms-20261017/capture-049.json",
+          "reading": "consult continuation.md and canonical claim artifact; retrieval is not reading"
+        }
+      ],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/splunk-triage-controls.md"
+      ],
+      "acquisition": "captured text or recorded retrieval failure"
+    },
+    {
+      "url": "https://help.splunk.com/en/splunk-enterprise-security-8/administer/8.6/ai-assistant-in-security-and-agentic-capabilities/setting-up-the-triage-agent-in-splunk-enterprise-security/analyze-the-findings-using-the-triage-agent",
+      "captures": [
+        {
+          "url": "https://help.splunk.com/en/splunk-enterprise-security-8/administer/8.6/ai-assistant-in-security-and-agentic-capabilities/setting-up-the-triage-agent-in-splunk-enterprise-security/analyze-the-findings-using-the-triage-agent",
+          "accessed": "2026-10-17",
+          "captureKind": "provider extracted-text result, not raw HTML",
+          "httpStatus": "200",
+          "title": "Analyze the findings using the Triage agent | Splunk Cloud Platform, Splunk Enterprise (last updated 2026-09-08T16:31:17.252Z) — https://help.splunk.com/en/splunk-enterprise-security-8/administer/8.6/ai-assistant-in-security-and-agentic-capabilities/setting-up-the-triage-agent-in-splunk-enterprise-security/analyze-the-findings-using-the-triage-agent [200 text/html]",
+          "textSha256": "b7608bdb65fe6abe57b79a9494b81163966076d4289f37b64a65bfbe80e44389",
+          "characters": 30751,
+          "receipt": "runs/cybersecurity-firms-20261017/capture-049.json",
+          "reading": "consult continuation.md and canonical claim artifact; retrieval is not reading"
+        }
+      ],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/splunk-triage-controls.md"
+      ],
+      "acquisition": "captured text or recorded retrieval failure"
+    },
+    {
+      "url": "https://help.splunk.com/en/splunk-enterprise-security-8/administer/8.6/ai-assistant-in-security-and-agentic-capabilities/setting-up-the-triage-agent-in-splunk-enterprise-security/specify-soar-connectors-to-enrich-findings-using-the-triage-agent",
+      "captures": [
+        {
+          "url": "https://help.splunk.com/en/splunk-enterprise-security-8/administer/8.6/ai-assistant-in-security-and-agentic-capabilities/setting-up-the-triage-agent-in-splunk-enterprise-security/specify-soar-connectors-to-enrich-findings-using-the-triage-agent",
+          "accessed": "2026-10-17",
+          "captureKind": "provider extracted-text result, not raw HTML",
+          "httpStatus": "200",
+          "title": "Specify SOAR connectors to enrich findings using the Triage agent | Splunk Cloud Platform, Splunk Enterprise (last updated 2026-07-21T19:22:17.744Z) — https://help.splunk.com/en/splunk-enterprise-security-8/administer/8.6/ai-assistant-in-security-and-agentic-capabilities/setting-up-the-triage-agent-in-splunk-enterprise-security/specify-soar-connectors-to-enrich-findings-using-the-triage-agent [200 text/html]",
+          "textSha256": "f09b33507abeec7b7cf9ec41f791401fd38bd4403213e646c0f7aaad3ee3056d",
+          "characters": 30589,
+          "receipt": "runs/cybersecurity-firms-20261017/capture-050.json",
+          "reading": "consult continuation.md and canonical claim artifact; retrieval is not reading"
+        }
+      ],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/splunk-triage-controls.md"
+      ],
+      "acquisition": "captured text or recorded retrieval failure"
+    },
+    {
+      "url": "https://business.bt.com/content/dam/bt-business/pdfs/terms-and-conditions/service-schedules/security/Managed%20CrowdStrike%20Falcon%20XDR%20Service%20Schedule%20Part%20B_Oct2024.pdf",
+      "captures": [],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/bt-falcon-service-schedule.md"
+      ],
+      "acquisition": "linked primary discovery; no archived full-page reading implied"
+    },
+    {
+      "url": "https://techblog.zozo.com/entry/github-advanced-security-operation",
+      "captures": [],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/buyer-evidence-queue.md"
+      ],
+      "acquisition": "linked primary discovery; no archived full-page reading implied"
+    },
+    {
+      "url": "https://www.cisco.com/c/dam/en_us/about/doing_business/legal/service_descriptions/docs/managed-detection-and-response.pdf",
+      "captures": [],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/cisco-mdr-service-description.md"
+      ],
+      "acquisition": "linked primary discovery; no archived full-page reading implied"
+    },
+    {
+      "url": "https://www.cisco.com/c/en/us/about/corporate-strategy-office/acquisitions/acquisitions-list-names.html",
+      "captures": [],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/cisco-splunk.md"
+      ],
+      "acquisition": "linked primary discovery; no archived full-page reading implied"
+    },
+    {
+      "url": "https://newsroom.cisco.com/c/r/newsroom/en/us/a/y2024/m03/cisco-completes-acquisition-of-splunk.html",
+      "captures": [],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/cisco-splunk.md"
+      ],
+      "acquisition": "linked primary discovery; no archived full-page reading implied"
+    },
+    {
+      "url": "https://github.com/splunk/security_content/tree/d6afc62b750dc2ed34e3696999bf26fe476b9b1e",
+      "captures": [],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/cisco-splunk.md"
+      ],
+      "acquisition": "linked primary discovery; no archived full-page reading implied"
+    },
+    {
+      "url": "https://www.cisco.com/c/dam/en_us/about/doing_business/legal/service_descriptions/docs/Cisco-XDR-Premier-Services.pdf",
+      "captures": [],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/cisco-xdr-premier-contract.md"
+      ],
+      "acquisition": "linked primary discovery; no archived full-page reading implied"
+    },
+    {
+      "url": "https://www.crowdstrike.com/wp-content/uploads/2024/08/Channel-File-291-Incident-Root-Cause-Analysis-08.06.2024.pdf",
+      "captures": [],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/crowdstrike-final-rca.md"
+      ],
+      "acquisition": "linked primary discovery; no archived full-page reading implied"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/27904/000168316824005369/delta_8k.htm",
+      "captures": [],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/crowdstrike-final-rca.md"
+      ],
+      "acquisition": "linked primary discovery; no archived full-page reading implied"
+    },
+    {
+      "url": "https://www.crowdstrike.com/en-us/blog/crowdstrike-celebrates-ipo/",
+      "captures": [],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/crowdstrike.md"
+      ],
+      "acquisition": "linked primary discovery; no archived full-page reading implied"
+    },
+    {
+      "url": "https://www.crowdstrike.com/en-us/press-releases/crowdstrike-expands-operations-within-japan-registers-massive-growth-in-region/",
+      "captures": [],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/crowdstrike.md"
+      ],
+      "acquisition": "linked primary discovery; no archived full-page reading implied"
+    },
+    {
+      "url": "https://www.crowdstrike.com/en-us/blog/crowdstrike-to-acquire-sgnl/",
+      "captures": [],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/crowdstrike.md"
+      ],
+      "acquisition": "linked primary discovery; no archived full-page reading implied"
+    },
+    {
+      "url": "https://www.crowdstrike.com/en-us/blog/crowdstrike-to-acquire-onum/",
+      "captures": [],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/crowdstrike.md"
+      ],
+      "acquisition": "linked primary discovery; no archived full-page reading implied"
+    },
+    {
+      "url": "https://github.com/CrowdStrike/falconpy/tree/06a5df86bc68e492db339dccacdff4a9b9ad61ec",
+      "captures": [],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/crowdstrike.md"
+      ],
+      "acquisition": "linked primary discovery; no archived full-page reading implied"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/defender-endpoint/automation-folder-exclusions-configure",
+      "captures": [],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/defender-automation-boundaries.md"
+      ],
+      "acquisition": "linked primary discovery; no archived full-page reading implied"
+    },
+    {
+      "url": "https://github.com/CrowdStrike/falconpy/blob/06a5df86bc68e492db339dccacdff4a9b9ad61ec/src/falconpy/_auth_object/_falcon_interface.py",
+      "captures": [],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/falcon-auth-source.md"
+      ],
+      "acquisition": "linked primary discovery; no archived full-page reading implied"
+    },
+    {
+      "url": "https://github.com/CrowdStrike/falconpy/blob/06a5df86bc68e492db339dccacdff4a9b9ad61ec/src/falconpy/_util/_auth.py",
+      "captures": [],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/falcon-auth-source.md"
+      ],
+      "acquisition": "linked primary discovery; no archived full-page reading implied"
+    },
+    {
+      "url": "https://github.com/CrowdStrike/falconpy/blob/06a5df86bc68e492db339dccacdff4a9b9ad61ec/src/falconpy/_endpoint/_oauth2.py",
+      "captures": [],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/falcon-auth-source.md"
+      ],
+      "acquisition": "linked primary discovery; no archived full-page reading implied"
+    },
+    {
+      "url": "https://github.com/CrowdStrike/falconpy/blob/06a5df86bc68e492db339dccacdff4a9b9ad61ec/src/falconpy/_auth_object/_bearer_token.py",
+      "captures": [],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/falcon-auth-source.md"
+      ],
+      "acquisition": "linked primary discovery; no archived full-page reading implied"
+    },
+    {
+      "url": "https://github.com/CrowdStrike/falconpy/blob/06a5df86bc68e492db339dccacdff4a9b9ad61ec/src/falconpy/_auth_object/_interface_config.py",
+      "captures": [],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/falcon-auth-source.md"
+      ],
+      "acquisition": "linked primary discovery; no archived full-page reading implied"
+    },
+    {
+      "url": "https://github.com/CrowdStrike/falconpy/blob/06a5df86bc68e492db339dccacdff4a9b9ad61ec/tests/test_authentications.py",
+      "captures": [],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/falcon-auth-source.md"
+      ],
+      "acquisition": "linked primary discovery; no archived full-page reading implied"
+    },
+    {
+      "url": "https://github.com/CrowdStrike/falconpy/blob/06a5df86bc68e492db339dccacdff4a9b9ad61ec/samples/hosts/quarantine_hosts_new.py",
+      "captures": [],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/falcon-host-action-source.md"
+      ],
+      "acquisition": "linked primary discovery; no archived full-page reading implied"
+    },
+    {
+      "url": "https://github.com/CrowdStrike/falconpy/blob/06a5df86bc68e492db339dccacdff4a9b9ad61ec/src/falconpy/hosts.py",
+      "captures": [],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/falcon-host-action-source.md"
+      ],
+      "acquisition": "linked primary discovery; no archived full-page reading implied"
+    },
+    {
+      "url": "https://github.com/CrowdStrike/falconpy/blob/06a5df86bc68e492db339dccacdff4a9b9ad61ec/src/falconpy/_endpoint/_hosts.py",
+      "captures": [],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/falcon-host-action-source.md"
+      ],
+      "acquisition": "linked primary discovery; no archived full-page reading implied"
+    },
+    {
+      "url": "https://github.com/CrowdStrike/falconpy/blob/06a5df86bc68e492db339dccacdff4a9b9ad61ec/src/falconpy/_util/_functions.py",
+      "captures": [],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/falcon-host-action-source.md"
+      ],
+      "acquisition": "linked primary discovery; no archived full-page reading implied"
+    },
+    {
+      "url": "https://github.com/CrowdStrike/falconpy/blob/06a5df86bc68e492db339dccacdff4a9b9ad61ec/src/falconpy/_service_class/_service_class.py",
+      "captures": [],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/falcon-host-action-source.md"
+      ],
+      "acquisition": "linked primary discovery; no archived full-page reading implied"
+    },
+    {
+      "url": "https://github.com/CrowdStrike/falconpy/blob/06a5df86bc68e492db339dccacdff4a9b9ad61ec/tests/test_hosts.py",
+      "captures": [],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/falcon-host-action-source.md"
+      ],
+      "acquisition": "linked primary discovery; no archived full-page reading implied"
+    },
+    {
+      "url": "https://ir.crowdstrike.com/news-releases/news-release-details/crowdstrike-reports-fourth-quarter-and-fiscal-year-2026/",
+      "captures": [],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/financial-anchors.md"
+      ],
+      "acquisition": "linked primary discovery; no archived full-page reading implied"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/1262039/000126203926000007/ftnt-20251231.htm",
+      "captures": [],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/financial-anchors.md"
+      ],
+      "acquisition": "linked primary discovery; no archived full-page reading implied"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/858877/000085887726000132/csco-20260725.htm",
+      "captures": [],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/financial-anchors.md"
+      ],
+      "acquisition": "linked primary discovery; no archived full-page reading implied"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000018/goog-20251231.htm",
+      "captures": [],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/financial-anchors.md"
+      ],
+      "acquisition": "linked primary discovery; no archived full-page reading implied"
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/msft-20260630.htm",
+      "captures": [],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/financial-anchors.md"
+      ],
+      "acquisition": "linked primary discovery; no archived full-page reading implied"
+    },
+    {
+      "url": "https://fortinetweb.s3.amazonaws.com/docs.fortinet.com/v2/attachments/e7663893-5ab4-11f1-a33a-02356ffb40d9/FortiAI_on_FortiAnalyzer-1.1-AI_Transparency_Notes.pdf",
+      "captures": [],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/fortianalyzer-transparency.md"
+      ],
+      "acquisition": "linked primary discovery; no archived full-page reading implied"
+    },
+    {
+      "url": "https://investor.fortinet.com/static-files/7058aea1-a50c-4b7b-905f-ba5aedb92f40",
+      "captures": [],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/fortinet-annual-economics.md"
+      ],
+      "acquisition": "linked primary discovery; no archived full-page reading implied"
+    },
+    {
+      "url": "https://github.com/fortinet-fortisoar/connector-microsoft-sentinel/blob/9606fe875f20bc500bc6bafb1bfa995833523f3b/microsoft-sentinel/connector.py",
+      "captures": [],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/fortinet-sentinel-source.md"
+      ],
+      "acquisition": "linked primary discovery; no archived full-page reading implied"
+    },
+    {
+      "url": "https://github.com/fortinet-fortisoar/connector-microsoft-sentinel/blob/9606fe875f20bc500bc6bafb1bfa995833523f3b/microsoft-sentinel/operations.py",
+      "captures": [],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/fortinet-sentinel-source.md"
+      ],
+      "acquisition": "linked primary discovery; no archived full-page reading implied"
+    },
+    {
+      "url": "https://github.com/fortinet-fortisoar/connector-microsoft-sentinel/blob/9606fe875f20bc500bc6bafb1bfa995833523f3b/microsoft-sentinel/microsoft_api_auth.py",
+      "captures": [],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/fortinet-sentinel-source.md"
+      ],
+      "acquisition": "linked primary discovery; no archived full-page reading implied"
+    },
+    {
+      "url": "https://github.com/fortinet-fortisoar/connector-microsoft-sentinel/blob/9606fe875f20bc500bc6bafb1bfa995833523f3b/microsoft-sentinel/info.json",
+      "captures": [],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/fortinet-sentinel-source.md"
+      ],
+      "acquisition": "linked primary discovery; no archived full-page reading implied"
+    },
+    {
+      "url": "https://github.com/fortinet-fortisoar/connector-microsoft-sentinel/blob/9606fe875f20bc500bc6bafb1bfa995833523f3b/microsoft-sentinel/requirements.txt",
+      "captures": [],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/fortinet-sentinel-source.md"
+      ],
+      "acquisition": "linked primary discovery; no archived full-page reading implied"
+    },
+    {
+      "url": "https://www.fortinet.com/corporate/about-us/about-us",
+      "captures": [],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/fortinet.md"
+      ],
+      "acquisition": "linked primary discovery; no archived full-page reading implied"
+    },
+    {
+      "url": "https://www.fortinet.com/jp/corporate/about-us/company",
+      "captures": [],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/fortinet.md"
+      ],
+      "acquisition": "linked primary discovery; no archived full-page reading implied"
+    },
+    {
+      "url": "https://www.fortinet.com/jp/corporate/about-us/newsroom/press-releases/2024/fortinet-completes-acquisition-of-lacework",
+      "captures": [],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/fortinet.md"
+      ],
+      "acquisition": "linked primary discovery; no archived full-page reading implied"
+    },
+    {
+      "url": "https://docs.fortinet.com/document/fortianalyzer/7.6.0/administration-guide/028682/playbooks",
+      "captures": [],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/fortinet.md"
+      ],
+      "acquisition": "linked primary discovery; no archived full-page reading implied"
+    },
+    {
+      "url": "https://cloud.google.com/blog/products/identity-security/raising-the-bar-in-security-operations",
+      "captures": [],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/google-cloud-security.md"
+      ],
+      "acquisition": "linked primary discovery; no archived full-page reading implied"
+    },
+    {
+      "url": "https://cloud.google.com/blog/products/identity-security/google-completes-acquisition-of-mandiant",
+      "captures": [],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/google-cloud-security.md"
+      ],
+      "acquisition": "linked primary discovery; no archived full-page reading implied"
+    },
+    {
+      "url": "https://cloud.google.com/blog/products/identity-security/introducing-chronicle-security-operations",
+      "captures": [],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/google-cloud-security.md"
+      ],
+      "acquisition": "linked primary discovery; no archived full-page reading implied"
+    },
+    {
+      "url": "https://github.com/google/secops-wrapper/tree/ca553eb7dc940bd113704c737db04324f25c2ed1",
+      "captures": [],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/google-cloud-security.md",
+        "docs/research/cybersecurity-firms/google-gemini-client-source.md",
+        "docs/research/cybersecurity-firms/google-investigations-source.md",
+        "docs/research/cybersecurity-firms/google-natural-language-search-source.md",
+        "docs/research/cybersecurity-firms/google-rule-lifecycle-source.md"
+      ],
+      "acquisition": "linked primary discovery; no archived full-page reading implied"
+    },
+    {
+      "url": "https://github.com/google/secops-wrapper/blob/ca553eb7dc940bd113704c737db04324f25c2ed1/src/secops/chronicle/gemini.py",
+      "captures": [],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/google-gemini-client-source.md"
+      ],
+      "acquisition": "linked primary discovery; no archived full-page reading implied"
+    },
+    {
+      "url": "https://github.com/google/secops-wrapper/blob/ca553eb7dc940bd113704c737db04324f25c2ed1/tests/chronicle/test_gemini.py",
+      "captures": [],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/google-gemini-client-source.md"
+      ],
+      "acquisition": "linked primary discovery; no archived full-page reading implied"
+    },
+    {
+      "url": "https://github.com/google/secops-wrapper/blob/ca553eb7dc940bd113704c737db04324f25c2ed1/src/secops/chronicle/client.py",
+      "captures": [],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/google-investigations-source.md"
+      ],
+      "acquisition": "linked primary discovery; no archived full-page reading implied"
+    },
+    {
+      "url": "https://github.com/google/secops-wrapper/blob/ca553eb7dc940bd113704c737db04324f25c2ed1/src/secops/chronicle/investigations.py",
+      "captures": [],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/google-investigations-source.md"
+      ],
+      "acquisition": "linked primary discovery; no archived full-page reading implied"
+    },
+    {
+      "url": "https://github.com/google/secops-wrapper/blob/ca553eb7dc940bd113704c737db04324f25c2ed1/src/secops/chronicle/utils/format_utils.py",
+      "captures": [],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/google-investigations-source.md"
+      ],
+      "acquisition": "linked primary discovery; no archived full-page reading implied"
+    },
+    {
+      "url": "https://github.com/google/secops-wrapper/blob/ca553eb7dc940bd113704c737db04324f25c2ed1/src/secops/chronicle/utils/request_utils.py",
+      "captures": [],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/google-investigations-source.md"
+      ],
+      "acquisition": "linked primary discovery; no archived full-page reading implied"
+    },
+    {
+      "url": "https://github.com/google/secops-wrapper/blob/ca553eb7dc940bd113704c737db04324f25c2ed1/src/secops/auth.py",
+      "captures": [],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/google-investigations-source.md"
+      ],
+      "acquisition": "linked primary discovery; no archived full-page reading implied"
+    },
+    {
+      "url": "https://github.com/google/secops-wrapper/blob/ca553eb7dc940bd113704c737db04324f25c2ed1/src/secops/chronicle/models.py",
+      "captures": [],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/google-investigations-source.md"
+      ],
+      "acquisition": "linked primary discovery; no archived full-page reading implied"
+    },
+    {
+      "url": "https://github.com/google/secops-wrapper/blob/ca553eb7dc940bd113704c737db04324f25c2ed1/src/secops/exceptions.py",
+      "captures": [],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/google-investigations-source.md"
+      ],
+      "acquisition": "linked primary discovery; no archived full-page reading implied"
+    },
+    {
+      "url": "https://github.com/google/secops-wrapper/blob/ca553eb7dc940bd113704c737db04324f25c2ed1/tests/chronicle/test_investigations.py",
+      "captures": [],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/google-investigations-source.md"
+      ],
+      "acquisition": "linked primary discovery; no archived full-page reading implied"
+    },
+    {
+      "url": "https://github.com/google/secops-wrapper/blob/ca553eb7dc940bd113704c737db04324f25c2ed1/tests/chronicle/utils/test_request_utils.py",
+      "captures": [],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/google-investigations-source.md"
+      ],
+      "acquisition": "linked primary discovery; no archived full-page reading implied"
+    },
+    {
+      "url": "https://github.com/google/secops-wrapper/blob/ca553eb7dc940bd113704c737db04324f25c2ed1/tests/chronicle/utils/test_format_utils.py",
+      "captures": [],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/google-investigations-source.md"
+      ],
+      "acquisition": "linked primary discovery; no archived full-page reading implied"
+    },
+    {
+      "url": "https://github.com/google/secops-wrapper/blob/ca553eb7dc940bd113704c737db04324f25c2ed1/tests/test_auth.py",
+      "captures": [],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/google-investigations-source.md"
+      ],
+      "acquisition": "linked primary discovery; no archived full-page reading implied"
+    },
+    {
+      "url": "https://github.com/google/secops-wrapper/blob/ca553eb7dc940bd113704c737db04324f25c2ed1/src/secops/chronicle/nl_search.py",
+      "captures": [],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/google-natural-language-search-source.md"
+      ],
+      "acquisition": "linked primary discovery; no archived full-page reading implied"
+    },
+    {
+      "url": "https://github.com/google/secops-wrapper/blob/ca553eb7dc940bd113704c737db04324f25c2ed1/src/secops/chronicle/search.py",
+      "captures": [],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/google-natural-language-search-source.md"
+      ],
+      "acquisition": "linked primary discovery; no archived full-page reading implied"
+    },
+    {
+      "url": "https://github.com/google/secops-wrapper/blob/ca553eb7dc940bd113704c737db04324f25c2ed1/tests/chronicle/test_nl_search.py",
+      "captures": [],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/google-natural-language-search-source.md"
+      ],
+      "acquisition": "linked primary discovery; no archived full-page reading implied"
+    },
+    {
+      "url": "https://github.com/google/secops-wrapper/blob/ca553eb7dc940bd113704c737db04324f25c2ed1/tests/chronicle/test_search.py",
+      "captures": [],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/google-natural-language-search-source.md"
+      ],
+      "acquisition": "linked primary discovery; no archived full-page reading implied"
+    },
+    {
+      "url": "https://github.com/google/secops-wrapper/blob/ca553eb7dc940bd113704c737db04324f25c2ed1/src/secops/chronicle/rule.py",
+      "captures": [],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/google-rule-lifecycle-source.md"
+      ],
+      "acquisition": "linked primary discovery; no archived full-page reading implied"
+    },
+    {
+      "url": "https://github.com/google/secops-wrapper/blob/ca553eb7dc940bd113704c737db04324f25c2ed1/tests/chronicle/test_rule.py",
+      "captures": [],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/google-rule-lifecycle-source.md"
+      ],
+      "acquisition": "linked primary discovery; no archived full-page reading implied"
+    },
+    {
+      "url": "https://www.microsoft.com/en-us/msrc/blog/2023/11/reflecting-on-20-years-of-patch-tuesday",
+      "captures": [],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/history-timelines.md"
+      ],
+      "acquisition": "linked primary discovery; no archived full-page reading implied"
+    },
+    {
+      "url": "https://heritage.cisco.com/1984_founds/",
+      "captures": [],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/history-timelines.md"
+      ],
+      "acquisition": "linked primary discovery; no archived full-page reading implied"
+    },
+    {
+      "url": "https://www.splunk.com/en_us/about-splunk.html",
+      "captures": [],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/history-timelines.md"
+      ],
+      "acquisition": "linked primary discovery; no archived full-page reading implied"
+    },
+    {
+      "url": "https://security.z.com/mn/assets/img/GMOCybersecurity_SOC_Consulting.pdf",
+      "captures": [],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/ierae-soc-brochure.md"
+      ],
+      "acquisition": "linked primary discovery; no archived full-page reading implied"
+    },
+    {
+      "url": "https://www.lac.co.jp/corporate/info/public_notice.html",
+      "captures": [],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/lac-latest-standalone-accounts.md",
+        "docs/research/cybersecurity-firms/lac-ownership-accounting.md"
+      ],
+      "acquisition": "linked primary discovery; no archived full-page reading implied"
+    },
+    {
+      "url": "https://www.lac.co.jp/corporate/pdf/notice_19.pdf",
+      "captures": [],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/lac-latest-standalone-accounts.md"
+      ],
+      "acquisition": "linked primary discovery; no archived full-page reading implied"
+    },
+    {
+      "url": "https://www.kddi.com/extlib/files/corporate/sustainability/governance/risk-management/pdf/yuho_2025_TC5t58.pdf",
+      "captures": [],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/lac-ownership-accounting.md"
+      ],
+      "acquisition": "linked primary discovery; no archived full-page reading implied"
+    },
+    {
+      "url": "https://www.lac.co.jp/english/ir/",
+      "captures": [],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/lac.md"
+      ],
+      "acquisition": "linked primary discovery; no archived full-page reading implied"
+    },
+    {
+      "url": "https://fortinetweb.s3.amazonaws.com/docs.fortinet.com/v2/attachments/75930522-294d-11f1-b31d-02356ffb40d9/Managed_FortiGate_Service-26.1-Frequently_Asked_Questions.pdf",
+      "captures": [],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/managed-fortigate-service.md"
+      ],
+      "acquisition": "linked primary discovery; no archived full-page reading implied"
+    },
+    {
+      "url": "https://www.3cx.com/wp-content/uploads/2025/05/Mandiant-3CX-Product-Security-Assessments-Update-Final.pdf",
+      "captures": [],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/mandiant-3cx-assessment.md"
+      ],
+      "acquisition": "linked primary discovery; no archived full-page reading implied"
+    },
+    {
+      "url": "https://arxiv.org/html/2605.20896v2",
+      "captures": [],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/microsoft-dtda-evaluation.md"
+      ],
+      "acquisition": "linked primary discovery; no archived full-page reading implied"
+    },
+    {
+      "url": "https://www.microsoft.com/en-us/security/blog/2023/01/25/microsoft-security-reaches-another-milestone-comprehensive-customer-centric-solutions-drive-results/",
+      "captures": [],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/microsoft.md"
+      ],
+      "acquisition": "linked primary discovery; no archived full-page reading implied"
+    },
+    {
+      "url": "https://www.microsoft.com/en-us/security/blog/2022/01/21/celebrating-20-years-of-trustworthy-computing/",
+      "captures": [],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/microsoft.md"
+      ],
+      "acquisition": "linked primary discovery; no archived full-page reading implied"
+    },
+    {
+      "url": "https://github.com/Azure/Azure-Sentinel/tree/4aee8b861e8f0542a3fe525757762a7487ba1b3b",
+      "captures": [],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/microsoft.md"
+      ],
+      "acquisition": "linked primary discovery; no archived full-page reading implied"
+    },
+    {
+      "url": "https://media.paloaltonetworks.com/documents/Palo_Alto_Networks_Corp_Backgrounder.pdf",
+      "captures": [],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/palo-alto-networks.md"
+      ],
+      "acquisition": "linked primary discovery; no archived full-page reading implied"
+    },
+    {
+      "url": "https://www.paloaltonetworks.com/company/press/2026/palo-alto-networks-completes-acquisition-of-cyberark-to-secure-the-ai-era",
+      "captures": [],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/palo-alto-networks.md"
+      ],
+      "acquisition": "linked primary discovery; no archived full-page reading implied"
+    },
+    {
+      "url": "https://cortex-docs.paloaltonetworks.com/cortex-xdr-5.x/configure-cortex-xdr/managed-services-configuration/configure-actions-permissions",
+      "captures": [],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/palo-alto-networks.md"
+      ],
+      "acquisition": "linked primary discovery; no archived full-page reading implied"
+    },
+    {
+      "url": "https://github.com/demisto/content/tree/e46f08b8fafc9207f4f658fca4fa949c3ffd687d",
+      "captures": [],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/palo-alto-networks.md"
+      ],
+      "acquisition": "linked primary discovery; no archived full-page reading implied"
+    },
+    {
+      "url": "https://cortex-docs.paloaltonetworks.com/cortex-agentix/learn-about-cortex-agentix/agentic-ai-in-cortex-agentix/agentic-assistant-security",
+      "captures": [],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/pan-agentix-controls.md"
+      ],
+      "acquisition": "linked primary discovery; no archived full-page reading implied"
+    },
+    {
+      "url": "https://cortex-docs.paloaltonetworks.com/cortex-xdr-agent/9.1/cortex-xdr-agent-for-macos/configure-cortex-xdr-agent-for-mac",
+      "captures": [],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/pan-deployment-buyer-policy.md"
+      ],
+      "acquisition": "linked primary discovery; no archived full-page reading implied"
+    },
+    {
+      "url": "https://help.sfasu.edu/TDClient/2027/Portal/KB/Article/170040/Endpoint-Detection-and-Response-EDR-Agent-Support-Lifecycle",
+      "captures": [],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/pan-deployment-buyer-policy.md"
+      ],
+      "acquisition": "linked primary discovery; no archived full-page reading implied"
+    },
+    {
+      "url": "https://github.com/demisto/content/blob/e46f08b8fafc9207f4f658fca4fa949c3ffd687d/Packs/CommonPlaybooks/Playbooks/playbook-Isolate_Endpoint_-_Generic_V2.yml",
+      "captures": [],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/pan-isolation-source.md"
+      ],
+      "acquisition": "linked primary discovery; no archived full-page reading implied"
+    },
+    {
+      "url": "https://github.com/demisto/content/blob/e46f08b8fafc9207f4f658fca4fa949c3ffd687d/Packs/CommonPlaybooks/Playbooks/playbook-Isolate_Endpoint_-_Generic_V2_6_8.yml",
+      "captures": [],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/pan-isolation-source.md"
+      ],
+      "acquisition": "linked primary discovery; no archived full-page reading implied"
+    },
+    {
+      "url": "https://github.com/demisto/content/blob/e46f08b8fafc9207f4f658fca4fa949c3ffd687d/Packs/CrowdStrikeFalcon/Playbooks/playbook-Crowdstrike_Falcon_-_Isolate_Endpoint.yml",
+      "captures": [],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/pan-isolation-source.md"
+      ],
+      "acquisition": "linked primary discovery; no archived full-page reading implied"
+    },
+    {
+      "url": "https://github.com/demisto/content/blob/e46f08b8fafc9207f4f658fca4fa949c3ffd687d/Packs/CommonPlaybooks/TestPlaybooks/playbook-Isolate_and_unisolate_endpoint_-_test.yml",
+      "captures": [],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/pan-isolation-source.md"
+      ],
+      "acquisition": "linked primary discovery; no archived full-page reading implied"
+    },
+    {
+      "url": "https://github.com/Azure/Azure-Sentinel/blob/4aee8b861e8f0542a3fe525757762a7487ba1b3b/Playbooks/AS-Incident-Response-Approval-Email/azuredeploy.json",
+      "captures": [],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/sentinel-playbooks-source.md"
+      ],
+      "acquisition": "linked primary discovery; no archived full-page reading implied"
+    },
+    {
+      "url": "https://github.com/Azure/Azure-Sentinel/blob/4aee8b861e8f0542a3fe525757762a7487ba1b3b/Playbooks/AS-MDE-Isolate-Machine/azuredeploy.json",
+      "captures": [],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/sentinel-playbooks-source.md"
+      ],
+      "acquisition": "linked primary discovery; no archived full-page reading implied"
+    },
+    {
+      "url": "https://github.com/Azure/Azure-Sentinel/blob/4aee8b861e8f0542a3fe525757762a7487ba1b3b/Playbooks/AS-Incident-Response-Approval-Email/README.md",
+      "captures": [],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/sentinel-playbooks-source.md"
+      ],
+      "acquisition": "linked primary discovery; no archived full-page reading implied"
+    },
+    {
+      "url": "https://github.com/Azure/Azure-Sentinel/blob/4aee8b861e8f0542a3fe525757762a7487ba1b3b/Playbooks/AS-MDE-Isolate-Machine/README.md",
+      "captures": [],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/sentinel-playbooks-source.md"
+      ],
+      "acquisition": "linked primary discovery; no archived full-page reading implied"
+    },
+    {
+      "url": "https://github.com/splunk/security_content/blob/d6afc62b750dc2ed34e3696999bf26fe476b9b1e/detections/endpoint/detect_credential_dumping_through_lsass_access.yml",
+      "captures": [],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/splunk-lsass-source.md"
+      ],
+      "acquisition": "linked primary discovery; no archived full-page reading implied"
+    },
+    {
+      "url": "https://github.com/splunk/security_content/blob/d6afc62b750dc2ed34e3696999bf26fe476b9b1e/macros/sysmon.yml",
+      "captures": [],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/splunk-lsass-source.md"
+      ],
+      "acquisition": "linked primary discovery; no archived full-page reading implied"
+    },
+    {
+      "url": "https://github.com/splunk/security_content/blob/d6afc62b750dc2ed34e3696999bf26fe476b9b1e/macros/security_content_ctime.yml",
+      "captures": [],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/splunk-lsass-source.md"
+      ],
+      "acquisition": "linked primary discovery; no archived full-page reading implied"
+    },
+    {
+      "url": "https://github.com/splunk/security_content/blob/d6afc62b750dc2ed34e3696999bf26fe476b9b1e/data_sources/sysmon_eventid_10.yml",
+      "captures": [],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/splunk-lsass-source.md"
+      ],
+      "acquisition": "linked primary discovery; no archived full-page reading implied"
+    },
+    {
+      "url": "https://help.splunk.com/en/splunk-enterprise-security-8/administer/8.6/ai-assistant-in-security-and-agentic-capabilities/setting-up-the-triage-agent-in-splunk-enterprise-security",
+      "captures": [],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/splunk-triage-controls.md"
+      ],
+      "acquisition": "linked primary discovery; no archived full-page reading implied"
+    },
+    {
+      "url": "https://hs.flatt.tech/hubfs/Takumi%20Benchmark%20Report/Takumi%20%28Blackbox%29%20Benchmark%20Report.pdf",
+      "captures": [],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/takumi-blackbox-benchmark.md"
+      ],
+      "acquisition": "linked primary discovery; no archived full-page reading implied"
+    },
+    {
+      "url": "https://www.trendmicro.com/content/dam/trendmicro/global/en/about/investor-relations/shareholder-meetings/annual-report-fiscal-year-2025.pdf",
+      "captures": [],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/trend-annual-economics.md"
+      ],
+      "acquisition": "linked primary discovery; no archived full-page reading implied"
+    },
+    {
+      "url": "https://github.com/trendmicro/vision-one-mcp-server/tree/2d137401c26e7c50345d448ea1c662746cb2e7a9",
+      "captures": [],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/trend-mcp-source.md",
+        "docs/research/cybersecurity-firms/trend-micro.md"
+      ],
+      "acquisition": "linked primary discovery; no archived full-page reading implied"
+    },
+    {
+      "url": "https://github.com/trendmicro/vision-one-mcp-server/blob/2d137401c26e7c50345d448ea1c662746cb2e7a9/cmd/v1-mcp-server/main.go",
+      "captures": [],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/trend-mcp-source.md"
+      ],
+      "acquisition": "linked primary discovery; no archived full-page reading implied"
+    },
+    {
+      "url": "https://github.com/trendmicro/vision-one-mcp-server/blob/2d137401c26e7c50345d448ea1c662746cb2e7a9/internal/v1mcp/server.go",
+      "captures": [],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/trend-mcp-source.md"
+      ],
+      "acquisition": "linked primary discovery; no archived full-page reading implied"
+    },
+    {
+      "url": "https://github.com/trendmicro/vision-one-mcp-server/blob/2d137401c26e7c50345d448ea1c662746cb2e7a9/internal/v1mcp/toolsets.go",
+      "captures": [],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/trend-mcp-source.md"
+      ],
+      "acquisition": "linked primary discovery; no archived full-page reading implied"
+    },
+    {
+      "url": "https://github.com/trendmicro/vision-one-mcp-server/blob/2d137401c26e7c50345d448ea1c662746cb2e7a9/internal/v1mcp/tools/endpoint.go",
+      "captures": [],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/trend-mcp-source.md"
+      ],
+      "acquisition": "linked primary discovery; no archived full-page reading implied"
+    },
+    {
+      "url": "https://github.com/trendmicro/vision-one-mcp-server/blob/2d137401c26e7c50345d448ea1c662746cb2e7a9/internal/v1mcp/tools/tools.go",
+      "captures": [],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/trend-mcp-source.md"
+      ],
+      "acquisition": "linked primary discovery; no archived full-page reading implied"
+    },
+    {
+      "url": "https://github.com/trendmicro/vision-one-mcp-server/blob/2d137401c26e7c50345d448ea1c662746cb2e7a9/internal/v1client/endpoint.go",
+      "captures": [],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/trend-mcp-source.md"
+      ],
+      "acquisition": "linked primary discovery; no archived full-page reading implied"
+    },
+    {
+      "url": "https://github.com/trendmicro/vision-one-mcp-server/blob/2d137401c26e7c50345d448ea1c662746cb2e7a9/internal/v1client/v1client.go",
+      "captures": [],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/trend-mcp-source.md"
+      ],
+      "acquisition": "linked primary discovery; no archived full-page reading implied"
+    },
+    {
+      "url": "https://github.com/trendmicro/vision-one-mcp-server/blob/2d137401c26e7c50345d448ea1c662746cb2e7a9/internal/v1mcp/tools/request.go",
+      "captures": [],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/trend-mcp-source.md"
+      ],
+      "acquisition": "linked primary discovery; no archived full-page reading implied"
+    },
+    {
+      "url": "https://github.com/trendmicro/vision-one-mcp-server/blob/2d137401c26e7c50345d448ea1c662746cb2e7a9/internal/v1client/request.go",
+      "captures": [],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/trend-mcp-source.md"
+      ],
+      "acquisition": "linked primary discovery; no archived full-page reading implied"
+    },
+    {
+      "url": "https://github.com/trendmicro/vision-one-mcp-server/blob/2d137401c26e7c50345d448ea1c662746cb2e7a9/internal/v1mcp/server_test.go",
+      "captures": [],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/trend-mcp-source.md"
+      ],
+      "acquisition": "linked primary discovery; no archived full-page reading implied"
+    },
+    {
+      "url": "https://github.com/trendmicro/vision-one-mcp-server/blob/2d137401c26e7c50345d448ea1c662746cb2e7a9/internal/v1mcp/tools/request_test.go",
+      "captures": [],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/trend-mcp-source.md"
+      ],
+      "acquisition": "linked primary discovery; no archived full-page reading implied"
+    },
+    {
+      "url": "https://github.com/trendmicro/vision-one-mcp-server/blob/2d137401c26e7c50345d448ea1c662746cb2e7a9/internal/v1client/request_test.go",
+      "captures": [],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/trend-mcp-source.md"
+      ],
+      "acquisition": "linked primary discovery; no archived full-page reading implied"
+    },
+    {
+      "url": "https://github.com/trendmicro/vision-one-mcp-server/blob/2d137401c26e7c50345d448ea1c662746cb2e7a9/internal/v1mcp/tools/endpoint_test.go",
+      "captures": [],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/trend-mcp-source.md"
+      ],
+      "acquisition": "linked primary discovery; no archived full-page reading implied"
+    },
+    {
+      "url": "https://success.trendmicro.com/en-US/solution/KA-0019907",
+      "captures": [],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/trend-mdr-approval.md"
+      ],
+      "acquisition": "linked primary discovery; no archived full-page reading implied"
+    },
+    {
+      "url": "https://www.trendmicro.com/en_us/about/history-vision-values.html",
+      "captures": [],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/trend-micro.md"
+      ],
+      "acquisition": "linked primary discovery; no archived full-page reading implied"
+    },
+    {
+      "url": "https://www.trendmicro.com/en/about/newsroom/local-press-releases/hk/2016/2016-03-10.html",
+      "captures": [],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/trend-micro.md"
+      ],
+      "acquisition": "linked primary discovery; no archived full-page reading implied"
+    },
+    {
+      "url": "https://success.trendmicro.com/en-US/solution/KA-0010862",
+      "captures": [],
+      "citedBy": [
+        "docs/research/cybersecurity-firms/trend-micro.md"
+      ],
+      "acquisition": "linked primary discovery; no archived full-page reading implied"
+    }
+  ]
+}

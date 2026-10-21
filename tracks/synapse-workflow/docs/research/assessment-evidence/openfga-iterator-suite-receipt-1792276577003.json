@@ -1,0 +1,1069 @@
+{
+  "at": "2026-10-17T22:37:03.875Z",
+  "command": {
+    "exe": "C:\\Users\\kotar\\githubprojects\\NBRET\\.tools\\security-research-go\\sdk\\go\\bin\\go.exe",
+    "args": [
+      "test",
+      "-p",
+      "2",
+      "./internal/iterator",
+      "-count=1",
+      "-timeout=60s",
+      "-json"
+    ],
+    "cwd": "C:/Users/kotar/.codex/research/openfga-20261017"
+  },
+  "out": "C:\\Users\\kotar\\.codex\\research\\assessment-evidence-receipts\\openfga-iterator-suite-1792276577003",
+  "code": 0,
+  "signal": null,
+  "toolchain": "go version go1.27.2 windows/amd64",
+  "environment": {
+    "GOTOOLCHAIN": "local",
+    "CGO_ENABLED": "0",
+    "GOPATH": "C:\\Users\\kotar\\githubprojects\\NBRET\\.tools\\security-research-go\\module-cache",
+    "GOCACHE": "C:\\Users\\kotar\\.codex\\research\\assessment-evidence-receipts\\openfga-iterator-suite-1792276577003\\build-cache",
+    "GOPROXY": "off",
+    "GOSUMDB": "off"
+  },
+  "elapsedMs": 46910,
+  "sourceSha256": {
+    "go.mod": "6c5e972de64e7e06f544873a77ddf84de5d86100d1ae96be3555c04b62c10be8",
+    "go.sum": "c08837e3f91fe661b0ae2c0e3c561d4f39141b15f40433d7e6d924568b19aa03",
+    "internal/iterator/channel.go": "f76274890322a02d2cba4d87434b09ac7c7aef8f639326063a54bfb3f6af75b6",
+    "internal/iterator/channel_test.go": "9494e0036279574b301809c1aa8705d12230d8fd6ed4235b3380b351eec9743f",
+    "internal/iterator/concat.go": "1466e1792946bdf67438482aef355a6bf9f776692edeb17f9e50384b287f93e8",
+    "internal/iterator/concat_test.go": "bf465565563103888afee3ba2d8f63d40fcb8fc3d827459ee011374fe1f320f9",
+    "internal/iterator/error.go": "41738e6854a06ef508a102db7d41681b95a4b8f46a7103494ae290805493b856",
+    "internal/iterator/error_test.go": "5bbf1858750f31d34705b22c9b9cb20ed394165e59821bd41daee198c7df4aa2",
+    "internal/iterator/fan_in.go": "0aa50229328e8b9f7145c27643ac3a7eabc7a48b557aeefe6138056cfbd2d64c",
+    "internal/iterator/fan_in_test.go": "2d54d5af0d8a4d104171105e29ae962e3700ee97d19ef088c72283891fe26c6b",
+    "internal/iterator/filter.go": "e168528eb3c24f505e46fadd3aeea240d22e3b3181acbe3fac41b9cce2069fcd",
+    "internal/iterator/filter_test.go": "51492cb4bab447b68e32818e2cee49f986b1b38acf65dbb0148aae69a990d54c",
+    "internal/iterator/merge.go": "42c34f3c3661e7786e63149846a87e9e65a6910aa86a997b63d4d89b4df73df4",
+    "internal/iterator/merge_test.go": "7e7492ad9708cd965604f5d433bb55c9f0d619569dff111cb5c5940aaff54add",
+    "internal/iterator/message.go": "a6e4747b6135744b598304492a14dcf9b3466839387f89ded5fab811fb9db5ed",
+    "internal/iterator/skip.go": "d93b472f4e1df6070bc7de175bd62cf5123db022f5b55380222f45e2ca0b9cd7",
+    "internal/iterator/skip_test.go": "74f76b33ac4ae3b1fc423dcf67201c65c7223bd5040aef27bea4b4a3e6e1b60b",
+    "internal/iterator/stream.go": "723c9ef31d9468162f69506feec1a11c69c89e35f55c9bd9fede2cac3ab0ff9c",
+    "internal/iterator/stream_test.go": "247529b03b6c5b52c9d0a05e33102086c1a085a44930d07b79838b4ba19bb897",
+    "internal/iterator/validate.go": "c79e71f12b8804dd2341e05a538d94acee0a3d6d02a9986181e9675cabb858e8",
+    "internal/iterator/validate_test.go": "179434aeeedb8f44d4e0c3ddd09a23782e155dcff5cc8e38ab113b1adc2c7c63"
+  },
+  "runnerSha256": "62d711662376bd10c4c4e5b9075e5477517f77d13318545e5536355f78f3af3e",
+  "stdoutSha256": "a2616579f0bf7ffd6fb54382a444fa1ed75e4b7f71b2c6d935e54eaee8f25fc0",
+  "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "tests": [
+    {
+      "Time": "2026-10-17T15:37:03.5564385-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/iterator",
+      "Test": "TestDrain/should_drain_channel_with_iterators",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:37:03.5564385-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/iterator",
+      "Test": "TestDrain/should_handle_empty_channel",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:37:03.5564385-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/iterator",
+      "Test": "TestDrain/should_handle_messages_with_nil_iterator",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:37:03.5564385-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/iterator",
+      "Test": "TestDrain",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:37:03.5564385-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/iterator",
+      "Test": "TestToChannel/should_send_values_through_channel",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:37:03.5564385-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/iterator",
+      "Test": "TestToChannel/should_handle_iterator_error",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:37:03.5564385-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/iterator",
+      "Test": "TestToChannel/should_stop_on_iterator_done",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:37:03.5564385-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/iterator",
+      "Test": "TestToChannel/should_stop_on_context_cancelled",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:37:03.5564385-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/iterator",
+      "Test": "TestToChannel",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:37:03.5564385-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/iterator",
+      "Test": "TestToChannelWithContextCancellation",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:37:03.5564385-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/iterator",
+      "Test": "TestChannelIteratorIsOrdered",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:37:03.5569409-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/iterator",
+      "Test": "TestChannelIterator/should_iterate_through_single_iterator",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:37:03.5569409-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/iterator",
+      "Test": "TestChannelIterator/should_chain_multiple_iterators",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:37:03.5569409-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/iterator",
+      "Test": "TestChannelIterator/should_handle_error_in_iterator",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:37:03.5569409-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/iterator",
+      "Test": "TestChannelIterator/should_handle_error_message",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:37:03.5569409-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/iterator",
+      "Test": "TestChannelIterator/should_skip_nil_iterators",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:37:03.5569409-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/iterator",
+      "Test": "TestChannelIterator/should_return_done_on_empty_channel",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:37:03.5569409-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/iterator",
+      "Test": "TestChannelIterator",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:37:03.5569409-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/iterator",
+      "Test": "TestConcat/should_concatenate_two_iterators",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:37:03.5569409-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/iterator",
+      "Test": "TestConcat/should_handle_empty_first_iterator",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:37:03.5569409-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/iterator",
+      "Test": "TestConcat/should_handle_empty_second_iterator",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:37:03.5569409-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/iterator",
+      "Test": "TestConcat/should_handle_both_empty_iterators",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:37:03.5569409-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/iterator",
+      "Test": "TestConcat/should_handle_error_in_first_iterator",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:37:03.5569409-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/iterator",
+      "Test": "TestConcat/should_handle_error_in_second_iterator",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:37:03.5569409-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/iterator",
+      "Test": "TestConcat/should_return_done_on_subsequent_calls_after_completion",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:37:03.5569409-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/iterator",
+      "Test": "TestConcat",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:37:03.5569409-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/iterator",
+      "Test": "TestConcatIsOrdered",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:37:03.5569409-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/iterator",
+      "Test": "TestConcatStop/should_stop_both_iterators",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:37:03.5569409-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/iterator",
+      "Test": "TestConcatStop/should_stop_iterators_after_partial_consumption",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:37:03.5569409-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/iterator",
+      "Test": "TestConcatStop",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:37:03.5569409-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/iterator",
+      "Test": "TestConcatWithContextCancellation/should_handle_context_cancellation_in_first_iterator",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:37:03.5569409-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/iterator",
+      "Test": "TestConcatWithContextCancellation/should_handle_context_cancellation_in_second_iterator",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:37:03.5569409-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/iterator",
+      "Test": "TestConcatWithContextCancellation",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:37:03.5569409-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/iterator",
+      "Test": "TestErrorIteratorIsOrdered",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:37:03.5574389-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/iterator",
+      "Test": "TestFanInIteratorChannels",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:37:03.5574389-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/iterator",
+      "Test": "TestFilter_Conditions/no_error",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:37:03.5574389-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/iterator",
+      "Test": "TestFilter_Conditions/has_some_valid_but_middle_invalid",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:37:03.5574389-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/iterator",
+      "Test": "TestFilter_Conditions/has_some_valid_but_last_invalid",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:37:03.5574389-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/iterator",
+      "Test": "TestFilter_Conditions/empty_list",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:37:03.5574389-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/iterator",
+      "Test": "TestFilter_Conditions/all_invalid",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:37:03.5574389-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/iterator",
+      "Test": "TestFilter_Conditions/fatal_error_propagated_past_valid_entry",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:37:03.5574389-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/iterator",
+      "Test": "TestFilter_Conditions/ctx_timeout",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:37:03.5574389-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/iterator",
+      "Test": "TestFilter_Conditions",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:37:03.5574389-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/iterator",
+      "Test": "TestFilter_Uniqueness/filters_duplicates",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:37:03.5574389-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/iterator",
+      "Test": "TestFilter_Uniqueness/all_unique",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:37:03.5574389-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/iterator",
+      "Test": "TestFilter_Uniqueness",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:37:03.5574389-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/iterator",
+      "Test": "TestFilterIsOrdered",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:37:03.5574389-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/iterator",
+      "Test": "TestFilter_MultipleFilters/both_filters_applied",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:37:03.5574389-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/iterator",
+      "Test": "TestFilter_MultipleFilters",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:37:03.5574389-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/iterator",
+      "Test": "TestMergedIteratorIsOrdered/both_ordered_true",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:37:03.5574389-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/iterator",
+      "Test": "TestMergedIteratorIsOrdered/one_unordered_false",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:37:03.5574389-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/iterator",
+      "Test": "TestMergedIteratorIsOrdered",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:37:03.5574389-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/iterator",
+      "Test": "TestMergedIterator/both_iterators_empty",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:37:03.5574389-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/iterator",
+      "Test": "TestMergedIterator/first_iterator_empty",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:37:03.5574389-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/iterator",
+      "Test": "TestMergedIterator/second_iterator_empty",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:37:03.5574389-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/iterator",
+      "Test": "TestMergedIterator/merge_sorted_iterators",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:37:03.5574389-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/iterator",
+      "Test": "TestMergedIterator/skip_duplicates",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:37:03.5574389-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/iterator",
+      "Test": "TestMergedIterator/all_duplicates",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:37:03.5574389-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/iterator",
+      "Test": "TestMergedIterator/initialization_error_iter1",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:37:03.5574389-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/iterator",
+      "Test": "TestMergedIterator/initialization_error_iter2",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:37:03.5574389-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/iterator",
+      "Test": "TestMergedIterator/error_during_iteration_iter1",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:37:03.5579387-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/iterator",
+      "Test": "TestMergedIterator/error_during_iteration_iter2",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:37:03.5579387-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/iterator",
+      "Test": "TestMergedIterator/context_canceled_during_initialization",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:37:03.5579387-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/iterator",
+      "Test": "TestMergedIterator/stop_calls_both_iterators",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:37:03.5579387-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/iterator",
+      "Test": "TestMergedIterator",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:37:03.5579387-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/iterator",
+      "Test": "TestSkipTo/should_skip_to_exact_match",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:37:03.5579387-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/iterator",
+      "Test": "TestSkipTo/should_skip_to_next_greater_value",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:37:03.5579387-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/iterator",
+      "Test": "TestSkipTo/should_not_skip_when_target_is_before_head",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:37:03.5579387-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/iterator",
+      "Test": "TestSkipTo/should_handle_target_equal_to_head",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:37:03.5579387-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/iterator",
+      "Test": "TestSkipTo/should_handle_target_beyond_all_values",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:37:03.5579387-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/iterator",
+      "Test": "TestSkipTo/should_handle_single_value_iterator",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:37:03.5579387-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/iterator",
+      "Test": "TestSkipTo/should_handle_empty_iterator",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:37:03.5579387-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/iterator",
+      "Test": "TestSkipTo/should_handle_target_at_last_value",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:37:03.5579387-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/iterator",
+      "Test": "TestSkipTo",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:37:03.5579387-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/iterator",
+      "Test": "TestSkipToWithError/should_return_error_from_head",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:37:03.5579387-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/iterator",
+      "Test": "TestSkipToWithError/should_return_error_from_next",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:37:03.5579387-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/iterator",
+      "Test": "TestSkipToWithError",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:37:03.5579387-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/iterator",
+      "Test": "TestSkipToContextCancellation/should_handle_context_cancelled_from_head",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:37:03.5579387-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/iterator",
+      "Test": "TestSkipToContextCancellation/should_handle_context_cancelled_from_next",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:37:03.5584395-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/iterator",
+      "Test": "TestSkipToContextCancellation",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:37:03.5584395-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/iterator",
+      "Test": "TestSkipToWithLexicographicOrdering/should_handle_numeric_strings",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:37:03.5584395-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/iterator",
+      "Test": "TestSkipToWithLexicographicOrdering/should_handle_prefixes",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:37:03.5584395-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/iterator",
+      "Test": "TestSkipToWithLexicographicOrdering/should_handle_case_sensitive_comparison",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:37:03.5584395-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/iterator",
+      "Test": "TestSkipToWithLexicographicOrdering",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:37:03.5584395-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/iterator",
+      "Test": "TestIteratorStream/fetchSource/no_nil_buffer_should_not_fetch",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:37:03.5584395-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/iterator",
+      "Test": "TestIteratorStream/fetchSource/done_should_not_fetch",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:37:03.5584395-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/iterator",
+      "Test": "TestIteratorStream/fetchSource/handle_ctx_cancel",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:37:03.5584395-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/iterator",
+      "Test": "TestIteratorStream/fetchSource/fetch_from_source",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:37:03.5584395-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/iterator",
+      "Test": "TestIteratorStream/fetchSource/fetch_from_source_has_error",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:37:03.5584395-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/iterator",
+      "Test": "TestIteratorStream/fetchSource/source_cannot_be_fetched",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:37:03.5584395-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/iterator",
+      "Test": "TestIteratorStream/fetchSource",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:37:03.5584395-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/iterator",
+      "Test": "TestIteratorStream/isDone/non_empty_buffer_not_done",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:37:03.5584395-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/iterator",
+      "Test": "TestIteratorStream/isDone/source_is_closed",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:37:03.5584395-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/iterator",
+      "Test": "TestIteratorStream/isDone/buffer_empty_only",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:37:03.5584395-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/iterator",
+      "Test": "TestIteratorStream/isDone/non_empty_buffer_but_done",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:37:03.5584395-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/iterator",
+      "Test": "TestIteratorStream/isDone",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:37:03.5584395-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/iterator",
+      "Test": "TestIteratorStream/Idx",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:37:03.5584395-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/iterator",
+      "Test": "TestIteratorStream/Head/nil_buffer",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:37:03.5584395-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/iterator",
+      "Test": "TestIteratorStream/Head/empty_buffer",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:37:03.5584395-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/iterator",
+      "Test": "TestIteratorStream/Head/non_empty_buffer",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:37:03.5584395-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/iterator",
+      "Test": "TestIteratorStream/Head",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:37:03.5584395-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/iterator",
+      "Test": "TestIteratorStream/Next/nil_buffer",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:37:03.5584395-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/iterator",
+      "Test": "TestIteratorStream/Next/empty_buffer",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:37:03.5584395-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/iterator",
+      "Test": "TestIteratorStream/Next/non_empty_buffer",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:37:03.5584395-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/iterator",
+      "Test": "TestIteratorStream/Next",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:37:03.5584395-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/iterator",
+      "Test": "TestIteratorStream/Drain/empty",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:37:03.5584395-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/iterator",
+      "Test": "TestIteratorStream/Drain/nonEmpty",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:37:03.5584395-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/iterator",
+      "Test": "TestIteratorStream/Drain/error",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:37:03.5589385-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/iterator",
+      "Test": "TestIteratorStream/Drain",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:37:03.5589385-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/iterator",
+      "Test": "TestIteratorStream/SkipToTargetObject/bad_target",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:37:03.5589385-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/iterator",
+      "Test": "TestIteratorStream/SkipToTargetObject/empty",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:37:03.5589385-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/iterator",
+      "Test": "TestIteratorStream/SkipToTargetObject/head_error",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:37:03.5589385-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/iterator",
+      "Test": "TestIteratorStream/SkipToTargetObject/skip_head_error",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:37:03.5589385-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/iterator",
+      "Test": "TestIteratorStream/SkipToTargetObject/allItemsAreSmaller",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:37:03.5589385-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/iterator",
+      "Test": "TestIteratorStream/SkipToTargetObject/skipToMatchingItem",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:37:03.5589385-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/iterator",
+      "Test": "TestIteratorStream/SkipToTargetObject/skipToNextItem",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:37:03.5589385-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/iterator",
+      "Test": "TestIteratorStream/SkipToTargetObject",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:37:03.5589385-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/iterator",
+      "Test": "TestIteratorStream/Stop",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:37:03.5589385-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/iterator",
+      "Test": "TestIteratorStream",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:37:03.5594388-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/iterator",
+      "Test": "TestStreamIsOrdered",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:37:03.5594388-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/iterator",
+      "Test": "TestNextItemInSliceStreams/error_on_empty",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:37:03.5594388-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/iterator",
+      "Test": "TestNextItemInSliceStreams/skip_item",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:37:03.5594388-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/iterator",
+      "Test": "TestNextItemInSliceStreams",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:37:03.5594388-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/iterator",
+      "Test": "TestIteratorStreams/CleanDone/should_exit_on_context_cancelled",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:37:03.5594388-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/iterator",
+      "Test": "TestIteratorStreams/CleanDone/should_error_out_with_producer_errors",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:37:03.5594388-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/iterator",
+      "Test": "TestIteratorStreams/CleanDone/should_filter_out_drained_producers",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:37:03.5594388-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/iterator",
+      "Test": "TestIteratorStreams/CleanDone/should_return_empty_when_fully_drained",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:37:03.5594388-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/iterator",
+      "Test": "TestIteratorStreams/CleanDone",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:37:03.5594388-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/iterator",
+      "Test": "TestIteratorStreams/Stop",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:37:03.5594388-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/iterator",
+      "Test": "TestIteratorStreams",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:37:03.5594388-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/iterator",
+      "Test": "TestValidatingIteratorIsOrdered",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:37:03.5594388-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/iterator",
+      "Test": "TestValidatingIterator/Head_returns_ErrIteratorDone_when_base_is_empty",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:37:03.5594388-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/iterator",
+      "Test": "TestValidatingIterator/Next_returns_ErrIteratorDone_when_base_is_empty",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:37:03.5594388-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/iterator",
+      "Test": "TestValidatingIterator/Head_returns_value_when_base_contains_a_valid_value",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:37:03.5594388-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/iterator",
+      "Test": "TestValidatingIterator/Next_returns_value_when_base_contains_a_valid_value",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:37:03.5594388-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/iterator",
+      "Test": "TestValidatingIterator/Head_returns_ErrIteratorDone_when_base_is_done",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:37:03.5594388-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/iterator",
+      "Test": "TestValidatingIterator/Next_returns_ErrIteratorDone_when_base_is_done",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:37:03.5594388-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/iterator",
+      "Test": "TestValidatingIterator/Head_returns_only_valid_value",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:37:03.5594388-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/iterator",
+      "Test": "TestValidatingIterator/Next_returns_only_valid_value",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:37:03.5594388-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/iterator",
+      "Test": "TestValidatingIterator/Head_returns_validation_error_but_can_continue",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:37:03.5594388-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/iterator",
+      "Test": "TestValidatingIterator/Next_returns_validation_error_but_can_continue",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:37:03.5594388-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/iterator",
+      "Test": "TestValidatingIterator/Head_returns_error_after_skipping_an_invalid_value",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:37:03.5594388-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/iterator",
+      "Test": "TestValidatingIterator/Next_returns_error_after_skipping_an_invalid_value",
+      "Elapsed": 0
+    },
+    {
+      "Time": "2026-10-17T15:37:03.5594388-07:00",
+      "Action": "pass",
+      "Package": "github.com/openfga/openfga/internal/iterator",
+      "Test": "TestValidatingIterator",
+      "Elapsed": 0
+    }
+  ],
+  "criteria": "Selected unchanged iterator package tests; preserve pass/fail/skip and compile/infrastructure failures separately.",
+  "intervention": "No source changes/overlay; selected unchanged package, offline cached dependencies, isolated build cache, CGO off.",
+  "limits": "Mock/static iterator unit tests only, no MySQL/Postgres/server/customer authorization; package success not universal concurrency or end-to-end coverage.",
+  "cost": "Local CPU/storage only; network dependency resolution disabled."
+}

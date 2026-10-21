@@ -1,0 +1,10 @@
+{
+  "command": [
+    "C:/Users/kotar/.codex/research/assessment-evidence-venv/Scripts/python.exe",
+    "docs/research/assessment-evidence/deep-agent-lab.py",
+    "C:/Users/kotar/.codex/research/assessment-evidence-receipts/deep-agent-20261017"
+  ],
+  "exitCode": 1,
+  "stdout": "",
+  "stderr": "Traceback (most recent call last):\r\n  File \"C:\\Users\\kotar\\githubprojects\\NBRET\\docs\\research\\assessment-evidence\\deep-agent-lab.py\", line 86, in <module>\r\n    exec(compile(module, str(source_path), 'exec'), env)\r\n         ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r\nTypeError: required field \"lineno\" missing from stmt\r\n"
+}

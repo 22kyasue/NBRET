@@ -1,0 +1,98 @@
+{
+  "at": "2026-10-17T20:27:58.185Z",
+  "repositories": [
+    {
+      "project": "pentestgpt",
+      "root": "C:/Users/kotar/.codex/research/pentestgpt-20261017",
+      "commit": "e8b1bb77d1ac00329675cec3b060aba971ec1ac8",
+      "origin": "https://github.com/GreyDGL/PentestGPT.git",
+      "licenseFiles": [
+        {
+          "path": "LICENSE.md",
+          "sha256": "ec04c21b7ac5a83b3504c2b96662fa65b4a3b6b0812871818c8ec55bbd6e60b8"
+        }
+      ],
+      "licenseBoundary": "Root and component license claims require corresponding source attribution; this list is byte provenance, not a license clearance"
+    },
+    {
+      "project": "unified",
+      "root": "C:/Users/kotar/.codex/research/unified-agent-acff8ee",
+      "commit": "acff8eeadf93e367d4a1578d3a2739cbc9d3ace5",
+      "origin": "https://github.com/PentestGPT-Project/UnifedAgentWrapper.git",
+      "licenseFiles": [],
+      "licenseBoundary": "No tracked LICENSE found; unresolved reuse terms"
+    },
+    {
+      "project": "garak",
+      "root": "C:/Users/kotar/.codex/research/garak",
+      "commit": "cc1215c5c301a69f115b0b2b7ef8e4172ae2e7fc",
+      "origin": "https://github.com/NVIDIA/garak.git",
+      "licenseFiles": [
+        {
+          "path": "LICENSE",
+          "sha256": "b2c6b7794a4b137b5e5e4fe9efb9771f35b6f466d0ea6704bedc649a0cd0f7f0"
+        },
+        {
+          "path": "garak/data/harmbench/LICENSE",
+          "sha256": "6bac7a65a7388ad4d83b438c85d857360e42d663a80fec484d6345e4bcb891c1"
+        },
+        {
+          "path": "tests/_assets/fileformats/exec_files/LICENSE",
+          "sha256": "2d17abb443df473f0afd18587b7881a5bae44c988960db5f9a89cdaf5a1f1f2b"
+        }
+      ],
+      "licenseBoundary": "Root and component license claims require corresponding source attribution; this list is byte provenance, not a license clearance"
+    },
+    {
+      "project": "invokeatomic",
+      "root": "C:/Users/kotar/.codex/research/invoke-atomic-20261017",
+      "commit": "8af478bb9e4637df568ac1e596553b025b16cd1b",
+      "origin": "https://github.com/redcanaryco/invoke-atomicredteam.git",
+      "licenseFiles": [
+        {
+          "path": "LICENSE.txt",
+          "sha256": "bffed48fba3714da8eb4b4c540a179a73f90ce91f3b623ba6148d2869bb0a9e4"
+        }
+      ],
+      "licenseBoundary": "Root and component license claims require corresponding source attribution; this list is byte provenance, not a license clearance"
+    },
+    {
+      "project": "agentdojo",
+      "root": "C:/Users/kotar/.codex/research/agentdojo-20261017",
+      "commit": "089ed468cf3ed0322acc66b0211f26d9d90dbf60",
+      "origin": "https://github.com/ethz-spylab/agentdojo.git",
+      "licenseFiles": [
+        {
+          "path": "LICENSE",
+          "sha256": "a090c871ff2aa6abb58a0eda1b6262dca39a7610de3df3411497fba7aa6fad09"
+        }
+      ],
+      "licenseBoundary": "Root and component license claims require corresponding source attribution; this list is byte provenance, not a license clearance"
+    },
+    {
+      "project": "openfga",
+      "root": "C:/Users/kotar/.codex/research/openfga-20261017",
+      "commit": "fb8e7df866742a0c947e3066919ee59ac9e70eea",
+      "origin": "https://github.com/openfga/openfga.git",
+      "licenseFiles": [
+        {
+          "path": "LICENSE",
+          "sha256": "fcf61b49b880ef17cfc3e64b9bfbf7859eb7bc2534f42c1c004aa716733aeba4"
+        }
+      ],
+      "licenseBoundary": "Root and component license claims require corresponding source attribution; this list is byte provenance, not a license clearance"
+    }
+  ],
+  "partialDependency": {
+    "url": "https://raw.githubusercontent.com/python/cpython/v3.14.7/Modules/posixmodule.c",
+    "localPath": "C:/Users/kotar/.codex/research/assessment-evidence-receipts/python-posixmodule-v3.14.7.c",
+    "sha256": "436636d1ef1693d58e07cf80fc4aea58ad740e5d2e6b2f466164f66be5f8d43d",
+    "readRanges": [
+      [
+        9702,
+        9750
+      ]
+    ],
+    "status": "partial function read; not a repository audit"
+  }
+}

@@ -1,0 +1,139 @@
+{
+  "at": "2026-10-17T20:32:41.506Z",
+  "node": "v24.21.0",
+  "command": "node docs/research/bots-swarms/identity-lab.mjs",
+  "protocol": "custom fixture, not OAuth/JWT/RFC9421",
+  "scriptSha256": "88eb92c27966cc7fadbd815f12e766463841d86c0d0c08052b072a17fe575dff",
+  "checks": [
+    {
+      "name": "valid assignment",
+      "status": 200,
+      "effectDelta": 1,
+      "reason": "effect"
+    },
+    {
+      "name": "identical replay",
+      "status": 409,
+      "effectDelta": 0,
+      "reason": "replay"
+    },
+    {
+      "name": "bad proof does not consume nonce",
+      "status": 401,
+      "effectDelta": 0,
+      "reason": "proof"
+    },
+    {
+      "name": "valid proof can reuse rejected nonce",
+      "status": 200,
+      "effectDelta": 1,
+      "reason": "effect"
+    },
+    {
+      "name": "modified issuer payload",
+      "status": 401,
+      "effectDelta": 0,
+      "reason": "token"
+    },
+    {
+      "name": "unknown worker",
+      "status": 401,
+      "effectDelta": 0,
+      "reason": "worker"
+    },
+    {
+      "name": "cross-worker proof",
+      "status": 403,
+      "effectDelta": 0,
+      "reason": "assignment"
+    },
+    {
+      "name": "cross-tenant claim",
+      "status": 403,
+      "effectDelta": 0,
+      "reason": "assignment"
+    },
+    {
+      "name": "user and workload same subject remain distinct",
+      "status": 403,
+      "effectDelta": 0,
+      "reason": "assignment"
+    },
+    {
+      "name": "wrong audience",
+      "status": 403,
+      "effectDelta": 0,
+      "reason": "assignment"
+    },
+    {
+      "name": "missing action scope",
+      "status": 403,
+      "effectDelta": 0,
+      "reason": "assignment"
+    },
+    {
+      "name": "expired token",
+      "status": 401,
+      "effectDelta": 0,
+      "reason": "token"
+    },
+    {
+      "name": "stale proof time",
+      "status": 401,
+      "effectDelta": 0,
+      "reason": "freshness"
+    },
+    {
+      "name": "wrong route",
+      "status": 404,
+      "effectDelta": 0,
+      "reason": "route"
+    },
+    {
+      "name": "wrong method",
+      "status": 404,
+      "effectDelta": 0,
+      "reason": "route"
+    },
+    {
+      "name": "unsigned request body rejected",
+      "status": 404,
+      "effectDelta": 0,
+      "reason": "route"
+    },
+    {
+      "name": "authentic unexpired token survives authority revocation in signature-only validator",
+      "pass": true
+    },
+    {
+      "name": "current authority rejects valid credentials",
+      "status": 403,
+      "effectDelta": 0,
+      "reason": "revoked"
+    },
+    {
+      "name": "restored authority",
+      "status": 200,
+      "effectDelta": 1,
+      "reason": "effect"
+    },
+    {
+      "name": "changed address label does not reset nonce identity",
+      "status": 409,
+      "effectDelta": 0,
+      "reason": "replay"
+    },
+    {
+      "name": "all denials preserve effects; total accepted effects",
+      "effects": 3,
+      "pass": true
+    },
+    {
+      "name": "listener closed",
+      "pass": true
+    }
+  ],
+  "effects": 3,
+  "listenerClosed": true,
+  "limits": "Single process, in-memory authority and nonce set, fixed clock, no credential persistence, no distributed validator/cache proof."
+}

@@ -1,0 +1,634 @@
+[
+  {
+    "project": "mitmproxy/mitmproxy",
+    "retrievedAt": "2026-10-17T19:57:52.582Z",
+    "evidence": "GitHub maintainer metadata; not source implementation review or complete license analysis",
+    "repository": {
+      "url": "https://api.github.com/repos/mitmproxy/mitmproxy",
+      "status": 200,
+      "sha256": "4d26cf3f8ea45372b1b63142c7c9ca06761f2600d770acb342dd09db1183e421",
+      "archive": "C:\\Users\\kotar\\githubprojects\\NBRET\\.tools\\toolchain\\catalog\\mitmproxy--mitmproxy--repository.json",
+      "htmlUrl": "https://github.com/mitmproxy/mitmproxy",
+      "defaultBranch": "main",
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "archived": false,
+      "pushedAt": "2026-10-13T18:07:57Z"
+    },
+    "latestRelease": {
+      "url": "https://api.github.com/repos/mitmproxy/mitmproxy/releases/latest",
+      "status": 200,
+      "sha256": "7a629e7bb103f5123452194c2df3c7693c9cf9c0e7765e7d98642bcb6ee5b0b3",
+      "archive": "C:\\Users\\kotar\\githubprojects\\NBRET\\.tools\\toolchain\\catalog\\mitmproxy--mitmproxy--latestRelease.json",
+      "tag": "v12.2.3",
+      "publishedAt": "2026-05-12T13:02:17Z",
+      "htmlUrl": "https://github.com/mitmproxy/mitmproxy/releases/tag/v12.2.3",
+      "prerelease": false,
+      "draft": false
+    },
+    "catalogPin": {
+      "url": "https://api.github.com/repos/mitmproxy/mitmproxy/commits/v12.2.3",
+      "status": 200,
+      "ref": "v12.2.3",
+      "commit": "6c09d56e4c29a92f5ad01b03199977584b8ea14f",
+      "retrievedAt": "2026-10-17T19:58:14.704Z",
+      "sha256": "be588ddce5d0ec5487e6c9912f481acb60fb4c1622050577f5e6775298f3d123",
+      "archive": "C:\\Users\\kotar\\githubprojects\\NBRET\\.tools\\toolchain\\catalog\\mitmproxy--mitmproxy--pin.json",
+      "basis": "Latest non-prerelease release endpoint tag resolved to commit"
+    },
+    "licenseArtifact": {
+      "url": "https://raw.githubusercontent.com/mitmproxy/mitmproxy/6c09d56e4c29a92f5ad01b03199977584b8ea14f/LICENSE",
+      "sha256": "cc4ab04ed7180af6c0ede7147f9ec2aa05212c088d7b3c8e38bbffe91c9c8f82",
+      "archive": "C:\\Users\\kotar\\githubprojects\\NBRET\\.tools\\toolchain\\catalog\\mitmproxy--mitmproxy--LICENSE.txt",
+      "status": "downloaded, unread unless separately annotated"
+    }
+  },
+  {
+    "project": "nmap/nmap",
+    "retrievedAt": "2026-10-17T19:57:52.954Z",
+    "evidence": "GitHub maintainer metadata; not source implementation review or complete license analysis",
+    "repository": {
+      "url": "https://api.github.com/repos/nmap/nmap",
+      "status": 200,
+      "sha256": "36299e04d8ff807297e7fa48eb608551f9ff08a40f0b09240d4e304e7717bf24",
+      "archive": "C:\\Users\\kotar\\githubprojects\\NBRET\\.tools\\toolchain\\catalog\\nmap--nmap--repository.json",
+      "htmlUrl": "https://github.com/nmap/nmap",
+      "defaultBranch": "master",
+      "license": {
+        "key": "other",
+        "name": "Other",
+        "spdx_id": "NOASSERTION",
+        "url": null,
+        "node_id": "MDc6TGljZW5zZTA="
+      },
+      "archived": false,
+      "pushedAt": "2026-10-15T22:45:06Z"
+    },
+    "latestRelease": {
+      "url": "https://api.github.com/repos/nmap/nmap/releases/latest",
+      "status": 404,
+      "sha256": "d9e37600354c1839f6b22cebde497e9d14750d2401a06c9a51b1619baf991613",
+      "archive": "C:\\Users\\kotar\\githubprojects\\NBRET\\.tools\\toolchain\\catalog\\nmap--nmap--latestRelease.json"
+    },
+    "catalogPin": {
+      "url": "https://api.github.com/repos/nmap/nmap/commits/master",
+      "status": 200,
+      "ref": "master",
+      "commit": "f06480daed9a9b2cdce61904222cc87788afdf84",
+      "retrievedAt": "2026-10-17T19:58:14.984Z",
+      "sha256": "01b1f370d1bab58534314c9391e2e0b6efc315b9e148e11baf5137cd32a8e543",
+      "archive": "C:\\Users\\kotar\\githubprojects\\NBRET\\.tools\\toolchain\\catalog\\nmap--nmap--pin.json",
+      "basis": "No GitHub latest-release object; default branch snapshot, not a release claim"
+    },
+    "licenseArtifact": {
+      "url": "https://raw.githubusercontent.com/nmap/nmap/f06480daed9a9b2cdce61904222cc87788afdf84/LICENSE",
+      "sha256": "9d9a9a763c0e6145172cfe7d8483e23b38ce60b6c79a82e4894242917bdae6d3",
+      "archive": "C:\\Users\\kotar\\githubprojects\\NBRET\\.tools\\toolchain\\catalog\\nmap--nmap--LICENSE.txt",
+      "status": "downloaded, unread unless separately annotated"
+    }
+  },
+  {
+    "project": "SpecterOps/SharpHound",
+    "retrievedAt": "2026-10-17T19:57:53.250Z",
+    "evidence": "GitHub maintainer metadata; not source implementation review or complete license analysis",
+    "repository": {
+      "url": "https://api.github.com/repos/SpecterOps/SharpHound",
+      "status": 200,
+      "sha256": "f8651f411cb7582c025936d3861b5e3faa469946bd6450eeea94c748267bc540",
+      "archive": "C:\\Users\\kotar\\githubprojects\\NBRET\\.tools\\toolchain\\catalog\\SpecterOps--SharpHound--repository.json",
+      "htmlUrl": "https://github.com/SpecterOps/SharpHound",
+      "defaultBranch": "2.X",
+      "license": {
+        "key": "gpl-3.0",
+        "name": "GNU General Public License v3.0",
+        "spdx_id": "GPL-3.0",
+        "url": "https://api.github.com/licenses/gpl-3.0",
+        "node_id": "MDc6TGljZW5zZTk="
+      },
+      "archived": false,
+      "pushedAt": "2026-10-16T19:16:30Z"
+    },
+    "latestRelease": {
+      "url": "https://api.github.com/repos/SpecterOps/SharpHound/releases/latest",
+      "status": 200,
+      "sha256": "aa859e0c273c67999136ad346ab812d2088d4b6420239196617792d8b2241db3",
+      "archive": "C:\\Users\\kotar\\githubprojects\\NBRET\\.tools\\toolchain\\catalog\\SpecterOps--SharpHound--latestRelease.json",
+      "tag": "v2.17.1",
+      "publishedAt": "2026-10-16T19:16:30Z",
+      "htmlUrl": "https://github.com/SpecterOps/SharpHound/releases/tag/v2.17.1",
+      "prerelease": false,
+      "draft": false
+    },
+    "catalogPin": {
+      "url": "https://api.github.com/repos/SpecterOps/SharpHound/commits/v2.17.1",
+      "status": 200,
+      "ref": "v2.17.1",
+      "commit": "85924979a9d23ab0e83a3fcfabee3b9962bb14be",
+      "retrievedAt": "2026-10-17T19:58:15.227Z",
+      "sha256": "6c009a80250aebcb6b1b6477623362e0af24169a4588cf2a6a8ef937a6307641",
+      "archive": "C:\\Users\\kotar\\githubprojects\\NBRET\\.tools\\toolchain\\catalog\\SpecterOps--SharpHound--pin.json",
+      "basis": "Latest non-prerelease release endpoint tag resolved to commit"
+    },
+    "licenseArtifact": {
+      "url": "https://raw.githubusercontent.com/SpecterOps/SharpHound/85924979a9d23ab0e83a3fcfabee3b9962bb14be/LICENSE",
+      "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+      "archive": "C:\\Users\\kotar\\githubprojects\\NBRET\\.tools\\toolchain\\catalog\\SpecterOps--SharpHound--LICENSE.txt",
+      "status": "downloaded, unread unless separately annotated"
+    }
+  },
+  {
+    "project": "SpecterOps/BloodHound",
+    "retrievedAt": "2026-10-17T19:57:53.701Z",
+    "evidence": "GitHub maintainer metadata; not source implementation review or complete license analysis",
+    "repository": {
+      "url": "https://api.github.com/repos/SpecterOps/BloodHound",
+      "status": 200,
+      "sha256": "edb4fdd04e4cec2be7ab1285c58b08b48ae1e8d47ae1aba17ccd93c55dac842f",
+      "archive": "C:\\Users\\kotar\\githubprojects\\NBRET\\.tools\\toolchain\\catalog\\SpecterOps--BloodHound--repository.json",
+      "htmlUrl": "https://github.com/SpecterOps/BloodHound",
+      "defaultBranch": "main",
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "archived": false,
+      "pushedAt": "2026-10-17T15:38:10Z"
+    },
+    "latestRelease": {
+      "url": "https://api.github.com/repos/SpecterOps/BloodHound/releases/latest",
+      "status": 200,
+      "sha256": "d03cae31d8885ef19fe029349f9812f6b0c5ed0cafad9023d741b793ecee1deb",
+      "archive": "C:\\Users\\kotar\\githubprojects\\NBRET\\.tools\\toolchain\\catalog\\SpecterOps--BloodHound--latestRelease.json",
+      "tag": "v9.8.0",
+      "publishedAt": "2026-10-07T17:30:52Z",
+      "htmlUrl": "https://github.com/SpecterOps/BloodHound/releases/tag/v9.8.0",
+      "prerelease": false,
+      "draft": false
+    },
+    "catalogPin": {
+      "url": "https://api.github.com/repos/SpecterOps/BloodHound/commits/v9.8.0",
+      "status": 200,
+      "ref": "v9.8.0",
+      "commit": "1759e1638435595def27eb3ff3c5a6fc32832ddc",
+      "retrievedAt": "2026-10-17T19:58:15.549Z",
+      "sha256": "34d9cc8f4896cf9a5af6fd56f4a44a74c934a8e8b0bf8cdf24e684e0ae4c75fa",
+      "archive": "C:\\Users\\kotar\\githubprojects\\NBRET\\.tools\\toolchain\\catalog\\SpecterOps--BloodHound--pin.json",
+      "basis": "Latest non-prerelease release endpoint tag resolved to commit"
+    },
+    "licenseArtifact": {
+      "url": "https://raw.githubusercontent.com/SpecterOps/BloodHound/1759e1638435595def27eb3ff3c5a6fc32832ddc/LICENSE",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "archive": "C:\\Users\\kotar\\githubprojects\\NBRET\\.tools\\toolchain\\catalog\\SpecterOps--BloodHound--LICENSE.txt",
+      "status": "downloaded, unread unless separately annotated"
+    }
+  },
+  {
+    "project": "PortSwigger/burp-extensions-montoya-api-examples",
+    "retrievedAt": "2026-10-17T19:57:54.041Z",
+    "evidence": "GitHub maintainer metadata; not source implementation review or complete license analysis",
+    "repository": {
+      "url": "https://api.github.com/repos/PortSwigger/burp-extensions-montoya-api-examples",
+      "status": 200,
+      "sha256": "b431526ce723965da32d039b057bfcf6386649c5bcd232fb3087342885531bb4",
+      "archive": "C:\\Users\\kotar\\githubprojects\\NBRET\\.tools\\toolchain\\catalog\\PortSwigger--burp-extensions-montoya-api-examples--repository.json",
+      "htmlUrl": "https://github.com/PortSwigger/burp-extensions-montoya-api-examples",
+      "defaultBranch": "main",
+      "license": {
+        "key": "other",
+        "name": "Other",
+        "spdx_id": "NOASSERTION",
+        "url": null,
+        "node_id": "MDc6TGljZW5zZTA="
+      },
+      "archived": false,
+      "pushedAt": "2026-07-01T16:05:31Z"
+    },
+    "latestRelease": {
+      "url": "https://api.github.com/repos/PortSwigger/burp-extensions-montoya-api-examples/releases/latest",
+      "status": 404,
+      "sha256": "d9e37600354c1839f6b22cebde497e9d14750d2401a06c9a51b1619baf991613",
+      "archive": "C:\\Users\\kotar\\githubprojects\\NBRET\\.tools\\toolchain\\catalog\\PortSwigger--burp-extensions-montoya-api-examples--latestRelease.json"
+    },
+    "catalogPin": {
+      "url": "https://api.github.com/repos/PortSwigger/burp-extensions-montoya-api-examples/commits/main",
+      "status": 200,
+      "ref": "main",
+      "commit": "e4c83c505e6ad42207710f26c7cdd41b232500a6",
+      "retrievedAt": "2026-10-17T19:58:15.899Z",
+      "sha256": "87a914b87228f369bd74d684e9fde0a6371965e641450cc8d428592f31c80a71",
+      "archive": "C:\\Users\\kotar\\githubprojects\\NBRET\\.tools\\toolchain\\catalog\\PortSwigger--burp-extensions-montoya-api-examples--pin.json",
+      "basis": "No GitHub latest-release object; default branch snapshot, not a release claim"
+    },
+    "licenseArtifact": {
+      "url": "https://raw.githubusercontent.com/PortSwigger/burp-extensions-montoya-api-examples/e4c83c505e6ad42207710f26c7cdd41b232500a6/LICENSE",
+      "sha256": "1275a38ebd6aca9c6407b221955ded7f12dc5b974ec37cf52771047455c27773",
+      "archive": "C:\\Users\\kotar\\githubprojects\\NBRET\\.tools\\toolchain\\catalog\\PortSwigger--burp-extensions-montoya-api-examples--LICENSE.txt",
+      "status": "downloaded, unread unless separately annotated"
+    }
+  },
+  {
+    "project": "fortra/impacket",
+    "retrievedAt": "2026-10-17T19:57:54.339Z",
+    "evidence": "GitHub maintainer metadata; not source implementation review or complete license analysis",
+    "repository": {
+      "url": "https://api.github.com/repos/fortra/impacket",
+      "status": 200,
+      "sha256": "0f26bec8d10b7356d84056be7e256033cfccebcb842a4258165e4e56943d2dd0",
+      "archive": "C:\\Users\\kotar\\githubprojects\\NBRET\\.tools\\toolchain\\catalog\\fortra--impacket--repository.json",
+      "htmlUrl": "https://github.com/fortra/impacket",
+      "defaultBranch": "master",
+      "license": {
+        "key": "other",
+        "name": "Other",
+        "spdx_id": "NOASSERTION",
+        "url": null,
+        "node_id": "MDc6TGljZW5zZTA="
+      },
+      "archived": false,
+      "pushedAt": "2026-10-15T12:58:10Z"
+    },
+    "latestRelease": {
+      "url": "https://api.github.com/repos/fortra/impacket/releases/latest",
+      "status": 200,
+      "sha256": "f234f78c1f7a649399c0829e4f3524bb78b1374cc2861a072cf79b384bd1d8d8",
+      "archive": "C:\\Users\\kotar\\githubprojects\\NBRET\\.tools\\toolchain\\catalog\\fortra--impacket--latestRelease.json",
+      "tag": "impacket_0_13_1",
+      "publishedAt": "2026-05-19T15:39:49Z",
+      "htmlUrl": "https://github.com/fortra/impacket/releases/tag/impacket_0_13_1",
+      "prerelease": false,
+      "draft": false
+    },
+    "catalogPin": {
+      "url": "https://api.github.com/repos/fortra/impacket/commits/impacket_0_13_1",
+      "status": 200,
+      "ref": "impacket_0_13_1",
+      "commit": "c456746d7a0f0bb25e8968a59f25aae1ad519935",
+      "retrievedAt": "2026-10-17T19:58:16.217Z",
+      "sha256": "2d931a848f05423e18f516f84b91b57f1c46ae7c2e60ab693c22e6f41034349d",
+      "archive": "C:\\Users\\kotar\\githubprojects\\NBRET\\.tools\\toolchain\\catalog\\fortra--impacket--pin.json",
+      "basis": "Latest non-prerelease release endpoint tag resolved to commit"
+    },
+    "licenseArtifact": {
+      "url": "https://raw.githubusercontent.com/fortra/impacket/c456746d7a0f0bb25e8968a59f25aae1ad519935/LICENSE",
+      "sha256": "c847171fcd225ebe6a137242d7741a18d29a1bc24fd1c382ca1d57e1ae1d8f00",
+      "archive": "C:\\Users\\kotar\\githubprojects\\NBRET\\.tools\\toolchain\\catalog\\fortra--impacket--LICENSE.txt",
+      "status": "downloaded, unread unless separately annotated"
+    }
+  },
+  {
+    "project": "prowler-cloud/prowler",
+    "retrievedAt": "2026-10-17T19:57:54.647Z",
+    "evidence": "GitHub maintainer metadata; not source implementation review or complete license analysis",
+    "repository": {
+      "url": "https://api.github.com/repos/prowler-cloud/prowler",
+      "status": 200,
+      "sha256": "770e44fdeebffe5a78c7275c276763a5d925076f04d1223d3af65f367dc7b502",
+      "archive": "C:\\Users\\kotar\\githubprojects\\NBRET\\.tools\\toolchain\\catalog\\prowler-cloud--prowler--repository.json",
+      "htmlUrl": "https://github.com/prowler-cloud/prowler",
+      "defaultBranch": "master",
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "archived": false,
+      "pushedAt": "2026-10-16T09:14:47Z"
+    },
+    "latestRelease": {
+      "url": "https://api.github.com/repos/prowler-cloud/prowler/releases/latest",
+      "status": 200,
+      "sha256": "cec6a2ac650ab5f7c138f45bf1597811f6f30283122f575c8d8da14f7d900d7e",
+      "archive": "C:\\Users\\kotar\\githubprojects\\NBRET\\.tools\\toolchain\\catalog\\prowler-cloud--prowler--latestRelease.json",
+      "tag": "5.45.0",
+      "publishedAt": "2026-10-15T10:43:19Z",
+      "htmlUrl": "https://github.com/prowler-cloud/prowler/releases/tag/5.45.0",
+      "prerelease": false,
+      "draft": false
+    },
+    "catalogPin": {
+      "url": "https://api.github.com/repos/prowler-cloud/prowler/commits/5.45.0",
+      "status": 200,
+      "ref": "5.45.0",
+      "commit": "bffc8844c1c9a3666e37a2ada4ee05f62e1446b0",
+      "retrievedAt": "2026-10-17T19:58:16.559Z",
+      "sha256": "722d5c4feccef94dbd79e1fc1e906b9105a4a5cb45259e4c081dc42c4fbe5670",
+      "archive": "C:\\Users\\kotar\\githubprojects\\NBRET\\.tools\\toolchain\\catalog\\prowler-cloud--prowler--pin.json",
+      "basis": "Latest non-prerelease release endpoint tag resolved to commit"
+    },
+    "licenseArtifact": {
+      "url": "https://raw.githubusercontent.com/prowler-cloud/prowler/bffc8844c1c9a3666e37a2ada4ee05f62e1446b0/LICENSE",
+      "sha256": "a0666bd9911fb4b653372b3721c500fdbd097ed1ca83466adb07e7ae7afb82e0",
+      "archive": "C:\\Users\\kotar\\githubprojects\\NBRET\\.tools\\toolchain\\catalog\\prowler-cloud--prowler--LICENSE.txt",
+      "status": "downloaded, unread unless separately annotated"
+    },
+    "sourceLicenseReview": {
+      "file": "LICENSE",
+      "commit": "bffc8844c1c9a3666e37a2ada4ee05f62e1446b0",
+      "url": "https://raw.githubusercontent.com/prowler-cloud/prowler/bffc8844c1c9a3666e37a2ada4ee05f62e1446b0/LICENSE",
+      "sha256": "a0666bd9911fb4b653372b3721c500fdbd097ed1ca83466adb07e7ae7afb82e0",
+      "status": "complete root-file reading; dependency/product terms separate",
+      "reviewedAt": "2026-10-17T20:33:32.421Z"
+    }
+  },
+  {
+    "project": "rapid7/metasploit-framework",
+    "retrievedAt": "2026-10-17T19:57:54.948Z",
+    "evidence": "GitHub maintainer metadata; not source implementation review or complete license analysis",
+    "repository": {
+      "url": "https://api.github.com/repos/rapid7/metasploit-framework",
+      "status": 200,
+      "sha256": "4e49add8b8675c36dbe8fa66fd7ea0266a2e0079ffc0d76fbb192d109505a0fe",
+      "archive": "C:\\Users\\kotar\\githubprojects\\NBRET\\.tools\\toolchain\\catalog\\rapid7--metasploit-framework--repository.json",
+      "htmlUrl": "https://github.com/rapid7/metasploit-framework",
+      "defaultBranch": "master",
+      "license": {
+        "key": "other",
+        "name": "Other",
+        "spdx_id": "NOASSERTION",
+        "url": null,
+        "node_id": "MDc6TGljZW5zZTA="
+      },
+      "archived": false,
+      "pushedAt": "2026-10-16T13:54:57Z"
+    },
+    "latestRelease": {
+      "url": "https://api.github.com/repos/rapid7/metasploit-framework/releases/latest",
+      "status": 404,
+      "sha256": "d9e37600354c1839f6b22cebde497e9d14750d2401a06c9a51b1619baf991613",
+      "archive": "C:\\Users\\kotar\\githubprojects\\NBRET\\.tools\\toolchain\\catalog\\rapid7--metasploit-framework--latestRelease.json"
+    },
+    "catalogPin": {
+      "url": "https://api.github.com/repos/rapid7/metasploit-framework/commits/master",
+      "status": 200,
+      "ref": "master",
+      "commit": "b22ce1fbae63e8caeb3a773366a6d3336bd66fb8",
+      "retrievedAt": "2026-10-17T19:58:16.825Z",
+      "sha256": "64b0c5c6c1f73ab240f4c243494f3698d8da40d1b8bf355d8bdb97d1a4724a97",
+      "archive": "C:\\Users\\kotar\\githubprojects\\NBRET\\.tools\\toolchain\\catalog\\rapid7--metasploit-framework--pin.json",
+      "basis": "No GitHub latest-release object; default branch snapshot, not a release claim"
+    },
+    "licenseArtifact": {
+      "url": "https://raw.githubusercontent.com/rapid7/metasploit-framework/b22ce1fbae63e8caeb3a773366a6d3336bd66fb8/LICENSE",
+      "sha256": "3188f34049114e64d1f9e40fc352c730507380bcbaf5b57686a8d55fb9e7b572",
+      "archive": "C:\\Users\\kotar\\githubprojects\\NBRET\\.tools\\toolchain\\catalog\\rapid7--metasploit-framework--LICENSE.txt",
+      "status": "downloaded, unread unless separately annotated"
+    }
+  },
+  {
+    "project": "AFLplusplus/AFLplusplus",
+    "retrievedAt": "2026-10-17T19:57:55.241Z",
+    "evidence": "GitHub maintainer metadata; not source implementation review or complete license analysis",
+    "repository": {
+      "url": "https://api.github.com/repos/AFLplusplus/AFLplusplus",
+      "status": 200,
+      "sha256": "6feda6a27c2c8879bf1966b853f2fe2c77077f5d25465dc393321e8e7e834d6a",
+      "archive": "C:\\Users\\kotar\\githubprojects\\NBRET\\.tools\\toolchain\\catalog\\AFLplusplus--AFLplusplus--repository.json",
+      "htmlUrl": "https://github.com/AFLplusplus/AFLplusplus",
+      "defaultBranch": "stable",
+      "license": {
+        "key": "agpl-3.0",
+        "name": "GNU Affero General Public License v3.0",
+        "spdx_id": "AGPL-3.0",
+        "url": "https://api.github.com/licenses/agpl-3.0",
+        "node_id": "MDc6TGljZW5zZTE="
+      },
+      "archived": false,
+      "pushedAt": "2026-10-16T07:25:46Z"
+    },
+    "latestRelease": {
+      "url": "https://api.github.com/repos/AFLplusplus/AFLplusplus/releases/latest",
+      "status": 200,
+      "sha256": "62f290ce8ace566c1b94b83e509dc44a5a414e31f3dc96901e6bd6ff277cdb55",
+      "archive": "C:\\Users\\kotar\\githubprojects\\NBRET\\.tools\\toolchain\\catalog\\AFLplusplus--AFLplusplus--latestRelease.json",
+      "tag": "v5.03c",
+      "publishedAt": "2026-09-02T09:41:42Z",
+      "htmlUrl": "https://github.com/AFLplusplus/AFLplusplus/releases/tag/v5.03c",
+      "prerelease": false,
+      "draft": false
+    },
+    "catalogPin": {
+      "url": "https://api.github.com/repos/AFLplusplus/AFLplusplus/commits/v5.03c",
+      "status": 200,
+      "ref": "v5.03c",
+      "commit": "dbaf11913c1b2702dee5b4d3dcfffd52f1defe50",
+      "retrievedAt": "2026-10-17T19:58:17.085Z",
+      "sha256": "874ee7414cf9d893bef4ad06afb9bbad7fc34b425da59f725ca9211ace93b911",
+      "archive": "C:\\Users\\kotar\\githubprojects\\NBRET\\.tools\\toolchain\\catalog\\AFLplusplus--AFLplusplus--pin.json",
+      "basis": "Latest non-prerelease release endpoint tag resolved to commit"
+    },
+    "licenseArtifact": {
+      "url": "https://raw.githubusercontent.com/AFLplusplus/AFLplusplus/dbaf11913c1b2702dee5b4d3dcfffd52f1defe50/LICENSE",
+      "sha256": "0d96a4ff68ad6d4b6f1f30f713b18d5184912ba8dd389f86aa7710db079abcb0",
+      "archive": "C:\\Users\\kotar\\githubprojects\\NBRET\\.tools\\toolchain\\catalog\\AFLplusplus--AFLplusplus--LICENSE.txt",
+      "status": "downloaded, unread unless separately annotated"
+    }
+  },
+  {
+    "project": "aquasecurity/trivy",
+    "retrievedAt": "2026-10-17T19:57:55.564Z",
+    "evidence": "GitHub maintainer metadata; not source implementation review or complete license analysis",
+    "repository": {
+      "url": "https://api.github.com/repos/aquasecurity/trivy",
+      "status": 200,
+      "sha256": "8067108a362dbcf48d160c4909280a7d54b69e8271ff99738b1f6999a9b467a6",
+      "archive": "C:\\Users\\kotar\\githubprojects\\NBRET\\.tools\\toolchain\\catalog\\aquasecurity--trivy--repository.json",
+      "htmlUrl": "https://github.com/aquasecurity/trivy",
+      "defaultBranch": "main",
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      },
+      "archived": false,
+      "pushedAt": "2026-10-16T12:48:58Z"
+    },
+    "latestRelease": {
+      "url": "https://api.github.com/repos/aquasecurity/trivy/releases/latest",
+      "status": 200,
+      "sha256": "ab1f07015af735e6b16848f70acd7b19fb55edd6b769a00cd41cb93065feeb83",
+      "archive": "C:\\Users\\kotar\\githubprojects\\NBRET\\.tools\\toolchain\\catalog\\aquasecurity--trivy--latestRelease.json",
+      "tag": "v0.76.0",
+      "publishedAt": "2026-10-14T11:45:44Z",
+      "htmlUrl": "https://github.com/aquasecurity/trivy/releases/tag/v0.76.0",
+      "prerelease": false,
+      "draft": false
+    },
+    "catalogPin": {
+      "url": "https://api.github.com/repos/aquasecurity/trivy/commits/v0.76.0",
+      "status": 200,
+      "ref": "v0.76.0",
+      "commit": "531360e5d2a88e732373f1614ba99a38738538b8",
+      "retrievedAt": "2026-10-17T19:58:17.333Z",
+      "sha256": "ab55c4589bc08473c0eb6bed19118a9bcb4ff9396e50664bb02d72ef81f40ded",
+      "archive": "C:\\Users\\kotar\\githubprojects\\NBRET\\.tools\\toolchain\\catalog\\aquasecurity--trivy--pin.json",
+      "basis": "Latest non-prerelease release endpoint tag resolved to commit"
+    },
+    "licenseArtifact": {
+      "url": "https://raw.githubusercontent.com/aquasecurity/trivy/531360e5d2a88e732373f1614ba99a38738538b8/LICENSE",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "archive": "C:\\Users\\kotar\\githubprojects\\NBRET\\.tools\\toolchain\\catalog\\aquasecurity--trivy--LICENSE.txt",
+      "status": "downloaded, unread unless separately annotated"
+    }
+  },
+  {
+    "project": "MobSF/Mobile-Security-Framework-MobSF",
+    "retrievedAt": "2026-10-17T19:57:55.918Z",
+    "evidence": "GitHub maintainer metadata; not source implementation review or complete license analysis",
+    "repository": {
+      "url": "https://api.github.com/repos/MobSF/Mobile-Security-Framework-MobSF",
+      "status": 200,
+      "sha256": "71b3f2f21eafd99a6d9f83dbf62164815820ff46e5ed0252764db041ec7356bb",
+      "archive": "C:\\Users\\kotar\\githubprojects\\NBRET\\.tools\\toolchain\\catalog\\MobSF--Mobile-Security-Framework-MobSF--repository.json",
+      "htmlUrl": "https://github.com/MobSF/Mobile-Security-Framework-MobSF",
+      "defaultBranch": "master",
+      "license": {
+        "key": "gpl-3.0",
+        "name": "GNU General Public License v3.0",
+        "spdx_id": "GPL-3.0",
+        "url": "https://api.github.com/licenses/gpl-3.0",
+        "node_id": "MDc6TGljZW5zZTk="
+      },
+      "archived": false,
+      "pushedAt": "2026-10-14T19:20:16Z"
+    },
+    "latestRelease": {
+      "url": "https://api.github.com/repos/MobSF/Mobile-Security-Framework-MobSF/releases/latest",
+      "status": 200,
+      "sha256": "961edfb994ab87ce8d86b88159b0dace389bf90998e16eb7b78b634470001381",
+      "archive": "C:\\Users\\kotar\\githubprojects\\NBRET\\.tools\\toolchain\\catalog\\MobSF--Mobile-Security-Framework-MobSF--latestRelease.json",
+      "tag": "v4.5.3",
+      "publishedAt": "2026-09-21T02:52:26Z",
+      "htmlUrl": "https://github.com/MobSF/Mobile-Security-Framework-MobSF/releases/tag/v4.5.3",
+      "prerelease": false,
+      "draft": false
+    },
+    "catalogPin": {
+      "url": "https://api.github.com/repos/MobSF/Mobile-Security-Framework-MobSF/commits/v4.5.3",
+      "status": 200,
+      "ref": "v4.5.3",
+      "commit": "d3869adc464b89db92a6a8a9e2dc13376f4a4c25",
+      "retrievedAt": "2026-10-17T19:58:17.657Z",
+      "sha256": "116ab3fd2ebf8b1d8796f76edc20efd47f171256e11bb6b4ab0d935bb1e62cc7",
+      "archive": "C:\\Users\\kotar\\githubprojects\\NBRET\\.tools\\toolchain\\catalog\\MobSF--Mobile-Security-Framework-MobSF--pin.json",
+      "basis": "Latest non-prerelease release endpoint tag resolved to commit"
+    },
+    "licenseArtifact": {
+      "url": "https://raw.githubusercontent.com/MobSF/Mobile-Security-Framework-MobSF/d3869adc464b89db92a6a8a9e2dc13376f4a4c25/LICENSE",
+      "sha256": "8f4ef73fa17c16c04fbf16cf2041db022b0c141609127285536dab67c25debdd",
+      "archive": "C:\\Users\\kotar\\githubprojects\\NBRET\\.tools\\toolchain\\catalog\\MobSF--Mobile-Security-Framework-MobSF--LICENSE.txt",
+      "status": "downloaded, unread unless separately annotated"
+    }
+  },
+  {
+    "project": "frida/frida",
+    "retrievedAt": "2026-10-17T19:57:56.207Z",
+    "evidence": "GitHub maintainer metadata; not source implementation review or complete license analysis",
+    "repository": {
+      "url": "https://api.github.com/repos/frida/frida",
+      "status": 200,
+      "sha256": "b23ec11df98b71a14a45efbdce16e9ca541176db26744e86ff6394d16c0b23c5",
+      "archive": "C:\\Users\\kotar\\githubprojects\\NBRET\\.tools\\toolchain\\catalog\\frida--frida--repository.json",
+      "htmlUrl": "https://github.com/frida/frida",
+      "defaultBranch": "main",
+      "license": {
+        "key": "other",
+        "name": "Other",
+        "spdx_id": "NOASSERTION",
+        "url": null,
+        "node_id": "MDc6TGljZW5zZTA="
+      },
+      "archived": false,
+      "pushedAt": "2026-10-17T10:54:44Z"
+    },
+    "latestRelease": {
+      "url": "https://api.github.com/repos/frida/frida/releases/latest",
+      "status": 200,
+      "sha256": "f3cc42659451b45d454e891e85fe3e6e369052740273828bb20f39d468a1834b",
+      "archive": "C:\\Users\\kotar\\githubprojects\\NBRET\\.tools\\toolchain\\catalog\\frida--frida--latestRelease.json",
+      "tag": "17.24.1",
+      "publishedAt": "2026-10-17T11:42:50Z",
+      "htmlUrl": "https://github.com/frida/frida/releases/tag/17.24.1",
+      "prerelease": false,
+      "draft": false
+    },
+    "catalogPin": {
+      "url": "https://api.github.com/repos/frida/frida/commits/17.24.1",
+      "status": 200,
+      "ref": "17.24.1",
+      "commit": "4bd95e6f33f90a41a28455ed71174252bbf49827",
+      "retrievedAt": "2026-10-17T19:58:17.912Z",
+      "sha256": "f9edaf1c92d920f04dc0606a758e492a6cd06236658e0ff203fc783f9ca8f7a2",
+      "archive": "C:\\Users\\kotar\\githubprojects\\NBRET\\.tools\\toolchain\\catalog\\frida--frida--pin.json",
+      "basis": "Latest non-prerelease release endpoint tag resolved to commit"
+    },
+    "licenseArtifact": {
+      "url": "https://raw.githubusercontent.com/frida/frida/4bd95e6f33f90a41a28455ed71174252bbf49827/COPYING",
+      "sha256": "5ea1544b51a28bc823b03159190d4108f9fb4f4ef912389f5137c6d295e175b2",
+      "archive": "C:\\Users\\kotar\\githubprojects\\NBRET\\.tools\\toolchain\\catalog\\frida--frida--COPYING.txt",
+      "status": "downloaded, unread unless separately annotated"
+    }
+  },
+  {
+    "project": "DefectDojo/django-DefectDojo",
+    "retrievedAt": "2026-10-17T19:57:56.670Z",
+    "evidence": "GitHub maintainer metadata; not source implementation review or complete license analysis",
+    "repository": {
+      "url": "https://api.github.com/repos/DefectDojo/django-DefectDojo",
+      "status": 200,
+      "sha256": "6777598831f6f4b2ba2818c8c40d0f9299fa1e9044f82c8ebbffb82516e19ffe",
+      "archive": "C:\\Users\\kotar\\githubprojects\\NBRET\\.tools\\toolchain\\catalog\\DefectDojo--django-DefectDojo--repository.json",
+      "htmlUrl": "https://github.com/DefectDojo/django-DefectDojo",
+      "defaultBranch": "master",
+      "license": {
+        "key": "bsd-3-clause",
+        "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+        "spdx_id": "BSD-3-Clause",
+        "url": "https://api.github.com/licenses/bsd-3-clause",
+        "node_id": "MDc6TGljZW5zZTU="
+      },
+      "archived": false,
+      "pushedAt": "2026-10-17T18:34:26Z"
+    },
+    "latestRelease": {
+      "url": "https://api.github.com/repos/DefectDojo/django-DefectDojo/releases/latest",
+      "status": 200,
+      "sha256": "d3e1fddf478c91945628ec858abc4edb7a2b636ed00d0b42e43202965545757d",
+      "archive": "C:\\Users\\kotar\\githubprojects\\NBRET\\.tools\\toolchain\\catalog\\DefectDojo--django-DefectDojo--latestRelease.json",
+      "tag": "3.4.101",
+      "publishedAt": "2026-10-14T16:06:18Z",
+      "htmlUrl": "https://github.com/DefectDojo/django-DefectDojo/releases/tag/3.4.101",
+      "prerelease": false,
+      "draft": false
+    },
+    "catalogPin": {
+      "url": "https://api.github.com/repos/DefectDojo/django-DefectDojo/commits/3.4.101",
+      "status": 200,
+      "ref": "3.4.101",
+      "commit": "10453d6c62d68eee6d6b0ecc0acde5d61d1dd02d",
+      "retrievedAt": "2026-10-17T19:58:18.282Z",
+      "sha256": "74da7699f448ab065d5f2258459b7a64d285f6d72f0fdca210288601e5df591c",
+      "archive": "C:\\Users\\kotar\\githubprojects\\NBRET\\.tools\\toolchain\\catalog\\DefectDojo--django-DefectDojo--pin.json",
+      "basis": "Latest non-prerelease release endpoint tag resolved to commit"
+    },
+    "sourceLicenseReview": {
+      "file": "LICENSE.md",
+      "commit": "10453d6c62d68eee6d6b0ecc0acde5d61d1dd02d",
+      "url": "https://raw.githubusercontent.com/DefectDojo/django-DefectDojo/10453d6c62d68eee6d6b0ecc0acde5d61d1dd02d/LICENSE.md",
+      "sha256": "7e6db954594a85fd09d22f9808b30f3701ce67129c1be949a25f9bb1b07cb780",
+      "status": "complete root-file reading; dependency/product terms separate",
+      "reviewedAt": "2026-10-17T20:33:32.421Z"
+    }
+  }
+]
