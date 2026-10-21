@@ -1,0 +1,560 @@
+{
+  "schemaVersion": 1,
+  "createdAt": "2026-10-21T08:26:26.733Z",
+  "branch": "kotaro/synapse-consolidation",
+  "scope": "owned local guided engineering rehearsal; no external target/provider/hidden custody",
+  "suitePath": "tracks/synapse-workflow/runs/morning-rehearsal-2026-10-21-v2",
+  "backupPath": "C:/Users/kotar/githubprojects/NBRET-consolidation-backups/2026-10-21-local-url-rehearsal",
+  "backupKind": "verified local byte copy; not offsite",
+  "status": "completed-guided-control-suite",
+  "outcomes": {
+    "secure": "not-demonstrated",
+    "ownershipGap": "demonstrated",
+    "requestsPerMode": [
+      21,
+      21
+    ],
+    "verifiedFindings": 0,
+    "listenerChecksPerMode": [
+      3,
+      3
+    ],
+    "reset": {
+      "differentGeneration": true,
+      "separateOrigins": true,
+      "freshEmptyBaselines": true,
+      "authority": "two fresh process-local target instances; empty account/order/mail baselines observed before registration, not merely renamed generations"
+    }
+  },
+  "validation": {
+    "command": "node --test test/lab-target.test.mjs test/lab-transport.test.mjs test/lab-evaluate.test.mjs test/lab-run.test.mjs test/lab-cli.test.mjs test/lab-output.test.mjs test/reader-model.test.mjs",
+    "workingDirectory": "tracks/synapse-workflow",
+    "tests": 72,
+    "pass": 72,
+    "fail": 0,
+    "skipped": 0,
+    "scope": "65 new local tests plus 7 existing pure reader-model regressions; no recursive historical/upstream/provider suites",
+    "researchRegister": {
+      "findings": 334,
+      "corrections": 203,
+      "hazards": 80,
+      "problems": 0,
+      "existingWarnings": 3
+    }
+  },
+  "independentReview": "docs/consolidation/rehearsal-independent-review-2026-10-21.md; Lyra independently re-derived saved v2 verdicts; same-host authorship, no protected custody",
+  "browserQA": {
+    "harness": "computeruse_desk",
+    "overviewAreas": 8,
+    "missingObservationMessage": false,
+    "proofLinkHasOutlineChevron": true,
+    "visibleNavigationDiagonals": 0,
+    "effectDrawerOpened": true,
+    "ownedTabsOpened": 2,
+    "ownedTabsClosed": 2,
+    "finalHarnessTabs": 0,
+    "finalWindowInventoryMatchesInitial": true
+  },
+  "limitations": [
+    "Scripted/guided narrow protocol, not autonomous general discovery.",
+    "Actual local SMTP, not external mail provider readiness.",
+    "Host coding sessions trusted, not OS confined.",
+    "Raw body digests retained; redacted bodies cannot independently recover raw content.",
+    "Selected ownership-read effect only; no general security or repaired-build claim.",
+    "No arbitrary helper shell, stopped lab, external client or paid provider executed."
+  ],
+  "sourceFiles": [
+    {
+      "path": "tracks/synapse-workflow/src/lab/cli.mjs",
+      "bytes": 5811,
+      "sha256": "e7304efa9f010b03b6eaa3d1c9251d6e139bee1c3bd005766df36d14cb640bfc"
+    },
+    {
+      "path": "tracks/synapse-workflow/src/lab/evaluate.mjs",
+      "bytes": 5239,
+      "sha256": "e3cba5a107f86be4011301a9a0a43ef1dbe3eb5e2a9e3565a0314bb73fff94b7"
+    },
+    {
+      "path": "tracks/synapse-workflow/src/lab/mail.mjs",
+      "bytes": 10419,
+      "sha256": "30eb428da73abf73d3656e112bc8376ee75ca2c7514c6e3d191af21450b74ec2"
+    },
+    {
+      "path": "tracks/synapse-workflow/src/lab/run.mjs",
+      "bytes": 34053,
+      "sha256": "9c92e6fa3dac7876fb54a57eddc4de23d6a6df3d14f543dc32d65c311a4d18e5"
+    },
+    {
+      "path": "tracks/synapse-workflow/src/lab/target.mjs",
+      "bytes": 10372,
+      "sha256": "3407532cead60da7ad03757f5a1f158065125a41c9613c1b8a8d391a14c862f0"
+    },
+    {
+      "path": "tracks/synapse-workflow/src/lab/transport.mjs",
+      "bytes": 12646,
+      "sha256": "53584dd6e0f2865eeb323e06ff5a9ee8ffec9db82be057397788595bb7967220"
+    },
+    {
+      "path": "tracks/synapse-workflow/test/lab-cli.test.mjs",
+      "bytes": 4597,
+      "sha256": "8570412fd90178865a46971ef60d47560cb176123ed67ba60c55439b1d89cb41"
+    },
+    {
+      "path": "tracks/synapse-workflow/test/lab-evaluate.test.mjs",
+      "bytes": 5273,
+      "sha256": "6a42dde6236586da9f111440c3790a35b55fd31b0bc6d56fba0efd2b32e9d78b"
+    },
+    {
+      "path": "tracks/synapse-workflow/test/lab-output.test.mjs",
+      "bytes": 2367,
+      "sha256": "2b2c95625d360a94f720706ef5a4ab0abf92e4d7b01c5199f10e1ce5f6b990c6"
+    },
+    {
+      "path": "tracks/synapse-workflow/test/lab-run.test.mjs",
+      "bytes": 16117,
+      "sha256": "28fcc094865cabbfb956f05c0ce682bf35774c0e164a7d18d8658d5361cf0401"
+    },
+    {
+      "path": "tracks/synapse-workflow/test/lab-target.test.mjs",
+      "bytes": 13981,
+      "sha256": "bc75dd38c83f7737a405a0bcec271938fdf17516a42304e294a640dda5260c69"
+    },
+    {
+      "path": "tracks/synapse-workflow/test/lab-transport.test.mjs",
+      "bytes": 12204,
+      "sha256": "ecc9a851f53fb920d87788f266da7084a878d368103088a3a06b5f1377bb10f8"
+    },
+    {
+      "path": "tracks/synapse-workflow/src/practice/reader-ui.js",
+      "bytes": 32208,
+      "sha256": "ca1213f37bc144795ff0d1d07bf857b143c64f43a9542dac50b207d35fe39911"
+    },
+    {
+      "path": "tracks/synapse-workflow/package.json",
+      "bytes": 2870,
+      "sha256": "b87b4e7467323acd43e53be0f30cf152678b4d676b2e4d8e8f65807960f6f148"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "tracks/synapse-workflow/runs/morning-rehearsal-2026-10-21-v2/ownership-gap/assessment-state.json",
+      "bytes": 35104,
+      "sha256": "573ff59336094c055008e3e1e543cbe8a45eab3b93682949411ccfffb4717834"
+    },
+    {
+      "path": "tracks/synapse-workflow/runs/morning-rehearsal-2026-10-21-v2/ownership-gap/assessment.html",
+      "bytes": 5759721,
+      "sha256": "f58565a4c5240b0e159c81a6882325378b1b0582cbf7147b9cd056e2fd7fe45f"
+    },
+    {
+      "path": "tracks/synapse-workflow/runs/morning-rehearsal-2026-10-21-v2/ownership-gap/evidence.json",
+      "bytes": 23023,
+      "sha256": "594a0d03bd655fd0000357f848bb984a04b1a1578c6a4cbb14d9bc6d418ad617"
+    },
+    {
+      "path": "tracks/synapse-workflow/runs/morning-rehearsal-2026-10-21-v2/ownership-gap/journal/0000000001.json",
+      "bytes": 1540,
+      "sha256": "021088680c3a0d5562b1ffe1659c827fc117b64c8d7c2a6d82d6aaa6929f76de"
+    },
+    {
+      "path": "tracks/synapse-workflow/runs/morning-rehearsal-2026-10-21-v2/ownership-gap/journal/0000000002.json",
+      "bytes": 1058,
+      "sha256": "31b1058cf1d03b56bc8a4c2149a5bb600b1a08dc2ab6b042ad904bc86ccd5c4a"
+    },
+    {
+      "path": "tracks/synapse-workflow/runs/morning-rehearsal-2026-10-21-v2/ownership-gap/journal/0000000003.json",
+      "bytes": 1064,
+      "sha256": "a8d1fbfa88c8fd303308318af4dad1113b97107a5dd1822134727b51a8930569"
+    },
+    {
+      "path": "tracks/synapse-workflow/runs/morning-rehearsal-2026-10-21-v2/ownership-gap/journal/0000000004.json",
+      "bytes": 617,
+      "sha256": "735e1015e1e73ee64a2631665df453debc01f4b5dedd0dcfe720a1daa99fda40"
+    },
+    {
+      "path": "tracks/synapse-workflow/runs/morning-rehearsal-2026-10-21-v2/ownership-gap/journal/0000000005.json",
+      "bytes": 1202,
+      "sha256": "24a8de9cdd735581db3e7751d96075b5f9b99feb43924b798b02209f62d10214"
+    },
+    {
+      "path": "tracks/synapse-workflow/runs/morning-rehearsal-2026-10-21-v2/ownership-gap/journal/0000000006.json",
+      "bytes": 1202,
+      "sha256": "b84940507c43a47c214e7068f49b50ea74170abd6ce69df131ab671b7a05c3a0"
+    },
+    {
+      "path": "tracks/synapse-workflow/runs/morning-rehearsal-2026-10-21-v2/ownership-gap/journal/0000000007.json",
+      "bytes": 554,
+      "sha256": "ce241dbd703104f1584be3dbdd304df83d0acc23b2ef6b2a04ea23d11821a4f9"
+    },
+    {
+      "path": "tracks/synapse-workflow/runs/morning-rehearsal-2026-10-21-v2/ownership-gap/journal/0000000008.json",
+      "bytes": 1349,
+      "sha256": "d99b386f621f87e74c2f7d31d98dcd9c2f3d34f696428c9e60ea93363b04e10b"
+    },
+    {
+      "path": "tracks/synapse-workflow/runs/morning-rehearsal-2026-10-21-v2/ownership-gap/journal/0000000009.json",
+      "bytes": 1080,
+      "sha256": "2af8617b3d49f1c293ca9b032ac6e3cdcc1eefb6c3ae6440c6cef906d68ded43"
+    },
+    {
+      "path": "tracks/synapse-workflow/runs/morning-rehearsal-2026-10-21-v2/ownership-gap/journal/0000000010.json",
+      "bytes": 935,
+      "sha256": "8078e796350c6baa7a0dd582af9b63edb4a2248ad18af2e97d0ac6bccb4d2219"
+    },
+    {
+      "path": "tracks/synapse-workflow/runs/morning-rehearsal-2026-10-21-v2/ownership-gap/journal/0000000011.json",
+      "bytes": 1308,
+      "sha256": "9f9086ce07b1b570f69035779bd2fea2c27e6d5f7a70bb521dcbb88287f491f7"
+    },
+    {
+      "path": "tracks/synapse-workflow/runs/morning-rehearsal-2026-10-21-v2/ownership-gap/journal/0000000012.json",
+      "bytes": 1350,
+      "sha256": "6f081ffb543e6735ac0d3f5c7c7e77b93bbdcaa88cd119100421b544efebe4a1"
+    },
+    {
+      "path": "tracks/synapse-workflow/runs/morning-rehearsal-2026-10-21-v2/ownership-gap/journal/0000000013.json",
+      "bytes": 1081,
+      "sha256": "93f1bbdd467c60a9751e2fe6d08fe24f4da27e175e945ca460eac0df724b67f0"
+    },
+    {
+      "path": "tracks/synapse-workflow/runs/morning-rehearsal-2026-10-21-v2/ownership-gap/journal/0000000014.json",
+      "bytes": 935,
+      "sha256": "9c4880bf6b450cb81bd57110630ea7713c6b34418ac54f0bcf8999a0f05d2a18"
+    },
+    {
+      "path": "tracks/synapse-workflow/runs/morning-rehearsal-2026-10-21-v2/ownership-gap/journal/0000000015.json",
+      "bytes": 1308,
+      "sha256": "13da19d74db69726d404b0ed02a45e1859e886c27835dafd6c3bf4fc69a987d7"
+    },
+    {
+      "path": "tracks/synapse-workflow/runs/morning-rehearsal-2026-10-21-v2/ownership-gap/journal/0000000016.json",
+      "bytes": 694,
+      "sha256": "3b2281c85df710fc9d2ffec4d8d47165115cad352b0e748415e0bf222e35e4df"
+    },
+    {
+      "path": "tracks/synapse-workflow/runs/morning-rehearsal-2026-10-21-v2/ownership-gap/journal/0000000017.json",
+      "bytes": 1153,
+      "sha256": "b93885c9e826968e7267ff6caa3d75ee7847f24bb1a12fe189aa6b8f7887c551"
+    },
+    {
+      "path": "tracks/synapse-workflow/runs/morning-rehearsal-2026-10-21-v2/ownership-gap/journal/0000000018.json",
+      "bytes": 1153,
+      "sha256": "6968226954ebfa15d965f0040aef6d145018dfb4c7c734a93333a3de12c28b6c"
+    },
+    {
+      "path": "tracks/synapse-workflow/runs/morning-rehearsal-2026-10-21-v2/ownership-gap/journal/0000000019.json",
+      "bytes": 1362,
+      "sha256": "f7b1d4d5b0cb8578c4e1290863d41e8a1140fbb9e74b8738d7cd28cb52eacd03"
+    },
+    {
+      "path": "tracks/synapse-workflow/runs/morning-rehearsal-2026-10-21-v2/ownership-gap/journal/0000000020.json",
+      "bytes": 1283,
+      "sha256": "a56c0c60820b105270283ee6d743370c9d1d1e5e8c49d13a720ad81a76d363d8"
+    },
+    {
+      "path": "tracks/synapse-workflow/runs/morning-rehearsal-2026-10-21-v2/ownership-gap/journal/0000000021.json",
+      "bytes": 1129,
+      "sha256": "ab544054647e70f73496e071977766b91157add4809d64b0833b2148ae09c8f0"
+    },
+    {
+      "path": "tracks/synapse-workflow/runs/morning-rehearsal-2026-10-21-v2/ownership-gap/journal/0000000022.json",
+      "bytes": 693,
+      "sha256": "b6268a189f44398ebd1acd374eced752003782ee641454f865d9a1f35fef9631"
+    },
+    {
+      "path": "tracks/synapse-workflow/runs/morning-rehearsal-2026-10-21-v2/ownership-gap/journal/0000000023.json",
+      "bytes": 822,
+      "sha256": "aeeff4ccda770325bb360a1397d74bb94b2b4b689143f303a7b2f94bc77b01db"
+    },
+    {
+      "path": "tracks/synapse-workflow/runs/morning-rehearsal-2026-10-21-v2/ownership-gap/journal/0000000024.json",
+      "bytes": 569,
+      "sha256": "aca261ce15477917ffbafd66387c0b096892c434c185e5247cb106de0418247d"
+    },
+    {
+      "path": "tracks/synapse-workflow/runs/morning-rehearsal-2026-10-21-v2/ownership-gap/journal/0000000025.json",
+      "bytes": 1283,
+      "sha256": "e449186185f50ff7d483f4ad216f0c20f379bc7cede19832ffea3f863d8cb40d"
+    },
+    {
+      "path": "tracks/synapse-workflow/runs/morning-rehearsal-2026-10-21-v2/ownership-gap/journal/0000000026.json",
+      "bytes": 1912,
+      "sha256": "e1599ec770f47dc3cdb80da2b669a61fc3152215e5feb9825592e236729d39e7"
+    },
+    {
+      "path": "tracks/synapse-workflow/runs/morning-rehearsal-2026-10-21-v2/ownership-gap/journal/0000000027.json",
+      "bytes": 676,
+      "sha256": "ad5c4965244cd3b4663e906ec6c5f7fa7ae4390050a28b6cad08b8428318c073"
+    },
+    {
+      "path": "tracks/synapse-workflow/runs/morning-rehearsal-2026-10-21-v2/ownership-gap/journal/0000000028.json",
+      "bytes": 1153,
+      "sha256": "4880b60da1771cac324459b8ac301e86b916a12ec24d1c9ea69cbef02152a64d"
+    },
+    {
+      "path": "tracks/synapse-workflow/runs/morning-rehearsal-2026-10-21-v2/ownership-gap/journal/0000000029.json",
+      "bytes": 1153,
+      "sha256": "88da244e9ff671d22b39eef81e98e6fad493e3ab94f4a3159f5f070b348a977e"
+    },
+    {
+      "path": "tracks/synapse-workflow/runs/morning-rehearsal-2026-10-21-v2/ownership-gap/journal/0000000030.json",
+      "bytes": 1283,
+      "sha256": "0933afaa13ec39d34c00a78e4eb0c61f9c37f0f2e652b5879fa46399c1c08c3b"
+    },
+    {
+      "path": "tracks/synapse-workflow/runs/morning-rehearsal-2026-10-21-v2/ownership-gap/journal/0000000031.json",
+      "bytes": 1129,
+      "sha256": "26415f70abf6fc86fc6f5c840f6c9a525008b79dac3e67c6f9b45f02bfb2654f"
+    },
+    {
+      "path": "tracks/synapse-workflow/runs/morning-rehearsal-2026-10-21-v2/ownership-gap/journal/0000000032.json",
+      "bytes": 1283,
+      "sha256": "f1fc489905adebd8d5257e8c49239ecb0fee51a96895e219bc44247b995e390f"
+    },
+    {
+      "path": "tracks/synapse-workflow/runs/morning-rehearsal-2026-10-21-v2/ownership-gap/journal/0000000033.json",
+      "bytes": 1912,
+      "sha256": "a1cc465a3008f2c1c2f236cfbb20a8b174663db2491030661b67661034880df1"
+    },
+    {
+      "path": "tracks/synapse-workflow/runs/morning-rehearsal-2026-10-21-v2/ownership-gap/journal/0000000034.json",
+      "bytes": 808,
+      "sha256": "a1c1e56ab54c1744b1ea8b1ca5b02c88c770f539b1811fc2251323eb02c43fe4"
+    },
+    {
+      "path": "tracks/synapse-workflow/runs/morning-rehearsal-2026-10-21-v2/ownership-gap/journal/0000000035.json",
+      "bytes": 1995,
+      "sha256": "ff766e90079aa1cf76b74ac576b503ab33ac0000d8c8d8da98a8a1c8589f89dd"
+    },
+    {
+      "path": "tracks/synapse-workflow/runs/morning-rehearsal-2026-10-21-v2/ownership-gap/journal/0000000036.json",
+      "bytes": 487,
+      "sha256": "9aa16c1c0e47fcf9c4449208b86b44ece530977eac3fced11af0e921e1ca16d0"
+    },
+    {
+      "path": "tracks/synapse-workflow/runs/morning-rehearsal-2026-10-21-v2/ownership-gap/journal/manifest.json",
+      "bytes": 1094,
+      "sha256": "f39de8bc461ef1c2a094c378140b53a60b7ad45948d6fb991a0034bd5f569958"
+    },
+    {
+      "path": "tracks/synapse-workflow/runs/morning-rehearsal-2026-10-21-v2/ownership-gap/summary.json",
+      "bytes": 12750,
+      "sha256": "33f5f1f8df259bb5461dc49439fb9d375b2478439e007dfda25e3c87e83b6875"
+    },
+    {
+      "path": "tracks/synapse-workflow/runs/morning-rehearsal-2026-10-21-v2/qa/consequence-and-effect-navigation.png",
+      "bytes": 141415,
+      "sha256": "107c9312e58fab6c11f86195902cfc3fb862b82422b3d743d4e8902ad0bbad8f"
+    },
+    {
+      "path": "tracks/synapse-workflow/runs/morning-rehearsal-2026-10-21-v2/secure/assessment-state.json",
+      "bytes": 28456,
+      "sha256": "37be9ea540422486ea6971d992d8000420b8b92be409802ceb5cdf51ad345dcc"
+    },
+    {
+      "path": "tracks/synapse-workflow/runs/morning-rehearsal-2026-10-21-v2/secure/assessment.html",
+      "bytes": 5753893,
+      "sha256": "216e102c0db442fb51a13b0a91e42cbe4a812c271aa288f4667d6cbc499d1293"
+    },
+    {
+      "path": "tracks/synapse-workflow/runs/morning-rehearsal-2026-10-21-v2/secure/evidence.json",
+      "bytes": 22687,
+      "sha256": "77828a3bbb03187d7022787b6b32f6fa861680fa97ca383bf9609c452c460fdc"
+    },
+    {
+      "path": "tracks/synapse-workflow/runs/morning-rehearsal-2026-10-21-v2/secure/journal/0000000001.json",
+      "bytes": 1533,
+      "sha256": "529794f470c7300dd6fd92eccab127861f49a65c1d19ec45303326c041a1cb56"
+    },
+    {
+      "path": "tracks/synapse-workflow/runs/morning-rehearsal-2026-10-21-v2/secure/journal/0000000002.json",
+      "bytes": 1058,
+      "sha256": "da0113642d22a1b51f970c90a313bb72aa5e92555e19969c5b40f1e86c06a7c5"
+    },
+    {
+      "path": "tracks/synapse-workflow/runs/morning-rehearsal-2026-10-21-v2/secure/journal/0000000003.json",
+      "bytes": 1064,
+      "sha256": "bd1b62535b7a9d3140c4d2b863edf560c4e27f69b4f78c3c8441a35e028d44e1"
+    },
+    {
+      "path": "tracks/synapse-workflow/runs/morning-rehearsal-2026-10-21-v2/secure/journal/0000000004.json",
+      "bytes": 617,
+      "sha256": "198b57f46d1d8eb2f8a028b05228a1e67d6983df578eb477579ffac072cc5de3"
+    },
+    {
+      "path": "tracks/synapse-workflow/runs/morning-rehearsal-2026-10-21-v2/secure/journal/0000000005.json",
+      "bytes": 1202,
+      "sha256": "559f4fcfbb1332267e034b637e7d84f653b6e72698351df7f1136ec6c6749933"
+    },
+    {
+      "path": "tracks/synapse-workflow/runs/morning-rehearsal-2026-10-21-v2/secure/journal/0000000006.json",
+      "bytes": 1202,
+      "sha256": "37ec990ad4d654ecedfb09b80f6be1ce6917ee6ef1c43897bd5ddac9679a9ff8"
+    },
+    {
+      "path": "tracks/synapse-workflow/runs/morning-rehearsal-2026-10-21-v2/secure/journal/0000000007.json",
+      "bytes": 554,
+      "sha256": "42f23117eaf4c59ed0608dff6daa5835df3b7021f930e66b5a772e61a46f610c"
+    },
+    {
+      "path": "tracks/synapse-workflow/runs/morning-rehearsal-2026-10-21-v2/secure/journal/0000000008.json",
+      "bytes": 1349,
+      "sha256": "33441711d8378de369046df6a37b1cc1afe9415f2afd36eb91a19be255ed492a"
+    },
+    {
+      "path": "tracks/synapse-workflow/runs/morning-rehearsal-2026-10-21-v2/secure/journal/0000000009.json",
+      "bytes": 1080,
+      "sha256": "4d716293d479ea85ad037e666db584a5a819af573f9a59a2ee1d5f63aa18806a"
+    },
+    {
+      "path": "tracks/synapse-workflow/runs/morning-rehearsal-2026-10-21-v2/secure/journal/0000000010.json",
+      "bytes": 935,
+      "sha256": "b57603114a30fc6447743b95131899242ab4ef8484dbf35e061173baef53b78d"
+    },
+    {
+      "path": "tracks/synapse-workflow/runs/morning-rehearsal-2026-10-21-v2/secure/journal/0000000011.json",
+      "bytes": 1308,
+      "sha256": "1d3056a9d208ce7f12b76cd46f8370462d3b617f8dce9d8b553bfd6863b06966"
+    },
+    {
+      "path": "tracks/synapse-workflow/runs/morning-rehearsal-2026-10-21-v2/secure/journal/0000000012.json",
+      "bytes": 1350,
+      "sha256": "ab91d403ef59a901724130e519e87762245e1c09e5b242774b80b349c35a4ca0"
+    },
+    {
+      "path": "tracks/synapse-workflow/runs/morning-rehearsal-2026-10-21-v2/secure/journal/0000000013.json",
+      "bytes": 1081,
+      "sha256": "b7fdb1499b683f4727b943aa76e8a5cf829b4e60b00e62da94ff23e2fbee9eac"
+    },
+    {
+      "path": "tracks/synapse-workflow/runs/morning-rehearsal-2026-10-21-v2/secure/journal/0000000014.json",
+      "bytes": 935,
+      "sha256": "91d5d89947d1f3104c0ac776f1b758caf1004416b22c844d7f6bc74fb1ab44c0"
+    },
+    {
+      "path": "tracks/synapse-workflow/runs/morning-rehearsal-2026-10-21-v2/secure/journal/0000000015.json",
+      "bytes": 1308,
+      "sha256": "21cd65e2b6ef758242d31d9949b542f8b9d83099033d606386210e81829c5f0d"
+    },
+    {
+      "path": "tracks/synapse-workflow/runs/morning-rehearsal-2026-10-21-v2/secure/journal/0000000016.json",
+      "bytes": 694,
+      "sha256": "51eadec19d70100cadd07fa3fb3a6327e403930f647b66548476233d5cf69b04"
+    },
+    {
+      "path": "tracks/synapse-workflow/runs/morning-rehearsal-2026-10-21-v2/secure/journal/0000000017.json",
+      "bytes": 1153,
+      "sha256": "de3f993eca640a2cb6c3beca66ae2e570a9a3eb0726fc6d01eaa444a322b1424"
+    },
+    {
+      "path": "tracks/synapse-workflow/runs/morning-rehearsal-2026-10-21-v2/secure/journal/0000000018.json",
+      "bytes": 1153,
+      "sha256": "9e8a2fcbf8efca662dcc83e1f93e8f5cf66797fb6238b8ccc475320304822b9a"
+    },
+    {
+      "path": "tracks/synapse-workflow/runs/morning-rehearsal-2026-10-21-v2/secure/journal/0000000019.json",
+      "bytes": 1362,
+      "sha256": "6564571aba44205abbde0d30e14b5cde35863879b3776a8ea15f5b33b0216da9"
+    },
+    {
+      "path": "tracks/synapse-workflow/runs/morning-rehearsal-2026-10-21-v2/secure/journal/0000000020.json",
+      "bytes": 1283,
+      "sha256": "71d69df12fecc380673ec773a6064d05c6a891e26d959aa3c23dc6f2d20647dc"
+    },
+    {
+      "path": "tracks/synapse-workflow/runs/morning-rehearsal-2026-10-21-v2/secure/journal/0000000021.json",
+      "bytes": 1129,
+      "sha256": "b09a50010fdf04d33e8588c0ab9c5257aedc6da318b16762338f42cb256aaa06"
+    },
+    {
+      "path": "tracks/synapse-workflow/runs/morning-rehearsal-2026-10-21-v2/secure/journal/0000000022.json",
+      "bytes": 693,
+      "sha256": "b8d45b49e004e5f7ea2f8f208ad8c76500e91e0ee1e4e3a10686ff3f158fc584"
+    },
+    {
+      "path": "tracks/synapse-workflow/runs/morning-rehearsal-2026-10-21-v2/secure/journal/0000000023.json",
+      "bytes": 822,
+      "sha256": "06fdc20c18a00ac5b4cbc59817523d849e89b7282e66e2cd345e5aff3112854a"
+    },
+    {
+      "path": "tracks/synapse-workflow/runs/morning-rehearsal-2026-10-21-v2/secure/journal/0000000024.json",
+      "bytes": 569,
+      "sha256": "bfe079eb69765158d150e110b6c84046c8f309b2e95d8a006bb0a92745f27acd"
+    },
+    {
+      "path": "tracks/synapse-workflow/runs/morning-rehearsal-2026-10-21-v2/secure/journal/0000000025.json",
+      "bytes": 1115,
+      "sha256": "c4d2b61d082ecf580112da0f57ab91df5124eff436f197a4eeb72120c97a4705"
+    },
+    {
+      "path": "tracks/synapse-workflow/runs/morning-rehearsal-2026-10-21-v2/secure/journal/0000000026.json",
+      "bytes": 1885,
+      "sha256": "6126b486e82af97b6d7f6519942f2901aa42555b39ffc99e89866dd707ead4b9"
+    },
+    {
+      "path": "tracks/synapse-workflow/runs/morning-rehearsal-2026-10-21-v2/secure/journal/0000000027.json",
+      "bytes": 680,
+      "sha256": "30b5314b0df4bfa891e03136eca77eed2f3dfebf50328ab113f2b849eaf4269e"
+    },
+    {
+      "path": "tracks/synapse-workflow/runs/morning-rehearsal-2026-10-21-v2/secure/journal/0000000028.json",
+      "bytes": 1153,
+      "sha256": "527477881aa21ca49c34e767f4650ef428b59869e917c891a6f334728d801aa2"
+    },
+    {
+      "path": "tracks/synapse-workflow/runs/morning-rehearsal-2026-10-21-v2/secure/journal/0000000029.json",
+      "bytes": 1153,
+      "sha256": "93cf25910680e296ec66ca9f1b623a9d672e435df7467d6dd40b015583eb8bb6"
+    },
+    {
+      "path": "tracks/synapse-workflow/runs/morning-rehearsal-2026-10-21-v2/secure/journal/0000000030.json",
+      "bytes": 1283,
+      "sha256": "fadac3e1d316fc3e1d83d5556d578e38972d93bd1ca968391d2a2cd34f3cb57d"
+    },
+    {
+      "path": "tracks/synapse-workflow/runs/morning-rehearsal-2026-10-21-v2/secure/journal/0000000031.json",
+      "bytes": 1129,
+      "sha256": "59d2863d1993d16ba797c6985408675036c478e8d4315e04d2a589bd83e477ff"
+    },
+    {
+      "path": "tracks/synapse-workflow/runs/morning-rehearsal-2026-10-21-v2/secure/journal/0000000032.json",
+      "bytes": 1115,
+      "sha256": "cff4a3cb6ae84e2ef2af5c2bf048d4d3ffc0e0f895e713fba9da33b3099ad1ba"
+    },
+    {
+      "path": "tracks/synapse-workflow/runs/morning-rehearsal-2026-10-21-v2/secure/journal/0000000033.json",
+      "bytes": 1885,
+      "sha256": "f190399dd215494fcfcbf03b7deaf178d1f13cd699f5f8f10829c28b814a182c"
+    },
+    {
+      "path": "tracks/synapse-workflow/runs/morning-rehearsal-2026-10-21-v2/secure/journal/0000000034.json",
+      "bytes": 808,
+      "sha256": "19b95adcc2c97de6187f471517e9064346bb1e759637daa7cb270c37ef85fdf2"
+    },
+    {
+      "path": "tracks/synapse-workflow/runs/morning-rehearsal-2026-10-21-v2/secure/journal/0000000035.json",
+      "bytes": 1988,
+      "sha256": "6ed1a1aec4f1172f9756508c1f5a700af989a6652639598b50bcf9a6dcc0c73b"
+    },
+    {
+      "path": "tracks/synapse-workflow/runs/morning-rehearsal-2026-10-21-v2/secure/journal/0000000036.json",
+      "bytes": 487,
+      "sha256": "0db298a4e725710ea54724ba54345f87c498515357e9ee0a30ea8a518784400e"
+    },
+    {
+      "path": "tracks/synapse-workflow/runs/morning-rehearsal-2026-10-21-v2/secure/journal/manifest.json",
+      "bytes": 1087,
+      "sha256": "4c20d7b7e496343e672becaf0adb40deb4fa0f94ae15f04ef571a02dc66f0c68"
+    },
+    {
+      "path": "tracks/synapse-workflow/runs/morning-rehearsal-2026-10-21-v2/secure/summary.json",
+      "bytes": 12617,
+      "sha256": "a071bdb1dad1182e01a8346a1c1c4a79b13205fae46116d2ed56d6fe7c92c7cb"
+    },
+    {
+      "path": "tracks/synapse-workflow/runs/morning-rehearsal-2026-10-21-v2/suite.json",
+      "bytes": 27820,
+      "sha256": "a18f9aa7a7d4c249562151eb6ca44cd36d423b5c404dd80bba5a5b2382789355"
+    }
+  ]
+}

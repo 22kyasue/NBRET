@@ -2,6 +2,8 @@
 
 Cass integrating Thistle and Ginger, 2026-10-21. This is source-grounded design synthesis, not a runtime comparison, target assessment or implemented new platform. [Current decisions](decision-reconciliation-2026-10-21.md) resolve the prior interview; [detailed studies](../../tracks/synapse-workflow/docs/research/security-landscape/repository-reviews-20261021/README.md) preserve exact source pins and limitations.
 
+Later sequencing revision: after Kotaro asked for a deeper rethink, Cass, Thistle and Ginger recommended a minimal recorded operational URL-to-report slice before generalizing the experiment schema. Kotaro then authorized implementing all eight stages locally. That guided rehearsal is now implemented and exercised; see the [overnight handoff](overnight-handoff-2026-10-21.md). The contract-first proposal below is historical, not the current next build instruction. The broad lab vision and controlled-comparison requirements remain applicable.
+
 ## The product direction is already clear
 
 Build a reusable security research lab. Humans and agents can propose hypotheses, choose or generate a suitable experiment environment, investigate within an admitted boundary, collect evidence, challenge conclusions, and retain what was learned. E-commerce/URL-only self-registration is an initial scenario, not the permanent platform schema. The agent may author new test helpers in the lab; it does not silently rewrite the platform, scorer or permissions.

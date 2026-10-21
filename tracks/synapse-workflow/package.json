@@ -8,6 +8,8 @@
     "node": "^22.19.0 || ^24.11.0 || >=26.0.0"
   },
   "scripts": {
+    "synapse:lab": "node src/lab/cli.mjs",
+    "synapse:lab:test": "node --test test/lab-target.test.mjs test/lab-transport.test.mjs test/lab-evaluate.test.mjs test/lab-run.test.mjs test/lab-cli.test.mjs test/lab-output.test.mjs",
     "synapse:demo": "node src/practice/demo.mjs",
     "synapse:workbench": "node src/practice/workbench-server.mjs",
     "synapse:session": "node src/practice/session-cli.mjs",

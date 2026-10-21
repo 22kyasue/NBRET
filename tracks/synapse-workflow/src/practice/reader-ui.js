@@ -44,6 +44,13 @@ function decorate(root){
   root.querySelectorAll('.scope-link,.overview-bottom button,.report-foot button,.issue-summary>button').forEach(b=>b.insertAdjacentHTML('beforeend',icon('chevron')));
   const inspect=root.querySelector('.inspect-button');if(inspect)inspect.innerHTML=`${icon('search')}<span>Inspect supporting details</span>${icon('chevron')}`;
   root.querySelectorAll('.more-details>button').forEach((b,n)=>{b.querySelector('.detail-symbol').innerHTML=icon(n?'search':'tool');b.lastElementChild.innerHTML=icon('chevron');});
+  // Insert proof details before decorating links so its internal navigation gets
+  // the same outline chevron as every other drill-down control.
+  if(issue!==null&&current().proof&&root.querySelector('.issue-heading')){
+    const p=current().proof,section=document.createElement('section');section.className='proof-status';
+    section.innerHTML=`<h3>Effect verification</h3><p><strong>${e(p.status)}</strong></p><p>${e(p.nextAction)}</p>${link('proof','Inspect effect evidence','Specific predicate, controls and missing requirements')}`;
+    root.querySelector('.issue-heading').after(section);
+  }
   root.querySelectorAll('.drill').forEach(b=>{
     const type=b.dataset.open,name=type==='repair'||type==='engineering'?'tool':type==='identity'?'user':type==='checks'||type==='retest'?'shield':type==='history'?'layers':'document';
     b.insertAdjacentHTML('afterbegin',`<span class="drill-icon">${icon(name)}</span>`);b.lastElementChild.innerHTML=icon('chevron');
@@ -56,11 +63,6 @@ function decorate(root){
   const back=root.querySelector('#layer-back');if(back)back.innerHTML=icon('back')+'Back';
   const close=root.querySelector('#layer-close');if(close)close.innerHTML=icon('close');
   const mapInfo=root.querySelector('[data-open="map-explain"]');if(mapInfo)mapInfo.innerHTML=icon('info');
-  if(issue!==null&&current().proof&&root.querySelector('.issue-heading')){
-    const p=current().proof,section=document.createElement('section');section.className='proof-status';
-    section.innerHTML=`<h3>Effect verification</h3><p><strong>${e(p.status)}</strong></p><p>${e(p.nextAction)}</p>${link('proof','Inspect effect evidence','Specific predicate, controls and missing requirements')}`;
-    root.querySelector('.issue-heading').after(section);
-  }
   if(issue!==null&&root.querySelector('.issue-summary')){
     const obs=observations(current().basisEvidenceIds)[0];
     if(obs){const strip=document.createElement('div');strip.className='evidence-context';strip.innerHTML=`<div>${icon('user')}<section><small>Acting account</small><b>${e(obs.identity?.principal||'Not recorded')}</b><span>${e(obs.identity?.tenant||'No organization')} · ${e(obs.identity?.role||'Unknown role')}</span></section></div><div>${icon('browser')}<section><small>Request examined</small><b>${e(obs.request?.method||'')} ${e(obs.request?.path||'Not recorded')}</b></section></div><div>${icon('response')}<section><small>Recorded response</small><b>${obs.response?.status===undefined?'No response':`HTTP ${e(obs.response.status)}`}</b><span>${e(obs.outcome||'Unknown completeness')}</span></section></div>`;root.querySelector('.issue-summary').after(strip);}

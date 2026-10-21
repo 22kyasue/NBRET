@@ -8,7 +8,7 @@ Owner: Kotaro. Consolidated by Cass, 2026-10-20 Pacific / 2026-10-21 UTC.
 
 Understand ARTEX deeply, preserve all accumulated context and implementation work, reconcile the other branch and new Kensei/Synapse information, and define a useful owned testing environment/benchmark. Improve both software and Kotaro's investigation/review skills. Keep explanations beginner-friendly and in English.
 
-The latest request is consolidation and a concrete plan. A discussion of a hidden-vulnerability benchmark is not a measured result. Do not quietly generate hidden answers in the same unrestricted context and call the resulting test blind.
+Kotaro subsequently authorized building and exercising all eight URL-to-report stages while he sleeps, using available sessions and Lyra for independent review. A complete **guided local rehearsal** now exists under `tracks/synapse-workflow/src/lab`. Read the [overnight handoff](docs/consolidation/overnight-handoff-2026-10-21.md) and [morning runbook](tracks/synapse-workflow/docs/synapse/local-lab-runbook.md). A discussion of a hidden-vulnerability benchmark is not a measured result. Do not quietly generate hidden answers in the same unrestricted context and call the resulting test blind.
 
 ## Repository layout
 
@@ -23,7 +23,7 @@ There is no unified merged runtime yet. Root and track CLIs are separate impleme
 
 ## Read next
 
-Current design conversation: [testing-environment interview decisions](docs/consolidation/testing-environment-interview.md). Confirmed: tool selection/discovery improvement, level-3 findings, autonomous within admitted scope, URL-only starting access with self-registration, dedicated readable test inbox. No strict deadline. Continue the interview before selecting/building the environment.
+Prior design conversation: [testing-environment interview decisions](docs/consolidation/testing-environment-interview.md). Confirmed: tool selection/discovery improvement, level-3 findings, autonomous within admitted scope, URL-only starting access with self-registration, dedicated readable test inbox. No strict deadline. Do not restart the interview. Current local implementation uses actual loopback HTTP and SMTP, a dedicated authenticated local inbox, ordinary registration, an exact order-read ownership effect checker, journal, canonical reader and verified teardown. It does not establish external mailbox readiness, arbitrary-target support, a general autonomous investigator or OS isolation.
 
 **Do not repeat settled interview questions.** Read [decision reconciliation](docs/consolidation/decision-reconciliation-2026-10-21.md) and the October 18 discovery record first. New direction: a reusable security research lab; humans/agents propose hypotheses and strategies, agents may author bounded lab test helpers, and the platform supports both supplied targets and generated experiments. Platform/scorer/permission self-modification is not included. Current research requests: cloudflare/security-audit-skill (Thistle), Hack-with-Github/Awesome-Hacking (Cass), karpathy/autoresearch (Ginger), source reading only.
 
@@ -49,7 +49,7 @@ Current design conversation: [testing-environment interview decisions](docs/cons
 
 The local pre-change backup is recorded in [preservation receipt](docs/consolidation/preservation-receipt-2026-10-20.json). It includes verified Git bundles for both original branches, byte copies of nonignored working-tree files and Kensei's non-secret inspection/source artifacts. Ignored runs/tools/dependencies/env/logs remain at their original locations; nested scratch directories are explicit in the backup manifest. It is a local backup, not cloud/offsite redundancy.
 
-Next: choose and verify an actual investigator/key boundary, then implement a public data-only run manifest and an independent scorer contract before creating held-out target variants. Use the current practice environment for openly guided learning meanwhile. No new paid service or production infrastructure is required by this plan.
+Next: run the complete guided rehearsal together using the morning runbook, then identify the first measured gap before widening capabilities. Latest inspectable outputs are `tracks/synapse-workflow/runs/morning-rehearsal-2026-10-21-v2/` (ignored local evidence, retained separately from Git). Both secure and explicit vulnerable controls completed: selected foreign read denied versus exact foreign object disclosed, with actual delivered verification mail and three refused listener connections after stop. Seven named peers supplied implementation, tests or review; Lyra independently re-derived results from saved evidence. Shared-host corroboration does not populate `verifiedFindings`. Actual investigator/key separation, external mailbox integration and matched comparative effectiveness remain future gates. No new paid service or production infrastructure is required by this local rehearsal.
 
 ## Completed branch transition
 
