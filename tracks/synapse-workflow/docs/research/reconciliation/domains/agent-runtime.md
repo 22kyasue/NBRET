@@ -1,6 +1,6 @@
 # AI agent runtimes and SDKs: permissions, sandboxing, budgets, memory
 
-Generated from `register/*.json` by `build-register.mjs`; do not edit by hand. 29 findings, 46 related corrections, 10 hazards.
+Generated from `register/*.json` by `build-register.mjs`; do not edit by hand. 30 findings, 46 related corrections, 10 hazards.
 
 Evidence strength, strongest first: integrated-lab (real tool run) > component-lab (fixture/mock run) > source-trace (code read) > public-doc > vendor-claim > synthesis. Read the cited lines before repeating a claim to a client.
 
@@ -32,6 +32,7 @@ Evidence strength, strongest first: integrated-lab (real tool run) > component-l
 | [Reference Postgres/Redis/S3 session stores lack principal binding, UUID dedup and TTL](#agent-runtimereference-stores-no-principal-or-dedup) | component-lab | operations, evidence |
 | [Agent session store keys derive from a path sanitizer; two different dirs collided](#agent-runtimesession-key-not-tenant-identity) | component-lab | operations, evidence, authorization |
 | [ARTEX CLI bridge restrictions do not govern ARTEX engine tools](#agent-runtimeartex-cli-bridge-not-engine-permission-boundary) | source-trace | authorization, operations, ai-evaluation |
+| [ARTEX confirmed fact status does not require evidence at fact insertion](#agent-runtimeartex-confirmed-fact-is-declaration) | source-trace | evidence, ai-evaluation, reporting |
 | [Autoresearch 300 seconds counts selected training steps, not total process time](#agent-runtimeautoresearch-time-budget-not-hard-run-deadline) | source-trace | operations, ai-evaluation |
 | [SDK resume copies auth config minus refresh token; cleanup ignores removal errors](#agent-runtimecredential-copy-cleanup-not-deletion) | source-trace | operations, evidence |
 | [Injection detector runs after the tool acted; the tool filter is a substring match](#agent-runtimeinjection-defenses-not-enforcement) | source-trace | authorization, operations, ai-evaluation |
@@ -206,6 +207,18 @@ ARTEX's worker selects SDK bypass permission mode while attaching its own option
 **Limits:** Pinned source reading only; active rules, SDK behavior and runtime enforcement untested. No escape or compromise observed.
 
 **Sources:** [security-landscape/art-external-platforms-20261020.md:39](../../security-landscape/art-external-platforms-20261020.md#L39)
+
+### agent-runtimeartex-confirmed-fact-is-declaration
+
+**`agent-runtime.artex-confirmed-fact-is-declaration`: ARTEX confirmed fact status does not require evidence at fact insertion** (source-trace)
+
+At ARTEX fdfb7a17b7da5e2de716c0e98475ec77a41c64c6, recordOneFact requires a nonempty summary, accepts absent evidence and confidence, and inserts a KindFact node with status confirmed. That status can represent an upstream declaration rather than independently corroborated target evidence.
+
+**Do:** Keep prior research guidance separate from target observations and independently evaluated effects. Preserve native status as an upstream label; do not insert research cards as confirmed observations or promote imported facts to verified findings without appropriate evidence and controls.
+
+**Limits:** Pinned source review only. This describes fact insertion, not every vulnerability finding workflow, a runtime false report, an observed exploit or overall ARTEX effectiveness.
+
+**Sources:** [security-landscape/artex-core-integration-20261021.md:7](../../security-landscape/artex-core-integration-20261021.md#L7)
 
 ### agent-runtimeautoresearch-time-budget-not-hard-run-deadline
 

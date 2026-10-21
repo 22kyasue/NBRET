@@ -15890,6 +15890,44 @@
       "contrary": [],
       "receipts": [],
       "slice": "repository-reviews-20261021"
+    },
+    {
+      "id": "agent-runtime.artex-confirmed-fact-is-declaration",
+      "domain": "agent-runtime",
+      "title": "ARTEX confirmed fact status does not require evidence at fact insertion",
+      "claim": "At ARTEX fdfb7a17b7da5e2de716c0e98475ec77a41c64c6, recordOneFact requires a nonempty summary, accepts absent evidence and confidence, and inserts a KindFact node with status confirmed. That status can represent an upstream declaration rather than independently corroborated target evidence.",
+      "implication": "Keep prior research guidance separate from target observations and independently evaluated effects. Preserve native status as an upstream label; do not insert research cards as confirmed observations or promote imported facts to verified findings without appropriate evidence and controls.",
+      "limits": "Pinned source review only. This describes fact insertion, not every vulnerability finding workflow, a runtime false report, an observed exploit or overall ARTEX effectiveness.",
+      "strength": "source-trace",
+      "questions": [
+        "Does an ARTEX confirmed fact require supporting evidence?",
+        "Can I preload research into ARTEX facts or treat its native status as independently verified?"
+      ],
+      "terms": [
+        "ARTEX",
+        "recordOneFact",
+        "record_fact",
+        "confirmed",
+        "fact",
+        "research integration",
+        "evidence",
+        "verification"
+      ],
+      "stages": [
+        "evidence",
+        "ai-evaluation",
+        "reporting"
+      ],
+      "sources": [
+        {
+          "path": "docs/research/security-landscape/artex-core-integration-20261021.md",
+          "line": 7,
+          "quote": "Evidence and confidence are optional; the stored fact node is created with status `confirmed`."
+        }
+      ],
+      "contrary": [],
+      "receipts": [],
+      "slice": "artex-core-reevaluation-20261021"
     }
   ]
 }
