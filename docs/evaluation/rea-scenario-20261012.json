@@ -1,0 +1,21 @@
+{
+  "reaVersion": "6.4.0",
+  "operation": "capture_browser_scenario",
+  "request": {
+    "a": 20,
+    "b": 5
+  },
+  "response": {
+    "result": 25
+  },
+  "pairedTransactionId": "request-3",
+  "rawBodyCaptureVerified": true,
+  "completeness": {
+    "status": "incomplete",
+    "equality_eligible": false,
+    "missing_sections": [
+      "events"
+    ],
+    "truncated_sections": []
+  }
+}

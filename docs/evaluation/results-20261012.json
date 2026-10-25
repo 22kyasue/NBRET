@@ -1,0 +1,268 @@
+{
+  "date": "2026-10-12",
+  "baselineCommit": "0fcdfa667d1276cfe7e9834ae87d42d917251dfb",
+  "environment": {
+    "node": "v24.14.0",
+    "rea": "6.4.0",
+    "playwright": "1.64.0"
+  },
+  "cases": [
+    {
+      "name": "server-sum",
+      "output": 25,
+      "requests": [
+        {
+          "request": "{\"a\":20,\"b\":5}",
+          "response": {
+            "result": 25
+          },
+          "omitted": null,
+          "hasInitiator": true,
+          "cache": false
+        }
+      ]
+    },
+    {
+      "name": "changed-input",
+      "output": 10,
+      "requests": [
+        {
+          "request": "{\"a\":7,\"b\":3}",
+          "response": {
+            "result": 10
+          },
+          "omitted": null,
+          "hasInitiator": true,
+          "cache": false
+        }
+      ]
+    },
+    {
+      "name": "different-server-implementation-same-observation",
+      "output": 25,
+      "requests": [
+        {
+          "request": "{\"a\":20,\"b\":5}",
+          "response": {
+            "result": 25
+          },
+          "omitted": null,
+          "hasInitiator": true,
+          "cache": false
+        }
+      ]
+    },
+    {
+      "name": "client-only",
+      "output": 25,
+      "requests": []
+    },
+    {
+      "name": "storage-only",
+      "output": 25,
+      "requests": []
+    },
+    {
+      "name": "http-cache-first",
+      "output": 25,
+      "requests": [
+        {
+          "request": null,
+          "response": {
+            "result": 25
+          },
+          "omitted": null,
+          "hasInitiator": true,
+          "cache": false
+        }
+      ]
+    },
+    {
+      "name": "http-cache-repeat",
+      "output": 25,
+      "requests": [
+        {
+          "request": null,
+          "response": {
+            "result": 25
+          },
+          "omitted": null,
+          "hasInitiator": true,
+          "cache": true
+        }
+      ]
+    },
+    {
+      "name": "cross-origin-api",
+      "output": 25,
+      "requests": [
+        {
+          "request": null,
+          "response": null,
+          "omitted": "out-of-scope",
+          "hasInitiator": false,
+          "cache": false
+        }
+      ]
+    },
+    {
+      "name": "plain-text-body",
+      "output": "answer=25",
+      "requests": [
+        {
+          "request": null,
+          "response": null,
+          "omitted": "non-structured-payload",
+          "hasInitiator": true,
+          "cache": false
+        }
+      ]
+    },
+    {
+      "name": "application-encoded-payload",
+      "output": 25,
+      "requests": [
+        {
+          "request": "{\"packet\":\"eyJhIjoyMCwiYiI6NX0=\"}",
+          "response": {
+            "packet": "MjU="
+          },
+          "omitted": null,
+          "hasInitiator": true,
+          "cache": false
+        }
+      ]
+    }
+  ],
+  "delayed": {
+    "originatingAction": 11,
+    "unrelatedAction": 12,
+    "capturedActionId": 12,
+    "correctlyPairedBody": {
+      "result": 25
+    }
+  },
+  "sameObservationDifferentImplementation": true,
+  "rea": {
+    "capturedRequests": 19,
+    "postCount": 19,
+    "hasInitiator": true,
+    "hasRequestAndResponseShapes": true,
+    "completeness": {
+      "status": "policy_filtered",
+      "conditions": [
+        "attach_limited",
+        "policy_filtered"
+      ],
+      "policy_filtered_sections": [
+        "accessibility",
+        "console_text",
+        "scripts",
+        "storage_keys",
+        "websocket_shapes"
+      ],
+      "attach_limited_sections": [
+        "console_events",
+        "metadata",
+        "network_requests",
+        "websocket_connections",
+        "websocket_frames"
+      ],
+      "truncated_sections": [],
+      "unavailable_sections": [],
+      "excluded": [
+        {
+          "section": "accessibility",
+          "reason": "not_approved",
+          "count": 5
+        },
+        {
+          "section": "console_text",
+          "reason": "not_approved",
+          "count": null
+        },
+        {
+          "section": "scripts",
+          "reason": "unattributed_origin",
+          "count": 91
+        },
+        {
+          "section": "storage_keys",
+          "reason": "not_approved",
+          "count": null
+        },
+        {
+          "section": "websocket_shapes",
+          "reason": "not_approved",
+          "count": null
+        }
+      ],
+      "dropped_events": {
+        "scripts": 0,
+        "network_requests": 0,
+        "console_events": 0,
+        "websocket_connections": 0,
+        "websocket_frames": 0,
+        "webmcp_tools": 0,
+        "timeline_events": 0,
+        "total": 0
+      }
+    }
+  },
+  "timingSamples": [
+    {
+      "enabled": false,
+      "operationMs": 19.572599999999966,
+      "persistMs": 0.013999999999896318
+    },
+    {
+      "enabled": true,
+      "operationMs": 23.055499999999938,
+      "persistMs": 2.8257999999998447
+    },
+    {
+      "enabled": true,
+      "operationMs": 21.683700000000044,
+      "persistMs": 1.978900000000067
+    },
+    {
+      "enabled": false,
+      "operationMs": 15.278400000000147,
+      "persistMs": 0.0037999999999556167
+    },
+    {
+      "enabled": false,
+      "operationMs": 14.819300000000112,
+      "persistMs": 0.0041999999998552084
+    },
+    {
+      "enabled": true,
+      "operationMs": 21.001800000000003,
+      "persistMs": 2.0118999999999687
+    },
+    {
+      "enabled": true,
+      "operationMs": 19.85299999999961,
+      "persistMs": 2.1702000000000226
+    },
+    {
+      "enabled": false,
+      "operationMs": 17.629100000000108,
+      "persistMs": 0.005699999999706051
+    },
+    {
+      "enabled": false,
+      "operationMs": 16.873599999999897,
+      "persistMs": 0.004899999999906868
+    },
+    {
+      "enabled": true,
+      "operationMs": 25.990900000000238,
+      "persistMs": 2.558799999999792
+    }
+  ],
+  "limitations": [
+    "Synthetic local fixtures, no AI reconstruction/token benchmark.",
+    "Timing samples are local and not general performance claims."
+  ]
+}

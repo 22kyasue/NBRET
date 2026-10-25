@@ -2,6 +2,8 @@
 
 **Network Based Reverse Engineering Tool**
 
+事業パートナー向けの概要は [共同検証の紹介資料](docs/partner-brief.ja.md) をご覧ください。現在は技術プロトタイプです。[共有前の確認結果](docs/share-readiness-20261014.md) に実測結果と残る条件をまとめています。
+
 Webサイトの「入力 → 通信 → 応答 → 表示」と、実行されたJavaScriptの証拠をまとめるローカルツールです。既存 `/copy` の画面・CSS抽出に、送受信の対応付けと公式REA CLIの観察を統合しました。LLM APIは呼びません。証拠を使った分析・再実装をAIに依頼する場合は、そのAIの利用料が別に発生します。
 
 ## 最初に動かす
