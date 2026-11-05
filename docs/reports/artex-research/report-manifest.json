@@ -1,0 +1,18 @@
+{
+  "builtAt": "2026-10-22T03:27:36.901Z",
+  "artifact": "index.html",
+  "bytes": 9794549,
+  "sha256": "ad0cbc422e617791482692216ce3b2091dc5511bd6da2ab45596db6c58677185",
+  "researchFiles": 1136,
+  "researchMarkdown": 300,
+  "embeddedSources": 393,
+  "projectDossiers": 32,
+  "explicitExtensionRoutes": 32,
+  "findings": 335,
+  "corrections": 203,
+  "hazards": 80,
+  "freshPrimaryExcerpts": 25,
+  "upstreamChecks": 19,
+  "upstreamMatched": 18,
+  "scope": "Private human-facing full-text consolidation; no claim of fresh exhaustive semantic review or runtime effectiveness; no target action or historical lab rerun."
+}

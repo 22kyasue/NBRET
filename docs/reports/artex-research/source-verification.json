@@ -1,0 +1,284 @@
+{
+  "at": "2026-10-21T18:19:39.099Z",
+  "localReceiptSourceHashes": [
+    {
+      "path": "C:\\Users\\kotar\\.codex\\research\\pentestgpt-20261017\\pentestgpt_agent\\src\\pentestgpt_agent\\memory.py",
+      "expected": "158b134a29f50b8769c277f4414167dd869ca4296f8f5ccf62645bfa181d451e",
+      "actual": "158b134a29f50b8769c277f4414167dd869ca4296f8f5ccf62645bfa181d451e",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\kotar\\.codex\\research\\pentestgpt-20261017\\pentestgpt_agent\\src\\pentestgpt_agent\\plan.py",
+      "expected": "cf0faacb06529efe632b7047404f6e46d62860339a10bc981e835308c64e8b32",
+      "actual": "cf0faacb06529efe632b7047404f6e46d62860339a10bc981e835308c64e8b32",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\kotar\\.codex\\research\\pentestgpt-20261017\\pentestgpt_agent\\src\\pentestgpt_agent\\execution.py",
+      "expected": "6b4bb5d2152a22ad2b43352f603b969ce550efa4be9e34028a8528b30860d379",
+      "actual": "6b4bb5d2152a22ad2b43352f603b969ce550efa4be9e34028a8528b30860d379",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\kotar\\.codex\\research\\pentestgpt-20261017\\pentestgpt_agent\\src\\pentestgpt_agent\\trace.py",
+      "expected": "5b005cad44cceeb9862a0db16f426bd6fd05ee35d658f195d176cae2ee5def80",
+      "actual": "5b005cad44cceeb9862a0db16f426bd6fd05ee35d658f195d176cae2ee5def80",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\kotar\\.codex\\research\\pentestgpt-20261017\\pentestgpt_agent\\src\\pentestgpt_agent\\audit.py",
+      "expected": "30fdb0e2e558e3bc1379befdab10b83e05f1185ebde7fc9a36f607bda1d9e930",
+      "actual": "30fdb0e2e558e3bc1379befdab10b83e05f1185ebde7fc9a36f607bda1d9e930",
+      "match": true
+    },
+    {
+      "path": "C:\\Users\\kotar\\.codex\\research\\unified-agent-acff8ee\\unified_agent\\backends\\codex.py",
+      "expected": "54a2fb6f4016091a22dd6c948a9a7661f92cd11e884e903d23279d7cfe3f0e73",
+      "actual": "54a2fb6f4016091a22dd6c948a9a7661f92cd11e884e903d23279d7cfe3f0e73",
+      "match": true
+    }
+  ],
+  "upstream": [
+    {
+      "repo": "jiwoochris/artex-global",
+      "pin": "fdfb7a17b7da5e2de716c0e98475ec77a41c64c6",
+      "checkedAt": "2026-10-21T18:19:35.971Z",
+      "url": "https://github.com/jiwoochris/artex-global",
+      "defaultBranch": "main",
+      "archived": false,
+      "head": "fdfb7a17b7da5e2de716c0e98475ec77a41c64c6",
+      "headCommitDate": "2026-10-14T07:52:43Z",
+      "sameAsReviewedPin": true,
+      "compare": null,
+      "limit": "Metadata/compare only; changed source was not automatically re-audited. No runtime claim."
+    },
+    {
+      "repo": "GreyDGL/PentestGPT",
+      "pin": "e8b1bb77d1ac00329675cec3b060aba971ec1ac8",
+      "checkedAt": "2026-10-21T18:19:35.977Z",
+      "url": "https://github.com/GreyDGL/PentestGPT",
+      "defaultBranch": "main",
+      "archived": false,
+      "head": "e8b1bb77d1ac00329675cec3b060aba971ec1ac8",
+      "headCommitDate": "2026-07-14T12:58:30Z",
+      "sameAsReviewedPin": true,
+      "compare": null,
+      "limit": "Metadata/compare only; changed source was not automatically re-audited. No runtime claim."
+    },
+    {
+      "repo": "bugbasesecurity/pentest-copilot",
+      "pin": "cd512edd037a32ddb1df3caf2672915bd555daec",
+      "checkedAt": "2026-10-21T18:19:36.097Z",
+      "url": "https://github.com/bugbasesecurity/pentest-copilot",
+      "defaultBranch": "main",
+      "archived": false,
+      "head": "cd512edd037a32ddb1df3caf2672915bd555daec",
+      "headCommitDate": "2026-08-14T21:59:24Z",
+      "sameAsReviewedPin": true,
+      "compare": null,
+      "limit": "Metadata/compare only; changed source was not automatically re-audited. No runtime claim."
+    },
+    {
+      "repo": "KeygraphHQ/shannon",
+      "pin": "4bd88c12a9096d0b78ceb2828729d12dca70fa60",
+      "checkedAt": "2026-10-21T18:19:36.405Z",
+      "url": "https://github.com/KeygraphHQ/shannon",
+      "defaultBranch": "main",
+      "archived": false,
+      "head": "4bd88c12a9096d0b78ceb2828729d12dca70fa60",
+      "headCommitDate": "2026-10-15T21:05:19Z",
+      "sameAsReviewedPin": true,
+      "compare": null,
+      "limit": "Metadata/compare only; changed source was not automatically re-audited. No runtime claim."
+    },
+    {
+      "repo": "BitterSecurity/Decepticon",
+      "pin": "b2d1080d605249f8ed48cfd87a95563eb3397fb1",
+      "checkedAt": "2026-10-21T18:19:36.437Z",
+      "url": "https://github.com/BitterSecurity/Decepticon",
+      "defaultBranch": "main",
+      "archived": false,
+      "head": "b2d1080d605249f8ed48cfd87a95563eb3397fb1",
+      "headCommitDate": "2026-10-21T14:32:55Z",
+      "sameAsReviewedPin": true,
+      "compare": null,
+      "limit": "Metadata/compare only; changed source was not automatically re-audited. No runtime claim."
+    },
+    {
+      "repo": "ipa-lab/hackingBuddyGPT",
+      "pin": "799f57e9d439ff80da506714fcf6c5124b342cd6",
+      "checkedAt": "2026-10-21T18:19:36.477Z",
+      "url": "https://github.com/ipa-lab/hackingBuddyGPT",
+      "defaultBranch": "main",
+      "archived": false,
+      "head": "799f57e9d439ff80da506714fcf6c5124b342cd6",
+      "headCommitDate": "2026-09-13T11:19:44Z",
+      "sameAsReviewedPin": true,
+      "compare": null,
+      "limit": "Metadata/compare only; changed source was not automatically re-audited. No runtime claim."
+    },
+    {
+      "repo": "JoasASantos/NeuroSploit",
+      "pin": "92e8959f4ea17bddaa0436505edcddf98f7d6b16",
+      "checkedAt": "2026-10-21T18:19:37.332Z",
+      "url": "https://github.com/JoasASantos/NeuroSploit",
+      "defaultBranch": "main",
+      "archived": false,
+      "head": "92e8959f4ea17bddaa0436505edcddf98f7d6b16",
+      "headCommitDate": "2026-10-19T03:21:41Z",
+      "sameAsReviewedPin": true,
+      "compare": null,
+      "limit": "Metadata/compare only; changed source was not automatically re-audited. No runtime claim."
+    },
+    {
+      "repo": "karpathy/autoresearch",
+      "pin": "228791fb499afffb54b46200aca536f79142f117",
+      "checkedAt": "2026-10-21T18:19:37.335Z",
+      "url": "https://github.com/karpathy/autoresearch",
+      "defaultBranch": "master",
+      "archived": false,
+      "head": "228791fb499afffb54b46200aca536f79142f117",
+      "headCommitDate": "2026-03-26T00:07:37Z",
+      "sameAsReviewedPin": true,
+      "compare": null,
+      "limit": "Metadata/compare only; changed source was not automatically re-audited. No runtime claim."
+    },
+    {
+      "repo": "cloudflare/security-audit-skill",
+      "pin": "c1c8a8c1471069fb0e188eeaff69b8e8db6564a8",
+      "checkedAt": "2026-10-21T18:19:37.380Z",
+      "url": "https://github.com/cloudflare/security-audit-skill",
+      "defaultBranch": "main",
+      "archived": false,
+      "head": "c1c8a8c1471069fb0e188eeaff69b8e8db6564a8",
+      "headCommitDate": "2026-09-14T19:28:54Z",
+      "sameAsReviewedPin": true,
+      "compare": null,
+      "limit": "Metadata/compare only; changed source was not automatically re-audited. No runtime claim."
+    },
+    {
+      "repo": "Hack-with-Github/Awesome-Hacking",
+      "pin": "b2bb13aa69b4f568a1bab0cbb17b7a00a350dc36",
+      "checkedAt": "2026-10-21T18:19:37.682Z",
+      "url": "https://github.com/Hack-with-Github/Awesome-Hacking",
+      "defaultBranch": "master",
+      "archived": false,
+      "head": "b2bb13aa69b4f568a1bab0cbb17b7a00a350dc36",
+      "headCommitDate": "2026-07-26T03:29:02Z",
+      "sameAsReviewedPin": true,
+      "compare": null,
+      "limit": "Metadata/compare only; changed source was not automatically re-audited. No runtime claim."
+    },
+    {
+      "repo": "0x4m4/hexstrike-ai",
+      "pin": "d689933ff579d839c676c82b231f8e98326c5f04",
+      "checkedAt": "2026-10-21T18:19:37.686Z",
+      "url": "https://github.com/0x4m4/hexstrike-ai",
+      "defaultBranch": "master",
+      "archived": false,
+      "head": "d689933ff579d839c676c82b231f8e98326c5f04",
+      "headCommitDate": "2026-08-03T14:33:01Z",
+      "sameAsReviewedPin": true,
+      "compare": null,
+      "limit": "Metadata/compare only; changed source was not automatically re-audited. No runtime claim."
+    },
+    {
+      "repo": "aliasrobotics/cai",
+      "pin": "6dc79257777f5f1c9500b4d2319935d34a47412e",
+      "checkedAt": "2026-10-21T18:19:38.013Z",
+      "url": "https://github.com/aliasrobotics/cai",
+      "defaultBranch": "archive",
+      "archived": true,
+      "head": "6dc79257777f5f1c9500b4d2319935d34a47412e",
+      "headCommitDate": "2026-08-22T13:02:17Z",
+      "sameAsReviewedPin": true,
+      "compare": null,
+      "limit": "Metadata/compare only; changed source was not automatically re-audited. No runtime claim."
+    },
+    {
+      "repo": "bytedance/UI-TARS-desktop",
+      "pin": "3ac2cb8d946d78d5ff92ad17b318eaafa18c178c",
+      "checkedAt": "2026-10-21T18:19:38.309Z",
+      "url": "https://github.com/bytedance/UI-TARS-desktop",
+      "defaultBranch": "main",
+      "archived": false,
+      "head": "3ac2cb8d946d78d5ff92ad17b318eaafa18c178c",
+      "headCommitDate": "2026-10-09T01:29:51Z",
+      "sameAsReviewedPin": true,
+      "compare": null,
+      "limit": "Metadata/compare only; changed source was not automatically re-audited. No runtime claim."
+    },
+    {
+      "repo": "GH05TCREW/pentestagent",
+      "pin": "87d763a9c830597e9b8c1d56293300f6961beec2",
+      "checkedAt": "2026-10-21T18:19:38.360Z",
+      "url": "https://github.com/GH05TCREW/pentestagent",
+      "defaultBranch": "main",
+      "archived": false,
+      "head": "87d763a9c830597e9b8c1d56293300f6961beec2",
+      "headCommitDate": "2026-09-21T18:04:50Z",
+      "sameAsReviewedPin": true,
+      "compare": null,
+      "limit": "Metadata/compare only; changed source was not automatically re-audited. No runtime claim."
+    },
+    {
+      "repo": "osgil-defense/TARS",
+      "pin": "6cc646bb1218e615abe784f27492aabcfc5ff64b",
+      "checkedAt": "2026-10-21T18:19:38.460Z",
+      "url": "https://github.com/osgil-defense/TARS",
+      "defaultBranch": "main",
+      "archived": true,
+      "head": "6cc646bb1218e615abe784f27492aabcfc5ff64b",
+      "headCommitDate": "2025-01-17T22:41:00Z",
+      "sameAsReviewedPin": true,
+      "compare": null,
+      "limit": "Metadata/compare only; changed source was not automatically re-audited. No runtime claim."
+    },
+    {
+      "repo": "Armur-Ai/Pentest-Swarm-AI",
+      "pin": "f2385aec82cf7a5d35140e5dad05983701c04cf2",
+      "checkedAt": "2026-10-21T18:19:38.803Z",
+      "url": "https://github.com/Armur-Ai/Pentest-Swarm-AI",
+      "defaultBranch": "main",
+      "archived": false,
+      "head": "f2385aec82cf7a5d35140e5dad05983701c04cf2",
+      "headCommitDate": "2026-10-21T07:57:44Z",
+      "sameAsReviewedPin": true,
+      "compare": null,
+      "limit": "Metadata/compare only; changed source was not automatically re-audited. No runtime claim."
+    },
+    {
+      "repo": "nbshenxm/pentest-agent",
+      "pin": "97ac5be7ba47377b235a7eebe64d53539084d229",
+      "checkedAt": "2026-10-21T18:19:38.883Z",
+      "url": "https://github.com/nbshenxm/pentest-agent",
+      "defaultBranch": "main",
+      "archived": false,
+      "head": "97ac5be7ba47377b235a7eebe64d53539084d229",
+      "headCommitDate": "2025-12-20T12:46:12Z",
+      "sameAsReviewedPin": true,
+      "compare": null,
+      "limit": "Metadata/compare only; changed source was not automatically re-audited. No runtime claim."
+    },
+    {
+      "repo": "pranay-root/PentestAgent",
+      "pin": "d38ee3de1cfbbe3762f51340eef7a735b54aef3f",
+      "checkedAt": "2026-10-21T18:19:38.912Z",
+      "url": "https://github.com/pranay-root/PentestAgent",
+      "defaultBranch": "main",
+      "archived": false,
+      "head": "d38ee3de1cfbbe3762f51340eef7a735b54aef3f",
+      "headCommitDate": "2026-07-08T17:42:41Z",
+      "sameAsReviewedPin": true,
+      "compare": null,
+      "limit": "Metadata/compare only; changed source was not automatically re-audited. No runtime claim."
+    },
+    {
+      "repo": "KKloudTarus/synapse-ce",
+      "pin": "a55a314aab8eb6e5979f7d886c82a0729776949f",
+      "error": "403 https://api.github.com/repos/KKloudTarus/synapse-ce/commits/main",
+      "checkedAt": "2026-10-21T18:19:39.099Z"
+    }
+  ],
+  "method": "Read-only filesystem SHA-256 and unauthenticated official GitHub metadata/compare API. No upstream imports, tests, models, scans or runtime changes."
+}

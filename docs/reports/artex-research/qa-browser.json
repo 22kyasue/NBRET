@@ -1,0 +1,58 @@
+{
+  "facts": {
+    "sources": 374,
+    "researchMarkdown": 300,
+    "findings": 335,
+    "corrections": 203,
+    "hazards": 80,
+    "dossiers": 32
+  },
+  "sourceSearch": "51 matching sources · showing 18",
+  "findings": "11 matching findings · showing 11",
+  "corrections": "203 matching corrections · showing 18",
+  "hazards": "80 matching hazards · showing 18",
+  "findingOpen": true,
+  "limits": true,
+  "primaryExcerptFirstLine": "350",
+  "actualPredicate": true,
+  "projectFilterCount": 1,
+  "allFontsLoaded": true,
+  "titleFont": "\"Instrument Serif\", Georgia, serif",
+  "bodyFont": "Geist, Arial, sans-serif",
+  "finalCutoverRef": true,
+  "currentViewport": {
+    "width": 5024,
+    "scrollWidth": 5009
+  },
+  "checkedAt": "2026-10-21T18:31:37Z",
+  "artifactSha256": "bf25d302d17256d945c39e6516f71b2681010f713a784a6fcb5b3c26901066cc",
+  "layouts": [
+    {
+      "width": 390,
+      "scrollWidth": 390,
+      "overflow": false
+    },
+    {
+      "width": 768,
+      "scrollWidth": 757,
+      "overflow": false
+    },
+    {
+      "width": 1440,
+      "scrollWidth": 1425,
+      "overflow": false
+    }
+  ],
+  "sourceButtonAudit": {
+    "unresolved": 0
+  },
+  "screenshots": {
+    "desktopOverview": "computeruse/.probe-scratch/sessions/20261021-110911/screens/7D7F9433-112712-0.png",
+    "desktopDiagram": "computeruse/.probe-scratch/sessions/20261021-110911/screens/7D7F9433-112900-4.png",
+    "finalMobile": "computeruse/.probe-scratch/sessions/20261021-110911/screens/7D7F9433-113105-6.png",
+    "finalChart": "computeruse/.probe-scratch/sessions/20261021-110911/screens/7D7F9433-113117-7.png",
+    "finalTablet": "computeruse/.probe-scratch/sessions/20261021-110911/screens/7D7F9433-113137-8.png"
+  },
+  "method": "Existing computeruse_desk harness, one task-owned local file tab. No alternate browser stack, target tests or model calls. Diagram/overview/mobile/chart visually inspected; tablet captured and overflow measured.",
+  "cleanup": "Only one task-opened tab/window, retained as requested HTML report for review. No obsolete reference/duplicate tabs opened."
+}

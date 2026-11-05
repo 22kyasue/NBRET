@@ -1,0 +1,16 @@
+{
+  "at": "2026-10-22T03:27:37.279Z",
+  "artifactSha256": "ad0cbc422e617791482692216ce3b2091dc5511bd6da2ab45596db6c58677185",
+  "checks": {
+    "interactionSyntax": "pass",
+    "duplicateIds": 0,
+    "staticSourceButtonsResolved": true,
+    "registeredSourceCitationsResolved": true,
+    "standaloneDataParsed": true,
+    "embeddedResearchMarkdown": 300,
+    "svgFigures": 2,
+    "diagramCheck": "OK C:\\Users\\kotar\\AppData\\Local\\Temp\\delta-artex-report-diagrams.html"
+  },
+  "issues": [],
+  "limits": "Static artifact and isolated figure checks only. Browser interaction/layout review recorded separately. No upstream lab or application test run."
+}

@@ -1,0 +1,57 @@
+{
+  "facts": {
+    "sources": 392,
+    "researchMarkdown": 300,
+    "findings": 335,
+    "corrections": 203,
+    "hazards": 80,
+    "dossiers": 32
+  },
+  "fullDetails": 32,
+  "fields": [
+    "Disposition / readiness",
+    "Primary destination / source seam",
+    "Secondary layer",
+    "Intended agent / consumer",
+    "Existing native ARTEX overlap",
+    "Required inputs / dependencies",
+    "Validation exercise / rejection condition",
+    "Confidence / limit"
+  ],
+  "codeOpen": true,
+  "unresolved": [],
+  "duplicateIds": 0,
+  "teachingNav": true,
+  "bundledSkillCards": true,
+  "checkedAt": "2026-10-21T18:40:47Z",
+  "artifactSha256": "b8123f1885c117b6d06f6561a10c04a27c4143c6a7af2e44bc091c67226fd23c",
+  "widths": [
+    {
+      "width": 1440,
+      "scrollWidth": 1425,
+      "overflow": false
+    },
+    {
+      "width": 5024,
+      "scrollWidth": 5009,
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "scrollWidth": 375,
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "scrollWidth": 390,
+      "overflow": false
+    },
+    {
+      "width": 5024,
+      "scrollWidth": 5009,
+      "overflow": false
+    }
+  ],
+  "method": "Final expanded report in a second isolated task QA window. Explicit routing fields, source modal, navigation and desktop/mobile teaching chapter verified. Earlier report QA includes 768px/tablet and all search modes; no target/provider tests run.",
+  "cleanup": "Final QA window closed; earlier requested report window remains handed to Kotaro. Other ARTEX windows untouched."
+}

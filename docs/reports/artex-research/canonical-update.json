@@ -1,0 +1,10 @@
+{
+  "at": "2026-10-22T03:27:36.280Z",
+  "file": "docs/SYNAPSE-PLATFORM.md",
+  "beforeSha256": "3b6bd165ea0cebc5e33fc09da97938c9a85cc311799314c19979df2850c291cd",
+  "afterSha256": "86ee13bea6b09971f2da22dac275d1d7700db073513ba6f6e6970e4ec5ed0840",
+  "projectRoutes": 32,
+  "applicationSourceChanged": false,
+  "settingsChanged": false,
+  "scope": "Canonical research-routing section, confirmed product-priority decision section and their change-log rows only; original canonical text preserved outside those insertions."
+}

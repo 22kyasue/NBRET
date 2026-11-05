@@ -1,0 +1,23 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import os from 'node:os';
+import crypto from 'node:crypto';
+import vm from 'node:vm';
+import {execFileSync} from 'node:child_process';
+const here=import.meta.dirname;
+const html=fs.readFileSync(path.join(here,'index.html'),'utf8');
+const data=JSON.parse(html.match(/<script id="report-data" type="application\/json">([\s\S]*?)<\/script>/)[1]);
+new vm.Script(fs.readFileSync(path.join(here,'interaction.js'),'utf8'));
+const issues=[];
+const ids=[...html.split('<script id="report-data"')[0].matchAll(/\bid="([^"]+)"/g)].map(m=>m[1]);
+for(const id of new Set(ids))if(ids.filter(x=>x===id).length>1)issues.push('duplicate ID '+id);
+const paths=new Set([...data.sources.map(x=>x.path),...data.inventory.files.map(x=>x.path)]);
+for(const m of html.split('<script id="report-data"')[0].matchAll(/data-source="([^"]+)"/g))if(!paths.has(m[1]))issues.push('unresolved source '+m[1]);
+for(const f of data.registers.findings)for(const s of f.sources||[])if(!paths.has('tracks/synapse-workflow/'+s.path))issues.push('unresolved citation '+f.id+' '+s.path);
+const diagrams=[...html.matchAll(/<svg\b[\s\S]*?<\/svg>/g)].map(m=>m[0]);
+const figureFile=path.join(os.tmpdir(),'delta-artex-report-diagrams.html');
+fs.writeFileSync(figureFile,'<!doctype html><html lang="en"><head><meta charset="utf-8"><title>ARTEX report diagrams QA</title></head><body><h1>ARTEX report diagrams</h1>'+diagrams.join('\n')+'</body></html>');
+let diagramCheck;try{diagramCheck=execFileSync('python',['C:/Users/kotar/.codex/skills/diagram-design/scripts/self_check.py',figureFile],{windowsHide:true,encoding:'utf8'}).trim();}catch(e){diagramCheck=(e.stdout||'')+(e.stderr||'');issues.push('diagram skill check failed');}
+fs.unlinkSync(figureFile);
+const report={at:new Date().toISOString(),artifactSha256:crypto.createHash('sha256').update(html).digest('hex'),checks:{interactionSyntax:'pass',duplicateIds:issues.filter(x=>x.startsWith('duplicate')).length,staticSourceButtonsResolved:!issues.some(x=>x.startsWith('unresolved source')),registeredSourceCitationsResolved:!issues.some(x=>x.startsWith('unresolved citation')),standaloneDataParsed:true,embeddedResearchMarkdown:data.sources.filter(s=>s.sourceType==='research study / historical record').length,svgFigures:diagrams.length,diagramCheck},issues,limits:'Static artifact and isolated figure checks only. Browser interaction/layout review recorded separately. No upstream lab or application test run.'};
+fs.writeFileSync(path.join(here,'qa-static.json'),JSON.stringify(report,null,2));console.log(JSON.stringify(report,null,2));if(issues.length)process.exitCode=1;

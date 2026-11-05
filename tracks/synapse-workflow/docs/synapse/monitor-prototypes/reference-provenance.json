@@ -1,0 +1,109 @@
+{
+  "retrievedAt": "2026-10-21T16:24:52.011Z",
+  "readback": "Actual R2 GET; verified size and SHA-256 for 15 files; images viewed",
+  "references": [
+    {
+      "bucket": "tobira-archive",
+      "manifest": "snapshots/saved-design-split-view/2026-10-13/study.json",
+      "manifestSha256": "47d0a69a4b9010f41ab03e0066200618f278aaa21a7cd73ef6a3b9f0ff8a16f7",
+      "verified": [
+        {
+          "path": "analysis.json",
+          "bytes": 107021,
+          "sha256": "0a6570bb5f578daf58e674c927535a81904e949a1549ed322bf98d294157e3f7"
+        },
+        {
+          "path": "frame0.png",
+          "bytes": 267647,
+          "sha256": "906fa90ce5e2ff6bcb89c57566eb8c35a0791597332694159d43eed681c5169e"
+        },
+        {
+          "path": "source.info.json",
+          "bytes": 9308,
+          "sha256": "39acdc0b14ad94794063fc6be4a194391b85614ccfc4e9234ec9e8ce3f0f132e"
+        },
+        {
+          "path": "source.json",
+          "bytes": 743,
+          "sha256": "02e0d10a019c7ad1a6264bd0de150f5a424d164e7211a91ca124651f15ae9df2"
+        },
+        {
+          "path": "timeline.jpg",
+          "bytes": 84950,
+          "sha256": "d419c9c3677b40ad38020060e51118e9490b0415f2dcef59b48bde9c518d64b0"
+        }
+      ],
+      "title": "Split-view precision",
+      "source": "https://x.com/gabriell_lab/status/2100219330373849371"
+    },
+    {
+      "bucket": "tobira-archive",
+      "manifest": "snapshots/saved-design-clean-tab-switching/2026-10-13/study.json",
+      "manifestSha256": "b4db0971cd5e41d73bb4ceca980c9320f07d07881dc578b7faa6004121ee5def",
+      "verified": [
+        {
+          "path": "analysis.json",
+          "bytes": 75845,
+          "sha256": "4b1a1af6096cd9f87662ab1862269e64fde11e5aa5dbfa46275ab4da3977a8db"
+        },
+        {
+          "path": "frame0.png",
+          "bytes": 34580,
+          "sha256": "ec2163bfacea779294fc5c52c74ef018266b566f650bc77143df401b4ca86b3a"
+        },
+        {
+          "path": "source.info.json",
+          "bytes": 8955,
+          "sha256": "1b774b15af3692a3824a288de38aa95e7221784e2925e8837ef95592603507e0"
+        },
+        {
+          "path": "source.json",
+          "bytes": 446,
+          "sha256": "e0369412c26e29eb345b458dc588fa26eaf5ee3e5cf7716214262a5189de4607"
+        },
+        {
+          "path": "timeline.jpg",
+          "bytes": 62534,
+          "sha256": "5f1e641c68b1a28554195a91d6a79a9f4478a90f8659a878331a6162102655c8"
+        }
+      ],
+      "title": "Clean tab switching",
+      "source": "https://x.com/eliakuratli/status/2108248320699498919"
+    },
+    {
+      "bucket": "tobira-archive",
+      "manifest": "snapshots/saved-design-focus-reading/2026-10-13/study.json",
+      "manifestSha256": "e88693a93ffdeb2cadb4adbf44a656706561cca70b3b916d7e78bc90031f55e4",
+      "verified": [
+        {
+          "path": "analysis.json",
+          "bytes": 120470,
+          "sha256": "7fc088e56e5ca96b3ff6d8ccd8a15744f0a977df3ed6d5062397b96222644784"
+        },
+        {
+          "path": "frame0.png",
+          "bytes": 373265,
+          "sha256": "724386a0cde42a8a0491b2ffcddd30b2009c3536444f0e5481a7d45f122d4f2f"
+        },
+        {
+          "path": "source.info.json",
+          "bytes": 12740,
+          "sha256": "ed3e0ba5b1c9cc3ab14c6dca2121660da0ec7562733a233333ca457f2e12d784"
+        },
+        {
+          "path": "source.json",
+          "bytes": 441,
+          "sha256": "a5de9ff61ff061c07404355c2c7495c1e53286b0f6483660cb60a5bf4da5ecf4"
+        },
+        {
+          "path": "timeline.jpg",
+          "bytes": 103179,
+          "sha256": "c045794cf218ce2195af6e49f70e8832b38fd74b160711c3c76a7c86584bf6ee"
+        }
+      ],
+      "title": "Focused reading",
+      "source": "https://x.com/mattdonini/status/2107498022422622400"
+    }
+  ],
+  "application": "Original implementation inspired by interaction/typography patterns; no copied source assets in the product UI"
+}
